@@ -1,0 +1,343 @@
+WEBVTT
+
+1
+00:00:01.170 --> 00:00:02.790
+In this lesson we're going to talk about
+how
+
+2
+00:00:02.790 --> 00:00:06.032
+functions can be used as regular objects
+in Python.
+
+3
+00:00:06.032 --> 00:00:08.280
+I'm gonna show you some simple examples
+where
+
+4
+00:00:08.280 --> 00:00:10.400
+we take a function and assign it to a
+
+5
+00:00:10.400 --> 00:00:15.860
+variable, and the where we take a function
+and pass it as an argument to a function.
+
+6
+00:00:15.860 --> 00:00:18.980
+We're also going to introduce the concept
+of higher order
+
+7
+00:00:18.980 --> 00:00:22.470
+functions which we'll discuss in more
+detail in a later lesson.
+
+8
+00:00:22.470 --> 00:00:23.170
+So, let's get started.
+
+9
+00:00:24.440 --> 00:00:33.520
+We'll call this program funcobjs.py, or
+f-u-n-c-o-b-j-s.py.
+
+10
+00:00:33.520 --> 00:00:37.770
+So let's work with some simple examples to
+try to keep the presentation clear.
+
+11
+00:00:38.930 --> 00:00:42.880
+For example we have a simple square
+function.
+
+12
+00:00:42.880 --> 00:00:48.590
+That takes a number and squares it and we
+know how to use that function very simply
+
+13
+00:00:48.590 --> 00:00:54.268
+we can say, num equals 2 squarenum equals
+
+14
+00:00:54.268 --> 00:01:00.250
+square num and that will square the value
+2 and store 4 in squarenum.
+
+15
+00:01:00.250 --> 00:01:04.900
+We can also assign this function to a
+variable.
+
+16
+00:01:04.900 --> 00:01:06.540
+So for example I can write.
+
+17
+00:01:06.540 --> 00:01:10.130
+sqnumber equals square.
+
+18
+00:01:10.130 --> 00:01:14.650
+And then I can say, sqnum equals sqnumber
+2.
+
+19
+00:01:14.650 --> 00:01:17.010
+And then we can print sqnum.
+
+20
+00:01:17.010 --> 00:01:22.670
+And then what it will display is the
+result of this statement.
+
+21
+00:01:22.670 --> 00:01:26.350
+So let's save that.
+
+22
+00:01:26.350 --> 00:01:27.390
+And then run the code.
+
+23
+00:01:29.390 --> 00:01:30.710
+And you see that it returned four.
+
+24
+00:01:32.790 --> 00:01:38.260
+So what we've discovered is that a
+function is just an object like any
+
+25
+00:01:38.260 --> 00:01:43.930
+other object in Python and we can assign
+it to a variable should we choose to.
+
+26
+00:01:43.930 --> 00:01:49.390
+Another thing we can do with functions is
+pass them as arguments to other functions.
+
+27
+00:01:49.390 --> 00:01:51.740
+So what I might do is I wanna introduce a
+
+28
+00:01:51.740 --> 00:01:56.130
+special function that's part of the Python
+language called Map.
+
+29
+00:01:56.130 --> 00:01:58.720
+Map takes two arguments.
+
+30
+00:01:58.720 --> 00:02:01.690
+A function and a sequence of data and
+
+31
+00:02:01.690 --> 00:02:05.110
+it applies that function to the sequence
+of data.
+
+32
+00:02:05.110 --> 00:02:09.030
+Let me explain what I mean and then show
+you an example.
+
+33
+00:02:09.030 --> 00:02:11.270
+Let's say we have a list of numbers.
+
+34
+00:02:11.270 --> 00:02:13.020
+We'll keep it small.
+
+35
+00:02:13.020 --> 00:02:20.730
+If I square each number we're going to
+get, 1, 4, 9, and 16.
+
+36
+00:02:20.730 --> 00:02:27.810
+So maybe I want to create another list
+that has these numbers in it.
+
+37
+00:02:27.810 --> 00:02:29.780
+Squared, well of course, I could do it
+
+38
+00:02:29.780 --> 00:02:32.390
+through a loop where I create an empty
+list
+
+39
+00:02:32.390 --> 00:02:36.130
+and loop through numbers and square each
+number
+
+40
+00:02:36.130 --> 00:02:38.400
+that would take 3 or 4 lines of code.
+
+41
+00:02:38.400 --> 00:02:40.740
+I'm not going to write that code out but
+you can imagine what
+
+42
+00:02:40.740 --> 00:02:44.840
+it would look like but instead we can use
+this function called Map.
+
+43
+00:02:44.840 --> 00:02:45.860
+So what I'm gonna do is I'm gonna
+
+44
+00:02:45.860 --> 00:02:50.090
+create a new program, we'll call it
+numbers squared.
+
+45
+00:02:50.090 --> 00:02:55.190
+And, we're going to assign it the result
+of building a list out of
+
+46
+00:02:55.190 --> 00:03:00.690
+mapping the square function to our numbers
+list, like so.
+
+47
+00:03:00.690 --> 00:03:04.060
+So, let's look at this in pieces.
+
+48
+00:03:04.060 --> 00:03:08.500
+So, the first piece is map square to
+numbers.
+
+49
+00:03:08.500 --> 00:03:10.700
+So, what it's going to do is, it's going
+to take each number.
+
+50
+00:03:11.800 --> 00:03:16.310
+And applied the squared function number
+times number to it and that's going to
+
+51
+00:03:16.310 --> 00:03:22.040
+give a result, that result is then going
+to be added to the list functions so that
+
+52
+00:03:22.040 --> 00:03:23.700
+we're going to have another list that can
+
+53
+00:03:23.700 --> 00:03:26.710
+consist of one squared, two squared, three
+squared
+
+54
+00:03:26.710 --> 00:03:28.960
+and four squared and then to demonstrate
+how
+
+55
+00:03:28.960 --> 00:03:31.756
+that works we can write out numbers
+squared.
+
+56
+00:03:31.756 --> 00:03:35.050
+So let's save.
+
+57
+00:03:35.050 --> 00:03:42.195
+Let's clear the screen, run our program,
+and there's our new list.
+
+58
+00:03:42.195 --> 00:03:44.440
+1,4,9, and 16.
+
+59
+00:03:44.440 --> 00:03:49.160
+Map is an example of what's called a
+higher order function.
+
+60
+00:03:49.160 --> 00:03:53.850
+And if you're familiar with functional
+language such as scheme or lisp or
+
+61
+00:03:53.850 --> 00:03:59.420
+ml then you've all ready been exposed to
+the concept of high order functions.
+
+62
+00:03:59.420 --> 00:04:05.450
+But a high order function usually involves
+calling another function as
+
+63
+00:04:05.450 --> 00:04:08.470
+an argument and that's what we're doing
+right here as we're
+
+64
+00:04:08.470 --> 00:04:14.210
+using functions square in the call to
+another function map which
+
+65
+00:04:14.210 --> 00:04:18.720
+actually is then used in yet another
+function called to list.
+
+66
+00:04:18.720 --> 00:04:21.050
+In a couple of lessons, we're going to
+look at
+
+67
+00:04:21.050 --> 00:04:24.700
+two other higher order functions and we'll
+look at map again.
+
+68
+00:04:24.700 --> 00:04:28.590
+Those functions are filter and reduce.
+
+69
+00:04:28.590 --> 00:04:32.010
+But for now, I want to move to the next
+topic of the chapter and that's where
+
+70
+00:04:32.010 --> 00:04:38.520
+we're going to look at how we can create
+functions on the fly, to use with map.
+
+71
+00:04:38.520 --> 00:04:41.090
+By writing what are called anonymous
+functions
+
+72
+00:04:41.090 --> 00:04:42.920
+and that's the topic of the next lesson.
+
+73
+00:04:42.920 --> 00:04:45.469
+[BLANK_AUDIO]
+

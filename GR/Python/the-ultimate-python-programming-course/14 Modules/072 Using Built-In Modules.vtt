@@ -1,0 +1,300 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:03.800
+In this chapter, we're going to be looking
+at Python modules.
+
+2
+00:00:03.800 --> 00:00:07.990
+And, any program that you write in Python
+can become a module.
+
+3
+00:00:07.990 --> 00:00:12.330
+You just have to be sure to add it into
+another program correctly.
+
+4
+00:00:12.330 --> 00:00:15.840
+We're gonna start off first though by
+looking at just the general use of
+
+5
+00:00:15.840 --> 00:00:20.820
+modules and one or two of the built in
+modules that are part of Python.
+
+6
+00:00:21.970 --> 00:00:26.520
+You'll notice that I'm in the Python 3.0/
+Lib directory.
+
+7
+00:00:26.520 --> 00:00:30.700
+And these are where the built in modules
+reside.
+
+8
+00:00:30.700 --> 00:00:35.680
+And if we do Dir*PY/W we can get a look at
+all
+
+9
+00:00:35.680 --> 00:00:39.910
+the Python modules that are built in or
+part of the language.
+
+10
+00:00:39.910 --> 00:00:41.940
+And there's quite a few.
+
+11
+00:00:41.940 --> 00:00:44.730
+And these are just standard python files.
+
+12
+00:00:44.730 --> 00:00:49.310
+So, if we wanna open one for example,
+we've used the OS module a time or two.
+
+13
+00:00:49.310 --> 00:00:50.210
+We can open it up.
+
+14
+00:00:51.240 --> 00:00:53.310
+I'll also call these libraries sometimes.
+
+15
+00:00:53.310 --> 00:00:56.650
+And you'll see that it's just python code.
+
+16
+00:00:56.650 --> 00:00:59.740
+I'm not gonna spend time trying to explain
+it all.
+
+17
+00:00:59.740 --> 00:01:02.770
+But it's just python code.
+
+18
+00:01:02.770 --> 00:01:07.650
+That in this case is used to work with
+specific operating system commands.
+
+19
+00:01:10.840 --> 00:01:12.930
+And you can open any of these.
+
+20
+00:01:12.930 --> 00:01:14.580
+Let's look at another one for example.
+
+21
+00:01:14.580 --> 00:01:18.340
+Let's find one that looks like it might be
+easy to understand.
+
+22
+00:01:18.340 --> 00:01:21.190
+Actually none of them are very easy to
+understand.
+
+23
+00:01:21.190 --> 00:01:23.320
+Let's just do P, print.
+
+24
+00:01:23.320 --> 00:01:24.680
+Notepad.
+
+25
+00:01:24.680 --> 00:01:25.200
+P Print.
+
+26
+00:01:25.200 --> 00:01:26.390
+This is for Pretty Printing.
+
+27
+00:01:26.390 --> 00:01:30.860
+And here you see the use of the module,
+handle Pretty
+
+28
+00:01:30.860 --> 00:01:35.170
+Printing operations onto a stream using a
+configured set of formating parameters.
+
+29
+00:01:36.590 --> 00:01:40.860
+And then, again, just a set of Python
+statements.
+
+30
+00:01:40.860 --> 00:01:44.080
+Looks like some classes and functions.
+
+31
+00:01:44.080 --> 00:01:47.470
+To allow you to pretty print using Python.
+
+32
+00:01:49.140 --> 00:01:52.580
+So, very briefly lets look at how we use
+the built-in modules.
+
+33
+00:01:52.580 --> 00:01:53.600
+We have done this before.
+
+34
+00:01:53.600 --> 00:01:57.350
+So, we are gonna call this program
+builtin.py.
+
+35
+00:01:57.350 --> 00:01:58.740
+And the way
+
+36
+00:02:00.860 --> 00:02:04.880
+we use the built in module is we import it
+into our.
+
+37
+00:02:04.880 --> 00:02:08.010
+Program and we'll do that for our user
+defined modules
+
+38
+00:02:08.010 --> 00:02:10.700
+that we are gonna start learning about in
+the next lesson.
+
+39
+00:02:10.700 --> 00:02:13.000
+Then, once we have done that, then we have
+
+40
+00:02:13.000 --> 00:02:17.630
+the functionality of that module available
+to our program.
+
+41
+00:02:17.630 --> 00:02:20.140
+So for example, one of the things we did
+earlier
+
+42
+00:02:20.140 --> 00:02:25.560
+in the course was used p.open from the OS
+module.
+
+43
+00:02:25.560 --> 00:02:28.780
+To store all of the output from the
+directory command.
+
+44
+00:02:28.780 --> 00:02:33.410
+In this is it's *.py, directory, into a,
+object that
+
+45
+00:02:33.410 --> 00:02:37.930
+we can then, iterate through using a four
+loop, like so.
+
+46
+00:02:37.930 --> 00:02:38.430
+So
+
+47
+00:02:41.540 --> 00:02:42.710
+then, when we run this code.
+
+48
+00:02:45.520 --> 00:02:49.345
+We get a listing of all the falls that end
+in PY in the current
+
+49
+00:02:49.345 --> 00:02:52.490
+sub-directory because I didn't enter any
+other pass,
+
+50
+00:02:52.490 --> 00:02:54.760
+so it's working with the current working
+directory.
+
+51
+00:02:56.370 --> 00:03:03.130
+Another example that we've looked at, was
+the floating point, absolute value.
+
+52
+00:03:03.130 --> 00:03:06.100
+Function, that's part of the math library.
+
+53
+00:03:06.100 --> 00:03:10.620
+The math library is not accessible as a
+P-Y program because it is
+
+54
+00:03:10.620 --> 00:03:16.040
+writing differently, so we can't inspect
+it the same way we inspected O-S.
+
+55
+00:03:16.040 --> 00:03:18.289
+But, we can still access its functions.
+
+56
+00:03:22.320 --> 00:03:23.690
+We get the file list and then we get
+
+57
+00:03:23.690 --> 00:03:30.437
+the absolute value of negative 123.45
+which is positive 123.45.
+
+58
+00:03:30.437 --> 00:03:34.125
+There's really not much more to say about
+the use of
+
+59
+00:03:34.125 --> 00:03:37.900
+built-in modules that I want to talk about
+in this lesson.
+
+60
+00:03:37.900 --> 00:03:43.260
+There are some options when you import a
+library or a module into your program.
+
+61
+00:03:43.260 --> 00:03:45.340
+And, we're gonna look at those when we
+look at how we how
+
+62
+00:03:45.340 --> 00:03:49.080
+we create our own modules, which is coming
+up in the next lesson.
+
+63
+00:03:49.080 --> 00:03:52.290
+So, without further ado, let's move on to
+the next lesson
+
+64
+00:03:52.290 --> 00:03:55.210
+where we'll begin looking at how to create
+our own modules.
+

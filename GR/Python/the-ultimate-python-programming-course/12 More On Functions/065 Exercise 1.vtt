@@ -1,0 +1,204 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:04.680
+For this first exercise of chapter 12,
+we're going to count the
+
+2
+00:00:04.680 --> 00:00:08.730
+letters in a list, assuming that we have a
+list of words.
+
+3
+00:00:08.730 --> 00:00:10.610
+Now it'd be very easy to count the list of
+
+4
+00:00:10.610 --> 00:00:14.040
+words you simply use the lend function on
+the list.
+
+5
+00:00:14.040 --> 00:00:16.730
+But counting the letters takes a little
+more work, so we're
+
+6
+00:00:16.730 --> 00:00:19.370
+gonna look at how to write a recursive
+function to do that.
+
+7
+00:00:19.370 --> 00:00:20.680
+So let's get started.
+
+8
+00:00:22.360 --> 00:00:26.090
+We're gonna call this program chap12x1.py.
+
+9
+00:00:26.090 --> 00:00:30.890
+We're gonna call our function count
+letters, and the
+
+10
+00:00:30.890 --> 00:00:33.740
+parameter will be a list, which we'll call
+words.
+
+11
+00:00:34.820 --> 00:00:38.960
+The first thing we do is we test the base
+case, and if the length of
+
+12
+00:00:38.960 --> 00:00:42.030
+our list is less than one, then we
+
+13
+00:00:42.030 --> 00:00:44.625
+return zero because there are no letters
+to count.
+
+14
+00:00:44.625 --> 00:00:51.930
+Otherwise, we return the length of the
+first word
+
+15
+00:00:51.930 --> 00:00:58.910
+in the list plus, and then a recursive
+call to the function, and then
+
+16
+00:00:58.910 --> 00:01:02.660
+we take a slice of the list starting at
+the second
+
+17
+00:01:02.660 --> 00:01:06.870
+word, or word sub one, and we write that
+slice, one colon.
+
+18
+00:01:06.870 --> 00:01:10.580
+So that will get all but the first word.
+
+19
+00:01:10.580 --> 00:01:16.360
+That way, we will slowly work down the
+list, until our if statement becomes true.
+
+20
+00:01:16.360 --> 00:01:22.470
+So we can test this function with a little
+program here.
+
+21
+00:01:22.470 --> 00:01:24.580
+We'll have a four word list.
+
+22
+00:01:24.580 --> 00:01:29.240
+Then we'll print the list, and so we can
+count the letters easily.
+
+23
+00:01:29.240 --> 00:01:35.190
+And then we'll call the function with the
+list, and here we'll see what we get.
+
+24
+00:01:35.190 --> 00:01:36.040
+So, we'll save it.
+
+25
+00:01:37.650 --> 00:01:41.850
+Open our command prompt window, run the
+program.
+
+26
+00:01:41.850 --> 00:01:44.129
+And we see that there are 12 letters, one,
+two,
+
+27
+00:01:44.129 --> 00:01:47.370
+three, four, five, six, seven, eight,
+nine, ten, 11, 12.
+
+28
+00:01:47.370 --> 00:01:47.870
+So
+
+29
+00:01:49.580 --> 00:01:51.950
+let's add a few words to that.
+
+30
+00:01:51.950 --> 00:01:56.100
+We'll add for all good people, say the
+program again.
+
+31
+00:01:58.890 --> 00:01:59.690
+Run it again.
+
+32
+00:02:00.730 --> 00:02:05.960
+And this time we get 28.
+
+33
+00:02:05.960 --> 00:02:11.450
+So we know that there's 12 through time,
+13,1,4,15,16,17,18,19,
+
+34
+00:02:11.450 --> 00:02:13.760
+20, 21, 22, 23, 24, 25, 26, 27, 28.
+
+35
+00:02:13.760 --> 00:02:19.620
+So, this was a recursive implementation of
+this problem.
+
+36
+00:02:19.620 --> 00:02:23.000
+Of course, we could have written an
+iterative solution also, but it's
+
+37
+00:02:23.000 --> 00:02:26.860
+always nice to at least try the recursive
+solution to see if
+
+38
+00:02:26.860 --> 00:02:30.460
+it's easier to write, if it's more
+intuitive, because a lot of
+
+39
+00:02:30.460 --> 00:02:33.290
+times problems will lend themselves to
+
+40
+00:02:33.290 --> 00:02:36.500
+a recursive solution versus an iterative
+solution.
+
+41
+00:02:36.500 --> 00:02:39.340
+In this case I'd say either one would have
+been fine, but
+
+42
+00:02:39.340 --> 00:02:44.280
+it's certainly not that difficult to find
+the recursive solution to this problem.
+
+43
+00:02:44.280 --> 00:02:48.300
+And that wraps up this first exercise and
+we're ready to move on to exercise two.
+

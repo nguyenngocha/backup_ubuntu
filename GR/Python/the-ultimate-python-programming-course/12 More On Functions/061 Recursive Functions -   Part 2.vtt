@@ -1,0 +1,335 @@
+WEBVTT
+
+1
+00:00:01.200 --> 00:00:03.390
+For the second lesson on recursive
+functions, we're
+
+2
+00:00:03.390 --> 00:00:07.420
+going to look at cursing over stream data.
+
+3
+00:00:07.420 --> 00:00:09.147
+We're gonna call this recursion2.py.
+
+4
+00:00:09.147 --> 00:00:09.800
+[BLANK_AUDIO].
+
+5
+00:00:09.800 --> 00:00:10.300
+So,
+
+6
+00:00:12.290 --> 00:00:14.200
+the first thing we're going to do is we're
+going to
+
+7
+00:00:14.200 --> 00:00:18.120
+write a function called explode and it
+would like like this.
+
+8
+00:00:18.120 --> 00:00:19.920
+If we said explode.
+
+9
+00:00:19.920 --> 00:00:21.410
+Hello.
+
+10
+00:00:21.410 --> 00:00:26.050
+Our output would be hello with a space
+between each letter, kind of
+
+11
+00:00:26.050 --> 00:00:30.060
+exploding it out and making it take up
+more space, just like that.
+
+12
+00:00:31.410 --> 00:00:36.050
+So we start out, def explode, our
+perimeter is word.
+
+13
+00:00:36.050 --> 00:00:37.740
+The first thing we do is test to see if
+
+14
+00:00:37.740 --> 00:00:40.900
+the word length is less than or equal to
+one.
+
+15
+00:00:40.900 --> 00:00:44.700
+If it is, then we need to stop.
+
+16
+00:00:44.700 --> 00:00:45.936
+So we return the word.
+
+17
+00:00:45.936 --> 00:00:52.010
+Otherwise, we return the character at word
+
+18
+00:00:52.010 --> 00:00:58.270
+subzero plus a space or concatenated with
+a space.
+
+19
+00:00:58.270 --> 00:01:00.570
+And then our recursive call.
+
+20
+00:01:00.570 --> 00:01:03.440
+And to recurse over the rest of the word.
+
+21
+00:01:03.440 --> 00:01:07.990
+In other words, we're going to start with
+hello, and then on the first
+
+22
+00:01:07.990 --> 00:01:12.510
+recursive call, we want the word to be
+ELLO if we're doing hello, for example.
+
+23
+00:01:12.510 --> 00:01:15.620
+So to do that, we'll use one colon to get
+a
+
+24
+00:01:15.620 --> 00:01:20.620
+slice starting at position one through the
+rest of the string.
+
+25
+00:01:20.620 --> 00:01:25.260
+And therefore as we recurse through the
+string, we'll eventually get
+
+26
+00:01:25.260 --> 00:01:28.490
+to where there are no more letters left in
+the word.
+
+27
+00:01:28.490 --> 00:01:31.622
+So let's write some quick code, to test
+that.
+
+28
+00:01:31.622 --> 00:01:35.510
+Print, explode, and we'll just use hello
+as the example.
+
+29
+00:01:35.510 --> 00:01:39.840
+So let's, exit and save.
+
+30
+00:01:41.310 --> 00:01:44.480
+And we'll, run the program.
+
+31
+00:01:45.710 --> 00:01:47.290
+And there's hello exploded.
+
+32
+00:01:47.290 --> 00:01:49.030
+So that's our first example.
+
+33
+00:01:51.880 --> 00:01:53.790
+Our second example.
+
+34
+00:01:53.790 --> 00:01:55.840
+I'll put the example up here in the
+comments also.
+
+35
+00:01:57.060 --> 00:01:58.810
+We're gonna write a function called
+
+36
+00:01:58.810 --> 00:02:02.120
+removeDups, which stands for remove
+duplicates.
+
+37
+00:02:02.120 --> 00:02:08.010
+And so if we give it a string like this,
+a-a-b-b-c-c, it will return a-b-c.
+
+38
+00:02:08.010 --> 00:02:12.030
+So let's write that function next.
+
+39
+00:02:12.030 --> 00:02:14.140
+It also has word as a parameter.
+
+40
+00:02:15.200 --> 00:02:17.300
+First thing we do is check to see if the
+link to the
+
+41
+00:02:17.300 --> 00:02:22.250
+word is less than or equal to one, and if
+so, we return.
+
+42
+00:02:22.250 --> 00:02:25.200
+Word, then, the next thing we have to do
+is we
+
+43
+00:02:25.200 --> 00:02:28.330
+have to see if the two adjacent letters
+are the same.
+
+44
+00:02:29.370 --> 00:02:35.866
+So, if word subzero is equal to word
+sub-one, then we want to return
+
+45
+00:02:35.866 --> 00:02:42.940
+straight to a recursive call, and take a
+slice starting at the next.
+
+46
+00:02:42.940 --> 00:02:44.590
+Letter in the word.
+
+47
+00:02:44.590 --> 00:02:48.810
+In other words, word one colon just like
+we did in the example above.
+
+48
+00:02:50.880 --> 00:02:56.320
+Otherwise, this means that the two
+adjacent letters are not the same.
+
+49
+00:02:56.320 --> 00:02:59.300
+We want to return the letter at word
+
+50
+00:02:59.300 --> 00:03:03.290
+subzero and then our recursive call to
+remove Dupes.
+
+51
+00:03:05.560 --> 00:03:09.359
+So, let's give that one a shot.
+
+52
+00:03:09.359 --> 00:03:14.990
+print removeDups aabbbccccdd.
+
+53
+00:03:14.990 --> 00:03:15.450
+Like so.
+
+54
+00:03:15.450 --> 00:03:18.640
+So, let's do just for fun.
+
+55
+00:03:18.640 --> 00:03:21.830
+Let's take this, cut it out.
+
+56
+00:03:23.950 --> 00:03:24.690
+Right here.
+
+57
+00:03:24.690 --> 00:03:31.080
+A way we can print the original word and
+then the word with duplicates removed.
+
+58
+00:03:31.080 --> 00:03:33.250
+So lets exit and save.
+
+59
+00:03:33.250 --> 00:03:35.640
+Lets clear the screen.
+
+60
+00:03:35.640 --> 00:03:39.947
+So there's our original version and
+there's our final version.
+
+61
+00:03:39.947 --> 00:03:40.850
+[BLANK_AUDIO].
+
+62
+00:03:44.170 --> 00:03:45.930
+So as you can see recursion can be
+
+63
+00:03:45.930 --> 00:03:50.500
+performed on both numeric data and string
+data.
+
+64
+00:03:50.500 --> 00:03:54.080
+Having shown you these examples of
+recursion let me just warn you that in
+
+65
+00:03:54.080 --> 00:04:00.010
+most cases it's much faster and more
+efficient to write the solutions to these.
+
+66
+00:04:00.010 --> 00:04:05.740
+Function problems using iterative methods
+such as, loops and four loops
+
+67
+00:04:05.740 --> 00:04:11.220
+and y loops those kinds of techniques
+however for some
+
+68
+00:04:11.220 --> 00:04:16.940
+problems such as factorial the natural
+solution is a recursive solution
+
+69
+00:04:16.940 --> 00:04:21.850
+and because modern computing hardware and
+software systems are relatively fast.
+
+70
+00:04:21.850 --> 00:04:25.860
+The recursive solution will seem as
+efficient if
+
+71
+00:04:25.860 --> 00:04:29.280
+not almost as efficient as a iterative
+solution.
+
+72
+00:04:29.280 --> 00:04:32.400
+But with that, we're going to leave
+recursion again until the exercises.
+
+73
+00:04:32.400 --> 00:04:36.470
+And now we're ready to move to the next
+advanced topic in the next lesson.
+

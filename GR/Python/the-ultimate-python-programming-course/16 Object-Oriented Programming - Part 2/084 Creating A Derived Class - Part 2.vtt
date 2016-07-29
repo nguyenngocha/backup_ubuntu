@@ -1,0 +1,561 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:03.750
+For this second lesson on the chapter for
+inheritance, we're going
+
+2
+00:00:03.750 --> 00:00:07.690
+to look at another example of inheriting
+from a base class.
+
+3
+00:00:07.690 --> 00:00:10.880
+This time we're gonna work with employees
+and managers.
+
+4
+00:00:10.880 --> 00:00:14.580
+So we're gonna call this employee.py.
+
+5
+00:00:14.580 --> 00:00:18.020
+So we'll begin by building the employee
+class, which will be our base class.
+
+6
+00:00:18.020 --> 00:00:21.560
+So the first thing we do is create.
+
+7
+00:00:21.560 --> 00:00:23.110
+A constructor.
+
+8
+00:00:23.110 --> 00:00:25.650
+So, our fields are going to be Name and
+Pay Rate.
+
+9
+00:00:28.050 --> 00:00:30.015
+Next we'll define a two string method.
+
+10
+00:00:30.015 --> 00:00:32.360
+[BLANK_AUDIO]
+
+11
+00:00:32.360 --> 00:00:35.625
+Which will just display the name and the
+employee's pay rate.
+
+12
+00:00:35.625 --> 00:00:38.680
+[BLANK_AUDIO]
+
+13
+00:00:38.680 --> 00:00:39.892
+Then we'll define a pay method.
+
+14
+00:00:39.892 --> 00:00:40.392
+[BLANK_AUDIO].
+
+15
+00:00:43.010 --> 00:00:47.110
+And simply returns the pay rate, times the
+hours
+
+16
+00:00:47.110 --> 00:00:50.650
+worked, which is the parameter or argument
+for the method.
+
+17
+00:00:51.710 --> 00:00:54.520
+So very quickly let's build an employee
+object.
+
+18
+00:00:54.520 --> 00:00:58.828
+We'll create an employee named John Jones,
+his pay rate is $10 an hour.
+
+19
+00:01:01.620 --> 00:01:03.840
+And then we'll print out his pay for 40
+weeks.
+
+20
+00:01:03.840 --> 00:01:05.430
+Let's do that, then.
+
+21
+00:01:05.430 --> 00:01:07.270
+Better statement than that.
+
+22
+00:01:07.270 --> 00:01:11.220
+Gross pay, and then we'll have to put that
+into a string.
+
+23
+00:01:11.220 --> 00:01:12.350
+So we'll do that.
+
+24
+00:01:13.470 --> 00:01:17.195
+Okay, so let's just make sure the employee
+class works before we move on.
+
+25
+00:01:17.195 --> 00:01:20.240
+[BLANK_AUDIO]
+
+26
+00:01:20.240 --> 00:01:22.790
+It's always something, let's take a look
+here, do we have one too
+
+27
+00:01:22.790 --> 00:01:28.319
+many parenthesis perhaps, the problem was
+we left off the trailing double quote.
+
+28
+00:01:28.319 --> 00:01:28.819
+[BLANK_AUDIO].
+
+29
+00:01:31.140 --> 00:01:34.766
+Alright, let's try it again, so if you
+want, there
+
+30
+00:01:34.766 --> 00:01:40.030
+should be self, that's very obvious,
+that's a rookie mistake.
+
+31
+00:01:40.030 --> 00:01:40.553
+Let's try it again.
+
+32
+00:01:40.553 --> 00:01:41.053
+[BLANK_AUDIO].
+
+33
+00:01:45.920 --> 00:01:48.520
+Alright so now, it's not wrong its
+eone.pay.
+
+34
+00:01:48.520 --> 00:01:53.570
+So we're just taking a look to see if we
+can find where the problem is.
+
+35
+00:01:53.570 --> 00:01:54.959
+I don't see a problem.
+
+36
+00:01:54.959 --> 00:01:55.780
+[BLANK_AUDIO]
+
+37
+00:01:59.620 --> 00:02:00.208
+Let's try it again.
+
+38
+00:02:00.208 --> 00:02:00.708
+[BLANK_AUDIO].
+
+39
+00:02:04.630 --> 00:02:05.190
+Right.
+
+40
+00:02:05.190 --> 00:02:07.360
+Now, I see where the problem is.
+
+41
+00:02:07.360 --> 00:02:11.840
+Every method has to have self as the first
+argument.
+
+42
+00:02:11.840 --> 00:02:16.890
+So, one of the few languages, the only
+language that I know of it, works
+
+43
+00:02:16.890 --> 00:02:19.810
+like that, so it's very easy for me to
+make a mistake, but there we go.
+
+44
+00:02:19.810 --> 00:02:20.780
+So.
+
+45
+00:02:20.780 --> 00:02:24.320
+John Jones makes 10 dollars an hour and
+for 40 hours in a
+
+46
+00:02:24.320 --> 00:02:29.250
+workweek he gets paid $400 for his pay so
+that's correct let's move on.
+
+47
+00:02:30.930 --> 00:02:37.060
+So now we want to, derive a manager class
+from the employee class
+
+48
+00:02:37.060 --> 00:02:42.010
+so to do that we write class manager and
+then in parenthesis we write employee.
+
+49
+00:02:43.040 --> 00:02:45.780
+So the first step, is to create our
+constructor.
+
+50
+00:02:47.140 --> 00:02:51.010
+A manager has the same fields as an
+employee,
+
+51
+00:02:52.090 --> 00:02:54.400
+and they also have a new field, is
+Salaried.
+
+52
+00:02:54.400 --> 00:02:56.970
+Which let's us know how to pay a manager.
+
+53
+00:02:56.970 --> 00:03:03.340
+So the first thing we do, is call the base
+class constructor.
+
+54
+00:03:03.340 --> 00:03:07.370
+With the two arguments that it needs name
+an pay rate.
+
+55
+00:03:07.370 --> 00:03:09.170
+And of course self.
+
+56
+00:03:09.170 --> 00:03:12.730
+Then we'll set a field named salaried
+
+57
+00:03:12.730 --> 00:03:16.710
+to the is salaried parameter from the
+constructor.
+
+58
+00:03:16.710 --> 00:03:21.420
+You can tell by the name of the parameter
+that it's a true false value.
+
+59
+00:03:21.420 --> 00:03:23.620
+That's not by default that's just a
+convention.
+
+60
+00:03:25.440 --> 00:03:27.340
+After that we'll build a two string
+method.
+
+61
+00:03:28.840 --> 00:03:35.220
+We'll create a return string which will
+consist of a call to the base class
+
+62
+00:03:35.220 --> 00:03:42.390
+two string method and then concattonate to
+that a call to the is salaried field.
+
+63
+00:03:43.390 --> 00:03:44.230
+Looks like so.
+
+64
+00:03:45.400 --> 00:03:47.090
+And then return the return string.
+
+65
+00:03:47.090 --> 00:03:47.590
+And
+
+66
+00:03:49.900 --> 00:03:55.870
+then last but not lease, we define pay,
+the pay method for manager.
+
+67
+00:03:55.870 --> 00:03:59.400
+And here we write an if statement that
+says
+
+68
+00:03:59.400 --> 00:04:05.550
+if the manager is salaried, return simply
+their pay rate.
+
+69
+00:04:05.550 --> 00:04:05.920
+Else.
+
+70
+00:04:05.920 --> 00:04:09.080
+If they're not salaried, then they must be
+hourly.
+
+71
+00:04:09.080 --> 00:04:10.560
+Then Return.
+
+72
+00:04:10.560 --> 00:04:11.480
+Self pay rate.
+
+73
+00:04:11.480 --> 00:04:13.100
+And that needs to be self above, too.
+
+74
+00:04:13.100 --> 00:04:14.660
+And we'll fix that before we move on.
+
+75
+00:04:14.660 --> 00:04:17.350
+[BLANK_AUDIO]
+
+76
+00:04:17.350 --> 00:04:21.420
+Right up here, like so.
+
+77
+00:04:21.420 --> 00:04:23.724
+Okay.
+
+78
+00:04:25.190 --> 00:04:32.100
+So, we'll create a new manager object, m1
+Jane Smith 1200 true.
+
+79
+00:04:34.280 --> 00:04:38.820
+We'll display m one's two string method
+then we'll pay m one.
+
+80
+00:04:38.820 --> 00:04:45.080
+We're gonna borrow this print statement
+and just change e one to m one.
+
+81
+00:04:45.080 --> 00:04:48.650
+[BLANK_AUDIO]
+
+82
+00:04:48.650 --> 00:04:50.680
+Actually, let's take that out.
+
+83
+00:04:50.680 --> 00:04:53.040
+[BLANK_AUDIO]
+
+84
+00:04:53.040 --> 00:04:55.720
+And let's create another Manager Object.
+
+85
+00:04:57.420 --> 00:04:59.740
+Use M two's two string method.
+
+86
+00:04:59.740 --> 00:05:03.590
+And we'll borrow the Gross Pay method
+again.
+
+87
+00:05:05.120 --> 00:05:11.120
+So what should happen for M one, Jane
+Smith, her pay rate should be 1,200.
+
+88
+00:05:11.120 --> 00:05:13.050
+That's her salary.
+
+89
+00:05:13.050 --> 00:05:16.290
+Then for Jim Brown because his salary is
+set
+
+90
+00:05:16.290 --> 00:05:19.920
+to false, we should see $800 for gross
+pay.
+
+91
+00:05:19.920 --> 00:05:22.220
+So let's save that.
+
+92
+00:05:23.530 --> 00:05:27.370
+Go back to our command prompt, clear the
+screen, and then run the code.
+
+93
+00:05:28.470 --> 00:05:30.034
+So we have another little typo someplace.
+
+94
+00:05:30.034 --> 00:05:30.534
+[BLANK_AUDIO].
+
+95
+00:05:34.500 --> 00:05:35.880
+Oh, it's salary desired.
+
+96
+00:05:35.880 --> 00:05:42.220
+Parameter and salaried is the field name,
+very simple mistake.
+
+97
+00:05:42.220 --> 00:05:42.750
+Save that.
+
+98
+00:05:44.120 --> 00:05:45.600
+Clear the screen.
+
+99
+00:05:45.600 --> 00:05:46.200
+Try it again.
+
+100
+00:05:48.040 --> 00:05:49.050
+Almost made it.
+
+101
+00:05:49.050 --> 00:05:49.550
+Let's
+
+102
+00:05:51.370 --> 00:05:54.040
+take a look at our pay method for
+managers.
+
+103
+00:05:54.040 --> 00:05:55.500
+That's where I thought the problem was.
+
+104
+00:05:55.500 --> 00:05:57.850
+Forgot to put self there.
+
+105
+00:05:57.850 --> 00:05:58.190
+Alright.
+
+106
+00:05:58.190 --> 00:05:58.903
+Let's try it again.
+
+107
+00:05:58.903 --> 00:05:59.403
+[BLANK_AUDIO].
+
+108
+00:06:03.250 --> 00:06:04.230
+Gross pay none.
+
+109
+00:06:04.230 --> 00:06:04.910
+Interesting.
+
+110
+00:06:04.910 --> 00:06:08.840
+So let's see what happened with gross pay
+none.
+
+111
+00:06:08.840 --> 00:06:13.120
+I left out the return, statement, or the
+return part of the return statement.
+
+112
+00:06:14.570 --> 00:06:17.110
+Another simple little mistake,but again
+I'll leave these in
+
+113
+00:06:17.110 --> 00:06:19.500
+because these are the kind of mistakes
+you'll make.
+
+114
+00:06:19.500 --> 00:06:20.670
+Try it one more time.
+
+115
+00:06:21.730 --> 00:06:26.119
+We'll leave it like it is, and there's our
+$800 gross pay for Jim Brown.
+
+116
+00:06:26.119 --> 00:06:26.619
+[BLANK_AUDIO].
+
+117
+00:06:30.210 --> 00:06:31.520
+So to summarize.
+
+118
+00:06:31.520 --> 00:06:36.730
+A derive class can inherit fields and
+methods from the base class,
+
+119
+00:06:36.730 --> 00:06:42.000
+as we see with how manager inherits name
+and pay rate, and
+
+120
+00:06:42.000 --> 00:06:48.080
+then we can add fields that we need, such
+as salaried, to the manager class.
+
+121
+00:06:48.080 --> 00:06:53.220
+Then we can also redefine, a method from
+the base class,
+
+122
+00:06:53.220 --> 00:06:57.540
+to specialize it for the derived class,
+which we did with pay.
+
+123
+00:06:57.540 --> 00:07:01.450
+So that wraps up this second lesson on
+inheritance, and now
+
+124
+00:07:01.450 --> 00:07:04.810
+we're ready to move to the first exercise
+for the chapter.
+

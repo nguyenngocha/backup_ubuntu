@@ -1,0 +1,152 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.072
+[MUSIC]
+
+2
+00:00:04.072 --> 00:00:08.420
+Within python, every single script that we
+create is going to be a module.
+
+3
+00:00:08.420 --> 00:00:11.809
+Which means it can be imported into any
+other file
+
+4
+00:00:11.809 --> 00:00:16.023
+[COUGH], and an obvious purpose for this
+would be, when I
+
+5
+00:00:16.023 --> 00:00:21.150
+mentioned earlier, with object orientated
+programming, when you're
+
+6
+00:00:21.150 --> 00:00:26.380
+extending something, you might want to
+have each one in a different file.
+
+7
+00:00:26.380 --> 00:00:28.900
+Each class in a different file, and that
+will allow you to do that.
+
+8
+00:00:30.250 --> 00:00:31.750
+The method I'm going to show you right now
+is
+
+9
+00:00:31.750 --> 00:00:34.830
+just going to, not really do anything as
+such, but
+
+10
+00:00:34.830 --> 00:00:39.120
+it will allow us, allow me to demonstrate
+to you
+
+11
+00:00:39.120 --> 00:00:43.110
+how a mojo can be imported from what
+you've created.
+
+12
+00:00:43.110 --> 00:00:47.920
+So, I got to files up here, one call
+mojo.py, and one call save .py.
+
+13
+00:00:47.920 --> 00:00:49.550
+In save, we are not going to create
+
+14
+00:00:49.550 --> 00:00:52.080
+a class, we are just gonna create a
+definition.
+
+15
+00:00:52.080 --> 00:00:57.540
+And this is just going to have a method
+called hello.
+
+16
+00:00:58.760 --> 00:01:03.030
+And then that's just going to return, a
+string hello.
+
+17
+00:01:03.030 --> 00:01:06.620
+So, it doesn't do anything of any
+importance, of any value,
+
+18
+00:01:06.620 --> 00:01:10.960
+but it allows me to demonstrate to you how
+to work this.
+
+19
+00:01:10.960 --> 00:01:13.680
+And then if you do input, say, and if I
+did a
+
+20
+00:01:13.680 --> 00:01:16.960
+print say dot, and you can see here that
+we get the list,
+
+21
+00:01:19.000 --> 00:01:21.950
+of all of the available items showing.
+
+22
+00:01:21.950 --> 00:01:27.440
+So if I do say.hello, and run that, you
+get hello outputted and that is
+
+23
+00:01:27.440 --> 00:01:33.500
+now importing the script say, into this
+file now.
+
+24
+00:01:33.500 --> 00:01:36.210
+So that is how a module can be created and
+used, and you
+
+25
+00:01:36.210 --> 00:01:40.110
+can have as many methods, you can have as
+many variables as you want.
+
+26
+00:01:40.110 --> 00:01:43.868
+So I can do x equal to ten, and if I
+choose this
+
+27
+00:01:43.868 --> 00:01:48.890
+over here, to say .x, and run that, we get
+a value ten.
+
+28
+00:01:48.890 --> 00:01:55.530
+So, all of the attributes in which we have
+accessible within our python script.
+
+29
+00:01:55.530 --> 00:01:59.000
+And we can access once we've imported that
+script.
+
+30
+00:01:59.000 --> 00:02:01.876
+So, thank you for watching.
+
+31
+00:02:01.876 --> 00:02:07.209
+[MUSIC]
+

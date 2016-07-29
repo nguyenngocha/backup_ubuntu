@@ -1,0 +1,413 @@
+WEBVTT
+
+1
+00:00:01.190 --> 00:00:05.350
+In this lesson I'm going to show you how
+to create a function definition.
+
+2
+00:00:05.350 --> 00:00:08.530
+Actually we'll create two function
+definitions, a very simple
+
+3
+00:00:08.530 --> 00:00:10.790
+one and then one that's a bit more
+complex.
+
+4
+00:00:10.790 --> 00:00:13.210
+So, let's start a new Python program.
+
+5
+00:00:13.210 --> 00:00:18.540
+We're gonna call this functions1.py.
+
+6
+00:00:18.540 --> 00:00:24.650
+To create a function in Python, you start
+with the keyword def for define.
+
+7
+00:00:24.650 --> 00:00:26.580
+That's followed by the name of the
+function.
+
+8
+00:00:26.580 --> 00:00:29.230
+Every function must have a name, except
+for
+
+9
+00:00:29.230 --> 00:00:33.200
+a special class of functions called
+anonymous functions.
+
+10
+00:00:33.200 --> 00:00:36.790
+This first function we are going to create
+is used to square a number.
+
+11
+00:00:36.790 --> 00:00:39.100
+So we're going to call it square.
+
+12
+00:00:39.100 --> 00:00:42.070
+Following the function name is an optional
+list of
+
+13
+00:00:42.070 --> 00:00:47.110
+data called parameters that will be
+supplied to the function.
+
+14
+00:00:47.110 --> 00:00:49.200
+They're optional because you can't have
+functions that
+
+15
+00:00:49.200 --> 00:00:52.390
+don't require any data being passed into
+them.
+
+16
+00:00:52.390 --> 00:00:55.250
+But because we're going to square numbers
+in this
+
+17
+00:00:55.250 --> 00:00:58.210
+function, then we do want a number to
+square.
+
+18
+00:00:58.210 --> 00:01:00.200
+So that will be our parameter.
+
+19
+00:01:00.200 --> 00:01:02.810
+A single piece of data number.
+
+20
+00:01:02.810 --> 00:01:06.010
+After the list of parameters, then we have
+a
+
+21
+00:01:06.010 --> 00:01:10.110
+colon to signify that we're moving into
+the function body.
+
+22
+00:01:10.110 --> 00:01:13.130
+So we indent into the function body.
+
+23
+00:01:13.130 --> 00:01:14.770
+The square function is an example
+
+24
+00:01:14.770 --> 00:01:18.230
+of a function called a value-returning
+function.
+
+25
+00:01:18.230 --> 00:01:19.960
+We call it value returning because we're
+
+26
+00:01:19.960 --> 00:01:23.720
+passing a number into the function
+definition.
+
+27
+00:01:23.720 --> 00:01:28.900
+And the function definition returns the
+value of the number squared.
+
+28
+00:01:28.900 --> 00:01:32.450
+So that's why square is called a value
+returning function.
+
+29
+00:01:32.450 --> 00:01:38.050
+And all value returning functions have to
+have what is called a return statement.
+
+30
+00:01:38.050 --> 00:01:41.580
+In this case, that will be the only
+statement in our function body.
+
+31
+00:01:41.580 --> 00:01:46.400
+And all we do to square a number is
+multiply it times itself.
+
+32
+00:01:46.400 --> 00:01:48.520
+So that's what we're going to return.
+
+33
+00:01:48.520 --> 00:01:53.220
+We're going to return the parameter number
+times itself.
+
+34
+00:01:53.220 --> 00:01:57.740
+And that's the end of our function body
+and the end of our function definition.
+
+35
+00:01:57.740 --> 00:02:00.970
+So, that was a very simple function to
+create.
+
+36
+00:02:00.970 --> 00:02:03.980
+Now, let's look at a little more complex
+example.
+
+37
+00:02:03.980 --> 00:02:05.430
+This time we're going to write a function
+
+38
+00:02:05.430 --> 00:02:08.420
+that counts the number of vowels in a
+string.
+
+39
+00:02:08.420 --> 00:02:11.900
+So, the name of our function is going to
+be numVowels.
+
+40
+00:02:11.900 --> 00:02:17.030
+I like to make my function names somewhat
+pneumonic, but not too long.
+
+41
+00:02:17.030 --> 00:02:19.530
+And then the parameter with the piece of
+data
+
+42
+00:02:19.530 --> 00:02:21.562
+that we're going to work with will be any
+string.
+
+43
+00:02:21.562 --> 00:02:27.340
+However long of a string of characters we
+want to use to count Vowels.
+
+44
+00:02:27.340 --> 00:02:32.050
+So we follow that by the colon to signify
+the beginning of the function body.
+
+45
+00:02:32.050 --> 00:02:33.210
+Now this time, we have to do quite a
+
+46
+00:02:33.210 --> 00:02:36.230
+bit more coding than we did for the square
+example.
+
+47
+00:02:36.230 --> 00:02:38.540
+First thing we want to do, is to make sure
+
+48
+00:02:38.540 --> 00:02:41.450
+that all of our characters are in the same
+case.
+
+49
+00:02:41.450 --> 00:02:44.430
+So we're going to lower case the string
+first.
+
+50
+00:02:44.430 --> 00:02:47.890
+So the first thing we're going to do is
+call the built
+
+51
+00:02:47.890 --> 00:02:52.320
+in function lower, to make sure all the
+characters are lower case.
+
+52
+00:02:52.320 --> 00:02:56.470
+The next thing we need to do is create a
+variable to store the count of vowels.
+
+53
+00:02:56.470 --> 00:03:01.190
+So we have a variable count and we'll set
+its initial value to zero.
+
+54
+00:03:01.190 --> 00:03:04.190
+Then we wanna loop to loop through the
+string.
+
+55
+00:03:04.190 --> 00:03:05.360
+So that we can count vowel.
+
+56
+00:03:05.360 --> 00:03:12.070
+So we'll have a for loop and we'll say for
+i in range the length of the string.
+
+57
+00:03:12.070 --> 00:03:16.570
+And inside the for loop, we're going to
+look at each letter of the string.
+
+58
+00:03:16.570 --> 00:03:21.300
+So let's string sub i, and compare it to
+one of the vowels.
+
+59
+00:03:21.300 --> 00:03:27.660
+So if string sub i is a, or string sub i
+is equal to e.
+
+60
+00:03:27.660 --> 00:03:29.880
+Or let's move down to the next line.
+
+61
+00:03:29.880 --> 00:03:32.072
+And to do that, we'll need a back slash
+right here.
+
+62
+00:03:32.072 --> 00:03:38.445
+Or if string sub i is i or string sub i
+equals o.
+
+63
+00:03:38.445 --> 00:03:47.512
+Or, I'm gonna backslash because we're
+dropping down to the next line.
+
+64
+00:03:47.512 --> 00:03:51.060
+String sub i is equal to u.
+
+65
+00:03:52.270 --> 00:03:56.420
+If any of those is true, then we want to
+increment count by one.
+
+66
+00:03:57.460 --> 00:03:58.610
+And here I'm going to use the
+
+67
+00:03:58.610 --> 00:04:03.320
+more efficient composite assignment
+operator, plus equal.
+
+68
+00:04:03.320 --> 00:04:09.190
+Which is just shortcut for saying count is
+equal to count plus one.
+
+69
+00:04:09.190 --> 00:04:12.640
+I've avoided using composite assignment
+operators up til now.
+
+70
+00:04:12.640 --> 00:04:14.400
+But now you should be comfortable enough
+with your
+
+71
+00:04:14.400 --> 00:04:17.700
+coding that we can use little shortcuts
+like that.
+
+72
+00:04:17.700 --> 00:04:20.440
+So, we're simply gonna loop through the
+string.
+
+73
+00:04:20.440 --> 00:04:23.810
+And check to see if the letter that we're
+on is a vowel.
+
+74
+00:04:23.810 --> 00:04:28.330
+If it is, then we're going to increment
+our count by one.
+
+75
+00:04:28.330 --> 00:04:32.300
+And that's all we have to to do until
+we're ready to complete the functions.
+
+76
+00:04:32.300 --> 00:04:34.670
+So that will go outside the for loop.
+
+77
+00:04:34.670 --> 00:04:38.590
+So we go back to the level of the for loop
+where we began the for loop.
+
+78
+00:04:38.590 --> 00:04:40.430
+And we type return count.
+
+79
+00:04:40.430 --> 00:04:45.980
+So the main work of the function occurs
+right in this highlighted code.
+
+80
+00:04:45.980 --> 00:04:51.010
+And once we've looped through the complete
+string, and we've counted all the vowels.
+
+81
+00:04:51.010 --> 00:04:52.870
+Then we can return that count.
+
+82
+00:04:52.870 --> 00:04:55.950
+That will be the return value of the
+function.
+
+83
+00:04:55.950 --> 00:04:59.860
+So with that we're ready to end this
+lesson on function definitions.
+
+84
+00:04:59.860 --> 00:05:01.580
+And let's move to the next lesson where
+we're
+
+85
+00:05:01.580 --> 00:05:05.380
+going to talk about how to call the
+function.
+
+86
+00:05:05.380 --> 00:05:08.100
+To have it do the computation that we've
+defined for it.
+

@@ -1,0 +1,260 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:03.260
+For this first exercise of the chapter,
+we're going to
+
+2
+00:00:03.260 --> 00:00:06.370
+write a program to play a simple little
+guessing game.
+
+3
+00:00:06.370 --> 00:00:09.160
+So let me make sure I don't have my
+previous version up here.
+
+4
+00:00:09.160 --> 00:00:10.070
+Okay, so it's gone.
+
+5
+00:00:10.070 --> 00:00:13.072
+So we're going to call our program
+guess.py.
+
+6
+00:00:13.072 --> 00:00:14.530
+So let's open it up.
+
+7
+00:00:14.530 --> 00:00:16.720
+So the first thing we're gonna do is store
+
+8
+00:00:16.720 --> 00:00:19.820
+the answer to the game in a variable
+answer.
+
+9
+00:00:19.820 --> 00:00:20.880
+And the answer is Watson.
+
+10
+00:00:20.880 --> 00:00:23.500
+And in a moment you'll find out what the
+question is.
+
+11
+00:00:24.530 --> 00:00:26.120
+First we're gonna tell the user that we're
+
+12
+00:00:26.120 --> 00:00:28.430
+gonna play a guessing and they get three
+tries.
+
+13
+00:00:28.430 --> 00:00:35.380
+Then we're gonna say what is the name of
+the computer that played on Jeopardy.
+
+14
+00:00:35.380 --> 00:00:39.280
+So the first thing we do is get the user's
+response.
+
+15
+00:00:39.280 --> 00:00:41.810
+We'll store it in a variable called
+Response.
+
+16
+00:00:41.810 --> 00:00:43.020
+Using raw input.
+
+17
+00:00:43.020 --> 00:00:44.900
+Now here's where we test.
+
+18
+00:00:44.900 --> 00:00:50.098
+We say, if response, equals answer, print,
+that is right.
+
+19
+00:00:50.098 --> 00:00:55.360
+Else, print, sorry guess again.
+
+20
+00:00:55.360 --> 00:01:01.350
+Then we say, response equals wrong input,
+then we test again.
+
+21
+00:01:01.350 --> 00:01:06.120
+So here we're nesting an if statement
+inside the else, or actually in the if.
+
+22
+00:01:06.120 --> 00:01:07.960
+These are called nested if statements.
+
+23
+00:01:09.030 --> 00:01:12.756
+If response is equal to answer, then we
+tell the user that they're right.
+
+24
+00:01:12.756 --> 00:01:19.430
+Otherwise, else print, sorry, one more
+guess.
+
+25
+00:01:20.540 --> 00:01:21.850
+Again.
+
+26
+00:01:21.850 --> 00:01:23.500
+Responds equals raw input.
+
+27
+00:01:25.080 --> 00:01:27.320
+And if there's font's is equal to the
+answer.
+
+28
+00:01:28.820 --> 00:01:30.220
+Print.
+
+29
+00:01:30.220 --> 00:01:30.992
+That is right.
+
+30
+00:01:30.992 --> 00:01:39.132
+[UNKNOWN]
+print, sorry no more guess'.
+
+31
+00:01:39.132 --> 00:01:42.800
+The answer is.
+
+32
+00:01:42.800 --> 00:01:49.000
+And we'll just use the variable value
+answer plus a period.
+
+33
+00:01:49.000 --> 00:01:52.610
+Let's test this and see how well it works.
+
+34
+00:01:52.610 --> 00:01:56.140
+So we'll do an Exit>Save, clear the
+screen.
+
+35
+00:01:56.140 --> 00:01:57.726
+And then run the script.
+
+36
+00:01:57.726 --> 00:02:02.550
+Let's say, Deep Blue.
+
+37
+00:02:02.550 --> 00:02:07.100
+It's not Deep Blue okay it's Bob oh that's
+right
+
+38
+00:02:07.100 --> 00:02:10.100
+it's Watson so on the 3rd try I got it
+right
+
+39
+00:02:11.290 --> 00:02:14.060
+play again this time we'll get it on the
+first try
+
+40
+00:02:14.060 --> 00:02:21.010
+let's play it again we'll say Eniac then
+we'll say Watson.
+
+41
+00:02:22.520 --> 00:02:24.600
+One more time and this time let's not get
+it right at all.
+
+42
+00:02:24.600 --> 00:02:25.780
+Eniac.
+
+43
+00:02:25.780 --> 00:02:26.280
+Sorry.
+
+44
+00:02:27.300 --> 00:02:33.060
+Blue, Joe, Sorry no more guesses the
+answer is Watson.
+
+45
+00:02:35.670 --> 00:02:37.940
+So here we've used the is statement.
+
+46
+00:02:37.940 --> 00:02:42.510
+the ifel statement in a nested manner to
+allow the user 3 guesses.
+
+47
+00:02:42.510 --> 00:02:44.330
+a better way to write this program would
+have
+
+48
+00:02:44.330 --> 00:02:48.170
+been to use a loop that looped through
+three times.
+
+49
+00:02:48.170 --> 00:02:49.870
+But we haven't learned how to write loops
+yet.
+
+50
+00:02:49.870 --> 00:02:51.670
+We're gonna learn how to do that in the
+next chapter.
+
+51
+00:02:51.670 --> 00:02:55.350
+So this was the best way I could think of
+to
+
+52
+00:02:55.350 --> 00:03:00.080
+write this program and demonstrate how to
+use nested if else statements.
+
+53
+00:03:00.080 --> 00:03:03.790
+With that we're finished this exercise and
+we're ready to move on to the next
+
+54
+00:03:03.790 --> 00:03:08.830
+and last exercise for this chapter where
+we demonstrate how to work with the if.
+
+55
+00:03:08.830 --> 00:03:09.930
+L if statement.
+
+56
+00:03:09.930 --> 00:03:13.129
+[BLANK_AUDIO]
+

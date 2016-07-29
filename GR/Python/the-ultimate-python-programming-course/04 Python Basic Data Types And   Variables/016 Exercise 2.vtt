@@ -1,0 +1,277 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:06.530
+In the last exercise we saw how to use a
+list to store multipart data.
+
+2
+00:00:06.530 --> 00:00:09.850
+In this exercise we're going to look at
+that grade data
+
+3
+00:00:09.850 --> 00:00:13.420
+again and this time use a dictionary to
+store the data.
+
+4
+00:00:13.420 --> 00:00:17.500
+Using a dictionary is a much more natural
+way of scoring this particular type
+
+5
+00:00:17.500 --> 00:00:22.540
+of data, because a name and a grade are
+related as a key value pair.
+
+6
+00:00:22.540 --> 00:00:25.200
+So in other words if I want to retrieve a
+grade, I
+
+7
+00:00:25.200 --> 00:00:29.540
+will ask for the student's name, and that
+will give me the grade.
+
+8
+00:00:29.540 --> 00:00:33.500
+So, using the dictionary is a more
+efficient and more natural way
+
+9
+00:00:33.500 --> 00:00:37.130
+to work with this data, so let's see how
+to do that.
+
+10
+00:00:37.130 --> 00:00:40.350
+So the first thing we're gonna do is open
+up the interactive shell.
+
+11
+00:00:40.350 --> 00:00:44.790
+And this time we're going to use a
+dictionary so we'll start off with an open
+
+12
+00:00:44.790 --> 00:00:50.560
+curly brace and we have a name as a string
+followed by a colon
+
+13
+00:00:50.560 --> 00:00:57.220
+and then a grade followed by another name,
+a colon and a grade.
+
+14
+00:00:57.220 --> 00:00:58.830
+And so on until we get through all the
+
+15
+00:00:58.830 --> 00:01:01.540
+names so I'll just go ahead and type those
+in.
+
+16
+00:01:01.540 --> 00:01:07.280
+I'm putting my space after the grade but
+spacing doesn't really matter there.
+
+17
+00:01:07.280 --> 00:01:10.400
+The most important thing is to have the
+colon to separate the key
+
+18
+00:01:10.400 --> 00:01:13.800
+from the value and to have a comma between
+each key value pair.
+
+19
+00:01:14.880 --> 00:01:16.990
+This'll be our last grade.
+
+20
+00:01:16.990 --> 00:01:19.230
+So we close with a closing curly brace.
+
+21
+00:01:19.230 --> 00:01:26.110
+So now if I just type the dictionary name,
+that will return the data.
+
+22
+00:01:26.110 --> 00:01:32.110
+And notice that the data returned is not
+in the same order as the data entered.
+
+23
+00:01:32.110 --> 00:01:35.350
+That's an important aspect of
+dictionaries.
+
+24
+00:01:35.350 --> 00:01:38.180
+We don't store data in dictionary's
+because we're interested
+
+25
+00:01:38.180 --> 00:01:40.940
+in the order that the data is being stored
+
+26
+00:01:40.940 --> 00:01:42.610
+unlike say if we were trying to store an
+
+27
+00:01:42.610 --> 00:01:46.350
+alphabetic list then we would be
+interested in the order.
+
+28
+00:01:46.350 --> 00:01:51.520
+But here we're only interested in a list
+of keys and a list of values.
+
+29
+00:01:51.520 --> 00:01:55.900
+So the fact that Clayton appears first in
+the list when we retrieve it
+
+30
+00:01:55.900 --> 00:01:59.895
+even though it was entered 5th in the list
+really doesn't make any difference.
+
+31
+00:01:59.895 --> 00:02:02.290
+Cuz all we're interested in doing is being
+
+32
+00:02:02.290 --> 00:02:06.150
+able to enter Clayton's name and retrieve
+his grade.
+
+33
+00:02:06.150 --> 00:02:07.810
+So we can do that for a couple of more
+names
+
+34
+00:02:07.810 --> 00:02:12.800
+just to verify that our system works, and
+there it is.
+
+35
+00:02:12.800 --> 00:02:15.060
+Also remember that if we're interested in
+what the
+
+36
+00:02:15.060 --> 00:02:18.110
+keys are we can use the keys function to
+
+37
+00:02:18.110 --> 00:02:21.770
+return a list of keys and likewise we can
+
+38
+00:02:21.770 --> 00:02:26.240
+use the values function to return a list
+of values.
+
+39
+00:02:26.240 --> 00:02:28.620
+Having a function that returns the values
+as a list
+
+40
+00:02:28.620 --> 00:02:31.490
+would be useful if we were trying to
+compute the average
+
+41
+00:02:31.490 --> 00:02:34.730
+because it would be really easy to compute
+the average from
+
+42
+00:02:34.730 --> 00:02:38.110
+this list of values because we could
+simply sum the list.
+
+43
+00:02:38.110 --> 00:02:41.620
+And then divide by the number of grades to
+get the average,
+
+44
+00:02:41.620 --> 00:02:45.510
+and that would be a lot easier than
+working through the dictionary itself.
+
+45
+00:02:45.510 --> 00:02:48.910
+So that concludes this exercise and what I
+wanted to demonstrate
+
+46
+00:02:48.910 --> 00:02:53.250
+was first of all, another example of how
+to use the dictionary.
+
+47
+00:02:53.250 --> 00:02:56.250
+But also to point out that, a lot of times
+the data
+
+48
+00:02:56.250 --> 00:03:00.060
+will suggest to you the type of data
+structure that you should use.
+
+49
+00:03:00.060 --> 00:03:02.190
+And this type of data is certainly
+
+50
+00:03:02.190 --> 00:03:05.610
+more structured towards a dictionary than
+a list.
+
+51
+00:03:05.610 --> 00:03:07.980
+We had to go through a few contortions to
+get
+
+52
+00:03:07.980 --> 00:03:10.970
+the data out easily in a list, but with
+the dictionary
+
+53
+00:03:10.970 --> 00:03:13.420
+it's just a matter of typing in a key as
+
+54
+00:03:13.420 --> 00:03:16.500
+an index to retrieve a grade, and that was
+very simple.
+
+55
+00:03:16.500 --> 00:03:20.830
+So, with that, we're finished with this
+chapter on data types and data structures.
+
+56
+00:03:20.830 --> 00:03:22.760
+And we're ready to move to the next
+chapter where
+
+57
+00:03:22.760 --> 00:03:26.380
+we're going to talk about input and output
+in Python.
+

@@ -1,0 +1,381 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:02.660
+In this lesson we're gonna look at how
+
+2
+00:00:02.660 --> 00:00:07.060
+to creat explicit iterators for both lists
+and files.
+
+3
+00:00:07.060 --> 00:00:08.470
+It's very simple to do.
+
+4
+00:00:08.470 --> 00:00:13.444
+Let's start a new program, we're gonna
+call it internext.py,
+
+5
+00:00:13.444 --> 00:00:17.560
+since we're talking about a iterfunction
+and a next function.
+
+6
+00:00:20.260 --> 00:00:24.140
+First thing let's do is let's create a
+small list, because we don't
+
+7
+00:00:24.140 --> 00:00:28.240
+wanna make it too long, since we're going
+to manually iterate through it.
+
+8
+00:00:28.240 --> 00:00:32.690
+We'll set up a list containing three
+numbers, one, two, and three.
+
+9
+00:00:32.690 --> 00:00:35.900
+To create an iterator an explicit
+iterator.
+
+10
+00:00:35.900 --> 00:00:38.910
+We'll call it that to distinguish between
+the implicit or
+
+11
+00:00:38.910 --> 00:00:42.820
+internal iterator that is also created
+with four loops, for example.
+
+12
+00:00:42.820 --> 00:00:46.370
+We simply create a variable and we call
+the function
+
+13
+00:00:46.370 --> 00:00:50.450
+iter, with a sequence of data, such as a
+list.
+
+14
+00:00:50.450 --> 00:00:54.080
+Once we've done that, then our variable IT
+now
+
+15
+00:00:54.080 --> 00:00:59.490
+becomes, an iterator tied to this sequence
+of data.
+
+16
+00:00:59.490 --> 00:01:03.790
+If we wanna display the first element, we
+can do it one of two ways.
+
+17
+00:01:05.240 --> 00:01:07.930
+The first way is to use an object that's
+part of
+
+18
+00:01:07.930 --> 00:01:11.980
+the iterator object, and it's called next,
+but notice that it has
+
+19
+00:01:11.980 --> 00:01:16.230
+two underscores before the word next and
+after the word next, and
+
+20
+00:01:16.230 --> 00:01:21.230
+yet those last two are before the
+parenthesis, signifying a function call.
+
+21
+00:01:21.230 --> 00:01:22.620
+So, that's kind of awkward.
+
+22
+00:01:22.620 --> 00:01:23.680
+But, let's see what it does.
+
+23
+00:01:23.680 --> 00:01:25.200
+So, we're gonna save it.
+
+24
+00:01:25.200 --> 00:01:30.650
+Bring up our command window, run our
+program.
+
+25
+00:01:30.650 --> 00:01:32.830
+Notice it takes us to the first element.
+
+26
+00:01:32.830 --> 00:01:34.110
+That's what next does.
+
+27
+00:01:34.110 --> 00:01:36.106
+And then, of course, the print command
+will
+
+28
+00:01:36.106 --> 00:01:39.442
+display it, or the print function will
+display it.
+
+29
+00:01:40.500 --> 00:01:44.010
+That's one way to move the iterator
+through the sequence, but an easier way to
+
+30
+00:01:44.010 --> 00:01:49.850
+do it is to use the external function
+next, and call it with the iterator.
+
+31
+00:01:49.850 --> 00:01:54.650
+So, if we do this, we'll get the same
+result in a much easier to call form.
+
+32
+00:01:56.530 --> 00:01:57.670
+You see we still get one.
+
+33
+00:02:00.220 --> 00:02:03.680
+So once we've started through, we can
+simply move through
+
+34
+00:02:04.830 --> 00:02:08.640
+the rest of the sequence just by calling
+the next function.
+
+35
+00:02:08.640 --> 00:02:09.870
+So there's the first element.
+
+36
+00:02:09.870 --> 00:02:11.170
+There's the second element.
+
+37
+00:02:11.170 --> 00:02:12.150
+There's the third element.
+
+38
+00:02:15.400 --> 00:02:16.500
+Lets clear the screen.
+
+39
+00:02:18.630 --> 00:02:19.770
+And so there are our three elements.
+
+40
+00:02:22.160 --> 00:02:25.510
+What's interesting is what happens when we
+try to go one more.
+
+41
+00:02:26.530 --> 00:02:29.190
+When we try to go beyond the end, the
+
+42
+00:02:29.190 --> 00:02:35.230
+explicit iterator crashes and we get an
+exception saying that
+
+43
+00:02:35.230 --> 00:02:38.720
+we've reached the stop iteration point,
+we've reached the end
+
+44
+00:02:38.720 --> 00:02:42.340
+of the sequence and a stop iteration
+message is returned.
+
+45
+00:02:43.970 --> 00:02:49.370
+When we use a implicit method such as a
+for loop, the for loop is
+
+46
+00:02:49.370 --> 00:02:54.750
+programmed to notice stop before the stop
+iteration exception is thrown.
+
+47
+00:02:54.750 --> 00:02:58.300
+And we're gonna talk more in the course,
+about exception handling.
+
+48
+00:02:58.300 --> 00:03:02.540
+And we'll cover how to handle iterator
+exceptions in that chapter.
+
+49
+00:03:02.540 --> 00:03:08.280
+But for now, just understand that
+internally that exception is dealt with,
+
+50
+00:03:08.280 --> 00:03:11.600
+so we don't see it when we run a for loop
+for example.
+
+51
+00:03:11.600 --> 00:03:14.400
+The iterator that's implicit in the for
+loop, knows
+
+52
+00:03:14.400 --> 00:03:18.760
+to stop before the stop iteration
+exception is thrown.
+
+53
+00:03:18.760 --> 00:03:22.570
+Files are handled the same way that lists
+are handled.
+
+54
+00:03:22.570 --> 00:03:25.890
+Except, a file object is an iterator.
+
+55
+00:03:25.890 --> 00:03:27.260
+So, let me show you what I mean by that.
+
+56
+00:03:28.630 --> 00:03:30.980
+We'll create a file object, we'll call it
+file IT.
+
+57
+00:03:30.980 --> 00:03:37.230
+Then we'll call next on the file iterator,
+and
+
+58
+00:03:37.230 --> 00:03:42.990
+it should display the first element of the
+file, which is the Great 100, I believe.
+
+59
+00:03:42.990 --> 00:03:44.160
+Let's clear the screen, here,
+
+60
+00:03:46.920 --> 00:03:48.160
+just like so.
+
+61
+00:03:48.160 --> 00:03:50.460
+Notice that I also added a new line,
+there.
+
+62
+00:03:50.460 --> 00:03:52.420
+We might want to get rid of that in
+
+63
+00:03:52.420 --> 00:03:57.720
+subsequent prints, by setting end equal
+entistring, like so.
+
+64
+00:03:58.770 --> 00:04:02.070
+But notice I didn't have to use the
+iterfunction with
+
+65
+00:04:02.070 --> 00:04:07.230
+the file object or anything, because a
+file object automatically.
+
+66
+00:04:07.230 --> 00:04:11.200
+Is setup as an interator, so we can
+iterate through
+
+67
+00:04:11.200 --> 00:04:14.755
+a file, exactly like we iterate through a
+list for
+
+68
+00:04:14.755 --> 00:04:18.730
+example; using next and I'll stop there;
+because the functionality
+
+69
+00:04:18.730 --> 00:04:21.780
+is exactly the same for files as it is for
+lists.
+
+70
+00:04:22.920 --> 00:04:26.480
+So to summarize, when we want to create an
+explicit iterator,
+
+71
+00:04:26.480 --> 00:04:30.780
+we first have to have some sequence of
+data to iterate over.
+
+72
+00:04:30.780 --> 00:04:36.930
+Then we call the inner function if we're
+working with a list for example and then
+
+73
+00:04:36.930 --> 00:04:39.460
+to access an element we simply call the
+
+74
+00:04:39.460 --> 00:04:43.170
+next function with the iterator object as
+our argument.
+
+75
+00:04:43.170 --> 00:04:46.260
+The only difference for file iterators, is
+we don't have
+
+76
+00:04:46.260 --> 00:04:49.820
+to call the iterator function because when
+we open a file.
+
+77
+00:04:49.820 --> 00:04:54.830
+That file object is automatically set up
+as an iterator.
+
+78
+00:04:54.830 --> 00:04:56.150
+So with that, we're ready to move on to
+the
+
+79
+00:04:56.150 --> 00:04:59.990
+next lesson, where we're going to discuss
+iterators and dictionaries.
+
+80
+00:04:59.990 --> 00:05:03.269
+[BLANK_AUDIO]
+

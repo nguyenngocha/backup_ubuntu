@@ -1,0 +1,429 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.077
+[MUSIC]
+
+2
+00:00:05.077 --> 00:00:07.961
+So, building on what we saw in the last
+video, in which
+
+3
+00:00:07.961 --> 00:00:11.183
+we create a table, we're going to build
+back on that again.
+
+4
+00:00:11.183 --> 00:00:13.016
+So, if we just create a table again.
+
+5
+00:00:13.016 --> 00:00:15.600
+So, execute.
+
+6
+00:00:15.600 --> 00:00:20.500
+And it's going to be create so create
+database.
+
+7
+00:00:20.500 --> 00:00:22.020
+And that is going to be called people.
+
+8
+00:00:23.050 --> 00:00:24.560
+And then we're going to create a table as
+well.
+
+9
+00:00:24.560 --> 00:00:30.690
+[SOUND] And that is going to be called oh,
+sorry,
+
+10
+00:00:30.690 --> 00:00:35.763
+no we don't need to create a database.
+
+11
+00:00:35.763 --> 00:00:37.685
+The database is created for us already.
+
+12
+00:00:37.685 --> 00:00:41.374
+It's going to be just create table, and
+the table's going to be called person.
+
+13
+00:00:41.374 --> 00:00:46.372
+And then from there, after we create that
+table what we need to
+
+14
+00:00:46.372 --> 00:00:51.477
+do now is, when we run that, we'll receive
+that table being made.
+
+15
+00:00:51.477 --> 00:00:54.958
+[BLANK_AUDIO]
+
+16
+00:00:54.958 --> 00:01:00.567
+And, of course, I forgot to put in the
+column name, so first name, which is text.
+
+17
+00:01:00.567 --> 00:01:06.410
+Second name, it's going to be a text field
+again.
+
+18
+00:01:06.410 --> 00:01:08.700
+And then the age, which is an integer.
+
+19
+00:01:09.700 --> 00:01:12.480
+And now we will run that, there we go.
+
+20
+00:01:12.480 --> 00:01:17.310
+And now what we need to do is we're going
+to insert some data
+
+21
+00:01:17.310 --> 00:01:22.260
+into that, so we're going to do Insert
+Into, and it's called Person, and we
+
+22
+00:01:23.330 --> 00:01:28.220
+going to insert the first name, second
+name,
+
+23
+00:01:28.220 --> 00:01:32.690
+and age, and the values are going to be
+Alex
+
+24
+00:01:37.250 --> 00:01:41.360
+and then Bowers, and then just 17.
+
+25
+00:01:41.360 --> 00:01:44.900
+And when we run that,
+
+26
+00:01:49.440 --> 00:01:50.550
+and refresh here.
+
+27
+00:01:50.550 --> 00:01:54.330
+[SOUND] And if we open up that database
+[SOUND]
+
+28
+00:01:54.330 --> 00:01:57.895
+You will see, that we now have got the.
+
+29
+00:01:57.895 --> 00:01:59.574
+Oh, sorry, I've got one line.
+
+30
+00:01:59.574 --> 00:02:03.711
+[BLANK_AUDIO]
+
+31
+00:02:03.711 --> 00:02:06.254
+Something that we always, always must do,
+once we
+
+32
+00:02:06.254 --> 00:02:07.786
+[BLANK_AUDIO]
+
+33
+00:02:07.786 --> 00:02:08.945
+Create.
+
+34
+00:02:08.945 --> 00:02:15.670
+Insert, Update, Delete, or Create, is we
+have to commit it, which is what saves it.
+
+35
+00:02:15.670 --> 00:02:16.650
+And so what we do here,
+
+36
+00:02:18.670 --> 00:02:20.710
+is I'm just going to refresh,
+
+37
+00:02:22.900 --> 00:02:25.040
+and you can see here, now we have Alex
+Bowers.
+
+38
+00:02:25.040 --> 00:02:28.630
+And now you won't actually see the number
+inserted here, and the reason for
+
+39
+00:02:28.630 --> 00:02:32.440
+that is simply because you're not meant to
+actually view the database in this manner.
+
+40
+00:02:32.440 --> 00:02:35.426
+And, so, it is still there, is just not
+view able to us.
+
+41
+00:02:35.426 --> 00:02:40.830
+So now that we've committed it, if we kept
+doing this again, and again, and again,
+
+42
+00:02:40.830 --> 00:02:48.216
+[BLANK_AUDIO]
+
+43
+00:02:48.216 --> 00:02:50.869
+And there we go, that's all been run, and
+
+44
+00:02:50.869 --> 00:02:53.911
+we refresh and then open this page back up
+again.
+
+45
+00:02:53.911 --> 00:02:57.350
+You'll see that we got it save multiple
+times.
+
+46
+00:02:57.350 --> 00:03:01.450
+So whenever we commit, this is actually
+saving the data to the
+
+47
+00:03:01.450 --> 00:03:05.920
+database, or doing whatever action it is
+we're asking it to do.
+
+48
+00:03:05.920 --> 00:03:09.580
+So if we were to now update where it says
+
+49
+00:03:09.580 --> 00:03:12.260
+Alex, where Alex, where the last name is
+Alex, and
+
+50
+00:03:12.260 --> 00:03:14.660
+I was to change the first name to
+Alexander for
+
+51
+00:03:14.660 --> 00:03:21.750
+example, then we'd do db.execute, and it's
+going to be Update.
+
+52
+00:03:21.750 --> 00:03:25.650
+And the table name, which is person, and,
+we're
+
+53
+00:03:25.650 --> 00:03:28.930
+going to set and then it's the column
+name.
+
+54
+00:03:28.930 --> 00:03:34.806
+So the column name which we are using is,
+I'm going to set the first name
+
+55
+00:03:34.806 --> 00:03:41.410
+equal to Alexander, and then we're going
+to do something called a where.
+
+56
+00:03:41.410 --> 00:03:47.450
+Now a where is a way in which, and MySQL,
+SQL lite and any of the
+
+57
+00:03:47.450 --> 00:03:52.910
+form of database system, will allow you to
+choose what data you're selecting based
+
+58
+00:03:52.910 --> 00:03:59.280
+on a query, and the query in this part is
+the where so, was gonna be where
+
+59
+00:03:59.280 --> 00:04:03.830
+second name is equal to Bowers.
+
+60
+00:04:05.200 --> 00:04:07.270
+And now if I was to run this
+
+61
+00:04:10.140 --> 00:04:12.370
+and then refresh and view the database
+again,
+
+62
+00:04:14.790 --> 00:04:16.260
+you will see, and
+
+63
+00:04:20.050 --> 00:04:24.870
+again I forgot to commit, db.commit.
+
+64
+00:04:24.870 --> 00:04:29.300
+If we run that now, and refresh, you'll
+see that
+
+65
+00:04:29.300 --> 00:04:33.739
+it is now, okay not too sure what happened
+there.
+
+66
+00:04:33.739 --> 00:04:43.739
+[BLANK_AUDIO]
+
+67
+00:04:46.743 --> 00:04:49.463
+Sorry about that, the clip sort of crashed
+on me, but
+
+68
+00:04:49.463 --> 00:04:52.183
+as you can see here, although there is
+lots of data all
+
+69
+00:04:52.183 --> 00:04:55.689
+added which you can't actually understand
+here, you can see we've
+
+70
+00:04:55.689 --> 00:04:59.395
+got Alexander added there, and so it has
+actually updated the records.
+
+71
+00:04:59.395 --> 00:05:01.555
+So, like I said, I don't recommend about
+
+72
+00:05:01.555 --> 00:05:03.896
+you trying view the database and text
+format.
+
+73
+00:05:03.896 --> 00:05:08.448
+Because it's not designed to be visible
+that way, but if we look at
+
+74
+00:05:08.448 --> 00:05:13.670
+it now, you can see that it's 8,192 bytes
+which is very, very small.
+
+75
+00:05:13.670 --> 00:05:17.180
+And if you'd save all this data in a way
+in which
+
+76
+00:05:17.180 --> 00:05:22.190
+it's going to be readable properly in
+terms of a text file.
+
+77
+00:05:22.190 --> 00:05:24.730
+If you were to do Open, Open here as a
+text file,
+
+78
+00:05:24.730 --> 00:05:27.700
+it would probably consider have
+considerably
+
+79
+00:05:27.700 --> 00:05:29.630
+less data, but you would have to
+
+80
+00:05:29.630 --> 00:05:33.970
+be through all of the data at once, rather
+than finding exactly
+
+81
+00:05:33.970 --> 00:05:38.520
+what it is by using something like the
+wereclaws which we have here.
+
+82
+00:05:38.520 --> 00:05:41.750
+So, that is again why a database is going
+to be useful.
+
+83
+00:05:41.750 --> 00:05:44.700
+We can select data based on a query,
+rather
+
+84
+00:05:44.700 --> 00:05:47.920
+than inspecting all the data and querying
+it afterwards.
+
+85
+00:05:47.920 --> 00:05:50.530
+So, it's considerably less processing
+power needed
+
+86
+00:05:50.530 --> 00:05:53.000
+and required to run a database than it
+
+87
+00:05:53.000 --> 00:05:56.750
+is when you're, when you running something
+
+88
+00:05:56.750 --> 00:05:59.830
+of, something called a file flat file
+system.
+
+89
+00:05:59.830 --> 00:06:03.630
+Which is when you have a, just a text
+file, or a .xml file,
+
+90
+00:06:03.630 --> 00:06:08.790
+or one of those files which can store
+data, and .plist is another example.
+
+91
+00:06:08.790 --> 00:06:09.485
+So thank you for watching, and-
+
+92
+00:06:09.485 --> 00:06:14.679
+[MUSIC]
+

@@ -1,0 +1,275 @@
+WEBVTT
+
+1
+00:00:00.092 --> 00:00:04.850
+[MUSIC]
+
+2
+00:00:04.850 --> 00:00:07.521
+Now with inputs in Python, this is where
+one of
+
+3
+00:00:07.521 --> 00:00:11.650
+the major changes has happened, between
+Python 2.7 and Python 3.
+
+4
+00:00:11.650 --> 00:00:15.680
+So if you're using anything lower than
+Python 3.0, then you'll
+
+5
+00:00:15.680 --> 00:00:19.120
+need to, first listen to the first half of
+this video.
+
+6
+00:00:19.120 --> 00:00:22.060
+And if you load using Python 3 and
+onwards, you
+
+7
+00:00:22.060 --> 00:00:24.620
+need to listen to the second half of this
+video.
+
+8
+00:00:24.620 --> 00:00:26.620
+So the first half is, that if you
+
+9
+00:00:26.620 --> 00:00:31.360
+are using Python 2.7 or any version below
+Python
+
+10
+00:00:31.360 --> 00:00:37.060
+3, then you need to use an, a, a function
+called raw input to get the input.
+
+11
+00:00:37.060 --> 00:00:39.690
+And this takes one prompter which is the
+prompt.
+
+12
+00:00:40.740 --> 00:00:45.860
+Now the prompt is whatever you have out,
+want to have outputted towards the user.
+
+13
+00:00:45.860 --> 00:00:51.580
+Now, the problem with raw input is that
+it's no longer a function within Python 3.
+
+14
+00:00:51.580 --> 00:00:54.900
+And so you, if you were to change your
+
+15
+00:00:54.900 --> 00:00:57.940
+code toward Python 3, it would no longer
+work.
+
+16
+00:00:57.940 --> 00:01:00.190
+Now, there is a function called Input.
+
+17
+00:01:00.190 --> 00:01:01.947
+However this allows the code which
+somebody
+
+18
+00:01:01.947 --> 00:01:07.750
+actually writes, to be able to be
+executed.
+
+19
+00:01:07.750 --> 00:01:13.658
+If it were to insert a said data, a
+certain type of code which is
+
+20
+00:01:13.658 --> 00:01:17.520
+Python, which Python, which can be read by
+Python, it will get run by Python.
+
+21
+00:01:17.520 --> 00:01:20.639
+Which is obviously a quite large security
+flaw.
+
+22
+00:01:20.639 --> 00:01:24.126
+And the only way you, you can get around
+that, is to use the raw input.
+
+23
+00:01:24.126 --> 00:01:26.901
+Now, if you're are using Python 3, you
+
+24
+00:01:26.901 --> 00:01:29.994
+have the actual function of input, however
+it
+
+25
+00:01:29.994 --> 00:01:33.958
+no longer uses the evaluation function
+which will
+
+26
+00:01:33.958 --> 00:01:37.470
+utterly run whatever code they put into
+it.
+
+27
+00:01:37.470 --> 00:01:39.230
+If you want that functionality to be
+
+28
+00:01:39.230 --> 00:01:42.137
+available, you have to put eval around
+Python.
+
+29
+00:01:42.137 --> 00:01:45.365
+Around the input function, and that will
+run whatever code they put into it.
+
+30
+00:01:45.365 --> 00:01:48.930
+However, most of the time, you aren't
+looking to do anything like that.
+
+31
+00:01:48.930 --> 00:01:52.831
+So, if you are using Python 3, you can
+simply use the
+
+32
+00:01:52.831 --> 00:01:57.620
+input function, which is what you should
+be able to do, just do.
+
+33
+00:01:57.620 --> 00:02:00.760
+If you are using Python 2.7, I would
+recommend that
+
+34
+00:02:00.760 --> 00:02:03.230
+you upgrade to Python 3 cuz it is much
+more secure.
+
+35
+00:02:04.550 --> 00:02:06.980
+So, now, if we're going to create a print
+function.
+
+36
+00:02:08.150 --> 00:02:11.530
+All we need to do is just output two
+lines, and then we'll do a prompt.
+
+37
+00:02:11.530 --> 00:02:15.320
+And this is just to get somebody to press
+cont press any key to continue.
+
+38
+00:02:15.320 --> 00:02:19.072
+So the first output will be something
+like.
+
+39
+00:02:19.072 --> 00:02:23.466
+[SOUND] something like, hello Alex, and
+then I'll
+
+40
+00:02:23.466 --> 00:02:26.949
+just do a, a final one saying thank you.
+
+41
+00:02:26.949 --> 00:02:30.200
+Now, in the between here, we're going to
+do an input.
+
+42
+00:02:30.200 --> 00:02:33.350
+Now with the input, it takes one parameter
+which is the prompt.
+
+43
+00:02:33.350 --> 00:02:36.635
+So the prompt I'm going to do is press any
+key to continue.
+
+44
+00:02:36.635 --> 00:02:39.675
+[SOUND] And now if we run this, you'll see
+
+45
+00:02:39.675 --> 00:02:43.261
+at the bottom where you get the first two
+lines.
+
+46
+00:02:43.261 --> 00:02:46.526
+However, the third line isn't showing,
+because the prompt
+
+47
+00:02:46.526 --> 00:02:49.720
+has not been, because the input hasn't
+been given.
+
+48
+00:02:49.720 --> 00:02:50.860
+Now, press any key to continue.
+
+49
+00:02:50.860 --> 00:02:55.260
+If I press Enter, you see that we now get
+the thank you, which is
+
+50
+00:02:55.260 --> 00:03:01.170
+what you'd expect to happen, which is how
+it press any key to continue, works.
+
+51
+00:03:01.170 --> 00:03:04.966
+Is, it takes whatever value you press, and
+it just runs it to the next one.
+
+52
+00:03:04.966 --> 00:03:06.750
+Runs you to the next line.
+
+53
+00:03:08.040 --> 00:03:12.460
+Now, this is something which you will use
+quite often within Python.
+
+54
+00:03:12.460 --> 00:03:13.660
+As well as what we're going to cover in
+
+55
+00:03:13.660 --> 00:03:16.650
+the next video, which is receiving a data
+input.
+
+56
+00:03:16.650 --> 00:03:19.973
+So I'll see you in the next video, and
+thank you for watching.
+
+57
+00:03:19.973 --> 00:03:24.759
+[MUSIC]
+

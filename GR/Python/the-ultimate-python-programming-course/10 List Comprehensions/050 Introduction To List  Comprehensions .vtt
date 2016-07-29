@@ -1,0 +1,328 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:04.640
+In this chapter we're going to discuss a
+topic that's somewhat related to
+
+2
+00:00:04.640 --> 00:00:10.380
+iterators, the topic of last chapter, and
+that's the topic of list comprehensions.
+
+3
+00:00:10.380 --> 00:00:13.000
+To demonstrate how list comprehensions
+work, we'll need to look at
+
+4
+00:00:13.000 --> 00:00:19.077
+an example, so let's open up a program,
+we'll call it listcomp1.py.
+
+5
+00:00:20.210 --> 00:00:23.780
+Let me get that into the right frame here,
+let's say
+
+6
+00:00:23.780 --> 00:00:28.650
+I have a list of grades; we'll just do 4
+that's plenty.
+
+7
+00:00:28.650 --> 00:00:33.470
+Now let's say I want to curve those grades
+by adding 5
+
+8
+00:00:33.470 --> 00:00:39.060
+points to each grade, the traditional way
+to do that would be using a for loop.
+
+9
+00:00:39.060 --> 00:00:44.688
+So for example I would write for i in
+range length in
+
+10
+00:00:44.688 --> 00:00:50.986
+grades, grades sub i equals grades sub i
+plus 5 and then
+
+11
+00:00:50.986 --> 00:00:57.110
+let's display grades just to see what the
+result is.
+
+12
+00:00:57.110 --> 00:00:58.750
+So we'll Save that file.
+
+13
+00:01:00.010 --> 00:01:02.540
+Then we'll run it, Listcomp1.py.
+
+14
+00:01:02.540 --> 00:01:08.730
+So now our grades have been increased by
+five points by each grade.
+
+15
+00:01:08.730 --> 00:01:15.740
+The idea of a list comprehension is to
+take this two statement loop and
+
+16
+00:01:15.740 --> 00:01:22.760
+simplify it, using the idea of for loops,
+but also using the idea of iterators.
+
+17
+00:01:22.760 --> 00:01:28.390
+So take a look at how it would work, we
+can say, grades equal grade
+
+18
+00:01:28.390 --> 00:01:33.560
+plus five, for grade in grades.
+
+19
+00:01:33.560 --> 00:01:39.760
+So the comprehensions is that we've really
+condensed this for loop into one.
+
+20
+00:01:39.760 --> 00:01:44.450
+Expression and what we're really kind of
+doing is working backwards and we're
+
+21
+00:01:44.450 --> 00:01:50.580
+saying for each grade in grades add five
+to it and take
+
+22
+00:01:50.580 --> 00:01:57.070
+the result of that the four new grades and
+assign it back to the list.
+
+23
+00:01:57.070 --> 00:01:59.280
+So, let's add a print statement here, so
+we
+
+24
+00:01:59.280 --> 00:02:03.030
+can see the previous values, and then the
+curved values.
+
+25
+00:02:03.030 --> 00:02:04.900
+So, let's Save the program.
+
+26
+00:02:04.900 --> 00:02:08.510
+And, let's run it again, let me
+
+27
+00:02:10.620 --> 00:02:11.910
+clear the screen.
+
+28
+00:02:11.910 --> 00:02:14.330
+So, there are the previous grades, 71, 81,
+77,
+
+29
+00:02:14.330 --> 00:02:18.762
+and 84, and here are the new grades, 76
+.86.82.89.
+
+30
+00:02:18.762 --> 00:02:22.570
+And again here's the comprehension, these
+
+31
+00:02:22.570 --> 00:02:26.670
+comprehensions are just shortcuts for for
+loops.
+
+32
+00:02:26.670 --> 00:02:28.670
+Where you're still actually riding the
+loop, but
+
+33
+00:02:28.670 --> 00:02:31.700
+we're doing it in a much more concise
+manner.
+
+34
+00:02:31.700 --> 00:02:34.940
+That's one of the advantages of scripting
+languages, over
+
+35
+00:02:34.940 --> 00:02:38.540
+other languages like C ++ and Java, for
+example.
+
+36
+00:02:38.540 --> 00:02:41.900
+Scripting languages always provide some
+type of
+
+37
+00:02:41.900 --> 00:02:45.920
+higher order means of performing a
+standard
+
+38
+00:02:45.920 --> 00:02:49.240
+task, such as looping through a data
+
+39
+00:02:49.240 --> 00:02:53.320
+structure and performing some computation
+on each element.
+
+40
+00:02:53.320 --> 00:02:55.510
+That's what a list comprehension is.
+
+41
+00:02:55.510 --> 00:02:57.100
+Now before we move on to list
+
+42
+00:02:57.100 --> 00:02:59.380
+comprehension and files, which is a topic
+of
+
+43
+00:02:59.380 --> 00:03:03.830
+the next lesson, let's look at one more
+example and comment out all this code.
+
+44
+00:03:03.830 --> 00:03:09.540
+Now let's say we have a list of words and
+
+45
+00:03:09.540 --> 00:03:13.440
+let's say they're all in upper case and I
+want
+
+46
+00:03:13.440 --> 00:03:16.460
+to put those into lower case because of
+course upper
+
+47
+00:03:16.460 --> 00:03:19.010
+case is so much harder to read and work
+with.
+
+48
+00:03:19.010 --> 00:03:23.320
+Well we can write a very simple list
+comprehension to do that.
+
+49
+00:03:23.320 --> 00:03:29.100
+By using the lower function on a word, so
+it can say word dot lower for word in
+
+50
+00:03:29.100 --> 00:03:32.910
+words, so that for each word, in the list
+
+51
+00:03:32.910 --> 00:03:37.050
+of words, make it lower case, then assign
+a batch.
+
+52
+00:03:37.050 --> 00:03:40.670
+So let's add some print statements to each
+one of these,
+
+53
+00:03:44.550 --> 00:03:46.028
+then lets Save and run the program.
+
+54
+00:03:46.028 --> 00:03:54.120
+On the screen, we started out with 'NOW IS
+THE TIME' in uppercase,
+
+55
+00:03:54.120 --> 00:03:59.540
+and after our list comprehension, we have
+'now is the time' in lowercase.
+
+56
+00:03:59.540 --> 00:04:04.450
+And of course, we could have also written
+this using the standard four loop pattern.
+
+57
+00:04:04.450 --> 00:04:07.330
+But I didn't really see any reason to show
+you
+
+58
+00:04:07.330 --> 00:04:11.280
+that, because you've seen it already with
+our great example.
+
+59
+00:04:11.280 --> 00:04:13.740
+So I went straight to the list
+comprehension
+
+60
+00:04:13.740 --> 00:04:17.180
+to make all the words in the list
+lowercase.
+
+61
+00:04:17.180 --> 00:04:22.480
+So again, a list comprehension is really
+just a backward for loop but we're able to
+
+62
+00:04:22.480 --> 00:04:28.300
+write it in one single expression, as part
+of one single statement.
+
+63
+00:04:29.420 --> 00:04:31.910
+The traditional for loop involves two
+
+64
+00:04:31.910 --> 00:04:35.920
+statements, at least, and several
+expressions.
+
+65
+00:04:35.920 --> 00:04:39.240
+But here we can do it all in one
+statement, and really,
+
+66
+00:04:39.240 --> 00:04:44.340
+if you count the comprehension inside the
+brackets, really just one expression.
+
+67
+00:04:44.340 --> 00:04:48.660
+So that wraps up this introductory lesson
+on list comprehensions.
+
+68
+00:04:48.660 --> 00:04:52.280
+Now lets take a look at how to do lists
+comprehension's with files.
+

@@ -1,0 +1,344 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:02.480
+In this lesson we're going to look at
+
+2
+00:00:02.480 --> 00:00:06.240
+the first of three different types of if
+statements.
+
+3
+00:00:06.240 --> 00:00:08.120
+We're gonna call this the simple if.
+
+4
+00:00:08.120 --> 00:00:12.150
+So I'm gonna use Notepad here kind of like
+a white board.
+
+5
+00:00:12.150 --> 00:00:14.370
+So the way we form the simple if in Python
+
+6
+00:00:14.370 --> 00:00:19.080
+is, we write the keyword, if, followed by
+a relational expression.
+
+7
+00:00:19.080 --> 00:00:22.290
+After the relational expression, we put a
+colon.
+
+8
+00:00:22.290 --> 00:00:26.480
+The colon signifies that we're now ready
+to start the body of the if.
+
+9
+00:00:26.480 --> 00:00:31.580
+The body of the if has to be indented a
+couple of spaces, two or three, up to tab.
+
+10
+00:00:31.580 --> 00:00:34.270
+I don't like to use tab, but you can use
+tab.
+
+11
+00:00:34.270 --> 00:00:40.190
+And then, inside the indention is where
+you'll put Python statements of any type.
+
+12
+00:00:40.190 --> 00:00:43.310
+Of course you can also have more than one
+relational expressions, you
+
+13
+00:00:43.310 --> 00:00:49.540
+could have RE1 followed by a logical
+operator, followed by the statements.
+
+14
+00:00:49.540 --> 00:00:55.780
+And of course you could have RE1 or RE2,
+followed by the statements.
+
+15
+00:00:55.780 --> 00:01:00.460
+The way the if statement works is that the
+relational expression is tested.
+
+16
+00:01:00.460 --> 00:01:02.970
+If the relational expression is true.
+
+17
+00:01:02.970 --> 00:01:05.460
+Then the statements inside the body, in
+
+18
+00:01:05.460 --> 00:01:09.290
+other words, indented from the if, are
+executed.
+
+19
+00:01:09.290 --> 00:01:14.090
+And they're only executed if the
+relational expression is true.
+
+20
+00:01:14.090 --> 00:01:19.480
+So in the next two examples, the whole
+statement must be true, just like with
+
+21
+00:01:19.480 --> 00:01:25.380
+the or, must be true in order for the
+statement or statements to be executed.
+
+22
+00:01:25.380 --> 00:01:26.520
+And that's all there is to it.
+
+23
+00:01:26.520 --> 00:01:29.130
+So let's look at an example in Python.
+
+24
+00:01:29.130 --> 00:01:30.600
+So let's minimize that.
+
+25
+00:01:30.600 --> 00:01:32.640
+Bring up out window.
+
+26
+00:01:32.640 --> 00:01:33.560
+Clear the screen.
+
+27
+00:01:36.140 --> 00:01:38.550
+We'll work in Python three at this time.
+
+28
+00:01:38.550 --> 00:01:40.220
+We're gonna write a script for this.
+
+29
+00:01:40.220 --> 00:01:41.720
+We're not gonna do it interactively.
+
+30
+00:01:41.720 --> 00:01:44.630
+So we're gonna call this ifstatement.py.
+
+31
+00:01:44.630 --> 00:01:48.200
+Let me adjust it on the screen here.
+
+32
+00:01:48.200 --> 00:01:48.740
+Just a bit.
+
+33
+00:01:48.740 --> 00:01:49.622
+There we go.
+
+34
+00:01:49.622 --> 00:01:52.095
+All right, so to demonstrate how the if
+statements
+
+35
+00:01:52.095 --> 00:01:54.770
+works, we're going to write a simple
+payroll program.
+
+36
+00:01:54.770 --> 00:01:57.740
+So we'll ask the user enter the number of
+hours worked.
+
+37
+00:01:57.740 --> 00:02:02.250
+And we'll store it in a variable
+hoursWorked.
+
+38
+00:02:02.250 --> 00:02:05.140
+We'll assign the rate although we could
+ask for the rate also,
+
+39
+00:02:05.140 --> 00:02:09.170
+just to make this program a little
+simpler, I'll assign the rate.
+
+40
+00:02:10.330 --> 00:02:12.620
+Now here's where our if statement comes
+in.
+
+41
+00:02:12.620 --> 00:02:16.840
+We would say if hours worked is greater
+than 40 followed by
+
+42
+00:02:16.840 --> 00:02:20.630
+the colon then I drop down to the next
+line and I indent.
+
+43
+00:02:20.630 --> 00:02:24.829
+Then I'll say, grossPay =
+
+44
+00:02:24.829 --> 00:02:30.329
+(40 * rate) +
+
+45
+00:02:30.329 --> 00:02:36.030
+plus the number of hours worked, minus 40,
+times
+
+46
+00:02:36.030 --> 00:02:41.650
+the rate times 1.5 to represent time and a
+half.
+
+47
+00:02:41.650 --> 00:02:47.720
+If, on the other hand, the hours worked is
+less than or equal to 40, then
+
+48
+00:02:47.720 --> 00:02:55.000
+gross pay is equal to the hours worked
+times the rate, just as simple as that.
+
+49
+00:02:55.000 --> 00:02:59.780
+Then we can print gross pay, and remember
+to decatenate
+
+50
+00:02:59.780 --> 00:03:03.520
+a numeric value we have to convert it to
+string.
+
+51
+00:03:03.520 --> 00:03:06.420
+So we'll convert it to string to display
+it.
+
+52
+00:03:06.420 --> 00:03:08.210
+So there's our program, or script.
+
+53
+00:03:08.210 --> 00:03:10.500
+So let's Exit and Save.
+
+54
+00:03:10.500 --> 00:03:13.400
+Then we'll run our script.
+
+55
+00:03:13.400 --> 00:03:15.750
+So it says, Enter the hours worked.
+
+56
+00:03:15.750 --> 00:03:16.380
+Let's enter 45.
+
+57
+00:03:16.380 --> 00:03:20.400
+And then it computes the Gross Pay.
+
+58
+00:03:20.400 --> 00:03:21.728
+Let's run it again.
+
+59
+00:03:21.728 --> 00:03:25.060
+This time, lets set the hours worked to
+20,
+
+60
+00:03:25.060 --> 00:03:29.080
+and 20 times 25 is 500, so that's correct.
+
+61
+00:03:29.080 --> 00:03:35.600
+So looking at the program again one more
+time, we see how the if statement worked.
+
+62
+00:03:35.600 --> 00:03:38.330
+The program looks at this relational
+expression
+
+63
+00:03:38.330 --> 00:03:40.390
+and decides whether it's true or false.
+
+64
+00:03:40.390 --> 00:03:41.850
+If it's true.
+
+65
+00:03:41.850 --> 00:03:46.420
+Then it executes the statement below,
+otherwise it does nothing.
+
+66
+00:03:46.420 --> 00:03:48.010
+Then it moves down to the next
+
+67
+00:03:48.010 --> 00:03:51.120
+if statement, and analyzes this relational
+expression.
+
+68
+00:03:51.120 --> 00:03:52.710
+If hoursWorked is less than or equal
+
+69
+00:03:52.710 --> 00:03:56.300
+to 40, then it executes this statement
+instead.
+
+70
+00:03:57.530 --> 00:04:00.720
+It's possible that we really don't need to
+have two
+
+71
+00:04:00.720 --> 00:04:06.340
+relational expressions tested, because
+either hoursWorked is greater than 40.
+
+72
+00:04:06.340 --> 00:04:08.220
+Or it's less than or equal to 40.
+
+73
+00:04:08.220 --> 00:04:11.070
+So in that case, we want to use the second
+
+74
+00:04:11.070 --> 00:04:14.540
+version of the if statement called the If
+Else statement.
+
+75
+00:04:14.540 --> 00:04:17.480
+And we're going to see how to do that in
+the next lesson.
+

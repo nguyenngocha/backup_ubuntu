@@ -1,0 +1,630 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.095
+[MUSIC]
+
+2
+00:00:05.095 --> 00:00:08.336
+Another powerful feature, of a list is the
+ability to be able
+
+3
+00:00:08.336 --> 00:00:11.721
+to modify it, which is something you can't
+do with the tuple.
+
+4
+00:00:11.721 --> 00:00:14.139
+So, what I'm going to be showing you now
+
+5
+00:00:14.139 --> 00:00:18.022
+is several different functions that allows
+us to, edit.
+
+6
+00:00:18.022 --> 00:00:22.260
+But if, modify, insert, and delete things
+from, the list.
+
+7
+00:00:22.260 --> 00:00:24.680
+So, as you can see I've just got a basic
+list at the
+
+8
+00:00:24.680 --> 00:00:27.490
+top, which goes from 1 to 11, like we did
+in the last video.
+
+9
+00:00:27.490 --> 00:00:30.030
+And then we're just gonna print out a,
+variable called Item.
+
+10
+00:00:30.030 --> 00:00:35.198
+So we're going to create, [SOUND] the
+variable called Item.
+
+11
+00:00:35.198 --> 00:00:39.493
+First of all I'll change this over to
+List, [SOUND] and I'll do Inserting.
+
+12
+00:00:39.493 --> 00:00:43.160
+So, with, a list, you can append,
+something.
+
+13
+00:00:43.160 --> 00:00:48.189
+So if I do list.append [SOUND] and if I
+appended number
+
+14
+00:00:48.189 --> 00:00:53.346
+12 then at the end of the list, you get
+number 12.
+
+15
+00:00:53.346 --> 00:00:58.344
+Now, this is quite a useful, a useful
+function because it will allow us
+
+16
+00:00:58.344 --> 00:01:02.755
+to, add and subtract things from a list,
+should we have a need to.
+
+17
+00:01:02.755 --> 00:01:05.301
+[SOUND].
+
+18
+00:01:05.301 --> 00:01:10.460
+And, the next thing that we're going to do
+is gonna extend the list.
+
+19
+00:01:10.460 --> 00:01:13.891
+And, the way that we extend lists is I'm
+going to create a
+
+20
+00:01:13.891 --> 00:01:18.555
+second list, [SOUND] and I'm going to just
+have 12, 13, 14, in that.
+
+21
+00:01:18.555 --> 00:01:21.850
+And if I extend with list 2.
+
+22
+00:01:21.850 --> 00:01:26.340
+Then if we output list, we now get list 1
+and list 2 combined together.
+
+23
+00:01:26.340 --> 00:01:29.370
+And list 2 is added to the end of list 1.
+
+24
+00:01:29.370 --> 00:01:31.900
+So, whatever parameter we put inside of
+here, it's added
+
+25
+00:01:31.900 --> 00:01:35.240
+to the end of the, parameter that we
+concastinating on to.
+
+26
+00:01:35.240 --> 00:01:37.860
+So here you can see we've got a full stub,
+and
+
+27
+00:01:37.860 --> 00:01:41.480
+that's just to show that we have a
+function acting upon.
+
+28
+00:01:41.480 --> 00:01:44.150
+The, object which is the, list in this
+case.
+
+29
+00:01:46.110 --> 00:01:48.810
+Okay, so now that we know how to insert
+and we know how
+
+30
+00:01:48.810 --> 00:01:52.640
+to, well, we know how to append, and we
+also know how to extend.
+
+31
+00:01:52.640 --> 00:01:52.790
+This.
+
+32
+00:01:52.790 --> 00:01:55.520
+Also, if we wanted to put something in the
+middle here.
+
+33
+00:01:55.520 --> 00:01:59.380
+So, if I wanted to add a number 12 between
+the 5 and the 6.
+
+34
+00:01:59.380 --> 00:02:03.230
+Then we can see we've got 0, 1, 2, 3, 4,
+5.
+
+35
+00:02:03.230 --> 00:02:04.230
+So, index 5.
+
+36
+00:02:05.310 --> 00:02:10.802
+And so, if we do list.extend [SOUND]
+insert.
+
+37
+00:02:10.802 --> 00:02:12.170
+Now this takes two prompters.
+
+38
+00:02:12.170 --> 00:02:16.420
+The first one's in the, index and the next
+one's the item.
+
+39
+00:02:16.420 --> 00:02:20.690
+So I'm just going to add index 5 and item
+is 12.
+
+40
+00:02:20.690 --> 00:02:24.589
+And you can see here between the 5 and the
+6 we now get number 12 added.
+
+41
+00:02:24.589 --> 00:02:29.512
+So we've got 1, 2, 3, 4, 5, 12, 6, 7, 8,
+9, 10 and so on.
+
+42
+00:02:29.512 --> 00:02:34.258
+[SOUND] Now this is something which is
+quite useful if you were to, again
+
+43
+00:02:34.258 --> 00:02:39.174
+use it for a user's system I would think,
+or a similar fact to that.
+
+44
+00:02:39.174 --> 00:02:44.060
+You'll be able to, insert any specific
+data any index that you wish.
+
+45
+00:02:44.060 --> 00:02:47.140
+So it allows us to change certain things.
+
+46
+00:02:47.140 --> 00:02:51.281
+Now if we wanted to edit, index 5 instead
+of inserting a new thing
+
+47
+00:02:51.281 --> 00:02:55.291
+there, what we do is we do list, [SOUND]
+and then the index is 5.
+
+48
+00:02:55.291 --> 00:02:58.721
+And we put an equal to, [SOUND] and we can
+change that to 12.
+
+49
+00:02:58.721 --> 00:03:03.140
+And where we have number 6 now, we now
+have number 12 instead.
+
+50
+00:03:03.140 --> 00:03:07.280
+So if you want to edit something we use
+the, selector which we did before.
+
+51
+00:03:08.310 --> 00:03:15.770
+And the same can be said if we add [SOUND]
+the selector in this step.
+
+52
+00:03:15.770 --> 00:03:24.229
+[BLANK_AUDIO]
+
+53
+00:03:24.229 --> 00:03:32.091
+[SOUND] So as you can see, because we are
+editing it and we have the.
+
+54
+00:03:32.091 --> 00:03:33.960
+Index of 5 here.
+
+55
+00:03:33.960 --> 00:03:36.400
+Now that we have the, index of 12 and the
+
+56
+00:03:36.400 --> 00:03:39.360
+value of 12 added to our index of 5 should
+be.
+
+57
+00:03:39.360 --> 00:03:42.230
+So, where we have 6 up here is now
+converted to 12.
+
+58
+00:03:42.230 --> 00:03:46.640
+Now we can also, [SOUND] use math
+functions here.
+
+59
+00:03:46.640 --> 00:03:52.301
+[SOUND] So, if we wanted to have it so, it
+can per specific value again.
+
+60
+00:03:52.301 --> 00:03:55.900
+So, this one, instead now we're
+multiplying it by two.
+
+61
+00:03:55.900 --> 00:04:00.000
+Then we get the value from here, and we
+multiply it by 2.
+
+62
+00:04:00.000 --> 00:04:03.090
+So, you can see that, even though these
+two sides are exactly the same if
+
+63
+00:04:03.090 --> 00:04:07.020
+we exclude the, multiply by 2, the
+assignment
+
+64
+00:04:07.020 --> 00:04:10.190
+means that whatever value is taken from
+here.
+
+65
+00:04:10.190 --> 00:04:12.260
+Is now added to here.
+
+66
+00:04:12.260 --> 00:04:16.450
+So the assignment which I've mentioned
+before has been a single equal sign, is
+
+67
+00:04:16.450 --> 00:04:21.150
+a very important operator because it is
+one of the main things we use within.
+
+68
+00:04:21.150 --> 00:04:23.620
+With any program language and especially
+Python.
+
+69
+00:04:24.780 --> 00:04:28.140
+So, as you can see with the assignment we
+
+70
+00:04:28.140 --> 00:04:30.990
+can do any, any form of function that we
+wish.
+
+71
+00:04:30.990 --> 00:04:32.180
+Any, any form of
+
+72
+00:04:34.600 --> 00:04:35.630
+operation that we wish.
+
+73
+00:04:35.630 --> 00:04:37.550
+So if its math based or whether it's
+
+74
+00:04:37.550 --> 00:04:41.180
+just a simple, string assignment or object
+assignment.
+
+75
+00:04:41.180 --> 00:04:44.620
+You can choose, how you want to add
+something to this.
+
+76
+00:04:46.200 --> 00:04:51.299
+Now, if we look at, one looking at
+deleting, a section of
+
+77
+00:04:51.299 --> 00:04:56.103
+the list, [SOUND] then what we can do is,
+say if we have.
+
+78
+00:04:56.103 --> 00:05:03.729
+A list of 5 and we want it to step by 2,
+towards the, [SOUND] actually, 5 to 7.
+
+79
+00:05:03.729 --> 00:05:05.370
+I'll do that way first.
+
+80
+00:05:05.370 --> 00:05:07.051
+Then what you can see is that we
+
+81
+00:05:07.051 --> 00:05:10.423
+can delete that, [SOUND] that sequence by
+typing down.
+
+82
+00:05:10.423 --> 00:05:12.170
+And then list 5 to 7.
+
+83
+00:05:12.170 --> 00:05:15.232
+And now, where we did have, number 5 to 7,
+you can
+
+84
+00:05:15.232 --> 00:05:20.190
+see we've lost number 6 and number 7
+within this, within the list.
+
+85
+00:05:20.190 --> 00:05:24.243
+Which is why number 5 and 7, the index of
+5 to 7, is.
+
+86
+00:05:24.243 --> 00:05:26.740
+[BLANK_AUDIO]
+
+87
+00:05:26.740 --> 00:05:32.329
+So, There's also another way in which we
+can remove some
+
+88
+00:05:32.329 --> 00:05:36.031
+things within a list, and that is using
+[SOUND] the Remove function.
+
+89
+00:05:36.031 --> 00:05:38.879
+[SOUND] So if we remove here, now this,
+
+90
+00:05:38.879 --> 00:05:42.624
+searches for a value and then removes that
+value.
+
+91
+00:05:42.624 --> 00:05:46.719
+So you can't put an index in here, instead
+what we're looking at is putting a value.
+
+92
+00:05:46.719 --> 00:05:51.848
+So I'm going to [SOUND] put number 9 or
+find a number 9, and then remove number 9.
+
+93
+00:05:51.848 --> 00:05:55.460
+Now index of 9 is actually 1, 2, saving 1,
+2,
+
+94
+00:05:55.460 --> 00:05:59.830
+3, 4, 5, 6, 7, 8, 9, actually it's number
+10.
+
+95
+00:05:59.830 --> 00:06:06.250
+So, as you can tell, since the number 10
+is still here, as moving the value of, 10.
+
+96
+00:06:06.250 --> 00:06:07.860
+The way we can prove this is if I was to
+
+97
+00:06:07.860 --> 00:06:11.255
+add the string of 1, and remove the string
+of 1.
+
+98
+00:06:13.440 --> 00:06:15.398
+[SOUND] Now, you can see there is no
+actual difference
+
+99
+00:06:15.398 --> 00:06:17.589
+here and that's because the string is
+added and removed.
+
+100
+00:06:17.589 --> 00:06:21.714
+So, this in here is what we're removing,
+is the value, is not the index.
+
+101
+00:06:23.410 --> 00:06:25.447
+[SOUND] So, if that value isn't in there.
+
+102
+00:06:25.447 --> 00:06:27.470
+For example, if I set it to 2.
+
+103
+00:06:27.470 --> 00:06:30.670
+It throws this exception which we, I've
+showed you before how you can catch
+
+104
+00:06:30.670 --> 00:06:35.930
+the exception, and how you can, return a
+certain value, based on that exception.
+
+105
+00:06:35.930 --> 00:06:39.466
+So, because I've showed you how you can do
+that, all you need to do.
+
+106
+00:06:39.466 --> 00:06:40.432
+It's simply.
+
+107
+00:06:40.432 --> 00:06:47.092
+[BLANK_AUDIO]
+
+108
+00:06:47.092 --> 00:06:48.892
+[SOUND] Because I'm showing you how you
+can catch an exception.
+
+109
+00:06:48.892 --> 00:06:52.464
+All you need to do now is, because you can
+see it's a value error, you catch
+
+110
+00:06:52.464 --> 00:06:53.938
+it based on a value error and you
+
+111
+00:06:53.938 --> 00:06:56.460
+can return, whatever value you need based
+on that.
+
+112
+00:07:00.410 --> 00:07:02.251
+[SOUND] There's one more function which we
+
+113
+00:07:02.251 --> 00:07:04.310
+can cover, and that is the Reverse
+function.
+
+114
+00:07:04.310 --> 00:07:08.142
+If you want to remove something from one,
+one end
+
+115
+00:07:08.142 --> 00:07:13.390
+of, the actual, if you want to append
+something to, avert.
+
+116
+00:07:15.030 --> 00:07:16.760
+Now there's one more function which we can
+
+117
+00:07:16.760 --> 00:07:19.290
+look at which is the, the Reverse
+function.
+
+118
+00:07:19.290 --> 00:07:21.570
+Now if you want to, add something to the
+beginning, there isn't
+
+119
+00:07:21.570 --> 00:07:25.080
+actually an Append function, but what you
+can do is reverse it and
+
+120
+00:07:25.080 --> 00:07:28.830
+then append something which will add it to
+do that, to the now
+
+121
+00:07:28.830 --> 00:07:33.035
+far right-hand side, which is actually the
+left-hand side as it currently stands.
+
+122
+00:07:33.035 --> 00:07:37.009
+[SOUND] So if we were to, [SOUND] reverse.
+
+123
+00:07:37.009 --> 00:07:40.180
+You'll see that we get the list in the
+opposite direction.
+
+124
+00:07:40.180 --> 00:07:45.332
+Now, if we were to append, [SOUND] the
+value of 0,
+
+125
+00:07:45.332 --> 00:07:50.487
+and then reverse it again, [SOUND] you'll
+see if it
+
+126
+00:07:50.487 --> 00:07:55.790
+is effectively the same as prepending
+something.
+
+127
+00:07:55.790 --> 00:08:00.090
+Now, although this is a slightly awkward
+workaround, it works perfectly fine.
+
+128
+00:08:00.090 --> 00:08:02.379
+And it is, one I would recommend that you
+go with.
+
+129
+00:08:03.660 --> 00:08:07.020
+There is, alternative methods of doing it,
+but I won't show you how you do that.
+
+130
+00:08:07.020 --> 00:08:11.290
+Because, this is the easiest and the,
+probably best way of doing it.
+
+131
+00:08:12.410 --> 00:08:15.338
+[SOUND] So thank you for watching and I
+will see you in the next video.
+
+132
+00:08:15.338 --> 00:08:20.419
+[MUSIC]
+

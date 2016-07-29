@@ -1,0 +1,227 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:05.700
+In this exercise we're going to create an
+interactive thank you note program.
+
+2
+00:00:05.700 --> 00:00:07.930
+The program will ask the user to enter the
+name of
+
+3
+00:00:07.930 --> 00:00:10.990
+the gift giver, the present they were
+given, how old the
+
+4
+00:00:10.990 --> 00:00:14.360
+user was on their last birthday, and what
+their name is,
+
+5
+00:00:14.360 --> 00:00:17.170
+and then it's going to print out a thank
+you note.
+
+6
+00:00:17.170 --> 00:00:18.060
+So let's get started.
+
+7
+00:00:18.060 --> 00:00:22.370
+We'll call this, thanks.py.
+
+8
+00:00:22.370 --> 00:00:27.740
+So the first thing we're gonna say is what
+is the name of the gift giver and
+
+9
+00:00:29.050 --> 00:00:34.380
+then we get their name in with raw input
+and we'll ask what the present was and
+
+10
+00:00:37.590 --> 00:00:38.890
+we'll ask them how old they were.
+
+11
+00:00:40.130 --> 00:00:45.980
+You're ready to convert raw input into
+int, so we use that function first.
+
+12
+00:00:45.980 --> 00:00:46.480
+And
+
+13
+00:00:48.310 --> 00:00:51.480
+then finally we ask, what is your name?
+
+14
+00:00:51.480 --> 00:00:54.090
+So that we can sign the card.
+
+15
+00:00:55.430 --> 00:00:56.910
+We'll call that variable yourName.
+
+16
+00:00:58.090 --> 00:00:59.820
+So then the first thing we're going to do.
+
+17
+00:01:00.910 --> 00:01:01.540
+Is we'll say.
+
+18
+00:01:05.280 --> 00:01:10.600
+Then we'll put a blank line, and we'll say
+thank you
+
+19
+00:01:10.600 --> 00:01:15.740
+for the present, and then a period, and a
+space,
+
+20
+00:01:15.740 --> 00:01:20.910
+and then we'll say print, I really like
+it.
+
+21
+00:01:20.910 --> 00:01:24.900
+I'm gonna say, I can't believe.
+
+22
+00:01:24.900 --> 00:01:26.330
+And then space enclose.
+
+23
+00:01:27.760 --> 00:01:31.980
+And then say print, I am already.
+
+24
+00:01:31.980 --> 00:01:34.080
+Here we're gonna convert age to a string.
+
+25
+00:01:35.600 --> 00:01:42.920
+And a space then say print, it does not
+feel like.
+
+26
+00:01:42.920 --> 00:01:48.500
+Different than being and we'll go on to
+the next slide.
+
+27
+00:01:48.500 --> 00:01:49.030
+Print
+
+28
+00:01:51.880 --> 00:01:58.010
+string age minus 1, plus, so then we'll
+print a blank line.
+
+29
+00:01:58.010 --> 00:02:01.920
+And we'll say print Sincerely.
+
+30
+00:02:03.500 --> 00:02:06.850
+Space there doesn't really matter cuz
+we're gonna drop down a line.
+
+31
+00:02:06.850 --> 00:02:09.000
+Put a space and then say print.
+
+32
+00:02:10.800 --> 00:02:11.820
+Your name.
+
+33
+00:02:11.820 --> 00:02:12.320
+Okay.
+
+34
+00:02:13.580 --> 00:02:15.920
+We may have to do some adjustments to the
+output.
+
+35
+00:02:15.920 --> 00:02:17.250
+But the input should be good.
+
+36
+00:02:17.250 --> 00:02:20.470
+So let's save and run the program and see
+how it looks.
+
+37
+00:02:22.280 --> 00:02:23.860
+So we'll say the gift giver is Aunt Jean.
+
+38
+00:02:23.860 --> 00:02:26.460
+She gave a sweater.
+
+39
+00:02:28.210 --> 00:02:30.560
+Age is 13.
+
+40
+00:02:30.560 --> 00:02:32.450
+Name is Barbara.
+
+41
+00:02:34.580 --> 00:02:36.740
+So that output looks reasonable.
+
+42
+00:02:36.740 --> 00:02:38.280
+We can quibble over how the lines
+
+43
+00:02:38.280 --> 00:02:41.420
+are displayed exactly, but that's besides
+the point.
+
+44
+00:02:41.420 --> 00:02:44.550
+We could put the 12 up on the previous
+line.
+
+45
+00:02:44.550 --> 00:02:48.820
+Or drop being down to the next line,
+however we want to do that.
+
+46
+00:02:48.820 --> 00:02:51.400
+But we'll leave it like it is and you can
+adjust it if you want to.
+
+47
+00:02:52.500 --> 00:02:54.870
+So that wraps up this exercise on using
+print and
+
+48
+00:02:54.870 --> 00:02:57.300
+raw input and we're ready to move on to
+the
+
+49
+00:02:57.300 --> 00:02:59.650
+next chapter where we're going to learn
+how to may
+
+50
+00:02:59.650 --> 00:03:03.480
+decisions in Python using different
+variations of the If statement.
+

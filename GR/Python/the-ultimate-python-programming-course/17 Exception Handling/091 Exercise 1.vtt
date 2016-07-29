@@ -1,0 +1,425 @@
+WEBVTT
+
+1
+00:00:01.095 --> 00:00:03.550
+For this exercise on exception handling
+we're
+
+2
+00:00:03.550 --> 00:00:06.200
+actually not going to do any exception
+handling.
+
+3
+00:00:06.200 --> 00:00:11.750
+Instead I'm going to show you ways to
+write code so exceptions won't be thrown.
+
+4
+00:00:11.750 --> 00:00:17.731
+So we're gonna get started by opening a
+program we'll call except ex1.py.
+
+5
+00:00:19.800 --> 00:00:21.282
+We're gonna start with the divide by 0
+
+6
+00:00:21.282 --> 00:00:25.420
+exception, 0 division error, that we saw
+earlier.
+
+7
+00:00:25.420 --> 00:00:26.840
+What I'm doing right now is I'm writing
+
+8
+00:00:26.840 --> 00:00:31.790
+a function that simulates a very simple
+calculator.
+
+9
+00:00:31.790 --> 00:00:34.320
+So, bear with me while I write this code.
+
+10
+00:00:34.320 --> 00:00:35.670
+You'll see what it does.
+
+11
+00:00:35.670 --> 00:00:36.428
+It's very simple.
+
+12
+00:00:36.428 --> 00:00:41.300
+And then finally, we have division.
+
+13
+00:00:41.300 --> 00:00:41.800
+So
+
+14
+00:00:45.610 --> 00:00:46.336
+that's the function.
+
+15
+00:00:46.336 --> 00:00:49.320
+Now what we're gonna do is write a program
+that uses a
+
+16
+00:00:49.320 --> 00:00:55.110
+loop, and continuously asks the user to
+enter another equation to compute.
+
+17
+00:00:55.110 --> 00:00:57.760
+So we're gonna have a while loop.
+
+18
+00:00:57.760 --> 00:01:00.580
+That prompts the user to enter a number.
+
+19
+00:01:01.720 --> 00:01:05.065
+And this will be an integer calculator
+just to keep things simple.
+
+20
+00:01:05.065 --> 00:01:07.900
+Then we'll ask them to enter the second
+number.
+
+21
+00:01:10.250 --> 00:01:12.090
+Then we'll ask them to enter the
+operation.
+
+22
+00:01:14.450 --> 00:01:16.210
+Again the problem that could come up is if
+the
+
+23
+00:01:16.210 --> 00:01:21.110
+user enters a zero for the denominator in
+a division statement.
+
+24
+00:01:21.110 --> 00:01:22.980
+Were in a division problem.
+
+25
+00:01:22.980 --> 00:01:29.070
+So, we can test for that by saying if the
+operator is equal to slash and
+
+26
+00:01:29.070 --> 00:01:33.874
+the second number is equal to 0, then
+we're going to say, cannot
+
+27
+00:01:33.874 --> 00:01:40.530
+divide by 0, then right here we're gonna
+issue a continue statement.
+
+28
+00:01:40.530 --> 00:01:45.430
+Which will cause the program to go back to
+the top of the loop and start over again.
+
+29
+00:01:45.430 --> 00:01:47.330
+Now that's probably carrying it a bit too
+far.
+
+30
+00:01:47.330 --> 00:01:50.840
+We really only need to have the second
+number, but we can't really get to
+
+31
+00:01:50.840 --> 00:01:56.580
+that point without using a go to statement
+which we're not going to even talk about.
+
+32
+00:01:56.580 --> 00:01:58.900
+So we have to just go back to the top of
+the loop.
+
+33
+00:01:58.900 --> 00:02:03.780
+Otherwise, we'll call the calc function
+with the three arguments.
+
+34
+00:02:03.780 --> 00:02:06.600
+Right, so let's safe and run the program.
+
+35
+00:02:06.600 --> 00:02:07.230
+See if it works.
+
+36
+00:02:07.230 --> 00:02:14.300
+So we'll enter a 3 and a 2 and we'll do
+multiplication, and that worked fine.
+
+37
+00:02:14.300 --> 00:02:16.260
+So now let's do a division.
+
+38
+00:02:16.260 --> 00:02:17.754
+12 and 0.
+
+39
+00:02:18.850 --> 00:02:19.410
+And division.
+
+40
+00:02:19.410 --> 00:02:21.750
+And it says, cannot divide by 0.
+
+41
+00:02:21.750 --> 00:02:26.360
+Enter the first number, enter the second
+number, enter the operation.
+
+42
+00:02:26.360 --> 00:02:26.960
+And there we go.
+
+43
+00:02:28.700 --> 00:02:31.820
+Now, one thing we left out, and let's fix
+that real quick is,
+
+44
+00:02:31.820 --> 00:02:35.439
+we left out the prompt to ask the user if
+they wanna continue.
+
+45
+00:02:39.210 --> 00:02:40.180
+And that's all we need.
+
+46
+00:02:40.180 --> 00:02:43.320
+I'm not gonna add that in to the program,
+cuz you saw how it worked.
+
+47
+00:02:43.320 --> 00:02:46.340
+So that's our first example of how we can
+
+48
+00:02:46.340 --> 00:02:51.640
+write our code to protect against an
+exception being thrown.
+
+49
+00:02:51.640 --> 00:02:53.390
+This makes your code easier to read,
+
+50
+00:02:53.390 --> 00:02:56.140
+easier to understand and easier to
+maintain.
+
+51
+00:02:57.440 --> 00:02:59.990
+Let's comment out all this code.
+
+52
+00:02:59.990 --> 00:03:03.690
+This is easier than starting a new file.
+
+53
+00:03:04.750 --> 00:03:09.510
+Our second example's gonna demonstrate how
+to work with file handling.
+
+54
+00:03:09.510 --> 00:03:10.930
+So what we're gonna do is we're gonna
+write
+
+55
+00:03:10.930 --> 00:03:14.950
+a simple program that opens files and
+prints the contents.
+
+56
+00:03:16.380 --> 00:03:18.620
+So we ask the user to enter a file name to
+open.
+
+57
+00:03:19.650 --> 00:03:22.790
+Following the same strategy as the
+previous program,
+
+58
+00:03:22.790 --> 00:03:25.940
+we're going to use a special function
+called isfile.
+
+59
+00:03:25.940 --> 00:03:30.220
+And it's actually found in os.path.isfile.
+
+60
+00:03:30.220 --> 00:03:34.490
+And what this does is, this snippet of
+code
+
+61
+00:03:34.490 --> 00:03:38.140
+right here will check to see if a file
+exists.
+
+62
+00:03:38.140 --> 00:03:39.470
+And so what we are saying is that if the
+
+63
+00:03:39.470 --> 00:03:43.210
+file does not exist then we're gonna print
+an error message.
+
+64
+00:03:44.610 --> 00:03:48.710
+Then we're gonna prompt the user to enter
+the file again and continue on.
+
+65
+00:03:49.950 --> 00:03:54.440
+Otherwise, once the user does enter a
+legal file name, we're
+
+66
+00:03:54.440 --> 00:03:58.270
+gonna open the file and then we're gonna
+print out each line.
+
+67
+00:04:00.200 --> 00:04:01.670
+Just like so.
+
+68
+00:04:01.670 --> 00:04:04.690
+So again the key is saying, while the file
+does
+
+69
+00:04:04.690 --> 00:04:08.490
+not exist, and that's this part of the
+code right there.
+
+70
+00:04:08.490 --> 00:04:11.340
+Then we prompt the user, first telling
+them that the
+
+71
+00:04:11.340 --> 00:04:14.640
+file doesn't exist, and then to enter the
+file name again.
+
+72
+00:04:14.640 --> 00:04:16.190
+Alright, so let's run this example.
+
+73
+00:04:16.190 --> 00:04:16.690
+Let's
+
+74
+00:04:18.820 --> 00:04:19.590
+clear the screen.
+
+75
+00:04:21.590 --> 00:04:23.625
+So, let's try one that we know doesn't
+exist.
+
+76
+00:04:23.625 --> 00:04:26.050
+Blah.txt.
+
+77
+00:04:26.050 --> 00:04:27.490
+File does not exist.
+
+78
+00:04:27.490 --> 00:04:28.594
+Enter file name to open.
+
+79
+00:04:28.594 --> 00:04:30.539
+Blah1.txt.
+
+80
+00:04:30.539 --> 00:04:32.339
+That's not it.
+
+81
+00:04:32.339 --> 00:04:33.840
+bbbbb.txt.
+
+82
+00:04:33.840 --> 00:04:35.730
+That's not it.
+
+83
+00:04:35.730 --> 00:04:38.986
+But, I happen to know that we do have a
+file.
+
+84
+00:04:38.986 --> 00:04:40.987
+Called grades.txt.
+
+85
+00:04:40.987 --> 00:04:44.820
+And then when it finds it, it opens it up
+and displays the contents.
+
+86
+00:04:46.260 --> 00:04:49.450
+So in this exercise, I've demonstrated
+ways to actually
+
+87
+00:04:49.450 --> 00:04:54.180
+not have to use exception handling and
+most programing experts
+
+88
+00:04:54.180 --> 00:04:56.570
+would say that for problems such as the
+ones we've
+
+89
+00:04:56.570 --> 00:05:01.610
+looked at, diving by zero and files not
+existing, using.
+
+90
+00:05:01.610 --> 00:05:04.800
+What I would call data validation
+techniques
+
+91
+00:05:04.800 --> 00:05:07.150
+works better than using the exception
+handling.
+
+92
+00:05:07.150 --> 00:05:11.180
+And with that, we're finished with this
+exercise and that wraps up this chapter.
+

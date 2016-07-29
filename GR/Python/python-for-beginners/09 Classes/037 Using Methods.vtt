@@ -1,0 +1,500 @@
+WEBVTT
+
+1
+00:00:00.012 --> 00:00:04.523
+[MUSIC]
+
+2
+00:00:04.523 --> 00:00:06.631
+Now in the last video, which is the
+
+3
+00:00:06.631 --> 00:00:09.760
+class of parsing which has two functions
+of methods
+
+4
+00:00:09.760 --> 00:00:12.524
+inside it, one of them is the
+initialization
+
+5
+00:00:12.524 --> 00:00:15.817
+function, and you have one is the display
+function.
+
+6
+00:00:15.817 --> 00:00:22.164
+And then we have the variable people which
+is equal to the
+
+7
+00:00:22.164 --> 00:00:29.040
+person class with two parameters, male,
+and the name Alex.
+
+8
+00:00:29.040 --> 00:00:30.470
+And then we display that.
+
+9
+00:00:30.470 --> 00:00:32.320
+And if you run that you'll see that we
+have
+
+10
+00:00:32.320 --> 00:00:34.870
+the, exactly the same as what we had last
+time.
+
+11
+00:00:34.870 --> 00:00:40.410
+Now what we're going to do in this video,
+is I'm going to explain what it is, why
+
+12
+00:00:40.410 --> 00:00:45.570
+we call it a method, and not a function,
+and also what a method actually is.
+
+13
+00:00:46.850 --> 00:00:50.470
+So, within a class, method is used to
+perform
+
+14
+00:00:50.470 --> 00:00:55.690
+functionality and we do this by using the
+dot.
+
+15
+00:00:55.690 --> 00:01:01.590
+The dot operator which is the full stop or
+the period used within the valuable.
+
+16
+00:01:01.590 --> 00:01:03.840
+So we have people.display.
+
+17
+00:01:03.840 --> 00:01:05.590
+So, that tells us when we go to the
+
+18
+00:01:05.590 --> 00:01:08.890
+people variable which is equal to the
+Person array.
+
+19
+00:01:08.890 --> 00:01:13.707
+That Person class sorry, and then, within
+the person class,
+
+20
+00:01:13.707 --> 00:01:17.350
+we will call it the function or the method
+display.
+
+21
+00:01:17.350 --> 00:01:20.220
+And the reason why we call it the method
+
+22
+00:01:20.220 --> 00:01:24.002
+and not a variable is because we put
+prompts afterwards.
+
+23
+00:01:24.002 --> 00:01:29.010
+So, this.operator allows us to call upon
+an
+
+24
+00:01:29.010 --> 00:01:34.450
+attribute of the object, which is the
+person class,
+
+25
+00:01:34.450 --> 00:01:39.730
+and so the object, no sorry, the attribute
+within the Person of,
+
+26
+00:01:40.810 --> 00:01:46.840
+Person object, or the Person class is
+actually going to be as method this time.
+
+27
+00:01:46.840 --> 00:01:49.050
+However, if we removed these parameters,
+that
+
+28
+00:01:49.050 --> 00:01:54.550
+would've called forward, that would've
+called a variable.
+
+29
+00:01:54.550 --> 00:01:56.820
+Now obviously we don't have the variable
+called displayed, so I'm gonna
+
+30
+00:01:56.820 --> 00:01:59.010
+put the parameters back in there and keep
+it as it is.
+
+31
+00:02:00.480 --> 00:02:01.680
+And now if we,
+
+32
+00:02:05.770 --> 00:02:08.830
+And now if you look [UNKNOWN] you'll see
+that we have the self,
+
+33
+00:02:08.830 --> 00:02:14.050
+gender and name, now this is all explained
+in the previous video, so, if
+
+34
+00:02:14.050 --> 00:02:16.440
+you check that out or you've got it or if
+you don't quite
+
+35
+00:02:16.440 --> 00:02:20.299
+understand, and if you can see all you
+have to do is call itself.
+
+36
+00:02:22.170 --> 00:02:25.270
+parameter, self variable, within every
+other function.
+
+37
+00:02:25.270 --> 00:02:28.225
+So if I was to create another function
+with it and [INAUDIBLE] you
+
+38
+00:02:28.225 --> 00:02:31.910
+call self, and we would have all the data
+within that which we needed.
+
+39
+00:02:31.910 --> 00:02:35.140
+Now obviously within this, we can add
+another
+
+40
+00:02:35.140 --> 00:02:38.810
+parameter, say value, and we print that as
+well.
+
+41
+00:02:38.810 --> 00:02:39.310
+So print.
+
+42
+00:02:41.250 --> 00:02:43.450
+Value, and that will work perfectly fine.
+
+43
+00:02:43.450 --> 00:02:45.440
+And if I add say, the value 12 and run
+that.
+
+44
+00:02:45.440 --> 00:02:48.710
+It will work exactly the same way.
+
+45
+00:02:48.710 --> 00:02:52.640
+So you don't have to put all your
+parameters within the initialization.
+
+46
+00:02:52.640 --> 00:02:55.870
+The only reason why you put parameters
+inside your initialization
+
+47
+00:02:55.870 --> 00:02:58.370
+is if you want them to be used within
+multiple.
+
+48
+00:02:59.810 --> 00:03:01.690
+Functions or methods within that class.
+
+49
+00:03:01.690 --> 00:03:04.780
+And the reason why you do that is because
+you apply them
+
+50
+00:03:04.780 --> 00:03:09.880
+to the self dot then whatever variable you
+want to call it.
+
+51
+00:03:11.380 --> 00:03:13.790
+And that will mean that they are
+acceptable within every single
+
+52
+00:03:13.790 --> 00:03:17.120
+function because you will call self on
+every single function as well.
+
+53
+00:03:17.120 --> 00:03:20.359
+[SOUND] So if we remove that for now,
+
+54
+00:03:20.359 --> 00:03:24.505
+because I'll just show you what you can
+do.
+
+55
+00:03:24.505 --> 00:03:31.408
+And if you don't call the inish, in it
+function, then that's perfectly fine.
+
+56
+00:03:31.408 --> 00:03:33.290
+It works perfectly well.
+
+57
+00:03:33.290 --> 00:03:37.560
+Obviously you can't pass in these
+variables or the fronters.
+
+58
+00:03:37.560 --> 00:03:40.360
+Like your doing now because they won't go
+anywhere.
+
+59
+00:03:40.360 --> 00:03:43.940
+You'd have to call them, and paste them
+all in individually.
+
+60
+00:03:43.940 --> 00:03:48.110
+So in each, say, function which you need,
+so
+
+61
+00:03:48.110 --> 00:03:50.330
+in the display cause we're using the
+gender I'm
+
+62
+00:03:50.330 --> 00:03:52.250
+using the name, you'd have to paste those
+two
+
+63
+00:03:52.250 --> 00:03:57.170
+here and collect them in the fronters area
+of the.
+
+64
+00:03:57.170 --> 00:03:59.950
+Display definition, instead of doing it in
+the
+
+65
+00:03:59.950 --> 00:04:04.470
+initialization definition, but that
+doesn't really matter too much.
+
+66
+00:04:04.470 --> 00:04:09.562
+Because most of the time, you'll recall
+it's all within the
+
+67
+00:04:09.562 --> 00:04:15.673
+actual, initialization function.
+
+68
+00:04:16.750 --> 00:04:22.026
+Okay, so to show you what other things we
+can do, [SOUND]
+
+69
+00:04:22.026 --> 00:04:27.420
+and why people use classes rather than
+just methods
+
+70
+00:04:27.420 --> 00:04:32.263
+or functions, is if we do exactly the same
+thing.
+
+71
+00:04:32.263 --> 00:04:35.448
+[SOUND] As, what we have at the moment,
+just
+
+72
+00:04:35.448 --> 00:04:39.788
+recreate it, so we have two people,
+definitions now.
+
+73
+00:04:39.788 --> 00:04:43.005
+The first one is the initial one, or the
+original one, which
+
+74
+00:04:43.005 --> 00:04:46.410
+you had before, which is your mail, and
+your name's Alex, and
+
+75
+00:04:46.410 --> 00:04:49.500
+the second one, we're just going to call
+it, a a site
+
+76
+00:04:49.500 --> 00:04:52.874
+or a variable called people two, that's
+going to be equal to.
+
+77
+00:04:52.874 --> 00:04:57.039
+And a female called June and if we do
+people to .display and
+
+78
+00:04:57.039 --> 00:05:02.309
+then run that, you'll see that we have two
+different things called Now,
+
+79
+00:05:02.309 --> 00:05:08.514
+even though we're using the same class and
+the same object we're using different
+
+80
+00:05:08.514 --> 00:05:14.500
+objects even though it was the same class
+so, the initialization variable.
+
+81
+00:05:14.500 --> 00:05:22.450
+Because it's self, that refers to it being
+this object rather than it being a class.
+
+82
+00:05:22.450 --> 00:05:25.990
+So, of that self variable and all the
+variables close to it
+
+83
+00:05:25.990 --> 00:05:32.370
+are going to be contained within an
+object, namely the people variable.
+
+84
+00:05:33.690 --> 00:05:36.910
+Where as on people two, early data which
+is
+
+85
+00:05:36.910 --> 00:05:38.420
+passed down to there and it is stored
+within it.
+
+86
+00:05:38.420 --> 00:05:41.810
+It is not going to be stored within the
+class itself, but
+
+87
+00:05:41.810 --> 00:05:45.170
+it is going to be stored within the object
+which is people two.
+
+88
+00:05:45.170 --> 00:05:47.940
+So that's why we can call a same method
+but on
+
+89
+00:05:47.940 --> 00:05:51.290
+different variables and we get different
+outputs which you can see here.
+
+90
+00:05:53.220 --> 00:05:56.550
+Now, this is actually called
+encapsulation.
+
+91
+00:05:56.550 --> 00:06:00.460
+And it's very, very important part of
+object-oriented
+
+92
+00:06:00.460 --> 00:06:03.070
+programming because it means that we can
+have
+
+93
+00:06:03.070 --> 00:06:05.350
+multiple things running side by side
+exactly the
+
+94
+00:06:05.350 --> 00:06:08.710
+same way, and without them conflicting
+with each other.
+
+95
+00:06:08.710 --> 00:06:11.400
+As you can see here, we've got people one
+and people two, and
+
+96
+00:06:11.400 --> 00:06:12.660
+they don't confle, conflict with each
+
+97
+00:06:12.660 --> 00:06:14.315
+other even though they're both called
+Person.
+
+98
+00:06:14.315 --> 00:06:16.300
+[UNKNOWN] because if were both, if we were
+
+99
+00:06:16.300 --> 00:06:19.430
+doing this with just methods or just
+functions outside
+
+100
+00:06:19.430 --> 00:06:21.800
+of the class, then they could easily
+conflict with
+
+101
+00:06:21.800 --> 00:06:25.740
+each other because encapsulation does not
+actually take place.
+
+102
+00:06:25.740 --> 00:06:29.179
+So, thank you for watching it and, I'll
+see you in the next video.
+
+103
+00:06:29.179 --> 00:06:35.579
+[MUSIC]
+

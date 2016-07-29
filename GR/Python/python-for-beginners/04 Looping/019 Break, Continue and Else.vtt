@@ -1,0 +1,215 @@
+WEBVTT
+
+1
+00:00:00.025 --> 00:00:04.745
+[MUSIC].
+
+2
+00:00:04.745 --> 00:00:08.070
+As you can see here, I've just got a
+simple page set up.
+
+3
+00:00:08.070 --> 00:00:11.750
+Which is a list from one to nine.
+
+4
+00:00:11.750 --> 00:00:16.720
+And then we have simple value which will
+list, which will increment through.
+
+5
+00:00:16.720 --> 00:00:20.910
+Each of these list items until we get to
+the end.
+
+6
+00:00:20.910 --> 00:00:23.420
+So this is just going to go from one to
+nine, as
+
+7
+00:00:23.420 --> 00:00:26.460
+you can see I've already run this and that
+is what you get.
+
+8
+00:00:26.460 --> 00:00:28.840
+Now there are a couple of things which you
+can
+
+9
+00:00:28.840 --> 00:00:35.690
+do within Python to control how how an
+iterating loop will.
+
+10
+00:00:35.690 --> 00:00:36.380
+Run.
+
+11
+00:00:36.380 --> 00:00:39.930
+And the first thing that we can do is
+something called a break.
+
+12
+00:00:39.930 --> 00:00:48.550
+So what I'm going to do is if int is equal
+to 7, then I'm going to do break.
+
+13
+00:00:50.460 --> 00:00:52.880
+Now what we can do is, when we run this.
+
+14
+00:00:54.360 --> 00:00:59.370
+And [INAUDIBLE] gonna do, else, and print.
+
+15
+00:01:00.970 --> 00:01:05.210
+And this will run, as so.
+
+16
+00:01:05.210 --> 00:01:07.360
+We get to six, and then it stops the loop.
+
+17
+00:01:07.360 --> 00:01:12.250
+So break is a keyword which completely
+cuts off the loop, and quits it.
+
+18
+00:01:13.610 --> 00:01:16.585
+Now, what we can also do is, we also have
+one which continue.
+
+19
+00:01:16.585 --> 00:01:20.599
+[SOUND] So, if we get to.
+
+20
+00:01:20.599 --> 00:01:22.676
+Number seven, it will skip it.
+
+21
+00:01:22.676 --> 00:01:27.190
+So you could see we get one, two, three
+four, five, six, eight, nine.
+
+22
+00:01:27.190 --> 00:01:29.960
+So continue is a way of starting the loop
+again.
+
+23
+00:01:29.960 --> 00:01:33.220
+So it goes from the beginning and then
+skips the rest
+
+24
+00:01:33.220 --> 00:01:37.360
+of it and goes to the end of the loop,
+loop.
+
+25
+00:01:37.360 --> 00:01:41.050
+Now there is also, we can also use the
+
+26
+00:01:41.050 --> 00:01:46.330
+else within a loop as well as we've seen
+here.
+
+27
+00:01:46.330 --> 00:01:49.870
+But there's another way in which we can
+use it, and that is as a default value.
+
+28
+00:01:52.770 --> 00:01:54.070
+And so we're going to print,
+
+29
+00:02:00.150 --> 00:02:02.090
+print as default.
+
+30
+00:02:02.090 --> 00:02:03.480
+And as you can see that, once we get to
+
+31
+00:02:03.480 --> 00:02:06.360
+the end we get the print of default as
+well.
+
+32
+00:02:06.360 --> 00:02:10.130
+So a for loop and a while loop, all these
+break
+
+33
+00:02:10.130 --> 00:02:13.620
+continue and else work for for loop and a
+while loop.
+
+34
+00:02:14.670 --> 00:02:19.140
+Can print out what happens if, as soon as
+it becomes false, so as soon as this is
+
+35
+00:02:19.140 --> 00:02:21.690
+no longer true, this is the output which
+you
+
+36
+00:02:21.690 --> 00:02:24.860
+will receive, or the code that will end up
+running.
+
+37
+00:02:26.250 --> 00:02:29.320
+Now this is identical to if we didn't have
+
+38
+00:02:29.320 --> 00:02:32.070
+the actual else statement there, it would
+continue running
+
+39
+00:02:32.070 --> 00:02:34.770
+as well, however it sort of makes it
+easier
+
+40
+00:02:34.770 --> 00:02:37.295
+to read if you have the else statement
+there because.
+
+41
+00:02:37.295 --> 00:02:39.660
+Cuz then you understand that once this has
+
+42
+00:02:39.660 --> 00:02:43.260
+stopped running, that is what's going to
+happen next.
+
+43
+00:02:43.260 --> 00:02:49.390
+So that is all of the flow controls for
+iterating loops within python.
+
+44
+00:02:49.390 --> 00:02:54.382
+Thank you for watching this video and that
+is the end of the loops chapter on.
+
+45
+00:02:54.382 --> 00:02:55.575
+python.
+
+46
+00:02:55.575 --> 00:03:00.859
+[MUSIC].
+

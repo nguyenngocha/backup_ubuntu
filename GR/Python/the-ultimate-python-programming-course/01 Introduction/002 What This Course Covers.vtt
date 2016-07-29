@@ -1,0 +1,285 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:02.990
+Hello and welcome to this course on
+
+2
+00:00:02.990 --> 00:00:06.610
+Python programming called Introduction to
+Python Programming.
+
+3
+00:00:06.610 --> 00:00:09.950
+My name is Mike McMillan and I'm going to
+be your instructor for the course.
+
+4
+00:00:09.950 --> 00:00:12.100
+To tell you a little bit about myself,
+I've been
+
+5
+00:00:12.100 --> 00:00:16.700
+a college instructor of computer science
+for the past 13 years.
+
+6
+00:00:16.700 --> 00:00:19.805
+I've taught courses in programming
+languages such as
+
+7
+00:00:19.805 --> 00:00:27.250
+C++, Java, Visual Basic, JavaScript, C#,
+PHP, and Python.
+
+8
+00:00:27.250 --> 00:00:30.660
+I've been a programmer, though, for the
+past 23 years,
+
+9
+00:00:30.660 --> 00:00:35.030
+and have worked in the industry, off and
+on, since 1981.
+
+10
+00:00:35.030 --> 00:00:39.120
+In this course, we're going to cover the
+basics of Python
+
+11
+00:00:39.120 --> 00:00:44.710
+Programming for a person who has no
+experience at all in programming.
+
+12
+00:00:44.710 --> 00:00:48.390
+So, to give you an idea of the topics
+we're going to be covering in the course,
+
+13
+00:00:48.390 --> 00:00:49.850
+I'm just gonna list them out for you right
+
+14
+00:00:49.850 --> 00:00:53.740
+here, we'll be talking about how to
+install Python.
+
+15
+00:00:55.120 --> 00:00:58.410
+We'll write our very first program, our
+Hello, World!
+
+16
+00:00:58.410 --> 00:01:01.050
+program, as a way of introducing you to
+the
+
+17
+00:01:01.050 --> 00:01:04.780
+basics of entering a program and getting
+it to run.
+
+18
+00:01:04.780 --> 00:01:06.900
+Next, we'll talk about the different data
+
+19
+00:01:06.900 --> 00:01:10.950
+types and how to create variables in
+python.
+
+20
+00:01:10.950 --> 00:01:14.230
+Next, we'll talk about python input and
+output.
+
+21
+00:01:14.230 --> 00:01:16.460
+next, we'll be talking about how to get
+our programs
+
+22
+00:01:16.460 --> 00:01:21.100
+to make decisions, and that's how to
+create if statements.
+
+23
+00:01:21.100 --> 00:01:24.280
+Next up, we'll learn how to perform
+repetition in
+
+24
+00:01:24.280 --> 00:01:28.660
+our python programs, and that topic is
+while loops.
+
+25
+00:01:28.660 --> 00:01:30.950
+Staying on the topic of repetition, we'll
+talk
+
+26
+00:01:30.950 --> 00:01:34.000
+about the loop type which is for loops.
+
+27
+00:01:34.000 --> 00:01:37.620
+Then we'll talk about a little more
+advanced topic that is key to
+
+28
+00:01:37.620 --> 00:01:42.640
+performing a lot of repetition in Python,
+and that's the concept of the iterator.
+
+29
+00:01:42.640 --> 00:01:47.230
+Next, we'll talk about what are called
+list comprehensions.
+
+30
+00:01:47.230 --> 00:01:49.820
+After list comprehensions, we'll be
+talking about how
+
+31
+00:01:49.820 --> 00:01:53.740
+to create and use functions in our Python
+program.
+
+32
+00:01:53.740 --> 00:01:57.950
+Following functions, we'll talk a little
+bit about variable scope.
+
+33
+00:01:57.950 --> 00:02:01.850
+And how variables are perceived in our
+Python program.
+
+34
+00:02:03.300 --> 00:02:06.850
+Next, we'll talk about how to create
+modules and how
+
+35
+00:02:06.850 --> 00:02:11.300
+to use the built-in modules that come with
+the Python language.
+
+36
+00:02:11.300 --> 00:02:13.270
+After that, we'll talk about the
+
+37
+00:02:13.270 --> 00:02:17.100
+basics of creating objects, and
+object-oriented programming.
+
+38
+00:02:17.100 --> 00:02:19.620
+Following the basics of object-oriented
+programming,
+
+39
+00:02:19.620 --> 00:02:21.990
+we'll talk about one advanced
+object-oriented
+
+40
+00:02:21.990 --> 00:02:24.740
+programming topic, and that's inheritance,
+or
+
+41
+00:02:24.740 --> 00:02:28.970
+reusing class definitions in other class
+definitions.
+
+42
+00:02:28.970 --> 00:02:32.570
+Then, we'll talk about exception handling
+and how to handle.
+
+43
+00:02:32.570 --> 00:02:35.910
+Exceptions or errors in our Python
+program.
+
+44
+00:02:35.910 --> 00:02:41.850
+Finally, to wrap up the course we'll have
+a little chapter on using data structures,
+
+45
+00:02:41.850 --> 00:02:46.600
+and these data structures include lists,
+tuples, and dictionaries.
+
+46
+00:02:48.270 --> 00:02:50.790
+I believe the topics we cover in this
+course will give you
+
+47
+00:02:50.790 --> 00:02:53.970
+a good beginning foundation to becoming
+
+48
+00:02:53.970 --> 00:02:57.410
+a competent, and even expert Python
+programmer.
+
+49
+00:02:57.410 --> 00:03:00.370
+Once you finish this course, I'd encourage
+you to look at another
+
+50
+00:03:00.370 --> 00:03:02.090
+course that I've created for Infinite
+
+51
+00:03:02.090 --> 00:03:05.870
+Skills, called Web Programming with
+Python.
+
+52
+00:03:05.870 --> 00:03:09.730
+In it, you'll learn how to use Python to
+do lots of different types of web
+
+53
+00:03:09.730 --> 00:03:14.170
+programming from screen scraping to
+creating your own
+
+54
+00:03:14.170 --> 00:03:18.870
+web applications platforms using a system
+called Django.
+
+55
+00:03:18.870 --> 00:03:21.220
+But web programming is a completely other
+topic
+
+56
+00:03:21.220 --> 00:03:24.770
+and here we're talking about just
+introductory Python programming.
+
+57
+00:03:24.770 --> 00:03:28.700
+So, without further ado I encourage you to
+move onto the first chapter of
+
+58
+00:03:28.700 --> 00:03:33.480
+the course where we talk about how to
+install Python on your computer system.
+

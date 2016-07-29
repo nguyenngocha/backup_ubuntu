@@ -1,0 +1,341 @@
+WEBVTT
+
+1
+00:00:01.090 --> 00:00:06.310
+In this chapter we're going to introduce
+the subject of loops, and a loop is just a
+
+2
+00:00:06.310 --> 00:00:11.600
+way in Python to execute a number of
+statements over and over again.
+
+3
+00:00:11.600 --> 00:00:14.094
+First of all, let me show you the general
+form of the
+
+4
+00:00:14.094 --> 00:00:17.412
+first type of loop we're going to study
+and that's the while loop.
+
+5
+00:00:17.412 --> 00:00:21.312
+I'm going to open up a note pad, follow,
+and the while loop
+
+6
+00:00:21.312 --> 00:00:25.992
+works like this we start with the keyword
+while followed by a relational
+
+7
+00:00:25.992 --> 00:00:30.204
+expression of some type and then inside
+the body of the while loop
+
+8
+00:00:30.204 --> 00:00:34.637
+will be a set of statements one or more
+usually just one statement.
+
+9
+00:00:34.637 --> 00:00:38.070
+And I'll explain why when we look at a
+specific example here in just a minute.
+
+10
+00:00:39.280 --> 00:00:41.872
+So the concept behind a while loop is,
+
+11
+00:00:41.872 --> 00:00:45.436
+is that while the value of the relational
+expression
+
+12
+00:00:45.436 --> 00:00:48.838
+is true, execute the statement inside the
+body of
+
+13
+00:00:48.838 --> 00:00:52.178
+the loop and it's no more difficult than
+that.
+
+14
+00:00:52.178 --> 00:00:57.180
+There are several kinds of while loops, we
+are going to be looking at.
+
+15
+00:00:57.180 --> 00:00:58.930
+The 2 we're going to study primarily
+
+16
+00:00:58.930 --> 00:01:02.490
+are called count controlled, where we
+execute the
+
+17
+00:01:02.490 --> 00:01:04.610
+statements in a loop a number of
+
+18
+00:01:04.610 --> 00:01:08.230
+times, a predetermined usually normally
+number of times.
+
+19
+00:01:08.230 --> 00:01:13.020
+And then also event controlled loops were
+the statements in the loop
+
+20
+00:01:13.020 --> 00:01:18.640
+body are executed until an event occurs,
+or while a event is occurring.
+
+21
+00:01:18.640 --> 00:01:21.800
+We're going o study these in more details
+both of these types of loops.
+
+22
+00:01:21.800 --> 00:01:23.870
+But first of all lets just look at a
+
+23
+00:01:23.870 --> 00:01:28.440
+simple example of how a loop is written
+and executed.
+
+24
+00:01:28.440 --> 00:01:32.408
+So we're going to create a script, we'll
+call it
+
+25
+00:01:32.408 --> 00:01:36.690
+while intro .py will be the name of our
+program.
+
+26
+00:01:36.690 --> 00:01:42.170
+So what we're gonna do is we're gonna
+display the numbers one through ten.
+
+27
+00:01:42.170 --> 00:01:44.460
+I know that's not very practical, but it
+gives
+
+28
+00:01:44.460 --> 00:01:48.340
+me a chance to introduce the parts of a
+loop
+
+29
+00:01:48.340 --> 00:01:50.790
+in a very simple example, so you're not
+too
+
+30
+00:01:50.790 --> 00:01:54.450
+distracted by what kind of computation I'm
+trying to perform.
+
+31
+00:01:54.450 --> 00:01:58.080
+So the first thing I'm gonna do is I'm
+gonna introduce a variable
+
+32
+00:01:58.080 --> 00:02:01.900
+and assign it the value one, and we'll say
+number is our variable.
+
+33
+00:02:03.610 --> 00:02:05.780
+And so, what we want to do is print the
+numbers
+
+34
+00:02:05.780 --> 00:02:09.550
+one through ten so we're going to say
+while number is
+
+35
+00:02:09.550 --> 00:02:12.240
+less than or equal to ten, and then we
+have a
+
+36
+00:02:12.240 --> 00:02:14.700
+colon to indicate we're going into the
+body of the loop.
+
+37
+00:02:16.330 --> 00:02:22.740
+Then we want to print the value of number
+and then we want to
+
+38
+00:02:22.740 --> 00:02:28.680
+increment number by one to where right
+number is number plus one.
+
+39
+00:02:28.680 --> 00:02:31.500
+Before we run this, let's exam the parts.
+
+40
+00:02:31.500 --> 00:02:36.520
+Here's our relational expression, while
+number is less than or equal to ten.
+
+41
+00:02:36.520 --> 00:02:39.890
+So that's the condition that we're looking
+for.
+
+42
+00:02:41.680 --> 00:02:46.720
+Then we print the value of number, and
+then we increment number by one.
+
+43
+00:02:46.720 --> 00:02:51.080
+This last line is very important because
+in a count control
+
+44
+00:02:51.080 --> 00:02:54.310
+loop, which is what this is, but in any
+type of loop,.
+
+45
+00:02:54.310 --> 00:02:59.950
+There must be sort of statement that will
+eventually cause your relational
+
+46
+00:02:59.950 --> 00:03:05.320
+expression to be false, otherwise the loop
+will just run and run and run.
+
+47
+00:03:05.320 --> 00:03:06.600
+Lets call that infinite loop.
+
+48
+00:03:08.030 --> 00:03:11.910
+So, this statement number is equal to
+number plus 1.
+
+49
+00:03:11.910 --> 00:03:19.717
+As we go through the values of number from
+1 to 10, eventually number will become 11.
+
+50
+00:03:19.717 --> 00:03:22.405
+And when number has the value 11, it
+
+51
+00:03:22.405 --> 00:03:26.437
+will make this relational expression
+number less than or
+
+52
+00:03:26.437 --> 00:03:32.543
+equal to 10 become false because, of
+course 11 is not less than or equal to 10.
+
+53
+00:03:32.543 --> 00:03:34.586
+So let's run the loop to see how it works.
+
+54
+00:03:34.586 --> 00:03:37.937
+We'll exit and save.
+
+55
+00:03:37.937 --> 00:03:43.070
+Then we type in the name of the script or
+program and there's our values
+
+56
+00:03:43.070 --> 00:03:48.116
+1,2,3,4,5,6,7,8,9,10 and of course, going
+
+57
+00:03:48.116 --> 00:03:53.520
+back and looking at the code again right
+here we see what happened.
+
+58
+00:03:53.520 --> 00:04:00.160
+Numbers 1, so we check the expression one
+is indeed less than or equal to ten.
+
+59
+00:04:00.160 --> 00:04:06.550
+So we print number increment number by one
+go back and test again
+
+60
+00:04:06.550 --> 00:04:12.000
+and two is less than or equal to ten so we
+print number, increment number by one.
+
+61
+00:04:12.000 --> 00:04:13.700
+Now number is three.
+
+62
+00:04:13.700 --> 00:04:16.610
+We go back and check the expression again,
+and
+
+63
+00:04:16.610 --> 00:04:19.310
+we continue to do that until number
+becomes 11.
+
+64
+00:04:19.310 --> 00:04:23.450
+At that point, 11 less than or equal to 10
+is
+
+65
+00:04:23.450 --> 00:04:28.470
+false, so we drop out of the loop to the
+next statement.
+
+66
+00:04:28.470 --> 00:04:30.420
+There are no more statements, so the
+program
+
+67
+00:04:30.420 --> 00:04:35.390
+stops, and the program stops printing
+after 10.
+
+68
+00:04:35.390 --> 00:04:38.120
+So that's our introduction to the while
+loop.
+
+69
+00:04:38.120 --> 00:04:40.700
+And now we are ready to move to the next
+lesson where we
+
+70
+00:04:40.700 --> 00:04:45.060
+are going to examine in a little more
+detail, the count controlled group.
+

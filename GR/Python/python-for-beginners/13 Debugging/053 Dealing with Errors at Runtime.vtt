@@ -1,0 +1,215 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:07.999
+[SOUND] Now, I'm going to start looking at
+[UNKNOWN] and how to debug that.
+
+2
+00:00:07.999 --> 00:00:13.318
+So, if you open up the debug.py, and then
+we can start looking at the code.
+
+3
+00:00:13.318 --> 00:00:18.704
+So, it's simple enough, it's 1, 2 and 3
+and then a fourth option on which the
+
+4
+00:00:18.704 --> 00:00:24.400
+user puts in a value of their own, and now
+we've got a total which is 1 + 2 + 3 + 4.
+
+5
+00:00:24.400 --> 00:00:28.620
+All the values there upon and then we
+print the total out.
+
+6
+00:00:28.620 --> 00:00:34.080
+So, it's very simple and as you can see,
+Python has shown us an error here.
+
+7
+00:00:34.080 --> 00:00:36.360
+Not Python, sorry, Eclipse has shown us
+this error.
+
+8
+00:00:36.360 --> 00:00:39.080
+However, if we run this error, you'll
+notice that it
+
+9
+00:00:39.080 --> 00:00:41.230
+doesn't actually get called upon as being
+a syntax error.
+
+10
+00:00:42.420 --> 00:00:44.870
+This is what we call a runtime error,
+because it's not an
+
+11
+00:00:44.870 --> 00:00:48.045
+actual error with the code as such, it's
+nothing wrong with the code.
+
+12
+00:00:48.045 --> 00:00:51.590
+It is something which only we'll notice
+when it's actually
+
+13
+00:00:51.590 --> 00:00:55.050
+running through the code and therefore
+it's an error upon runtime.
+
+14
+00:00:55.050 --> 00:00:56.925
+And so, if we put any extra value as being
+
+15
+00:00:56.925 --> 00:01:00.540
+5 press Enter, you'll see we get something
+called a traceback.
+
+16
+00:01:00.540 --> 00:01:03.290
+Now traceback, is where it tells, it gives
+us a list
+
+17
+00:01:03.290 --> 00:01:06.940
+of where all of the occurrences of this
+problem might occur.
+
+18
+00:01:06.940 --> 00:01:12.790
+And because it's only going to occur once
+here, it shows us that it's in line 6.
+
+19
+00:01:12.790 --> 00:01:15.040
+And so, it shows us also.
+
+20
+00:01:15.040 --> 00:01:18.220
+That there's a name, a name error and the
+name second or
+
+21
+00:01:18.220 --> 00:01:22.930
+seocnd, which is what is typed in as that,
+is not defined.
+
+22
+00:01:22.930 --> 00:01:26.830
+And so, we go back here and change the
+lettering around.
+
+23
+00:01:28.750 --> 00:01:29.650
+And then, run it again.
+
+24
+00:01:30.700 --> 00:01:32.660
+Again put the value of 5 in there.
+
+25
+00:01:35.100 --> 00:01:38.790
+You'll see now, there again, something
+which is called a type error.
+
+26
+00:01:38.790 --> 00:01:42.240
+Now, this is a [UNKNOWN] and the reason
+for this, is simply
+
+27
+00:01:42.240 --> 00:01:44.630
+because I typed the 5 in there by accident
+a second ago.
+
+28
+00:01:46.220 --> 00:01:47.476
+Save that again and run it.
+
+29
+00:01:47.476 --> 00:01:53.690
+And you'll see, now that we get int of 1,
+4 unsupported operand.
+
+30
+00:01:53.690 --> 00:01:56.200
+Which is, this plus string.
+
+31
+00:01:56.200 --> 00:01:59.110
+So what we need to do, is put this as a
+integer.
+
+32
+00:02:01.900 --> 00:02:05.640
+And to do that, just put int around the
+word and run it again.
+
+33
+00:02:08.390 --> 00:02:12.360
+And we get the value of 16 being
+outputted.
+
+34
+00:02:12.360 --> 00:02:15.220
+Which is 4 plus 5 which is 9 plus 2 which
+is 11 plus 5 is 16.
+
+35
+00:02:15.220 --> 00:02:19.790
+And so, as you can see, it's working
+properly now.
+
+36
+00:02:20.840 --> 00:02:22.480
+The reason why we have to put int around
+here
+
+37
+00:02:22.480 --> 00:02:25.130
+is because we're getting input from the,
+from the user.
+
+38
+00:02:25.130 --> 00:02:28.210
+And it's always going to be interpreted as
+a string.
+
+39
+00:02:28.210 --> 00:02:29.300
+And so, we have to convert it to an
+
+40
+00:02:29.300 --> 00:02:32.290
+integer otherwise you can't add any number
+to a string.
+
+41
+00:02:32.290 --> 00:02:33.730
+It doesn't work.
+
+42
+00:02:33.730 --> 00:02:34.710
+So, thank you for watching.
+
+43
+00:02:34.710 --> 00:02:36.290
+That's how you fix one time errors.
+
+44
+00:02:36.290 --> 00:02:39.446
+And I'll see you soon.
+
+45
+00:02:39.446 --> 00:02:40.450
+[SOUND]
+

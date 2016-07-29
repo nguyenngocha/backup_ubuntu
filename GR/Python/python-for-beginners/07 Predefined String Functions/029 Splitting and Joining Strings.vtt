@@ -1,0 +1,318 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.020
+[MUSIC].
+
+2
+00:00:05.020 --> 00:00:06.064
+>> Hello, and welcome back.
+
+3
+00:00:06.064 --> 00:00:10.050
+In this video we'll be covering how to
+join, and split strings.
+
+4
+00:00:10.050 --> 00:00:12.470
+So, to join a string together.
+
+5
+00:00:12.470 --> 00:00:14.790
+First of all, we need to create a
+sequence, and a string.
+
+6
+00:00:14.790 --> 00:00:16.280
+So, with the string variable, I've just
+got
+
+7
+00:00:16.280 --> 00:00:19.010
+what i'm going to be joining them together
+with.
+
+8
+00:00:19.010 --> 00:00:23.630
+And, for the sequence, I've got a list of,
+the
+
+9
+00:00:23.630 --> 00:00:27.320
+first six letters of the alphabet, which
+is A to F.
+
+10
+00:00:27.320 --> 00:00:28.760
+Now you can have anything within this.
+
+11
+00:00:28.760 --> 00:00:29.650
+You can have numbers.
+
+12
+00:00:29.650 --> 00:00:33.970
+You can have, You could have, letters.
+
+13
+00:00:33.970 --> 00:00:35.390
+You could have symbols, anything.
+
+14
+00:00:36.490 --> 00:00:39.450
+And also you can use a [UNKNOWN] if you
+want to instead.
+
+15
+00:00:39.450 --> 00:00:41.550
+It doesn't matter whether you use a
+[UNKNOWN] or a list.
+
+16
+00:00:43.020 --> 00:00:45.770
+So what we have to do now is if we do
+print, and
+
+17
+00:00:45.770 --> 00:00:52.420
+then we do string.join and within the join
+we have to type in sequence.
+
+18
+00:00:54.570 --> 00:00:56.540
+And if we run this.
+
+19
+00:00:56.540 --> 00:00:58.640
+You'll see we get A, B, C, D, E and F all
+
+20
+00:00:58.640 --> 00:01:04.170
+separated by a dash or the hyphen which
+it, which we specified here.
+
+21
+00:01:04.170 --> 00:01:06.580
+It's about to change this to two forward
+slashes.
+
+22
+00:01:07.970 --> 00:01:13.460
+Then you'll get A slash slash B slash
+slash C slash slash, and so on.
+
+23
+00:01:13.460 --> 00:01:17.070
+So as you can see the join has a
+particular.
+
+24
+00:01:17.070 --> 00:01:24.125
+[SOUND] Has this particular set of
+parameters which.
+
+25
+00:01:24.125 --> 00:01:29.012
+Is needed for it to work, and it's kind of
+counterintuitive,
+
+26
+00:01:29.012 --> 00:01:34.416
+because it uses a sequence inside of it,
+whereas normally you would expect
+
+27
+00:01:34.416 --> 00:01:39.850
+it to have the sequence and you'd join it
+with whatever the string is.
+
+28
+00:01:39.850 --> 00:01:42.220
+So it's kind of slightly counterintuitive.
+
+29
+00:01:42.220 --> 00:01:45.820
+However, that is the parameter which is
+required, which is.
+
+30
+00:01:45.820 --> 00:01:50.230
+The join, w, inside the join is the
+sequence
+
+31
+00:01:50.230 --> 00:01:53.290
+of which; you want to join together with
+this string.
+
+32
+00:01:53.290 --> 00:01:58.460
+So if you remember what the actual, if you
+remember what the actual
+
+33
+00:01:58.460 --> 00:02:01.990
+parameter is, then it makes it easier to
+p, easier to work with.
+
+34
+00:02:01.990 --> 00:02:03.760
+However like I said, it's
+counterintuitive.
+
+35
+00:02:03.760 --> 00:02:06.170
+So if you do f, forget just keep going
+
+36
+00:02:06.170 --> 00:02:09.130
+back and check the video, and it will help
+you.
+
+37
+00:02:09.130 --> 00:02:13.220
+Now after we got, join we also have split.
+
+38
+00:02:13.220 --> 00:02:15.530
+So I'm going to print that.
+
+39
+00:02:15.530 --> 00:02:16.960
+I'm going to comment all these three out.
+
+40
+00:02:19.070 --> 00:02:25.230
+And I'll create a new string and I'll have
+that equal to a dash b dash
+
+41
+00:02:25.230 --> 00:02:31.469
+c dash c, ADF so that was the output that
+we had the first time round.
+
+42
+00:02:32.620 --> 00:02:35.355
+And what we're going to do is we're just
+going to do print.
+
+43
+00:02:35.355 --> 00:02:39.868
+[SOUND].
+
+44
+00:02:39.868 --> 00:02:45.227
+And then we do string.split.
+
+45
+00:02:45.227 --> 00:02:50.410
+And what we do in here, it takes one
+parameter,
+
+46
+00:02:50.410 --> 00:02:52.760
+and we tell it what we want to separate it
+by.
+
+47
+00:02:54.290 --> 00:02:56.830
+And so here it now is creating it into a
+list.
+
+48
+00:02:57.970 --> 00:03:00.020
+And, as you can see, this list is exactly
+the same
+
+49
+00:03:00.020 --> 00:03:02.660
+as what we had the first time around where
+we were using
+
+50
+00:03:02.660 --> 00:03:07.040
+that as the sequence, so now we could have
+this equal to sequence, so
+
+51
+00:03:08.130 --> 00:03:13.570
+sequence is equal to string.split with the
+hyphen as.
+
+52
+00:03:13.570 --> 00:03:14.670
+The parameter.
+
+53
+00:03:14.670 --> 00:03:18.390
+And then, what we'd need to do from here,
+if we remove that line, we can do a fo,
+
+54
+00:03:18.390 --> 00:03:26.255
+for letter in sequence.
+
+55
+00:03:26.255 --> 00:03:30.110
+And we can print each letter out
+individually, and you'll see that
+
+56
+00:03:30.110 --> 00:03:33.210
+we get the first six letters of the
+alphabet now as individual letters.
+
+57
+00:03:33.210 --> 00:03:39.607
+Or, alternatively we could also do letter,
+no sorry sequence,
+
+58
+00:03:39.607 --> 00:03:44.270
+print sequence and
+
+59
+00:03:44.270 --> 00:03:49.230
+we could get index of the third letter,
+which is gonna be C.
+
+60
+00:03:49.230 --> 00:03:53.100
+So there's, since it's been treated as a
+list after it's been
+
+61
+00:03:53.100 --> 00:03:56.400
+split, we have multiple things that we can
+actually do with this.
+
+62
+00:03:57.570 --> 00:03:59.570
+Which make it quite a useful,
+
+63
+00:04:02.080 --> 00:04:04.990
+a useful function to have if you do have.
+
+64
+00:04:04.990 --> 00:04:07.640
+Something which needs to be split up, then
+
+65
+00:04:07.640 --> 00:04:11.790
+you can actually operate on the individual
+split items.
+
+66
+00:04:11.790 --> 00:04:13.137
+So thank you for watching, I'm Alex
+
+67
+00:04:13.137 --> 00:04:15.186
+Bowers for learntoprogram.tv and I'll see
+you soon.
+
+68
+00:04:15.186 --> 00:04:20.249
+[MUSIC].
+

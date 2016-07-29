@@ -1,0 +1,388 @@
+WEBVTT
+
+1
+00:00:01.030 --> 00:00:05.050
+In this lesson, we're going to look at the
+use of high order functions in Python.
+
+2
+00:00:05.050 --> 00:00:07.320
+And we're gonna look at 3 in particular.
+
+3
+00:00:07.320 --> 00:00:10.518
+Map, Filter, and Reduce.
+
+4
+00:00:10.518 --> 00:00:12.490
+Those are 3 of the more popular high order
+
+5
+00:00:12.490 --> 00:00:16.390
+functions found in many other languages as
+well as Python.
+
+6
+00:00:16.390 --> 00:00:17.530
+So, lets get started.
+
+7
+00:00:17.530 --> 00:00:21.668
+We're gonna call this program
+highorder.py.
+
+8
+00:00:21.668 --> 00:00:25.900
+So, we'll start with the review and we'll
+review the
+
+9
+00:00:25.900 --> 00:00:28.800
+map function, which we looked at in the
+previous lesson.
+
+10
+00:00:28.800 --> 00:00:31.280
+So, the first thing we are gonna do is
+define a
+
+11
+00:00:31.280 --> 00:00:35.070
+function square and it squares a number as
+you can tell.
+
+12
+00:00:36.410 --> 00:00:37.970
+Then, we'll create a list of numbers.
+
+13
+00:00:39.640 --> 00:00:42.150
+We'll just do 3 to keep it short.
+
+14
+00:00:42.150 --> 00:00:48.320
+And then we're going to say, numbers
+squared is equal to list, then map, then
+
+15
+00:00:48.320 --> 00:00:51.740
+our function name, followed by the
+sequence of
+
+16
+00:00:51.740 --> 00:00:54.410
+data we want to apply the function to.
+
+17
+00:00:54.410 --> 00:00:56.180
+So, remember what map does.
+
+18
+00:00:56.180 --> 00:01:02.520
+Map takes a function and applies it to all
+of the elements of a given sequence.
+
+19
+00:01:02.520 --> 00:01:07.860
+So, we'll have the numbers printed here
+and then we will print the square.
+
+20
+00:01:07.860 --> 00:01:08.360
+So
+
+21
+00:01:10.350 --> 00:01:12.240
+lets save that.
+
+22
+00:01:12.240 --> 00:01:16.640
+Go back to our command prompt and run it.
+
+23
+00:01:16.640 --> 00:01:21.680
+And so 1,2,3 becomes 1,4,9 in a new list
+of course.
+
+24
+00:01:22.910 --> 00:01:24.690
+So that's how Map works.
+
+25
+00:01:24.690 --> 00:01:29.560
+Let's look at a second higher order
+function called Filter.
+
+26
+00:01:29.560 --> 00:01:34.750
+Filter will take a function, quite often a
+boolean function or
+
+27
+00:01:34.750 --> 00:01:40.720
+predicate, and then return only those
+elements of the sequence that meet.
+
+28
+00:01:40.720 --> 00:01:42.270
+That criteria.
+
+29
+00:01:42.270 --> 00:01:43.440
+So to give you an example of how
+
+30
+00:01:43.440 --> 00:01:47.140
+that works, we're gonna create a function
+called even.
+
+31
+00:01:47.140 --> 00:01:50.200
+Which takes a number, and looks to see if
+the number's even.
+
+32
+00:01:50.200 --> 00:01:54.145
+And the way we do that, is we take the
+number modulo
+
+33
+00:01:54.145 --> 00:01:59.580
+2, and if that remainder's equal to 0,
+then the number is even.
+
+34
+00:01:59.580 --> 00:02:01.080
+Otherwise.
+
+35
+00:02:01.080 --> 00:02:06.408
+The number is odd, to see filter, we'll
+first create a range of
+
+36
+00:02:06.408 --> 00:02:13.060
+numbers; this time we will create a list
+in the range 1 to 10 and then we'll say,
+
+37
+00:02:13.060 --> 00:02:19.880
+evens equal list filter even numbers.
+
+38
+00:02:19.880 --> 00:02:25.120
+So again, the way filter works is filter
+applies the given function to
+
+39
+00:02:25.120 --> 00:02:30.290
+the sequence and returns those elements of
+
+40
+00:02:30.290 --> 00:02:36.060
+the sequence that match, or that are true
+when passed to the function.
+
+41
+00:02:36.060 --> 00:02:38.570
+So what we should get when we display
+evens.
+
+42
+00:02:39.660 --> 00:02:42.320
+Or just the even numbers in the range from
+1 to 10.
+
+43
+00:02:43.370 --> 00:02:47.770
+Alright, so let's save that program, bring
+up our command prompt.
+
+44
+00:02:48.990 --> 00:02:49.910
+Clear the screen.
+
+45
+00:02:51.010 --> 00:02:55.706
+So our range started out one, two, three,
+four, five, six, seven, eight, nine, ten.
+
+46
+00:02:55.706 --> 00:02:58.700
+And then, after applying.
+
+47
+00:02:58.700 --> 00:03:03.100
+Even to a filter, it returns 2,4, 6, 8 and
+10.
+
+48
+00:03:03.100 --> 00:03:04.210
+Only the even numbers.
+
+49
+00:03:06.130 --> 00:03:08.140
+So that's how filter works.
+
+50
+00:03:08.140 --> 00:03:11.830
+Our third example, is a function called
+reduce.
+
+51
+00:03:11.830 --> 00:03:14.100
+What we're gonna do with reduce is we're
+gonna use it
+
+52
+00:03:14.100 --> 00:03:19.150
+to create an easy way to sum the sequence
+of numbers.
+
+53
+00:03:19.150 --> 00:03:22.770
+So, the first thing we're going to do is
+create a sum function.
+
+54
+00:03:22.770 --> 00:03:26.960
+Then, we'll create a range of numbers
+again, this time 1 through 10.
+
+55
+00:03:26.960 --> 00:03:30.100
+And then we're going to call the reduced
+function.
+
+56
+00:03:30.100 --> 00:03:31.570
+It's a little bit different.
+
+57
+00:03:31.570 --> 00:03:35.020
+We have to call a special library.
+
+58
+00:03:35.020 --> 00:03:40.200
+Functools with our function and our
+sequence, and so to
+
+59
+00:03:40.200 --> 00:03:44.000
+make that work we're going to have to
+import the library.
+
+60
+00:03:44.000 --> 00:03:46.330
+So first thing we need to do is import
+functools,
+
+61
+00:03:46.330 --> 00:03:51.570
+which stands for functional tools and
+reduces found in this library.
+
+62
+00:03:51.570 --> 00:03:55.770
+So then we're going to create a list of
+numbers from one to ten.
+
+63
+00:03:55.770 --> 00:03:59.450
+Then we call reduce from the library with
+our sum
+
+64
+00:03:59.450 --> 00:04:05.970
+function and our sequence and it's going
+to access the sequence
+
+65
+00:04:05.970 --> 00:04:09.850
+one by one, taking each value and adding
+it to the
+
+66
+00:04:09.850 --> 00:04:14.680
+next value, using our sum function and
+we'll display the result.
+
+67
+00:04:19.070 --> 00:04:20.770
+Let's display the range also.
+
+68
+00:04:25.640 --> 00:04:26.760
+Save our program.
+
+69
+00:04:26.760 --> 00:04:28.350
+Let's clear the screen.
+
+70
+00:04:28.350 --> 00:04:34.950
+Theres our range, one through ten and the
+sum of 1 to 10, or the range is 55.
+
+71
+00:04:34.950 --> 00:04:36.070
+And that's correct.
+
+72
+00:04:37.940 --> 00:04:40.070
+So here you've seen examples of three
+
+73
+00:04:40.070 --> 00:04:45.180
+higher order functions; map, filter and
+reduce.
+
+74
+00:04:45.180 --> 00:04:49.120
+One of the nice things about these
+functions is that it gives the ability
+
+75
+00:04:49.120 --> 00:04:54.360
+to do some fairly complex programming in a
+very small number of lines of code.
+
+76
+00:04:54.360 --> 00:04:56.520
+The advantage to that of course is that
+you
+
+77
+00:04:56.520 --> 00:05:00.690
+increase your productivity, and you reduce
+your chances of errors.
+
+78
+00:05:00.690 --> 00:05:03.440
+So with that we're finished with this
+chapter,
+
+79
+00:05:03.440 --> 00:05:06.920
+at least the lessons on part 2 of
+functions.
+
+80
+00:05:06.920 --> 00:05:09.990
+And what we're ready to do now, is move on
+to the exercises
+
+81
+00:05:09.990 --> 00:05:12.330
+where we're going to work with recursive
+
+82
+00:05:12.330 --> 00:05:15.990
+functions, anonymous functions, and higher
+order functions.
+
+83
+00:05:15.990 --> 00:05:19.380
+And we will start in the first exercise
+looking at recursive functions.
+

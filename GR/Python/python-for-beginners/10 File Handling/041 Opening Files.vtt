@@ -1,0 +1,208 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.833
+[MUSIC]
+
+2
+00:00:04.833 --> 00:00:07.851
+Hello, and in this video, I'll be showing
+
+3
+00:00:07.851 --> 00:00:11.370
+you how to control, and open files within
+Python.
+
+4
+00:00:12.550 --> 00:00:14.610
+Now, it's really easy to do, and you can
+use a built
+
+5
+00:00:14.610 --> 00:00:18.185
+in function, which I'll be showing you how
+to use in a moment.
+
+6
+00:00:18.185 --> 00:00:22.120
+However, if you look at this text.txt
+file, which I've which i've created.
+
+7
+00:00:22.120 --> 00:00:24.830
+It's got four lines in it with some data.
+
+8
+00:00:24.830 --> 00:00:27.990
+It doesn't matter what's actually in this
+file, or what type of file
+
+9
+00:00:27.990 --> 00:00:34.020
+it actually is It will open and read
+whatever it can from any file.
+
+10
+00:00:34.020 --> 00:00:36.520
+I'm just using a text file for this
+example.
+
+11
+00:00:36.520 --> 00:00:41.510
+And what we've got to do inside our Python
+file now, is create a file handler.
+
+12
+00:00:41.510 --> 00:00:44.540
+So we do file is equal to the function
+
+13
+00:00:44.540 --> 00:00:46.670
+open, and this can take two parameters,
+but the
+
+14
+00:00:46.670 --> 00:00:49.460
+first parameter is the one which is
+required, and
+
+15
+00:00:49.460 --> 00:00:53.550
+that is the file name of the, the file
+location.
+
+16
+00:00:53.550 --> 00:00:55.700
+So, if it's not in the same location as
+the actual
+
+17
+00:00:58.400 --> 00:01:03.770
+as the actual Python scripts, then you
+have to locate it based on where it is.
+
+18
+00:01:03.770 --> 00:01:07.161
+So, you could say, open up a HTML page on
+the
+
+19
+00:01:07.161 --> 00:01:13.770
+internet by using HTTP purge call within
+the open function, for example.
+
+20
+00:01:13.770 --> 00:01:15.520
+Or you can locate it on your disk
+
+21
+00:01:15.520 --> 00:01:19.341
+space by going back and changing directory
+appropriately.
+
+22
+00:01:20.840 --> 00:01:24.590
+Also to get it to read it line by line,
+what we need
+
+23
+00:01:24.590 --> 00:01:29.840
+to do is do for, and then we'll do each
+line in the file.
+
+24
+00:01:29.840 --> 00:01:32.490
+And we'll just do print line.
+
+25
+00:01:32.490 --> 00:01:36.210
+Now, when we run this, you'll notice that
+we actually get an extra space
+
+26
+00:01:36.210 --> 00:01:41.100
+in between each of these outputs, which is
+not apparent within each of these inputs.
+
+27
+00:01:42.310 --> 00:01:45.850
+The way to get rid of this, is in the
+print to do a comma,
+
+28
+00:01:45.850 --> 00:01:48.880
+and then we do end, is equal to, and then
+just do a blank space.
+
+29
+00:01:48.880 --> 00:01:51.770
+And what this does, is it changes what the
+value
+
+30
+00:01:51.770 --> 00:01:55.100
+of the end line, end of the line will be.
+
+31
+00:01:55.100 --> 00:01:58.539
+So, for example, I could change it to be
+two backwards slashes.
+
+32
+00:02:01.160 --> 00:02:04.040
+And then, if I was to run this again,
+you'll just
+
+33
+00:02:04.040 --> 00:02:06.470
+get one backward slash at the end of each
+line, or
+
+34
+00:02:06.470 --> 00:02:11.520
+rather at the beginning of each new line,
+which is the
+
+35
+00:02:11.520 --> 00:02:14.890
+equivalent of it being at the end of each
+line anyway.
+
+36
+00:02:14.890 --> 00:02:23.010
+So, as you can see, all it does is just
+set a value for the new line, and so, if
+
+37
+00:02:23.010 --> 00:02:26.170
+we put those empty string, then all we get
+is
+
+38
+00:02:26.170 --> 00:02:28.660
+each one on the same way in which we input
+it.
+
+39
+00:02:30.360 --> 00:02:32.810
+So, that is how you're open a file within
+Python.
+
+40
+00:02:32.810 --> 00:02:35.884
+It is incredibly easy, well, it allows you
+
+41
+00:02:35.884 --> 00:02:39.633
+to obtain data without having to use a
+database.
+
+42
+00:02:39.633 --> 00:02:42.199
+So, thank you for watching, and I will see
+you in the next video.
+
+43
+00:02:42.199 --> 00:02:47.419
+[MUSIC]
+

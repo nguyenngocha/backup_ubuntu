@@ -1,0 +1,222 @@
+WEBVTT
+
+1
+00:00:01.190 --> 00:00:04.755
+In the last lesson we saw how to write a
+simple if statement.
+
+2
+00:00:04.755 --> 00:00:08.100
+An example that we used was a payroll
+example where we perform
+
+3
+00:00:08.100 --> 00:00:11.160
+one calculation if the number of hours
+worked was greater than 40.
+
+4
+00:00:11.160 --> 00:00:14.510
+And then we had a separate if statement
+that checked to see if the number of
+
+5
+00:00:14.510 --> 00:00:16.650
+hours worked were less than or equal to
+
+6
+00:00:16.650 --> 00:00:19.870
+40, in which case, yet another calculation
+was performed.
+
+7
+00:00:19.870 --> 00:00:23.990
+Having two if statements related like that
+is usually not necessary.
+
+8
+00:00:23.990 --> 00:00:27.780
+What you can do instead is write what's
+called an if-else statement.
+
+9
+00:00:27.780 --> 00:00:31.086
+And let's take a look at the abstract
+version of that, then we'll go
+
+10
+00:00:31.086 --> 00:00:34.870
+back into the program from last lesson and
+then modify it using an if-else.
+
+11
+00:00:34.870 --> 00:00:37.516
+The way you write the if-else is you have
+the if followed by
+
+12
+00:00:37.516 --> 00:00:41.525
+the relational expression, followed by the
+set of statements that will be executed.
+
+13
+00:00:41.525 --> 00:00:43.610
+Then you have else, followed by a colon,
+followed by the set of statements that
+
+14
+00:00:51.130 --> 00:00:56.890
+you want to have executed, if the if part
+of the statement is false.
+
+15
+00:00:56.890 --> 00:01:01.350
+So, in other words, here's how the if else
+statement works.
+
+16
+00:01:01.350 --> 00:01:03.930
+The relational expression is tested.
+
+17
+00:01:03.930 --> 00:01:07.570
+If it's true, then the statements in the
+body of
+
+18
+00:01:07.570 --> 00:01:12.540
+the if are executed and control falls
+outside of the else.
+
+19
+00:01:12.540 --> 00:01:15.450
+To where my cursor is, in other words.
+
+20
+00:01:16.710 --> 00:01:22.010
+If the relational expression is false,
+then the statements after the else
+
+21
+00:01:22.010 --> 00:01:27.890
+are automatically executed and then
+control falls down out of the If-Else.
+
+22
+00:01:27.890 --> 00:01:32.370
+So one set of statements is executed if
+the relational expression is true.
+
+23
+00:01:32.370 --> 00:01:37.310
+A second set of statements is executed if
+the relational expression is false.
+
+24
+00:01:37.310 --> 00:01:40.010
+But by doing it this way, we don't have to
+write a
+
+25
+00:01:40.010 --> 00:01:45.130
+separate if that would be covered in this
+case by the else.
+
+26
+00:01:45.130 --> 00:01:47.650
+Alright, so lets go back and look at the
+program from before.
+
+27
+00:01:47.650 --> 00:01:52.670
+It was ifstatement.py.
+
+28
+00:01:52.670 --> 00:01:56.010
+And all we have to do to modify that is
+
+29
+00:01:56.010 --> 00:02:00.150
+take out the if and replace it with an
+else.
+
+30
+00:02:00.150 --> 00:02:06.700
+So, now we're saying, if hour worked is
+greater than 40, execute this statement.
+
+31
+00:02:06.700 --> 00:02:10.980
+Otherwise, else, execute this statement.
+
+32
+00:02:10.980 --> 00:02:14.020
+So let's exit and save, and then run the
+program and see what it does.
+
+33
+00:02:14.020 --> 00:02:19.520
+So, we'll type if statement.py.
+
+34
+00:02:19.520 --> 00:02:22.770
+So let's do it where the if is true.
+
+35
+00:02:24.040 --> 00:02:27.590
+Now let's run it again and this time let's
+run it with the else.
+
+36
+00:02:28.620 --> 00:02:33.840
+So we get the very same result as we got
+before, but we do it without
+
+37
+00:02:33.840 --> 00:02:39.620
+having to actually perform yet a second
+relational expression test.
+
+38
+00:02:39.620 --> 00:02:41.020
+In other words, we don't have to test to
+see
+
+39
+00:02:41.020 --> 00:02:43.540
+if hours worked is less than or equal to
+40.
+
+40
+00:02:43.540 --> 00:02:48.180
+If this expression is false, then
+execution is transferred
+
+41
+00:02:48.180 --> 00:02:52.310
+immediately to the statement inside the
+else and it's executed.
+
+42
+00:02:52.310 --> 00:02:58.040
+So now we've seen two of the three types
+of if statements, the if, the if-else
+
+43
+00:02:58.040 --> 00:03:00.360
+and now the third type which is performed
+
+44
+00:03:00.360 --> 00:03:04.560
+if we have several relational expressions
+to test.
+
+45
+00:03:04.560 --> 00:03:07.640
+And that's called the if-l-if, and we're
+going to
+
+46
+00:03:07.640 --> 00:03:09.240
+see how to do that in the next lesson.
+

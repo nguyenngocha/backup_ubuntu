@@ -1,0 +1,247 @@
+WEBVTT
+
+1
+00:00:01.160 --> 00:00:02.420
+In this lesson we're going to look a
+
+2
+00:00:02.420 --> 00:00:07.170
+little bit more at processing lists with
+for loops.
+
+3
+00:00:07.170 --> 00:00:12.780
+Let's open up a new program we'll call it
+forlist.py.
+
+4
+00:00:12.780 --> 00:00:14.930
+Let's begin by creating a list of the
+first two
+
+5
+00:00:14.930 --> 00:00:20.990
+integers, so there's out list and to
+refresh your memory.
+
+6
+00:00:20.990 --> 00:00:26.630
+To access each element in the list I
+simply create a variable and say for
+
+7
+00:00:26.630 --> 00:00:32.070
+that variable in the list and then perform
+some sort of task on that element.
+
+8
+00:00:32.070 --> 00:00:33.460
+In this case we just want to print.
+
+9
+00:00:34.540 --> 00:00:39.010
+So this will print one to align each
+number int he list.
+
+10
+00:00:39.010 --> 00:00:40.410
+So let's say the program.
+
+11
+00:00:40.410 --> 00:00:43.900
+Go back to command line and run it
+
+12
+00:00:45.080 --> 00:00:47.530
+and there's our rest of the first ten
+integers.
+
+13
+00:00:50.090 --> 00:00:54.240
+Besides the standard way that we use the
+for loop we can
+
+14
+00:00:54.240 --> 00:01:00.410
+also use the for loop with the index by
+indexing into the list.
+
+15
+00:01:00.410 --> 00:01:03.850
+So, for example, let me demonstrate what
+indexing
+
+16
+00:01:03.850 --> 00:01:06.050
+means, in case you're not familiar with
+the term.
+
+17
+00:01:07.100 --> 00:01:11.180
+Number Sub Zero will give me access to the
+first element
+
+18
+00:01:11.180 --> 00:01:16.530
+of the list, one, because we start
+counting at the zero element.
+
+19
+00:01:16.530 --> 00:01:22.200
+So, if I want to access each element, zero
+through nine.
+
+20
+00:01:22.200 --> 00:01:27.312
+What I'm going to do is I'm going to say
+for
+
+21
+00:01:27.312 --> 00:01:32.344
+i in range zero length of numbers like so.
+
+22
+00:01:32.344 --> 00:01:35.840
+Print numbers sub i.
+
+23
+00:01:35.840 --> 00:01:39.150
+So see how this program works.
+
+24
+00:01:39.150 --> 00:01:40.040
+Save it.
+
+25
+00:01:40.040 --> 00:01:42.660
+Go back to our DOS prompt.
+
+26
+00:01:42.660 --> 00:01:47.280
+Clear the screen, run it again, then we
+get the same result.
+
+27
+00:01:48.660 --> 00:01:51.680
+Now one thing you might want to do when
+you're working with
+
+28
+00:01:51.680 --> 00:01:58.820
+a list of elements is access some partial
+set of the complete list.
+
+29
+00:01:58.820 --> 00:02:04.560
+For example, what if I want to display all
+of the I elements in the list.
+
+30
+00:02:04.560 --> 00:02:08.530
+Well I can't do it using the standard for
+loop, but I
+
+31
+00:02:08.530 --> 00:02:12.860
+can do it using the indexing version that
+we're looking at here.
+
+32
+00:02:12.860 --> 00:02:18.750
+In fact, all I have to do is add 1 more
+element to my range function and that's an
+
+33
+00:02:18.750 --> 00:02:25.380
+increment to say go from zero to one to
+two then three to four.
+
+34
+00:02:25.380 --> 00:02:27.340
+In other words skip an element each time,
+
+35
+00:02:27.340 --> 00:02:30.560
+so let me demonstrate for you how that
+works.
+
+36
+00:02:30.560 --> 00:02:34.940
+Save this file, come back to our command
+line, clear the screen.
+
+37
+00:02:37.590 --> 00:02:38.870
+And there's 1, 3, 5, 7, 9.
+
+38
+00:02:38.870 --> 00:02:41.790
+So we could do that at any increment that
+we
+
+39
+00:02:41.790 --> 00:02:46.890
+wanted to, so for example I could do the
+3.
+
+40
+00:02:46.890 --> 00:02:47.560
+Save the file.
+
+41
+00:02:50.870 --> 00:02:53.220
+Run it again.
+
+42
+00:02:53.220 --> 00:02:54.613
+And there's 1, 4, 7, and 10.
+
+43
+00:02:59.630 --> 00:03:04.920
+So it's important to understand that even
+though the primary use of a for loop is to
+
+44
+00:03:04.920 --> 00:03:10.900
+access each element in a sequence, it's
+not necessary to do so.
+
+45
+00:03:10.900 --> 00:03:17.180
+And if we want to modify that process,
+what we have to do is, we have to specify
+
+46
+00:03:17.180 --> 00:03:23.500
+some type of range, because range provides
+us with a set we can iterate over.
+
+47
+00:03:23.500 --> 00:03:27.260
+And then index into the sequence to access
+
+48
+00:03:27.260 --> 00:03:30.380
+the elements in the range that we've
+specified.
+
+49
+00:03:30.380 --> 00:03:32.930
+In the exercises a bit later in the
+chapter we're going
+
+50
+00:03:32.930 --> 00:03:37.530
+to demonstrate in more practical use of
+this technique, but for
+
+51
+00:03:37.530 --> 00:03:39.910
+now I'd like to move on to the next lesson
+where
+
+52
+00:03:39.910 --> 00:03:43.360
+we're going to demonstrate how to use for
+loops with two poles.
+

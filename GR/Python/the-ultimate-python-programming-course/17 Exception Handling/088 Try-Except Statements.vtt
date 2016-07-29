@@ -1,0 +1,346 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:02.870
+In the last lesson I demonstrated how,
+
+2
+00:00:02.870 --> 00:00:07.120
+Python will throw exceptions, when certain
+events occur.
+
+3
+00:00:07.120 --> 00:00:08.700
+In this lesson, we're going to see how to
+
+4
+00:00:08.700 --> 00:00:12.420
+handle those event, using something
+called, a try except.
+
+5
+00:00:12.420 --> 00:00:15.470
+Let me first show you the general form of
+the try
+
+6
+00:00:15.470 --> 00:00:18.019
+accept and then we'll look at a couple of
+specific examples.
+
+7
+00:00:19.230 --> 00:00:22.610
+We begin with the keyword try, followed by
+a colon.
+
+8
+00:00:22.610 --> 00:00:26.900
+Indented inside the try, is our code to be
+executed.
+
+9
+00:00:26.900 --> 00:00:29.470
+In other words, the code that might lead
+to an exception.
+
+10
+00:00:30.810 --> 00:00:35.790
+Then, after all that code is listed out,
+we have the except, clause.
+
+11
+00:00:36.990 --> 00:00:39.320
+Inside the except clause.
+
+12
+00:00:39.320 --> 00:00:45.550
+Is code to run, to handle exceptions, so
+however it is I need to fix the problem,
+
+13
+00:00:45.550 --> 00:00:47.920
+caused by the exception being thrown, I am
+
+14
+00:00:47.920 --> 00:00:51.330
+going to put that code, right here, all
+right.
+
+15
+00:00:51.330 --> 00:00:52.780
+So, let's look at a couple of specific
+
+16
+00:00:52.780 --> 00:00:58.826
+examples, we're going to call this
+program, try.py.
+
+17
+00:01:01.040 --> 00:01:03.800
+So, let's try our divide by 0 problem
+[SOUND] first.
+
+18
+00:01:03.800 --> 00:01:07.250
+So, we prompt the user to [SOUND] enter a
+numerator.
+
+19
+00:01:08.700 --> 00:01:10.950
+Then we prompt [SOUND] the user to enter a
+denominator.
+
+20
+00:01:15.910 --> 00:01:18.240
+Then we divide, to get a quotient.
+
+21
+00:01:21.250 --> 00:01:22.530
+Then we print the quotient.
+
+22
+00:01:23.770 --> 00:01:27.802
+Then, if it an exception, and is thrown,
+
+23
+00:01:27.802 --> 00:01:32.550
+we might write print, cannot, divided by
+zero.
+
+24
+00:01:34.220 --> 00:01:35.740
+Enter a new denominator.
+
+25
+00:01:37.000 --> 00:01:39.150
+[SOUND] Then we get the denominator in
+from the user.
+
+26
+00:01:42.520 --> 00:01:45.062
+There we go, and print the quotient.
+
+27
+00:01:45.062 --> 00:01:48.091
+[BLANK_AUDIO].
+
+28
+00:01:48.091 --> 00:01:50.032
+Lets save and run this program.
+
+29
+00:01:50.032 --> 00:01:55.797
+[BLANK_AUDIO].
+
+30
+00:01:55.797 --> 00:01:58.629
+So, we'll do 12 and then we'll enter zero.
+
+31
+00:01:59.940 --> 00:02:02.425
+[SOUND] And, as soon as a 0 is entered
+and,
+
+32
+00:02:02.425 --> 00:02:05.460
+tries to divide 12 by 0 an exception is
+thrown.
+
+33
+00:02:05.460 --> 00:02:08.260
+It goes to our accept clause.
+
+34
+00:02:08.260 --> 00:02:10.790
+It prints the message, cannot divide by
+zero.
+
+35
+00:02:10.790 --> 00:02:13.420
+Asks us to enter a new denominator.
+
+36
+00:02:13.420 --> 00:02:16.260
+We enter 2, and we get the result.
+
+37
+00:02:16.260 --> 00:02:18.560
+So, that's how the try accept works.
+
+38
+00:02:18.560 --> 00:02:20.550
+Now lets try it again.
+
+39
+00:02:20.550 --> 00:02:22.540
+With our, file example.
+
+40
+00:02:22.540 --> 00:02:24.800
+So, we'll common out all this code.
+
+41
+00:02:24.800 --> 00:02:28.510
+[BLANK_AUDIO].
+
+42
+00:02:28.510 --> 00:02:29.610
+Come back up to the try.
+
+43
+00:02:31.030 --> 00:02:33.080
+Prompt the user [SOUND] to enter the name
+of a file.
+
+44
+00:02:33.080 --> 00:02:38.080
+And then we'll say, name is equal to
+input.
+
+45
+00:02:38.080 --> 00:02:40.930
+Then we'll say, file is equal to open.
+
+46
+00:02:40.930 --> 00:02:49.080
+Name to read, and for the accept, we'll
+say print, cannot open file.
+
+47
+00:02:49.080 --> 00:02:51.060
+We don't know why exactly, that doesn't
+
+48
+00:02:51.060 --> 00:02:53.095
+really matter, [SOUND] and we'll prompt
+the
+
+49
+00:02:53.095 --> 00:02:55.020
+user again with a little different prompt
+
+50
+00:02:55.020 --> 00:02:57.270
+[SOUND] this time, it doesn't really
+matter.
+
+51
+00:03:03.400 --> 00:03:05.010
+Okay, so, lets save the file, lets
+
+52
+00:03:07.500 --> 00:03:14.240
+run it, lets clear our screen, so,
+Blah.txt, cannot
+
+53
+00:03:14.240 --> 00:03:17.710
+open file, enter the name, of the file to
+open.
+
+54
+00:03:17.710 --> 00:03:22.150
+I know I have a, file called grades.text,
+and it opens the file.
+
+55
+00:03:23.900 --> 00:03:28.210
+So, code that we think might, throw an
+exception, can be placed inside of try,
+
+56
+00:03:29.370 --> 00:03:34.220
+and then code that we use to handle the
+exception, is placed inside an except.
+
+57
+00:03:35.440 --> 00:03:37.600
+And there's one more variation I want to
+talk about with
+
+58
+00:03:37.600 --> 00:03:43.500
+this quick, is that we can also, specify,
+specific types of exceptions.
+
+59
+00:03:43.500 --> 00:03:49.360
+For example, for, file type errors, those
+exceptions are thrown as IOErrors.
+
+60
+00:03:49.360 --> 00:03:53.900
+So, we can say except IOError to handle,
+that particular exception.
+
+61
+00:03:53.900 --> 00:03:58.965
+For divide by zero errors, those are
+called, zeroDivisionErrors.
+
+62
+00:04:00.030 --> 00:04:02.860
+So, we can specify that in the except.
+
+63
+00:04:02.860 --> 00:04:04.745
+And then it will handle just, the
+
+64
+00:04:04.745 --> 00:04:08.750
+zeroDivisionErrors that are thrown, in our
+code.
+
+65
+00:04:08.750 --> 00:04:12.980
+So, when you have a batch of code that
+could throw multiple exceptions.
+
+66
+00:04:12.980 --> 00:04:15.190
+And you're aware of what those exceptions
+are,
+
+67
+00:04:15.190 --> 00:04:17.820
+then you can have specific code to handle
+each
+
+68
+00:04:17.820 --> 00:04:20.380
+exception, or you can have a single except
+
+69
+00:04:20.380 --> 00:04:24.130
+clause, and handle all the exceptions, at
+one time.
+
+70
+00:04:24.130 --> 00:04:28.050
+In the chapter exercise, we'll look at
+this a little more closely.
+
+71
+00:04:28.050 --> 00:04:30.410
+But now we're going to move on to the next
+lesson where we're going
+
+72
+00:04:30.410 --> 00:04:32.330
+to talk about one more variation of
+
+73
+00:04:32.330 --> 00:04:36.390
+try except, and that's called, try except
+finally.
+
+74
+00:04:36.390 --> 00:04:39.620
+Where the finally clause, is a set of
+statements, that are
+
+75
+00:04:39.620 --> 00:04:44.700
+executed when no other, statements can be
+execute without throwing exceptions.
+

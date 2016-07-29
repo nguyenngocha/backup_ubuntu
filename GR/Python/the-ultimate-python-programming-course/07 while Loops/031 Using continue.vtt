@@ -1,0 +1,334 @@
+WEBVTT
+
+1
+00:00:01.170 --> 00:00:03.020
+In this lesson, we're going to demonstrate
+how to
+
+2
+00:00:03.020 --> 00:00:06.540
+use the continue statement to cause a
+While loop
+
+3
+00:00:06.540 --> 00:00:08.850
+to stop in the middle of executing the
+body
+
+4
+00:00:08.850 --> 00:00:12.380
+and continue with the next iteration of
+the loop.
+
+5
+00:00:12.380 --> 00:00:15.450
+Which means, just moving back to the top
+and testing the
+
+6
+00:00:15.450 --> 00:00:18.940
+relational expression, then continuing
+back into the body of the loop.
+
+7
+00:00:18.940 --> 00:00:21.110
+Let me show you the general form of the
+
+8
+00:00:21.110 --> 00:00:23.700
+continue statement first and then we'll
+look at an example.
+
+9
+00:00:23.700 --> 00:00:28.080
+So we have our While loop and our
+relational expression.
+
+10
+00:00:28.080 --> 00:00:35.390
+Then we could have some statements or not,
+just depends on the situation.
+
+11
+00:00:35.390 --> 00:00:38.490
+And then continue and then more
+statements.
+
+12
+00:00:38.490 --> 00:00:43.030
+So what happens is is that usually
+continue
+
+13
+00:00:43.030 --> 00:00:46.070
+will be based on some sort of condition.
+
+14
+00:00:46.070 --> 00:00:48.680
+So if that condition is true, and the
+continue
+
+15
+00:00:48.680 --> 00:00:52.120
+statement appears, so let's put it in its
+context.
+
+16
+00:00:52.120 --> 00:00:53.980
+If, I'm not saying that this is the
+
+17
+00:00:53.980 --> 00:00:58.220
+only way continue is used, but it
+frequently is.
+
+18
+00:00:58.220 --> 00:00:59.510
+So let's go over the loop again.
+
+19
+00:00:59.510 --> 00:01:01.800
+So we go into the loop, we execute
+
+20
+00:01:01.800 --> 00:01:05.710
+some statements, then we test a relational
+expression.
+
+21
+00:01:05.710 --> 00:01:11.200
+If that relational expression is true, and
+the continue is executed, then control is
+
+22
+00:01:11.200 --> 00:01:13.200
+transferred back to the top of the
+
+23
+00:01:13.200 --> 00:01:16.580
+loop and the relational expression is
+tested again.
+
+24
+00:01:17.740 --> 00:01:20.130
+If not and in the other statements are
+executed and then
+
+25
+00:01:20.130 --> 00:01:23.220
+the control is transferred back to the top
+of the loop.
+
+26
+00:01:24.440 --> 00:01:29.140
+So continue is used if a condition occurs
+that causes us to
+
+27
+00:01:29.140 --> 00:01:33.780
+not want the remaining statements in the
+loop body to be executed.
+
+28
+00:01:33.780 --> 00:01:36.440
+Let's look at an example of how that's
+going to work.
+
+29
+00:01:36.440 --> 00:01:40.480
+So we're gonna call this Python program
+continue.
+
+30
+00:01:41.480 --> 00:01:43.540
+What we're going to do is we're going to
+write a
+
+31
+00:01:43.540 --> 00:01:48.150
+program that will take a numerator and
+denominator and display the quotient.
+
+32
+00:01:48.150 --> 00:01:51.490
+The numerator and the denominator will be
+set by the user.
+
+33
+00:01:51.490 --> 00:01:56.850
+And we need a signal value here as to when
+to stop, so we're going to say negative 1.
+
+34
+00:01:56.850 --> 00:02:01.700
+And that's just an arbitrary value chosen
+as a sentinel.
+
+35
+00:02:01.700 --> 00:02:06.390
+The first thing we're going to do is
+prompt the user to enter a numerator.
+
+36
+00:02:06.390 --> 00:02:09.520
+Convert the input into floating point just
+to be on the
+
+37
+00:02:09.520 --> 00:02:14.740
+safe side then we'll ask the user to enter
+a denominator and
+
+38
+00:02:16.940 --> 00:02:18.380
+we'll get the input from the user.
+
+39
+00:02:20.300 --> 00:02:21.858
+Now, here's where we'll provide our check.
+
+40
+00:02:21.858 --> 00:02:29.670
+If the denominator is equal to 0, then we
+want to continue.
+
+41
+00:02:29.670 --> 00:02:34.630
+Otherwise, we want to print the numerator
+divided by the denominator.
+
+42
+00:02:34.630 --> 00:02:36.530
+And, that's the whole of our program.
+
+43
+00:02:36.530 --> 00:02:40.150
+And, then we'll stop, when the
+denominator's negative 1.
+
+44
+00:02:40.150 --> 00:02:45.480
+So let's exit and save,and then run the
+program and see what we get.
+
+45
+00:02:45.480 --> 00:02:45.980
+So
+
+46
+00:02:48.760 --> 00:02:51.370
+we'll draw a simple one, 4 and 2.
+
+47
+00:02:51.370 --> 00:02:52.210
+It's 2.0.
+
+48
+00:02:52.210 --> 00:02:55.860
+Notice that it displays it in floating
+point.
+
+49
+00:02:55.860 --> 00:02:58.518
+Let's try another one, 34 and 13.
+
+50
+00:02:58.518 --> 00:03:00.300
+There is 2.615.
+
+51
+00:03:00.300 --> 00:03:04.180
+Now, let's try the one with a zero.
+
+52
+00:03:04.180 --> 00:03:09.190
+So, we'll say 12 and 0 and notice what
+happened.
+
+53
+00:03:09.190 --> 00:03:11.250
+We entered a 0 and it takes us right back
+to the
+
+54
+00:03:11.250 --> 00:03:14.370
+top of the loop, where it asks us to enter
+another numerator.
+
+55
+00:03:14.370 --> 00:03:18.070
+So, we'll enter another numerator and a
+denominator.
+
+56
+00:03:18.070 --> 00:03:20.850
+Then will enter numerator and a negative
+1,
+
+57
+00:03:20.850 --> 00:03:24.190
+and the program stops after it displays
+the result.
+
+58
+00:03:24.190 --> 00:03:27.360
+So look at the program again.
+
+59
+00:03:27.360 --> 00:03:29.720
+What we're trying to do is we're trying
+
+60
+00:03:29.720 --> 00:03:34.970
+to find a particular condition,
+denominator equals 0.
+
+61
+00:03:34.970 --> 00:03:38.070
+And avoiding it by not allowing it to
+actually display
+
+62
+00:03:38.070 --> 00:03:41.520
+the result, which in most computer
+languages is an error.
+
+63
+00:03:41.520 --> 00:03:43.230
+So by doing that we just say continue.
+
+64
+00:03:43.230 --> 00:03:47.940
+And then, because denominator is not equal
+to negative 1, the program brings
+
+65
+00:03:47.940 --> 00:03:51.710
+control back to the top and it asks us to
+enter a new numerator.
+
+66
+00:03:51.710 --> 00:03:54.540
+So that's how the continue statement is
+used.
+
+67
+00:03:54.540 --> 00:03:57.110
+Now we're ready to move to the next lesson
+where we're going to
+
+68
+00:03:57.110 --> 00:04:01.260
+look at another way to change the flow of
+control of a while loop.
+
+69
+00:04:01.260 --> 00:04:04.500
+And that's using the break statement to
+immediately
+
+70
+00:04:04.500 --> 00:04:07.270
+exit a loop when a certain condition
+occurs.
+

@@ -1,0 +1,359 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:04.340
+In this chapter, we're going to be looking
+at advanced uses of functions.
+
+2
+00:00:04.340 --> 00:00:07.040
+And in this first lesson we're going to
+begin looking
+
+3
+00:00:07.040 --> 00:00:11.000
+at one advanced use of functions, and
+that's the Recursive function.
+
+4
+00:00:11.000 --> 00:00:16.110
+Not so much an advanced use as it is an
+advanced technique for writing functions.
+
+5
+00:00:16.110 --> 00:00:17.440
+So let's get started.
+
+6
+00:00:17.440 --> 00:00:18.770
+We're gonna call this program.
+
+7
+00:00:19.910 --> 00:00:21.570
+Recursive one dot p y.
+
+8
+00:00:23.270 --> 00:00:26.950
+We're gonna start to explain recursion by
+demonstrating how
+
+9
+00:00:26.950 --> 00:00:29.700
+to use recursion to compute the factorial
+of a number.
+
+10
+00:00:29.700 --> 00:00:31.700
+The first thing we have to understand is
+
+11
+00:00:31.700 --> 00:00:36.070
+that recursion can naturally explain how
+recursion occurs.
+
+12
+00:00:36.070 --> 00:00:37.480
+So, what I'm gonna do, is I'm gonna
+
+13
+00:00:37.480 --> 00:00:40.000
+start with some comments here and give an
+example.
+
+14
+00:00:40.000 --> 00:00:46.490
+5 factorial is equal to 5, times 4 times 3
+times 2 times 1.
+
+15
+00:00:46.490 --> 00:00:50.510
+Another way to look at 5 factorial is to
+
+16
+00:00:50.510 --> 00:00:55.090
+see that it is equal to 5 times 4
+factorial.
+
+17
+00:00:55.090 --> 00:01:00.770
+Then we can say 5 factorial is equal to 5
+times 4 factorial.
+
+18
+00:01:00.770 --> 00:01:06.110
+Times 3 factorial and clearly this is a
+recursive definition.
+
+19
+00:01:06.110 --> 00:01:07.960
+Let's take this last example out.
+
+20
+00:01:07.960 --> 00:01:12.460
+Now here we're defining recursion in terms
+of itself
+
+21
+00:01:12.460 --> 00:01:15.160
+by saying that 5 factorial is equal to 5
+
+22
+00:01:15.160 --> 00:01:17.500
+times 4 factorial, which is the same thing
+as
+
+23
+00:01:17.500 --> 00:01:21.090
+saying 5 times 4 times 3 factorial and so
+on.
+
+24
+00:01:21.090 --> 00:01:25.360
+So clearly factorial has a recursive
+definition that we can use.
+
+25
+00:01:25.360 --> 00:01:30.960
+And, in fact, that's the more natural way
+to describe how to compute factorial.
+
+26
+00:01:30.960 --> 00:01:34.420
+We did it an iterative way earlier because
+those were the only
+
+27
+00:01:34.420 --> 00:01:37.580
+tools that we understood at the time, was
+how to use a loop.
+
+28
+00:01:37.580 --> 00:01:39.140
+To compute factorial.
+
+29
+00:01:39.140 --> 00:01:44.600
+So let's see in this lesson how to write
+the factorial function using recursion.
+
+30
+00:01:44.600 --> 00:01:46.780
+So we'll begin the definition the same way
+we did
+
+31
+00:01:46.780 --> 00:01:50.900
+before, def fact and then our parameter
+will be number.
+
+32
+00:01:50.900 --> 00:01:53.030
+First thing we have to do is we have to
+say,
+
+33
+00:01:53.030 --> 00:01:57.880
+if number is less than or equal to one,
+return one.
+
+34
+00:01:57.880 --> 00:02:00.690
+Now I'm gonna come back and explain all
+this in a moment.
+
+35
+00:02:00.690 --> 00:02:03.790
+First let's go ahead and finish the
+definition, and execute the
+
+36
+00:02:03.790 --> 00:02:06.940
+function, then I'll come back and explain
+how the recursion actually works.
+
+37
+00:02:06.940 --> 00:02:13.884
+So we say, if number less than or equal to
+1, return 1, else, return
+
+38
+00:02:13.884 --> 00:02:19.430
+number times factorial number minus 1.
+
+39
+00:02:19.430 --> 00:02:22.900
+So this is the recursive definition right
+here.
+
+40
+00:02:22.900 --> 00:02:28.090
+If we're saying if the number is greater
+than 1, then return
+
+41
+00:02:28.090 --> 00:02:33.930
+the number times factorial of 1 less than
+the current number.
+
+42
+00:02:33.930 --> 00:02:39.070
+So we start out at 5, we're going to say
+return 5 times factorial 4.
+
+43
+00:02:39.070 --> 00:02:41.690
+So what happens is, as we build up these
+
+44
+00:02:41.690 --> 00:02:46.420
+returns, what we'll see is, we'll see
+essentially this pattern.
+
+45
+00:02:47.540 --> 00:02:51.610
+We'll have a 5, and then a 4, and then a
+3, and then a 2, and then a 1.
+
+46
+00:02:51.610 --> 00:02:54.970
+When we get to the point where we're out
+of
+
+47
+00:02:54.970 --> 00:02:59.390
+numbers to compute, then we work backwards
+and perform the multiplications.
+
+48
+00:02:59.390 --> 00:03:01.580
+2 times 1 is 2.
+
+49
+00:03:01.580 --> 00:03:03.900
+2 times 3 is 6.
+
+50
+00:03:03.900 --> 00:03:06.630
+6 times 4 is 24.
+
+51
+00:03:06.630 --> 00:03:12.130
+24 times 5 is 120, and that is the
+factorial of 5.
+
+52
+00:03:12.130 --> 00:03:16.605
+We can demonstrate how that works by
+writing print, fact, 5.
+
+53
+00:03:18.435 --> 00:03:19.850
+Let's Save and run the program.
+
+54
+00:03:21.030 --> 00:03:22.760
+We'll leave it open because we're going to
+use it again.
+
+55
+00:03:22.760 --> 00:03:23.260
+And
+
+56
+00:03:25.850 --> 00:03:28.165
+we see that 5 factorial is indeed 120.
+
+57
+00:03:28.165 --> 00:03:34.670
+Let's try it with a different value, let's
+try 10 just to do a larger one.
+
+58
+00:03:34.670 --> 00:03:43.400
+3 million 628 thousand and 800 is the
+value of 10 factorial.
+
+59
+00:03:43.400 --> 00:03:45.280
+So again, to look at the definition.
+
+60
+00:03:45.280 --> 00:03:53.620
+The recursive step occurs right here where
+we call factorial with a new input.
+
+61
+00:03:53.620 --> 00:03:56.160
+Just like in a for loop we have to keep
+
+62
+00:03:56.160 --> 00:04:01.000
+decreasing the variable in order to
+eventually stop the program.
+
+63
+00:04:01.000 --> 00:04:02.520
+If we didn't do that then we'd run out
+
+64
+00:04:02.520 --> 00:04:05.630
+of memory at some point and the program
+would crash.
+
+65
+00:04:05.630 --> 00:04:10.355
+But that's how recursion works, and what
+happens is we're just delaying
+
+66
+00:04:10.355 --> 00:04:13.505
+the eventual computation by continually
+calling
+
+67
+00:04:13.505 --> 00:04:16.660
+the function again with a smaller input.
+
+68
+00:04:16.660 --> 00:04:18.449
+So that the first time it's 5 times 4
+factorial.
+
+69
+00:04:18.449 --> 00:04:20.200
+Then it's 5 times 4 times 3 factorial.
+
+70
+00:04:20.200 --> 00:04:27.400
+Then it's 5 times 4 times three times 2
+factorial.
+
+71
+00:04:27.400 --> 00:04:33.736
+Then finally we get to 5 times four times
+3 times 2 times 1 factorial, 1 factorial
+
+72
+00:04:33.736 --> 00:04:39.910
+is 1 that will cause the function to stop
+and then the term we use is unwind.
+
+73
+00:04:39.910 --> 00:04:46.050
+Then we unwind all of these products to
+get the eventual value of 120.
+
+74
+00:04:46.050 --> 00:04:47.800
+So that's how recursion works.
+
+75
+00:04:47.800 --> 00:04:51.640
+And with that, we're ready to move to the
+next lesson, where we're going
+
+76
+00:04:51.640 --> 00:04:56.590
+to look at a couple more examples of using
+recursion in a Python function.
+

@@ -1,0 +1,322 @@
+WEBVTT
+
+1
+00:00:00.140 --> 00:00:04.828
+[MUSIC].
+
+2
+00:00:04.828 --> 00:00:06.083
+Hello and welcome back.
+
+3
+00:00:06.083 --> 00:00:09.349
+In this video, we'll be in the Ivet Idol
+application
+
+4
+00:00:09.349 --> 00:00:13.410
+or [UNKNOWN] or terminal, depending on
+what you want to use.
+
+5
+00:00:13.410 --> 00:00:15.240
+The reason I'm letting you use the Idol
+application
+
+6
+00:00:15.240 --> 00:00:18.160
+is for some reason it keeps crashing on my
+computer.
+
+7
+00:00:18.160 --> 00:00:21.340
+So I'm just going to do this from the
+command line, however it
+
+8
+00:00:21.340 --> 00:00:26.610
+works exactly the same way, so it doesn't
+matter, which one you use.
+
+9
+00:00:26.610 --> 00:00:30.248
+The only difference is that with the Idol
+application you
+
+10
+00:00:30.248 --> 00:00:34.066
+don't have to type in python to get your
+[INAUDIBLE] up.
+
+11
+00:00:34.066 --> 00:00:38.040
+But that's of no difference really anyway
+so.
+
+12
+00:00:38.040 --> 00:00:40.955
+To start off just go to if you're on a Mac
+go down
+
+13
+00:00:40.955 --> 00:00:45.250
+toUtilities in the applications and open
+up terminal, if you're on Windows then
+
+14
+00:00:45.250 --> 00:00:48.850
+go to run and then type in Cmd, and you'll
+get the command
+
+15
+00:00:48.850 --> 00:00:52.580
+line open, and the next thing that you
+need to be able to do.
+
+16
+00:00:54.040 --> 00:00:56.890
+Or the next thing you need to rather is
+type
+
+17
+00:00:56.890 --> 00:01:02.100
+in python3 and you'll get the Python
+interpreter loading gap.
+
+18
+00:01:02.100 --> 00:01:06.050
+Yeah, it should look something similar to
+this and once you
+
+19
+00:01:06.050 --> 00:01:09.050
+get to three arrows that means you're
+ready to start typing.
+
+20
+00:01:09.050 --> 00:01:11.770
+And in this video we'll be covering the
+alphabetic operators.
+
+21
+00:01:11.770 --> 00:01:17.283
+So, there's the obvious ones at first,
+we'll just say four plus five and I'll
+
+22
+00:01:17.283 --> 00:01:23.600
+give you nine and five plus nine is 14,
+and so, so it's the plus operator.
+
+23
+00:01:23.600 --> 00:01:27.100
+And these things before and afterwards are
+called the operands.
+
+24
+00:01:27.100 --> 00:01:32.290
+And there's two operands minimum which are
+required for an operator to work.
+
+25
+00:01:32.290 --> 00:01:34.280
+The operator is the bit in the middle.
+
+26
+00:01:34.280 --> 00:01:35.550
+The plus or the minus sign.
+
+27
+00:01:35.550 --> 00:01:40.500
+The division, multiplication, modulus,
+exponential, floor division.
+
+28
+00:01:40.500 --> 00:01:41.000
+And so on.
+
+29
+00:01:42.480 --> 00:01:47.561
+Okay, so after we've done the addition is
+also obviously minus,
+
+30
+00:01:47.561 --> 00:01:52.821
+so for minus, five minus three is two five
+minus nine, well
+
+31
+00:01:52.821 --> 00:01:58.812
+eight, is minus three, And then you also
+have multiply, multiplication
+
+32
+00:01:58.812 --> 00:02:04.510
+which is the asterisk symbol, so two times
+five, 10 is 20.
+
+33
+00:02:04.510 --> 00:02:08.509
+Then you have the division which is the
+forward
+
+34
+00:02:08.509 --> 00:02:13.040
+slash which is say five divided by three
+is 1.67.
+
+35
+00:02:13.040 --> 00:02:17.180
+Now you can use other functions on these,
+so if I wanted to round that then I could
+
+36
+00:02:17.180 --> 00:02:22.670
+round that to two for example, Now there's
+another thing and if
+
+37
+00:02:22.670 --> 00:02:27.940
+you notice this 5 divide by 3, we have
+1.67
+
+38
+00:02:27.940 --> 00:02:33.740
+roughly, and the way that we can change
+that to round down, is
+
+39
+00:02:36.000 --> 00:02:36.890
+to give us
+
+40
+00:02:39.290 --> 00:02:40.225
+what we want.
+
+41
+00:02:40.225 --> 00:02:43.855
+[SOUND] Is 5 slash slash 3.
+
+42
+00:02:43.855 --> 00:02:47.856
+And that will round it down and get rid of
+anything which is a decimal point.
+
+43
+00:02:47.856 --> 00:02:52.322
+And then this also, the other half of
+this, which is 5 multiply 3.
+
+44
+00:02:52.322 --> 00:02:59.430
+The modular sign is the percentage sign
+within this and that gives you 2.
+
+45
+00:02:59.430 --> 00:03:02.930
+Now, it may confuse you slightly as to how
+
+46
+00:03:02.930 --> 00:03:06.900
+this happens, but that is, is basically
+the, the mainder.
+
+47
+00:03:06.900 --> 00:03:10.390
+So when you divide 5 by 3, you get 1.
+
+48
+00:03:10.390 --> 00:03:12.890
+And then you have 2 left over from that 3.
+
+49
+00:03:12.890 --> 00:03:16.040
+So that's 1 remainder 2, basically.
+
+50
+00:03:16.040 --> 00:03:19.170
+Now, you might think that you should get
+the decimal point, which is 0.7.
+
+51
+00:03:19.170 --> 00:03:21.110
+However, if you don't get that.
+
+52
+00:03:21.110 --> 00:03:25.410
+What you do get, is, you get the remainder
+which is 2.
+
+53
+00:03:25.410 --> 00:03:29.220
+Okay, and the next part is exponential.
+
+54
+00:03:29.220 --> 00:03:34.940
+Which if you were to do 5 to the power,
+which is done by 2 asterisks.
+
+55
+00:03:34.940 --> 00:03:37.840
+So 5 to the power of 2 you get 25.
+
+56
+00:03:38.850 --> 00:03:39.860
+And that
+
+57
+00:03:41.910 --> 00:03:51.338
+is the main or that is all of the
+alphabetic logic operators within python.
+
+58
+00:03:51.338 --> 00:03:55.490
+So, there will, mainly obvious, the only
+two which aren't obvious
+
+59
+00:03:55.490 --> 00:03:59.760
+are the flaw division, which is two
+forward slashes, and the modulus.
+
+60
+00:03:59.760 --> 00:04:01.780
+And probably the exponential, actually.
+
+61
+00:04:01.780 --> 00:04:07.710
+So, those last three, they're rarely to be
+used, you don't need them as often.
+
+62
+00:04:07.710 --> 00:04:09.310
+However, its good to be aware that they
+
+63
+00:04:09.310 --> 00:04:12.320
+exist, because you will be using them
+occasionally.
+
+64
+00:04:12.320 --> 00:04:17.282
+And, depending on what sort of application
+it is you're building, the most common are
+
+65
+00:04:17.282 --> 00:04:21.104
+those three, probably exponentials, which
+you'll be using
+
+66
+00:04:21.104 --> 00:04:23.860
+later on in one of the lab exercises.
+
+67
+00:04:23.860 --> 00:04:26.932
+So thank you for watching and I will see
+you in the next video.
+
+68
+00:04:26.932 --> 00:04:33.189
+[MUSIC].
+

@@ -1,0 +1,239 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:03.750
+For this last exercise, we're going to
+combine working
+
+2
+00:00:03.750 --> 00:00:06.310
+with the list and working with the
+dictionary, to
+
+3
+00:00:06.310 --> 00:00:09.600
+create a list of words in a sentence, and
+
+4
+00:00:09.600 --> 00:00:13.300
+the number of times, the word appears in
+the sentence.
+
+5
+00:00:13.300 --> 00:00:14.110
+So let's get started.
+
+6
+00:00:15.160 --> 00:00:18.472
+We're gonna call this numwords.py, the
+first thing
+
+7
+00:00:18.472 --> 00:00:20.866
+we are gonna do is create our sentence.
+
+8
+00:00:20.866 --> 00:00:21.690
+[BLANK_AUDIO].
+
+9
+00:00:24.720 --> 00:00:26.740
+So our sentence is, now is the time for
+all
+
+10
+00:00:26.740 --> 00:00:28.450
+good people to come to the aid of their
+party.
+
+11
+00:00:30.350 --> 00:00:35.090
+The first thing we wanna do with that is
+break the sentence into a list.
+
+12
+00:00:35.090 --> 00:00:37.460
+And there's a special string function to
+do
+
+13
+00:00:37.460 --> 00:00:41.270
+that called split, which splits up the
+words in
+
+14
+00:00:41.270 --> 00:00:44.490
+a string on a delaminator, in this case, a
+
+15
+00:00:44.490 --> 00:00:49.990
+blank space, and stores each word in a
+list.
+
+16
+00:00:49.990 --> 00:00:55.438
+So, then, after we've got the words into a
+list, then we need to sort the words.
+
+17
+00:00:55.438 --> 00:00:59.730
+There's a built-in function for doing that
+called sorted,
+
+18
+00:00:59.730 --> 00:01:03.330
+which takes a list and returns a sorted
+list.
+
+19
+00:01:03.330 --> 00:01:05.830
+So now we have the words in alphabetical
+order.
+
+20
+00:01:05.830 --> 00:01:09.790
+Let's just look at the sentence as it is
+in the list.
+
+21
+00:01:09.790 --> 00:01:14.410
+The next thing we need to do is create a
+dictionary.
+
+22
+00:01:14.410 --> 00:01:17.560
+So we'll call it NumWords and it will
+start out empty.
+
+23
+00:01:17.560 --> 00:01:21.340
+Then we're gonna write a four loop that
+loops
+
+24
+00:01:21.340 --> 00:01:25.190
+over the list from the first to the last
+element.
+
+25
+00:01:25.190 --> 00:01:29.540
+And for each word in the list if that word
+is
+
+26
+00:01:29.540 --> 00:01:34.360
+in the dictionary already, then we're
+simply going to increase the count.
+
+27
+00:01:34.360 --> 00:01:37.410
+And I forgot to mention that the key is
+the word, and
+
+28
+00:01:37.410 --> 00:01:40.580
+the value is the number of times that word
+appears in the list.
+
+29
+00:01:41.750 --> 00:01:46.050
+So if the word's already in the list, then
+we're gonna increase the value by one.
+
+30
+00:01:47.300 --> 00:01:56.080
+Otherwise, if it's not in the list, set
+the value for that word to one.
+
+31
+00:01:56.080 --> 00:01:57.230
+So to go over that again.
+
+32
+00:01:58.630 --> 00:02:01.280
+We check to see if the word from the list
+is in the dictionary.
+
+33
+00:02:02.400 --> 00:02:09.680
+If it is, then we increment its value by
+one, if it's not, then we set its value to
+
+34
+00:02:09.680 --> 00:02:13.310
+one and this statement right here will put
+the word
+
+35
+00:02:13.310 --> 00:02:17.080
+in the dictionary to start with, if it's
+not there.
+
+36
+00:02:17.080 --> 00:02:20.430
+And that should be all we have to do, so
+now we can print out the
+
+37
+00:02:20.430 --> 00:02:26.970
+word list and count and for that we simply
+loop over the keys, of the dictionary
+
+38
+00:02:29.720 --> 00:02:30.270
+like so.
+
+39
+00:02:32.080 --> 00:02:35.410
+So that should be all we have to do so
+let's save the program.
+
+40
+00:02:35.410 --> 00:02:36.960
+Go back to our command prompt.
+
+41
+00:02:39.010 --> 00:02:40.550
+Here is our sorted list.
+
+42
+00:02:40.550 --> 00:02:43.180
+I see we have one little typo, so lets
+
+43
+00:02:43.180 --> 00:02:46.780
+fix that real quick and use space, right
+there.
+
+44
+00:02:48.380 --> 00:02:50.740
+Now, lets try again, include the screen.
+
+45
+00:02:52.770 --> 00:02:56.560
+Here is our sorted list of words, and here
+is our word count.
+
+46
+00:02:56.560 --> 00:03:01.270
+Notice that the only word that duplicates
+is the word two, and the word the.
+
+47
+00:03:02.430 --> 00:03:06.720
+That's how we can take a string, turn it
+into a list, and then store each
+
+48
+00:03:06.720 --> 00:03:09.190
+word in a dictionary, along with the
+number
+
+49
+00:03:09.190 --> 00:03:12.020
+of times the word appears in the list.
+
+50
+00:03:12.020 --> 00:03:13.880
+That wraps up, this exercise.
+

@@ -1,0 +1,496 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.090
+[MUSIC]
+
+2
+00:00:05.090 --> 00:00:09.714
+Hello and welcome back, in this video,
+I'll be showing you how to read and write
+
+3
+00:00:09.714 --> 00:00:14.474
+using the binding files, so a binding file
+could be anything that's not a text file
+
+4
+00:00:14.474 --> 00:00:18.554
+basically so a video, or an image, like a
+jpeg is what we're going to be
+
+5
+00:00:18.554 --> 00:00:23.220
+using in this example, so if we use the
+same code as what we had previously.
+
+6
+00:00:23.220 --> 00:00:25.800
+We're going to change bits of it around,
+and
+
+7
+00:00:25.800 --> 00:00:29.650
+so, the file we're going to open is called
+keyboard.
+
+8
+00:00:29.650 --> 00:00:35.730
+And it's got bucket, or boken, what I
+meant to call it, dot JPG.
+
+9
+00:00:35.730 --> 00:00:41.600
+And we're going to read that, but we need
+it to be read binary, so we do rb.
+
+10
+00:00:41.600 --> 00:00:44.140
+And now also, we're going to save it.
+
+11
+00:00:44.140 --> 00:00:48.638
+We're not going to save it as a text file,
+we're going to save this as image 2.jpg.
+
+12
+00:00:48.638 --> 00:00:56.570
+And we're going to say write it using wb
+for write to binary.
+
+13
+00:00:56.570 --> 00:00:59.540
+So what we can see here is we currently
+are
+
+14
+00:01:01.700 --> 00:01:05.660
+reading the buffer size as being 100,000,
+the buffer limit of being.
+
+15
+00:01:05.660 --> 00:01:07.810
+And then we in, we can delete that, we
+don't need that.
+
+16
+00:01:07.810 --> 00:01:08.830
+We're not limiting it, we're going to
+
+17
+00:01:08.830 --> 00:01:10.950
+provide the entire image otherwise it
+would corrupted
+
+18
+00:01:11.970 --> 00:01:13.880
+and then, right here, we've got the while
+
+19
+00:01:13.880 --> 00:01:16.820
+len buffer, so that's all exactly the
+same.
+
+20
+00:01:17.980 --> 00:01:20.620
+So, what we are going to do I'll quickly
+show you
+
+21
+00:01:20.620 --> 00:01:23.350
+what the image is that we're going to be
+looking at.
+
+22
+00:01:23.350 --> 00:01:28.200
+First things first, the image is a JPEG
+file.
+
+23
+00:01:28.200 --> 00:01:34.900
+It's three megabytes-ish, and it's 4608
+pixels by 3072 pixels.
+
+24
+00:01:34.900 --> 00:01:38.640
+It was taken on my DSLR camera back in
+
+25
+00:01:38.640 --> 00:01:42.880
+Chris, back in December sometime near
+Christmas, and so
+
+26
+00:01:42.880 --> 00:01:46.460
+this is all the exposure details and I'll
+click
+
+27
+00:01:46.460 --> 00:01:49.100
+very fast, and so are mistaken with the
+camera.
+
+28
+00:01:49.100 --> 00:01:53.490
+So, these details will not actually be
+re-saved because we
+
+29
+00:01:53.490 --> 00:01:57.650
+are copying over the, special, data in
+which we are.
+
+30
+00:01:57.650 --> 00:02:00.930
+So, it will be sent over, because we are
+copying
+
+31
+00:02:00.930 --> 00:02:03.490
+all the file data and not just the actual
+image data.
+
+32
+00:02:04.560 --> 00:02:07.938
+So, all of the data will be sent,
+including all of the,
+
+33
+00:02:07.938 --> 00:02:14.310
+dimension the camera make, the club
+profiles everything that was saved on it.
+
+34
+00:02:14.310 --> 00:02:17.850
+If you actually want to access this file
+and other of
+
+35
+00:02:17.850 --> 00:02:23.120
+my images that I've take you have complete
+access to them all
+
+36
+00:02:23.120 --> 00:02:26.020
+and you have the complete right to
+actually access and use
+
+37
+00:02:26.020 --> 00:02:28.780
+for what ever you want as long as you
+don't sell them.
+
+38
+00:02:28.780 --> 00:02:30.710
+You can go to my google plus page.
+
+39
+00:02:30.710 --> 00:02:34.910
+And there's a link in my profile on udemy
+and also on,
+
+40
+00:02:37.820 --> 00:02:40.420
+if you want to use the any of my images,
+for any
+
+41
+00:02:40.420 --> 00:02:45.330
+reason, such as to experiment and play
+around with this idea with.
+
+42
+00:02:45.330 --> 00:02:48.270
+Or even to use them in projects or
+whatever, you can go
+
+43
+00:02:48.270 --> 00:02:54.090
+to my Google Plus page, which is
+g+.2/bowersbros, and you'll be able to
+
+44
+00:02:54.090 --> 00:02:56.980
+find them all on there, and they're all
+creative common so you
+
+45
+00:02:56.980 --> 00:02:59.560
+can use them as you like, as long as you
+don't sell them.
+
+46
+00:02:59.560 --> 00:03:01.400
+And this one, which we'll be using in the
+example,
+
+47
+00:03:01.400 --> 00:03:06.040
+will be provided for you, and it looks
+like this.
+
+48
+00:03:06.040 --> 00:03:08.120
+So, this is the image in which we are.
+
+49
+00:03:08.120 --> 00:03:13.640
+Going to be using it's just a picture of
+my laptop basically,
+
+50
+00:03:13.640 --> 00:03:19.310
+but it has quite a lot of data within it,
+
+51
+00:03:19.310 --> 00:03:25.250
+like I said it's a 4600 by 3000 pixels so
+it's quite a big image
+
+52
+00:03:25.250 --> 00:03:31.490
+and so it allows us to, have quite a large
+data, set to go on.
+
+53
+00:03:31.490 --> 00:03:35.090
+Which is, turns out to be 3 megabytes,
+roughly.
+
+54
+00:03:35.090 --> 00:03:39.990
+So, what we kind of do now, is, if we save
+this, and if we run this,
+
+55
+00:03:42.090 --> 00:03:44.210
+you'll see that we've got a lot of dots,
+and then
+
+56
+00:03:44.210 --> 00:03:47.980
+if we refresh over here, and if I open up
+this.
+
+57
+00:03:52.490 --> 00:03:57.270
+Now as you can see, we bit incompletely,
+now this turns out to be quite
+
+58
+00:03:57.270 --> 00:04:01.760
+a bit bigger, so there we go, and the
+reason why i, it on the screen
+
+59
+00:04:01.760 --> 00:04:04.030
+is because the window is actually bigger
+
+60
+00:04:04.030 --> 00:04:06.860
+than the recording area, however the image
+is
+
+61
+00:04:06.860 --> 00:04:10.839
+pixel perfect, it stay actually the same
+in way and if I open up the properties.
+
+62
+00:04:12.800 --> 00:04:14.590
+You can see it's got the same number
+
+63
+00:04:14.590 --> 00:04:19.120
+of actual bytes, and so it's an exact
+replica.
+
+64
+00:04:20.780 --> 00:04:24.170
+Now, there is one more thing which I
+should mention, which is if
+
+65
+00:04:24.170 --> 00:04:29.990
+we didn't actually write this to a file,
+if we just read it,.
+
+66
+00:04:33.250 --> 00:04:40.228
+So if I was to just treat this as a normal
+input file, so
+
+67
+00:04:40.228 --> 00:04:46.908
+actually what I'll do is create a new
+input file and
+
+68
+00:04:46.908 --> 00:04:53.230
+[BLANK_AUDIO]
+
+69
+00:04:53.230 --> 00:04:56.499
+So what I'll do is I'll create a new file,
+go over here
+
+70
+00:04:56.499 --> 00:05:01.190
+and create new file, and I'll call this
+file two.pui, and what we're going
+
+71
+00:05:01.190 --> 00:05:04.175
+to do here is we're going to treat it the
+same way we
+
+72
+00:05:04.175 --> 00:05:08.450
+treated the other ones, which is where we
+read it as a text file.
+
+73
+00:05:08.450 --> 00:05:10.620
+And you'll see that we actually get an
+error if
+
+74
+00:05:10.620 --> 00:05:13.300
+we do try that, so file is equal to open,
+
+75
+00:05:15.380 --> 00:05:23.080
+and it's called keyboard bokeh .jpg, now
+if we save that,.
+
+76
+00:05:24.230 --> 00:05:29.760
+We need to do, the, for line in
+
+77
+00:05:29.760 --> 00:05:35.970
+file print line end equal to empty string.
+
+78
+00:05:35.970 --> 00:05:37.395
+So if we run that.
+
+79
+00:05:37.395 --> 00:05:41.379
+[SOUND] Then we get, there's something
+called an ASCII decode
+
+80
+00:05:41.379 --> 00:05:45.055
+error, or a Unicode decode error, and what
+that means is
+
+81
+00:05:45.055 --> 00:05:48.808
+basically that it's an image file and it's
+trying to read
+
+82
+00:05:48.808 --> 00:05:52.509
+it as a text file, which obviously,
+[SOUND] it can't do.
+
+83
+00:05:52.509 --> 00:05:57.660
+So, now if we add it to read as binary, we
+use an [INAUDIBLE].
+
+84
+00:05:57.660 --> 00:05:59.410
+And if we run it again, and what you get
+
+85
+00:05:59.410 --> 00:06:03.070
+is this string here which is sort of
+hexadecimal, I think.
+
+86
+00:06:03.070 --> 00:06:05.370
+I'm not entirely sure what it is,
+basically
+
+87
+00:06:05.370 --> 00:06:07.290
+that's the image data that has been saved,
+
+88
+00:06:09.570 --> 00:06:12.160
+still being read, but that's the data that
+has been saved
+
+89
+00:06:12.160 --> 00:06:15.090
+in terms of an image, and if you were to
+save that.
+
+90
+00:06:15.090 --> 00:06:16.910
+As a text file, that is what you would
+get.
+
+91
+00:06:16.910 --> 00:06:18.110
+You wouldn't get it.
+
+92
+00:06:18.110 --> 00:06:20.450
+Or if you [UNKNOWN] to write it without it
+
+93
+00:06:20.450 --> 00:06:23.260
+being written in binary, that is what
+you'd be writing.
+
+94
+00:06:23.260 --> 00:06:25.770
+So when you write in binary that gets
+converted back into pixels.
+
+95
+00:06:27.820 --> 00:06:30.540
+So that is essentially what we are reading
+and
+
+96
+00:06:30.540 --> 00:06:35.000
+writing is a series of what looks like
+strange characters.
+
+97
+00:06:35.000 --> 00:06:37.950
+And, which actually is the image data
+also.
+
+98
+00:06:37.950 --> 00:06:41.810
+And decode, and encoded, and, I think
+that's on page 64.
+
+99
+00:06:41.810 --> 00:06:45.270
+I'm not entirely sure on that, so don't
+quote me on that.
+
+100
+00:06:45.270 --> 00:06:49.970
+But, that is basically the image data, as
+it's being, stored.
+
+101
+00:06:51.030 --> 00:06:52.440
+And in binary.
+
+102
+00:06:52.440 --> 00:06:56.083
+So thank you for watching and I will see
+you in the next video.
+
+103
+00:06:56.083 --> 00:07:01.289
+[MUSIC]
+

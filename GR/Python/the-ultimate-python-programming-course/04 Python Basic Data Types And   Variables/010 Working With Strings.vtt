@@ -1,0 +1,339 @@
+WEBVTT
+
+1
+00:00:01.160 --> 00:00:02.690
+In this lesson we're going to spend a
+little
+
+2
+00:00:02.690 --> 00:00:05.510
+time looking at how strings are handled in
+Python.
+
+3
+00:00:05.510 --> 00:00:07.690
+So we're also gonna work with the
+interactive
+
+4
+00:00:07.690 --> 00:00:11.140
+shell again this lesson, so let's load
+that first.
+
+5
+00:00:11.140 --> 00:00:14.670
+So a string is any set of characters,
+actually, to be
+
+6
+00:00:14.670 --> 00:00:20.930
+more precise, any sequence of characters
+inside single or double quotes.
+
+7
+00:00:20.930 --> 00:00:23.260
+So we can write a string Hello World
+inside
+
+8
+00:00:23.260 --> 00:00:27.340
+single quotes, or we can put it inside
+double quotes.
+
+9
+00:00:27.340 --> 00:00:30.170
+Single quotes are more the standard for
+Python, so I'll try
+
+10
+00:00:30.170 --> 00:00:34.450
+to use those more often, but double quotes
+are more standard across
+
+11
+00:00:34.450 --> 00:00:37.280
+most programming languages, so every once
+in a while I will
+
+12
+00:00:37.280 --> 00:00:41.060
+revert to double quotes, just out of habit
+more than anything else.
+
+13
+00:00:41.060 --> 00:00:45.520
+So our string, str, holds the value Hello
+World.
+
+14
+00:00:45.520 --> 00:00:49.970
+One of the first operations we can perform
+on strings is concatenation.
+
+15
+00:00:49.970 --> 00:00:54.950
+So here I'm going to concatenate another
+string to string by using the plus sign.
+
+16
+00:00:56.100 --> 00:00:59.820
+So now if I look at string it says, hello
+world, goodbye world.
+
+17
+00:00:59.820 --> 00:01:02.630
+So concatenation would be one of the first
+operations you need
+
+18
+00:01:02.630 --> 00:01:05.810
+to learn when working with strings because
+often you're gonna want to
+
+19
+00:01:05.810 --> 00:01:10.090
+combine data into one string or pin data
+to an existing
+
+20
+00:01:10.090 --> 00:01:14.650
+string so you'll do that via the
+concatenation operator, the plus sign.
+
+21
+00:01:14.650 --> 00:01:19.490
+There's several functions and operations
+we can perform on strings.
+
+22
+00:01:19.490 --> 00:01:22.330
+One of the built-in functions is len for
+length, and
+
+23
+00:01:22.330 --> 00:01:25.870
+that will tell us how many characters are
+in a string.
+
+24
+00:01:25.870 --> 00:01:29.750
+Let's go back and set our string back to
+Hello World, so
+
+25
+00:01:29.750 --> 00:01:34.720
+if we perform len on the string, we'll see
+that that's 13 characters.
+
+26
+00:01:34.720 --> 00:01:38.310
+Strings are sequences in Python where each
+
+27
+00:01:38.310 --> 00:01:41.140
+character of the string has a unique
+position.
+
+28
+00:01:41.140 --> 00:01:45.380
+So for example, if I wanna see the first
+character of the string, I can use
+
+29
+00:01:45.380 --> 00:01:48.280
+what looks like array notation to display
+the
+
+30
+00:01:48.280 --> 00:01:51.600
+first character of the string, which is H.
+
+31
+00:01:51.600 --> 00:01:55.995
+And notice I use 0, because the first
+position is position 0.
+
+32
+00:01:57.110 --> 00:02:01.730
+Position 1 will be the second character,
+which is the E.
+
+33
+00:02:01.730 --> 00:02:04.580
+Something else you can do is you can take
+what's called a slice.
+
+34
+00:02:04.580 --> 00:02:10.530
+So I can write 0:4, and that gives me the
+first four characters.
+
+35
+00:02:10.530 --> 00:02:14.480
+So if I do any other slice, we get
+characters like that.
+
+36
+00:02:14.480 --> 00:02:17.070
+Or, I could just provide the number of
+
+37
+00:02:17.070 --> 00:02:20.500
+characters I want, and that will give me
+those.
+
+38
+00:02:20.500 --> 00:02:23.370
+Another way to do it would be, and
+
+39
+00:02:23.370 --> 00:02:27.252
+that gives me everything after the
+specified character.
+
+40
+00:02:27.252 --> 00:02:31.590
+So there's lots of ways to work with
+slices in Python.
+
+41
+00:02:32.610 --> 00:02:36.380
+You can repeat a string by using the
+multiplication operator, so
+
+42
+00:02:36.380 --> 00:02:40.790
+that str times 2 will give me hello world,
+hello world.
+
+43
+00:02:40.790 --> 00:02:41.885
+Let's look at another example.
+
+44
+00:02:41.885 --> 00:02:44.070
+[BLANK_AUDIO]
+
+45
+00:02:44.070 --> 00:02:47.860
+The split operator takes a single
+argument, a delimiter, and
+
+46
+00:02:47.860 --> 00:02:52.580
+splits up the string into a list, based on
+that delimiter.
+
+47
+00:02:52.580 --> 00:02:55.090
+So in the string above, I have now is the
+time,
+
+48
+00:02:55.090 --> 00:02:58.670
+each separated by a comma, each word
+separated by a comma, and
+
+49
+00:02:58.670 --> 00:03:03.180
+then when I type string split on the
+comma, split returns
+
+50
+00:03:03.180 --> 00:03:07.000
+a list with each word in its own position
+in a list.
+
+51
+00:03:07.000 --> 00:03:09.250
+We're gonna talk about lists in a future
+lesson,
+
+52
+00:03:09.250 --> 00:03:11.520
+so don't worry about those too much right
+now.
+
+53
+00:03:12.860 --> 00:03:16.320
+We can also put special characters into a
+list.
+
+54
+00:03:17.760 --> 00:03:21.420
+For example, backslash N is the new line
+character.
+
+55
+00:03:21.420 --> 00:03:22.740
+And if I did a print.
+
+56
+00:03:22.740 --> 00:03:25.312
+[BLANK_AUDIO].
+
+57
+00:03:25.312 --> 00:03:30.320
+Like so, notice that it put a newline
+between hello world and goodbye, world.
+
+58
+00:03:31.480 --> 00:03:39.610
+Finally, if I have rogue spaces in a
+string, I can use strip
+
+59
+00:03:39.610 --> 00:03:45.880
+and its sister function rstrip to strip
+out those spaces.
+
+60
+00:03:45.880 --> 00:03:49.520
+Use that a lot when you're converting text
+from one
+
+61
+00:03:49.520 --> 00:03:52.620
+source to another, or just trying to clean
+up data.
+
+62
+00:03:52.620 --> 00:03:56.490
+A lot of data that you get from the user
+has extraneous spaces at the
+
+63
+00:03:56.490 --> 00:04:02.250
+beginning or end of strings, and you can
+use strip and rstrip to clean it up.
+
+64
+00:04:02.250 --> 00:04:04.480
+There's a multitude of information I can
+provide you
+
+65
+00:04:04.480 --> 00:04:08.690
+about strings, but these are the major
+concepts and functions
+
+66
+00:04:08.690 --> 00:04:11.730
+and features you need to understand to
+work with
+
+67
+00:04:11.730 --> 00:04:14.720
+most of the rest of the lessons in this
+course.
+
+68
+00:04:14.720 --> 00:04:18.610
+So we'll leave strings for now and move to
+another data type, the
+
+69
+00:04:18.610 --> 00:04:23.470
+boolean data type which we use to work
+with true and false values.
+

@@ -1,0 +1,317 @@
+WEBVTT
+
+1
+00:00:01.110 --> 00:00:03.470
+For this first exercise, we're going to
+demonstrate how to
+
+2
+00:00:03.470 --> 00:00:06.980
+take a set of data, and structure it as a
+list.
+
+3
+00:00:06.980 --> 00:00:08.390
+So what you're looking at in front of you
+
+4
+00:00:08.390 --> 00:00:11.920
+is a set of student names, and a test
+score.
+
+5
+00:00:11.920 --> 00:00:18.160
+We have, Raymond 92, Cynthia 83, [UNKNOWN]
+64, and so on, If this was an advance
+
+6
+00:00:18.160 --> 00:00:20.840
+exercise, we'd be looking how to access
+this
+
+7
+00:00:20.840 --> 00:00:23.160
+data, from the file that it's stored in.
+
+8
+00:00:23.160 --> 00:00:25.210
+But we haven't gotten that far yet, so
+we're just going to
+
+9
+00:00:25.210 --> 00:00:29.150
+have to see how to enter this data
+manually into a list.
+
+10
+00:00:29.150 --> 00:00:31.730
+So let's open up Python.
+
+11
+00:00:31.730 --> 00:00:34.150
+Let's open the shell and so what we want
+to
+
+12
+00:00:34.150 --> 00:00:37.650
+do is we want to name this list something
+so we'll
+
+13
+00:00:37.650 --> 00:00:40.400
+call it grades, and what we're going to do
+is
+
+14
+00:00:40.400 --> 00:00:44.000
+we're going to take each name store it as
+a string.
+
+15
+00:00:44.000 --> 00:00:47.440
+And then store the test grade as a number
+or integer.
+
+16
+00:00:48.540 --> 00:00:50.990
+Now what's important is you have to make
+sure that you do a couple things.
+
+17
+00:00:50.990 --> 00:00:53.540
+First you have to make sure that, each
+name is
+
+18
+00:00:53.540 --> 00:00:56.730
+surrounded in quotes, either a single
+quote or a double quote.
+
+19
+00:00:56.730 --> 00:00:59.200
+I'm using single quotes here.
+
+20
+00:00:59.200 --> 00:01:01.320
+And you also have to make sure that each
+
+21
+00:01:01.320 --> 00:01:05.490
+grade, is separated from a name by the
+comma.
+
+22
+00:01:05.490 --> 00:01:09.290
+We'll have to continue this on the next
+line and that's not a problem.
+
+23
+00:01:09.290 --> 00:01:12.480
+Again, just making sure that we get our
+strings
+
+24
+00:01:12.480 --> 00:01:18.010
+and our numbers correct and that commas
+separate each one.
+
+25
+00:01:18.010 --> 00:01:19.640
+And there's our list.
+
+26
+00:01:19.640 --> 00:01:23.860
+So the way we can access this list is that
+we can assume that each.
+
+27
+00:01:23.860 --> 00:01:27.380
+Pair is one record, if you want to call it
+that.
+
+28
+00:01:27.380 --> 00:01:32.350
+So, Raymond goes with 92, Cynthia goes
+with 83, [UNKNOWN] goes with 64.
+
+29
+00:01:32.350 --> 00:01:35.610
+So, for example, if I want to see Raymond
+and
+
+30
+00:01:35.610 --> 00:01:39.793
+his grade, I can type, and then you can
+catenate.
+
+31
+00:01:41.320 --> 00:01:47.000
+But I get an error, the error says cannot
+concatenate string and int objects.
+
+32
+00:01:47.000 --> 00:01:50.000
+I did that on purpose, partly because I
+need to start showing you how
+
+33
+00:01:50.000 --> 00:01:54.300
+errors look, because you're going to be
+running into them as you learn Python.
+
+34
+00:01:54.300 --> 00:01:55.530
+And second, I wanted to bring up a
+
+35
+00:01:55.530 --> 00:01:59.830
+point that you cannot concatenate strings
+and ints.
+
+36
+00:01:59.830 --> 00:02:03.090
+In some of the lessons in this exercise
+I've used concatenation
+
+37
+00:02:03.090 --> 00:02:07.520
+but it;s always been with groups or with
+string by themselves.
+
+38
+00:02:07.520 --> 00:02:12.730
+Here you see a problem that we can't
+concatenate an ent with a string.
+
+39
+00:02:12.730 --> 00:02:17.890
+So grade subzero is a string and grade
+subone is an ent.
+
+40
+00:02:17.890 --> 00:02:22.239
+So what we'd have to do is if we wanted to
+display these, we have to say grades sub
+
+41
+00:02:22.239 --> 00:02:25.480
+zero, for the name and then there's a
+function
+
+42
+00:02:25.480 --> 00:02:31.250
+called str that then returns the integer
+as a string.
+
+43
+00:02:31.250 --> 00:02:32.610
+And that's how we would pull that out.
+
+44
+00:02:32.610 --> 00:02:35.340
+So if we wanted to see a different pair,
+we
+
+45
+00:02:35.340 --> 00:02:38.920
+could say grades sub two plus string
+grades of three.
+
+46
+00:02:38.920 --> 00:02:42.570
+And we'll see Cynthia and her test score.
+
+47
+00:02:42.570 --> 00:02:45.720
+Now notice those are bumped right next to
+each other.
+
+48
+00:02:45.720 --> 00:02:48.050
+I'm not gonna get into how to separate
+them now.
+
+49
+00:02:48.050 --> 00:02:51.450
+There several different ways you can put a
+space between them.
+
+50
+00:02:51.450 --> 00:02:54.670
+One thing we can do this, I'll go ahead
+and show you one example.
+
+51
+00:02:54.670 --> 00:02:56.510
+We could concatenate the space right
+there.
+
+52
+00:02:57.590 --> 00:03:01.060
+And that's probably the easiest way to do
+it, like that.
+
+53
+00:03:01.060 --> 00:03:03.460
+Well, we'll be working with strings more,
+and we'll be looking
+
+54
+00:03:03.460 --> 00:03:06.640
+at examples of how to format things later
+in the course.
+
+55
+00:03:06.640 --> 00:03:09.160
+Here, I just wanted to demonstrate how to
+create a
+
+56
+00:03:09.160 --> 00:03:14.320
+list data structure and put some
+structured data into that list.
+
+57
+00:03:14.320 --> 00:03:18.640
+But having done that, we actually bring up
+a point that needs to be made, is that
+
+58
+00:03:18.640 --> 00:03:22.370
+this data is actually better structured
+for a
+
+59
+00:03:22.370 --> 00:03:26.000
+dictionary because we have the name and a
+grade.
+
+60
+00:03:26.000 --> 00:03:28.180
+The name is a key, and the grade is a
+
+61
+00:03:28.180 --> 00:03:32.050
+value, so if we stored this data as a
+dictionary.
+
+62
+00:03:32.050 --> 00:03:35.730
+Then it would be much easier to retrieve a
+grade with
+
+63
+00:03:35.730 --> 00:03:39.040
+the name than it was in the example I
+showed you here.
+
+64
+00:03:39.040 --> 00:03:42.320
+So let's move on to the next exercise of
+this chapter where we're going to do
+
+65
+00:03:42.320 --> 00:03:46.900
+just that, we're going to take this set of
+data and store it in a dictionary.
+

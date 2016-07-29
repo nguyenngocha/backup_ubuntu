@@ -1,0 +1,351 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:04.540
+In this lesson we're going to continue
+building the name class.
+
+2
+00:00:04.540 --> 00:00:08.550
+This time we're going to add a couple of
+methods to the definition that allow
+
+3
+00:00:08.550 --> 00:00:14.730
+us to display a name, once the name has
+been entered in using the constructor.
+
+4
+00:00:14.730 --> 00:00:17.730
+The first method we're going to look at
+for doing that.
+
+5
+00:00:17.730 --> 00:00:20.260
+Well, first of all let me say that I have
+started a
+
+6
+00:00:20.260 --> 00:00:24.220
+new program called nameone.py, and simply
+
+7
+00:00:24.220 --> 00:00:27.580
+copied the contents of name.py into
+nameone.
+
+8
+00:00:27.580 --> 00:00:30.290
+So the first method we're going to look at
+
+9
+00:00:30.290 --> 00:00:35.680
+is a special method that's commonly called
+a twostring method.
+
+10
+00:00:35.680 --> 00:00:40.710
+And the two string method allows us to
+examine the current state of
+
+11
+00:00:40.710 --> 00:00:45.970
+a class object or at least display the
+current state of a class
+
+12
+00:00:45.970 --> 00:00:49.820
+object so the way we write this method is
+we start out with
+
+13
+00:00:49.820 --> 00:00:52.180
+two double underscores followed by the
+
+14
+00:00:52.180 --> 00:00:56.530
+letters STR followed by two more
+underscores.
+
+15
+00:00:56.530 --> 00:00:59.070
+And then its only parameter will be self,
+
+16
+00:00:59.070 --> 00:01:02.090
+so that we can refer to the current
+instance.
+
+17
+00:01:02.090 --> 00:01:04.860
+And again, what this method does is, it
+will
+
+18
+00:01:04.860 --> 00:01:08.460
+display the current state of an object, so
+what
+
+19
+00:01:08.460 --> 00:01:13.780
+we want to do is, is we want to return the
+fields that make up the name class.
+
+20
+00:01:13.780 --> 00:01:16.370
+So we're going to write return self.
+
+21
+00:01:16.370 --> 00:01:21.800
+First, plus a space, plus self.middle,
+plus a space, plus self.
+
+22
+00:01:21.800 --> 00:01:22.650
+last.
+
+23
+00:01:22.650 --> 00:01:27.870
+So the way the two-string method works is
+that when we want to display a name,
+
+24
+00:01:27.870 --> 00:01:32.990
+we can simply write print, in this case,
+aName is a name that we created.
+
+25
+00:01:32.990 --> 00:01:36.560
+And that will display Mary Elizabeth
+Smith.
+
+26
+00:01:36.560 --> 00:01:37.820
+Let me show you how that works.
+
+27
+00:01:37.820 --> 00:01:38.510
+We'll save it.
+
+28
+00:01:39.760 --> 00:01:45.100
+Let's clear the screen here and we'll type
+nameone.py and
+
+29
+00:01:45.100 --> 00:01:48.170
+you'll see Mary Elizabeth Smith comes up
+on the screen.
+
+30
+00:01:50.380 --> 00:01:51.680
+And of course I could of put a little
+
+31
+00:01:51.680 --> 00:01:55.200
+prompt before that, something like that,
+if I'd wanted to.
+
+32
+00:01:56.210 --> 00:01:57.100
+Let's just show how that'll look.
+
+33
+00:01:57.100 --> 00:01:57.450
+[BLANK_AUDIO].
+
+34
+00:01:57.450 --> 00:01:57.950
+Made
+
+35
+00:02:02.080 --> 00:02:05.130
+one little mistake, left out the string,
+function.
+
+36
+00:02:05.130 --> 00:02:06.721
+Now we'll try it again.
+
+37
+00:02:06.721 --> 00:02:07.620
+[BLANK_AUDIO].
+
+38
+00:02:07.620 --> 00:02:08.120
+There
+
+39
+00:02:11.320 --> 00:02:11.758
+we go.
+
+40
+00:02:11.758 --> 00:02:16.720
+So, the 2-string method, or just "string"
+can be
+
+41
+00:02:16.720 --> 00:02:20.300
+used to display the current state of the
+object.
+
+42
+00:02:20.300 --> 00:02:21.760
+Now, for a name we might also
+
+43
+00:02:21.760 --> 00:02:24.679
+want to, besides displaying the name:
+first, middle,
+
+44
+00:02:24.679 --> 00:02:29.810
+last; we might also want to create out own
+method, and we'll call it: "last first."
+
+45
+00:02:29.810 --> 00:02:33.200
+And what it's going to do is it's going to
+return the last name.
+
+46
+00:02:33.200 --> 00:02:36.610
+Followed by a comma, followed by the first
+name, followed
+
+47
+00:02:36.610 --> 00:02:39.930
+by a space, followed by the middle name,
+like so.
+
+48
+00:02:39.930 --> 00:02:40.430
+And
+
+49
+00:02:42.120 --> 00:02:47.970
+the way we would call that method is we
+would say a name, dot, last first.
+
+50
+00:02:49.340 --> 00:02:53.480
+So let's save our program, go back to our
+command prompt.
+
+51
+00:02:53.480 --> 00:02:55.840
+Run name 1 and so there we see the
+
+52
+00:02:55.840 --> 00:02:59.380
+last name first as being Smith comma Marry
+Elizabeth.
+
+53
+00:03:00.630 --> 00:03:02.240
+Lets try one more example.
+
+54
+00:03:03.540 --> 00:03:06.630
+We might want to display the initials of a
+name.
+
+55
+00:03:06.630 --> 00:03:12.364
+So to do that would say return, self first
+sub zero.
+
+56
+00:03:12.364 --> 00:03:17.714
+Plus, self.middle subzero
+
+57
+00:03:17.714 --> 00:03:22.640
+plus self.last subzero.
+
+58
+00:03:22.640 --> 00:03:26.894
+Here we can say print aName.initials just
+like so.
+
+59
+00:03:26.894 --> 00:03:28.000
+[BLANK_AUDIO].
+
+60
+00:03:28.000 --> 00:03:28.500
+Back
+
+61
+00:03:32.010 --> 00:03:33.790
+to our command prompt.
+
+62
+00:03:33.790 --> 00:03:38.410
+Run nameone.py, and there we see the
+initials MES.
+
+63
+00:03:38.410 --> 00:03:38.910
+So
+
+64
+00:03:41.190 --> 00:03:46.340
+what we've learned in this lesson is how
+to create methods that give us access
+
+65
+00:03:46.340 --> 00:03:51.230
+to the data stored in a class and let us
+return that data in some way.
+
+66
+00:03:51.230 --> 00:03:53.330
+And with that, we're ready to move to the
+next lesson.
+
+67
+00:03:53.330 --> 00:03:56.820
+Where we're going to create a new class
+that's going to be a bit more
+
+68
+00:03:56.820 --> 00:04:02.040
+complex because I'm going to show you how
+to use a data structure as a field.
+
+69
+00:04:02.040 --> 00:04:06.140
+So that we can store a set of data in a
+field rather
+
+70
+00:04:06.140 --> 00:04:10.020
+than just a single value like we've done
+here with first, middle and last.
+
+71
+00:04:10.020 --> 00:04:11.880
+So what we're going to do is we're going
+to
+
+72
+00:04:11.880 --> 00:04:17.320
+create a student object and that student
+object will contain
+
+73
+00:04:17.320 --> 00:04:20.540
+not only the student's name and their I.D.
+number but
+
+74
+00:04:20.540 --> 00:04:24.130
+also a list of grades for the courses that
+they take.
+
+75
+00:04:24.130 --> 00:04:26.380
+And we're going to see how to do that in
+the next lesson.
+

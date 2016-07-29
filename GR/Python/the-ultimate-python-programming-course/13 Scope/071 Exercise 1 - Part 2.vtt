@@ -1,0 +1,221 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:04.560
+In the first part of the exercise, we
+implemented Newton's method for finding
+
+2
+00:00:04.560 --> 00:00:06.400
+the square root of a number by
+
+3
+00:00:06.400 --> 00:00:10.210
+designing several functions to implement
+the algorithm.
+
+4
+00:00:10.210 --> 00:00:11.520
+In this part of the exercise I'm gonna
+
+5
+00:00:11.520 --> 00:00:15.490
+demonstrate how to combine those functions
+into one
+
+6
+00:00:15.490 --> 00:00:18.710
+nested function to make the definition of
+the
+
+7
+00:00:18.710 --> 00:00:22.520
+algorithm easier to understand and easier
+to maintain.
+
+8
+00:00:22.520 --> 00:00:25.530
+What we wanna do is only add those
+
+9
+00:00:25.530 --> 00:00:27.990
+functions that are only applied to finding
+a
+
+10
+00:00:27.990 --> 00:00:31.840
+square root to the definition of the
+function,
+
+11
+00:00:31.840 --> 00:00:34.790
+the general function for finding a square
+root.
+
+12
+00:00:34.790 --> 00:00:38.120
+In other words, the average function, we
+could use it in other
+
+13
+00:00:38.120 --> 00:00:43.390
+situations, so we're not going to nest it,
+or the square function either.
+
+14
+00:00:43.390 --> 00:00:45.000
+So let's get started.
+
+15
+00:00:45.000 --> 00:00:48.730
+Our main function is square root, and it's
+parameter is a number.
+
+16
+00:00:49.760 --> 00:00:52.350
+Then, the first nested function we're
+going to define
+
+17
+00:00:52.350 --> 00:00:56.770
+is closeEnough, and it's only parameter
+will be guess.
+
+18
+00:00:56.770 --> 00:01:01.910
+The reason for that is, is that number now
+is available
+
+19
+00:01:01.910 --> 00:01:07.170
+to the closeEnough function because
+closeEnough is defined inside
+
+20
+00:01:07.170 --> 00:01:11.180
+of square root, and we take advantage of
+lexical scoping
+
+21
+00:01:11.180 --> 00:01:15.460
+to only have to pass one parameter to the
+function.
+
+22
+00:01:15.460 --> 00:01:20.090
+And then we'll write out the definition
+for closeEnough right here.
+
+23
+00:01:22.850 --> 00:01:25.190
+After closeEnough, then we define improve.
+
+24
+00:01:26.370 --> 00:01:30.465
+And it also only requires one parameter,
+cause it has
+
+25
+00:01:30.465 --> 00:01:35.851
+access to number within the environment of
+the square root function.
+
+26
+00:01:35.851 --> 00:01:41.354
+And then finally we define square root
+helper, also with just one parameter.
+
+27
+00:01:41.354 --> 00:01:47.122
+[BLANK_AUDIO].
+
+28
+00:01:47.122 --> 00:01:50.695
+We will finish up the definition right
+here.
+
+29
+00:01:50.695 --> 00:01:53.051
+Here if the guess is not good enough we
+
+30
+00:01:53.051 --> 00:01:57.680
+recursively call square root helper with
+an improved guess.
+
+31
+00:01:57.680 --> 00:02:00.830
+And then finally, to kick it all off,
+
+32
+00:02:00.830 --> 00:02:05.160
+we call square root helper with the
+argument 1.0.
+
+33
+00:02:05.160 --> 00:02:09.596
+Print square root nine to start with.
+
+34
+00:02:09.596 --> 00:02:14.636
+Save it again, come back to our command
+prompt and
+
+35
+00:02:14.636 --> 00:02:20.516
+there's the square root of nine using
+Newton's method,
+
+36
+00:02:20.516 --> 00:02:25.933
+let's find another square root, we'll do
+144.
+
+37
+00:02:25.933 --> 00:02:27.339
+[BLANK_AUDIO].
+
+38
+00:02:32.340 --> 00:02:38.190
+So there we see that by nesting functions
+we get a more efficient and more
+
+39
+00:02:38.190 --> 00:02:41.720
+maintainable definition of how to
+determine the
+
+40
+00:02:41.720 --> 00:02:44.390
+square root of a number using Newton's
+method.
+
+41
+00:02:44.390 --> 00:02:47.760
+The functions that aren't general enough
+to be used in other
+
+42
+00:02:47.760 --> 00:02:53.630
+instances, probably, close enough, improve
+and square root helper, get defined
+
+43
+00:02:53.630 --> 00:02:58.520
+within square root so that someone looking
+at the program doesn't
+
+44
+00:02:58.520 --> 00:03:02.770
+have to look far to figure out what these
+functions do.
+
+45
+00:03:02.770 --> 00:03:05.280
+So with that, we wrap up this exercise.
+
+46
+00:03:05.280 --> 00:03:09.210
+And we wrap up this chapter on scoping and
+nested functions.
+

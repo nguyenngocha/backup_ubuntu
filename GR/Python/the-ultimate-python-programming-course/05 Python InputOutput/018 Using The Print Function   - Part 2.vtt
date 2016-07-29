@@ -1,0 +1,278 @@
+WEBVTT
+
+1
+00:00:00.970 --> 00:00:06.930
+In this lesson we're going to see how to
+redirect print from the screen to a file.
+
+2
+00:00:06.930 --> 00:00:10.190
+So we're going to work in the interactive
+shell again, so let's open that.
+
+3
+00:00:11.500 --> 00:00:15.540
+So in the last lesson we saw that printing
+to the screen, we use the print function
+
+4
+00:00:15.540 --> 00:00:17.210
+and we put the data we want to
+
+5
+00:00:17.210 --> 00:00:21.000
+print inside parenthesis as the argument
+to the function.
+
+6
+00:00:21.000 --> 00:00:28.720
+A primitive way to perform the same
+function is to import the sys library.
+
+7
+00:00:28.720 --> 00:00:30.990
+We haven't talked about importing
+libraries yet,
+
+8
+00:00:30.990 --> 00:00:34.690
+but like most modern languages Python has
+a
+
+9
+00:00:34.690 --> 00:00:38.430
+series of libraries which bring added
+functionality
+
+10
+00:00:38.430 --> 00:00:41.930
+to the, fundamental language or the basic
+language.
+
+11
+00:00:41.930 --> 00:00:45.250
+By doing this, we keep the language small,
+the core
+
+12
+00:00:45.250 --> 00:00:49.480
+language small, which increases efficiency
+and productivity of the language.
+
+13
+00:00:49.480 --> 00:00:54.850
+And then we need additional functionality,
+we simply import the library that we need.
+
+14
+00:00:54.850 --> 00:01:00.090
+So to see how the print function works, we
+have import the sys library.
+
+15
+00:01:00.090 --> 00:01:04.790
+To get at one of the objects of that
+library, standard out.
+
+16
+00:01:04.790 --> 00:01:06.370
+Then it has a function right.
+
+17
+00:01:06.370 --> 00:01:13.020
+In this case we wanna put a new line in
+there to write out data to the screen.
+
+18
+00:01:13.020 --> 00:01:15.030
+So, the print function is just a
+
+19
+00:01:15.030 --> 00:01:19.680
+easier way of doing import sys,
+sys.standard out.write.
+
+20
+00:01:19.680 --> 00:01:22.330
+And then the data that you wanna write out
+to the screen.
+
+21
+00:01:22.330 --> 00:01:26.070
+But with this in mind we can redefine
+standard out.
+
+22
+00:01:26.070 --> 00:01:29.980
+It's just by default going to the screen,
+but we can redefine it.
+
+23
+00:01:29.980 --> 00:01:34.480
+We do that by referencing the objects as a
+sta, standard
+
+24
+00:01:34.480 --> 00:01:37.260
+out and then we open a file that we wanna
+use.
+
+25
+00:01:37.260 --> 00:01:38.695
+So, we'll say, we'll call this.
+
+26
+00:01:38.695 --> 00:01:42.500
+Text.dat and we'll open it to append.
+
+27
+00:01:42.500 --> 00:01:47.810
+So now when we say print hello notice it
+didn't print anything on the screen.
+
+28
+00:01:47.810 --> 00:01:53.790
+And if we exit out of the shell and type
+out the file using the dos command
+
+29
+00:01:53.790 --> 00:01:59.760
+Type we'll see that our text, hello, went
+to the file instead of the screen.
+
+30
+00:01:59.760 --> 00:02:02.250
+And every other time that we use the print
+command in
+
+31
+00:02:02.250 --> 00:02:08.710
+that session then it would have sent that
+output to the file.
+
+32
+00:02:08.710 --> 00:02:12.510
+Now we close the session by typing exit.
+
+33
+00:02:12.510 --> 00:02:15.900
+So now when we open up the shell again, we
+haven't redirected
+
+34
+00:02:15.900 --> 00:02:19.379
+output, the sys.standard out, so it's
+still going to the right place.
+
+35
+00:02:20.930 --> 00:02:22.610
+Let's do it again,
+
+36
+00:02:22.610 --> 00:02:23.823
+[BLANK_AUDIO]
+
+37
+00:02:23.823 --> 00:02:24.570
+like so.
+
+38
+00:02:26.470 --> 00:02:32.540
+So once again, our output with print is
+going to the file and not to the screen.
+
+39
+00:02:32.540 --> 00:02:35.620
+So a better way to redirect output, is
+
+40
+00:02:35.620 --> 00:02:41.510
+to rather than redefine sys.standard out,
+is to redirect.
+
+41
+00:02:41.510 --> 00:02:43.450
+Where print goes when we issue the print
+
+42
+00:02:43.450 --> 00:02:46.100
+command and here's how we're going to do
+that.
+
+43
+00:02:46.100 --> 00:02:50.920
+First thing we need to do is we need to
+define a text object or create a new file.
+
+44
+00:02:51.960 --> 00:02:55.830
+Open it for a pending and then any data
+that we want to print to that
+
+45
+00:02:55.830 --> 00:02:57.790
+file we want to use print and then
+
+46
+00:02:57.790 --> 00:03:00.950
+redirect it using the double greater than
+sign.
+
+47
+00:03:00.950 --> 00:03:05.150
+Through the text file, and then whatever
+text we want to provide now goes there.
+
+48
+00:03:05.150 --> 00:03:08.790
+And then if I say print, so now the
+
+49
+00:03:08.790 --> 00:03:13.900
+print function, the default version prints
+to the screen, and
+
+50
+00:03:13.900 --> 00:03:16.820
+when we want to print to a file, we
+redirect
+
+51
+00:03:16.820 --> 00:03:21.070
+it using the redirect operator, the double
+greater than sign.
+
+52
+00:03:21.070 --> 00:03:25.330
+And say take the data the second argument
+and send it to the file.
+
+53
+00:03:25.330 --> 00:03:29.100
+So that's the better way to do print
+redirection in python.
+
+54
+00:03:29.100 --> 00:03:29.920
+So that's how you do it.
+
+55
+00:03:29.920 --> 00:03:34.620
+That's how you redirect print when you
+don't wanna print to the screen.
+
+56
+00:03:34.620 --> 00:03:38.050
+And that concludes this lesson and we're
+ready to move to the last lesson of the
+
+57
+00:03:38.050 --> 00:03:40.310
+chapter where we're going to discuss how
+to
+
+58
+00:03:40.310 --> 00:03:43.840
+get input from the keyboard into our
+python programs.
+

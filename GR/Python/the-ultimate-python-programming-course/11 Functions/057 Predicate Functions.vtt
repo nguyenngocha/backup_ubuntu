@@ -1,0 +1,239 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:04.780
+In this lesson we're going to look at a
+particular type
+
+2
+00:00:04.780 --> 00:00:10.260
+of function, commonly called a Boolean
+function or a predicate function.
+
+3
+00:00:10.260 --> 00:00:13.240
+These types of functions are used as
+helper functions
+
+4
+00:00:13.240 --> 00:00:16.980
+and return a true or false value, a
+Boolean value.
+
+5
+00:00:16.980 --> 00:00:22.540
+And are usually used to categorize data,
+like, is the data a number?
+
+6
+00:00:22.540 --> 00:00:24.290
+Is the data a character?
+
+7
+00:00:24.290 --> 00:00:25.960
+Is the data even?
+
+8
+00:00:25.960 --> 00:00:31.300
+Those are the kinds of questions are
+answered by predicate functions.
+
+9
+00:00:31.300 --> 00:00:34.090
+So what you see before you is a program
+from
+
+10
+00:00:34.090 --> 00:00:38.690
+earlier in this chapter where we created a
+numVowels function.
+
+11
+00:00:38.690 --> 00:00:42.260
+And in the numVowels function, we have
+this if statement
+
+12
+00:00:42.260 --> 00:00:46.580
+to test to see if a particular character
+is a vowel.
+
+13
+00:00:46.580 --> 00:00:50.080
+Well, this test makes a perfect predicate
+function,
+
+14
+00:00:50.080 --> 00:00:52.600
+because it's simply going to look at the
+letter.
+
+15
+00:00:52.600 --> 00:00:56.900
+And if it's a, e, i, o, or u, it will
+return true.
+
+16
+00:00:56.900 --> 00:00:58.840
+Because yes, the letter is a vowel, or
+it'll
+
+17
+00:00:58.840 --> 00:01:02.210
+return false because no, the letter is not
+a vowel.
+
+18
+00:01:02.210 --> 00:01:03.330
+So let's write that function.
+
+19
+00:01:03.330 --> 00:01:06.480
+We will call it isVowel.
+
+20
+00:01:06.480 --> 00:01:11.350
+The parameter will be a single letter and
+then we can copy this code.
+
+21
+00:01:11.350 --> 00:01:13.060
+We'll have to make a change to it since we
+have
+
+22
+00:01:13.060 --> 00:01:16.410
+a different variable to test but we can
+still use it.
+
+23
+00:01:16.410 --> 00:01:19.580
+Let's line it up first and then where
+
+24
+00:01:19.580 --> 00:01:22.370
+we see string[i] we'll replace that with
+letter.
+
+25
+00:01:24.180 --> 00:01:29.870
+I'll do this manually, you can watch along
+with me, one more to go.
+
+26
+00:01:32.840 --> 00:01:33.680
+So right here.
+
+27
+00:01:34.860 --> 00:01:38.440
+If the letter is a vowel then we want to
+return the value true.
+
+28
+00:01:39.880 --> 00:01:45.120
+Otherwise, else, we wanna return the value
+false.
+
+29
+00:01:45.120 --> 00:01:48.280
+That makes our predicate function isVowel.
+
+30
+00:01:48.280 --> 00:01:51.630
+It looks at a letter and if it's a, e, i,
+o, or u, then
+
+31
+00:01:51.630 --> 00:01:53.230
+it is a vowel and it returns the
+
+32
+00:01:53.230 --> 00:01:57.100
+value true, otherwise it returns the value
+false.
+
+33
+00:01:57.100 --> 00:02:00.370
+So now we can go to numVowels, take out
+
+34
+00:02:00.370 --> 00:02:06.940
+this test and replace it with the isVowel
+function.
+
+35
+00:02:06.940 --> 00:02:10.490
+And look how cleaner numVowels is now.
+
+36
+00:02:10.490 --> 00:02:13.770
+So what we've accomplished by adding the
+predicate
+
+37
+00:02:13.770 --> 00:02:18.240
+function is we've now made numVowels
+easier to read.
+
+38
+00:02:18.240 --> 00:02:23.210
+And that's one of the advantages of using
+functions in the first place.
+
+39
+00:02:23.210 --> 00:02:24.330
+So let's test this code,
+
+40
+00:02:26.530 --> 00:02:28.830
+with a couple simple examples.
+
+41
+00:02:28.830 --> 00:02:29.850
+Let's clear the screen here.
+
+42
+00:02:31.060 --> 00:02:34.730
+I named my program predicate.py so we'll
+run that.
+
+43
+00:02:34.730 --> 00:02:36.850
+Let's try a simple string and it says
+
+44
+00:02:36.850 --> 00:02:39.190
+there are two vowels, let's try a longer
+string.
+
+45
+00:02:41.100 --> 00:02:41.930
+And there we have three.
+
+46
+00:02:45.000 --> 00:02:49.200
+So again, a predicate function simply
+examines a piece
+
+47
+00:02:49.200 --> 00:02:52.410
+of data and returns a true or false value.
+
+48
+00:02:52.410 --> 00:02:56.170
+Based on what it finds in the comparison.
+
+49
+00:02:56.170 --> 00:03:00.310
+So that wraps up this lesson on predicates
+and later on in
+
+50
+00:03:00.310 --> 00:03:02.590
+the chapter, in the exercises we'll
+
+51
+00:03:02.590 --> 00:03:05.460
+have another look at writing predicate
+functions.
+

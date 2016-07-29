@@ -1,0 +1,711 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.148
+[MUSIC]
+
+2
+00:00:05.148 --> 00:00:06.560
+Hello and welcome back.
+
+3
+00:00:06.560 --> 00:00:09.360
+In this video I'll be teaching you the
+
+4
+00:00:09.360 --> 00:00:14.900
+different, conditional statements that you
+can do within, Python.
+
+5
+00:00:14.900 --> 00:00:20.117
+The most important thing with a language,
+is the ability to do a conditional
+
+6
+00:00:20.117 --> 00:00:26.150
+statement because it allows you to do
+comparisons, it allows you to do checks.
+
+7
+00:00:26.150 --> 00:00:29.680
+And all of these condone to Boolean
+expressions
+
+8
+00:00:29.680 --> 00:00:31.750
+which is whether something is true or
+false.
+
+9
+00:00:31.750 --> 00:00:37.200
+So, the first thing that we need to do is
+set up two
+
+10
+00:00:37.200 --> 00:00:41.410
+variables and we're going to call those a
+and b hyphen zero and one.
+
+11
+00:00:41.410 --> 00:00:44.290
+And zero and one are just two random
+numbers, you can use anything you like.
+
+12
+00:00:44.290 --> 00:00:45.830
+You can strings, you could use.
+
+13
+00:00:48.220 --> 00:00:50.290
+You could use integers, you could use
+floats.
+
+14
+00:00:50.290 --> 00:00:51.680
+You can use anything you want.
+
+15
+00:00:51.680 --> 00:00:54.544
+You an even use [UNKNOWN], if you choose
+to.
+
+16
+00:00:54.544 --> 00:00:57.280
+But, I'm going to using numbers, because
+it allows us to, me
+
+17
+00:00:57.280 --> 00:01:01.510
+to demonstrate, more things than, say, a
+string would allow to me demonstrate.
+
+18
+00:01:02.610 --> 00:01:06.930
+So, if and this is the conditional
+statement which we're going to be using.
+
+19
+00:01:06.930 --> 00:01:09.600
+It's the most powerful one along with what
+we're
+
+20
+00:01:09.600 --> 00:01:12.020
+going to cover in the next video, which is
+else.
+
+21
+00:01:12.020 --> 00:01:16.630
+And if is basically, it checks whether
+something is equal to true.
+
+22
+00:01:16.630 --> 00:01:22.480
+So, if A is equal to B and then you have
+to put a colon at the end.
+
+23
+00:01:22.480 --> 00:01:25.230
+And that tells it that the conditional
+statement
+
+24
+00:01:25.230 --> 00:01:28.290
+has ended and the code block has started.
+
+25
+00:01:28.290 --> 00:01:33.920
+And the code blockers just, and section
+code which gets ran, if it's something is
+
+26
+00:01:33.920 --> 00:01:39.840
+true, so if a is equal to b, then we're
+just going
+
+27
+00:01:41.270 --> 00:01:45.410
+to print true and if we run this, you
+won't get anything printed out
+
+28
+00:01:45.410 --> 00:01:49.570
+and the reason why nothings printed out is
+simply because that is not true.
+
+29
+00:01:49.570 --> 00:01:54.390
+So there is a keyword within Python which
+you can do to combat this.
+
+30
+00:01:54.390 --> 00:01:58.540
+And if you're looking for something to be
+false and is not, and
+
+31
+00:01:58.540 --> 00:02:01.800
+here's you'll see it is now being printed
+out is what you'd expect.
+
+32
+00:02:03.220 --> 00:02:06.240
+Now this print could have anything, you
+could have
+
+33
+00:02:06.240 --> 00:02:08.439
+any codeblock going on within this, you
+can have.
+
+34
+00:02:09.580 --> 00:02:11.600
+Variables changing their value for
+example.
+
+35
+00:02:11.600 --> 00:02:13.770
+You have all sorts of things happen here,
+
+36
+00:02:13.770 --> 00:02:15.630
+but we're just going to keep the example
+here.
+
+37
+00:02:15.630 --> 00:02:17.460
+It's just going to have printing it as
+true.
+
+38
+00:02:19.030 --> 00:02:21.950
+So, because we have the not, there's also
+other keywords we can
+
+39
+00:02:21.950 --> 00:02:25.610
+use such as and, and or which I'll
+demonstrate in a few moments.
+
+40
+00:02:25.610 --> 00:02:28.560
+But if we just Delete that and, and we
+
+41
+00:02:28.560 --> 00:02:33.360
+Copy and Paste this code over a couple
+times, and
+
+42
+00:02:33.360 --> 00:02:35.630
+we'll carry on, I'll show you, the best is
+
+43
+00:02:35.630 --> 00:02:39.700
+in demonstrations, what you can do with
+the condition statements.
+
+44
+00:02:39.700 --> 00:02:42.090
+Now, you'll notice that this has to be on
+a new line.
+
+45
+00:02:42.090 --> 00:02:43.680
+If this is not on a new line, if this is
+
+46
+00:02:43.680 --> 00:02:48.560
+indented here like this, then it'll run
+within this code block.
+
+47
+00:02:48.560 --> 00:02:54.600
+This code block here is set out to be so
+that
+
+48
+00:02:54.600 --> 00:02:58.760
+all of this code here is run if this is
+true.
+
+49
+00:02:58.760 --> 00:03:01.560
+What we want, is if this is true, to run
+this,
+
+50
+00:03:02.800 --> 00:03:05.930
+and if it isn't true, then it will carry
+on moving.
+
+51
+00:03:05.930 --> 00:03:09.490
+And if it is true, it'll run this and then
+carry on moving.
+
+52
+00:03:09.490 --> 00:03:13.780
+So that is what an if statement does, it
+executes whatever character's within it,
+
+53
+00:03:13.780 --> 00:03:19.240
+and then moves to the next line, executes
+whatever line, whatever code is there.
+
+54
+00:03:19.240 --> 00:03:21.610
+And it keeps moving itself down the page.
+
+55
+00:03:21.610 --> 00:03:22.660
+It is a bit progressive.
+
+56
+00:03:22.660 --> 00:03:24.450
+It's constantly through the page.
+
+57
+00:03:25.910 --> 00:03:28.000
+So now because we have checked, if
+
+58
+00:03:28.000 --> 00:03:30.670
+something is equal to something, and we've
+checked
+
+59
+00:03:30.670 --> 00:03:34.620
+if something is not equal to something, we
+can do that again without using keywords.
+
+60
+00:03:34.620 --> 00:03:39.030
+We can do that by using the exclamation
+point, and the equal sign.
+
+61
+00:03:39.030 --> 00:03:41.910
+And that checks if something is not equal
+to something else.
+
+62
+00:03:41.910 --> 00:03:44.890
+So you'll see here, you get the true
+output again,
+
+63
+00:03:44.890 --> 00:03:46.930
+and that is from the second statement
+which we've done there.
+
+64
+00:03:48.290 --> 00:03:52.240
+Now, because it's numerical, you can also
+do it less than and greater than.
+
+65
+00:03:52.240 --> 00:03:55.000
+And the way that we do that is just using
+standard lesser and
+
+66
+00:03:55.000 --> 00:04:00.230
+greater than symbols, and they will both
+do what you'd expect them to do.
+
+67
+00:04:01.680 --> 00:04:04.650
+However, less than or greater than do not
+
+68
+00:04:04.650 --> 00:04:08.460
+actually cover if something is the same
+as.
+
+69
+00:04:08.460 --> 00:04:11.070
+So there's two ways in which you can do
+that.
+
+70
+00:04:11.070 --> 00:04:16.730
+The main way in which you'll probably use
+is if is greater than or equal to.
+
+71
+00:04:16.730 --> 00:04:19.880
+Oh sorry, A is greater than or equal to B.
+
+72
+00:04:19.880 --> 00:04:20.830
+Then you'll do that.
+
+73
+00:04:24.390 --> 00:04:28.910
+I'll just, put a sentence in here so you
+can actually see what happens.
+
+74
+00:04:28.910 --> 00:04:32.490
+And if we run that you'll see nothing is
+output here, and this is because that
+
+75
+00:04:32.490 --> 00:04:38.040
+is less than, A is less than B so if we
+change that line to less than.
+
+76
+00:04:38.040 --> 00:04:40.790
+You'll see this is true, and that's the
+output we expect from here.
+
+77
+00:04:42.250 --> 00:04:47.050
+However, what you, might have expected,
+since I mentioned before
+
+78
+00:04:47.050 --> 00:04:51.990
+about the not, and, and or keywords, is,
+if we had, is equal to,
+
+79
+00:04:53.880 --> 00:04:57.860
+or, if A is greater than B, and that
+should be less than.
+
+80
+00:04:59.770 --> 00:05:03.880
+If A is less then B, then if we run that
+we get the exact same output.
+
+81
+00:05:03.880 --> 00:05:07.730
+So, that shows that less than and equal to
+are the same operator.
+
+82
+00:05:07.730 --> 00:05:12.180
+So, that is exactly the same as how it was
+before.
+
+83
+00:05:12.180 --> 00:05:13.360
+A different way of writing it,
+
+84
+00:05:16.200 --> 00:05:20.960
+and again, this, the opposite which is a
+greater then or equal to.
+
+85
+00:05:22.060 --> 00:05:27.040
+Now, you have to remember that if you were
+to do equals and then greater that.
+
+86
+00:05:27.040 --> 00:05:34.983
+So if you were to do a symbol, [SOUND]
+like that, it would not work.
+
+87
+00:05:34.983 --> 00:05:37.687
+You cannot have it set out in the
+
+88
+00:05:37.687 --> 00:05:42.790
+opposite direction, because it simply will
+not and run.
+
+89
+00:05:42.790 --> 00:05:45.580
+That doesn't mean anything within Python,
+it has to be
+
+90
+00:05:45.580 --> 00:05:49.510
+greater than or equal to and less than or
+equal to.
+
+91
+00:05:49.510 --> 00:05:51.480
+So, it has to be in the order in which you
+would say it.
+
+92
+00:05:53.570 --> 00:05:56.730
+The next one that we have is whether or
+not.
+
+93
+00:05:58.880 --> 00:06:05.110
+two, two things are equal and that is the
+and key word so if this and B
+
+94
+00:06:05.110 --> 00:06:10.950
+is going to be one, then what you'd expect
+here is a true.
+
+95
+00:06:10.950 --> 00:06:13.700
+However, a true does not appear because, B
+is equal to one.
+
+96
+00:06:13.700 --> 00:06:16.320
+If we set B equal to two.
+
+97
+00:06:16.320 --> 00:06:17.650
+Then you'll text get.
+
+98
+00:06:21.360 --> 00:06:24.860
+Okay, and this isn't gonna be true either,
+because A is not equal to B.
+
+99
+00:06:24.860 --> 00:06:29.350
+If we put tree at B at two as well, then
+you get another true output here.
+
+100
+00:06:30.500 --> 00:06:32.970
+So, as you can see, there is a whole
+
+101
+00:06:32.970 --> 00:06:38.180
+range in which, in ways to do comparisons
+within Python.
+
+102
+00:06:38.180 --> 00:06:41.640
+And these are the main methods in which
+you will be able to do it.
+
+103
+00:06:41.640 --> 00:06:44.000
+I recommend that if you can avoid not
+using
+
+104
+00:06:44.000 --> 00:06:47.460
+the and, or, and not key words, to avoid
+it.
+
+105
+00:06:47.460 --> 00:06:50.650
+However, the not, the and key word, there
+isn't a way to avoid
+
+106
+00:06:50.650 --> 00:06:53.060
+that, you have to use it if you want to
+compare two things.
+
+107
+00:06:53.060 --> 00:06:57.550
+However, or, there's quite often a way in
+which you can avoid it.
+
+108
+00:06:57.550 --> 00:06:59.560
+If there isn't, then obviously it's fine
+to use it.
+
+109
+00:06:59.560 --> 00:07:02.160
+And just make sure that you use it
+properly, and
+
+110
+00:07:02.160 --> 00:07:05.568
+you use it in the right points in the
+statement.
+
+111
+00:07:05.568 --> 00:07:09.730
+All operators and operands must be
+together.
+
+112
+00:07:09.730 --> 00:07:14.010
+So, and this is an operator, and this is
+an operand.
+
+113
+00:07:14.010 --> 00:07:16.210
+No sorry, this is an operand, and these
+are operators.
+
+114
+00:07:17.290 --> 00:07:20.030
+And, altogether this makes something
+called an op code.
+
+115
+00:07:20.030 --> 00:07:22.450
+And all out codes must be complete.
+
+116
+00:07:22.450 --> 00:07:25.070
+So it must be equal to true or false.
+
+117
+00:07:25.070 --> 00:07:27.320
+Because that is how any if statement
+works.
+
+118
+00:07:27.320 --> 00:07:31.450
+So this here, if we hover over you can
+find that this is true.
+
+119
+00:07:31.450 --> 00:07:36.210
+We hover over this one, it says this is
+true as well.
+
+120
+00:07:36.210 --> 00:07:38.210
+If we hover over this one, this is true.
+
+121
+00:07:38.210 --> 00:07:41.540
+And if we hover over this one, we get that
+this is true.
+
+122
+00:07:41.540 --> 00:07:44.460
+We get a constant output here of where
+
+123
+00:07:44.460 --> 00:07:47.000
+things are true, and why things are not
+true.
+
+124
+00:07:47.000 --> 00:07:52.080
+So, it's always worth looking at something
+to find out whether or not what we
+
+125
+00:07:52.080 --> 00:07:55.810
+are actually outputting is valid, and if
+it
+
+126
+00:07:55.810 --> 00:07:58.520
+is valid then you've written the code
+correctly.
+
+127
+00:07:58.520 --> 00:08:00.430
+However, if it's not valid then just
+quickly
+
+128
+00:08:00.430 --> 00:08:03.300
+look over and you'll probably see a
+mistake.
+
+129
+00:08:03.300 --> 00:08:06.710
+Such as if you're to do, [UNKNOWN] tag it
+quickly and you had a single
+
+130
+00:08:06.710 --> 00:08:13.280
+equal sign, and you had something like red
+underline here where it's not valid code.
+
+131
+00:08:13.280 --> 00:08:16.360
+It simply can't run because a single
+equals
+
+132
+00:08:16.360 --> 00:08:21.390
+sign means an assignment not a conditional
+operator.
+
+133
+00:08:21.390 --> 00:08:22.850
+So make sure that you always have two
+
+134
+00:08:22.850 --> 00:08:26.090
+equals signs for example, and that sort of
+thing.
+
+135
+00:08:26.090 --> 00:08:31.100
+Quite an easy mistake to make and it is
+one that does break your program.
+
+136
+00:08:31.100 --> 00:08:33.670
+So, it was easy enough to diagnose and
+find later.
+
+137
+00:08:33.670 --> 00:08:35.700
+But, just make sure while you are typing
+
+138
+00:08:35.700 --> 00:08:38.680
+that you are doing all these operators
+properly.
+
+139
+00:08:38.680 --> 00:08:41.490
+And, that while you're using these
+operators that the best
+
+140
+00:08:41.490 --> 00:08:44.210
+thing to do is to just have it, so that
+
+141
+00:08:46.700 --> 00:08:49.650
+you think about things in a logical order.
+
+142
+00:08:49.650 --> 00:08:52.270
+So like I mentioned for greater than or
+equal to and
+
+143
+00:08:52.270 --> 00:08:54.160
+less than or equal to, if you say it in
+your
+
+144
+00:08:54.160 --> 00:08:56.500
+head, you sort of get the order right,
+because if you
+
+145
+00:08:56.500 --> 00:08:59.340
+were to do it the wrong way around, it
+would not work.
+
+146
+00:09:01.005 --> 00:09:02.877
+Okay, so thank you for watching this
+video, I'm
+
+147
+00:09:02.877 --> 00:09:05.164
+Max Bose from learntoprogram.tv, and I'll
+see you soon.
+
+148
+00:09:05.164 --> 00:09:09.989
+[MUSIC]
+

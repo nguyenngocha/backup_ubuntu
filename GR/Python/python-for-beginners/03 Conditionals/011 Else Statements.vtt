@@ -1,0 +1,115 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.902
+[MUSIC]
+
+2
+00:00:04.902 --> 00:00:06.268
+Hello, and welcome back.
+
+3
+00:00:06.268 --> 00:00:08.658
+Now, as you'd, expect if you're checking
+if
+
+4
+00:00:08.658 --> 00:00:10.870
+something is equal to something using the
+if
+
+5
+00:00:10.870 --> 00:00:13.561
+statement, there's also the opposite that
+which is
+
+6
+00:00:13.561 --> 00:00:16.104
+the else statement, so if something is not
+true.
+
+7
+00:00:16.104 --> 00:00:18.546
+Then there's something else which you can
+run.
+
+8
+00:00:18.546 --> 00:00:23.802
+So, if we're just going to set up a simple
+page so a, b is equals to 0, 1.
+
+9
+00:00:23.802 --> 00:00:33.346
+If a is equal to b [SOUND] then we're
+going to run print, print true.
+
+10
+00:00:33.346 --> 00:00:36.691
+[BLANK_AUDIO]
+
+11
+00:00:36.691 --> 00:00:40.878
+Now, what you do for else, is you just
+simply type in the word else with a colon.
+
+12
+00:00:40.878 --> 00:00:43.314
+And then we do print false.
+
+13
+00:00:43.314 --> 00:00:47.900
+Now, an else statement is very simple, and
+that is all that there is to it.
+
+14
+00:00:48.967 --> 00:00:52.950
+And again, it creates a code block because
+of the colon, so you can have as
+
+15
+00:00:52.950 --> 00:00:54.300
+many lines as you want in here as
+
+16
+00:00:54.300 --> 00:00:58.720
+long [UNKNOWN] it is indented by the same
+amount.
+
+17
+00:00:58.720 --> 00:01:02.450
+So, that's all there is to an if else
+statement.
+
+18
+00:01:02.450 --> 00:01:04.740
+That is, an if and else statement.
+
+19
+00:01:04.740 --> 00:01:08.993
+So if you're confused by an if statement,
+just go back and
+
+20
+00:01:08.993 --> 00:01:13.568
+look at the previous video, and if you
+think of constantly of it
+
+21
+00:01:13.568 --> 00:01:18.627
+in your head, as being if something
+doesn't happen, then something else
+
+22
+00:01:18.627 --> 00:01:22.842
+must happen, that is the way we think of
+an if else statement.
+
+23
+00:01:22.842 --> 00:01:26.753
+So, thank you for watching this video and
+I will see you in the next video.
+
+24
+00:01:26.753 --> 00:01:31.749
+[MUSIC]
+

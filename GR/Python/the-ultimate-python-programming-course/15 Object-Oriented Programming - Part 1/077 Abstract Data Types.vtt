@@ -1,0 +1,300 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:02.030
+In this chapter, we're going to
+
+2
+00:00:02.030 --> 00:00:05.350
+be talking about, object-oriented
+programming, in Python.
+
+3
+00:00:05.350 --> 00:00:10.470
+And to get started, we need to start about
+the, basis for, objects in Python.
+
+4
+00:00:10.470 --> 00:00:12.580
+And, that's the class.
+
+5
+00:00:12.580 --> 00:00:15.170
+And, to understand, how classes work, we
+have to
+
+6
+00:00:15.170 --> 00:00:18.050
+go back even one more step, and talk
+about,.
+
+7
+00:00:18.050 --> 00:00:20.730
+A concept called, abstract data types.
+
+8
+00:00:20.730 --> 00:00:23.500
+First of all, when we talk about
+object-oriented programming,
+
+9
+00:00:23.500 --> 00:00:27.580
+we talk about, breaking our program up
+into objects.
+
+10
+00:00:27.580 --> 00:00:31.860
+So, for example, in a payroll program, we
+might have an employee object.
+
+11
+00:00:31.860 --> 00:00:33.750
+A payroll project.
+
+12
+00:00:33.750 --> 00:00:35.680
+A paycheck, object.
+
+13
+00:00:35.680 --> 00:00:40.560
+Perhaps even a, hours worked, or time
+sheet object.
+
+14
+00:00:40.560 --> 00:00:46.120
+These objects, are formed based on
+something called an abstract data type.
+
+15
+00:00:46.120 --> 00:00:50.880
+An abstract data type, takes the concept
+of an object.
+
+16
+00:00:50.880 --> 00:00:54.200
+And breaks it down into, really two parts,
+the
+
+17
+00:00:54.200 --> 00:00:58.560
+attributes of an object, and the
+behaviors, of an object.
+
+18
+00:00:58.560 --> 00:01:03.920
+A name, is an example of something that
+might be, broken down into an object.
+
+19
+00:01:03.920 --> 00:01:10.870
+The attributes of an object, might consist
+of, your first name, your middle name.
+
+20
+00:01:10.870 --> 00:01:12.220
+And a last name.
+
+21
+00:01:12.220 --> 00:01:18.340
+There might be other attributes such as a,
+title or a prefix or a suffix such as jr.
+
+22
+00:01:18.340 --> 00:01:21.110
+But, will go with these attributes for
+now.
+
+23
+00:01:22.110 --> 00:01:26.110
+Then we had talked about behaviors, and
+what are the behaviors of a name.
+
+24
+00:01:26.110 --> 00:01:31.200
+Well, a name, really doesn't do much other
+than identify a person.
+
+25
+00:01:31.200 --> 00:01:33.080
+So, when we talk about behaviours of a
+name we
+
+26
+00:01:33.080 --> 00:01:36.730
+might we be talking about instead, how is
+the name displayed.
+
+27
+00:01:36.730 --> 00:01:42.060
+Well, a name can be displayed first,
+middle, last, or it can be
+
+28
+00:01:42.060 --> 00:01:47.650
+displayed last, first, middle, or it can
+even displayed by just the initials.
+
+29
+00:01:48.760 --> 00:01:53.390
+But when we begin to write a program in an
+object orientated style.
+
+30
+00:01:53.390 --> 00:01:58.590
+The first thing we have to do, is take a
+look at what the objects are, for the
+
+31
+00:01:58.590 --> 00:02:04.930
+problem and, define an abstract data type
+for, those objects.
+
+32
+00:02:04.930 --> 00:02:09.490
+Once we've done that, then we're ready to
+start, defining the class.
+
+33
+00:02:09.490 --> 00:02:13.770
+Which will make up the true Python
+definition, of an object.
+
+34
+00:02:13.770 --> 00:02:15.820
+And then we can actually, create the
+
+35
+00:02:15.820 --> 00:02:20.280
+objects, in Python from the class
+definition.
+
+36
+00:02:20.280 --> 00:02:23.170
+Before I begin to talk about how we,
+implement classes
+
+37
+00:02:23.170 --> 00:02:27.725
+in Python, let's talk about the
+differences between classes and objects.
+
+38
+00:02:27.725 --> 00:02:30.220
+A class is a definition.
+
+39
+00:02:30.220 --> 00:02:33.950
+Of, an abstract data type, which I'm going
+to abbreviate ADT.
+
+40
+00:02:33.950 --> 00:02:36.760
+And we'll go even further and say, it's a
+
+41
+00:02:36.760 --> 00:02:40.770
+definition of an abstract data type in a
+programming language.
+
+42
+00:02:40.770 --> 00:02:45.450
+An object, on the other hand, is an
+instance of a class.
+
+43
+00:02:45.450 --> 00:02:49.930
+So, in other words, I might have a, class
+that's defined, name.
+
+44
+00:02:49.930 --> 00:02:52.130
+And then in my code, I might write
+
+45
+00:02:52.130 --> 00:02:57.510
+something like this, aName equals name,
+John Doe.
+
+46
+00:02:59.050 --> 00:03:05.200
+AName now becomes an object, of, the name
+class.
+
+47
+00:03:05.200 --> 00:03:08.680
+So, the class is nothing more than the
+definition.
+
+48
+00:03:08.680 --> 00:03:12.920
+Of an abstract data type or the
+implementation of an abstract data type.
+
+49
+00:03:12.920 --> 00:03:18.420
+And an object, is a particular instance,
+of the class definition.
+
+50
+00:03:18.420 --> 00:03:20.470
+So hopefully, that will clear up any
+confusion you
+
+51
+00:03:20.470 --> 00:03:23.730
+might have had about the differences
+between, classes and objects.
+
+52
+00:03:24.780 --> 00:03:29.920
+So, to summarize, an abstract data type is
+a, high-level definition of a,
+
+53
+00:03:29.920 --> 00:03:35.660
+object that, breaks the object up into
+its, attributes and its behaviors.
+
+54
+00:03:35.660 --> 00:03:38.520
+Once we've created an abstract data type,
+which
+
+55
+00:03:38.520 --> 00:03:40.680
+we don't do in the actual programming
+language.
+
+56
+00:03:40.680 --> 00:03:43.670
+We might do it on paper, or at least in
+our heads.
+
+57
+00:03:43.670 --> 00:03:45.670
+Then we're ready to actually, create the
+
+58
+00:03:45.670 --> 00:03:49.510
+class definition, from that abstract data
+type.
+
+59
+00:03:49.510 --> 00:03:50.870
+Now, we're ready to move on to the first
+
+60
+00:03:50.870 --> 00:03:55.080
+lesson, where we're gonna actually begin,
+defining classes in Python,
+
+61
+00:03:55.080 --> 00:04:00.660
+by talking about how to create
+constructors, which initialize fields,
+
+62
+00:04:00.660 --> 00:04:03.980
+or the data, or attribute part, of a class
+definition.
+

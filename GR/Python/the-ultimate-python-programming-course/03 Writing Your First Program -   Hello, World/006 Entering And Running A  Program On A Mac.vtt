@@ -1,0 +1,116 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:05.160
+In this lesson we're going to learn how to
+run Python programs on a Macintosh.
+
+2
+00:00:05.160 --> 00:00:09.760
+So the first thing you need to do is open
+up a terminal window.
+
+3
+00:00:09.760 --> 00:00:12.750
+You can get to the terminal program from
+your utilities folder.
+
+4
+00:00:12.750 --> 00:00:16.880
+And the first thing we're going to do is
+work with the interactive shell.
+
+5
+00:00:16.880 --> 00:00:22.140
+So to get to the interactive shell, we
+just type Python, that opens the shell.
+
+6
+00:00:22.140 --> 00:00:25.420
+Now let's run a quick command, print hello
+world.
+
+7
+00:00:25.420 --> 00:00:28.060
+Actually a function, and there's hello
+world.
+
+8
+00:00:28.060 --> 00:00:31.050
+So now let's exit the shell and let's
+
+9
+00:00:31.050 --> 00:00:33.580
+see how to enter programs using the Pico
+Editor.
+
+10
+00:00:34.700 --> 00:00:39.810
+So type pico, followed by the name of your
+program.
+
+11
+00:00:39.810 --> 00:00:43.330
+In this case it's going to be hellow.py.
+
+12
+00:00:44.700 --> 00:00:50.400
+Now type in the program, now type
+Control-X,
+
+13
+00:00:50.400 --> 00:00:55.810
+then a Y to save, and then the file name
+is as we wanted it, so just hit enter.
+
+14
+00:00:55.810 --> 00:01:01.200
+Now type Python, and the name of the file,
+and that runs the program.
+
+15
+00:01:02.390 --> 00:01:07.310
+Let's open it up again and make a little
+change, let's add a little more code this
+
+16
+00:01:07.310 --> 00:01:12.630
+time we're gonna write a for loop that
+displays hello world 10 times.
+
+17
+00:01:12.630 --> 00:01:17.260
+So we'll finish typing in print hello
+world, then
+
+18
+00:01:17.260 --> 00:01:19.430
+save in the same manner that we did
+before,
+
+19
+00:01:21.710 --> 00:01:22.488
+now run it again,
+
+20
+00:01:22.488 --> 00:01:24.992
+[BLANK_AUDIO]
+
+21
+00:01:24.992 --> 00:01:28.100
+and you'll see that it works just fine.
+
+22
+00:01:28.100 --> 00:01:31.880
+I'll be showing you most of the lessons on
+the Windows machine, but
+
+23
+00:01:31.880 --> 00:01:34.380
+this is how you're going to do it if you
+use a Macintosh.
+
+24
+00:01:34.380 --> 00:01:36.810
+And with that we've completed this lesson.
+

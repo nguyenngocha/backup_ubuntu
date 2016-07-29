@@ -1,0 +1,214 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:04.070
+In this exercise we're going to
+demonstrate how to
+
+2
+00:00:04.070 --> 00:00:07.530
+use the for-loop to compute the factorial
+of a number.
+
+3
+00:00:07.530 --> 00:00:10.070
+So let me start my program and then I'll
+
+4
+00:00:10.070 --> 00:00:14.530
+demonstrate arithmetically what factorial
+is before we write the program.
+
+5
+00:00:14.530 --> 00:00:17.865
+So we're gonna call this chap8ex1.py.
+
+6
+00:00:17.865 --> 00:00:25.580
+Five factorial is equal to 5 times 4,
+times 3, times 2, times 1.
+
+7
+00:00:25.580 --> 00:00:30.810
+And then 6 factorial, would be equal to 6
+times 5 factorial.
+
+8
+00:00:30.810 --> 00:00:34.140
+So if you only think about recursion,
+which we're gonna talk about later in the
+
+9
+00:00:34.140 --> 00:00:35.570
+course, you can see that it's very
+
+10
+00:00:35.570 --> 00:00:39.440
+easy to provide a recursive definition for
+factorial.
+
+11
+00:00:39.440 --> 00:00:40.920
+But we're not gonna do that here.
+
+12
+00:00:40.920 --> 00:00:45.330
+We are going to demonstrate how to do it
+iteratively using a for-loop.
+
+13
+00:00:45.330 --> 00:00:46.405
+So lets start the program.
+
+14
+00:00:46.405 --> 00:00:49.880
+So the first thing we're gonna do is
+prompt the user to enter
+
+15
+00:00:49.880 --> 00:00:53.620
+a number, then we get the number for the
+user and here I've used
+
+16
+00:00:53.620 --> 00:00:58.740
+a, another input function, just point on
+input, which works just like raw
+
+17
+00:00:58.740 --> 00:01:02.450
+input, and you can use it instead of raw
+input when you need to.
+
+18
+00:01:02.450 --> 00:01:04.560
+It'll certainly work for this example.
+
+19
+00:01:04.560 --> 00:01:07.770
+And then we have a variable fact, which
+we'll set to one.
+
+20
+00:01:07.770 --> 00:01:12.980
+Fact is going to store our successive
+products, and so we have to use 1 instead
+
+21
+00:01:12.980 --> 00:01:17.650
+of 0 because if we use 0, each successive
+product would then be equal to 0.
+
+22
+00:01:17.650 --> 00:01:19.880
+Which is not what we want, because we want
+to
+
+23
+00:01:19.880 --> 00:01:24.290
+start out with 1, and 1 times 2, then 2
+times
+
+24
+00:01:24.290 --> 00:01:27.000
+3, then 6 times 4, and 24 times 5, to get
+
+25
+00:01:27.000 --> 00:01:29.750
+the answer of 120, which I probably should
+put up here.
+
+26
+00:01:31.260 --> 00:01:35.600
+So after we've established our fact
+variable, we're ready to write the loop.
+
+27
+00:01:35.600 --> 00:01:40.850
+So we're gonna use range, and we're going
+to say the range is going to be from 1
+
+28
+00:01:40.850 --> 00:01:46.010
+to num plus 1, we have to do that to get
+it through 5, to do 1 through 5.
+
+29
+00:01:46.010 --> 00:01:48.730
+Even if we enter 5 as the input, you'll
+see in a moment.
+
+30
+00:01:49.960 --> 00:01:54.030
+And here I already see a typo let me fix
+that real quick, that should be i.
+
+31
+00:01:54.030 --> 00:01:59.200
+Then the body of the loop simply says fact
+is equal to fact times i.
+
+32
+00:01:59.200 --> 00:02:03.360
+Then last we're going to display the
+result, so we'll say
+
+33
+00:02:03.360 --> 00:02:07.790
+the number that we entered factorial is
+equal to, like so.
+
+34
+00:02:07.790 --> 00:02:13.823
+So let's save the program, go back to our
+command line prompt, and we type
+
+35
+00:02:13.823 --> 00:02:20.280
+chap8ex1.py, we'll say five and five
+factorial is 120.
+
+36
+00:02:20.280 --> 00:02:27.980
+Lets run it again, lets do 10 and see how
+quickly the numbers grow
+
+37
+00:02:27.980 --> 00:02:30.170
+when you're computing factorial and we
+could
+
+38
+00:02:30.170 --> 00:02:32.132
+do several other numbers, but we'll stop
+there.
+
+39
+00:02:32.132 --> 00:02:36.220
+The for-loop provides us with a easy way
+
+40
+00:02:36.220 --> 00:02:41.940
+to do what's called the factorial
+computation iteratively.
+
+41
+00:02:41.940 --> 00:02:45.630
+And like I said, there's also a recursive
+solution to factorial, and
+
+42
+00:02:45.630 --> 00:02:49.340
+we'll look at that when we study recursion
+later on in the course.
+
+43
+00:02:49.340 --> 00:02:51.780
+But with that, we're finished with this
+first exercise and we're
+
+44
+00:02:51.780 --> 00:02:55.220
+ready to move to the second and last
+exercise in this chapter.
+

@@ -1,0 +1,283 @@
+WEBVTT
+
+1
+00:00:01.110 --> 00:00:05.610
+In this chapter we're going to, work
+exercises using the three major data
+
+2
+00:00:05.610 --> 00:00:11.260
+structures of Python, lists, to pules, and
+dictionaries.
+
+3
+00:00:11.260 --> 00:00:14.170
+In this first exercise we're going to work
+with lists
+
+4
+00:00:14.170 --> 00:00:18.520
+and write a couple of functions to perform
+tasks with lists.
+
+5
+00:00:18.520 --> 00:00:21.950
+Primarily just to demonstrate how easy it
+is to add your own
+
+6
+00:00:21.950 --> 00:00:27.750
+functionality to the functionality that's
+built in to the Python data structures.
+
+7
+00:00:27.750 --> 00:00:32.430
+So we're gonna call this program
+takedrop.py because those are
+
+8
+00:00:32.430 --> 00:00:35.260
+the two functions we're going to write
+take and drop.
+
+9
+00:00:36.710 --> 00:00:38.541
+So let me start off with a list.
+
+10
+00:00:38.541 --> 00:00:44.025
+Were're going to start, a basic list of a
+couple of names, actually five names.
+
+11
+00:00:44.025 --> 00:00:46.650
+[BLANK_AUDIO]
+
+12
+00:00:46.650 --> 00:00:48.660
+Now, let's move the list down.
+
+13
+00:00:48.660 --> 00:00:50.320
+We want to put our functions above.
+
+14
+00:00:50.320 --> 00:00:53.850
+The first function we wanna write is take.
+
+15
+00:00:53.850 --> 00:00:58.550
+Take will take a specified number of items
+consecutively.
+
+16
+00:00:58.550 --> 00:01:03.400
+From a list, and create a new list from
+that list.
+
+17
+00:01:03.400 --> 00:01:06.390
+So the first thing we do is, we create an
+empty list.
+
+18
+00:01:06.390 --> 00:01:10.010
+We'll call it rlist for returned list.
+
+19
+00:01:10.010 --> 00:01:13.120
+Then we're going to write a for loop.
+
+20
+00:01:13.120 --> 00:01:15.130
+It starts at zero, it goes through the
+
+21
+00:01:15.130 --> 00:01:19.890
+number specified as the first argument to
+the function.
+
+22
+00:01:19.890 --> 00:01:23.680
+And we append that data to the list.
+
+23
+00:01:24.820 --> 00:01:27.770
+Then when we're finished, we return the
+list.
+
+24
+00:01:27.770 --> 00:01:29.710
+So let's give it a try.
+
+25
+00:01:29.710 --> 00:01:35.670
+So I'll write, some names equals take and
+then three names.
+
+26
+00:01:35.670 --> 00:01:38.640
+That will take the first three names out
+of names.
+
+27
+00:01:38.640 --> 00:01:42.216
+And put it in the list some names, and
+then we'll print some names.
+
+28
+00:01:42.216 --> 00:01:42.918
+[BLANK_AUDIO].
+
+29
+00:01:42.918 --> 00:01:50.432
+So take drop.py and some names consists
+
+30
+00:01:50.432 --> 00:01:56.660
+of Raymond, Cynthia and David.
+
+31
+00:01:59.510 --> 00:02:01.430
+Now, we are going to write the drop
+function.
+
+32
+00:02:01.430 --> 00:02:07.370
+It has the same parameters, a number and a
+list
+
+33
+00:02:07.370 --> 00:02:13.640
+and it's going to drop the number of items
+from the list, starting at the beginning.
+
+34
+00:02:13.640 --> 00:02:15.753
+So, if we say, drop 3.
+
+35
+00:02:16.790 --> 00:02:19.340
+From names that it's going to drop the
+first three names.
+
+36
+00:02:20.370 --> 00:02:23.910
+So the first thing we do is create an
+empty list to return.
+
+37
+00:02:23.910 --> 00:02:26.890
+Then we write a for loop that starts at
+the
+
+38
+00:02:26.890 --> 00:02:31.200
+number specified and continues through the
+length of the list.
+
+39
+00:02:32.230 --> 00:02:37.780
+Essentially building a list starting at
+the item past the number we wanna drop.
+
+40
+00:02:37.780 --> 00:02:41.420
+So in other words if we say drop three
+names then the
+
+41
+00:02:41.420 --> 00:02:45.390
+new list is built starting at the fourth
+name, in this example, Jennifer.
+
+42
+00:02:48.640 --> 00:02:50.230
+So if you'll notice the two functions
+
+43
+00:02:50.230 --> 00:02:52.730
+are very similar yet they perform
+different tasks.
+
+44
+00:02:54.370 --> 00:02:59.840
+So, we wanna drop three from names and
+store that back into names.
+
+45
+00:02:59.840 --> 00:03:01.359
+And then we'll print names.
+
+46
+00:03:01.359 --> 00:03:02.090
+[BLANK_AUDIO].
+
+47
+00:03:02.090 --> 00:03:09.404
+Our first function takes three from names
+and stores it
+
+48
+00:03:09.404 --> 00:03:17.170
+in the list some names, Raymond, Cynthia,
+David.
+
+49
+00:03:17.170 --> 00:03:21.270
+And our second function drop, drops those
+three names.
+
+50
+00:03:21.270 --> 00:03:24.300
+And names is left with just Jennifer and
+Clayton.
+
+51
+00:03:24.300 --> 00:03:24.800
+Here
+
+52
+00:03:26.440 --> 00:03:27.460
+are the functions.
+
+53
+00:03:28.770 --> 00:03:34.410
+And I'll leave as an exercise for you
+modifying these functions,
+
+54
+00:03:34.410 --> 00:03:38.350
+so that if you typed, for example, take
+minus three names.
+
+55
+00:03:39.730 --> 00:03:45.020
+It would take the last three names from
+the list and the same thing with drop.
+
+56
+00:03:45.020 --> 00:03:50.950
+Drop three names would drop the last three
+names of the list.
+
+57
+00:03:50.950 --> 00:03:54.150
+And given what I've shown you in this
+exercise you should be able
+
+58
+00:03:54.150 --> 00:03:58.890
+to write that modification for both the
+take function and the drop function.
+
+59
+00:03:58.890 --> 00:04:01.230
+But for now we're going to leave this
+exercise and move
+
+60
+00:04:01.230 --> 00:04:03.954
+to the next exercise where we're going to
+work with topules
+

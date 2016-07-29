@@ -1,0 +1,304 @@
+WEBVTT
+
+1
+00:00:01.110 --> 00:00:06.280
+In this lesson, we're going to discuss how
+modules work as name spaces.
+
+2
+00:00:06.280 --> 00:00:11.090
+And a name space is just another way to
+define a scope.
+
+3
+00:00:11.090 --> 00:00:13.330
+When a object is defined within a name
+
+4
+00:00:13.330 --> 00:00:16.760
+space, it's like defining it within a
+function.
+
+5
+00:00:16.760 --> 00:00:22.390
+Any definition inside a name space, is
+considered local to that name space.
+
+6
+00:00:22.390 --> 00:00:25.310
+So I could have a variable named x, for
+example, in the
+
+7
+00:00:25.310 --> 00:00:30.250
+main program, and then have a variable
+named x in a namespace.
+
+8
+00:00:30.250 --> 00:00:32.710
+And as long as I reference the x
+
+9
+00:00:32.710 --> 00:00:36.330
+with the namespace, then the two names
+don't conflict.
+
+10
+00:00:36.330 --> 00:00:37.810
+Let me demonstrate what I'm talking about.
+
+11
+00:00:38.940 --> 00:00:41.622
+We're gonna call this program
+namespace.py.
+
+12
+00:00:43.180 --> 00:00:44.520
+In the past few lessons we've been
+
+13
+00:00:44.520 --> 00:00:49.020
+working the Newton module and importing
+our functions
+
+14
+00:00:49.020 --> 00:00:51.860
+like so, either with import star or
+
+15
+00:00:51.860 --> 00:00:54.740
+importing a specific function or list of
+functions.
+
+16
+00:00:56.050 --> 00:01:01.870
+Another way to import from a module, the
+way we've use these other modules before.
+
+17
+00:01:01.870 --> 00:01:04.560
+It's to just say import newton.
+
+18
+00:01:04.560 --> 00:01:07.220
+When we do that with our own modules we
+have to be careful.
+
+19
+00:01:07.220 --> 00:01:09.050
+For example, watch this simple example.
+
+20
+00:01:09.050 --> 00:01:13.690
+[BLANK_AUDIO].
+
+21
+00:01:13.690 --> 00:01:16.130
+Alright, notice it says the name square
+root is not
+
+22
+00:01:16.130 --> 00:01:21.250
+defined, even though we know square root
+is imported from newton.
+
+23
+00:01:21.250 --> 00:01:23.550
+What I have to do is, to use square root.
+
+24
+00:01:25.120 --> 00:01:30.310
+I have to qualify the name, by naming the
+module first.
+
+25
+00:01:30.310 --> 00:01:35.330
+That module then becomes the name space,
+for the square root function.
+
+26
+00:01:37.690 --> 00:01:38.550
+Now let's try it.
+
+27
+00:01:43.330 --> 00:01:43.830
+There we go.
+
+28
+00:01:45.100 --> 00:01:46.810
+So that's why we were using the from
+
+29
+00:01:46.810 --> 00:01:50.065
+Newton import star form of the import
+statement
+
+30
+00:01:50.065 --> 00:01:53.100
+before, so that we didn't have to qualify
+
+31
+00:01:53.100 --> 00:01:56.270
+it with the module name or the namespace
+name.
+
+32
+00:01:56.270 --> 00:02:01.410
+What this does for us, by doing it this
+way, we can also have other names, in
+
+33
+00:02:01.410 --> 00:02:06.770
+our program that we can use that have the
+same name as a function for Newton.
+
+34
+00:02:06.770 --> 00:02:07.990
+So for example.
+
+35
+00:02:07.990 --> 00:02:09.750
+I can define square as such.
+
+36
+00:02:11.230 --> 00:02:14.230
+Now, normally I would not put a print
+function in the middle
+
+37
+00:02:14.230 --> 00:02:19.510
+of a function definition, but I'm doing
+this primarily to separate the two.
+
+38
+00:02:19.510 --> 00:02:22.350
+So now, I can call.
+
+39
+00:02:22.350 --> 00:02:26.460
+Either function, either square function,
+the function from newton, or the
+
+40
+00:02:26.460 --> 00:02:30.180
+function from the main program, as long as
+I'm careful about
+
+41
+00:02:30.180 --> 00:02:32.760
+making sure if I want to use the square
+function from
+
+42
+00:02:32.760 --> 00:02:38.520
+the newton module, that I qualify it with
+the namespace named newton.
+
+43
+00:02:38.520 --> 00:02:39.420
+So lemme show you an example.
+
+44
+00:02:41.670 --> 00:02:47.760
+We'll say, square from newton.py.
+
+45
+00:02:47.760 --> 00:02:52.280
+And then we'll say square from main
+program and
+
+46
+00:02:53.420 --> 00:02:58.530
+then print square num and we should see
+the difference.
+
+47
+00:02:58.530 --> 00:02:59.940
+Let's save and run the program.
+
+48
+00:02:59.940 --> 00:03:05.520
+[BLANK_AUDIO]
+
+49
+00:03:05.520 --> 00:03:10.560
+So, square from newton.py just prints 144,
+12 squared.
+
+50
+00:03:10.560 --> 00:03:12.610
+Then square from main program.
+
+51
+00:03:12.610 --> 00:03:17.441
+First it prints the line, not from the
+newton module, and then it prints 144.
+
+52
+00:03:18.640 --> 00:03:25.170
+So hopefully this helps explain a little
+bit about how modules work as namespaces.
+
+53
+00:03:25.170 --> 00:03:28.476
+Those of you who are familiar with other
+languages as java
+
+54
+00:03:28.476 --> 00:03:34.070
+and C++ and C# are probably already
+familiar with how namespaces work.
+
+55
+00:03:34.070 --> 00:03:37.300
+We haven't really covered them in this
+course, the namespaces aren't
+
+56
+00:03:37.300 --> 00:03:40.360
+used in python the same way they are in
+other languages.
+
+57
+00:03:40.360 --> 00:03:43.290
+But here is a very clear example of how we
+
+58
+00:03:43.290 --> 00:03:46.880
+can have two functions with the same name,
+but call
+
+59
+00:03:46.880 --> 00:03:52.080
+them, without a conflict, by using a
+namespace name, what,
+
+60
+00:03:52.080 --> 00:03:55.870
+what we'll call the fully qualified name
+for the function.
+
+61
+00:03:55.870 --> 00:03:58.845
+That's what we have right here.
+
+62
+00:03:58.845 --> 00:04:02.414
+Newton.square is the fully qualified name
+for the
+
+63
+00:04:02.414 --> 00:04:06.090
+square function that comes from the newton
+module.
+
+64
+00:04:07.110 --> 00:04:10.450
+So, that wraps this little lesson on
+modules as namespaces and now
+
+65
+00:04:10.450 --> 00:04:13.790
+we are ready to move in to the exercise
+for this chapter.
+

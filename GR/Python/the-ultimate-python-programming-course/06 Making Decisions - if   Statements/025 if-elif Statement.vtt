@@ -1,0 +1,373 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:04.920
+The third type of if statement in Python
+is the if elif.
+
+2
+00:00:04.920 --> 00:00:08.900
+Let me demonstrate the general syntax for
+that if statement.
+
+3
+00:00:08.900 --> 00:00:12.110
+So we have if followed by a relational
+expression.
+
+4
+00:00:13.420 --> 00:00:15.770
+Inside that would be the statements.
+
+5
+00:00:15.770 --> 00:00:20.070
+And then you'll say, elif and another
+relational expression.
+
+6
+00:00:20.070 --> 00:00:23.090
+Followed by a set of statements, one or
+more.
+
+7
+00:00:23.090 --> 00:00:27.530
+And we can continue with elifs as long as
+we need to.
+
+8
+00:00:27.530 --> 00:00:28.890
+And we'll stop after this one.
+
+9
+00:00:28.890 --> 00:00:31.740
+And then finally, you can have an optional
+else.
+
+10
+00:00:31.740 --> 00:00:39.220
+The else will execute its statements if,
+and we left off a colon right there.
+
+11
+00:00:39.220 --> 00:00:42.100
+If all of the other relational expressions
+are false.
+
+12
+00:00:42.100 --> 00:00:47.300
+So an example of when you might need a if
+elif is with
+
+13
+00:00:47.300 --> 00:00:52.700
+a grading scale, when you're taking
+numeric scores and assigning values.
+
+14
+00:00:52.700 --> 00:00:58.670
+So for example, greater than 89 is a
+letter grade A, using the 90 to 100 scale.
+
+15
+00:00:58.670 --> 00:01:03.440
+80 to 89 is a B, 70 to 79 is a C,
+
+16
+00:01:03.440 --> 00:01:08.350
+60 to 69 is a D, and anything below
+
+17
+00:01:08.350 --> 00:01:14.390
+60, so less than or equal to 59, is an F.
+
+18
+00:01:14.390 --> 00:01:17.070
+So if you're looking at a numeric score,
+you might
+
+19
+00:01:17.070 --> 00:01:22.600
+say, if grade is greater than 89, letter
+grade equals A.
+
+20
+00:01:22.600 --> 00:01:27.580
+Elif grade is greater than 79, or greater
+
+21
+00:01:27.580 --> 00:01:30.440
+than or equal to 80, letter grade equals
+B.
+
+22
+00:01:30.440 --> 00:01:37.120
+Elif grade is greater than or equal to 70,
+letter grade equals C and so on.
+
+23
+00:01:37.120 --> 00:01:39.930
+In fact, let's look in Python how to
+actually write
+
+24
+00:01:39.930 --> 00:01:43.560
+that simple little program to demonstrate
+how the if elif works.
+
+25
+00:01:45.270 --> 00:01:48.335
+So let's move to Python.
+
+26
+00:01:48.335 --> 00:01:52.426
+We'll call this ifelif.py.
+
+27
+00:01:52.426 --> 00:01:56.490
+So the first thing we're gonna do is say
+print, enter a numeric grade.
+
+28
+00:01:57.630 --> 00:02:01.500
+And then we'll say grade is equal to int,
+raw input.
+
+29
+00:02:01.500 --> 00:02:04.810
+And then we'll say if grade is greater
+
+30
+00:02:04.810 --> 00:02:10.680
+than or equal to 90, letter grade equals
+A.
+
+31
+00:02:10.680 --> 00:02:14.950
+Elif, and actually I'm gonna take the
+parenthesis off this.
+
+32
+00:02:14.950 --> 00:02:18.360
+If you come from another programming
+language in to Python, you'd be
+
+33
+00:02:18.360 --> 00:02:23.380
+like me and want to always put parentheses
+around your relational expressions.
+
+34
+00:02:23.380 --> 00:02:27.320
+That's not a common idiom in Python, so
+trying to follow
+
+35
+00:02:27.320 --> 00:02:31.580
+the convention of most Python programmers,
+I'll take my parentheses off.
+
+36
+00:02:32.760 --> 00:02:33.850
+It's hard for me to do.
+
+37
+00:02:33.850 --> 00:02:40.701
+Then we can say, elif grade greater than
+or equal to 80, letter grade equals B.
+
+38
+00:02:40.701 --> 00:02:47.911
+Elif grade greater than, equal to 70,
+letter grade equals C.
+
+39
+00:02:47.911 --> 00:02:53.290
+Elif grade greater than, equal to 60,
+letter grade equals D.
+
+40
+00:02:54.310 --> 00:03:00.600
+Elif grade less than, equal to 59, letter
+grade equal F.
+
+41
+00:03:00.600 --> 00:03:06.490
+Else print did not recognize input.
+
+42
+00:03:06.490 --> 00:03:10.360
+We'll add this else part for if the user
+enters something that's not
+
+43
+00:03:10.360 --> 00:03:15.028
+in that range or enters some input that's
+not a number, for example.
+
+44
+00:03:15.028 --> 00:03:22.190
+So I have print statement and print and
+say your letter grade is, letter grade.
+
+45
+00:03:22.190 --> 00:03:22.490
+Okay?
+
+46
+00:03:22.490 --> 00:03:24.310
+So let's exit and save.
+
+47
+00:03:24.310 --> 00:03:30.489
+And try it, ifelif.py.
+
+48
+00:03:32.080 --> 00:03:36.310
+I haven't made too many error; this one is
+just a typographical error.
+
+49
+00:03:36.310 --> 00:03:40.080
+I do like to leave them in because you'll
+see how I solve these problems.
+
+50
+00:03:40.080 --> 00:03:43.000
+This is an easy one to fix; I just forgot
+to put the
+
+51
+00:03:43.000 --> 00:03:47.040
+colon right here, so let's add that in
+real quick, exit and save again.
+
+52
+00:03:50.450 --> 00:03:51.890
+Chock full of mistakes today.
+
+53
+00:03:52.890 --> 00:03:53.950
+Same thing right there.
+
+54
+00:03:56.880 --> 00:03:57.630
+One more time.
+
+55
+00:03:58.700 --> 00:04:01.060
+That's the end of the program, so there
+shouldn't be too many other errors.
+
+56
+00:04:01.060 --> 00:04:03.890
+So let's just try a middle grade, 77.
+
+57
+00:04:03.890 --> 00:04:05.510
+Your letter grade is C.
+
+58
+00:04:05.510 --> 00:04:06.780
+Let's run it again.
+
+59
+00:04:06.780 --> 00:04:08.890
+Let's try a high score.
+
+60
+00:04:08.890 --> 00:04:09.580
+That's good.
+
+61
+00:04:09.580 --> 00:04:10.910
+Let's run it again.
+
+62
+00:04:10.910 --> 00:04:11.490
+Let's try.
+
+63
+00:04:12.870 --> 00:04:14.925
+Now let's try for one more attempt.
+
+64
+00:04:14.925 --> 00:04:18.310
+Let's try something that's outside the
+range, let's try a letter.
+
+65
+00:04:19.360 --> 00:04:23.670
+In that case, it failed in our input,
+which is fine, just trying to show
+
+66
+00:04:23.670 --> 00:04:25.860
+you what would happen if the user
+
+67
+00:04:25.860 --> 00:04:29.300
+entered something that was not a
+legitimate number.
+
+68
+00:04:29.300 --> 00:04:32.130
+Later in the course, we'll talk more about
+how a handle errors like this.
+
+69
+00:04:32.130 --> 00:04:34.340
+But I just wanted to demonstrate what
+would happen
+
+70
+00:04:34.340 --> 00:04:37.840
+if the user entered something outside the
+range of numbers.
+
+71
+00:04:37.840 --> 00:04:43.420
+So to review very quickly, we've looked at
+the if elif statement as a way to make one
+
+72
+00:04:43.420 --> 00:04:49.520
+decision based on a large range of
+possible values of the input.
+
+73
+00:04:49.520 --> 00:04:51.060
+And so the example that we used was
+
+74
+00:04:51.060 --> 00:04:53.810
+turning a numeric grade into a letter
+grade.
+
+75
+00:04:53.810 --> 00:04:58.070
+In the exercises, we'll look at another
+example of using if
+
+76
+00:04:58.070 --> 00:05:01.430
+elif, and in fact, we're ready to move to
+the exercises now.
+
+77
+00:05:01.430 --> 00:05:05.300
+Our first exercise will involve just if
+else, but later
+
+78
+00:05:05.300 --> 00:05:08.690
+on in the exercises, we will work again
+with if elif.
+
+79
+00:05:08.690 --> 00:05:10.710
+So let's move on to the exercises.
+
+80
+00:05:10.710 --> 00:05:15.329
+[BLANK_AUDIO]
+

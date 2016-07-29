@@ -1,0 +1,277 @@
+WEBVTT
+
+1
+00:00:00.086 --> 00:00:04.979
+[MUSIC]
+
+2
+00:00:04.979 --> 00:00:10.162
+Some languages have something called a
+switch statement, which is similar to
+
+3
+00:00:10.162 --> 00:00:14.872
+the an else if statements, where you can
+have a multiple checks running
+
+4
+00:00:14.872 --> 00:00:19.111
+and it will output in a correct answer
+based on your multiple
+
+5
+00:00:19.111 --> 00:00:24.100
+checks, but its more syntax friendly way
+of doing a lot of checks.
+
+6
+00:00:24.100 --> 00:00:26.830
+Now, Python doesn't have one built in, but
+there is an easy
+
+7
+00:00:26.830 --> 00:00:31.640
+work around, which is actually quite a
+nice method, is, is anyway.
+
+8
+00:00:31.640 --> 00:00:34.240
+So, I'm going to be showing you what that
+work around is.
+
+9
+00:00:34.240 --> 00:00:36.350
+Now, if you don't understand, or if you
+don't like this
+
+10
+00:00:36.350 --> 00:00:40.690
+method, you can stick to using if else
+if's, and else's
+
+11
+00:00:40.690 --> 00:00:44.610
+statement's, however, this is just an
+alternative for people who want
+
+12
+00:00:44.610 --> 00:00:48.820
+to learn the language fully, or see other
+methods of doing things.
+
+13
+00:00:48.820 --> 00:00:51.190
+So, the way in which you do it is by
+
+14
+00:00:51.190 --> 00:00:54.640
+using the dictionary, which I discussed in
+a previous video.
+
+15
+00:00:54.640 --> 00:00:59.190
+And we're just gonna create a dictionary,
+and we're gonna call that switch.
+
+16
+00:00:59.190 --> 00:01:04.830
+I'm going to create the dictionary using
+the dict function, there we go.
+
+17
+00:01:04.830 --> 00:01:10.504
+And we're going to just, do 1 is equal to,
+1 and
+
+18
+00:01:10.504 --> 00:01:16.020
+2 is equal to 2, 3 is equal to.
+
+19
+00:01:18.180 --> 00:01:20.420
+Okay, so now we've got 1, 2 and 3 and
+
+20
+00:01:20.420 --> 00:01:24.192
+our variable we're going to have equal to
+2, for now.
+
+21
+00:01:24.192 --> 00:01:28.412
+[NOISE] Now what we're going to do is,
+we're
+
+22
+00:01:28.412 --> 00:01:32.528
+going to do print, and we do print switch.
+
+23
+00:01:32.528 --> 00:01:37.420
+And inside the square brackets, we can put
+a variable.
+
+24
+00:01:37.420 --> 00:01:38.720
+And when we run this,
+
+25
+00:01:41.670 --> 00:01:43.570
+you see, where we get the output 2.
+
+26
+00:01:43.570 --> 00:01:47.100
+Now if I was to change this to, just say
+true, just
+
+27
+00:01:47.100 --> 00:01:50.530
+so you can see that it does work, we get
+the output true.
+
+28
+00:01:50.530 --> 00:01:53.630
+So, this is how you could do a long if
+statement.
+
+29
+00:01:53.630 --> 00:01:57.190
+The only problem with this is that, it
+only works with outputs.
+
+30
+00:01:57.190 --> 00:02:00.230
+It doesn't work with other conditional
+statements running,
+
+31
+00:02:00.230 --> 00:02:03.310
+so if you wanted to do more logical
+
+32
+00:02:03.310 --> 00:02:06.320
+conditions afterwards, you'd have to use
+the if
+
+33
+00:02:06.320 --> 00:02:11.080
+else if statements, rather than using the
+dictionary method.
+
+34
+00:02:11.080 --> 00:02:13.300
+However, this is quite useful if all
+you're
+
+35
+00:02:13.300 --> 00:02:17.400
+doing is outputting something to the to
+the user.
+
+36
+00:02:18.590 --> 00:02:24.590
+Now you'll notice if I was to try 4 here,
+and we run it, then we get a problem.
+
+37
+00:02:24.590 --> 00:02:28.910
+We get an error output and that's because
+the, the key
+
+38
+00:02:28.910 --> 00:02:32.680
+within value or four 4, the index of 4
+doesn't exist.
+
+39
+00:02:32.680 --> 00:02:34.620
+It only goes up to 1, 2 and 3.
+
+40
+00:02:34.620 --> 00:02:40.270
+So the fourth one isn't there and it's,
+not got a default value as such
+
+41
+00:02:40.270 --> 00:02:45.720
+because it can't give a value, like that,
+because of the way the dictionary works.
+
+42
+00:02:46.920 --> 00:02:50.600
+Now, there is something called a
+tri-catch, which
+
+43
+00:02:50.600 --> 00:02:52.850
+we will be covering later on in the
+course.
+
+44
+00:02:52.850 --> 00:02:55.900
+However, that's quite a messy work around,
+for something like this.
+
+45
+00:02:55.900 --> 00:02:59.470
+Where we could have, a much simpler method
+of doing it.
+
+46
+00:02:59.470 --> 00:03:01.810
+And that much simpler method of doing it,
+is using a function
+
+47
+00:03:01.810 --> 00:03:08.030
+that is built in, to the dictionary which
+is called the get.
+
+48
+00:03:08.030 --> 00:03:12.850
+And what we do is we put the takes two
+parameters and
+
+49
+00:03:12.850 --> 00:03:16.440
+a parameter measures a piece of
+information that we pass towards it.
+
+50
+00:03:16.440 --> 00:03:23.750
+And the first, the first parameter is the
+variable that you're passing.
+
+51
+00:03:23.750 --> 00:03:25.990
+The information that you want it to check,
+and the
+
+52
+00:03:25.990 --> 00:03:28.335
+second parameter is the default, if it
+can't find it.
+
+53
+00:03:28.335 --> 00:03:32.190
+And so you'll see now that it gets the
+output default.
+
+54
+00:03:32.190 --> 00:03:34.960
+So that is just, a quick work around on
+which you can do
+
+55
+00:03:34.960 --> 00:03:38.910
+to get around the fact, that Python
+doesn't have switch statement built in.
+
+56
+00:03:38.910 --> 00:03:41.632
+So thank you for watching, and I will see
+you soon.
+
+57
+00:03:41.632 --> 00:03:46.619
+[MUSIC]
+

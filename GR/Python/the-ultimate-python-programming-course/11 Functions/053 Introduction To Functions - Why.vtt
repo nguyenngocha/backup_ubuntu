@@ -1,0 +1,362 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:02.180
+In this chapter we're going to be
+
+2
+00:00:02.180 --> 00:00:06.000
+discussing creating functions in Python.In
+this lesson, all
+
+3
+00:00:06.000 --> 00:00:10.130
+i'm going to be doing providing you with a
+definition of what a function is.
+
+4
+00:00:10.130 --> 00:00:12.940
+And some reasons why we want to
+
+5
+00:00:12.940 --> 00:00:16.300
+write functions, or create functions in
+our programs.
+
+6
+00:00:16.300 --> 00:00:18.310
+Let's start with the definition first.
+
+7
+00:00:18.310 --> 00:00:20.770
+A function is a piece of source code.
+
+8
+00:00:21.950 --> 00:00:28.050
+Separate from the larger program, that
+performs a specific task.
+
+9
+00:00:29.110 --> 00:00:32.960
+So when we define a function, we are
+defining it in a separate area then
+
+10
+00:00:32.960 --> 00:00:35.900
+the rest of our program and we're defining
+
+11
+00:00:35.900 --> 00:00:39.170
+it because we wanted to do something
+specific.
+
+12
+00:00:39.170 --> 00:00:44.150
+Such a square number or count the letters
+in a strain.
+
+13
+00:00:44.150 --> 00:00:46.400
+Although we have functions for that.
+
+14
+00:00:46.400 --> 00:00:48.840
+Some sort of specific tasks.
+
+15
+00:00:48.840 --> 00:00:52.650
+So what are the reasons why we want to use
+functions in our program?
+
+16
+00:00:52.650 --> 00:00:57.830
+Well the first reason is to reduce complex
+tasks into simpler tasks.
+
+17
+00:00:59.180 --> 00:01:04.360
+And by that I mean that if we have a 5000
+line program that's all
+
+18
+00:01:04.360 --> 00:01:09.690
+just one big large program, that becomes
+very hard to work with.
+
+19
+00:01:09.690 --> 00:01:14.310
+Whereas, if we have a 5000 line program
+that's broken up into.
+
+20
+00:01:14.310 --> 00:01:17.900
+Many functions of 10 to 20 lines each.
+
+21
+00:01:17.900 --> 00:01:21.710
+It's much easier to deal with those
+individual pieces than it is to try
+
+22
+00:01:21.710 --> 00:01:27.520
+to handle the whole program as one big,
+large ball of code, so to speak.
+
+23
+00:01:27.520 --> 00:01:29.350
+So that's the first reason.
+
+24
+00:01:29.350 --> 00:01:33.030
+The second reason is to illuminate
+duplicate code.
+
+25
+00:01:33.030 --> 00:01:37.390
+By duplicate code I just mean that if for
+example, we have a
+
+26
+00:01:37.390 --> 00:01:42.370
+statistics program where we have to sum
+the squares of a data set.
+
+27
+00:01:42.370 --> 00:01:48.960
+Well we would write a set of instructions,
+a set of code, to sum the squares.
+
+28
+00:01:48.960 --> 00:01:51.790
+Well, if we're having to do that several
+places
+
+29
+00:01:51.790 --> 00:01:54.980
+in our program if we have to constantly
+re-write.
+
+30
+00:01:54.980 --> 00:01:59.320
+The loop or whatever it is that we do to
+write the sum of squares.
+
+31
+00:01:59.320 --> 00:02:01.650
+If we have it in our program in several
+places, we have
+
+32
+00:02:01.650 --> 00:02:04.570
+to rewrite it every single time that we
+need to use it.
+
+33
+00:02:04.570 --> 00:02:08.280
+However, if we create that as a function,
+then
+
+34
+00:02:08.280 --> 00:02:10.500
+we only have to write the definition of
+the
+
+35
+00:02:10.500 --> 00:02:14.040
+function once and then we can reuse that
+function
+
+36
+00:02:14.040 --> 00:02:16.500
+as many times we need to in our program.
+
+37
+00:02:16.500 --> 00:02:20.060
+So that's what we're talking about when we
+talk about eliminate duplicate code.
+
+38
+00:02:20.060 --> 00:02:22.570
+Another reason is code reuse.
+
+39
+00:02:22.570 --> 00:02:25.730
+Once we write a sum of squares function,
+for
+
+40
+00:02:25.730 --> 00:02:28.060
+example, then we can reuse it in any other
+
+41
+00:02:28.060 --> 00:02:30.980
+program that we have or that we need to
+
+42
+00:02:30.980 --> 00:02:34.470
+write that involves computing the sum of
+the squares.
+
+43
+00:02:34.470 --> 00:02:36.970
+So rather than recreate the definition
+over and
+
+44
+00:02:36.970 --> 00:02:39.890
+over again in many different programs, we
+create
+
+45
+00:02:39.890 --> 00:02:45.410
+that function definition once, and then we
+can reuse it as often as we need to.
+
+46
+00:02:45.410 --> 00:02:49.450
+Another reason is to distribute tasks to
+multiple programmers.
+
+47
+00:02:49.450 --> 00:02:53.670
+If we break our large program up into
+multiple functions,
+
+48
+00:02:53.670 --> 00:02:57.360
+then each function can be assigned to a
+different programmer.
+
+49
+00:02:57.360 --> 00:02:59.190
+And if we're working in a large
+
+50
+00:02:59.190 --> 00:03:01.700
+programming shop, that will increase our
+efficiency.
+
+51
+00:03:02.990 --> 00:03:04.560
+Another reason to write functions is
+
+52
+00:03:04.560 --> 00:03:09.900
+to hide implementation details, also
+called abstraction.
+
+53
+00:03:09.900 --> 00:03:12.580
+This makes it easier for someone who's
+reading our
+
+54
+00:03:12.580 --> 00:03:16.880
+program to look at our high-level function
+calls and then
+
+55
+00:03:16.880 --> 00:03:18.600
+decide whether or not they want to look at
+
+56
+00:03:18.600 --> 00:03:21.670
+the low level details of how the function
+is implemented.
+
+57
+00:03:21.670 --> 00:03:24.160
+This makes maintenance of programs easier.
+
+58
+00:03:24.160 --> 00:03:28.250
+And it also improves the overall quality
+of your programs.
+
+59
+00:03:29.390 --> 00:03:32.280
+And then our last reason, improves the
+debugging of
+
+60
+00:03:32.280 --> 00:03:37.160
+our programs by improving the traceability
+of a program.
+
+61
+00:03:37.160 --> 00:03:44.170
+It's much easier to follow a program along
+either manually or using a debugging tool.
+
+62
+00:03:44.170 --> 00:03:45.880
+When you can jump from function to
+
+63
+00:03:45.880 --> 00:03:48.910
+function, or from function call to
+function call.
+
+64
+00:03:48.910 --> 00:03:52.760
+So it's a lot easier to trace the progress
+of a program
+
+65
+00:03:52.760 --> 00:03:54.910
+by following functions, rather than to
+
+66
+00:03:54.910 --> 00:03:59.200
+follow the actual lines of code
+themselves.
+
+67
+00:03:59.200 --> 00:04:02.030
+So, creating functions improves our
+debugging by
+
+68
+00:04:02.030 --> 00:04:05.480
+allowing us to trace our programs more
+easily.
+
+69
+00:04:05.480 --> 00:04:08.610
+So, those are the reasons why we want to
+use functions.
+
+70
+00:04:08.610 --> 00:04:12.230
+And I would say that becoming a adequate
+or good
+
+71
+00:04:12.230 --> 00:04:16.910
+function creator is a very, very important
+task in programming.
+
+72
+00:04:16.910 --> 00:04:20.760
+And something that you should spend a lot
+of time practicing.
+
+73
+00:04:20.760 --> 00:04:23.170
+The better you are at defining functions.
+
+74
+00:04:23.170 --> 00:04:25.420
+The better of a programmer you're going to
+be.
+
+75
+00:04:25.420 --> 00:04:28.280
+So with that we're ready to move on to the
+next lesson of the
+
+76
+00:04:28.280 --> 00:04:34.650
+chapter where, we're going to look at how
+to define a function in Python.
+

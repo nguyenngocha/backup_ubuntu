@@ -1,0 +1,331 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.795
+[MUSIC].
+
+2
+00:00:04.795 --> 00:00:07.294
+While the while loop is the most easy
+
+3
+00:00:07.294 --> 00:00:10.234
+to use loop, it's not really the most
+commonly
+
+4
+00:00:10.234 --> 00:00:12.954
+used one because it's not as powerful as
+the
+
+5
+00:00:12.954 --> 00:00:15.558
+for loop which I'm going to show you now.
+
+6
+00:00:15.558 --> 00:00:17.260
+The for loop.
+
+7
+00:00:17.260 --> 00:00:20.030
+Which, the key word is for.
+
+8
+00:00:20.030 --> 00:00:25.050
+You loop through data, which is in an
+array, of some sort.
+
+9
+00:00:25.050 --> 00:00:27.153
+So you could have leaping through files,
+which
+
+10
+00:00:27.153 --> 00:00:28.845
+I'll show you later on in the course.
+
+11
+00:00:28.845 --> 00:00:34.419
+Or you could have it looping through a
+list, which I'll show you now.
+
+12
+00:00:34.419 --> 00:00:36.800
+And so what we have here is for data.
+
+13
+00:00:36.800 --> 00:00:39.330
+And, and then we have the list.
+
+14
+00:00:39.330 --> 00:00:42.230
+And what we're going to do is just we're
+going to print data.
+
+15
+00:00:43.390 --> 00:00:46.980
+And if we run through this, what you'll
+see,
+
+16
+00:00:48.990 --> 00:00:53.820
+is we get is that we get one, two, three,
+four and five, each one on a new line.
+
+17
+00:00:53.820 --> 00:00:59.660
+And the reason for that is simply because
+we have a new piece of information.
+
+18
+00:01:01.490 --> 00:01:05.540
+Being listed each time we run through the
+list.
+
+19
+00:01:05.540 --> 00:01:07.630
+The first one I find is one and it moved
+to
+
+20
+00:01:07.630 --> 00:01:10.010
+the next one, which is two, three, four,
+five and so on.
+
+21
+00:01:10.010 --> 00:01:15.680
+Now, and the string is also treated as an
+object.
+
+22
+00:01:15.680 --> 00:01:19.230
+And so, we could have change to be string.
+
+23
+00:01:19.230 --> 00:01:22.110
+And what that'll do, is it will go through
+each of these letters.
+
+24
+00:01:22.110 --> 00:01:27.180
+So we have S-T-R-I-N-G, and that is the
+data.
+
+25
+00:01:27.180 --> 00:01:29.730
+So each one that, each one of these will
+
+26
+00:01:29.730 --> 00:01:33.600
+be treating this object, no matter what it
+is.
+
+27
+00:01:33.600 --> 00:01:36.480
+Whether it's a string, whether it is a
+list, whether
+
+28
+00:01:36.480 --> 00:01:41.770
+it is an, an object which, for example, a
+file.
+
+29
+00:01:41.770 --> 00:01:46.110
+And you can blitz, blow through it one
+line at a time, or one word at a time.
+
+30
+00:01:46.110 --> 00:01:49.260
+You can, you can go through it in many
+different ways.
+
+31
+00:01:49.260 --> 00:01:54.880
+And there's many different ways in which
+you can list things,
+
+32
+00:01:54.880 --> 00:01:59.480
+and the best way of doing this sort of
+thing is usually where you use the
+
+33
+00:01:59.480 --> 00:02:04.800
+key and the value, and you use the key to
+control the.
+
+34
+00:02:04.800 --> 00:02:06.100
+Objects in some way.
+
+35
+00:02:06.100 --> 00:02:10.450
+However this is not built into Python
+directly and so, what we
+
+36
+00:02:10.450 --> 00:02:13.770
+have to do instead is we have do another
+little work around.
+
+37
+00:02:16.100 --> 00:02:21.550
+Which is where we to create a, where we
+have to put our function around the object
+
+38
+00:02:21.550 --> 00:02:27.450
+which is called enumerate and we have the
+Treat this to be key and data.
+
+39
+00:02:27.450 --> 00:02:33.288
+Now if you get rid of this data here, what
+we're going to change here, is
+
+40
+00:02:33.288 --> 00:02:39.538
+we're going to make it so we'll output
+every single letter that is [SOUND].
+
+41
+00:02:39.538 --> 00:02:42.710
+It outputs every single letter but it's
+even and an even key.
+
+42
+00:02:42.710 --> 00:02:44.836
+Starts at 0 and work its way up.
+
+43
+00:02:44.836 --> 00:02:47.650
+So if key mapped two.
+
+44
+00:02:47.650 --> 00:02:50.990
+So if it is divisible by two with no
+remainder.
+
+45
+00:02:50.990 --> 00:02:54.210
+Because that equal to zero means there's
+no remainder
+
+46
+00:02:54.210 --> 00:02:56.310
+then that means that it's going to be
+even.
+
+47
+00:02:56.310 --> 00:03:02.700
+So what we're going to do then is we're
+going to print out each of these values.
+
+48
+00:03:02.700 --> 00:03:04.050
+So I'm going to.
+
+49
+00:03:04.050 --> 00:03:10.180
+Do, actually I'll change that slightly and
+do,
+
+50
+00:03:10.180 --> 00:03:14.993
+the letter [SOUND], is in an even
+location.
+
+51
+00:03:14.993 --> 00:03:23.362
+And dot format and definately for data,
+and if we run through this.
+
+52
+00:03:23.362 --> 00:03:25.830
+You'll see you get the letter s.
+
+53
+00:03:25.830 --> 00:03:28.686
+and, so s, zero, is even.
+
+54
+00:03:28.686 --> 00:03:32.880
+R is number two.
+
+55
+00:03:32.880 --> 00:03:35.310
+And n is number five.
+
+56
+00:03:35.310 --> 00:03:36.340
+No.
+
+57
+00:03:36.340 --> 00:03:37.350
+Four, sorry.
+
+58
+00:03:37.350 --> 00:03:38.090
+Number four.
+
+59
+00:03:38.090 --> 00:03:41.940
+Cuz an index starts at zero, so we have
+zero, one, two.
+
+60
+00:03:41.940 --> 00:03:44.270
+Three, four, five, six.
+
+61
+00:03:44.270 --> 00:03:48.760
+So, if we change that to strings, then we
+get the S-R-N-S.
+
+62
+00:03:48.760 --> 00:03:53.960
+So that is how you check for something to
+be even, and likewise if
+
+63
+00:03:53.960 --> 00:03:56.410
+you put that as a one, then it would check
+for it to be odd.
+
+64
+00:03:58.180 --> 00:04:00.370
+And that is how you leap through things
+
+65
+00:04:00.370 --> 00:04:03.180
+whilst being able to control the key and
+the.
+
+66
+00:04:03.180 --> 00:04:05.050
+The data that you get from that.
+
+67
+00:04:05.050 --> 00:04:10.720
+Those two are always going to be the same,
+as the location in the actual string.
+
+68
+00:04:10.720 --> 00:04:15.260
+So the key here is going to be say, zero
+and the data is going to be the s.
+
+69
+00:04:15.260 --> 00:04:19.660
+That is how, the key data for loops work.
+
+70
+00:04:19.660 --> 00:04:24.181
+Thank you for watching and I will see you
+in a, in the next video.
+
+71
+00:04:24.181 --> 00:04:29.349
+[MUSIC]
+

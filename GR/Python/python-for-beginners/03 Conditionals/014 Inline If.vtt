@@ -1,0 +1,212 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.832
+[MUSIC]
+
+2
+00:00:04.832 --> 00:00:10.156
+Within Python, you can actually do an if
+statement in one line, which makes it much
+
+3
+00:00:10.156 --> 00:00:16.120
+more readable, and it's also obviously
+considerably easier to write as well.
+
+4
+00:00:16.120 --> 00:00:22.960
+And so when we would've usually had
+something like this, and if a is equal to,
+
+5
+00:00:25.480 --> 00:00:29.070
+you see a is equal to b, then we'll print
+true.
+
+6
+00:00:32.250 --> 00:00:35.750
+Else print false.
+
+7
+00:00:35.750 --> 00:00:39.730
+Now, when we usually had something like
+this, and it works perfectly fine.
+
+8
+00:00:39.730 --> 00:00:46.000
+You can't do that on one line, where you
+can do print, and we're going to do true.
+
+9
+00:00:46.000 --> 00:00:51.650
+If a is equal to b, else false.
+
+10
+00:00:51.650 --> 00:00:57.140
+And that is exactly the same as the line
+beforehand.
+
+11
+00:00:57.140 --> 00:00:58.880
+And so, hey you can see we get the same
+output.
+
+12
+00:00:58.880 --> 00:01:00.630
+It's both of them are false.
+
+13
+00:01:00.630 --> 00:01:04.330
+Now, this can have a string where these
+true and falses are if you want.
+
+14
+00:01:04.330 --> 00:01:08.168
+However can put whatever you want
+basically.
+
+15
+00:01:08.168 --> 00:01:11.132
+[SOUND] but if you look at these you can
+see that they
+
+16
+00:01:11.132 --> 00:01:15.485
+have the exact same code, just rewritten
+in a slightly different way.
+
+17
+00:01:15.485 --> 00:01:21.373
+And it's actually more readable because
+this is you can have,
+
+18
+00:01:21.373 --> 00:01:26.660
+this is equal to true if a is equal to b,
+else this is not true.
+
+19
+00:01:29.610 --> 00:01:31.210
+And that is what you'll get output.
+
+20
+00:01:31.210 --> 00:01:34.310
+So it's more readable in this format than
+in this
+
+21
+00:01:34.310 --> 00:01:37.570
+format I, I well, at least I think it is
+anyway.
+
+22
+00:01:37.570 --> 00:01:42.280
+So it's down to you, whether or not you
+want this to be written that way.
+
+23
+00:01:44.260 --> 00:01:45.840
+And you can use whichever one you prefer.
+
+24
+00:01:46.860 --> 00:01:51.450
+But just remember that this way it can
+actually be stored as a variable, and this
+
+25
+00:01:51.450 --> 00:01:57.710
+variable is now considered to be equal to
+this string rather than
+
+26
+00:02:00.300 --> 00:02:01.460
+rather than a statement.
+
+27
+00:02:01.460 --> 00:02:03.740
+So the actual statement doesn't get saved.
+
+28
+00:02:03.740 --> 00:02:06.830
+The value of the statement at the end gets
+saved.
+
+29
+00:02:06.830 --> 00:02:11.230
+Which is identical to doing, having this
+as equal to that,
+
+30
+00:02:11.230 --> 00:02:16.010
+and var instead of having to equal and
+print something out.
+
+31
+00:02:16.010 --> 00:02:16.940
+For example.
+
+32
+00:02:16.940 --> 00:02:22.260
+So that is how you can do an enlight if
+statement with python and use it
+
+33
+00:02:22.260 --> 00:02:27.130
+if you find it more useful for certain
+applications and for certain uses.
+
+34
+00:02:27.130 --> 00:02:30.930
+It's more useful and makes it easier to
+write.
+
+35
+00:02:32.430 --> 00:02:35.460
+But obviously you're not always going to
+want to do this.
+
+36
+00:02:35.460 --> 00:02:41.130
+For example, let's only supports out ports
+or short answers.
+
+37
+00:02:41.130 --> 00:02:46.260
+You can't actually embed over, or nest
+over if statements within it, for example.
+
+38
+00:02:46.260 --> 00:02:49.526
+So you have to sort of balance whether or
+not is useful, and
+
+39
+00:02:49.526 --> 00:02:54.120
+whether or not it'll work, for what you
+actually want to use it for.
+
+40
+00:02:54.120 --> 00:02:57.520
+If you do want to use it, and, and it
+doesn't work, then all you'll have to
+
+41
+00:02:57.520 --> 00:02:59.920
+do is change your code around slightly, so
+it
+
+42
+00:02:59.920 --> 00:03:05.370
+uses the longhand method rather than the
+inline method.
+
+43
+00:03:06.500 --> 00:03:09.124
+So I'm Mark Lassoff from LearnToProgram.tv
+and I'll see you soon.
+
+44
+00:03:09.124 --> 00:03:14.259
+[MUSIC]
+

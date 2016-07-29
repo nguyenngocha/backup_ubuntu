@@ -1,0 +1,334 @@
+WEBVTT
+
+1
+00:00:01.160 --> 00:00:02.730
+In this lesson, we're going to look at how
+
+2
+00:00:02.730 --> 00:00:06.380
+to create functions that have more than
+one parameter.
+
+3
+00:00:06.380 --> 00:00:07.180
+So, let's get started.
+
+4
+00:00:07.180 --> 00:00:10.160
+What we're gonna do is, we're going to
+write, a function to
+
+5
+00:00:10.160 --> 00:00:12.790
+convert temperatures from either
+Fahrenheit to
+
+6
+00:00:12.790 --> 00:00:15.290
+Celsius or from Celsius to Fahrenheit.
+
+7
+00:00:15.290 --> 00:00:20.650
+So, we're gonna call this program
+tempconv.py.
+
+8
+00:00:20.650 --> 00:00:23.180
+What I'm gonna do first is write, single
+
+9
+00:00:23.180 --> 00:00:26.580
+functions that convert from one scale to
+the others.
+
+10
+00:00:26.580 --> 00:00:27.920
+So the first thing we're gonna do is
+write, a
+
+11
+00:00:27.920 --> 00:00:31.930
+function that converts from Farenheit to
+Celsius, using just one parameter.
+
+12
+00:00:31.930 --> 00:00:37.620
+And then we're gonna modify a new function
+that will take two parameters.
+
+13
+00:00:38.940 --> 00:00:40.800
+So to do the fahrenheit to Celsius
+
+14
+00:00:40.800 --> 00:00:44.770
+conversion, we simply provide a single
+parameter temp.
+
+15
+00:00:45.930 --> 00:00:52.670
+And then in our return statement, we take
+temp minus 32 degrees times 5
+
+16
+00:00:52.670 --> 00:00:55.230
+9ths and that'll give us a Celsius
+
+17
+00:00:55.230 --> 00:00:59.120
+temperature given a fahrenheit temperature
+as the argument.
+
+18
+00:00:59.120 --> 00:01:01.530
+Then we'll turn around and write
+
+19
+00:01:01.530 --> 00:01:06.590
+the other conversion function, Celsius to
+Fahrenheit.
+
+20
+00:01:06.590 --> 00:01:13.339
+And that formula is the temperature times
+9 5ths, plus 32 degrees.
+
+21
+00:01:14.560 --> 00:01:17.060
+So here we have two functions that we
+could use to go
+
+22
+00:01:17.060 --> 00:01:20.590
+from one scale to the other, but what we
+probably would like is
+
+23
+00:01:20.590 --> 00:01:25.370
+one function that would let us perform
+either conversion, by prompting the
+
+24
+00:01:25.370 --> 00:01:30.030
+user to enter a second argument, a scale
+that they wanna convert to.
+
+25
+00:01:30.030 --> 00:01:33.220
+So we're gonna call that function convert.
+
+26
+00:01:33.220 --> 00:01:35.890
+The two parameters will be, the
+temperature,
+
+27
+00:01:36.890 --> 00:01:39.130
+and the second parameter is to scale.
+
+28
+00:01:39.130 --> 00:01:44.160
+So the way we'll write that is we're going
+to say if to scale dot lower because we
+
+29
+00:01:44.160 --> 00:01:47.220
+wanna make sure it's in lowercase is equal
+to
+
+30
+00:01:47.220 --> 00:01:51.570
+c, then we're gonna call the f to c
+function.
+
+31
+00:01:51.570 --> 00:01:53.190
+With the temperature, since we already
+have the
+
+32
+00:01:53.190 --> 00:01:55.710
+function written, we might as well use it.
+
+33
+00:01:55.710 --> 00:02:00.450
+And there's absolutely no problem with the
+function body calling in another function.
+
+34
+00:02:00.450 --> 00:02:04.820
+In fact, that's probably a very good way
+to write code, if you could do that way.
+
+35
+00:02:04.820 --> 00:02:08.660
+So, if the two scale argument is not c.
+
+36
+00:02:08.660 --> 00:02:10.400
+Then it must be f.
+
+37
+00:02:10.400 --> 00:02:12.880
+Then we'll call the c to f function with
+
+38
+00:02:12.880 --> 00:02:16.590
+the temperature, to get a conversion that
+we want.
+
+39
+00:02:16.590 --> 00:02:20.850
+So, we can test this program by having the
+user enter a temperature,
+
+40
+00:02:23.180 --> 00:02:25.760
+then we can ask them to enter the scale to
+convert to.
+
+41
+00:02:29.150 --> 00:02:31.870
+I actually made a little mistake, need to
+convert
+
+42
+00:02:31.870 --> 00:02:35.410
+this to int, so we'll do that right here.
+
+43
+00:02:35.410 --> 00:02:41.341
+Then we can say, converted temp equals
+convert
+
+44
+00:02:41.341 --> 00:02:46.726
+temp scale, so there's our two arguments,
+and then we can say print.
+
+45
+00:02:46.726 --> 00:02:52.660
+Temp, converted, temp, scale, to display
+the results.
+
+46
+00:02:52.660 --> 00:02:56.260
+So let's exit and save the program, and
+
+47
+00:02:58.790 --> 00:02:59.360
+we'll call it.
+
+48
+00:02:59.360 --> 00:03:02.960
+So let's go from farenheit to Celsius.
+
+49
+00:03:02.960 --> 00:03:08.320
+So we'll enter, boiling point at farenheit
+is 212, we wanna convert to Celsius.
+
+50
+00:03:08.320 --> 00:03:10.610
+And so that gives us 100, which is
+correct.
+
+51
+00:03:10.610 --> 00:03:14.180
+212 Fahrenheit is 100 Celsius.
+
+52
+00:03:14.180 --> 00:03:15.750
+Let's run it again.
+
+53
+00:03:15.750 --> 00:03:22.200
+This time let's go from freezing, which is
+0 Celsius, to 32 Fahrenheit.
+
+54
+00:03:22.200 --> 00:03:23.150
+So, to review,.
+
+55
+00:03:24.470 --> 00:03:28.950
+When we want to write a function with
+multiple parameters, in the parameter
+
+56
+00:03:28.950 --> 00:03:33.110
+list we simply list out the parameters
+putting a comma between each of them.
+
+57
+00:03:33.110 --> 00:03:35.730
+So if we had a function with a third
+parameter we'd put
+
+58
+00:03:35.730 --> 00:03:39.490
+a comma here and then add a parameter,
+whatever we need to do.
+
+59
+00:03:39.490 --> 00:03:43.550
+Then when we call the function, our
+arguments are also.
+
+60
+00:03:43.550 --> 00:03:45.300
+Delimited with the comma so that the
+
+61
+00:03:45.300 --> 00:03:48.330
+comma separates the first argument from
+the second
+
+62
+00:03:48.330 --> 00:03:53.150
+argument and we have to make sure that our
+arguments are in the right order.
+
+63
+00:03:53.150 --> 00:03:56.230
+So the first number that has to convert,
+has to be a numeric
+
+64
+00:03:56.230 --> 00:04:02.510
+temperature and the second argument has to
+be a string that represents the scale.
+
+65
+00:04:02.510 --> 00:04:03.860
+So with that, we're finished with this
+
+66
+00:04:03.860 --> 00:04:06.770
+lesson on multiple parameters, and we're
+ready to
+
+67
+00:04:06.770 --> 00:04:09.200
+move to the next lesson, where we're going
+
+68
+00:04:09.200 --> 00:04:13.560
+to talk about functions that return
+boolean values.
+
+69
+00:04:13.560 --> 00:04:16.610
+Sometimes they're called predicate
+functions, and we often
+
+70
+00:04:16.610 --> 00:04:20.650
+use them as helper functions within larger
+programs.
+
+71
+00:04:20.650 --> 00:04:23.370
+We'll look at how to write those functions
+in the next lesson.
+

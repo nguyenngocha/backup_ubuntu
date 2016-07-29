@@ -1,0 +1,227 @@
+WEBVTT
+
+1
+00:00:01.190 --> 00:00:04.690
+In this lesson we're going to look at the
+list data structure, and we're
+
+2
+00:00:04.690 --> 00:00:08.580
+not going to talk about all the different
+operations you can perform on list.
+
+3
+00:00:08.580 --> 00:00:11.750
+We're going to save that for later in the
+course, but
+
+4
+00:00:11.750 --> 00:00:15.220
+right now I just wanna demonstrate how
+lists are made up.
+
+5
+00:00:15.220 --> 00:00:18.230
+So we're gonna use the interactive shell,
+so we'll open that.
+
+6
+00:00:18.230 --> 00:00:21.730
+And the most elementary list is the empty
+list, which is just
+
+7
+00:00:21.730 --> 00:00:27.580
+a set of brackets, so open and closed
+bracket represents the empty list.
+
+8
+00:00:27.580 --> 00:00:30.730
+If we wanna actually create a list with
+items in it,
+
+9
+00:00:30.730 --> 00:00:35.120
+we put items in the list, separating each
+item with a comma.
+
+10
+00:00:35.120 --> 00:00:39.780
+So I've created a list called Numbers that
+consists of the numbers 1, 2, 3, and 4.
+
+11
+00:00:39.780 --> 00:00:43.190
+And you see I can retrieve it just like
+so.
+
+12
+00:00:44.190 --> 00:00:49.430
+If I want to access a list element, I use
+index notation.
+
+13
+00:00:49.430 --> 00:00:52.120
+So, the first element will be in numbers
+of
+
+14
+00:00:52.120 --> 00:00:54.880
+0, the second element will be in numbers
+of 1,
+
+15
+00:00:54.880 --> 00:00:57.550
+third element will be in numbers of 2, and
+the
+
+16
+00:00:57.550 --> 00:01:01.070
+4th element will be in numbers of 3, like
+so.
+
+17
+00:01:01.070 --> 00:01:04.850
+And, there's my sum by just adding them
+together.
+
+18
+00:01:04.850 --> 00:01:10.290
+So that's a common way to retrieve each
+list element individually.
+
+19
+00:01:10.290 --> 00:01:14.280
+If I want to retrieve what's called a
+slice, I can write
+
+20
+00:01:14.280 --> 00:01:19.640
+zero, two, and that will return two
+starting at the first position.
+
+21
+00:01:19.640 --> 00:01:21.240
+Let's look at another example.
+
+22
+00:01:22.350 --> 00:01:27.199
+So, there's three, and there's another
+example of pulling a slice.
+
+23
+00:01:28.730 --> 00:01:31.230
+If we want to know how many items are in,
+or
+
+24
+00:01:31.230 --> 00:01:34.870
+elements are in a list, we can use the lin
+function.
+
+25
+00:01:34.870 --> 00:01:37.310
+We can of course put strings into lists.
+
+26
+00:01:37.310 --> 00:01:38.740
+So what I'm gonna do here is create a
+
+27
+00:01:38.740 --> 00:01:43.070
+couple of lists with words in them, or
+actually strings.
+
+28
+00:01:43.070 --> 00:01:46.300
+Strings is a more technical description of
+what's in these lists, and
+
+29
+00:01:46.300 --> 00:01:51.200
+of course they will display just like any
+other list would display.
+
+30
+00:01:51.200 --> 00:01:54.900
+If I want to combine them, I can use
+concatenation and I now
+
+31
+00:01:54.900 --> 00:02:00.270
+I get a list that consist of combinations
+of words and words plus 1.
+
+32
+00:02:00.270 --> 00:02:04.890
+So, look at one more example, are actually
+two more examples.
+
+33
+00:02:04.890 --> 00:02:09.520
+If I wanna replicate a list, I just the
+multiplication operator and the number of
+
+34
+00:02:09.520 --> 00:02:14.970
+times I want to replicate it, and it will
+give me the list that many times.
+
+35
+00:02:14.970 --> 00:02:19.610
+So there's an example of displaying the
+list word five times.
+
+36
+00:02:19.610 --> 00:02:23.990
+Finally, you can create nested sub-lists.
+
+37
+00:02:23.990 --> 00:02:27.560
+So for example, if I have a double name
+like
+
+38
+00:02:27.560 --> 00:02:31.120
+this, I may want to instead make it its
+own list.
+
+39
+00:02:31.120 --> 00:02:35.060
+So I can put a list inside, just like so,
+and then
+
+40
+00:02:35.060 --> 00:02:38.300
+when I retrieve it, it shows me that item
+as a list.
+
+41
+00:02:38.300 --> 00:02:42.970
+Where as the other items will be displayed
+just as a string.
+
+42
+00:02:42.970 --> 00:02:47.320
+So those are the basics of how list's in
+python work.
+
+43
+00:02:47.320 --> 00:02:49.550
+And as I said in a later lesson, or
+
+44
+00:02:49.550 --> 00:02:53.780
+lessons we'll spend more time performing
+operations on lists.
+
+45
+00:02:53.780 --> 00:02:57.770
+What I wanted to do in this lesson was
+just demonstrate how lists are formed.
+
+46
+00:02:57.770 --> 00:03:03.030
+So let's move on to another common data
+structure in Python, the dictionary.
+

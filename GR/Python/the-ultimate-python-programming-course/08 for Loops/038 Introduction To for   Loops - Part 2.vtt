@@ -1,0 +1,344 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:04.760
+In this lesson, we are going to continue
+our introduction to the for-loop by taking
+
+2
+00:00:04.760 --> 00:00:09.570
+a look at how to use a for-loop to process
+the characters in a string.
+
+3
+00:00:09.570 --> 00:00:12.820
+The string is a sequence of data, just
+like a list or any other
+
+4
+00:00:12.820 --> 00:00:15.080
+data structure is, and we can use
+
+5
+00:00:15.080 --> 00:00:18.280
+the for-loop to perform computations on
+strings.
+
+6
+00:00:18.280 --> 00:00:21.000
+So we'll look at some simple examples in
+this lesson.
+
+7
+00:00:22.090 --> 00:00:27.620
+To start our program, we're gonna call it
+4intro2.py.
+
+8
+00:00:27.620 --> 00:00:30.810
+So the first thing we are gonna do is
+create a simple word, hello,
+
+9
+00:00:30.810 --> 00:00:34.510
+and then we're gonna write a for-loop to
+access each letter of that word.
+
+10
+00:00:34.510 --> 00:00:39.670
+So we're gonna say for letter in word,
+print letter.
+
+11
+00:00:40.698 --> 00:00:45.340
+And what that will do is that will print h
+e l l o in a separate line.
+
+12
+00:00:45.340 --> 00:00:52.340
+So let's save the program and exit and
+then run it,
+
+13
+00:00:52.340 --> 00:00:55.180
+and there's h e l l o, each on it's own
+line.
+
+14
+00:00:55.180 --> 00:00:57.920
+So now let's look at a more complex
+example.
+
+15
+00:00:57.920 --> 00:01:00.300
+Let's go back to the program.
+
+16
+00:01:01.840 --> 00:01:07.100
+Will comment out these first couple of
+lines, we don't need 'em anymore.
+
+17
+00:01:07.100 --> 00:01:09.530
+And what I wanna do now is I want to count
+
+18
+00:01:09.530 --> 00:01:13.250
+the number of vowels in a longer string in
+a sentence.
+
+19
+00:01:15.470 --> 00:01:19.360
+So our sentence says, now is the time for
+all good people to come to the aid.
+
+20
+00:01:19.360 --> 00:01:25.648
+Let's count the vowels real quick, one,
+two, three,
+
+21
+00:01:25.648 --> 00:01:31.936
+four, five, six, seven, eight, nine, ten,
+11,
+
+22
+00:01:31.936 --> 00:01:38.890
+12, 13, 14, 15, 16, 17, 18, 19.
+
+23
+00:01:38.890 --> 00:01:40.770
+So there are 19 vowels.
+
+24
+00:01:40.770 --> 00:01:45.170
+To keep track of the vowels, we need a
+variable to store each occurrence.
+
+25
+00:01:45.170 --> 00:01:47.880
+So we'll use count and we'll sign it zero.
+
+26
+00:01:47.880 --> 00:01:51.930
+So here we'll have our for-loop, four
+letter
+
+27
+00:01:51.930 --> 00:01:55.280
+end sentence, and then we have an if
+statement.
+
+28
+00:01:55.280 --> 00:02:05.240
+If letter equals A, or letter equals E, or
+letter equals I, or letter equals O.
+
+29
+00:02:05.240 --> 00:02:07.160
+Now here we have a little bit of a
+dilemma.
+
+30
+00:02:07.160 --> 00:02:11.248
+We're running out of room on the screen to
+display this line.
+
+31
+00:02:11.248 --> 00:02:14.130
+I don't wanna carry it off to the end of
+the line, but if I drop down
+
+32
+00:02:14.130 --> 00:02:16.250
+to a new line, Python's gonna give me an
+
+33
+00:02:16.250 --> 00:02:19.390
+error saying, I didn't really finish off
+this line.
+
+34
+00:02:19.390 --> 00:02:24.240
+So what I can do is, I can continue the
+current line on the next line by topping a
+
+35
+00:02:24.240 --> 00:02:29.370
+backslash like that, and that backslash
+tells the Python interpreter
+
+36
+00:02:29.370 --> 00:02:32.020
+to continue as if it was on the same line.
+
+37
+00:02:32.020 --> 00:02:36.550
+I'm gonna come down here and indent a
+little bit more and say, or
+
+38
+00:02:36.550 --> 00:02:41.760
+letter equals U, followed by a colon
+because that's the end of my if.
+
+39
+00:02:41.760 --> 00:02:46.200
+And in the body of the if, is simply gonna
+say count is equal to count plus one.
+
+40
+00:02:46.200 --> 00:02:50.420
+In other words, if a letter is A, or a
+letter is E, or a letter is I, or a letter
+
+41
+00:02:50.420 --> 00:02:53.410
+is O, or a letter is U, then the letter is
+
+42
+00:02:53.410 --> 00:02:56.070
+a value, and we want to add one to the
+count.
+
+43
+00:02:56.070 --> 00:03:01.162
+So then when we're finished we can say
+print the number of vowels is,
+
+44
+00:03:01.162 --> 00:03:06.480
+plus string count, like so.
+
+45
+00:03:06.480 --> 00:03:12.090
+So let's exit, and save, clear the screen,
+and then
+
+46
+00:03:12.090 --> 00:03:17.030
+run our program, and it says the number of
+vowels is 19.
+
+47
+00:03:17.030 --> 00:03:17.749
+So it worked.
+
+48
+00:03:20.760 --> 00:03:25.210
+So again, we can use a for-loop anytime we
+want to process the elements of
+
+49
+00:03:25.210 --> 00:03:31.370
+a sequence, especially when we want to
+process all of the elements in a sequence.
+
+50
+00:03:31.370 --> 00:03:34.430
+That's not to say that we can't use break
+
+51
+00:03:34.430 --> 00:03:38.300
+or even continue to modify the flow of
+control,
+
+52
+00:03:38.300 --> 00:03:42.320
+but in general, for-loops are used when we
+want
+
+53
+00:03:42.320 --> 00:03:45.990
+to access all of the elements in the
+sequence.
+
+54
+00:03:45.990 --> 00:03:48.730
+And in fact anytime we're working with
+sequences
+
+55
+00:03:48.730 --> 00:03:52.630
+in general, we'll use for-loops over while
+loops.
+
+56
+00:03:52.630 --> 00:03:56.210
+While loops I like to call open ended
+loops.
+
+57
+00:03:56.210 --> 00:03:59.880
+Now I like to call for-loops close ended
+because with the for-loop we
+
+58
+00:03:59.880 --> 00:04:05.780
+can usually see just by scanning the
+program, the range of the loop.
+
+59
+00:04:05.780 --> 00:04:10.920
+How many elements is it going to access,
+and what's the possibility.
+
+60
+00:04:10.920 --> 00:04:14.770
+When we know that in this particular
+program, it's not going to access more
+
+61
+00:04:14.770 --> 00:04:18.350
+than the last letter in the sentence, and
+we can see that easy enough.
+
+62
+00:04:18.350 --> 00:04:22.980
+Whereas if we're processing a file with a
+while loop, we
+
+63
+00:04:22.980 --> 00:04:26.140
+may not know cuz we can't see the end of
+the file.
+
+64
+00:04:26.140 --> 00:04:30.010
+Or if we're doing some other open-ended
+problem, again we
+
+65
+00:04:30.010 --> 00:04:33.030
+can't really look and know when the loop's
+going to end.
+
+66
+00:04:33.030 --> 00:04:35.720
+But with a for-loop, we can usually tell
+
+67
+00:04:35.720 --> 00:04:39.670
+what the range of computation's going to
+be.
+
+68
+00:04:39.670 --> 00:04:42.235
+So, that wraps up this second introduction
+to the
+
+69
+00:04:42.235 --> 00:04:45.000
+for-loop and now we're gonna move into
+some more specific
+
+70
+00:04:45.000 --> 00:04:49.060
+examples of using for-loops with sequences
+by examining in
+
+71
+00:04:49.060 --> 00:04:52.060
+more detail how to use the for-loop with a
+list.
+

@@ -1,0 +1,106 @@
+WEBVTT
+
+1
+00:00:01.200 --> 00:00:05.720
+In this lesson, I'm going to discuss how
+to install python on Macintosh.
+
+2
+00:00:05.720 --> 00:00:07.290
+So the first thing we're gonna do, is
+
+3
+00:00:07.290 --> 00:00:11.560
+go to the python webpage which is
+www.python.org.
+
+4
+00:00:11.560 --> 00:00:15.340
+We're going to select Download, and we're
+going to scroll down
+
+5
+00:00:15.340 --> 00:00:19.100
+and look for the macintosh version, the OS
+TN 64 bit.
+
+6
+00:00:20.440 --> 00:00:22.200
+Then we begin the download process.
+
+7
+00:00:22.200 --> 00:00:23.420
+That'll take just a moment.
+
+8
+00:00:25.390 --> 00:00:28.080
+The next step now, is to install the
+package.
+
+9
+00:00:29.560 --> 00:00:30.505
+There it is right there.
+
+10
+00:00:30.505 --> 00:00:34.510
+Double-click and just follow through with
+the defaults on the installer.
+
+11
+00:00:42.270 --> 00:00:45.120
+Your system will ask you for a password.
+
+12
+00:00:45.120 --> 00:00:45.760
+Type that in.
+
+13
+00:00:45.760 --> 00:00:48.190
+Now, we wait while it installs.
+
+14
+00:00:51.430 --> 00:00:52.950
+Click close here.
+
+15
+00:00:52.950 --> 00:00:53.960
+Close these windows.
+
+16
+00:00:55.460 --> 00:01:00.310
+Have a terminal window open, and what
+we're going to do is write a test program.
+
+17
+00:01:00.310 --> 00:01:02.801
+I'm going to use VI and type
+pillowworld.py.
+
+18
+00:01:02.801 --> 00:01:06.620
+We're going to do a simple hello world
+program right here we're going to type
+
+19
+00:01:06.620 --> 00:01:13.220
+print, hello world, save the file so
+that's a W Q Cmd
+
+20
+00:01:13.220 --> 00:01:19.520
+and then type Python helloworld.py,
+
+21
+00:01:19.520 --> 00:01:23.980
+shows Hello World, and so we can see that
+Python is installed correctly.
+
+22
+00:01:23.980 --> 00:01:26.620
+And we're finished with the installation
+and we're
+
+23
+00:01:26.620 --> 00:01:28.190
+ready to move on to the next lesson.
+

@@ -1,0 +1,315 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.196
+[MUSIC]
+
+2
+00:00:05.196 --> 00:00:10.052
+If you look inside of the sources file,
+you will see the debug.py file.
+
+3
+00:00:10.052 --> 00:00:13.750
+Now if you open that, you'll see the code
+exactly the same as what I've got here.
+
+4
+00:00:13.750 --> 00:00:14.850
+And in this video I'm going to be
+
+5
+00:00:14.850 --> 00:00:19.170
+showing you how you debug syntax errors
+within Python.
+
+6
+00:00:19.170 --> 00:00:20.590
+So if we run the code, you'll see that
+
+7
+00:00:20.590 --> 00:00:23.840
+we get this little error here, saying
+SyntaxError, invalid syntax.
+
+8
+00:00:23.840 --> 00:00:28.260
+And then we get this little circumflex or
+a caret, pointing towards the equals sign.
+
+9
+00:00:28.260 --> 00:00:30.100
+Now if we go back into our code.
+
+10
+00:00:30.100 --> 00:00:33.910
+And if we also, if we look in in here in
+more detail.
+
+11
+00:00:33.910 --> 00:00:35.070
+It tells us where it's on line two.
+
+12
+00:00:35.070 --> 00:00:37.967
+So, if we come back to line two, then we
+can
+
+13
+00:00:37.967 --> 00:00:41.989
+see that we've got, if name equal alex,
+and that's not,
+
+14
+00:00:41.989 --> 00:00:44.966
+that is saying, the claim of it to be
+equal is
+
+15
+00:00:44.966 --> 00:00:50.230
+not conditional, is not [INAUDIBLE] it has
+to be two equal signs.
+
+16
+00:00:50.230 --> 00:00:52.940
+And so, that color sign there has actually
+pointed us
+
+17
+00:00:52.940 --> 00:00:56.290
+to the correct location of the error, and
+if we run
+
+18
+00:00:56.290 --> 00:00:58.290
+that again, you'll see that we get a
+different error,
+
+19
+00:00:58.290 --> 00:01:01.230
+but with this one is now linked, no longer
+an error.
+
+20
+00:01:01.230 --> 00:01:05.980
+And now this error here is pointing
+towards the final quotes, and
+
+21
+00:01:05.980 --> 00:01:11.370
+you realize that I didn't actually set the
+colon to be set there.
+
+22
+00:01:11.370 --> 00:01:14.820
+Which is what declares a block for the if
+statement.
+
+23
+00:01:14.820 --> 00:01:17.955
+So if we now put a colon in, and run it
+again, [SOUND]
+
+24
+00:01:17.955 --> 00:01:22.600
+you'll see it's now working, but it's
+going down into our other area.
+
+25
+00:01:22.600 --> 00:01:26.549
+Now this one is an unusual one, because
+it's pointing towards
+
+26
+00:01:26.549 --> 00:01:30.360
+the t on a print which, there isn't
+actually an error here.
+
+27
+00:01:31.390 --> 00:01:35.498
+What we are actually looking at is the
+line before, or
+
+28
+00:01:35.498 --> 00:01:40.470
+two lines before, and we got an odd number
+of brackets here.
+
+29
+00:01:40.470 --> 00:01:43.800
+Now we got two opening and then one
+closing which leaves 1 and
+
+30
+00:01:43.800 --> 00:01:47.680
+one more opening, which makes it 2 again
+and then minus 1, 2, 1.
+
+31
+00:01:47.680 --> 00:01:50.480
+We need to add another one to make it back
+to 0.
+
+32
+00:01:50.480 --> 00:01:51.544
+And if we run that.
+
+33
+00:01:51.544 --> 00:01:54.608
+[BLANK_AUDIO]
+
+34
+00:01:54.608 --> 00:01:58.598
+Now, we get an unprecedented indent, and
+the reason
+
+35
+00:01:58.598 --> 00:02:02.511
+for that is because it's now indented, too
+far in.
+
+36
+00:02:02.511 --> 00:02:07.342
+And in Python, ind you have to indent to
+show a codeblock.
+
+37
+00:02:07.342 --> 00:02:10.034
+So if something's indented when it
+shouldn't be,
+
+38
+00:02:10.034 --> 00:02:13.164
+or something isn't indented enough, then
+it won't work.
+
+39
+00:02:13.164 --> 00:02:19.135
+So if we undo that indent, [SOUND] then we
+get it to finally recognize that
+
+40
+00:02:19.135 --> 00:02:24.725
+we need to put brackets around here,
+because print is a function.
+
+41
+00:02:24.725 --> 00:02:27.623
+So as you can see, before when it was
+pointing at
+
+42
+00:02:27.623 --> 00:02:31.820
+the t, it actually should have been
+pointing at the k here.
+
+43
+00:02:31.820 --> 00:02:36.664
+And we should have noticed that there
+wasn't the correct number of brackets
+
+44
+00:02:36.664 --> 00:02:40.372
+here, and obviously because Python's an
+interpreter,
+
+45
+00:02:40.372 --> 00:02:42.426
+it's doing its best to tell us.
+
+46
+00:02:42.426 --> 00:02:47.760
+However, we do need to still look at it
+and work out what the actual answer is.
+
+47
+00:02:47.760 --> 00:02:52.010
+And so if we put the brackets around that,
+save it again, and run.
+
+48
+00:02:52.010 --> 00:02:58.338
+[BLANK_AUDIO]
+
+49
+00:02:58.338 --> 00:03:01.673
+Oh, and I made a mistake there entering
+the code, that should have been an i.
+
+50
+00:03:01.673 --> 00:03:02.713
+Sorry about that.
+
+51
+00:03:02.713 --> 00:03:05.668
+There we go, and run that again, then we
+get 95.
+
+52
+00:03:05.668 --> 00:03:08.090
+The reason why that error was there
+before.
+
+53
+00:03:08.090 --> 00:03:10.540
+With the k, is because we were trying to
+
+54
+00:03:10.540 --> 00:03:13.120
+add on a number which we hadn't actually
+set.
+
+55
+00:03:13.120 --> 00:03:16.530
+So here we were doing k is equal to i
+times j,
+
+56
+00:03:16.530 --> 00:03:19.970
+which is fine, and then the result of
+that, plus j plus k.
+
+57
+00:03:19.970 --> 00:03:21.910
+Now k doesn't actually have a value, it
+hasn't
+
+58
+00:03:21.910 --> 00:03:25.960
+been set, so you can't put your answer
+towards that.
+
+59
+00:03:25.960 --> 00:03:28.125
+And that is why [SOUND], I've just changed
+that
+
+60
+00:03:28.125 --> 00:03:30.246
+to i because it should have been i
+initially.
+
+61
+00:03:30.246 --> 00:03:33.660
+In your file it will now be i, so don't
+worry about that.
+
+62
+00:03:35.420 --> 00:03:38.240
+Okay, so now you can see that the final
+answer now is 95.
+
+63
+00:03:38.240 --> 00:03:41.300
+Which if we did that on the calculator,
+would be correct.
+
+64
+00:03:41.300 --> 00:03:44.411
+And, that is how you debug syntax errors
+within Python.
+
+65
+00:03:44.411 --> 00:03:44.617
+[SOUND]
+

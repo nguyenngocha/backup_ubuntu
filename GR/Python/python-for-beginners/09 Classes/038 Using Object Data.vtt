@@ -1,0 +1,581 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.218
+[MUSIC]
+
+2
+00:00:05.218 --> 00:00:10.320
+As you might expect with object data, it
+is data relating explicitly to an object.
+
+3
+00:00:10.320 --> 00:00:12.756
+So even if you used the same class, as we
+saw
+
+4
+00:00:12.756 --> 00:00:16.970
+in the last video, where we had people and
+people, too.
+
+5
+00:00:16.970 --> 00:00:22.200
+The data restored explicitly within the
+object and not the class, which allows
+
+6
+00:00:22.200 --> 00:00:27.190
+many different instances of the same
+object, or the same class
+
+7
+00:00:27.190 --> 00:00:32.530
+rather to be called and to be treated as
+separate objects, and
+
+8
+00:00:32.530 --> 00:00:37.650
+now you saw that we were doing something
+with variables.
+
+9
+00:00:37.650 --> 00:00:40.790
+And we were assessing the variable and
+once we were doing
+
+10
+00:00:40.790 --> 00:00:43.260
+that we were able to fetch it using the
+display method.
+
+11
+00:00:43.260 --> 00:00:44.990
+So we're going to do something similar
+here,
+
+12
+00:00:44.990 --> 00:00:47.210
+but we're going to give it a scalability.
+
+13
+00:00:47.210 --> 00:00:54.089
+So get, create a classical example and we
+just do, the
+
+14
+00:00:54.089 --> 00:00:59.870
+init, oops, there we go, and what
+
+15
+00:00:59.870 --> 00:01:04.400
+we need to do here is we're going to pass
+up something called the keyword argument.
+
+16
+00:01:04.400 --> 00:01:07.690
+But to do this we do two asterisks
+
+17
+00:01:07.690 --> 00:01:13.110
+and then KWARGS which stands for keyword
+arguments.
+
+18
+00:01:13.110 --> 00:01:15.750
+Now the reason why we're going two
+asterisk, is because
+
+19
+00:01:15.750 --> 00:01:19.630
+that stands for a dictionary, and so what
+we're doing
+
+20
+00:01:19.630 --> 00:01:23.550
+here is we're passing an unspecified
+amount of parameters which
+
+21
+00:01:23.550 --> 00:01:26.990
+can be zero or more in the form of a
+dictionary.
+
+22
+00:01:26.990 --> 00:01:30.420
+Now if we were to just pass in one
+asterisk,
+
+23
+00:01:30.420 --> 00:01:32.460
+it would do it in the form of a tuple.
+
+24
+00:01:32.460 --> 00:01:36.057
+But we want it in front of add dictionary,
+so we
+
+25
+00:01:36.057 --> 00:01:40.780
+go to, must end with with two asterisks,
+and then a KWARGS.
+
+26
+00:01:42.540 --> 00:01:49.640
+From here we're going to do self.variables
+is equal to, and then we just do KWARGS.
+
+27
+00:01:49.640 --> 00:01:52.480
+So you don't need to put yesterdays in
+this part, but
+
+28
+00:01:52.480 --> 00:01:57.270
+just tells you if you're even creating as
+a actual dictionary.
+
+29
+00:01:57.270 --> 00:02:00.830
+So, that is just telling you the type that
+ou want to give it.
+
+30
+00:02:00.830 --> 00:02:05.190
+So KWARGS is what tells it whether we want
+it to be a dictionary.
+
+31
+00:02:05.190 --> 00:02:07.770
+So, now that we've done that and we go and
+create another.
+
+32
+00:02:09.630 --> 00:02:11.650
+Method and we're going to call this one,
+
+33
+00:02:11.650 --> 00:02:16.140
+get, actually no, accept vars, accept
+variables and we
+
+34
+00:02:16.140 --> 00:02:19.390
+have to pass it into self and we're going
+to pass it in a key and a value.
+
+35
+00:02:19.390 --> 00:02:22.080
+The reason why I'm using k and v just to
+make it shorter
+
+36
+00:02:22.080 --> 00:02:25.620
+and easier to type, however you can just
+call it whatever you want.
+
+37
+00:02:25.620 --> 00:02:28.450
+Now the key is going to be the index
+value.
+
+38
+00:02:28.450 --> 00:02:31.310
+Of of the array that we're going to
+
+39
+00:02:31.310 --> 00:02:34.630
+create, which is going to be in the
+self.variables.
+
+40
+00:02:34.630 --> 00:02:40.470
+And the v is going to be the value that
+we're passing to set it as.
+
+41
+00:02:40.470 --> 00:02:44.800
+And the reason why we do this is because
+if you were to set a variable and,
+
+42
+00:02:44.800 --> 00:02:48.090
+I'm sorry, yeah, if you set a variable
+outside
+
+43
+00:02:48.090 --> 00:02:53.090
+of a class, so you explic, explicitly set
+it.
+
+44
+00:02:53.090 --> 00:02:58.720
+For example, if we did var = Example, and
+
+45
+00:02:58.720 --> 00:03:02.450
+then if we did var.variable_name = 15, for
+example.
+
+46
+00:03:02.450 --> 00:03:07.250
+And if we had the variable within here,
+which we could
+
+47
+00:03:07.250 --> 00:03:09.980
+use, then that would make it so if it's
+hard to keep
+
+48
+00:03:09.980 --> 00:03:13.050
+track of, so the reason why we're doing a
+getter and a
+
+49
+00:03:13.050 --> 00:03:18.150
+setter, function is to make it so
+variables can be set easily.
+
+50
+00:03:18.150 --> 00:03:22.160
+And we can keep track of them and it makes
+things much easier to control
+
+51
+00:03:22.160 --> 00:03:26.020
+and much easier to manage once you get to
+bigger programs that you might have.
+
+52
+00:03:27.140 --> 00:03:32.230
+So what we have here is we're setting a
+function, or we're recreating a
+
+53
+00:03:32.230 --> 00:03:37.360
+function which will set all of the values,
+all of the right, variables
+
+54
+00:03:37.360 --> 00:03:43.100
+we need for this program with only, the
+use of two functions, one
+
+55
+00:03:43.100 --> 00:03:47.980
+to set and one to get, whereas previously
+you, we might have done it where.
+
+56
+00:03:47.980 --> 00:03:50.890
+We set and we declared each one
+individually.
+
+57
+00:03:50.890 --> 00:03:54.440
+However, once you get to, say, more than 5
+variables, then it
+
+58
+00:03:54.440 --> 00:04:00.190
+gets out of hand and then your program
+gets exponentially large unnecessarily.
+
+59
+00:04:00.190 --> 00:04:05.740
+So we are going to do is we're going to
+pass in the key and the value,
+
+60
+00:04:05.740 --> 00:04:10.910
+and what we're going to do here, we're
+going to do self.variables.
+
+61
+00:04:10.910 --> 00:04:16.220
+And because it is a dictionary, which
+we're going to create, because
+
+62
+00:04:16.220 --> 00:04:18.790
+the KWARGS is a form of a dictionary,
+being set to variables.
+
+63
+00:04:18.790 --> 00:04:22.160
+So variables is essentially an array of a
+dictionary.
+
+64
+00:04:22.160 --> 00:04:25.160
+So we can declare it using the square
+brackets,
+
+65
+00:04:25.160 --> 00:04:27.000
+as we've learned earlier on in and within
+the course.
+
+66
+00:04:27.000 --> 00:04:29.220
+And we can make it equal to the value.
+
+67
+00:04:29.220 --> 00:04:36.900
+So that's all we need to do for that, and
+then for the get_vars all we need
+
+68
+00:04:36.900 --> 00:04:42.760
+to do is pass in the key, and we can fetch
+that variable that we need based on that.
+
+69
+00:04:42.760 --> 00:04:47.990
+So self.variables.get, and that
+
+70
+00:04:47.990 --> 00:04:53.408
+will take two parameters, and that is a
+function which is related to the inner,
+
+71
+00:04:53.408 --> 00:04:57.310
+a dictionary .get is what we can use in a
+
+72
+00:04:57.310 --> 00:05:00.430
+dictionary to find a certain value and get
+it back.
+
+73
+00:05:00.430 --> 00:05:04.620
+So what we'd use here if we use K then do
+comma,
+
+74
+00:05:04.620 --> 00:05:07.810
+then this is the default value, so we're
+just gonna pass in none.
+
+75
+00:05:07.810 --> 00:05:09.730
+And so, if we go over which ever looking
+
+76
+00:05:09.730 --> 00:05:12.190
+for is not found, then it should be
+returned none.
+
+77
+00:05:12.190 --> 00:05:14.280
+Exempt, or we could add a return to this
+as well,
+
+78
+00:05:16.440 --> 00:05:22.450
+so if we're to shows this and do rather
+git vals
+
+79
+00:05:22.450 --> 00:05:27.550
+and then ask to create or to ask for Alex.
+
+80
+00:05:27.550 --> 00:05:29.040
+If we were to run this,
+
+81
+00:05:33.290 --> 00:05:35.780
+oh sorry, need to print this.
+
+82
+00:05:38.680 --> 00:05:42.650
+So if we were to run this, you'll see that
+we get none because the
+
+83
+00:05:42.650 --> 00:05:47.450
+variable has not been set, where if we
+were to set a variable, so var dot.
+
+84
+00:05:47.450 --> 00:05:52.945
+Set vars, and that was to do Alex, okay I
+should change
+
+85
+00:05:52.945 --> 00:05:58.570
+this to name, and the name is gonna be the
+value of Alex.
+
+86
+00:05:58.570 --> 00:06:03.078
+So we're just gonna search for name, and
+if we run this, you'll see
+
+87
+00:06:03.078 --> 00:06:08.150
+that Alex is returned, because that is the
+value in which we are looking for.
+
+88
+00:06:08.150 --> 00:06:15.125
+So, as you can see, everything that, we
+would have previously had to do, if,
+
+89
+00:06:15.125 --> 00:06:21.366
+for setting, and getting variables, can
+now be done with just two functions.
+
+90
+00:06:21.366 --> 00:06:25.100
+And, the KWRAGS, here.
+
+91
+00:06:25.100 --> 00:06:28.689
+So, if, we can ask to do extra things, so
+i'll do.
+
+92
+00:06:30.220 --> 00:06:30.720
+Age
+
+93
+00:06:33.700 --> 00:06:38.330
+is equal to, and that's 17, and I can
+
+94
+00:06:38.330 --> 00:06:44.590
+do location is equal to UK.
+
+95
+00:06:44.590 --> 00:06:51.405
+Now, if I was to again print
+var.getVarsAndLocation,
+
+96
+00:06:51.405 --> 00:06:58.912
+[BLANK_AUDIO]
+
+97
+00:06:58.912 --> 00:07:03.960
+And if I was to run that again, oops,.
+
+98
+00:07:03.960 --> 00:07:13.697
+[BLANK_AUDIO]
+
+99
+00:07:13.697 --> 00:07:15.097
+Okay that, run it.
+
+100
+00:07:15.097 --> 00:07:19.991
+[BLANK_AUDIO]
+
+101
+00:07:19.991 --> 00:07:20.291
+Hm.
+
+102
+00:07:20.291 --> 00:07:25.404
+[BLANK_AUDIO]
+
+103
+00:07:25.404 --> 00:07:26.824
+Oh, yeah, sorry.
+
+104
+00:07:26.824 --> 00:07:32.331
+The mistake here is about we shouldn't
+have these
+
+105
+00:07:32.331 --> 00:07:38.554
+quotes around the actual data, dictionary
+entries
+
+106
+00:07:38.554 --> 00:07:44.299
+and the reason for that is because we
+actually are setting
+
+107
+00:07:44.299 --> 00:07:50.510
+these as being a not a string but a, a
+sorta allocation.
+
+108
+00:07:50.510 --> 00:07:55.850
+So, if we move the quotes around the age
+and the location.
+
+109
+00:07:55.850 --> 00:07:59.820
+And we run this again you'll see that we
+get the right answers out so here we're
+
+110
+00:07:59.820 --> 00:08:06.780
+setting the dictionary values for KWARGS,
+as being age and location.
+
+111
+00:08:06.780 --> 00:08:10.930
+And we can fetch location and if we change
+that to age, we can fetch the age as well,
+
+112
+00:08:13.360 --> 00:08:13.860
+sorry.
+
+113
+00:08:16.110 --> 00:08:17.330
+We can fetch the age as well.
+
+114
+00:08:17.330 --> 00:08:21.080
+And, so, as you can see, we can, mess
+
+115
+00:08:21.080 --> 00:08:23.080
+around, and this is scalable, because all
+we need
+
+116
+00:08:23.080 --> 00:08:28.780
+to do is pass in the variables here, here,
+or we can set them using this as well.
+
+117
+00:08:28.780 --> 00:08:32.790
+So, there's two different ways in which
+you can set variable.
+
+118
+00:08:32.790 --> 00:08:36.150
+We don't have to declare how many
+variables are being set, and
+
+119
+00:08:36.150 --> 00:08:39.770
+we can fetch all of them or any of them
+that we wish.
+
+120
+00:08:39.770 --> 00:08:41.470
+So that is how you get proper
+
+121
+00:08:41.470 --> 00:08:45.020
+scalability while using object oriented
+programming within Python.
+
+122
+00:08:45.020 --> 00:08:50.610
+So thank you for watching and I will see
+you
+

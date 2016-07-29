@@ -1,0 +1,418 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:03.880
+In this lesson we're going to look at the
+count controlled
+
+2
+00:00:03.880 --> 00:00:07.630
+while loop and I demonstrate how the cont
+controlled while loop works.
+
+3
+00:00:07.630 --> 00:00:09.310
+I'm going to provide two examples.
+
+4
+00:00:09.310 --> 00:00:10.550
+So let's get started.
+
+5
+00:00:10.550 --> 00:00:13.820
+We are gonna call this program
+'whilecount.py'.
+
+6
+00:00:13.820 --> 00:00:17.840
+So the first time we are going to do is
+
+7
+00:00:17.840 --> 00:00:21.740
+a very simple program that sums the first
+ten integers.
+
+8
+00:00:21.740 --> 00:00:23.090
+Starting with one.
+
+9
+00:00:23.090 --> 00:00:26.940
+So we'll set a variable sum to zero.
+
+10
+00:00:26.940 --> 00:00:28.490
+Our first number will be one.
+
+11
+00:00:28.490 --> 00:00:34.670
+And then we'll say while number is less
+than or equal to ten.
+
+12
+00:00:34.670 --> 00:00:37.460
+Followed by a colon to indicate the
+beginning of the loop body.
+
+13
+00:00:38.490 --> 00:00:41.610
+Then we'll say sum is equal to sum plus
+number.
+
+14
+00:00:42.910 --> 00:00:46.830
+And the number is equal to number plus
+one.
+
+15
+00:00:46.830 --> 00:00:51.370
+And at the end we'll say, print the sum
+is.
+
+16
+00:00:51.370 --> 00:00:55.230
+And of course, remember to convert sum to
+string to display it.
+
+17
+00:00:56.520 --> 00:01:02.640
+The counting comes in here where we're
+counting up from one to ten.
+
+18
+00:01:02.640 --> 00:01:04.960
+This is very similar to the example I
+showed you in
+
+19
+00:01:04.960 --> 00:01:09.470
+the first lesson, where we were displaying
+the numbers one to ten.
+
+20
+00:01:09.470 --> 00:01:12.870
+This time the differences were computing
+the sum
+
+21
+00:01:12.870 --> 00:01:15.180
+of these numbers as we move through them.
+
+22
+00:01:16.250 --> 00:01:18.130
+And again, looking at the steps, we have
+
+23
+00:01:18.130 --> 00:01:21.200
+to have a relational expression, which we
+have.
+
+24
+00:01:22.370 --> 00:01:24.490
+The main body of the loop, or the
+
+25
+00:01:24.490 --> 00:01:26.760
+thing that we're trying to get
+accomplished is accomplished
+
+26
+00:01:26.760 --> 00:01:29.400
+in this line, and then we have a
+
+27
+00:01:29.400 --> 00:01:34.680
+statement which will make the relational
+expression become false.
+
+28
+00:01:34.680 --> 00:01:36.560
+I should also mention that in many of the
+
+29
+00:01:36.560 --> 00:01:38.790
+while loops that you write, you also need
+to have
+
+30
+00:01:38.790 --> 00:01:43.330
+a statement before the while loop that
+ensures that
+
+31
+00:01:43.330 --> 00:01:45.650
+the while loop will be entered in the
+first place.
+
+32
+00:01:46.670 --> 00:01:49.740
+And that's number equal one.
+
+33
+00:01:49.740 --> 00:01:55.260
+Or number assigned the value one, make
+sure that this expression is true
+
+34
+00:01:55.260 --> 00:02:00.180
+the first time in, so that the body of the
+loop will be executed.
+
+35
+00:02:00.180 --> 00:02:04.970
+For example, if we'd written 11 here
+instead of one.
+
+36
+00:02:04.970 --> 00:02:09.030
+Then the very first time the relational
+expression is tested, it
+
+37
+00:02:09.030 --> 00:02:11.530
+would be false and we would never even get
+into the body.
+
+38
+00:02:11.530 --> 00:02:16.620
+So, always ensure that at the beginning of
+the first
+
+39
+00:02:16.620 --> 00:02:18.670
+iteration of the loop, in other words, the
+first time
+
+40
+00:02:18.670 --> 00:02:21.240
+the loop is going to be run, or the body's
+
+41
+00:02:21.240 --> 00:02:24.690
+going to be executed, that the relational
+expression will be true.
+
+42
+00:02:25.760 --> 00:02:27.010
+So let's exit and save,
+
+43
+00:02:29.860 --> 00:02:34.750
+and then let's execute the program, and
+we'll see that the sum is 55.
+
+44
+00:02:34.750 --> 00:02:38.370
+One plus two, plus three, plus four, plus
+five, plus
+
+45
+00:02:38.370 --> 00:02:41.630
+six, plus seven, plus eight, plus nine,
+plus ten is 55.
+
+46
+00:02:41.630 --> 00:02:44.270
+So let's look at another example.
+
+47
+00:02:44.270 --> 00:02:46.360
+We'll use the same program.
+
+48
+00:02:46.360 --> 00:02:51.060
+What I'll do is, I'll comment out the
+lines that we've already used.
+
+49
+00:02:51.060 --> 00:02:54.540
+I haven't talked about comments in the
+course so far.
+
+50
+00:02:54.540 --> 00:02:58.140
+A comment is simply a line that the python
+
+51
+00:02:58.140 --> 00:03:02.760
+interpreter ignores but that the human can
+look at.
+
+52
+00:03:02.760 --> 00:03:06.850
+So for example, if I wanted to put a
+comment at the beginning of this program.
+
+53
+00:03:06.850 --> 00:03:10.080
+It said something like examples of
+count-control loops.
+
+54
+00:03:10.080 --> 00:03:12.900
+Then the compiler ignores this.
+
+55
+00:03:12.900 --> 00:03:15.280
+And moves on to the first executable line.
+
+56
+00:03:15.280 --> 00:03:18.160
+So any line that begins with the pound
+sign
+
+57
+00:03:18.160 --> 00:03:22.080
+is considered a comment and the compiler
+ignores it.
+
+58
+00:03:22.080 --> 00:03:23.980
+Comments can also go at the end of a line.
+
+59
+00:03:23.980 --> 00:03:28.480
+But we'll look at those later when the
+occasion arises to use one.
+
+60
+00:03:28.480 --> 00:03:30.770
+So let's look at another example of
+account control
+
+61
+00:03:30.770 --> 00:03:33.210
+loop, this time we'll do one a little bit
+differently.
+
+62
+00:03:33.210 --> 00:03:35.390
+This time, we're going to look at how to
+
+63
+00:03:35.390 --> 00:03:39.670
+compute some simple interest on a savings
+account, for example.
+
+64
+00:03:39.670 --> 00:03:46.430
+So we're gonna set up a balance variable,
+and a rate variable,
+
+65
+00:03:46.430 --> 00:03:50.210
+and a year variable, and we want to see
+is, how much.
+
+66
+00:03:50.210 --> 00:03:53.170
+The balance will increase, growing at a
+simple
+
+67
+00:03:53.170 --> 00:03:56.580
+interest of 2% per year, for ten years.
+
+68
+00:03:56.580 --> 00:04:02.720
+So we'll say while year is less than or
+equal to ten, compute the
+
+69
+00:04:02.720 --> 00:04:08.880
+new balance and then just for fun, we'll
+look at the balance through the years.
+
+70
+00:04:11.450 --> 00:04:14.530
+And then we'll display the balance at the
+end of that line.
+
+71
+00:04:16.360 --> 00:04:20.080
+Close off the print, and then we have to
+
+72
+00:04:20.080 --> 00:04:24.200
+increment years so that the while loop
+will eventually stop.
+
+73
+00:04:24.200 --> 00:04:27.900
+And we'll see the ending balance at the
+end, so we don't need to print it again.
+
+74
+00:04:27.900 --> 00:04:30.990
+So let's review what we're doing here.
+
+75
+00:04:30.990 --> 00:04:34.120
+We have a balance variable and a right
+variable and a year variable.
+
+76
+00:04:35.970 --> 00:04:41.840
+We're saying while the year is less than
+or equal to ten, compute the new balance,
+
+77
+00:04:43.190 --> 00:04:49.600
+display, and then increment year by one so
+that this relational expression.
+
+78
+00:04:49.600 --> 00:04:50.830
+Will eventually become false.
+
+79
+00:04:52.600 --> 00:04:53.710
+Let's exit and save,
+
+80
+00:04:55.920 --> 00:05:00.890
+clear our screen here, and then run the
+program, and there's the result.
+
+81
+00:05:01.900 --> 00:05:03.710
+Later in the course I'll show you how to
+clean
+
+82
+00:05:03.710 --> 00:05:06.780
+up this output so that we don't see all
+these.
+
+83
+00:05:06.780 --> 00:05:09.800
+Fairly insignificant decimal places.
+
+84
+00:05:09.800 --> 00:05:12.520
+So you can see how a account will grow
+
+85
+00:05:12.520 --> 00:05:16.396
+just based on simple interest over ten
+years at 2%.
+
+86
+00:05:16.396 --> 00:05:23.650
+So 5,000 will grow to 6,000 essentially,
+$6, 095.
+
+87
+00:05:23.650 --> 00:05:25.310
+So that wraps up this lesson
+
+88
+00:05:25.310 --> 00:05:28.100
+on count-controlled loops, and now we're
+ready
+
+89
+00:05:28.100 --> 00:05:32.520
+to move to the next type of loop, and
+that's the event-controlled loop.
+

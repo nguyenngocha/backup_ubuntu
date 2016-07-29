@@ -1,0 +1,335 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:06.130
+In this lesson we're going to see how to
+use a data structure such as a list as a
+
+2
+00:00:06.130 --> 00:00:08.220
+field in a class which will give us a lot
+
+3
+00:00:08.220 --> 00:00:11.750
+of flexibility in what kind of classes we
+can create.
+
+4
+00:00:11.750 --> 00:00:14.690
+So what we're gonna do is we're gonna
+create a student class.
+
+5
+00:00:14.690 --> 00:00:17.530
+So we're gonna class this program
+student.py.
+
+6
+00:00:17.530 --> 00:00:21.000
+So we started off with class student.
+
+7
+00:00:21.000 --> 00:00:22.050
+And a colon.
+
+8
+00:00:22.050 --> 00:00:25.690
+Then thinking about what we're going to
+keep track of for fields.
+
+9
+00:00:25.690 --> 00:00:30.430
+Our fields are going to be the student
+name, the student I-D, and their grades.
+
+10
+00:00:30.430 --> 00:00:32.940
+Let's say we'll just say grades for the
+courses that they're taking.
+
+11
+00:00:32.940 --> 00:00:36.810
+We're going to keep it simple, so it's not
+a real world example.
+
+12
+00:00:36.810 --> 00:00:39.840
+So we want the grades to be stored as a
+list.
+
+13
+00:00:39.840 --> 00:00:44.430
+So, following our instructions from before
+in previous lessons, the first
+
+14
+00:00:44.430 --> 00:00:48.286
+thing we're going to do is create our nit
+method, our
+
+15
+00:00:48.286 --> 00:00:53.780
+constructor, and so we had no problem with
+name and ID, but
+
+16
+00:00:53.780 --> 00:00:59.150
+it's not really obvious how to create a
+parameter for grades.
+
+17
+00:00:59.150 --> 00:01:01.470
+Well, it turns out we don't really have
+to.
+
+18
+00:01:01.470 --> 00:01:04.000
+What we can do instead is, we can go ahead
+and
+
+19
+00:01:04.000 --> 00:01:09.560
+create a field, and assign it a value
+outside of the constructor.
+
+20
+00:01:09.560 --> 00:01:12.790
+And here, we're just saying that the
+constructor does
+
+21
+00:01:12.790 --> 00:01:17.650
+not have any part in initializing the
+grades field.
+
+22
+00:01:17.650 --> 00:01:20.490
+But every time we create a new student
+object,
+
+23
+00:01:20.490 --> 00:01:23.620
+it's going to automatically have an empty
+list called grades.
+
+24
+00:01:23.620 --> 00:01:28.410
+So here we'll just initialize name and ID.
+
+25
+00:01:28.410 --> 00:01:30.290
+And that's all we'll have to do.
+
+26
+00:01:30.290 --> 00:01:36.830
+So the next thing we want to do is write a
+method to add a grade to the list.
+
+27
+00:01:36.830 --> 00:01:39.340
+So we'll call that method addGrade.
+
+28
+00:01:39.340 --> 00:01:43.320
+The parameters are, as usual, self and
+grade.
+
+29
+00:01:43.320 --> 00:01:47.870
+And here we'll say self dot grades dot
+append grade.
+
+30
+00:01:47.870 --> 00:01:51.730
+And that will add the grade to the list of
+grades.
+
+31
+00:01:51.730 --> 00:01:55.610
+The next thing we'll want to do is have a
+means for displaying the grades.
+
+32
+00:01:55.610 --> 00:01:57.450
+So we'll call this method showGrades and
+
+33
+00:01:58.470 --> 00:02:02.030
+it will have no parameters other than
+self.
+
+34
+00:02:02.030 --> 00:02:05.330
+Then what we're gonna do is we're gonna
+create an empty string.
+
+35
+00:02:05.330 --> 00:02:09.390
+Then we're gonna loop through the grades
+list
+
+36
+00:02:09.390 --> 00:02:13.180
+and assign each grade to the string like
+so.
+
+37
+00:02:13.180 --> 00:02:15.230
+And then when we're done.
+
+38
+00:02:16.260 --> 00:02:19.640
+We return grades, or grds.
+
+39
+00:02:19.640 --> 00:02:22.360
+Not the actual field grades.
+
+40
+00:02:22.360 --> 00:02:25.060
+Now I've left of lots of things that we
+could
+
+41
+00:02:25.060 --> 00:02:28.740
+do like a 2 string method, and some other
+methods.
+
+42
+00:02:28.740 --> 00:02:31.160
+I'm going to save that for the exercises.
+
+43
+00:02:31.160 --> 00:02:34.500
+In the second exercise, we'll add to this
+
+44
+00:02:34.500 --> 00:02:37.380
+class and make it a more complete
+definition.
+
+45
+00:02:37.380 --> 00:02:41.570
+But for now I wanna demonstrate how what
+we've implemented works.
+
+46
+00:02:41.570 --> 00:02:44.070
+So we'll create a new student object.
+
+47
+00:02:44.070 --> 00:02:46.740
+We'll just use last names to keep it
+simple.
+
+48
+00:02:46.740 --> 00:02:47.770
+And a very simple ID.
+
+49
+00:02:47.770 --> 00:02:52.420
+And that's all we need to create a new
+instance named stu1.
+
+50
+00:02:52.420 --> 00:02:57.300
+Then we'll add a few grades to stu1 in
+'88.
+
+51
+00:02:57.300 --> 00:02:59.630
+84 and 91.
+
+52
+00:02:59.630 --> 00:03:05.110
+Now at this point, I'd like to see what
+the grades are for student one, so I'm
+
+53
+00:03:05.110 --> 00:03:10.680
+going to do a print, stu one, show grades,
+just like that.
+
+54
+00:03:10.680 --> 00:03:11.180
+Just
+
+55
+00:03:14.810 --> 00:03:16.090
+going to save it.
+
+56
+00:03:16.090 --> 00:03:17.690
+Go back to our command prompt window.
+
+57
+00:03:18.690 --> 00:03:23.750
+Type student.py and there's the grade see,
+see the only problem that we have is that
+
+58
+00:03:23.750 --> 00:03:29.750
+they are all bunched together so what we
+could do is right here add a space.
+
+59
+00:03:32.020 --> 00:03:32.870
+Let's try again.
+
+60
+00:03:36.170 --> 00:03:36.670
+Much better.
+
+61
+00:03:37.820 --> 00:03:42.280
+So, in the exercises, we'll modify this
+class in several ways.
+
+62
+00:03:42.280 --> 00:03:46.320
+We'll add a two string method, we'll write
+an average method, so that
+
+63
+00:03:46.320 --> 00:03:50.090
+we can average the grades, and any other
+things that we can think of.
+
+64
+00:03:50.090 --> 00:03:52.660
+But for this lesson, I just want to
+isolate how to
+
+65
+00:03:52.660 --> 00:03:56.900
+use a data structure, such as a list, as a
+field.
+
+66
+00:03:56.900 --> 00:03:58.230
+And now you see how to do that.
+
+67
+00:03:58.230 --> 00:03:59.350
+It's really quite simple.
+
+68
+00:03:59.350 --> 00:04:03.580
+It just seems complex when you're thinking
+about it abstractly, but once you get
+
+69
+00:04:03.580 --> 00:04:07.530
+down to the implementation, it's pretty
+much just what you expect it to be.
+
+70
+00:04:07.530 --> 00:04:09.610
+So with that, that wraps up this lesson
+and we're
+
+71
+00:04:09.610 --> 00:04:12.420
+ready to move on to the first exercise of
+the chapter.
+

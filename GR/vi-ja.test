@@ -1,0 +1,66 @@
+~/gome-vitk-vija/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <train.ja> train.tok.ja 
+~/gome-vitk-vija/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <train.vi> train.tok.vi
+
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/train-truecaser.perl --model ~/gome-vitk-vija/corpus/truecase-model.vi --corpus ~/gome-vitk-vija/corpus/train.tok.vi 
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/train-truecaser.perl --model ~/gome-vitk-vija/corpus/truecase-model.ja --corpus ~/gome-vitk-vija/corpus/train.tok.ja
+
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/truecase.perl --model ~/gome-vitk-vija/corpus/truecase-model.vi <~/gome-vitk-vija/corpus/train.tok.vi > ~/gome-vitk-vija/corpus/train.true.vi
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/truecase.perl --model ~/gome-vitk-vija/corpus/truecase-model.ja <~/gome-vitk-vija/corpus/train.tok.ja > ~/gome-vitk-vija/corpus/train.true.ja
+
+~/gome-vitk-vija/mosesdecoder/scripts/training/clean-corpus-n.perl ~/gome-vitk-vija/corpus/train.true vi ja ~/gome-vitk-vija/corpus/train.clean 1 80
+
+mkdir ~/gome-vitk-vija/lm
+cd ~/gome-vitk-vija/lm
+
+~/gome-vitk-vija/mosesdecoder/bin/lmplz -o 3 <~/gome-vitk-vija/corpus/train.true.ja > train.arpa.ja
+
+~/gome-vitk-vija/mosesdecoder/bin/build_binary train.arpa.ja train.blm.ja
+
+mkdir ~/gome-vitk-vija/working
+cd ~/gome-vitk-vija/working
+
+nohup nice ~/gome-vitk-vija/mosesdecoder/scripts/training/train-model.perl -root-dir train -corpus ~/gome-vitk-vija/corpus/train.clean -f vi -e ja -alignment grow-diag-final-and -reordering msd-bidirectional-fe -lm 0:3:$HOME/gome-vitk-vija/lm/train.blm.ja:8 -external-bin-dir ~/gome-vitk-vija/mosesdecoder/tools >& training.out &
+
+cd ~/gome-vitk-vija/corpus 
+
+~/gome-vitk-vija/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-vitk-vija/corpus/turn.vi> ~/gome-vitk-vija/corpus/turn.es.vi
+~/gome-vitk-vija/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-vitk-vija/corpus/turn.ja> ~/gome-vitk-vija/corpus/turn.es.ja
+
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.vi < turn.es.vi > turn.true.vi
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.ja < turn.es.ja > turn.true.ja
+
+cd ~/gome-vitk-vija/working
+
+nohup nice ~/gome-vitk-vija/mosesdecoder/scripts/training/mert-moses.pl ~/gome-vitk-vija/corpus/turn.true.vi ~/gome-vitk-vija/corpus/turn.true.ja ~/gome-vitk-vija/mosesdecoder/bin/moses train/model/moses.ini --mertdir ~/gome-vitk-vija/mosesdecoder/bin/ &> mert.out &
+
+mkdir binarised-model
+~/gome-vitk-vija/mosesdecoder/bin/processPhraseTableMin -in train/model/phrase-table.gz -nscores 4 -out binarised-model/phrase-table
+
+~/gome-vitk-vija/mosesdecoder/bin/processLexicalTableMin -in train/model/reordering-table.wbe-msd-bidirectional-fe.gz -out binarised-model/reordering-table
+
+cp ~/gome-vitk-vija/working/mert-work/moses.ini ~/gome-vitk-vija/working/binarised-model
+
+gedit ~/gome-vitk-vija/working/binarised-model/moses.ini
+
+#PhraseDictionaryCompact
+#$HOME/subfilm_vi-ja-tok/working/binarised-model/phrase-table.minphr
+#$HOME/subfilm_vi-ja-tok/working/binarised-model/reordering-table
+#test: ~/gome-vitk-vija/mosesdecoder/bin/moses -f ~/gome-vitk-vija/working/binarised-model/moses.ini
+
+cd ~/gome-vitk-vija/corpus
+
+/////////////////
+~/gome-vitk-vija/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-vitk-vija/corpus/test.ja> ~/gome-vitk-vija/corpus/test.es.ja
+~/gome-vitk-vija/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-vitk-vija/corpus/test.vi> ~/gome-vitk-vija/corpus/test.es.vi 
+
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.vi <~/gome-vitk-vija/corpus/test.es.vi> test.true.vi
+~/gome-vitk-vija/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.ja <~/gome-vitk-vija/corpus/test.es.ja> test.true.ja
+
+cd ~/gome-vitk-vija/working
+
+~/gome-vitk-vija/mosesdecoder/scripts/training/filter-model-given-input.pl filtered-test mert-work/moses.ini ~/gome-vitk-vija/corpus/test.true.vi -Binarizer ~/gome-vitk-vija/mosesdecoder/bin/processPhraseTableMin 
+
+nohup nice ~/gome-vitk-vija/mosesdecoder/bin/moses -f ~/gome-vitk-vija/working/filtered-test/moses.ini <~/gome-vitk-vija/	corpus/test.true.vi > ~/gome-vitk-vija/working/test.translated.ja 2> ~/gome-vitk-vija/working/test.out &
+
+~/gome-vitk-vija/mosesdecoder/scripts/generic/multi-bleu.perl -lc ~/gome-vitk-vija/corpus/test.ja < ~/gome-vitk-vija/working/test.translated.ja 
+

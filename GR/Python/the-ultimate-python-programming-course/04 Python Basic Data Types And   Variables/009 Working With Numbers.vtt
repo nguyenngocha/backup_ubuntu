@@ -1,0 +1,262 @@
+WEBVTT
+
+1
+00:00:01.190 --> 00:00:04.650
+In this lesson, we're gonna talk about how
+to work with numbers in Python.
+
+2
+00:00:04.650 --> 00:00:06.030
+We're going to be using the interactive
+
+3
+00:00:06.030 --> 00:00:09.790
+shell again so go to your Python
+subdirectory.
+
+4
+00:00:09.790 --> 00:00:11.530
+Type Python to open the shell.
+
+5
+00:00:11.530 --> 00:00:16.470
+Again, you probably need to do that from
+your 2.7.2 version of Python.
+
+6
+00:00:16.470 --> 00:00:19.860
+There's several different types of numbers
+you can work with in Python.
+
+7
+00:00:19.860 --> 00:00:22.962
+The most common is the integer, such as
+
+8
+00:00:22.962 --> 00:00:27.642
+100 or the floating number, such as
+3.14159.
+
+9
+00:00:27.642 --> 00:00:33.280
+Or you can also work with hexadecimal,
+octal, and binary numbers in Python.
+
+10
+00:00:33.280 --> 00:00:35.390
+Python has the standard mathematical
+
+11
+00:00:35.390 --> 00:00:41.370
+operators, addition, subtraction,
+multiplication, division.
+
+12
+00:00:41.370 --> 00:00:47.750
+Python also has modulus, so if you type 4
+modulus 2, that returns the remainder
+
+13
+00:00:47.750 --> 00:00:53.820
+of dividing 4 by 2 so add 0 where 3 mod 2
+returns 1.
+
+14
+00:00:53.820 --> 00:00:56.870
+Also has an exponent operator, so, if I
+wanna
+
+15
+00:00:56.870 --> 00:00:59.980
+find 2 to the second power, I can type 2
+
+16
+00:00:59.980 --> 00:01:03.810
+star star, or asterisk asterisk, 2, to get
+4,
+
+17
+00:01:03.810 --> 00:01:07.910
+or 100 to the 3rd power, which is 1
+million.
+
+18
+00:01:07.910 --> 00:01:10.590
+When you're working with mixed number
+types in
+
+19
+00:01:10.590 --> 00:01:13.690
+Python, such as integers and floating
+points, Python
+
+20
+00:01:13.690 --> 00:01:21.290
+always converts up, so that 1 plus 2.2
+will be equal to 3.2 rather than 3.
+
+21
+00:01:21.290 --> 00:01:27.570
+Because, here, Python will convert up from
+integer to floating point, and
+
+22
+00:01:27.570 --> 00:01:31.820
+that's a great thing, cuz it'll keep you
+from accidentally losing some data.
+
+23
+00:01:31.820 --> 00:01:34.340
+Another thing you keep in mind when
+working in
+
+24
+00:01:34.340 --> 00:01:39.240
+Python is that the operators have an order
+of precedence.
+
+25
+00:01:39.240 --> 00:01:40.810
+Think my dear Aunt Sally.
+
+26
+00:01:40.810 --> 00:01:44.070
+Multiplication, division, addition,
+subtraction for
+
+27
+00:01:44.070 --> 00:01:45.930
+the most common of the operators.
+
+28
+00:01:45.930 --> 00:01:49.790
+So that 1 plus 2 times 3 is 7 instead of
+
+29
+00:01:49.790 --> 00:01:54.880
+9 because the multiplication, 2 times 3,
+is performed before the addition.
+
+30
+00:01:54.880 --> 00:02:00.550
+If you want to change the order of
+precedence then use parentheses like so to
+
+31
+00:02:00.550 --> 00:02:03.030
+give us 9 instead of 7 because
+
+32
+00:02:03.030 --> 00:02:06.700
+here we're forcing the addition before the
+multiplication.
+
+33
+00:02:06.700 --> 00:02:10.650
+Python has some built-in mathematical
+functions as well, such as
+
+34
+00:02:10.650 --> 00:02:15.510
+POW which performs power, taking 2 to the
+3rd power.
+
+35
+00:02:15.510 --> 00:02:21.300
+Or Absolute Value, which will return the
+absolute value of its argument.
+
+36
+00:02:21.300 --> 00:02:25.330
+A round which will round up or down its
+argument either to
+
+37
+00:02:25.330 --> 00:02:29.080
+the next highest whole number or to the
+next lowest whole number.
+
+38
+00:02:29.080 --> 00:02:32.470
+There are also some math functions that
+you can import
+
+39
+00:02:33.690 --> 00:02:38.810
+such as square root and floor are just two
+examples.
+
+40
+00:02:38.810 --> 00:02:43.183
+The literature will give you a full list
+of all the mathematical functions.
+
+41
+00:02:43.183 --> 00:02:46.088
+And then finally, for performing random
+
+42
+00:02:46.088 --> 00:02:49.325
+number generation, you can import the
+random
+
+43
+00:02:49.325 --> 00:02:54.970
+library and it's random function will
+return a random number between 0 and 1.
+
+44
+00:02:54.970 --> 00:02:59.968
+Or, if you want to return a value within a
+range you can type
+
+45
+00:02:59.968 --> 00:03:05.680
+random.random.int or randint and then the
+range 1,100 and
+
+46
+00:03:05.680 --> 00:03:11.115
+it will provide a random integer in the
+range from 1 to 100.
+
+47
+00:03:11.115 --> 00:03:14.680
+So, that's a very quick look at how to
+work with numbers in Python.
+
+48
+00:03:14.680 --> 00:03:18.820
+I don't wanna spend too much time on that,
+and we can spend forever.
+
+49
+00:03:18.820 --> 00:03:23.080
+Going over all of the features of of
+numbers in Python,
+
+50
+00:03:23.080 --> 00:03:26.610
+there's lots of tutorials on the internet,
+and lots of reference material.
+
+51
+00:03:26.610 --> 00:03:29.910
+If there's something that we didn't cover
+in here that you are interested in
+
+52
+00:03:29.910 --> 00:03:34.260
+some of the other lessons will also bring
+some points about numbers in Python.
+
+53
+00:03:34.260 --> 00:03:36.390
+But for now, we're going to move onto the
+next lesson
+
+54
+00:03:36.390 --> 00:03:39.520
+where we are going to talk about working
+with strings in Python
+

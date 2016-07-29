@@ -1,0 +1,203 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:03.090
+In this exercise I'm going to demonstrate
+
+2
+00:00:03.090 --> 00:00:06.030
+a couple of practical uses of list
+comprehension,
+
+3
+00:00:06.030 --> 00:00:10.950
+so, we're going to open a new program,
+we'll call it list comp dot P Y.
+
+4
+00:00:13.490 --> 00:00:18.970
+For the first example, I'm going to find
+all of the even numbers in a range.
+
+5
+00:00:18.970 --> 00:00:21.800
+So first thing I'm going to do is I'm
+going to create a range.
+
+6
+00:00:21.800 --> 00:00:24.820
+I have from one to 100 stored in a list.
+
+7
+00:00:24.820 --> 00:00:29.560
+Then I'm going to write a list
+comprehension to find even numbers.
+
+8
+00:00:29.560 --> 00:00:34.060
+You can do that by including an if
+statement in the list comprehension.
+
+9
+00:00:34.060 --> 00:00:34.710
+Just like that.
+
+10
+00:00:34.710 --> 00:00:40.760
+So, we're saying, pull out x for x in N
+if.
+
+11
+00:00:40.760 --> 00:00:42.380
+X mod 2 is equal to zero.
+
+12
+00:00:42.380 --> 00:00:46.820
+Remember that any number mod 2, if it's
+equal to zero, then it's even.
+
+13
+00:00:46.820 --> 00:00:53.090
+Here we're replacing some sort of
+computation, like square x or divide x by
+
+14
+00:00:53.090 --> 00:01:00.050
+some number with an if statement that will
+return x if this condition is met.
+
+15
+00:01:00.050 --> 00:01:03.470
+So when we're finished we can print a list
+of even numbers.
+
+16
+00:01:03.470 --> 00:01:04.850
+So let's save it.
+
+17
+00:01:09.380 --> 00:01:10.450
+Run our program,.
+
+18
+00:01:10.450 --> 00:01:13.380
+And there's our even numbers, 2 thorough a
+100.
+
+19
+00:01:13.380 --> 00:01:15.760
+And if you notice they're all even.
+
+20
+00:01:17.340 --> 00:01:18.500
+So that's 1 example.
+
+21
+00:01:19.600 --> 00:01:20.990
+Let's look at one more example.
+
+22
+00:01:20.990 --> 00:01:26.630
+Let's say I want to print to length of all
+the words in this sentence.
+
+23
+00:01:26.630 --> 00:01:34.930
+So here's my sentence I need to continue
+it on the next line like so.
+
+24
+00:01:34.930 --> 00:01:37.450
+Now I need to get this string into a list.
+
+25
+00:01:37.450 --> 00:01:41.850
+And I can do that using a special string
+function called split.
+
+26
+00:01:41.850 --> 00:01:47.910
+Split takes a single argument, a delimiter
+and then it will break up a string into
+
+27
+00:01:47.910 --> 00:01:53.120
+list elements at the delimiter, so what
+I'm telling it here is to split sentence
+
+28
+00:01:53.120 --> 00:01:59.200
+on space and store each resulting word in
+the list words.
+
+29
+00:01:59.200 --> 00:02:00.470
+Now I'm assuming it will form a
+
+30
+00:02:00.470 --> 00:02:04.150
+sentence without any punctuation marks,so
+once we have
+
+31
+00:02:04.150 --> 00:02:07.940
+that then we're ready to write the list
+comprehension, so we're going to create a
+
+32
+00:02:07.940 --> 00:02:13.000
+new list called wlen for word length here
+I want to create a list of temples that
+
+33
+00:02:13.000 --> 00:02:19.480
+include the word and the length of the
+word for word in words.
+
+34
+00:02:19.480 --> 00:02:20.550
+Just like that.
+
+35
+00:02:20.550 --> 00:02:24.870
+So, for each word in the list words, I
+want to create a tuple
+
+36
+00:02:24.870 --> 00:02:29.020
+of the word and the length of the word,
+and store it in wlen.
+
+37
+00:02:29.020 --> 00:02:36.570
+And when I'm finished, I can say for i in
+wien, print i.
+
+38
+00:02:36.570 --> 00:02:38.860
+So let's save it.
+
+39
+00:02:42.170 --> 00:02:46.410
+Clear the screen, and there's our list.
+
+40
+00:02:46.410 --> 00:02:50.450
+As an exercise for the viewer, you can
+take this and sort it into order so
+
+41
+00:02:50.450 --> 00:02:54.860
+that, the smallest words are at the top,
+and the largest words, were at the bottom.
+
+42
+00:02:54.860 --> 00:02:57.220
+In the mean time, we've run out of time
+for this
+
+43
+00:02:57.220 --> 00:03:01.250
+exercise, and with that we close out this
+chapter on List Comprehensions.
+

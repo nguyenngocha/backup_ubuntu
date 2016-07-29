@@ -1,0 +1,309 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:04.260
+For this first exercise of the chapter,
+we're going to create a
+
+2
+00:00:04.260 --> 00:00:07.440
+person class to demonstrate the different
+
+3
+00:00:07.440 --> 00:00:09.510
+techniques we've learned for creating
+classes.
+
+4
+00:00:09.510 --> 00:00:13.190
+So we'll start by opening a program called
+person.py.
+
+5
+00:00:13.190 --> 00:00:13.690
+We
+
+6
+00:00:16.100 --> 00:00:20.710
+begin our definition with the keyword
+class followed by the name of the class.
+
+7
+00:00:20.710 --> 00:00:23.090
+Next we're gonna create our constructor.
+
+8
+00:00:23.090 --> 00:00:27.310
+And what we'll have for a person is a
+name, a sex and an age.
+
+9
+00:00:27.310 --> 00:00:32.860
+That will be all we're going to define for
+a person for this particular exercise.
+
+10
+00:00:32.860 --> 00:00:39.140
+So, the first thing we do is assign
+parameters to fields just like so.
+
+11
+00:00:41.970 --> 00:00:47.430
+The next thing we'll do is create our two
+string methods so that we can display
+
+12
+00:00:47.430 --> 00:00:53.102
+the state of an object at any time, and
+we'll do it very simply, just like so.
+
+13
+00:00:53.102 --> 00:00:57.270
+The next thing we'll do is create some
+methods that allow us to
+
+14
+00:00:57.270 --> 00:01:02.400
+change some of the attribute, so some of
+the fields of a person.
+
+15
+00:01:02.400 --> 00:01:06.290
+For example, if the person is female, then
+we might wanna be
+
+16
+00:01:06.290 --> 00:01:09.950
+able to change a person name if, for
+example, the person got married.
+
+17
+00:01:09.950 --> 00:01:12.590
+So we might write a function called
+changeName.
+
+18
+00:01:12.590 --> 00:01:16.810
+That simply allows the name to be changed.
+
+19
+00:01:16.810 --> 00:01:22.760
+And then we also might want to be able to
+change the age like on a annual birthday.
+
+20
+00:01:22.760 --> 00:01:26.010
+So we'll write a method called changeAge.
+
+21
+00:01:26.010 --> 00:01:28.890
+And what we'll do is we'll just assume
+that an
+
+22
+00:01:28.890 --> 00:01:32.690
+age is going to increase by one whenever
+we change it.
+
+23
+00:01:33.690 --> 00:01:36.880
+It's possible, though not likely, that we
+could need another method
+
+24
+00:01:36.880 --> 00:01:40.710
+that would change the age by more than an
+increment of one.
+
+25
+00:01:40.710 --> 00:01:45.860
+But generally speaking, the only time a
+person's age changes is on their birthday.
+
+26
+00:01:45.860 --> 00:01:46.970
+So we'll keep it at that.
+
+27
+00:01:46.970 --> 00:01:50.180
+So we'll create a couple of objects here.
+
+28
+00:01:51.380 --> 00:01:54.010
+So person one gets the following
+attributes,
+
+29
+00:01:54.010 --> 00:01:58.150
+Jane Doe, female and 23 years old.
+
+30
+00:01:58.150 --> 00:02:05.500
+Person two equals person Bob Smith, male,
+55.
+
+31
+00:02:05.500 --> 00:02:14.500
+And we can say print, person1 plus
+person1, like so.
+
+32
+00:02:14.500 --> 00:02:16.130
+Now this could be an interesting problem.
+
+33
+00:02:16.130 --> 00:02:18.790
+And what I'm looking at is how the age
+
+34
+00:02:18.790 --> 00:02:21.270
+is probably not going to come across as a
+string.
+
+35
+00:02:21.270 --> 00:02:23.490
+So what we need to do is go back and
+
+36
+00:02:23.490 --> 00:02:26.280
+use the string function to change that
+into a string.
+
+37
+00:02:26.280 --> 00:02:29.650
+And the other thing that we need to do is
+
+38
+00:02:29.650 --> 00:02:34.170
+convert person to string when we write it
+out like so.
+
+39
+00:02:38.820 --> 00:02:39.240
+There we go.
+
+40
+00:02:39.240 --> 00:02:43.170
+Now let's try another method.
+
+41
+00:02:44.870 --> 00:02:49.280
+And looking at the method, you'll notice
+that we provided the age as a parameter.
+
+42
+00:02:49.280 --> 00:02:50.970
+And there's really no reason to do that.
+
+43
+00:02:50.970 --> 00:02:56.190
+So let's take that out, and then the
+changeAge
+
+44
+00:02:56.190 --> 00:02:59.640
+method will just be an empty parameter
+list like so.
+
+45
+00:02:59.640 --> 00:03:03.560
+And then we can just copy this line.
+
+46
+00:03:03.560 --> 00:03:04.413
+Put it back in.
+
+47
+00:03:04.413 --> 00:03:08.920
+You notice that the two string method is
+great for testing
+
+48
+00:03:08.920 --> 00:03:11.840
+your class implementation to see if it's
+working correctly or not.
+
+49
+00:03:13.440 --> 00:03:16.445
+So, changeAge works just fine.
+
+50
+00:03:16.445 --> 00:03:18.000
+Let's try one more method.
+
+51
+00:03:18.000 --> 00:03:21.810
+I am only working on person1, and that's
+probably just fine.
+
+52
+00:03:21.810 --> 00:03:25.700
+[BLANK_AUDIO].
+
+53
+00:03:25.700 --> 00:03:29.250
+And then we'll use the two string method
+one more time on person1.
+
+54
+00:03:29.250 --> 00:03:29.750
+And
+
+55
+00:03:33.640 --> 00:03:36.060
+here we see how person one changes as
+
+56
+00:03:36.060 --> 00:03:39.990
+we apply the different methods to the
+person1 object.
+
+57
+00:03:39.990 --> 00:03:42.320
+So here's the code again.
+
+58
+00:03:43.670 --> 00:03:47.210
+And really, the only tricky part of this
+code is
+
+59
+00:03:47.210 --> 00:03:50.060
+to remember that the object returned by
+the two string
+
+60
+00:03:50.060 --> 00:03:53.300
+method has to be converted to string if we
+are
+
+61
+00:03:53.300 --> 00:03:56.230
+going to use it in a concatenation with
+another string.
+
+62
+00:03:56.230 --> 00:04:01.200
+If we are going to use it by itself, for
+example, to print
+
+63
+00:04:01.200 --> 00:04:05.860
+this data of person2, then we don't need
+to use the string function.
+
+64
+00:04:05.860 --> 00:04:08.530
+So that wraps up this first exercise of
+the chapter.
+
+65
+00:04:08.530 --> 00:04:11.890
+And now we're going to move to the second
+exercise, where we're going
+
+66
+00:04:11.890 --> 00:04:17.210
+to work with the string class and provide
+some extra functionality to that class.
+

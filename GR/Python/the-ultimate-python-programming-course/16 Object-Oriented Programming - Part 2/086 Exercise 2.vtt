@@ -1,0 +1,372 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:03.140
+In this second exercise, we're going to
+
+2
+00:00:03.140 --> 00:00:06.600
+continue working with the account and
+checking classes.
+
+3
+00:00:06.600 --> 00:00:09.620
+This time we're going to add a savings
+class, and
+
+4
+00:00:09.620 --> 00:00:13.360
+then I'm gonna demonstrate how we can use
+one collection
+
+5
+00:00:13.360 --> 00:00:17.060
+to store multiple objects, and yet have
+the program know
+
+6
+00:00:17.060 --> 00:00:20.240
+which type of the objects are being stored
+in the collection.
+
+7
+00:00:20.240 --> 00:00:21.680
+So let's get started.
+
+8
+00:00:21.680 --> 00:00:25.590
+First thing I wanna do is I wanna copy our
+previous program to a new program.
+
+9
+00:00:25.590 --> 00:00:30.106
+So we're gonna copy account.py to
+savings.py.
+
+10
+00:00:30.106 --> 00:00:31.779
+And then let's open savings.py.
+
+11
+00:00:31.779 --> 00:00:34.590
+[BLANK_AUDIO].
+
+12
+00:00:34.590 --> 00:00:36.830
+So here's our previous program.
+
+13
+00:00:36.830 --> 00:00:39.790
+So let's scroll down to under the checking
+account class.
+
+14
+00:00:41.320 --> 00:00:43.830
+And start a savings account class.
+
+15
+00:00:43.830 --> 00:00:46.270
+We'll call it savings and it will inherit
+from account.
+
+16
+00:00:46.270 --> 00:00:52.640
+So the first thing we do is create our
+constructor, and for this all we need to
+
+17
+00:00:52.640 --> 00:00:58.850
+do is call the base class constructor with
+the arguments account number and balance.
+
+18
+00:00:58.850 --> 00:01:00.960
+Then we're ready to create our two string
+method.
+
+19
+00:01:02.120 --> 00:01:07.680
+And, it's going to look similar to the 2
+string method for checking class.
+
+20
+00:01:07.680 --> 00:01:10.860
+Except this time, the account class will
+be savings, instead of checking.
+
+21
+00:01:10.860 --> 00:01:14.290
+I also noticed up here for some reason, I
+had a semi colon.
+
+22
+00:01:14.290 --> 00:01:15.820
+Let me take that out.
+
+23
+00:01:15.820 --> 00:01:19.090
+Bad habits from all my other programming
+languages.
+
+24
+00:01:19.090 --> 00:01:24.070
+Now, return string will include a call, to
+the base class two
+
+25
+00:01:24.070 --> 00:01:29.150
+string method and that's all we need to do
+other than return the string.
+
+26
+00:01:29.150 --> 00:01:32.180
+Now we can define a deposit method,
+
+27
+00:01:35.940 --> 00:01:37.270
+and a withdrawal method.
+
+28
+00:01:37.270 --> 00:01:47.580
+[BLANK_AUDIO]
+
+29
+00:01:47.580 --> 00:01:50.860
+Otherwise the balance is equal to the
+balance minus the amount.
+
+30
+00:01:50.860 --> 00:01:54.290
+And with that we should have a complete
+definition.
+
+31
+00:01:55.360 --> 00:01:57.690
+So let's come down to the end of our
+working code.
+
+32
+00:01:59.040 --> 00:02:00.790
+Create a settings account object.
+
+33
+00:02:02.980 --> 00:02:03.930
+Make a withdrawal.
+
+34
+00:02:05.590 --> 00:02:06.110
+Display it.
+
+35
+00:02:06.110 --> 00:02:08.744
+[BLANK_AUDIO].
+
+36
+00:02:08.744 --> 00:02:10.744
+And then make a deposit, and display it.
+
+37
+00:02:10.744 --> 00:02:11.880
+[BLANK_AUDIO].
+
+38
+00:02:11.880 --> 00:02:12.380
+And
+
+39
+00:02:15.230 --> 00:02:16.360
+let's save our program.
+
+40
+00:02:18.770 --> 00:02:19.720
+Let's see how it looks.
+
+41
+00:02:20.740 --> 00:02:23.540
+We have a little error in the creation of
+our savings account
+
+42
+00:02:23.540 --> 00:02:25.570
+object so let's go back and look and see
+what we did.
+
+43
+00:02:25.570 --> 00:02:29.100
+[BLANK_AUDIO]
+
+44
+00:02:29.100 --> 00:02:30.310
+Add self right there.
+
+45
+00:02:30.310 --> 00:02:35.540
+[BLANK_AUDIO]
+
+46
+00:02:35.540 --> 00:02:36.440
+Let's save the file.
+
+47
+00:02:37.480 --> 00:02:39.120
+Lets clear the screen, try it again.
+
+48
+00:02:40.310 --> 00:02:41.420
+There we go.
+
+49
+00:02:41.420 --> 00:02:43.860
+And everything looks like its in place.
+
+50
+00:02:43.860 --> 00:02:48.680
+We took 250 out, we put 125 back in, so
+yes that's right.
+
+51
+00:02:48.680 --> 00:02:49.930
+So lets go back to the program.
+
+52
+00:02:51.150 --> 00:02:52.475
+So what we might wanna do is we might
+
+53
+00:02:52.475 --> 00:02:55.610
+wanna store all these objects in one data
+structure.
+
+54
+00:02:57.570 --> 00:03:02.540
+So we can do that, lets go back a line, by
+creating a list
+
+55
+00:03:02.540 --> 00:03:03.980
+and putting our checking account and our
+
+56
+00:03:03.980 --> 00:03:06.460
+savings account in the list just like
+that.
+
+57
+00:03:08.540 --> 00:03:12.110
+Now we can loop through the list, just by
+
+58
+00:03:12.110 --> 00:03:16.750
+using a standard for loop and display each
+item.
+
+59
+00:03:16.750 --> 00:03:19.120
+There's only 2 but you get the idea.
+
+60
+00:03:19.120 --> 00:03:22.000
+Even though these stored as object, the
+python will be able to
+
+61
+00:03:22.000 --> 00:03:26.770
+understand the type of object and display
+the right information based on that.
+
+62
+00:03:26.770 --> 00:03:29.450
+So lets save lets clear the screen.
+
+63
+00:03:30.490 --> 00:03:31.700
+And run our program again.
+
+64
+00:03:32.750 --> 00:03:35.859
+So we have a checking account and we have
+a savings account.
+
+65
+00:03:38.150 --> 00:03:39.830
+Now, before we finish, one more thing
+
+66
+00:03:39.830 --> 00:03:42.780
+that I'm looking at, thinking about this
+program.
+
+67
+00:03:42.780 --> 00:03:48.090
+Notice that the deposit method is the same
+for both classes.
+
+68
+00:03:48.090 --> 00:03:51.170
+Given that, there's really no reason why
+we should have it defined
+
+69
+00:03:51.170 --> 00:03:55.580
+in either derived class, we should define
+it in the base class.
+
+70
+00:03:55.580 --> 00:03:59.600
+And that way, we can just use it as-is in
+each of the derived classes.
+
+71
+00:03:59.600 --> 00:04:02.310
+So let's cut that right there.
+
+72
+00:04:02.310 --> 00:04:09.620
+And let's go back to the account class and
+add deposit right here.
+
+73
+00:04:09.620 --> 00:04:11.460
+There we go.
+
+74
+00:04:11.460 --> 00:04:14.900
+This is gonna do it for one, just like
+that.
+
+75
+00:04:14.900 --> 00:04:17.630
+So save the file, now let's run it again.
+
+76
+00:04:17.630 --> 00:04:19.140
+We shouldn't see any difference.
+
+77
+00:04:21.270 --> 00:04:22.370
+And we don't.
+
+78
+00:04:22.370 --> 00:04:24.590
+We've made our code easier to understand,
+and
+
+79
+00:04:24.590 --> 00:04:28.030
+easier to maintain, by moving deposit out
+of
+
+80
+00:04:28.030 --> 00:04:30.360
+checking and saving, since it's the same
+method
+
+81
+00:04:30.360 --> 00:04:33.240
+for both ,and putting it in the base
+class.
+
+82
+00:04:33.240 --> 00:04:36.720
+That wraps up this chapter on inheritance.
+

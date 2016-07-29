@@ -1,0 +1,272 @@
+WEBVTT
+
+1
+00:00:01.080 --> 00:00:03.050
+In this lesson I'm gonna show you how to
+install
+
+2
+00:00:03.050 --> 00:00:06.510
+Python on a Windows PC, and it's really
+quite simple.
+
+3
+00:00:06.510 --> 00:00:08.020
+The first thing we're gonna do is open
+
+4
+00:00:08.020 --> 00:00:16.270
+a browser and navigate over to Python.org,
+or www.python.org.
+
+5
+00:00:16.270 --> 00:00:17.580
+Select the download link.
+
+6
+00:00:19.740 --> 00:00:25.760
+Scroll down just a bit, and you'll see we
+have a Python 2.7.2 Windows installer.
+
+7
+00:00:25.760 --> 00:00:27.430
+That's one we're going to install.
+
+8
+00:00:27.430 --> 00:00:31.294
+We're also going to install the Python
+3.2.2 installer only
+
+9
+00:00:31.294 --> 00:00:35.010
+because we're going to use two different
+versions of Python.
+
+10
+00:00:35.010 --> 00:00:38.930
+Python 3 at the beginning for our
+introductory lessons or
+
+11
+00:00:38.930 --> 00:00:42.530
+our review of Python, and then Python 2.7
+for some
+
+12
+00:00:42.530 --> 00:00:46.210
+of the more specialized web apps, only
+because not all
+
+13
+00:00:46.210 --> 00:00:50.060
+of the libraries work with this newer
+version of Python.
+
+14
+00:00:50.060 --> 00:00:54.860
+So I'm gonna demonstrate how to install
+2.7.2 or just Python 2.7,
+
+15
+00:00:54.860 --> 00:01:00.070
+and from that, you download the other
+version exactly the same way.
+
+16
+00:01:00.070 --> 00:01:01.810
+So click on the installer.
+
+17
+00:01:01.810 --> 00:01:04.420
+Ask you if you want to save the file; say
+yes.
+
+18
+00:01:04.420 --> 00:01:09.130
+Take this a few minutes or a few seconds
+to do that, not very long, there we go.
+
+19
+00:01:09.130 --> 00:01:10.700
+So we're gonna double click this file.
+
+20
+00:01:13.290 --> 00:01:14.870
+Let's remove the old version.
+
+21
+00:01:16.080 --> 00:01:18.640
+Now begins the process, and again, you
+don't have
+
+22
+00:01:18.640 --> 00:01:20.859
+to do this, if you don't have Python
+installed initially.
+
+23
+00:01:21.910 --> 00:01:24.470
+But I do, and because I want to do it
+
+24
+00:01:24.470 --> 00:01:27.870
+orderly, I want to remove it correctly
+before I re-install it.
+
+25
+00:01:28.900 --> 00:01:33.300
+And it's always worthwhile knowing how to
+uninstall software, just as it is to
+
+26
+00:01:33.300 --> 00:01:37.080
+know how to install it because at some
+point you may need to uninstall.
+
+27
+00:01:37.080 --> 00:01:39.130
+You need to see how that process takes
+place.
+
+28
+00:01:39.130 --> 00:01:42.480
+[BLANK_AUDIO].
+
+29
+00:01:42.480 --> 00:01:47.160
+Now if we double click again, here comes
+the installation process.
+
+30
+00:01:47.160 --> 00:01:48.930
+So it asks us where we want to put our
+files.
+
+31
+00:01:48.930 --> 00:01:49.930
+We'll say Python 27.
+
+32
+00:01:49.930 --> 00:01:51.750
+That's the standard.
+
+33
+00:01:52.780 --> 00:01:56.060
+You won't see this if you don't have
+Python already installed.
+
+34
+00:01:56.060 --> 00:01:57.640
+Other than that its exactly the same.
+
+35
+00:01:57.640 --> 00:01:58.140
+So
+
+36
+00:02:00.110 --> 00:02:02.680
+now we begin another hurry up and wait
+process.
+
+37
+00:02:04.890 --> 00:02:06.550
+Click Finish.
+
+38
+00:02:06.550 --> 00:02:09.490
+You can clear this list or just close the
+downloads window.
+
+39
+00:02:09.490 --> 00:02:12.600
+Now let's bring up a command prompt
+window.
+
+40
+00:02:14.790 --> 00:02:16.785
+Navigate over to Python 27.
+
+41
+00:02:19.010 --> 00:02:20.720
+Lets run a little test program.
+
+42
+00:02:20.720 --> 00:02:23.120
+Were going to call this hello world .py.
+
+43
+00:02:23.120 --> 00:02:25.400
+Python programs have to have a py
+extension.
+
+44
+00:02:25.400 --> 00:02:25.900
+And
+
+45
+00:02:30.700 --> 00:02:33.460
+all we're going to do is display hello
+world on the screen.
+
+46
+00:02:33.460 --> 00:02:35.220
+So we'll do it just like so.
+
+47
+00:02:36.700 --> 00:02:39.350
+So it's print open parent, open quote,
+hello
+
+48
+00:02:39.350 --> 00:02:43.040
+comma world, exclamation point, close
+quote, close parent.
+
+49
+00:02:44.180 --> 00:02:44.880
+Save and exit.
+
+50
+00:02:46.730 --> 00:02:52.691
+And then to run it, you're gonna type
+Python hello world py.
+
+51
+00:02:52.691 --> 00:02:56.950
+And if hello world appears on your screen
+as it did on mine, then everything
+
+52
+00:02:56.950 --> 00:03:00.660
+is successful, if not, uninstall and
+reinstall,
+
+53
+00:03:00.660 --> 00:03:02.820
+but you should not have had any problem.
+
+54
+00:03:02.820 --> 00:03:05.520
+So that wraps up this lesson on installing
+Python.
+
+55
+00:03:05.520 --> 00:03:08.480
+Remember, you also wanna go back and
+install Python 3,
+
+56
+00:03:08.480 --> 00:03:12.210
+although you can follow my instructions
+with Python 27, also.
+
+57
+00:03:12.210 --> 00:03:14.260
+But after you've done that, you're ready
+to move
+
+58
+00:03:14.260 --> 00:03:17.370
+to the next lesson where we discuss the
+Python interpreter.
+

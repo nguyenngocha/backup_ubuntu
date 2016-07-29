@@ -1,0 +1,317 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:05.510
+In this lesson, we're going to begin to
+see how to build a class by writing a
+
+2
+00:00:05.510 --> 00:00:10.450
+constructor that will initialize the
+fields of the name
+
+3
+00:00:10.450 --> 00:00:13.060
+class, which is an example we're going to
+use.
+
+4
+00:00:13.060 --> 00:00:17.650
+So we'll start off by opening a file
+called name.py.
+
+5
+00:00:17.650 --> 00:00:19.970
+In this particular example, we're going to
+put the
+
+6
+00:00:19.970 --> 00:00:22.960
+class definition in the same file as our
+working program.
+
+7
+00:00:22.960 --> 00:00:25.170
+But later on in the course, I'll show you
+
+8
+00:00:25.170 --> 00:00:28.660
+how to move the class definition into its
+own module.
+
+9
+00:00:28.660 --> 00:00:29.880
+The first thing we do when we want to
+
+10
+00:00:29.880 --> 00:00:32.780
+define a class is use the keyword class
+followed
+
+11
+00:00:32.780 --> 00:00:34.910
+by the name of the class, and in this
+
+12
+00:00:34.910 --> 00:00:38.060
+case, the name is name, which is kind of
+confusing.
+
+13
+00:00:38.060 --> 00:00:41.480
+Class names are usually capitalized to
+distinguish them from
+
+14
+00:00:41.480 --> 00:00:45.920
+other types of objects, such as variables
+and objects.
+
+15
+00:00:45.920 --> 00:00:47.910
+Following the class name, we have a colon.
+
+16
+00:00:47.910 --> 00:00:49.950
+In most other languages, you have to
+declare
+
+17
+00:00:49.950 --> 00:00:53.520
+variables first, and in another language
+such as Java,
+
+18
+00:00:53.520 --> 00:00:56.150
+right here, we would clear the fields that
+
+19
+00:00:56.150 --> 00:00:59.680
+are going to define the attributes of our
+class.
+
+20
+00:00:59.680 --> 00:01:03.110
+But because we don't have to declare
+variables in advance
+
+21
+00:01:03.110 --> 00:01:07.050
+in Python, we can move straight to
+something called the constructor.
+
+22
+00:01:07.050 --> 00:01:09.660
+The constructor is used to perform
+
+23
+00:01:09.660 --> 00:01:12.800
+something called instantiation, which is
+just a
+
+24
+00:01:12.800 --> 00:01:17.000
+fancy way of saying we want to create an
+instance of a class.
+
+25
+00:01:17.000 --> 00:01:21.770
+Each instance of a class is a separate
+object, and those objects have to
+
+26
+00:01:21.770 --> 00:01:24.640
+be created or instantiated, and it's the
+
+27
+00:01:24.640 --> 00:01:28.370
+job of the constructor to perform that
+instantiation.
+
+28
+00:01:28.370 --> 00:01:31.360
+A constructor is a function, although in
+object
+
+29
+00:01:31.360 --> 00:01:35.210
+oriented programming terms, we don't talk
+about functions.
+
+30
+00:01:35.210 --> 00:01:37.560
+We call functions methods.
+
+31
+00:01:37.560 --> 00:01:41.950
+So constructors will be the first type
+methods that we learn how to create.
+
+32
+00:01:41.950 --> 00:01:44.080
+The constructor is a special type of
+
+33
+00:01:44.080 --> 00:01:46.827
+method, and it has its own particular
+name.
+
+34
+00:01:46.827 --> 00:01:47.620
+It's called init.
+
+35
+00:01:47.620 --> 00:01:51.140
+And notice that it's preceded by
+
+36
+00:01:51.140 --> 00:01:55.358
+two underscores and followed by two
+underscores.
+
+37
+00:01:55.358 --> 00:02:01.480
+It's a built-in name, in other words, and
+we use it exactly like that.
+
+38
+00:02:01.480 --> 00:02:05.930
+After the constructor name, we provide a
+parameter list, and
+
+39
+00:02:05.930 --> 00:02:09.880
+the parameter list always starts of with
+the parameter named self.
+
+40
+00:02:09.880 --> 00:02:14.300
+Self refers to the current instance of a
+class, and
+
+41
+00:02:14.300 --> 00:02:17.220
+I'll explain more about what that means in
+a minute.
+
+42
+00:02:17.220 --> 00:02:21.860
+Then we follow that with the parameters
+that will define the rest of our
+
+43
+00:02:21.860 --> 00:02:26.300
+class, in this case, the name, so that
+will be first, middle and last.
+
+44
+00:02:26.300 --> 00:02:31.670
+Then in the body of the constructor, we'll
+write: self.first equals first, because
+
+45
+00:02:31.670 --> 00:02:36.989
+our first field, the first piece of data
+to define a name is the first name.
+
+46
+00:02:38.030 --> 00:02:44.168
+We use self again because it's talking
+about the current object, the current
+
+47
+00:02:44.168 --> 00:02:50.470
+instance, and we say self.middle equals
+middle and self.last equals last.
+
+48
+00:02:50.470 --> 00:02:54.886
+Now, before we go on to define anymore of
+the class, which you'll do in the coming
+
+49
+00:02:54.886 --> 00:03:00.260
+lessons, let me go ahead and show you how
+we would create an instance of the class.
+
+50
+00:03:00.260 --> 00:03:01.860
+We just provide a variable name.
+
+51
+00:03:02.920 --> 00:03:05.650
+Then we use the class name, followed by an
+open
+
+52
+00:03:05.650 --> 00:03:10.980
+parenthesis, followed by the data that
+makes up the name.
+
+53
+00:03:10.980 --> 00:03:13.130
+Now getting back to the keyword self.
+
+54
+00:03:13.130 --> 00:03:18.170
+When this code is executed, self is
+referring
+
+55
+00:03:18.170 --> 00:03:21.140
+to the current object, which will be
+aName.
+
+56
+00:03:21.140 --> 00:03:27.090
+And in Python, you almost always have to
+reference a field using self.
+
+57
+00:03:27.090 --> 00:03:30.210
+So, we write self.first, meaning we're
+talking
+
+58
+00:03:30.210 --> 00:03:33.438
+about the first name of this object.
+
+59
+00:03:33.438 --> 00:03:38.338
+And then, self.middle is talking about the
+middle name of
+
+60
+00:03:38.338 --> 00:03:43.434
+the aName object, and then self.last
+references, the last
+
+61
+00:03:43.434 --> 00:03:49.260
+name of this current object when this line
+is being executed.
+
+62
+00:03:49.260 --> 00:03:53.770
+If we created another object, then at the
+
+63
+00:03:53.770 --> 00:03:58.990
+time of instantiations, self is referring
+to that object.
+
+64
+00:03:58.990 --> 00:04:03.780
+So that wraps up this lesson on
+constructors and fields.
+
+65
+00:04:03.780 --> 00:04:06.080
+And we're ready to move on to the next
+lesson, where we're
+
+66
+00:04:06.080 --> 00:04:09.600
+going to talk about how to write methods
+to go with our class.
+

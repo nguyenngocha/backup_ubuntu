@@ -1,0 +1,202 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:03.680
+In this lesson we're going to look at
+another variation
+
+2
+00:00:03.680 --> 00:00:08.040
+of the try except, and that's called the
+try except finally.
+
+3
+00:00:08.040 --> 00:00:12.760
+The finally clause is used to execute code
+that you want to run
+
+4
+00:00:12.760 --> 00:00:17.460
+no matter what else happens throughout the
+rest of the exception handling process.
+
+5
+00:00:17.460 --> 00:00:18.830
+And in this lesson, I'm just going to
+
+6
+00:00:18.830 --> 00:00:23.000
+demonstrate, through code that we don't
+actually run, how
+
+7
+00:00:23.000 --> 00:00:25.535
+the finally can be coded, and then in the
+
+8
+00:00:25.535 --> 00:00:29.020
+exercise, we'll see how it actually works
+in practice.
+
+9
+00:00:29.020 --> 00:00:31.300
+So first of all, let's look at the general
+form,
+
+10
+00:00:31.300 --> 00:00:34.640
+so we have the try clause, which we're
+familiar with.
+
+11
+00:00:35.780 --> 00:00:38.400
+Then we have the accept clause, which of
+course
+
+12
+00:00:38.400 --> 00:00:41.060
+we know to use when we have an exception
+thrown.
+
+13
+00:00:41.060 --> 00:00:44.030
+And then below that we can put finally,
+
+14
+00:00:44.030 --> 00:00:46.290
+and the finally clause will also include a
+set
+
+15
+00:00:46.290 --> 00:00:49.650
+of statements that we want to execute no
+matter
+
+16
+00:00:49.650 --> 00:00:53.120
+what else happens and right before the
+program ends.
+
+17
+00:00:53.120 --> 00:00:56.100
+The most common use for that is to
+
+18
+00:00:56.100 --> 00:01:00.370
+do things like close files and release
+resources.
+
+19
+00:01:00.370 --> 00:01:02.550
+Let me show you in code how it might look.
+
+20
+00:01:03.560 --> 00:01:09.400
+We'll call this program finally.py.
+
+21
+00:01:09.400 --> 00:01:11.100
+So in our try, we might have something
+
+22
+00:01:11.100 --> 00:01:13.530
+like, prompt the user to enter a file
+name.
+
+23
+00:01:14.760 --> 00:01:18.250
+Get the name from the user and then open a
+file.
+
+24
+00:01:20.570 --> 00:01:23.110
+Let's say we open it to write, because
+when we open it
+
+25
+00:01:23.110 --> 00:01:26.030
+to write then it makes a difference if
+it's closed or not.
+
+26
+00:01:26.030 --> 00:01:31.958
+In the except we might have something like
+print, error with file,
+
+27
+00:01:31.958 --> 00:01:37.324
+print enter a file name, and then try to
+open the file again.
+
+28
+00:01:37.324 --> 00:01:44.320
+And, then in the finally clause we might
+include the function to close the file.
+
+29
+00:01:44.320 --> 00:01:49.760
+One place where this might come into play
+is if we had a function such as display.
+
+30
+00:01:49.760 --> 00:01:52.290
+We're gonna save that for the exercise.
+
+31
+00:01:52.290 --> 00:01:57.700
+This instead of putting it in the except,
+let's put it in the try, so
+
+32
+00:01:57.700 --> 00:02:02.770
+that if something happens in the program
+some place then even if we
+
+33
+00:02:02.770 --> 00:02:07.700
+go through the exception, or if we don't
+get through the exception we'll still
+
+34
+00:02:07.700 --> 00:02:12.540
+close the file no matter what so we might
+also put the function call.
+
+35
+00:02:12.540 --> 00:02:17.790
+Here also, the point is this, is that a
+finally clause, is used to make
+
+36
+00:02:17.790 --> 00:02:23.880
+sure that some statements are executed, no
+matter what else happens in the program.
+
+37
+00:02:23.880 --> 00:02:25.868
+So we're going to stop this lesson right
+here, and as I
+
+38
+00:02:25.868 --> 00:02:28.620
+mentioned before in the exercise, we'll
+
+39
+00:02:28.620 --> 00:02:31.890
+demonstrate a more complete use of
+finally.
+
+40
+00:02:31.890 --> 00:02:35.220
+And let's move on to the last lesson of
+the chapter, where we
+
+41
+00:02:35.220 --> 00:02:36.860
+talk about how to create our own
+
+42
+00:02:36.860 --> 00:02:40.550
+exceptions using something called the
+raise statement.
+

@@ -1,0 +1,179 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:04.830
+The last data structure we're going to
+talk about in this chapter is the Tuple.
+
+2
+00:00:04.830 --> 00:00:06.290
+That's spelled T-U-P-L E.
+
+3
+00:00:06.290 --> 00:00:11.600
+Let's open up the interactive shell so we
+can look at how tuples work.
+
+4
+00:00:11.600 --> 00:00:16.340
+First thing you should know, is that a
+tuple is very, very similar to a list.
+
+5
+00:00:16.340 --> 00:00:22.970
+We use a different delimiter, parentheses
+rather than brackets, to signify a tuple.
+
+6
+00:00:22.970 --> 00:00:26.640
+And all the operations of tuples, are
+similar
+
+7
+00:00:26.640 --> 00:00:29.280
+to the ones of list, except for one
+detail.
+
+8
+00:00:29.280 --> 00:00:32.580
+And that's the fact that a tuple, is an
+immutable object.
+
+9
+00:00:32.580 --> 00:00:34.700
+Which means, that every time you change
+
+10
+00:00:34.700 --> 00:00:38.160
+a tuple, you're actually creating another
+copy.
+
+11
+00:00:38.160 --> 00:00:42.440
+Unlike a list, where you can change it, as
+they say in place.
+
+12
+00:00:42.440 --> 00:00:44.650
+But with a tuple, if I make a change
+
+13
+00:00:44.650 --> 00:00:47.270
+to the tuple, then that just creates
+another copy.
+
+14
+00:00:47.270 --> 00:00:52.360
+So tuples are a little less efficient than
+lists, because of that immutability,
+
+15
+00:00:52.360 --> 00:00:55.370
+other than that they're exactly the same
+as you'll see through this example.
+
+16
+00:00:55.370 --> 00:00:58.570
+So the first thing we'll do is create an
+empty tuple, and we do
+
+17
+00:00:58.570 --> 00:01:01.462
+that by writing a open and closed
+
+18
+00:01:01.462 --> 00:01:04.698
+parenthesis alone, that represents an
+empty tuple.
+
+19
+00:01:04.698 --> 00:01:08.430
+If we wanna store some data in a tuple, we
+put the data
+
+20
+00:01:08.430 --> 00:01:13.290
+inside the parenthesis, delimited by
+commas, just like we do for a list.
+
+21
+00:01:13.290 --> 00:01:19.090
+To access a tuple element, we use
+indexing, just like we do for lists.
+
+22
+00:01:20.710 --> 00:01:24.410
+We can return the length of a tuple with
+the length function.
+
+23
+00:01:25.720 --> 00:01:27.940
+We can get a slice.
+
+24
+00:01:27.940 --> 00:01:34.830
+Using slice notation, we can concatinate
+two tuples together to form a new
+
+25
+00:01:34.830 --> 00:01:41.190
+tuple, using the concatination operator,
+which actually is just the plus sign.
+
+26
+00:01:42.470 --> 00:01:47.430
+And then finally, let's create a string
+tuple.
+
+27
+00:01:48.750 --> 00:01:53.120
+We can use the multiplication operator to
+replicate a tuple.
+
+28
+00:01:54.350 --> 00:01:57.310
+So, as you can see, all the operations
+that we performed
+
+29
+00:01:57.310 --> 00:02:01.260
+on lists earlier in this chapter, we can
+also perform on tuples.
+
+30
+00:02:01.260 --> 00:02:04.380
+There is one thing we can do with a tuple
+that we can't do with a list.
+
+31
+00:02:04.380 --> 00:02:06.620
+And that's using it as a key in a
+
+32
+00:02:06.620 --> 00:02:10.600
+dictionary, and we'll look at that later
+in the course.
+
+33
+00:02:10.600 --> 00:02:12.640
+But for now, we're going to end this
+
+34
+00:02:12.640 --> 00:02:14.930
+lesson on tuples, because we've covered
+all of the
+
+35
+00:02:14.930 --> 00:02:17.870
+basics of how tuples are formed, and we'll
+
+36
+00:02:17.870 --> 00:02:20.910
+come back to the subject later in the
+course.
+
+37
+00:02:20.910 --> 00:02:24.070
+But now we're ready to move on to the
+exercises for this chapter.
+

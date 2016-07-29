@@ -1,0 +1,206 @@
+WEBVTT
+
+1
+00:00:01.090 --> 00:00:04.715
+In this lesson we're going to talk about
+iterators and dictionaries.
+
+2
+00:00:04.715 --> 00:00:08.223
+Let's start out first by creating a new
+program.
+
+3
+00:00:08.223 --> 00:00:11.923
+We'll call it dictioniter.py.
+
+4
+00:00:11.923 --> 00:00:14.993
+And let's create a very simple dictionary.
+
+5
+00:00:14.993 --> 00:00:16.820
+Let's just call it grades.
+
+6
+00:00:16.820 --> 00:00:21.390
+And we'll set a couple of names and
+grades, just
+
+7
+00:00:21.390 --> 00:00:24.880
+to have something to work with, and that's
+good enough.
+
+8
+00:00:25.910 --> 00:00:32.090
+Normally when we write a loop through a
+dictionary, we use the following pattern.
+
+9
+00:00:32.090 --> 00:00:38.220
+We pull out each key out of the keys
+function, and print the key
+
+10
+00:00:38.220 --> 00:00:44.790
+and then the value associated with the key
+by indexing into the dictionary, like so.
+
+11
+00:00:44.790 --> 00:00:47.540
+So let's run this real quick.
+
+12
+00:00:47.540 --> 00:00:50.652
+[BLANK_AUDIO]
+
+13
+00:00:50.652 --> 00:00:52.750
+So there are three names and grades.
+
+14
+00:00:52.750 --> 00:00:55.199
+[BLANK_AUDIO].
+
+15
+00:00:55.199 --> 00:00:59.390
+And you might think it's kind of hard for
+a dictionary
+
+16
+00:00:59.390 --> 00:01:04.030
+to have an iterator, since we have a more
+complex data type.
+
+17
+00:01:04.030 --> 00:01:07.400
+Since we have dictionary with key value
+pairs.
+
+18
+00:01:07.400 --> 00:01:10.200
+And it's true that we can't have an
+iterator return both the
+
+19
+00:01:10.200 --> 00:01:14.770
+key and the value, but we can have an
+iterator into the keys.
+
+20
+00:01:14.770 --> 00:01:17.630
+So let me demonstrate how that works.
+
+21
+00:01:17.630 --> 00:01:19.005
+So we'll create an interator.
+
+22
+00:01:19.005 --> 00:01:23.055
+We can create an iterator into the
+dictionary by calling the iter
+
+23
+00:01:23.055 --> 00:01:27.865
+function with our dictionary as the
+argument, and assign it to a variable.
+
+24
+00:01:27.865 --> 00:01:29.230
+In this case we use i t.
+
+25
+00:01:29.230 --> 00:01:34.839
+Then we can write print, next, it, and
+let's see what that gives us.
+
+26
+00:01:38.470 --> 00:01:41.470
+So it gives us the first key, Clayton.
+
+27
+00:01:41.470 --> 00:01:48.120
+So if we do it again, it should give us
+the second key, or the next key.
+
+28
+00:01:48.120 --> 00:01:50.568
+Remember, dictionaries, you don't really
+talk about
+
+29
+00:01:50.568 --> 00:01:52.132
+order in terms of first and second.
+
+30
+00:01:52.132 --> 00:01:54.278
+All right, so there are our first two
+keys.
+
+31
+00:01:54.278 --> 00:01:57.353
+And if we ran it again, we get the third
+key.
+
+32
+00:01:57.353 --> 00:01:58.950
+And we don't need to do that.
+
+33
+00:01:58.950 --> 00:02:04.290
+So what that means, having an iterator
+into the keys, is that we can write a for
+
+34
+00:02:04.290 --> 00:02:08.620
+loop where we just access each key in the
+
+35
+00:02:08.620 --> 00:02:12.840
+dictionary, and we can then access all the
+values.
+
+36
+00:02:12.840 --> 00:02:13.890
+So let's run this again.
+
+37
+00:02:16.480 --> 00:02:19.792
+So there you see, we have the same result
+as
+
+38
+00:02:19.792 --> 00:02:23.804
+we got in this loop using a less complex
+statement.
+
+39
+00:02:23.804 --> 00:02:26.384
+Which means of course that your program is
+easier to
+
+40
+00:02:26.384 --> 00:02:30.030
+read, and that it's probably going to be
+more efficient.
+
+41
+00:02:30.030 --> 00:02:33.650
+So, that's how iterators work with
+dictionaries.
+
+42
+00:02:33.650 --> 00:02:37.830
+Now we're ready to move to the last lesson
+in this chapter, where we're going
+
+43
+00:02:37.830 --> 00:02:40.770
+to look at just a miscellaneous group
+
+44
+00:02:40.770 --> 00:02:43.370
+of other iterators that are available in
+python.
+

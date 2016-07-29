@@ -1,0 +1,304 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:03.850
+This exercise is gonna be a two part
+exercise where
+
+2
+00:00:03.850 --> 00:00:08.870
+I demonstrate the usefulness of nested
+functions and lexical scoping.
+
+3
+00:00:08.870 --> 00:00:11.800
+In the first part of the exercise we're
+going to implement an
+
+4
+00:00:11.800 --> 00:00:15.830
+algorithm for Newton's method for finding
+the square root of a number.
+
+5
+00:00:15.830 --> 00:00:19.460
+And we're gonna do that by creating
+several functions and then
+
+6
+00:00:19.460 --> 00:00:23.080
+use those together to find the square root
+of a number.
+
+7
+00:00:23.080 --> 00:00:28.480
+Then I'm gonna demonstrate how to use
+nested functions to build the same result
+
+8
+00:00:28.480 --> 00:00:33.820
+in one function definition; where we have
+multiple functions defined inside one.
+
+9
+00:00:33.820 --> 00:00:35.500
+So let's get started with part one of
+
+10
+00:00:35.500 --> 00:00:41.289
+the exercise, we're gonna call this
+program chap13ex1.py.
+
+11
+00:00:42.820 --> 00:00:44.400
+So the first thing we need to do is import
+the
+
+12
+00:00:44.400 --> 00:00:49.030
+math library, because we're going to use
+a, function from that library.
+
+13
+00:00:49.030 --> 00:00:53.160
+FABS for finding the absolute value of a
+number here in just a minute.
+
+14
+00:00:53.160 --> 00:00:57.470
+So the first thing we're going to do is
+define a square function.
+
+15
+00:00:57.470 --> 00:01:00.750
+A very simple function that simply squares
+a number.
+
+16
+00:01:01.860 --> 00:01:04.780
+Now we'll begin our square root
+definition.
+
+17
+00:01:04.780 --> 00:01:10.850
+So we're gonna call it S-Q-R-T, and we
+will immediately call what we're
+
+18
+00:01:10.850 --> 00:01:16.650
+going to term a helper function, square
+root helper, with a couple of parameters.
+
+19
+00:01:16.650 --> 00:01:18.930
+We'll explain those here in just a minute.
+
+20
+00:01:18.930 --> 00:01:21.750
+Square root helper is where we do most of
+the work of the function.
+
+21
+00:01:23.170 --> 00:01:25.835
+I'm going to explain how Newton's method
+works
+
+22
+00:01:25.835 --> 00:01:28.687
+as I go through the definition of these
+functions.
+
+23
+00:01:28.687 --> 00:01:33.787
+So the first thing we do is we're going to
+provide a guess at what the square root of
+
+24
+00:01:33.787 --> 00:01:36.337
+the number is and then we're going to see
+
+25
+00:01:36.337 --> 00:01:39.770
+if that guess is close enough to the
+actual root.
+
+26
+00:01:39.770 --> 00:01:43.802
+And we're going to do that by defining a
+tolerance
+
+27
+00:01:43.802 --> 00:01:47.527
+or a threshold for how close the guess can
+be.
+
+28
+00:01:47.527 --> 00:01:49.800
+You'll see how that works in just a
+moment.
+
+29
+00:01:49.800 --> 00:01:51.780
+So if we're close enough on our guess then
+we're
+
+30
+00:01:51.780 --> 00:01:56.220
+going to return the guess otherwise, we're
+going to recursively call
+
+31
+00:01:56.220 --> 00:02:00.800
+the function again with a new guess that's
+improved and
+
+32
+00:02:00.800 --> 00:02:04.470
+the number that we're trying to find the
+square root of.
+
+33
+00:02:04.470 --> 00:02:06.614
+So the next thing we have to do is define
+
+34
+00:02:06.614 --> 00:02:10.760
+our closeEnough function, and here's where
+we look at the threshold.
+
+35
+00:02:11.800 --> 00:02:16.060
+So, we call the absolute value function f
+absolute value.
+
+36
+00:02:16.060 --> 00:02:18.190
+It stands for floating point absolute
+value.
+
+37
+00:02:19.650 --> 00:02:25.350
+And to do that, we square the guess minus
+the number we're looking for.
+
+38
+00:02:25.350 --> 00:02:32.153
+To see if that's within a tolerance or a
+threshold of 0.001.
+
+39
+00:02:32.153 --> 00:02:36.761
+And we're saying if we're within that
+difference between our guess and the
+
+40
+00:02:36.761 --> 00:02:42.600
+number we're trying to find the square
+root of, then we've come close enough.
+
+41
+00:02:42.600 --> 00:02:44.410
+And so then to improve our guess.
+
+42
+00:02:45.590 --> 00:02:49.820
+We're going to return the average of the
+guess
+
+43
+00:02:49.820 --> 00:02:53.560
+and the second argument x divided by the
+guess.
+
+44
+00:02:53.560 --> 00:02:55.720
+And you'll see how that works in a minute.
+
+45
+00:02:55.720 --> 00:03:01.080
+And then we define average of x and y to
+take the sum
+
+46
+00:03:01.080 --> 00:03:03.859
+of x and y divide by two which of course
+is the average.
+
+47
+00:03:05.000 --> 00:03:11.408
+So, these are the different functions that
+make up our Newton's Method algorithm,
+
+48
+00:03:11.408 --> 00:03:17.297
+and we can test it on a very simple square
+root problem, the square root of 9.
+
+49
+00:03:17.297 --> 00:03:23.070
+So, let's save, then call our program.
+
+50
+00:03:25.350 --> 00:03:29.100
+And so there you see how close we got to
+the actual value.
+
+51
+00:03:30.415 --> 00:03:32.863
+Let's call it up again.
+
+52
+00:03:32.863 --> 00:03:38.737
+Let's try a different square root.
+
+53
+00:03:38.737 --> 00:03:42.820
+And now let's try it again.
+
+54
+00:03:42.820 --> 00:03:44.704
+Okay so.
+
+55
+00:03:44.704 --> 00:03:46.620
+Let's bring the code back up.
+
+56
+00:03:46.620 --> 00:03:47.880
+Here's a set of functions that
+
+57
+00:03:47.880 --> 00:03:51.280
+together will implement the Newton's
+Method algorithm.
+
+58
+00:03:51.280 --> 00:03:54.630
+So in the next part of this exercise what
+we're going to do is, is
+
+59
+00:03:54.630 --> 00:04:00.720
+we're going to see how we can put most of
+these definitions inside one function.
+
+60
+00:04:00.720 --> 00:04:03.640
+Using nested functions and lexical
+scoping.
+
+61
+00:04:03.640 --> 00:04:07.590
+So that we have a more compact and
+efficient function definition.
+
+62
+00:04:07.590 --> 00:04:09.920
+And we're going to immediately see how to
+do
+
+63
+00:04:09.920 --> 00:04:12.260
+that here in part two which is coming up
+next.
+

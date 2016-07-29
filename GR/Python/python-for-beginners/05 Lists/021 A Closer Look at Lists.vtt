@@ -1,0 +1,450 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.668
+[MUSIC]
+
+2
+00:00:04.668 --> 00:00:05.280
+Welcome back.
+
+3
+00:00:05.280 --> 00:00:08.343
+We are going to start looking at lists in
+a bit more
+
+4
+00:00:08.343 --> 00:00:13.110
+detail now, and looking at different
+things that we can do with them.
+
+5
+00:00:13.110 --> 00:00:15.990
+So if we just get started by writing a
+list.
+
+6
+00:00:15.990 --> 00:00:17.850
+And remember a list is square brackets.
+
+7
+00:00:18.880 --> 00:00:23.874
+And I'm going to do the list up to number
+11.
+
+8
+00:00:26.610 --> 00:00:29.550
+And then what we're going to do is just
+create a
+
+9
+00:00:29.550 --> 00:00:34.926
+print function and inside of there we're
+just going to, print out
+
+10
+00:00:34.926 --> 00:00:39.120
+the list, and if we just run this you'll
+see that
+
+11
+00:00:39.120 --> 00:00:42.470
+we get the list exactly as we wrote it,
+which is different.
+
+12
+00:00:42.470 --> 00:00:46.330
+Again, to remember, the dictionary which
+prints out in
+
+13
+00:00:46.330 --> 00:00:52.220
+the hashed order rather than in the,
+declared order.
+
+14
+00:00:52.220 --> 00:00:57.980
+So what we can do from here, is, if we use
+square brackets within the call.
+
+15
+00:00:57.980 --> 00:01:00.790
+So, list, and then put the square brackets
+in there.
+
+16
+00:01:00.790 --> 00:01:03.550
+We can put, information between the two
+square brackets, which
+
+17
+00:01:03.550 --> 00:01:07.110
+tell us what sort of information
+[INAUDIBLE] we wish to retrieve.
+
+18
+00:01:07.110 --> 00:01:10.950
+So we can retrieve a certain item using
+the index value.
+
+19
+00:01:10.950 --> 00:01:13.570
+So remember it starts at zero, one, two.
+
+20
+00:01:13.570 --> 00:01:16.340
+So the second index item is actually the
+third value,
+
+21
+00:01:16.340 --> 00:01:17.880
+and as you can see, we get number three
+out.
+
+22
+00:01:19.010 --> 00:01:21.320
+Well, we can change that to say number
+four and
+
+23
+00:01:21.320 --> 00:01:25.410
+we'll get the number five out, cuz that's
+the fourth index.
+
+24
+00:01:25.410 --> 00:01:28.200
+However, we can also use negative numbers,
+and a negative
+
+25
+00:01:28.200 --> 00:01:31.410
+number would take it from the right-hand
+side and go backward.
+
+26
+00:01:31.410 --> 00:01:34.840
+So negative one gives us 11.
+
+27
+00:01:34.840 --> 00:01:40.590
+And negative four will give us, eight, and
+so on.
+
+28
+00:01:40.590 --> 00:01:43.800
+So, you can, if, if you want to go from
+the right-hand side to the
+
+29
+00:01:43.800 --> 00:01:48.530
+left, you could do it that way, which is
+probably the easiest way of doing it.
+
+30
+00:01:48.530 --> 00:01:51.350
+However, there is another way in which you
+can do it.
+
+31
+00:01:51.350 --> 00:01:57.310
+And you can work out the length of the
+list, by using a function called len.
+
+32
+00:01:57.310 --> 00:02:01.930
+And what that does, just remove that line,
+what that
+
+33
+00:02:01.930 --> 00:02:03.780
+does is it tells us that the length is 11.
+
+34
+00:02:03.780 --> 00:02:09.000
+So, from there, you could create a
+variable called length, is equal
+
+35
+00:02:09.000 --> 00:02:13.970
+to length of list, and if you wanted the
+fourth from the end, you could do
+
+36
+00:02:17.850 --> 00:02:23.940
+list and we'll do length minus four, and
+that will give us number eight again.
+
+37
+00:02:23.940 --> 00:02:28.170
+So that's exactly the same as doing minus
+four as it was before.
+
+38
+00:02:28.170 --> 00:02:32.100
+However, this time it allows you to see
+what is actually happening.
+
+39
+00:02:32.100 --> 00:02:35.070
+Now I would recommend that you did it the
+first way, where you just
+
+40
+00:02:35.070 --> 00:02:38.430
+put a minus four in straight away, cuz
+you'll get the exact same answer.
+
+41
+00:02:38.430 --> 00:02:40.960
+However, it receives one less function
+call,
+
+42
+00:02:40.960 --> 00:02:43.420
+which obviously makes it a little bit
+faster.
+
+43
+00:02:44.860 --> 00:02:48.580
+And also it's better coding, because you
+can actually,
+
+44
+00:02:48.580 --> 00:02:50.430
+it's more condensed so you can fit more
+than
+
+45
+00:02:50.430 --> 00:02:52.490
+one line so if something goes over
+multiple lines
+
+46
+00:02:52.490 --> 00:02:55.040
+it usually gets harder to read and so on.
+
+47
+00:02:55.040 --> 00:02:59.120
+So I would recommend that you did, you
+learn and you recognize minus numbers
+
+48
+00:02:59.120 --> 00:03:02.280
+go from the right to left and positive
+numbers go from left to right.
+
+49
+00:03:02.280 --> 00:03:07.730
+And left to right starts zero, but, from
+right to left starts at minus one.
+
+50
+00:03:09.150 --> 00:03:12.370
+Ok, so the next thing that we can do is we
+can add something called a
+
+51
+00:03:12.370 --> 00:03:16.180
+sequence which is, if we wanted to select,
+
+52
+00:03:16.180 --> 00:03:18.540
+all the numbers from number two to number
+four.
+
+53
+00:03:18.540 --> 00:03:21.800
+So, this is the start and this is the stop
+value.
+
+54
+00:03:21.800 --> 00:03:24.890
+However, the stop value is one more than
+where it will actually stop.
+
+55
+00:03:24.890 --> 00:03:26.490
+So this will stop at index three.
+
+56
+00:03:26.490 --> 00:03:31.360
+So you get three and four, so [UNKNOWN]
+one, two, three.
+
+57
+00:03:31.360 --> 00:03:35.680
+Now notice number four hasn't actually
+been outputted, and the reason
+
+58
+00:03:35.680 --> 00:03:39.890
+for that is simply because it stops at the
+value beforehand.
+
+59
+00:03:41.410 --> 00:03:45.939
+Now there is a way to get around that, and
+that is simply just to put it as a value
+
+60
+00:03:45.939 --> 00:03:48.379
+higher than what it is that you want to
+stop
+
+61
+00:03:48.379 --> 00:03:51.139
+and that allows you to now get up to value
+four.
+
+62
+00:03:51.139 --> 00:03:57.590
+However there's also, the possibility that
+that might confuse you, so just remember
+
+63
+00:03:57.590 --> 00:04:02.898
+that it goes from, to one value higher
+than what it is that you've written.
+
+64
+00:04:02.898 --> 00:04:06.110
+I mean, one value less than what it is
+that you've written.
+
+65
+00:04:06.110 --> 00:04:08.429
+Now because we have to start and stop, we
+
+66
+00:04:08.429 --> 00:04:12.590
+also have a third option, which is called
+the stepper.
+
+67
+00:04:12.590 --> 00:04:14.740
+And the stepper, you just add another
+colon,
+
+68
+00:04:14.740 --> 00:04:18.020
+and you can choose how much to step by.
+
+69
+00:04:18.020 --> 00:04:21.610
+So I'm just gonna change this value here
+to eight.
+
+70
+00:04:21.610 --> 00:04:24.950
+And if we run this, you'll see we get
+three, five and seven.
+
+71
+00:04:24.950 --> 00:04:27.700
+So we start at number two, which is this
+index here.
+
+72
+00:04:27.700 --> 00:04:30.740
+Then we skip two, and this is our next
+value.
+
+73
+00:04:30.740 --> 00:04:33.470
+And we skip two, and this is our next
+value.
+
+74
+00:04:33.470 --> 00:04:39.090
+So if we were to change this to ten, for
+example, then we get it run up to nine.
+
+75
+00:04:40.630 --> 00:04:45.120
+And that is the general idea of how this,
+stepper works.
+
+76
+00:04:45.120 --> 00:04:47.540
+However, you do have the option, if you
+don't want to
+
+77
+00:04:47.540 --> 00:04:52.070
+declare the where to stop, you can have
+two colon colon two.
+
+78
+00:04:52.070 --> 00:04:55.550
+And that will start at number two and skip
+its way,
+
+79
+00:04:55.550 --> 00:04:59.340
+or step its way up two, until it reaches
+the end.
+
+80
+00:04:59.340 --> 00:05:02.260
+Or if you don't want to start at any
+particular index and you want
+
+81
+00:05:02.260 --> 00:05:07.230
+to start at the beginning, you can do it
+that way, with colon, colon, two.
+
+82
+00:05:07.230 --> 00:05:11.100
+And just, so there are multiple options
+which you have here.
+
+83
+00:05:11.100 --> 00:05:15.195
+And again, you can do colon four colon
+two, which
+
+84
+00:05:15.195 --> 00:05:18.948
+will get it from the beginning up to,
+index four.
+
+85
+00:05:18.948 --> 00:05:24.390
+Well, one less than index four, which is
+index three, and so on.
+
+86
+00:05:24.390 --> 00:05:29.340
+So this is the general idea in which you
+can use sequences to select certain ranges
+
+87
+00:05:29.340 --> 00:05:35.100
+of data within your actual list, which is
+considerably
+
+88
+00:05:35.100 --> 00:05:39.720
+useful when you come to using these to
+store information about, say,
+
+89
+00:05:39.720 --> 00:05:44.400
+a user or about a program what you're
+using like a settings file.
+
+90
+00:05:44.400 --> 00:05:49.176
+It is useful to be able to use sequences
+and to be able to use the start and stop.
+
+91
+00:05:49.176 --> 00:05:52.038
+So thank you for watching, and I'll see
+you in the next video.
+
+92
+00:05:52.038 --> 00:05:57.249
+[MUSIC]
+

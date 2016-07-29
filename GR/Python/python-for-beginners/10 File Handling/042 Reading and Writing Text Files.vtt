@@ -1,0 +1,737 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.164
+[MUSIC]
+
+2
+00:00:05.164 --> 00:00:08.870
+Hello, and in this video, I will be
+showing you how you write a text file.
+
+3
+00:00:08.870 --> 00:00:10.220
+Because we've all seen how you read a
+
+4
+00:00:10.220 --> 00:00:13.660
+text file, and to write it is slightly
+different.
+
+5
+00:00:13.660 --> 00:00:17.190
+So, we've got the same basic text file set
+up here with the four lines in.
+
+6
+00:00:17.190 --> 00:00:20.620
+And we're just going to read this and then
+write it into a different text file.
+
+7
+00:00:20.620 --> 00:00:24.530
+Now that is not usually what you'd want to
+do this with; however, this
+
+8
+00:00:24.530 --> 00:00:30.090
+is just to explain how you actually will
+go about writing a text file.
+
+9
+00:00:30.090 --> 00:00:34.120
+So, we're going to call, an input which is
+going to
+
+10
+00:00:34.120 --> 00:00:39.860
+be the file which were fetching which is
+text.txt, so .text.txt.
+
+11
+00:00:39.860 --> 00:00:42.210
+And even though we read last time.
+
+12
+00:00:42.210 --> 00:00:44.000
+And we didn't need to put the second
+parameter in
+
+13
+00:00:44.000 --> 00:00:47.960
+this time cuz we're going to use two
+different file handlers.
+
+14
+00:00:47.960 --> 00:00:49.420
+We are going to put it in.
+
+15
+00:00:49.420 --> 00:00:53.800
+And that isn't required, it just makes it
+easier for us to
+
+16
+00:00:53.800 --> 00:00:58.500
+differentiate the two, and see them
+visually as to what difference to have.
+
+17
+00:00:58.500 --> 00:01:00.110
+So input and output.
+
+18
+00:01:00.110 --> 00:01:02.240
+And with r and w.
+
+19
+00:01:02.240 --> 00:01:03.820
+Rfor w and so.
+
+20
+00:01:03.820 --> 00:01:05.750
+R for input and w for output.
+
+21
+00:01:06.810 --> 00:01:11.200
+There are six of these which are r, w, a,
+r plus rt and rb.
+
+22
+00:01:12.460 --> 00:01:18.480
+Now what we are going to be doing in this
+video is going to be looking at r and w.
+
+23
+00:01:18.480 --> 00:01:21.030
+Which is to read and write respectively.
+
+24
+00:01:22.470 --> 00:01:25.770
+But the a is for append, r plus is to read
+
+25
+00:01:25.770 --> 00:01:28.380
+and write, but that one is not really
+recommended that you use
+
+26
+00:01:28.380 --> 00:01:32.520
+it because what that will do is make it so
+that
+
+27
+00:01:32.520 --> 00:01:37.460
+it is more likely more, more possible for
+something to go wrong.
+
+28
+00:01:37.460 --> 00:01:40.390
+For example, if you were to output to a
+file instead of.
+
+29
+00:01:41.480 --> 00:01:43.980
+To to this green for example the network
+
+30
+00:01:43.980 --> 00:01:47.020
+probably do wipe out that file and start
+again.
+
+31
+00:01:47.020 --> 00:01:48.820
+And you lose all the data that was within
+it.
+
+32
+00:01:49.840 --> 00:01:52.610
+And then is rt and rb which is to read
+
+33
+00:01:52.610 --> 00:01:55.910
+and text, and to read binary and
+respectably as well.
+
+34
+00:01:57.130 --> 00:02:00.120
+But, we are fixing in just r and w for
+read and write.
+
+35
+00:02:01.450 --> 00:02:03.350
+So, after we opened.
+
+36
+00:02:03.350 --> 00:02:07.290
+The two files, now one of them you'll
+notice doesn't actually exist.
+
+37
+00:02:07.290 --> 00:02:10.690
+We go to our file area, and refresh this,
+you'll
+
+38
+00:02:10.690 --> 00:02:13.360
+see that it is not actually in this area,
+and that
+
+39
+00:02:13.360 --> 00:02:15.580
+means that we're going to create it when
+we write
+
+40
+00:02:15.580 --> 00:02:18.980
+to, and file that doesn't exist, it just
+creates the file.
+
+41
+00:02:20.640 --> 00:02:22.960
+If we write to a file that does exist,
+then it wipes
+
+42
+00:02:22.960 --> 00:02:25.850
+out all the data that was in it and
+recreates a file.
+
+43
+00:02:25.850 --> 00:02:28.340
+And that is why people use append because
+it adds it to the end
+
+44
+00:02:28.340 --> 00:02:32.960
+of the file which is to use the letter a
+as a second parameter.
+
+45
+00:02:32.960 --> 00:02:35.810
+Now we're just going to set this up the
+same way we had the last one set up.
+
+46
+00:02:35.810 --> 00:02:42.260
+So for line in file, okay in input and
+we're just going to do print and
+
+47
+00:02:42.260 --> 00:02:48.220
+we're going to print into line and we're
+going to do end equals and then the blank.
+
+48
+00:02:48.220 --> 00:02:49.260
+Now if we run this.
+
+49
+00:02:50.680 --> 00:02:52.160
+You'll see, we got the four lines.
+
+50
+00:02:52.160 --> 00:02:56.030
+And if we refresh over here, we get a
+new.txt opened.
+
+51
+00:02:56.030 --> 00:02:57.960
+If we open that file, there's nothing
+actually in here.
+
+52
+00:02:57.960 --> 00:03:01.550
+And the reason for that is because we're
+printing this to the screen.
+
+53
+00:03:01.550 --> 00:03:03.040
+To not print it to the screen we need to
+
+54
+00:03:03.040 --> 00:03:06.650
+add another parameter which is file is
+equal to output.
+
+55
+00:03:06.650 --> 00:03:09.300
+And that tells it that we want to save it
+to a file.
+
+56
+00:03:09.300 --> 00:03:11.890
+Now if we run this again and we open this
+file.
+
+57
+00:03:14.100 --> 00:03:15.800
+So it we need to refresh first.
+
+58
+00:03:15.800 --> 00:03:16.370
+There we go.
+
+59
+00:03:16.370 --> 00:03:21.930
+We get all four lines input, inputted the
+way in which we had it read.
+
+60
+00:03:21.930 --> 00:03:24.050
+So those two files are exactly the same
+now.
+
+61
+00:03:24.050 --> 00:03:29.740
+So that is how you write to something
+within Python.
+
+62
+00:03:29.740 --> 00:03:35.810
+Now there is something else in which you
+might and most likely will use more often.
+
+63
+00:03:35.810 --> 00:03:38.860
+And that is to read something which is
+bigger than.
+
+64
+00:03:38.860 --> 00:03:44.210
+The actual you might not want to do it per
+line because it's such a big file.
+
+65
+00:03:44.210 --> 00:03:47.920
+And you'll see over here in my file area,
+and you'll notice
+
+66
+00:03:47.920 --> 00:03:54.440
+also within your source files which you
+can download that we have bigfile.
+
+67
+00:03:54.440 --> 00:03:58.950
+Now bigfile contains 32,000 lines, I
+believe.
+
+68
+00:03:58.950 --> 00:04:00.180
+Okay, 30,178 lines.
+
+69
+00:04:00.180 --> 00:04:05.150
+And so that is quite a lot of lines,
+obviously.
+
+70
+00:04:05.150 --> 00:04:07.200
+And that is quite a lot of data.
+
+71
+00:04:07.200 --> 00:04:12.750
+It amounts to it being 9.3 million bytes,
+which
+
+72
+00:04:12.750 --> 00:04:15.840
+is a considerable amount for just a text
+file.
+
+73
+00:04:15.840 --> 00:04:18.590
+And all this data is just nothing, really.
+
+74
+00:04:18.590 --> 00:04:19.459
+It doesn't matter as such.
+
+75
+00:04:20.990 --> 00:04:22.580
+But what we come to with this is we
+
+76
+00:04:22.580 --> 00:04:24.360
+can read it in chunks beginning at just
+one line.
+
+77
+00:04:24.360 --> 00:04:27.830
+Because if we read it line by line it
+would take forever to ready it.
+
+78
+00:04:27.830 --> 00:04:32.790
+So what we can do is we can set it up to
+be read based on a buffer.
+
+79
+00:04:32.790 --> 00:04:36.570
+So if we just do buffer size, and I'll
+make that 100,000.
+
+80
+00:04:38.540 --> 00:04:40.660
+And then we do an inf file.
+
+81
+00:04:42.990 --> 00:04:49.530
+And that have that as open, and we open,
+it's called bigfile.txt, and
+
+82
+00:04:49.530 --> 00:04:54.190
+we want to read that file, and we have the
+output, actually call that input, sorry.
+
+83
+00:04:56.450 --> 00:04:59.626
+And output and we're gonna have that
+
+84
+00:04:59.626 --> 00:05:05.490
+open newbigfile.txt and that's going to be
+write.
+
+85
+00:05:05.490 --> 00:05:09.120
+Now what I'm going to do here is I'm not
+going
+
+86
+00:05:09.120 --> 00:05:13.420
+to have it write all 9 million and, 9.3
+million bios.
+
+87
+00:05:13.420 --> 00:05:16.030
+We could have it write the first 500,000,
+for example.
+
+88
+00:05:16.030 --> 00:05:19.570
+Or actually first million bytes.
+
+89
+00:05:19.570 --> 00:05:26.510
+And so what we will do here is, I'll do,
+bufferLimit is equal to 1 million.
+
+90
+00:05:28.620 --> 00:05:34.800
+And so we can now create a while loop,
+because unfortunately.
+
+91
+00:05:34.800 --> 00:05:38.290
+I thought they wouldn't work because we
+hae to have it condition.
+
+92
+00:05:38.290 --> 00:05:39.650
+Because we're doing it based on the
+buffer.
+
+93
+00:05:39.650 --> 00:05:42.720
+We have to check when the buffer has
+reached a certain limit.
+
+94
+00:05:42.720 --> 00:05:48.420
+And so, what we're going to do here is
+we're just going to, to create
+
+95
+00:05:51.440 --> 00:05:55.760
+use the while loop on the buffer, which we
+need to create.
+
+96
+00:05:55.760 --> 00:05:57.670
+Switch is going to contain
+
+97
+00:06:00.420 --> 00:06:05.770
+input dot read and now we're going to call
+it buffer size.
+
+98
+00:06:05.770 --> 00:06:06.930
+So that will read the first 100,000 bytes.
+
+99
+00:06:06.930 --> 00:06:10.410
+And, we're going to have a bloop there,
+
+100
+00:06:13.490 --> 00:06:14.190
+sorry.
+
+101
+00:06:14.190 --> 00:06:18.930
+Len for butter, len buffer is what we use
+if we go all the way to zero.
+
+102
+00:06:18.930 --> 00:06:21.525
+So, we're not going to use that what we
+are going to use, is going to use.
+
+103
+00:06:21.525 --> 00:06:27.325
+Buffer limit
+
+104
+00:06:27.325 --> 00:06:31.750
+is greater than 0.
+
+105
+00:06:31.750 --> 00:06:37.920
+And then whenever we go through this loop,
+we'll do bufferlimit.
+
+106
+00:06:37.920 --> 00:06:41.490
+Minus buffer, is equal to buffer limit
+
+107
+00:06:43.960 --> 00:06:45.730
+minus buffer size.
+
+108
+00:06:46.840 --> 00:06:50.480
+So, what that will do, is make it so it
+
+109
+00:06:50.480 --> 00:06:53.960
+goes from 1 million and works it's way
+down to zero.
+
+110
+00:06:53.960 --> 00:07:01.050
+Once it's reached zero then it will stop
+at that and it won't write any more.
+
+111
+00:07:01.050 --> 00:07:02.330
+Minus.
+
+112
+00:07:02.330 --> 00:07:08.520
+So we now need to do output.writebuffer
+
+113
+00:07:08.520 --> 00:07:12.410
+and then we need to print and we'll just
+print
+
+114
+00:07:12.410 --> 00:07:18.170
+a full stop just to, so we can see if
+something is actually happening.
+
+115
+00:07:18.170 --> 00:07:23.280
+And, then, we just put the end of this
+equal to
+
+116
+00:07:23.280 --> 00:07:27.590
+just a blank line, or blank space, will
+have scape lines.
+
+117
+00:07:27.590 --> 00:07:31.260
+Now, if we rung this pop up page, you'll
+see, that
+
+118
+00:07:31.260 --> 00:07:33.140
+was really quick, and we didn't get time
+to see it.
+
+119
+00:07:33.140 --> 00:07:36.080
+But we did one of this at time of one,
+two, three, four, five,
+
+120
+00:07:36.080 --> 00:07:39.890
+six, seven, eight, all the way to ten, but
+if we refresh this page again.
+
+121
+00:07:41.410 --> 00:07:44.090
+And open this file, you'll see that whilst
+we do
+
+122
+00:07:44.090 --> 00:07:46.510
+have quite a lot of lines in it still, if
+I
+
+123
+00:07:46.510 --> 00:07:49.610
+was to go to properties, you'll see that
+there's 1
+
+124
+00:07:49.610 --> 00:07:52.610
+million bytes exactly, which is what we
+specified it to be.
+
+125
+00:07:54.500 --> 00:07:56.410
+So, that is how you would limit,
+
+126
+00:07:58.910 --> 00:08:01.460
+reading and writing based on a buffer.
+
+127
+00:08:01.460 --> 00:08:03.000
+And I like I said, if you wanted to do
+
+128
+00:08:03.000 --> 00:08:08.380
+this all the way until it was at the
+beginning so
+
+129
+00:08:08.380 --> 00:08:11.620
+it's gonna be an exact replica that we
+just create
+
+130
+00:08:11.620 --> 00:08:15.180
+a buffer and do it while len is equal to
+buffer.
+
+131
+00:08:15.180 --> 00:08:18.800
+And we can delete this line and run it
+again.
+
+132
+00:08:20.430 --> 00:08:23.570
+And now this file has changed.
+
+133
+00:08:23.570 --> 00:08:26.260
+If we refresh this, and get the Properties
+again,
+
+134
+00:08:29.260 --> 00:08:33.930
+then what we can see, is that, is now,
+ooh, that's not right.
+
+135
+00:08:36.070 --> 00:08:39.730
+Okay, that appears to have added it on to
+the end of the previous file.
+
+136
+00:08:39.730 --> 00:08:42.780
+That's perfectly fine, not too sure why
+it's done it.
+
+137
+00:08:42.780 --> 00:08:44.280
+Because we haven't told it to append.
+
+138
+00:08:45.616 --> 00:08:52.815
+[BLANK_AUDIO]
+
+139
+00:08:52.815 --> 00:08:53.040
+Oh, right.
+
+140
+00:08:53.040 --> 00:08:53.830
+Of course.
+
+141
+00:08:53.830 --> 00:08:53.970
+Right.
+
+142
+00:08:53.970 --> 00:08:56.690
+The reason why it's done that is because
+we've got it in an infinite loop.
+
+143
+00:08:56.690 --> 00:08:59.000
+We aren't actually changing the buffer
+size.
+
+144
+00:08:59.000 --> 00:09:06.108
+So we need to do here, is we to do buffer
+is equal to input.readbuffersize,
+
+145
+00:09:06.108 --> 00:09:09.230
+so that is currently within it infinitely,
+so that should probably stop that.
+
+146
+00:09:10.970 --> 00:09:12.050
+And if run this again.
+
+147
+00:09:14.370 --> 00:09:16.630
+You'll see, that that is now no longer
+running.
+
+148
+00:09:16.630 --> 00:09:18.310
+The stop button there is no longer there.
+
+149
+00:09:18.310 --> 00:09:22.340
+And if we refresh this again, and
+
+150
+00:09:22.340 --> 00:09:26.020
+then look at properties, you'll see that
+there's
+
+151
+00:09:26.020 --> 00:09:31.550
+9 million, wait 9.3 million values, which
+is exactly the same as the previous one.
+
+152
+00:09:31.550 --> 00:09:34.070
+So, what we had to do there, which I
+forgot to do.
+
+153
+00:09:34.070 --> 00:09:38.720
+Is to tell the buffer again to decrease in
+size.
+
+154
+00:09:38.720 --> 00:09:42.910
+And, the reason why we're doing that is
+because the value
+
+155
+00:09:42.910 --> 00:09:47.310
+is going to change slightly, based on what
+we have already read.
+
+156
+00:09:48.400 --> 00:09:52.108
+So thank you for watching, and I will see
+you in the next video.
+
+157
+00:09:52.108 --> 00:09:57.929
+[MUSIC]
+

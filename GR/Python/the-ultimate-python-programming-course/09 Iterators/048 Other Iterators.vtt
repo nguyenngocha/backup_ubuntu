@@ -1,0 +1,362 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:03.530
+For this last lesson of the chapter, we're
+going to look
+
+2
+00:00:03.530 --> 00:00:07.640
+at how to create iterators for other
+sequence types in python.
+
+3
+00:00:07.640 --> 00:00:10.090
+So we're gonna start this program, we're
+gonna call it otheriters.py.
+
+4
+00:00:10.090 --> 00:00:16.660
+So the first thing we're gonna do is we're
+going to build a range.
+
+5
+00:00:16.660 --> 00:00:19.370
+So we'll write numbers equals range.
+
+6
+00:00:19.370 --> 00:00:22.170
+One to ten, which means we have to go one
+to 11.
+
+7
+00:00:22.170 --> 00:00:25.480
+Not that we're going to iterate over that
+whole range.
+
+8
+00:00:25.480 --> 00:00:29.760
+But just demonstrate how to create an
+iterator for a range and to be
+
+9
+00:00:29.760 --> 00:00:33.330
+quite honest it's no different than we've
+done for any other type of objects.
+
+10
+00:00:33.330 --> 00:00:39.500
+So if I wanna create the iterator I'll
+write IT equals iter numbers.
+
+11
+00:00:39.500 --> 00:00:45.230
+And now if I want to see the first number
+in the range, I just type print next IT.
+
+12
+00:00:45.230 --> 00:00:46.970
+Let's save the file.
+
+13
+00:00:46.970 --> 00:00:48.561
+Then we'll run it.
+
+14
+00:00:48.561 --> 00:00:49.710
+[BLANK_AUDIO].
+
+15
+00:00:49.710 --> 00:00:50.210
+And
+
+16
+00:00:52.830 --> 00:00:55.060
+my first number in the range is one and we
+can
+
+17
+00:00:55.060 --> 00:01:00.240
+continue on, just like we would with any
+other sequence type.
+
+18
+00:01:00.240 --> 00:01:06.210
+So ranges work exactly like a list or
+dictionary, for example.
+
+19
+00:01:06.210 --> 00:01:07.780
+Lets look at one more example.
+
+20
+00:01:09.040 --> 00:01:14.220
+In Python we have the ability to import
+libraries that allow
+
+21
+00:01:14.220 --> 00:01:18.810
+us additional functionality than what is
+found with just the regular.
+
+22
+00:01:18.810 --> 00:01:22.550
+Built in Python functions, for example.
+
+23
+00:01:22.550 --> 00:01:27.380
+One of the commands I want to work with
+will return a sequence of data, and it's
+
+24
+00:01:27.380 --> 00:01:30.030
+called P Open and what it does is,
+
+25
+00:01:30.030 --> 00:01:34.480
+it allows you to run a operating system
+command.
+
+26
+00:01:34.480 --> 00:01:37.350
+Like a directory and then it will return
+
+27
+00:01:37.350 --> 00:01:41.710
+that data into an object and that object
+iterable.
+
+28
+00:01:41.710 --> 00:01:43.910
+So what I'd like to do is we're going to
+first
+
+29
+00:01:43.910 --> 00:01:48.150
+import the library, import OS, that gives
+us access to P Open.
+
+30
+00:01:49.290 --> 00:01:54.350
+Then I wanna say files is equal to
+OS.popen,
+
+31
+00:01:54.350 --> 00:01:59.140
+and then we provide the command that we
+want to.
+
+32
+00:01:59.140 --> 00:01:59.290
+Run.
+
+33
+00:01:59.290 --> 00:02:01.380
+In this case I want to do a directory
+
+34
+00:02:01.380 --> 00:02:05.350
+of all the python programs in the current
+working directory.
+
+35
+00:02:05.350 --> 00:02:09.620
+So, I'm going to type, dir star dot py.
+
+36
+00:02:09.620 --> 00:02:12.740
+And that will return all files that have
+the py extension.
+
+37
+00:02:12.740 --> 00:02:18.440
+So, then once I do that I can create an
+iterator on that object, just like so.
+
+38
+00:02:18.440 --> 00:02:23.730
+And then I can display the objects in that
+sequence.
+
+39
+00:02:23.730 --> 00:02:26.250
+Now, the problem is, is that there's gonna
+be a lot of
+
+40
+00:02:26.250 --> 00:02:29.710
+blank lines because, if you'll notice what
+happens when we get a directory.
+
+41
+00:02:29.710 --> 00:02:31.155
+Let me run that for you real quick.
+
+42
+00:02:31.155 --> 00:02:35.030
+Lets scroll back up to the top.
+
+43
+00:02:35.030 --> 00:02:36.930
+You'll see that there's a couple lines
+
+44
+00:02:36.930 --> 00:02:40.450
+of just basic information about the hard
+drive.
+
+45
+00:02:40.450 --> 00:02:42.570
+And then we have a little heading for the
+directory
+
+46
+00:02:42.570 --> 00:02:46.370
+of C colon python three zero and then the
+files.
+
+47
+00:02:46.370 --> 00:02:50.080
+So I probably want to display one, two,
+three, four, five,
+
+48
+00:02:50.080 --> 00:02:53.390
+six or seven lines just to get the first
+files to appear.
+
+49
+00:02:55.000 --> 00:02:56.170
+Let's go back to the code.
+
+50
+00:02:56.170 --> 00:03:00.470
+Let's copy this, then let's paste it in a
+few times.
+
+51
+00:03:00.470 --> 00:03:02.300
+Let's say six or seven times.
+
+52
+00:03:02.300 --> 00:03:06.150
+And I could have a loop to do this.
+
+53
+00:03:06.150 --> 00:03:08.050
+If I was going to do it in a loop, I might
+as
+
+54
+00:03:08.050 --> 00:03:12.130
+well do it in a four loop, which I could
+very easily do.
+
+55
+00:03:12.130 --> 00:03:13.490
+Let's look at that first.
+
+56
+00:03:13.490 --> 00:03:14.330
+I'll tell you what.
+
+57
+00:03:14.330 --> 00:03:14.930
+Let's erase this.
+
+58
+00:03:14.930 --> 00:03:15.653
+We'll come back to it.
+
+59
+00:03:15.653 --> 00:03:16.080
+[BLANK_AUDIO]
+
+60
+00:03:16.080 --> 00:03:19.758
+Now let's run this code.
+
+61
+00:03:19.758 --> 00:03:21.750
+[BLANK_AUDIO].
+
+62
+00:03:21.750 --> 00:03:22.250
+Another
+
+63
+00:03:25.700 --> 00:03:26.320
+screen.
+
+64
+00:03:30.020 --> 00:03:31.280
+There are my files.
+
+65
+00:03:32.800 --> 00:03:34.460
+And so what I did was, I ran a system
+
+66
+00:03:34.460 --> 00:03:39.860
+command, and then used the for-loop to
+display the data.
+
+67
+00:03:39.860 --> 00:03:43.400
+So now let's do it with an explicit
+iterator instead, we'll put
+
+68
+00:03:43.400 --> 00:03:46.020
+those back in, and that's not going to
+show the whole directory.
+
+69
+00:03:48.290 --> 00:03:52.760
+Lets clear the screen, and so there we get
+our first view.
+
+70
+00:03:52.760 --> 00:03:55.180
+You notice it is putting a blank line so
+we can
+
+71
+00:03:55.180 --> 00:04:01.640
+fix that by adding, end equals empty
+string to our display.
+
+72
+00:04:01.640 --> 00:04:04.480
+But I'm not gonna add that to all these
+lines.
+
+73
+00:04:04.480 --> 00:04:08.730
+So here we've seen two other sequences of
+data that are iterable, in other
+
+74
+00:04:08.730 --> 00:04:11.220
+words we can create an explicit iterator
+
+75
+00:04:11.220 --> 00:04:15.280
+and traverse through the sequence using
+that iterator.
+
+76
+00:04:15.280 --> 00:04:19.950
+And with that, we're ready to move on to
+the exercise for this chapter, where I'm
+
+77
+00:04:19.950 --> 00:04:22.480
+going to demonstrate how to use iterators
+with
+
+78
+00:04:22.480 --> 00:04:25.930
+yet one more data structure, and that's
+the tuple.
+

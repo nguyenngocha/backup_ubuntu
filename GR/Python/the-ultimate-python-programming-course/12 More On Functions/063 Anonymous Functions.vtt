@@ -1,0 +1,349 @@
+WEBVTT
+
+1
+00:00:01.080 --> 00:00:04.830
+In this lesson, we're going to talk about
+the concept of the anonymous function.
+
+2
+00:00:04.830 --> 00:00:09.120
+So let's get started by first opening up a
+new Python program.
+
+3
+00:00:09.120 --> 00:00:13.490
+So we're talking about anonymous
+functions, and
+
+4
+00:00:13.490 --> 00:00:16.200
+an anonymous function is a function that
+
+5
+00:00:16.200 --> 00:00:21.400
+doesn't have a name per say, but is based
+on whats called a lambda form.
+
+6
+00:00:21.400 --> 00:00:25.620
+Now, I'm not gonna go into all the details
+of what lambda refers to.
+
+7
+00:00:25.620 --> 00:00:27.790
+There's a whole history, going back all
+the way to
+
+8
+00:00:27.790 --> 00:00:31.188
+the formation of the lambda calculus back
+in the '30s.
+
+9
+00:00:31.188 --> 00:00:35.840
+But, let us just say that functional
+programming languages such as LISP and
+
+10
+00:00:35.840 --> 00:00:43.870
+SCHEME and ML have all used lambda as a
+means of creating functions for years.
+
+11
+00:00:43.870 --> 00:00:47.110
+To understand how a anonymous function
+works, I
+
+12
+00:00:47.110 --> 00:00:49.630
+need to provide you with a simple example.
+
+13
+00:00:49.630 --> 00:00:52.000
+You remember from the last lesson that we
+
+14
+00:00:52.000 --> 00:00:57.620
+discovered that functions are full objects
+in Python.
+
+15
+00:00:57.620 --> 00:01:01.250
+So for example, just to refresh your
+memory, we
+
+16
+00:01:01.250 --> 00:01:06.190
+created a square function, which we've
+seen many times.
+
+17
+00:01:06.190 --> 00:01:08.830
+and then we assigned it to a variable,
+like so.
+
+18
+00:01:09.840 --> 00:01:15.150
+What we could do, to save us some of the
+work of creating a function, if we're
+
+19
+00:01:15.150 --> 00:01:17.350
+going to assign it to a variable, is
+
+20
+00:01:17.350 --> 00:01:21.440
+we can create the function as an anonymous
+function.
+
+21
+00:01:21.440 --> 00:01:23.770
+So, let me demonstrate how to do that.
+
+22
+00:01:23.770 --> 00:01:27.140
+We'll use the word square as our variable
+name.
+
+23
+00:01:27.140 --> 00:01:29.600
+So, to create an anonymous function we
+first use
+
+24
+00:01:29.600 --> 00:01:34.970
+the word lambda followed by the parameter
+that we want.
+
+25
+00:01:34.970 --> 00:01:36.955
+In this case we're just going to have one
+parameter.
+
+26
+00:01:36.955 --> 00:01:38.510
+We'' use x.
+
+27
+00:01:38.510 --> 00:01:43.060
+That's a very common parameter naming
+technique with
+
+28
+00:01:43.060 --> 00:01:46.830
+anonymous functions is to use single
+letter parameters.
+
+29
+00:01:46.830 --> 00:01:51.440
+Followed by a colon, followed by an
+expression.
+
+30
+00:01:51.440 --> 00:01:52.750
+And that's very important.
+
+31
+00:01:52.750 --> 00:01:55.210
+Let me space that a little bit better.
+
+32
+00:01:56.480 --> 00:02:01.060
+And that's a very important restriction on
+anonymous functions in Python.
+
+33
+00:02:02.170 --> 00:02:06.630
+You can only create an anonymous function
+that consists of an expression.
+
+34
+00:02:06.630 --> 00:02:08.890
+If this were an advanced course, I could
+show you how
+
+35
+00:02:08.890 --> 00:02:14.940
+to get around that restriction using some
+fairly obscure programming techniques,
+
+36
+00:02:14.940 --> 00:02:18.660
+but, for the purposes of this course,
+we'll stick with the
+
+37
+00:02:18.660 --> 00:02:23.200
+idea that a anonymous function can only
+consist of an expression.
+
+38
+00:02:23.200 --> 00:02:27.960
+And so for example, x times x, is a
+perfectly good expression.
+
+39
+00:02:27.960 --> 00:02:32.460
+And that becomes the body of the anonymous
+function.
+
+40
+00:02:32.460 --> 00:02:34.550
+So now where we want to use the function,
+
+41
+00:02:34.550 --> 00:02:38.200
+we use the variable name instead and pass
+the parameter.
+
+42
+00:02:38.200 --> 00:02:40.890
+So for example, we can say print square
+
+43
+00:02:40.890 --> 00:02:44.900
+two, and that should display the number
+four.
+
+44
+00:02:44.900 --> 00:02:45.500
+Let's save it.
+
+45
+00:02:47.790 --> 00:02:54.110
+Run the code, and there's four, and so
+that's really all you need to know.
+
+46
+00:02:54.110 --> 00:02:56.530
+Now, just seeing this example doesn't
+really
+
+47
+00:02:56.530 --> 00:03:01.240
+show you the proper use of anonymous
+functions.
+
+48
+00:03:01.240 --> 00:03:04.100
+One place an anonymous function can come
+in very handy is with
+
+49
+00:03:04.100 --> 00:03:08.160
+the map high order function that we looked
+at in the last lesson.
+
+50
+00:03:08.160 --> 00:03:11.000
+So for example, it's coming out this code.
+
+51
+00:03:11.000 --> 00:03:15.890
+Let's go back to the example I gave you in
+the last lesson.
+
+52
+00:03:15.890 --> 00:03:18.700
+We had a list of numbers, and we wanted
+
+53
+00:03:18.700 --> 00:03:22.640
+to create a new list of those numbers
+squared.
+
+54
+00:03:22.640 --> 00:03:25.190
+So what I can do right here instead of
+going
+
+55
+00:03:25.190 --> 00:03:28.610
+to the trouble of creating the square
+function I can just.
+
+56
+00:03:28.610 --> 00:03:34.490
+Use this anonymous function to square each
+number in the list.
+
+57
+00:03:34.490 --> 00:03:36.700
+And by doing that I've saved myself the
+trouble
+
+58
+00:03:36.700 --> 00:03:39.940
+of having to define square, and I can
+replace
+
+59
+00:03:39.940 --> 00:03:42.810
+that with this anonymous function, and put
+it in
+
+60
+00:03:42.810 --> 00:03:45.340
+the same location as the first argument to
+map.
+
+61
+00:03:45.340 --> 00:03:49.880
+So let's display the result to see that it
+works.
+
+62
+00:03:49.880 --> 00:03:50.830
+And then we'll save it.
+
+63
+00:03:54.160 --> 00:03:55.400
+Run our code.
+
+64
+00:03:55.400 --> 00:03:57.550
+And there's our numbers squared.
+
+65
+00:03:59.510 --> 00:04:03.660
+There are of course more advanced uses of
+anonymous functions,
+
+66
+00:04:03.660 --> 00:04:06.370
+but they go a bit beyond the scope of this
+course.
+
+67
+00:04:06.370 --> 00:04:08.440
+So, what I'd like to do now is.
+
+68
+00:04:08.440 --> 00:04:12.330
+Leave the topic of anonymous functions per
+se.
+
+69
+00:04:12.330 --> 00:04:17.110
+And move on to a continuation of what we
+started with map.
+
+70
+00:04:17.110 --> 00:04:20.900
+And that's a discussion of higher order
+functions.
+
+71
+00:04:20.900 --> 00:04:25.540
+And the two others that we're going to
+look at are filter and reduce.
+
+72
+00:04:25.540 --> 00:04:27.140
+And we might look at map again also.
+
+73
+00:04:27.140 --> 00:04:30.230
+And we're gonna see those higher order
+functions in the next lesson.
+

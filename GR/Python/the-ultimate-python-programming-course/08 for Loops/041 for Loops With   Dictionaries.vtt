@@ -1,0 +1,236 @@
+WEBVTT
+
+1
+00:00:01.170 --> 00:00:05.450
+In this lesson, we're going to examine how
+to use the for loop with a dictionary.
+
+2
+00:00:05.450 --> 00:00:10.720
+So lets open up a new python program so we
+can review how dictionaries work.
+
+3
+00:00:10.720 --> 00:00:13.690
+So there's our program, fordict.py.
+
+4
+00:00:13.690 --> 00:00:16.570
+[BLANK_AUDIO]
+
+5
+00:00:16.570 --> 00:00:20.280
+So, a dictionary involves storing key
+value pairs.
+
+6
+00:00:20.280 --> 00:00:21.850
+So for example if I want to keep track of
+
+7
+00:00:21.850 --> 00:00:26.090
+a phone book, I might have a name and an
+extension.
+
+8
+00:00:26.090 --> 00:00:29.310
+And so I'll have as many names and
+extensions as I need.
+
+9
+00:00:29.310 --> 00:00:31.060
+I'm just going to do three for this
+example.
+
+10
+00:00:31.060 --> 00:00:33.770
+And we'll stop there.
+
+11
+00:00:33.770 --> 00:00:37.280
+And remember that dictionaries are
+delimited with curly braces.
+
+12
+00:00:37.280 --> 00:00:40.230
+An opening curly brace to begin the
+dictionary,
+
+13
+00:00:40.230 --> 00:00:43.270
+and a closing curly brace to close the
+dictionary.
+
+14
+00:00:44.500 --> 00:00:49.370
+If we want to display a value from a
+dictionary,
+
+15
+00:00:49.370 --> 00:00:52.850
+we have to index into that value with a
+key.
+
+16
+00:00:52.850 --> 00:00:56.720
+So, for example, if I wanna see Cynthia's
+extension, I have to
+
+17
+00:00:56.720 --> 00:01:03.160
+use Cynthia as the index into the
+dictionary to display her extension.
+
+18
+00:01:03.160 --> 00:01:04.220
+So, let's take a look at that.
+
+19
+00:01:04.220 --> 00:01:04.790
+We'll save it.
+
+20
+00:01:05.960 --> 00:01:07.240
+Bring the command window up.
+
+21
+00:01:10.100 --> 00:01:14.250
+And there we see that her extension is
+2356.
+
+22
+00:01:14.250 --> 00:01:21.160
+Also, remember that we can display both
+the keys
+
+23
+00:01:21.160 --> 00:01:27.890
+in a dictionary and the values using the
+keys and values function respectively.
+
+24
+00:01:27.890 --> 00:01:29.730
+So let's review how they work.
+
+25
+00:01:32.390 --> 00:01:38.040
+So the first list are my keys, and the
+second list contains my values.
+
+26
+00:01:38.040 --> 00:01:39.020
+Let's clear the screen.
+
+27
+00:01:41.340 --> 00:01:44.970
+So now we've seen how to do that, let's
+discuss
+
+28
+00:01:44.970 --> 00:01:49.600
+how we can use a for loop to display our
+dictionary.
+
+29
+00:01:49.600 --> 00:01:59.420
+We can write for key in numbers.keys and
+remember keys will return a list of keys.
+
+30
+00:01:59.420 --> 00:02:03.180
+So this becomes our sequence that then, we
+are going to
+
+31
+00:02:03.180 --> 00:02:07.680
+pull each key out and put it in the key
+variable.
+
+32
+00:02:07.680 --> 00:02:11.880
+We can say print numbers sub-key.
+
+33
+00:02:11.880 --> 00:02:14.780
+Let's make our output a little more
+reasonable.
+
+34
+00:02:15.780 --> 00:02:21.920
+We can say, key extension is, and then
+number sub-key.
+
+35
+00:02:21.920 --> 00:02:27.570
+And so, that should print out each name
+and
+
+36
+00:02:27.570 --> 00:02:32.200
+the value or the extension associated with
+that value.
+
+37
+00:02:32.200 --> 00:02:33.210
+And there we go.
+
+38
+00:02:33.210 --> 00:02:35.040
+Cynthia extension is 2356.
+
+39
+00:02:35.040 --> 00:02:37.640
+Raymond extension is 2345.
+
+40
+00:02:37.640 --> 00:02:41.985
+David extension is 2373.
+
+41
+00:02:43.910 --> 00:02:46.550
+So this was a very quick lesson, but it's
+
+42
+00:02:46.550 --> 00:02:50.400
+very useful because it's almost a given
+that when
+
+43
+00:02:50.400 --> 00:02:52.900
+you set up a dictionary you're gonna want
+to
+
+44
+00:02:52.900 --> 00:02:57.920
+display all the values in that dictionary
+based on keys.
+
+45
+00:02:57.920 --> 00:02:59.500
+And to do that all you have to do is set
+
+46
+00:02:59.500 --> 00:03:04.430
+up a very simple for loop where you
+sequence the keys
+
+47
+00:03:04.430 --> 00:03:08.150
+and then pull out each key into a variable
+and then
+
+48
+00:03:08.150 --> 00:03:12.420
+use it to display the value that's
+associated with the key.
+
+49
+00:03:12.420 --> 00:03:16.030
+So with that we're ready to move to the
+last lesson in this
+
+50
+00:03:16.030 --> 00:03:21.140
+chapter, and we're going to discuss how to
+use for loops with files.
+

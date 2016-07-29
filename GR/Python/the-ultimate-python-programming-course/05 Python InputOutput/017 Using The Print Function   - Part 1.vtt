@@ -1,0 +1,365 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:04.510
+In this chapter we're going to be looking
+at Python input, output.
+
+2
+00:00:04.510 --> 00:00:09.020
+Primarily, output being how do we print
+data to the screen,
+
+3
+00:00:09.020 --> 00:00:13.550
+and input being how do we receive data
+from the keyboard.
+
+4
+00:00:13.550 --> 00:00:17.710
+In the first lesson, we're going to look
+at simple uses of the print function.
+
+5
+00:00:17.710 --> 00:00:20.705
+Then in the second lesson we'll look at
+how to do print
+
+6
+00:00:20.705 --> 00:00:25.640
+re-directions so that we can print to a
+device other than the screen.
+
+7
+00:00:25.640 --> 00:00:28.290
+And then finally in the third lesson,
+we're going to look
+
+8
+00:00:28.290 --> 00:00:31.990
+at how to get data into our programs from
+the keyboard.
+
+9
+00:00:31.990 --> 00:00:33.580
+So with this first lesson we're going to
+use
+
+10
+00:00:33.580 --> 00:00:38.450
+the interactive shell to do some very
+simple printwork.
+
+11
+00:00:38.450 --> 00:00:40.010
+So we'll open that up with Python.
+
+12
+00:00:40.010 --> 00:00:42.490
+The first thing I wanna do is create a
+couple
+
+13
+00:00:42.490 --> 00:00:46.270
+of variables, and then to display the
+value of a variable,
+
+14
+00:00:46.270 --> 00:00:50.250
+we simply put that variable inside
+parenthesis and send that as
+
+15
+00:00:50.250 --> 00:00:53.980
+an argument to the print function and it
+prints the value.
+
+16
+00:00:56.130 --> 00:00:59.360
+So we can do that for really any type of
+data.
+
+17
+00:00:59.360 --> 00:01:02.710
+So if we created a list, like so.
+
+18
+00:01:04.210 --> 00:01:05.630
+As you can imagine, it works with any
+
+19
+00:01:05.630 --> 00:01:08.600
+type of data, or data structure that we
+provide.
+
+20
+00:01:08.600 --> 00:01:15.580
+And of course it works with literal's as
+well, as well as literal expressions
+
+21
+00:01:15.580 --> 00:01:19.710
+such as concatenation or arithmetic, and
+any
+
+22
+00:01:19.710 --> 00:01:21.577
+other type of expression that you can
+imagine.
+
+23
+00:01:22.840 --> 00:01:28.540
+You can also use the comma to print out
+the data as a tuple, like you see
+
+24
+00:01:28.540 --> 00:01:32.330
+right here where we've said print, word,
+comma, number,
+
+25
+00:01:32.330 --> 00:01:36.030
+and it printed hello and 100 inside a
+tuple.
+
+26
+00:01:36.030 --> 00:01:40.300
+You notice it's a tuple by the open and
+close parenthesis that you see there.
+
+27
+00:01:40.300 --> 00:01:47.090
+If you tried to print the same data, using
+concatenation, then you see a problem
+
+28
+00:01:47.090 --> 00:01:53.870
+because Python does not like you try to
+concatenate a int, to a string expression.
+
+29
+00:01:53.870 --> 00:01:59.760
+So what we needed to do right here, was we
+needed to use these string function,
+
+30
+00:01:59.760 --> 00:02:05.980
+str, to convert number to a string, and
+then it works just fine.
+
+31
+00:02:05.980 --> 00:02:09.550
+The only other example I wanna provide in
+this lesson,
+
+32
+00:02:09.550 --> 00:02:12.860
+because again, I don't wanna get into too
+many arcane details.
+
+33
+00:02:12.860 --> 00:02:17.140
+What we need to be able to do is just see
+how to print regular data.
+
+34
+00:02:17.140 --> 00:02:19.260
+We do, though, wanna look at one other
+
+35
+00:02:19.260 --> 00:02:23.260
+little more advanced topic, and that's
+format strings.
+
+36
+00:02:23.260 --> 00:02:24.850
+A lot of time you'll see that covered in
+
+37
+00:02:24.850 --> 00:02:27.620
+a chapter or section on strings, I decided
+to
+
+38
+00:02:27.620 --> 00:02:30.690
+save it for print since format strings
+really only
+
+39
+00:02:30.690 --> 00:02:33.410
+come into play when you're trying to print
+data.
+
+40
+00:02:33.410 --> 00:02:38.530
+So for example if we have some data like
+this, and we wanna display that
+
+41
+00:02:38.530 --> 00:02:43.413
+in one string, what we might do is create
+what is called a format string.
+
+42
+00:02:43.413 --> 00:02:47.960
+If you've done any C or C++ programming or
+even Java, although it's not so prevalent
+
+43
+00:02:47.960 --> 00:02:51.080
+in Java, you'll have probably worked with
+format
+
+44
+00:02:51.080 --> 00:02:53.640
+strings, especially if you've done any C
+programming.
+
+45
+00:02:53.640 --> 00:02:56.160
+So what we're going to do is we're going
+to create
+
+46
+00:02:56.160 --> 00:02:58.910
+a format string, and I'm gonna just give
+it a name,
+
+47
+00:02:58.910 --> 00:03:03.370
+and a format string will consist of
+different ways of telling
+
+48
+00:03:03.370 --> 00:03:06.940
+Python how to display data, in fact, what
+data is coming.
+
+49
+00:03:06.940 --> 00:03:10.266
+So here I am saying that the first piece
+of data is a string.
+
+50
+00:03:10.266 --> 00:03:13.900
+That's what the percent string sign is,
+and then I'm going to put
+
+51
+00:03:13.900 --> 00:03:16.745
+a colon because I want that to separate
+the name from the grade.
+
+52
+00:03:16.745 --> 00:03:20.458
+Then the next piece of data, again we
+bring with a percent sign, is going
+
+53
+00:03:20.458 --> 00:03:25.110
+to be a floating point number that I want
+to display to two decimal places.
+
+54
+00:03:25.110 --> 00:03:28.030
+So you see the percent point to f saying,
+it's
+
+55
+00:03:28.030 --> 00:03:31.940
+a floating point number and we wanna
+display two decimal points.
+
+56
+00:03:31.940 --> 00:03:34.375
+And that's all for the string, so we stop
+it there.
+
+57
+00:03:34.375 --> 00:03:38.880
+Then I use the percent sign, and then I
+say, what data do I want to provide?
+
+58
+00:03:38.880 --> 00:03:43.120
+Name and grade, and that becomes my
+record, and then if I
+
+59
+00:03:43.120 --> 00:03:48.380
+say print record, then it prints that data
+using the format string.
+
+60
+00:03:48.380 --> 00:03:51.310
+Format strings can get quite a bit more
+complex than this.
+
+61
+00:03:51.310 --> 00:03:55.100
+I wanted to show you the simplest example,
+and then you can certainly go to
+
+62
+00:03:55.100 --> 00:03:57.240
+the Python documentation if you want to
+see
+
+63
+00:03:57.240 --> 00:04:00.550
+more advanced examples of how format
+strings work.
+
+64
+00:04:00.550 --> 00:04:03.090
+We won't be working with format strings in
+
+65
+00:04:03.090 --> 00:04:05.600
+this course, other than to demonstrate it
+right here.
+
+66
+00:04:05.600 --> 00:04:09.950
+My goal here is to cover all the
+introductory material that you need and
+
+67
+00:04:09.950 --> 00:04:11.960
+a much more interested in processes of
+
+68
+00:04:11.960 --> 00:04:15.010
+computation rather than how to display
+data.
+
+69
+00:04:15.010 --> 00:04:17.820
+You can always go to the documentation to
+get some better
+
+70
+00:04:17.820 --> 00:04:22.840
+ideas about how to display the data once
+you've processed it correctly.
+
+71
+00:04:22.840 --> 00:04:26.340
+So that wraps up this lesson on the print
+function, and
+
+72
+00:04:26.340 --> 00:04:28.810
+we're ready to move to the second lesson
+where we going to
+
+73
+00:04:28.810 --> 00:04:33.180
+look at how to perform print redirection,
+where we send data, not
+
+74
+00:04:33.180 --> 00:04:36.500
+to the screen but to some other device,
+such as a file.
+

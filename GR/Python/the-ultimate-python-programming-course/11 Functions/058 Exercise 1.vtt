@@ -1,0 +1,318 @@
+WEBVTT
+
+1
+00:00:01.090 --> 00:00:04.840
+For this first exercise of the chapter,
+we're gonna write two functions.
+
+2
+00:00:04.840 --> 00:00:08.910
+One that computes the tax based on a gross
+amount.
+
+3
+00:00:08.910 --> 00:00:11.650
+And the second function will calculate a
+net
+
+4
+00:00:11.650 --> 00:00:16.340
+pay using the tax function we write
+previously.
+
+5
+00:00:16.340 --> 00:00:17.150
+So, let's get started.
+
+6
+00:00:17.150 --> 00:00:21.770
+We're gonna call this program
+chap11ex1.py.
+
+7
+00:00:21.770 --> 00:00:26.920
+So, the first thing we're going to do is
+write our tax function.
+
+8
+00:00:26.920 --> 00:00:29.186
+And in comments, I'm going to show you the
+tax table.
+
+9
+00:00:29.186 --> 00:00:35.320
+$0 through $240, the percentage tax is 0%.
+
+10
+00:00:35.320 --> 00:00:42.116
+$241 through $480, the tax rate is 15%.
+
+11
+00:00:42.116 --> 00:00:47.720
+And then $481 and greater, the tax rate is
+28%.
+
+12
+00:00:47.720 --> 00:00:51.870
+So, using that table, we can write the
+following function.
+
+13
+00:00:51.870 --> 00:00:54.190
+We're gonna call our function tax.
+
+14
+00:00:54.190 --> 00:00:55.640
+Our parameter will be amount.
+
+15
+00:00:55.640 --> 00:00:58.850
+And then we just write an if elif
+statement.
+
+16
+00:00:58.850 --> 00:01:03.800
+If amount is less than or equal to $240.
+
+17
+00:01:03.800 --> 00:01:09.750
+Return 0, elif amount greater than 240 and
+
+18
+00:01:09.750 --> 00:01:14.490
+amount less than or equal to $480,
+
+19
+00:01:14.490 --> 00:01:19.714
+return amount times 0.15 for the 15%.
+
+20
+00:01:19.714 --> 00:01:25.860
+Else return amount times 0.28 for the
+taxed amount.
+
+21
+00:01:25.860 --> 00:01:29.830
+So, let's write a quick program just to
+test the function.
+
+22
+00:01:29.830 --> 00:01:38.997
+We'll say print enter amount, amount
+equals int input.
+
+23
+00:01:38.997 --> 00:01:46.305
+And then we'll say print, The tax is, plus
+string tax amount and we will do
+
+24
+00:01:46.305 --> 00:01:53.604
+it on a couple of even numbers so you can
+get an idea how the function works.
+
+25
+00:01:53.604 --> 00:02:02.915
+So, chap11ex1.py, so we have an error,
+very good, let's take a look, line 15.
+
+26
+00:02:04.020 --> 00:02:06.760
+Usually, when an error like this occurs,
+it's usually
+
+27
+00:02:06.760 --> 00:02:10.500
+because you didn't close all your
+parenthesis, just like that.
+
+28
+00:02:10.500 --> 00:02:12.440
+And again, I leave these errors in because
+you're
+
+29
+00:02:12.440 --> 00:02:15.430
+going to be making the same types of
+mistakes.
+
+30
+00:02:15.430 --> 00:02:20.080
+So, it helps to be able to see how I fix
+them to aid you in your debugging efforts.
+
+31
+00:02:22.330 --> 00:02:23.310
+Let's run it again.
+
+32
+00:02:25.260 --> 00:02:25.790
+There it is.
+
+33
+00:02:27.020 --> 00:02:30.000
+So, let's say the amount is 100 and the
+tax is 0.
+
+34
+00:02:30.000 --> 00:02:31.280
+Run it again.
+
+35
+00:02:31.280 --> 00:02:35.950
+And say, the amount is 300 and the tax is
+45.
+
+36
+00:02:35.950 --> 00:02:37.308
+That's 15%.
+
+37
+00:02:37.308 --> 00:02:38.670
+That's right.
+
+38
+00:02:38.670 --> 00:02:40.890
+Let's run it one more time.
+
+39
+00:02:40.890 --> 00:02:44.036
+1,000 and the tax is $280.
+
+40
+00:02:44.036 --> 00:02:45.300
+That's 28%.
+
+41
+00:02:45.300 --> 00:02:46.770
+So, that's right.
+
+42
+00:02:46.770 --> 00:02:49.320
+So, let's go back to our program.
+
+43
+00:02:50.440 --> 00:02:52.700
+Now we're ready to add the net pay
+function.
+
+44
+00:02:52.700 --> 00:02:58.820
+So, for net pay, our parameter will be the
+gross pay and we'll simply return the
+
+45
+00:02:58.820 --> 00:03:04.950
+gross pay minus the amount they were taxed
+on the gross pay.
+
+46
+00:03:04.950 --> 00:03:08.820
+We're not taking into consideration any
+other sort of deductions or anything.
+
+47
+00:03:08.820 --> 00:03:11.630
+Net is based strictly on how much you're
+taxed.
+
+48
+00:03:12.710 --> 00:03:13.870
+Let's write a new program.
+
+49
+00:03:13.870 --> 00:03:14.720
+I'll leave this one in.
+
+50
+00:03:14.720 --> 00:03:19.300
+And we'll say print enter gross pay.
+
+51
+00:03:19.300 --> 00:03:25.430
+We'll call it gp is equal int input.
+
+52
+00:03:25.430 --> 00:03:31.082
+Then we'll say, print Net pay is, plus net
+
+53
+00:03:31.082 --> 00:03:32.610
+pay, and we're gonna have to make that a
+string.
+
+54
+00:03:32.610 --> 00:03:33.110
+That
+
+55
+00:03:34.920 --> 00:03:36.930
+time, we have the right number of
+parentheses.
+
+56
+00:03:36.930 --> 00:03:39.310
+So, let's Exit and Save.
+
+57
+00:03:39.310 --> 00:03:39.810
+Let's
+
+58
+00:03:41.640 --> 00:03:42.590
+clear the screen.
+
+59
+00:03:45.380 --> 00:03:50.712
+So, let's say it's $1,000, and the net pay
+is 720 and that's
+
+60
+00:03:50.712 --> 00:03:56.280
+right because it would've been $280 minus
+1,000 to get 720.
+
+61
+00:03:56.280 --> 00:04:00.130
+Let's run it one more time, let's take
+500, and that's correct.
+
+62
+00:04:00.130 --> 00:04:04.180
+Again, because of the 28%, that would be
+140.
+
+63
+00:04:04.180 --> 00:04:06.686
+Let's look at the program one more time.
+
+64
+00:04:06.686 --> 00:04:12.300
+So, our tax function uses an if elif to
+determine and return
+
+65
+00:04:12.300 --> 00:04:18.080
+the tax on a given amount, and our net pay
+function uses
+
+66
+00:04:18.080 --> 00:04:23.800
+the tax function to determine net pay
+based on a user's gross pay.
+
+67
+00:04:23.800 --> 00:04:28.030
+So, that wraps up this first exercise of
+the chapter and now we're ready to
+
+68
+00:04:28.030 --> 00:04:30.180
+move to the second exercise where we're
+going
+
+69
+00:04:30.180 --> 00:04:33.400
+to revisit computing the factorial of a
+number.
+

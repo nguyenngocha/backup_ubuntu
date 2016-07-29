@@ -1,0 +1,214 @@
+WEBVTT
+
+1
+00:00:01.070 --> 00:00:04.080
+In the last lesson, we talked about global
+scope.
+
+2
+00:00:04.080 --> 00:00:06.350
+And in this lesson, we're going to talk
+about local scope.
+
+3
+00:00:06.350 --> 00:00:09.677
+So let's start a program, we'll call it
+local.py.
+
+4
+00:00:09.677 --> 00:00:12.980
+And what we'll do first is define,
+
+5
+00:00:12.980 --> 00:00:15.830
+a function we've seen many times here,
+square.
+
+6
+00:00:15.830 --> 00:00:17.280
+But we're gonna define it differently.
+
+7
+00:00:17.280 --> 00:00:21.380
+Here's how we would define it normally, as
+what I call a one liner.
+
+8
+00:00:21.380 --> 00:00:26.490
+Return number times number, but just to
+show you the difference between
+
+9
+00:00:26.490 --> 00:00:31.720
+global and local scope, I'm going to
+introduce a new variable squared which
+
+10
+00:00:31.720 --> 00:00:36.810
+will receive the value of taking the
+parameter, and multiplying it by itself,
+
+11
+00:00:36.810 --> 00:00:41.850
+and then we will return squared as the,
+return value of the function.
+
+12
+00:00:41.850 --> 00:00:46.080
+And then just to demonstrate that it works
+correctly, we'll print the square of 2.
+
+13
+00:00:46.080 --> 00:00:48.160
+So let's run that real quick,
+
+14
+00:00:50.920 --> 00:00:52.540
+and we get 4 just like we expected.
+
+15
+00:00:54.270 --> 00:00:57.110
+When we introduce, the variable squared.
+
+16
+00:00:57.110 --> 00:01:03.630
+Squared, becomes a local, variable because
+it is defined within the body.
+
+17
+00:01:03.630 --> 00:01:05.680
+Of the, function square.
+
+18
+00:01:06.970 --> 00:01:11.310
+So we say, using our computer science
+terminology
+
+19
+00:01:11.310 --> 00:01:15.190
+that squared, is local to the square
+function.
+
+20
+00:01:15.190 --> 00:01:19.210
+And we can demonstrate that, by trying to
+print the value of squared.
+
+21
+00:01:24.280 --> 00:01:26.380
+So let's save, the program.
+
+22
+00:01:26.380 --> 00:01:26.930
+And then running.
+
+23
+00:01:30.680 --> 00:01:32.320
+You see we get an error.
+
+24
+00:01:32.320 --> 00:01:33.670
+Squared is not defined.
+
+25
+00:01:33.670 --> 00:01:35.550
+Let's come back and look.
+
+26
+00:01:35.550 --> 00:01:40.730
+Squared is not defined, because we're in
+the global area
+
+27
+00:01:40.730 --> 00:01:45.660
+of the program, and we're trying to access
+squared, yet.
+
+28
+00:01:45.660 --> 00:01:49.940
+Squared as been defined, only within the
+context of the
+
+29
+00:01:49.940 --> 00:01:54.840
+function squared, we had no problem
+accessing the value of squared
+
+30
+00:01:54.840 --> 00:01:59.680
+within the function definition, but we can
+not access it in the main
+
+31
+00:01:59.680 --> 00:02:05.060
+program, because squared is local to the
+function square.
+
+32
+00:02:06.120 --> 00:02:10.830
+That, is the difference between global,
+and local scope.
+
+33
+00:02:10.830 --> 00:02:14.560
+In a global scope, your variable is
+accessible from anywhere in
+
+34
+00:02:14.560 --> 00:02:19.140
+the program, from the main area, and from
+any other function.
+
+35
+00:02:19.140 --> 00:02:22.290
+When a variable, is defined locally.
+
+36
+00:02:22.290 --> 00:02:26.780
+As squared was, it's only accessible
+within the body, within the
+
+37
+00:02:26.780 --> 00:02:31.830
+context, of the function that it was
+defined yet, this also
+
+38
+00:02:31.830 --> 00:02:34.500
+applies to classes which we will look at
+later in the
+
+39
+00:02:34.500 --> 00:02:38.490
+course, but for now we will limit the
+discussion to functions.
+
+40
+00:02:38.490 --> 00:02:42.040
+So, a global variable is accessible
+anywhere
+
+41
+00:02:42.040 --> 00:02:44.800
+in a program and a local variable.
+
+42
+00:02:44.800 --> 00:02:50.700
+Is accessible only within the context, in
+which it was, defined or declared.
+
+43
+00:02:50.700 --> 00:02:54.680
+So with that we're ready to move on to the
+third and last topic of this
+
+44
+00:02:54.680 --> 00:02:56.920
+chapter, and we're going to talk about
+one,
+
+45
+00:02:56.920 --> 00:03:01.000
+other possible scope and that's called
+nested scope.
+

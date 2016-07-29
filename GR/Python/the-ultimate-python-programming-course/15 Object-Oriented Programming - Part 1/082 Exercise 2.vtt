@@ -1,0 +1,340 @@
+WEBVTT
+
+1
+00:00:01.050 --> 00:00:03.200
+For this second exercise of the chapter
+
+2
+00:00:03.200 --> 00:00:05.590
+we're going to add some functionality to
+the
+
+3
+00:00:05.590 --> 00:00:08.500
+student class, that we didn't include when
+we
+
+4
+00:00:08.500 --> 00:00:11.420
+had implemented the class back in the
+lessons.
+
+5
+00:00:11.420 --> 00:00:15.780
+So I pulled up the file that had the
+student class definition.
+
+6
+00:00:15.780 --> 00:00:17.703
+The first thing let's do is let's save it
+as a new file.
+
+7
+00:00:17.703 --> 00:00:18.203
+[BLANK_AUDIO]
+
+8
+00:00:20.660 --> 00:00:21.180
+Go to computer.
+
+9
+00:00:21.180 --> 00:00:21.680
+[BLANK_AUDIO].
+
+10
+00:00:26.210 --> 00:00:27.200
+We're in Python 30.
+
+11
+00:00:27.200 --> 00:00:28.630
+There we go.
+
+12
+00:00:28.630 --> 00:00:33.290
+And we're gonna call it student1.py.
+
+13
+00:00:33.290 --> 00:00:34.854
+Change this to All Files like so.
+
+14
+00:00:34.854 --> 00:00:35.470
+[BLANK_AUDIO].
+
+15
+00:00:39.010 --> 00:00:43.310
+The first bit of functionality we want to
+add is a two string method.
+
+16
+00:00:43.310 --> 00:00:47.280
+So we write, def, two underscores, S-T-R,
+
+17
+00:00:47.280 --> 00:00:50.996
+two more underscores, and self, as the
+parameter.
+
+18
+00:00:50.996 --> 00:00:53.230
+And then what wanna do is we're going to
+put
+
+19
+00:00:53.230 --> 00:00:57.390
+some field headings, for lack of a better
+term, here.
+
+20
+00:00:57.390 --> 00:01:01.410
+So we're going to say return, name, plus
+self name.
+
+21
+00:01:02.540 --> 00:01:08.730
+Plus a new line and then we wanna continue
+this string on the next line.
+
+22
+00:01:08.730 --> 00:01:11.330
+So we'll put a backslash right here.
+
+23
+00:01:11.330 --> 00:01:13.520
+Let's scoot over to here, then we'll have
+
+24
+00:01:13.520 --> 00:01:17.640
+the student's ID displayed next, plus a
+new line.
+
+25
+00:01:17.640 --> 00:01:21.130
+And we wanna go down to the next line.
+
+26
+00:01:21.130 --> 00:01:24.088
+Now we wanna add the students grades.
+
+27
+00:01:24.088 --> 00:01:26.630
+So here we're gonna call the show grades
+
+28
+00:01:26.630 --> 00:01:31.030
+method inside two string, which works just
+fine,
+
+29
+00:01:31.030 --> 00:01:34.380
+and that will display the students grades,
+out
+
+30
+00:01:34.380 --> 00:01:37.150
+beside the heading Grades, as we have
+right here.
+
+31
+00:01:37.150 --> 00:01:39.739
+So, let's test that.
+
+32
+00:01:40.860 --> 00:01:45.874
+We'll stick with what we have here, and
+let's change
+
+33
+00:01:45.874 --> 00:01:50.997
+this line to print stu1, so we'll save the
+file, type
+
+34
+00:01:50.997 --> 00:01:56.774
+student1.py and so there's the name Jones,
+there's the ID
+
+35
+00:01:56.774 --> 00:02:02.440
+123, and there are the grades, 88, 84, and
+91.
+
+36
+00:02:02.440 --> 00:02:06.910
+So let's go back to the file and now let's
+add
+
+37
+00:02:06.910 --> 00:02:11.770
+one more method and let's compute the
+average of the students grades.
+
+38
+00:02:11.770 --> 00:02:15.960
+So here we're going to create a total
+variable, set it to 0.
+
+39
+00:02:15.960 --> 00:02:19.860
+Then we're going to loop through the
+grades,
+
+40
+00:02:19.860 --> 00:02:23.100
+taking each grade and adding it to the
+total.
+
+41
+00:02:23.100 --> 00:02:27.660
+And then to return the average, we're
+going to return the total, divided by the
+
+42
+00:02:27.660 --> 00:02:33.560
+length of grades which will be the number
+of grades in the list.
+
+43
+00:02:33.560 --> 00:02:39.190
+[BLANK_AUDIO].
+
+44
+00:02:39.190 --> 00:02:48.578
+So let's do a print average, and then
+string, stu1, average, just like so,
+
+45
+00:02:48.578 --> 00:02:51.640
+[BLANK_AUDIO]
+
+46
+00:02:51.640 --> 00:02:52.400
+Save the file.
+
+47
+00:02:52.400 --> 00:02:56.560
+[BLANK_AUDIO]
+
+48
+00:02:56.560 --> 00:02:57.880
+Run the program again.
+
+49
+00:03:01.120 --> 00:03:02.760
+We have some illegal syntax.
+
+50
+00:03:02.760 --> 00:03:06.820
+I'm sure I know what the problem is, I
+left off the closing parenthesis.
+
+51
+00:03:07.830 --> 00:03:08.630
+So let's save.
+
+52
+00:03:12.050 --> 00:03:14.850
+Okay, we're gonna stick with this problem,
+and I see what I did wrong.
+
+53
+00:03:14.850 --> 00:03:18.380
+Just trying to work through here very
+quickly.
+
+54
+00:03:18.380 --> 00:03:22.900
+I forgot to reference the class using
+self.
+
+55
+00:03:24.410 --> 00:03:26.570
+And that's a common mistake that you're
+going to make.
+
+56
+00:03:26.570 --> 00:03:29.560
+I shouldn't have made it, since I did
+reference
+
+57
+00:03:29.560 --> 00:03:32.970
+it correctly there, but we get patterns in
+our head.
+
+58
+00:03:32.970 --> 00:03:37.720
+And I'm so used to working with data
+structures outside
+
+59
+00:03:37.720 --> 00:03:41.772
+of the class, that I'll sometimes forget
+to put the self.
+
+60
+00:03:41.772 --> 00:03:43.040
+before that.
+
+61
+00:03:43.040 --> 00:03:44.350
+So let's try it again.
+
+62
+00:03:45.720 --> 00:03:46.770
+Now let's clear the screen.
+
+63
+00:03:46.770 --> 00:03:52.000
+And type student1.py, and that time it
+worked just fine.
+
+64
+00:03:54.160 --> 00:03:59.090
+So again to summarize what we did for this
+exercise, is we added 2 methods.
+
+65
+00:03:59.090 --> 00:04:03.360
+First we added a 2 string method, that
+displays the name, the ID, and
+
+66
+00:04:03.360 --> 00:04:08.840
+the grades with helpful headings to let
+the user know what they're looking at.
+
+67
+00:04:08.840 --> 00:04:11.830
+Certainly didnt have to use those, but it
+comes in handy
+
+68
+00:04:11.830 --> 00:04:15.780
+to display the information in a way that
+you can understand.
+
+69
+00:04:15.780 --> 00:04:19.290
+And then we created an average method that
+takes all
+
+70
+00:04:19.290 --> 00:04:23.730
+the grades in the student object, and
+returns the total.
+
+71
+00:04:23.730 --> 00:04:25.190
+And with that we're finished with this
+
+72
+00:04:25.190 --> 00:04:28.450
+introductory chapter on Object Oriented
+Programming and
+
+73
+00:04:28.450 --> 00:04:32.470
+we're ready to move to the next chapter
+where we're going to discuss inheritance.
+

@@ -1,0 +1,362 @@
+WEBVTT
+
+1
+00:00:01.190 --> 00:00:03.010
+In this lesson, we're going to look at
+
+2
+00:00:03.010 --> 00:00:07.128
+another type of While loop, the
+event-controlled loop.
+
+3
+00:00:07.128 --> 00:00:12.590
+The event-controlled loop looks for some
+occurrence, some
+
+4
+00:00:12.590 --> 00:00:16.050
+event to occur to make the loop stop.
+
+5
+00:00:16.050 --> 00:00:18.920
+There's several different types of event
+control loops.
+
+6
+00:00:18.920 --> 00:00:20.430
+We can't cover them all.
+
+7
+00:00:20.430 --> 00:00:22.500
+Later in the chapter I'm going to
+introduce
+
+8
+00:00:22.500 --> 00:00:24.940
+you to files and working with files and
+then
+
+9
+00:00:24.940 --> 00:00:30.190
+we'll see an event where we read a file
+until we run out of data in the file.
+
+10
+00:00:30.190 --> 00:00:32.680
+That being the event that stops the loop.
+
+11
+00:00:32.680 --> 00:00:34.450
+For this particular lesson, though, I'm
+going to
+
+12
+00:00:34.450 --> 00:00:37.630
+give you a simpler example, where we're
+going
+
+13
+00:00:37.630 --> 00:00:42.320
+to enter grades into a program until a
+
+14
+00:00:42.320 --> 00:00:46.530
+certain grade, called a sentinel value, is
+entered.
+
+15
+00:00:46.530 --> 00:00:48.710
+In this case, the sentinel will be
+negative one.
+
+16
+00:00:48.710 --> 00:00:50.020
+So, let's get started.
+
+17
+00:00:50.020 --> 00:00:52.959
+We're gonna call this program
+whileevent.py.
+
+18
+00:00:56.710 --> 00:00:58.970
+And I'll explain how the Sentinel works in
+just a minute.
+
+19
+00:00:58.970 --> 00:01:01.790
+First, I need to set up a couple of
+variables.
+
+20
+00:01:01.790 --> 00:01:06.730
+We're going to have an average variable, a
+total variable, and a count variable.
+
+21
+00:01:06.730 --> 00:01:09.640
+So in other words, we're going to be
+entering grades
+
+22
+00:01:09.640 --> 00:01:12.860
+until we get to a certain place where we
+wanna stop.
+
+23
+00:01:12.860 --> 00:01:15.420
+We're gonna total those grades and then
+divide by
+
+24
+00:01:15.420 --> 00:01:19.320
+the total number of grades to get a
+average.
+
+25
+00:01:19.320 --> 00:01:24.270
+So, we prompt the user to enter a grade,
+and a negative 1 to quit.
+
+26
+00:01:24.270 --> 00:01:27.320
+Negative 1 is our sentinel value.
+
+27
+00:01:27.320 --> 00:01:31.910
+Entering negative 1, is the event that
+causes the loop to stop.
+
+28
+00:01:31.910 --> 00:01:33.830
+Then we get that grade in and we convert
+
+29
+00:01:33.830 --> 00:01:38.030
+it to integer, after we get it from raw
+input.
+
+30
+00:01:39.060 --> 00:01:40.700
+Now we start our loop.
+
+31
+00:01:40.700 --> 00:01:43.015
+While grade is not equal to negative 1.
+
+32
+00:01:44.880 --> 00:01:47.760
+Take the grade and add it to the total.
+
+33
+00:01:47.760 --> 00:01:49.700
+Increment the count by one, so we can
+
+34
+00:01:49.700 --> 00:01:52.370
+keep an accurate number of grades that
+we've entered.
+
+35
+00:01:54.920 --> 00:01:57.950
+And then prompt the user to enter a grade
+again.
+
+36
+00:02:00.050 --> 00:02:05.490
+That's the end of our loop, so then when
+we're finished we will compute the average
+
+37
+00:02:05.490 --> 00:02:10.500
+by dividing the total by the count, and
+then we'll display the average grade.
+
+38
+00:02:12.650 --> 00:02:13.240
+Just like so.
+
+39
+00:02:14.400 --> 00:02:18.400
+So again let's look at our event the event
+is entering
+
+40
+00:02:18.400 --> 00:02:23.345
+a negative 1 for the grade, so while a
+grade is not
+
+41
+00:02:23.345 --> 00:02:28.710
+a negative 1, then we can continue
+entering grades to figure out our
+
+42
+00:02:28.710 --> 00:02:34.370
+average so let's exit and save and let's
+run our program.
+
+43
+00:02:34.370 --> 00:02:36.180
+So what we're gonna do is we're gonna
+enter
+
+44
+00:02:36.180 --> 00:02:40.450
+a series of even values, then we'll enter
+negative
+
+45
+00:02:40.450 --> 00:02:44.620
+1 and the average grade is 80, that's
+right
+
+46
+00:02:44.620 --> 00:02:48.490
+of those five grades, the average is
+indeed 80.
+
+47
+00:02:48.490 --> 00:02:49.950
+Let's write it one more time
+
+48
+00:02:52.280 --> 00:02:54.750
+with just a wide range of grades.
+
+49
+00:02:57.390 --> 00:03:00.170
+I'll just keep entering for a bit longer,
+we'll do one more, so
+
+50
+00:03:02.050 --> 00:03:06.940
+let's bring the program back up, and let's
+review what we did, we have
+
+51
+00:03:06.940 --> 00:03:11.340
+a loop that runs while the grade that's
+entered is not negative 1,
+
+52
+00:03:11.340 --> 00:03:16.750
+and notice how we enter a grade initially
+before we go into the loop.
+
+53
+00:03:16.750 --> 00:03:21.440
+I read once in a programming text that
+this is called priming the pump, so that,
+
+54
+00:03:21.440 --> 00:03:26.935
+we're priming the pump by assigning a
+grade here, and then testing it here.
+
+55
+00:03:26.935 --> 00:03:31.880
+And then we again enter a grade after
+we've taken the current
+
+56
+00:03:31.880 --> 00:03:35.680
+grade added it to the total and added it
+to our count.
+
+57
+00:03:35.680 --> 00:03:39.350
+Going back to the original description of
+a while loop, we
+
+58
+00:03:39.350 --> 00:03:44.150
+still have an event or a statement in the
+blue body that
+
+59
+00:03:44.150 --> 00:03:48.040
+will cause the loop to quit, and that's
+this line right here,
+
+60
+00:03:48.040 --> 00:03:52.050
+grade is equal to int raw input, because
+we enter negative 1.
+
+61
+00:03:52.050 --> 00:03:57.090
+When we go back to the top of the loop to
+test our relational expression, grade
+
+62
+00:03:57.090 --> 00:03:59.855
+is indeed negative 1, so that becomes
+false,
+
+63
+00:03:59.855 --> 00:04:04.030
+that relational expression becomes false,
+and our loop stops.
+
+64
+00:04:04.030 --> 00:04:06.550
+So, that's how, event-controlled loops
+work.
+
+65
+00:04:06.550 --> 00:04:09.030
+And like I said, we're going to look at
+another example
+
+66
+00:04:09.030 --> 00:04:13.060
+later in the chapter when we talk about
+processing text files.
+
+67
+00:04:13.060 --> 00:04:15.570
+But for now we're going to move to another
+topic,
+
+68
+00:04:15.570 --> 00:04:18.620
+and we're going to talk about a special
+statement called
+
+69
+00:04:18.620 --> 00:04:23.530
+continue, that allows us to skip parts of
+a loop
+
+70
+00:04:23.530 --> 00:04:28.060
+body, and go on to the next iteration of
+the loop.
+
+71
+00:04:28.060 --> 00:04:31.020
+After continue, in the next lesson, we'll
+look at another example
+
+72
+00:04:31.020 --> 00:04:36.070
+called break, which allows us to exit a
+loop completely prematurely.
+
+73
+00:04:36.070 --> 00:04:39.810
+And continue and break are not statements
+that you wanna use all the time.
+
+74
+00:04:39.810 --> 00:04:43.230
+But there are situations where they are
+needed, so we're gonna
+
+75
+00:04:43.230 --> 00:04:47.740
+start in the next lesson by looking at the
+continue statement.
+

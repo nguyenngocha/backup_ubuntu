@@ -1,0 +1,378 @@
+WEBVTT
+
+1
+00:00:01.060 --> 00:00:04.680
+Often in a program, you'll have, more than
+one comparison
+
+2
+00:00:04.680 --> 00:00:08.640
+to make and, those comparisons will be
+related to each other.
+
+3
+00:00:08.640 --> 00:00:12.760
+When that occurs, you need to use, what
+are called the logical operators.
+
+4
+00:00:12.760 --> 00:00:16.830
+And we're gonna start off by looking at
+how the logical operators, work.
+
+5
+00:00:16.830 --> 00:00:20.760
+Generally, we will look at some specific,
+python examples.
+
+6
+00:00:20.760 --> 00:00:24.940
+Logical operators are and, or and not, and
+what you are seeing in
+
+7
+00:00:24.940 --> 00:00:29.760
+front of you are the truth tables for, the
+logical or boolean operators.
+
+8
+00:00:29.760 --> 00:00:32.208
+So, let's take a look at the and, truth
+
+9
+00:00:32.208 --> 00:00:36.570
+table first, and, is the first of the
+logical operators.
+
+10
+00:00:36.570 --> 00:00:38.890
+And in the headings, you see relational
+expression
+
+11
+00:00:38.890 --> 00:00:44.170
+one, RE1, relational expression two, RE2,
+and result.
+
+12
+00:00:45.390 --> 00:00:49.210
+And this table, demonstrates what occurs
+when, two relational
+
+13
+00:00:49.210 --> 00:00:53.940
+expressions RE1 and RE2, are combined
+using the end.
+
+14
+00:00:53.940 --> 00:00:55.410
+Logical operator.
+
+15
+00:00:55.410 --> 00:00:58.820
+So for example, if RE1 is True, and RE2 is
+
+16
+00:00:58.820 --> 00:01:04.780
+True, then the, complete expression RE1
+and RE 2, is True.
+
+17
+00:01:04.780 --> 00:01:10.860
+Then you'll see if RE1 is true, and RE2 is
+False then, the whole expression is False.
+
+18
+00:01:10.860 --> 00:01:15.210
+If RE1 is False and RE2 is True, the
+result is still False.
+
+19
+00:01:15.210 --> 00:01:18.140
+And then finally if, RE1 is False and RE2
+
+20
+00:01:18.140 --> 00:01:21.670
+is False, then of course, the result is
+False.
+
+21
+00:01:21.670 --> 00:01:24.590
+Now let's move down and look at the or,
+truth table.
+
+22
+00:01:24.590 --> 00:01:30.500
+Here we see that if, RE1 and RE2 are True,
+then the result is True.
+
+23
+00:01:30.500 --> 00:01:36.370
+If RE1 is True and RE2 is False, the
+result is still True.
+
+24
+00:01:36.370 --> 00:01:41.870
+If RE1 is, False and RE2 is True, the
+result is True.
+
+25
+00:01:41.870 --> 00:01:44.680
+And only if RE1 is False and RE2 is
+
+26
+00:01:44.680 --> 00:01:49.560
+False, is the whole, expression False, and
+then finally.
+
+27
+00:01:49.560 --> 00:01:54.360
+Although we are not going to look at it in
+this lesson, is the, not Truth Table.
+
+28
+00:01:54.360 --> 00:01:58.790
+Not simply, negates a bullion value, so
+for example,
+
+29
+00:01:58.790 --> 00:02:04.510
+not True is False and not False is True.
+
+30
+00:02:04.510 --> 00:02:08.410
+There are, programing situations where we
+need not, but for this
+
+31
+00:02:08.410 --> 00:02:11.129
+particular lesson we are only going to
+look at and or.
+
+32
+00:02:12.520 --> 00:02:16.140
+So now, that we've seen how they work,
+theoretically let's
+
+33
+00:02:16.140 --> 00:02:19.640
+look at a couple of simple example of, and
+and or.
+
+34
+00:02:19.640 --> 00:02:22.050
+Then we'll see them again, later in the
+lessons.
+
+35
+00:02:22.050 --> 00:02:24.590
+So, we're gonna bring up the python shell.
+
+36
+00:02:24.590 --> 00:02:28.100
+So, the first thing we're gonna do, is
+create a couple of variables.
+
+37
+00:02:29.340 --> 00:02:32.820
+Now I'm gonna demonstrate how and works
+using.
+
+38
+00:02:32.820 --> 00:02:37.630
+These two variables, and we have hours
+worked equals 39, salary equal 39,000.
+
+39
+00:02:37.630 --> 00:02:43.080
+So, we might have a, payroll program, that
+will have
+
+40
+00:02:43.080 --> 00:02:49.130
+the, relational expressions, hours worked,
+greater than 40 and.
+
+41
+00:02:49.130 --> 00:02:51.060
+Salary, less than or equal to 50,000.
+
+42
+00:02:51.060 --> 00:02:54.320
+In other words, this is how we probably
+pay
+
+43
+00:02:54.320 --> 00:02:57.820
+for overtime based on, whether not a
+worker has worked
+
+44
+00:02:57.820 --> 00:03:01.080
+over 40 hours in that pay period for a
+week
+
+45
+00:03:01.080 --> 00:03:03.490
+and their salary is less than or equal to,
+50,000.
+
+46
+00:03:03.490 --> 00:03:06.860
+So you see that's false.
+
+47
+00:03:06.860 --> 00:03:10.120
+And it's false because hours worked is not
+greater than 40.
+
+48
+00:03:10.120 --> 00:03:11.830
+It's actually, less than 40.
+
+49
+00:03:11.830 --> 00:03:14.840
+So, this first expression, hours worked
+greater than 40,
+
+50
+00:03:14.840 --> 00:03:19.250
+is False, so that makes the complete
+expression, False.
+
+51
+00:03:19.250 --> 00:03:22.090
+All right, let's look at another example,
+this time using, or.
+
+52
+00:03:22.090 --> 00:03:25.380
+So here we're gonna write a, password
+program.
+
+53
+00:03:25.380 --> 00:03:27.590
+Actually just a very small fragment.
+
+54
+00:03:27.590 --> 00:03:29.960
+We're gonna set our password equal to
+GUEST.
+
+55
+00:03:29.960 --> 00:03:31.590
+Uppercase guest.
+
+56
+00:03:31.590 --> 00:03:34.652
+Then, we're gonna look and see what the
+user enters for their password.
+
+57
+00:03:34.652 --> 00:03:36.700
+[SOUND] And here we're going to say if
+they
+
+58
+00:03:36.700 --> 00:03:42.315
+entered, guest as lowercase, or they
+entered it as uppercase.
+
+59
+00:03:42.315 --> 00:03:43.510
+Then that will be okay.
+
+60
+00:03:43.510 --> 00:03:46.320
+So, the way we do that is by using the
+logical,
+
+61
+00:03:46.320 --> 00:03:50.840
+operator or, saying, the password can be
+equal to lowercase guest.
+
+62
+00:03:50.840 --> 00:03:55.980
+Or, the password can be equal to, all
+upper case which is what it's set to.
+
+63
+00:03:55.980 --> 00:03:59.100
+So, if we hit Enter, we see that's true.
+
+64
+00:03:59.100 --> 00:04:01.660
+So, that's how the logical operators work.
+
+65
+00:04:01.660 --> 00:04:04.840
+I guess I can show you not real quick,
+just to demonstrate how it works.
+
+66
+00:04:04.840 --> 00:04:08.410
+We can say, not 100 equals 100, and that
+
+67
+00:04:08.410 --> 00:04:12.690
+will return False because 100 equals 100
+is True.
+
+68
+00:04:12.690 --> 00:04:14.670
+So, not True is False.
+
+69
+00:04:14.670 --> 00:04:18.940
+And then we could say something like, not
+100 less than 1.
+
+70
+00:04:20.290 --> 00:04:23.010
+That returns True because, of course, the
+relational
+
+71
+00:04:23.010 --> 00:04:27.360
+expression is False, and not False is
+True.
+
+72
+00:04:27.360 --> 00:04:29.570
+So, those are the logical operators, and
+like I
+
+73
+00:04:29.570 --> 00:04:32.380
+said earlier we will be working with them
+more.
+
+74
+00:04:32.380 --> 00:04:35.720
+As we, demonstrate how the if statements
+work.
+
+75
+00:04:35.720 --> 00:04:38.670
+But, we're finished with this lesson for
+now, and we're ready to move on,
+
+76
+00:04:38.670 --> 00:04:42.450
+to actually, making real comparisons in
+python,
+
+77
+00:04:42.450 --> 00:04:45.930
+by examining how, the simple, if statement
+works.
+
+78
+00:04:45.930 --> 00:04:47.640
+And, that's the topic, of the next lesson.
+
+79
+00:04:47.640 --> 00:04:50.129
+[BLANK_AUDIO]
+

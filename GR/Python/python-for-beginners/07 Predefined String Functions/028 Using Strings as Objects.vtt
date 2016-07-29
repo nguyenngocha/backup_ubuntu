@@ -1,0 +1,358 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.946
+[MUSIC]
+
+2
+00:00:04.946 --> 00:00:09.080
+Hello and welcome back, as you can see in
+this basic code I've got listed here,
+
+3
+00:00:09.080 --> 00:00:11.120
+you can see that I've got two variables,
+
+4
+00:00:11.120 --> 00:00:13.410
+one of them is commented out, and one
+isn't.
+
+5
+00:00:13.410 --> 00:00:15.903
+They're both called string and the one
+that's commented out.
+
+6
+00:00:15.903 --> 00:00:20.081
+Has letters S-T-R-I-N-G, all as individual
+letters
+
+7
+00:00:20.081 --> 00:00:23.230
+within, as list items within the list.
+
+8
+00:00:23.230 --> 00:00:25.860
+And remember that list is with square
+brackets.
+
+9
+00:00:25.860 --> 00:00:27.275
+And the second variable, the one which is
+not
+
+10
+00:00:27.275 --> 00:00:30.640
+commented out, is equal to the string of
+string.
+
+11
+00:00:30.640 --> 00:00:34.130
+Now, if I was to just run this, you get
+the output of string which you'd expect.
+
+12
+00:00:34.130 --> 00:00:35.660
+Now, we can treat objects.
+
+13
+00:00:37.340 --> 00:00:41.750
+We can treat strings as an object, we can
+treat lists as an object, as well.
+
+14
+00:00:41.750 --> 00:00:43.550
+So, you'll be able to see, with this
+string
+
+15
+00:00:43.550 --> 00:00:49.340
+here if I was to retrieve to position
+four.
+
+16
+00:00:50.840 --> 00:00:52.165
+Now I can do that and it now gets
+
+17
+00:00:52.165 --> 00:00:56.660
+stri, cuz the stars are indexed to zero,
+remember?
+
+18
+00:00:56.660 --> 00:00:58.850
+And also, if I was to step it up by two
+
+19
+00:00:58.850 --> 00:01:01.530
+each time, then I could do that and just
+get sr.
+
+20
+00:01:01.530 --> 00:01:07.200
+So, as you can see, a string can be
+treated as a natural object.
+
+21
+00:01:07.200 --> 00:01:10.320
+And also a list can be treated as a string
+as well.
+
+22
+00:01:11.780 --> 00:01:15.190
+Which I'll show by just doing a for letter
+in string.
+
+23
+00:01:16.580 --> 00:01:18.190
+And we're going to print letter.
+
+24
+00:01:19.950 --> 00:01:22.550
+And if we just comment out the second
+variable.
+
+25
+00:01:22.550 --> 00:01:24.010
+And uncomment the first one.
+
+26
+00:01:24.010 --> 00:01:27.410
+Now each of these results will come on a
+new line, however that
+
+27
+00:01:27.410 --> 00:01:33.252
+just shows you that, it allows each
+individual letter to be done, as this.
+
+28
+00:01:33.252 --> 00:01:38.170
+Now, that is what you'd expect when you're
+doing it with the list.
+
+29
+00:01:38.170 --> 00:01:40.260
+If you were to do the same thing, with the
+string.
+
+30
+00:01:40.260 --> 00:01:44.140
+And we can run that again, you get the
+exact same output.
+
+31
+00:01:44.140 --> 00:01:47.104
+So as you can see, a list is exactly the
+same
+
+32
+00:01:47.104 --> 00:01:50.910
+treat, is treated exactly the same way as
+an actual string is.
+
+33
+00:01:52.490 --> 00:01:57.210
+Now there are also certain functions which
+you can use on a string.
+
+34
+00:01:58.240 --> 00:02:01.250
+And to do this, I'm just going to delete
+this list.
+
+35
+00:02:02.310 --> 00:02:07.458
+And what we can do here, is a variety of
+functions, the first one is we can count
+
+36
+00:02:07.458 --> 00:02:10.422
+how many times a letter appears, so I'm
+just
+
+37
+00:02:10.422 --> 00:02:13.779
+gonna convert this to a string of
+different words.
+
+38
+00:02:13.779 --> 00:02:20.563
+[BLANK_AUDIO]
+
+39
+00:02:20.563 --> 00:02:23.550
+There we go, so I've just got a sentence
+here,
+
+40
+00:02:23.550 --> 00:02:26.165
+now if I wanted to count the number of
+times
+
+41
+00:02:26.165 --> 00:02:29.228
+the letter s appeared in here, then we
+would have
+
+42
+00:02:29.228 --> 00:02:31.940
+to do .count and put the letter s in
+there.
+
+43
+00:02:31.940 --> 00:02:35.610
+Now what that does, it it tells us how
+many times the letter s appears.
+
+44
+00:02:35.610 --> 00:02:39.450
+And here you can see we've go it four
+times one, two, three and four.
+
+45
+00:02:40.690 --> 00:02:45.981
+Now this can work for a phrases as well,
+so
+
+46
+00:02:45.981 --> 00:02:48.710
+if I'm checking how many times do you is
+appears.
+
+47
+00:02:49.810 --> 00:02:52.585
+You get the answer two and that is with
+this and this.
+
+48
+00:02:53.630 --> 00:02:57.490
+So as you can see there is multiple
+functions which can be
+
+49
+00:02:57.490 --> 00:03:02.660
+run and another one of these is something
+called the title function.
+
+50
+00:03:03.850 --> 00:03:06.780
+And what this does, is it capitalizes the
+first letter of every single
+
+51
+00:03:06.780 --> 00:03:10.000
+word within it, which is something that
+you can use within a title.
+
+52
+00:03:10.000 --> 00:03:11.280
+So here you can see that, ev, only
+
+53
+00:03:11.280 --> 00:03:14.780
+the first letter has been capitalized by
+me typing
+
+54
+00:03:14.780 --> 00:03:16.960
+it, but all of the first letters of each
+
+55
+00:03:16.960 --> 00:03:21.770
+word has been capitalized now within the
+actual output.
+
+56
+00:03:23.690 --> 00:03:26.830
+There's also other functions which you can
+do and
+
+57
+00:03:26.830 --> 00:03:32.710
+some of them are, you can capitalize which
+is .capitalize.
+
+58
+00:03:32.710 --> 00:03:34.398
+Now if you, in Python.
+
+59
+00:03:34.398 --> 00:03:36.890
+And when you're using Eclipse, you get
+this pop-up here,
+
+60
+00:03:36.890 --> 00:03:42.270
+which can actually help you remember the
+names of functions.
+
+61
+00:03:42.270 --> 00:03:44.280
+And you can double-click on them, and it
+allows you
+
+62
+00:03:44.280 --> 00:03:47.470
+to, just have it quickly typed for you as
+well.
+
+63
+00:03:47.470 --> 00:03:53.430
+So that's a rea, another good reason as to
+why I would actually recommend vets, you
+
+64
+00:03:53.430 --> 00:03:56.897
+use something like Eclipse or another id
+involving,
+
+65
+00:03:56.897 --> 00:04:00.710
+just the and terminal or the command line.
+
+66
+00:04:00.710 --> 00:04:02.560
+Now as you can see this actually doesn't
+change from
+
+67
+00:04:02.560 --> 00:04:04.960
+what I had typed at the actual beginning
+and that's because
+
+68
+00:04:04.960 --> 00:04:09.420
+it capitalizes the first letter of the
+string, so which
+
+69
+00:04:09.420 --> 00:04:13.030
+can be useful whenever you have each
+individual sentence for example.
+
+70
+00:04:13.030 --> 00:04:14.730
+So what I've done is I just change the t
+here
+
+71
+00:04:14.730 --> 00:04:17.660
+which was capitalized by me typing it to a
+lower case.
+
+72
+00:04:17.660 --> 00:04:22.883
+And if you run it again, we see that we
+get the exact same output anyway.
+
+73
+00:04:22.883 --> 00:04:25.743
+So, thank you for watching this video and
+I will see you soon.
+
+74
+00:04:25.743 --> 00:04:30.368
+[MUSIC]
+

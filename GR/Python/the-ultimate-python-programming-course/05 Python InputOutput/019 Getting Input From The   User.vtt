@@ -1,0 +1,257 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:04.260
+In this lesson we're going to discuss, how
+to get
+
+2
+00:00:04.260 --> 00:00:08.230
+input from the user using a function
+called Raw Input.
+
+3
+00:00:08.230 --> 00:00:12.270
+So we're gonna use the interactive shell
+first, so let's open that.
+
+4
+00:00:12.270 --> 00:00:16.620
+The way we use Raw Input is like so we
+would, for example, create
+
+5
+00:00:16.620 --> 00:00:22.130
+a variable, and then assign it to the
+output of the raw input function.
+
+6
+00:00:22.130 --> 00:00:26.200
+So that if I type some data into Raw input
+
+7
+00:00:26.200 --> 00:00:29.290
+and then hit the enter key, the
+interactive shell returns.
+
+8
+00:00:29.290 --> 00:00:34.110
+And if I print the value of name, you'll
+see that it displays Mary Smith.
+
+9
+00:00:34.110 --> 00:00:38.640
+So clearly raw input pauses the
+interactive program
+
+10
+00:00:38.640 --> 00:00:41.140
+to wait for the user to enter input.
+
+11
+00:00:41.140 --> 00:00:46.070
+Once the user hits the enter key, then the
+input is sent from
+
+12
+00:00:46.070 --> 00:00:50.780
+the function to the variable on the other
+side of the assignment statement.
+
+13
+00:00:50.780 --> 00:00:54.240
+So string data is very simple to enter
+with Raw input.
+
+14
+00:00:54.240 --> 00:00:59.310
+You can enter one word or you know a whole
+sentence for example,
+
+15
+00:01:00.750 --> 00:01:04.000
+and again, it just keeps collecting input
+until I hit the enter key.
+
+16
+00:01:04.000 --> 00:01:09.310
+Then it returns, and then whatever I typed
+into the keyboard
+
+17
+00:01:09.310 --> 00:01:15.080
+up into the inner key stroke is stored in
+sentence.
+
+18
+00:01:15.080 --> 00:01:20.220
+We can also store numbers using raw input.
+
+19
+00:01:20.220 --> 00:01:23.250
+What will happen when I type number times
+two?
+
+20
+00:01:23.250 --> 00:01:28.930
+It replicates the value stored in number,
+whether then returning
+
+21
+00:01:28.930 --> 00:01:34.130
+200, that's because the output from Raw
+input, is string type.
+
+22
+00:01:34.130 --> 00:01:40.330
+So if I want the data that Raw input
+receives, converted to,
+
+23
+00:01:40.330 --> 00:01:43.610
+in numeric type I have to provide a
+function to do that.
+
+24
+00:01:44.980 --> 00:01:48.890
+In this line I have used the int
+conversion
+
+25
+00:01:48.890 --> 00:01:55.080
+function to convert route inputs value to
+int from string.
+
+26
+00:01:55.080 --> 00:01:59.130
+Now if I type print number times two it
+prints the correct value, or
+
+27
+00:01:59.130 --> 00:02:05.070
+what I expected to be the correct value
+which is 200 rather than 100, 100.
+
+28
+00:02:05.070 --> 00:02:13.070
+If I'm working with floating point values,
+I can use float as the conversion function
+
+29
+00:02:13.070 --> 00:02:17.780
+instead, and it will retrieve the data and
+store it as a floating point number.
+
+30
+00:02:17.780 --> 00:02:19.910
+That I can then do floating point
+operations
+
+31
+00:02:19.910 --> 00:02:23.320
+on it, without worrying about losing any
+data.
+
+32
+00:02:23.320 --> 00:02:27.020
+So those are the primary uses of raw
+input.
+
+33
+00:02:27.020 --> 00:02:29.210
+Certainly in this course, we'll mostly be
+retrieving
+
+34
+00:02:29.210 --> 00:02:32.930
+strings and numbers from the user, using
+raw input.
+
+35
+00:02:32.930 --> 00:02:34.710
+Let's look at one more example, that's a
+
+36
+00:02:34.710 --> 00:02:38.930
+script rather than just using the
+interactive shell.
+
+37
+00:02:38.930 --> 00:02:41.350
+So we're gonna start a script.
+
+38
+00:02:41.350 --> 00:02:46.750
+So what we gonna do, is we're going to
+prompt the user to enter some values.
+
+39
+00:02:46.750 --> 00:02:51.190
+And then we'll convert them to integer
+before we store them in the variable.
+
+40
+00:02:51.190 --> 00:02:53.440
+So we'll do that a second time.
+
+41
+00:02:53.440 --> 00:02:53.940
+And
+
+42
+00:02:55.960 --> 00:02:57.300
+we're going to display the sum.
+
+43
+00:02:59.280 --> 00:03:04.690
+Now, right here I have a problem, in that
+I can't concatenate a number, which
+
+44
+00:03:04.690 --> 00:03:09.186
+is what we'll get when we add number one
+with number two to a string.
+
+45
+00:03:10.320 --> 00:03:12.990
+We've seen in previous lessons that, that
+leads to an error.
+
+46
+00:03:12.990 --> 00:03:17.250
+So, what I have to do is, I have to use
+the string conversion function.
+
+47
+00:03:17.250 --> 00:03:20.100
+To convert number one plus number two, to
+
+48
+00:03:20.100 --> 00:03:23.890
+stream format and then I can store the
+result.
+
+49
+00:03:23.890 --> 00:03:33.190
+So let's exit and Save, and we'll just run
+the script, three and four gives us seven.
+
+50
+00:03:33.190 --> 00:03:37.780
+So that's how you use raw input to
+retrieve data from the user.
+
+51
+00:03:37.780 --> 00:03:39.880
+After they've typed in at the keyboard.
+
+52
+00:03:39.880 --> 00:03:44.110
+And now we're ready to move on to the
+exercise for this chapter, where we're
+
+53
+00:03:44.110 --> 00:03:49.920
+going to use print and raw input to create
+an interactive thank you note.
+

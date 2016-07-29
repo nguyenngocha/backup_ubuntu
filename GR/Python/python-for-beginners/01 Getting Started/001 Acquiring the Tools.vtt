@@ -1,0 +1,975 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.802
+[MUSIC]
+
+2
+00:00:05.802 --> 00:00:09.832
+Hello, I'm Max [UNKNOWN] program.tv, and
+in this video, I'll be showing you
+
+3
+00:00:09.832 --> 00:00:14.000
+how to set up Eclipse with Python, and how
+to setup you're working environment.
+
+4
+00:00:15.010 --> 00:00:18.280
+So the first thing that we need to do is
+actually grab Python.
+
+5
+00:00:18.280 --> 00:00:20.140
+I'm going to be setting this up for a Mac.
+
+6
+00:00:20.140 --> 00:00:23.220
+However, the setup for Windows is quite
+similar.
+
+7
+00:00:23.220 --> 00:00:26.290
+So you should be okay following these,
+this video for
+
+8
+00:00:26.290 --> 00:00:28.550
+setting it up for Windows and for Linux as
+well.
+
+9
+00:00:29.580 --> 00:00:34.060
+Okay, so first thing we need to do, is get
+to python.org slash download.
+
+10
+00:00:34.060 --> 00:00:36.670
+And you'll see a page similar to this,
+
+11
+00:00:36.670 --> 00:00:41.130
+one saying alternative implementations and
+one saying download Python.
+
+12
+00:00:41.130 --> 00:00:43.010
+We want to visit the download Python
+section.
+
+13
+00:00:44.070 --> 00:00:46.030
+And when we're there, you'll see the first
+line
+
+14
+00:00:46.030 --> 00:00:50.210
+says that there's two versions, Python 2.7
+and Python 3.2.
+
+15
+00:00:50.210 --> 00:00:53.120
+You'll also notice on the left-hand side
+there's
+
+16
+00:00:53.120 --> 00:00:57.615
+a beta schedule and beta 3.3 is arriving
+soon.
+
+17
+00:00:57.615 --> 00:01:02.560
+If this, if beta 3.3 is available while
+
+18
+00:01:02.560 --> 00:01:04.920
+you're watching this video, don't bother
+getting it.
+
+19
+00:01:04.920 --> 00:01:10.420
+It is not going to be the same as Python
+3.2, and so some of the things are
+
+20
+00:01:10.420 --> 00:01:13.220
+going to be different which I teach you
+might
+
+21
+00:01:13.220 --> 00:01:15.010
+not be written in the same way in Python
+3.3.
+
+22
+00:01:15.010 --> 00:01:19.140
+So if we stick with Python 3.2, which is
+better
+
+23
+00:01:19.140 --> 00:01:22.420
+than Python 2.7 cuz it's newer and more
+secure and
+
+24
+00:01:22.420 --> 00:01:26.500
+also faster for processing then we'll all
+be on the
+
+25
+00:01:26.500 --> 00:01:29.090
+same page and you'll be able to follow
+along properly.
+
+26
+00:01:29.090 --> 00:01:31.530
+so if you scroll down to development areas
+3.2
+
+27
+00:01:31.530 --> 00:01:36.300
+and you'll see there's a list of different
+installation packages.
+
+28
+00:01:36.300 --> 00:01:38.460
+And the first two of Windows, and the top
+one
+
+29
+00:01:38.460 --> 00:01:40.255
+if you're on Windows is the one you'll
+want to get.
+
+30
+00:01:40.255 --> 00:01:42.560
+That the one that doesn't include the
+source code so it's a
+
+31
+00:01:42.560 --> 00:01:45.780
+smaller download and it's a binary file
+which means it's an executable.
+
+32
+00:01:45.780 --> 00:01:48.780
+You can just run it and it will install
+it.
+
+33
+00:01:48.780 --> 00:01:51.770
+And then the second one is the one which
+you ignore.
+
+34
+00:01:51.770 --> 00:01:59.660
+Now if you go down again you'll see the
+Mac OS X1s and the top
+
+35
+00:01:59.660 --> 00:02:03.640
+one is 32 and 64 bit and that is for 10.6
+and 10.7, which is Snow Leopard and Lion.
+
+36
+00:02:03.640 --> 00:02:05.250
+I'm using lighting, so I'm going to have
+to
+
+37
+00:02:05.250 --> 00:02:07.880
+be downloading the top bunk, however if
+you're using
+
+38
+00:02:07.880 --> 00:02:12.131
+the, if you're using the, anything between
+10.3 and
+
+39
+00:02:12.131 --> 00:02:15.800
+10.6, then you can get either of the two.
+
+40
+00:02:15.800 --> 00:02:18.140
+[INAUDIBLE] 10.6 can get you either of the
+two, but
+
+41
+00:02:18.140 --> 00:02:21.100
+10.3 to 10.5 will have to get the bottom
+one.
+
+42
+00:02:21.100 --> 00:02:26.380
+I would recommend if you're not on 2.6 or
+2.7 to upgrade if you can
+
+43
+00:02:26.380 --> 00:02:32.050
+because it's going to make your life a lot
+easier because 32 bit is obviously slower.
+
+44
+00:02:32.050 --> 00:02:38.050
+However, if you're processor doesn't allow
+64 bit then it's up to you.
+
+45
+00:02:38.050 --> 00:02:40.270
+And then if you go down to the bottom two,
+these are this
+
+46
+00:02:40.270 --> 00:02:44.320
+ones for Linux and Unix, and you can you
+use these on Mac OSX.
+
+47
+00:02:44.320 --> 00:02:48.590
+However since this an installer, you may
+as well just use the installer.
+
+48
+00:02:48.590 --> 00:02:52.460
+Using these two, if you are using Linux, I
+assume that you know how to use the
+
+49
+00:02:52.460 --> 00:02:54.930
+command line or the terminal, and you will
+have
+
+50
+00:02:54.930 --> 00:02:58.240
+you be using the terminal to actually
+install these.
+
+51
+00:02:59.520 --> 00:03:02.650
+There will be packages for most Linux
+versions.
+
+52
+00:03:02.650 --> 00:03:06.230
+So you should be okay if you need to
+download a package.
+
+53
+00:03:06.230 --> 00:03:10.390
+It should be ready and you can use apt-get
+up and install.
+
+54
+00:03:10.390 --> 00:03:11.990
+So you should be okay.
+
+55
+00:03:11.990 --> 00:03:15.880
+But I'm going to be downloading the 3.2.3.
+
+56
+00:03:15.880 --> 00:03:20.030
+And if we click on, OK and it'll start
+downloading.
+
+57
+00:03:20.030 --> 00:03:22.568
+In the meantime, I'll be going over to
+Eclipse.
+
+58
+00:03:22.568 --> 00:03:27.480
+Eclipse.org slash downloads, is the file,
+is the webpage you want to be visiting.
+
+59
+00:03:28.690 --> 00:03:30.840
+And you'll see there's Eclipse classic.
+
+60
+00:03:30.840 --> 00:03:32.480
+Now this is the version of Eclipse that we
+
+61
+00:03:32.480 --> 00:03:36.640
+want, because Eclipse is primarily used
+for Java development.
+
+62
+00:03:36.640 --> 00:03:38.730
+And so, you get a lot of variations which
+
+63
+00:03:38.730 --> 00:03:43.720
+are for different types of developers, and
+so on.
+
+64
+00:03:43.720 --> 00:03:46.290
+But with Eclipse Classic, it's the most
+basic
+
+65
+00:03:46.290 --> 00:03:49.450
+one and it's the best one, because we're
+going
+
+66
+00:03:49.450 --> 00:03:51.990
+to be adding a add on, which will
+
+67
+00:03:51.990 --> 00:03:58.150
+allow us to use the Python interpreter
+within Eclipse.
+
+68
+00:03:58.150 --> 00:04:03.760
+The reason why we're going to get Eclipse
+is because it is a, it's a good IDA.
+
+69
+00:04:03.760 --> 00:04:05.600
+It's well supported.
+
+70
+00:04:05.600 --> 00:04:07.650
+And also, it's universal.
+
+71
+00:04:07.650 --> 00:04:09.390
+You can use it on any platform.
+
+72
+00:04:09.390 --> 00:04:12.930
+If we go back to the page you'll notice
+that this
+
+73
+00:04:12.930 --> 00:04:17.050
+three on the drop down list is three
+different operation systems.
+
+74
+00:04:17.050 --> 00:04:19.140
+Your one should be chosen by default
+anyway,
+
+75
+00:04:19.140 --> 00:04:20.660
+but if it's not click on there and you'll
+
+76
+00:04:20.660 --> 00:04:23.820
+be able to go across to development one
+
+77
+00:04:23.820 --> 00:04:27.230
+and we'll get you downloading the 64 bit
+version.
+
+78
+00:04:33.800 --> 00:04:37.620
+Okay and once we've got to that you'll see
+a link in the middle, it'll be a mirror so
+
+79
+00:04:37.620 --> 00:04:39.890
+it won't care what country it says it
+should be
+
+80
+00:04:39.890 --> 00:04:43.200
+a country that is fairly close to where
+you are.
+
+81
+00:04:43.200 --> 00:04:45.770
+And that's all we need to do for that.
+
+82
+00:04:45.770 --> 00:04:49.260
+And for Python all you need to do is click
+on Ent and run it.
+
+83
+00:04:51.280 --> 00:04:54.310
+It'll extract all of the information from
+the DMG
+
+84
+00:04:54.310 --> 00:04:59.000
+file and then that's everything we need
+from Python dock.
+
+85
+00:04:59.000 --> 00:05:05.720
+And we're going to go and go into our
+applications.
+
+86
+00:05:05.720 --> 00:05:07.795
+And if we scroll down, you'll see that we
+have Python
+
+87
+00:05:07.795 --> 00:05:12.170
+3.2, and from there, inside there, you'll
+see just four files.
+
+88
+00:05:12.170 --> 00:05:17.820
+And this Python documentation and launcher
+and update shell.
+
+89
+00:05:17.820 --> 00:05:20.090
+And, and a file called idle.
+
+90
+00:05:20.090 --> 00:05:24.120
+Now the idle application is one that we're
+going to be using and wanting to keep.
+
+91
+00:05:24.120 --> 00:05:26.380
+So we're going to drag that down to the
+dock,
+
+92
+00:05:26.380 --> 00:05:29.070
+just to make it easy to find in the
+future.
+
+93
+00:05:29.070 --> 00:05:30.340
+And we can minimize that again.
+
+94
+00:05:31.980 --> 00:05:35.420
+And, once this is, this is finished
+downloading the
+
+95
+00:05:35.420 --> 00:05:39.870
+173 megabyte, megabytes that there is,
+we're going to
+
+96
+00:05:39.870 --> 00:05:41.440
+have to put that on the dock as well
+
+97
+00:05:41.440 --> 00:05:45.780
+because Eclipse doesn't actually install,
+it's just a shortcut.
+
+98
+00:05:45.780 --> 00:05:48.340
+So, to make it easy to find again, if we
+have it on
+
+99
+00:05:48.340 --> 00:05:51.510
+the dock, then you don't have to go
+through all your downloads area again.
+
+100
+00:05:52.510 --> 00:05:55.540
+Okay, so now that the eclipse file has
+finished downloading, what
+
+101
+00:05:55.540 --> 00:05:57.740
+we can do is we can just go and run this.
+
+102
+00:05:58.880 --> 00:06:04.470
+By over, well extract it, which will punch
+it all inside a folder somewhere.
+
+103
+00:06:04.470 --> 00:06:07.720
+And once that folder's extracted, then
+what we need to do
+
+104
+00:06:11.270 --> 00:06:16.580
+is, drag it down to the dock and we can
+then run our last setup
+
+105
+00:06:16.580 --> 00:06:21.806
+on the Workspace.
+
+106
+00:06:21.806 --> 00:06:28.089
+[SOUND] Kay, so if you open up your finder
+and you'll
+
+107
+00:06:28.089 --> 00:06:34.654
+find the Eclipse, in, icon looks like this
+sort of moon.
+
+108
+00:06:34.654 --> 00:06:37.504
+And what we're going do is we're going to
+drag that icon down to the dock
+
+109
+00:06:37.504 --> 00:06:41.360
+to make it easier to find again in the
+future, we can close that window down.
+
+110
+00:06:41.360 --> 00:06:43.570
+And if we opened up Eclipse, you'll get
+
+111
+00:06:43.570 --> 00:06:45.760
+this little warning that it's downloaded
+from the Internet.
+
+112
+00:06:45.760 --> 00:06:46.500
+Click on Open.
+
+113
+00:06:47.670 --> 00:06:49.920
+And you'll see here we get Eclipse Indigo.
+
+114
+00:06:49.920 --> 00:06:55.270
+Now Eclipse Indigo is just the version
+name, so 3.7 is called Indigo.
+
+115
+00:06:55.270 --> 00:06:57.420
+Also it means that if yours is slightly
+different, don't
+
+116
+00:06:57.420 --> 00:07:01.820
+worry about it, it just means you got a
+later version.
+
+117
+00:07:01.820 --> 00:07:03.275
+So from that, click on OK.
+
+118
+00:07:05.010 --> 00:07:07.330
+And the first thing that we need to do
+after its finished
+
+119
+00:07:07.330 --> 00:07:12.890
+loading up this Workspace, is go to Help
+and Install New Software.
+
+120
+00:07:14.000 --> 00:07:17.250
+Now where it says Install New Software we
+need to do, type in our web address
+
+121
+00:07:17.250 --> 00:07:22.693
+and this is gonna be pydev.org slash
+
+122
+00:07:22.693 --> 00:07:28.320
+updates, and click on Add and it will
+start searching.
+
+123
+00:07:28.320 --> 00:07:32.900
+And it'll find the PYDev, and it'll find
+another one called PYDev Mylyn.
+
+124
+00:07:32.900 --> 00:07:38.410
+Now the Mylyn one, you don't want do get
+because you don't need it.
+
+125
+00:07:38.410 --> 00:07:42.439
+So, just download the PYDev normal one and
+click on Next.
+
+126
+00:08:07.270 --> 00:08:09.850
+Then after this we'll be setting up the
+rest of the Workspace.
+
+127
+00:08:12.460 --> 00:08:14.590
+You'll get a little popup which says do
+you trust
+
+128
+00:08:14.590 --> 00:08:20.610
+these certificates, and that's where
+Aptana, Pydev, and Pydev Aptana.
+
+129
+00:08:20.610 --> 00:08:23.860
+And all you have to do is just check,
+click it and then click on OK.
+
+130
+00:08:23.860 --> 00:08:26.420
+And it will continue and once the install
+is
+
+131
+00:08:26.420 --> 00:08:29.470
+finished it will ask you to Restart and
+Eclipse.
+
+132
+00:08:29.470 --> 00:08:31.350
+Just click on OK or Restart Now.
+
+133
+00:08:32.430 --> 00:08:36.990
+And, it'll load it up all again.
+
+134
+00:08:36.990 --> 00:08:38.250
+And then from there what we're going to do
+
+135
+00:08:38.250 --> 00:08:41.120
+is we have to go into the preferences for
+Eclipse.
+
+136
+00:08:42.640 --> 00:08:44.940
+For this Workspace Launcher you can click
+on this
+
+137
+00:08:44.940 --> 00:08:48.880
+little checkbox here which will set it as
+default.
+
+138
+00:08:48.880 --> 00:08:50.820
+And, we're gonna ask you when ever you
+want
+
+139
+00:08:50.820 --> 00:08:53.060
+to launch again, so you won't see this
+page again.
+
+140
+00:08:54.140 --> 00:08:54.920
+And, click on OK.
+
+141
+00:08:58.690 --> 00:09:00.620
+And, now we got this loaded up, and if we
+go into
+
+142
+00:09:00.620 --> 00:09:06.970
+our preferences you'll see that we have a,
+a type called PYDev.
+
+143
+00:09:06.970 --> 00:09:11.190
+If you click on there, click on the
+extension in front of it.
+
+144
+00:09:11.190 --> 00:09:12.740
+You go down to Interpretive Python.
+
+145
+00:09:15.390 --> 00:09:20.030
+From that you can see, I've got mine
+already set up, which is Py, Python 3.2.
+
+146
+00:09:20.030 --> 00:09:23.060
+However, to do this I'll just move it and
+to create
+
+147
+00:09:23.060 --> 00:09:28.855
+a new one, you need to go to Browse >
+Applications.
+
+148
+00:09:28.855 --> 00:09:36.988
+[SOUND] Actually, now, you'll need to go
+into, into your devices, your hard drive.
+
+149
+00:09:36.988 --> 00:09:42.460
+Go to User and then scroll down and find
+Local.
+
+150
+00:09:42.460 --> 00:09:44.420
+From lLcal, you need to go into BEN.
+
+151
+00:09:44.420 --> 00:09:47.367
+And then, from BEN, you'll need to go into
+Python 3.2.
+
+152
+00:09:47.367 --> 00:09:49.760
+Make sure it's Python 3.2.
+
+153
+00:09:49.760 --> 00:09:56.720
+And there are other ones here, which have
+like [UNKNOWN] and, and so on.
+
+154
+00:09:56.720 --> 00:09:59.520
+So make sure that you choose the correct
+one, python 3.2.
+
+155
+00:09:59.520 --> 00:10:03.700
+If your version is later, it will be
+python 3.3 for example.
+
+156
+00:10:03.700 --> 00:10:08.780
+But, make sure go with Python 3.2 and
+click on Open.
+
+157
+00:10:10.550 --> 00:10:18.420
+And if you just rename the top to Python
+3.2, and click on OK.
+
+158
+00:10:20.310 --> 00:10:23.490
+You'll find all these libraries.
+
+159
+00:10:23.490 --> 00:10:24.490
+Just click on OK.
+
+160
+00:10:25.510 --> 00:10:29.280
+And that is exactly how I had it set up a
+second ago.
+
+161
+00:10:29.280 --> 00:10:32.150
+And then from there, you'll also want to
+go into General.
+
+162
+00:10:32.150 --> 00:10:32.870
+Expand that.
+
+163
+00:10:32.870 --> 00:10:36.430
+Go down to Editors, and go into Text
+Editors.
+
+164
+00:10:36.430 --> 00:10:38.030
+From there you'll see a check box, yours
+
+165
+00:10:38.030 --> 00:10:40.590
+won't be checked, and it's called show
+line numbers.
+
+166
+00:10:40.590 --> 00:10:42.390
+You want to make sure that is checked.
+
+167
+00:10:42.390 --> 00:10:46.060
+It'll make it much easier for us to
+compare codes
+
+168
+00:10:46.060 --> 00:10:49.240
+should you run into any problems later on
+in the course.
+
+169
+00:10:49.240 --> 00:10:52.990
+And if you do run into any problems then
+you can look
+
+170
+00:10:52.990 --> 00:10:56.450
+and see what your line looks like compared
+to what mine looks like.
+
+171
+00:10:57.750 --> 00:11:00.030
+Because the compiler will give you errors
+depending on
+
+172
+00:11:00.030 --> 00:11:02.110
+which line the errors are on, and so on.
+
+173
+00:11:02.110 --> 00:11:05.010
+But we will go into that in a bit more
+detail later on.
+
+174
+00:11:06.290 --> 00:11:10.870
+So from that just click on OK and if we go
+over to File.
+
+175
+00:11:10.870 --> 00:11:14.120
+You'll want to go into New and Quit, click
+on Project.
+
+176
+00:11:14.120 --> 00:11:18.530
+Once you've gone to project you'll see a
+drop down list which looks like this.
+
+177
+00:11:18.530 --> 00:11:19.740
+And at the bottom there will be a PYDev.
+
+178
+00:11:19.740 --> 00:11:24.650
+You'll want to click on expand it and
+click on PYDev project.
+
+179
+00:11:24.650 --> 00:11:29.100
+If you click on Next, you'll see that you
+get this little Create Project.
+
+180
+00:11:29.100 --> 00:11:34.500
+And I'm just gonna call this Python and
+I've learned to program.
+
+181
+00:11:35.800 --> 00:11:38.200
+And from there, you can call this whatever
+you want by the way.
+
+182
+00:11:38.200 --> 00:11:40.540
+It makes no difference what you call it.
+
+183
+00:11:40.540 --> 00:11:42.740
+And then where it says grammar version you
+want to change
+
+184
+00:11:42.740 --> 00:11:47.740
+that to 3.0, and the interpreter change
+from default to Python 3.2.
+
+185
+00:11:47.740 --> 00:11:52.280
+From that click on Next, and then click on
+Finish.
+
+186
+00:11:55.300 --> 00:11:58.690
+And you'll see at the top right of the
+page we have py, PyDev and
+
+187
+00:11:58.690 --> 00:12:02.870
+Java, you can right click on Java and
+click on Close, I'll just remove that.
+
+188
+00:12:02.870 --> 00:12:05.420
+So you'd have that in the way.
+
+189
+00:12:05.420 --> 00:12:08.280
+What you'll want to do in the top
+right-hand corner is click on this little
+
+190
+00:12:10.550 --> 00:12:12.900
+table sort of button, and click down on
+other.
+
+191
+00:12:12.900 --> 00:12:16.640
+And then go to pipe, PYDev, and click on
+OK.
+
+192
+00:12:16.640 --> 00:12:22.520
+What this'll do, is it, it'll set up
+another of these PyDevs.
+
+193
+00:12:22.520 --> 00:12:24.780
+And it should give you a look which
+
+194
+00:12:24.780 --> 00:12:27.770
+has this package explorer on the left hand
+side.
+
+195
+00:12:27.770 --> 00:12:32.860
+If not, then go to Window, and in your
+
+196
+00:12:32.860 --> 00:12:36.700
+show view you will be able to find Package
+Explorer.
+
+197
+00:12:36.700 --> 00:12:39.510
+And if you click on that it'll open up as
+well.
+
+198
+00:12:39.510 --> 00:12:43.080
+And that's all that you need open, if you
+look on the left
+
+199
+00:12:43.080 --> 00:12:47.390
+hand side here you'll see that we have a
+folder called Learn Python.
+
+200
+00:12:47.390 --> 00:12:50.570
+To create one of those you just go on New
+
+201
+00:12:50.570 --> 00:12:54.260
+and then click on Folder and then type in
+Learn Python.
+
+202
+00:12:54.260 --> 00:12:58.690
+And that is all that you need to continue
+with these videos.
+
+203
+00:12:58.690 --> 00:13:02.703
+So, thank you for watching and I will see
+you soon.
+
+204
+00:13:02.703 --> 00:13:07.689
+[MUSIC]
+

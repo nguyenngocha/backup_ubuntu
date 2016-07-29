@@ -1,0 +1,344 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:06.105
+For this first exercise for the chapter
+we're going to create a base class called
+
+2
+00:00:06.105 --> 00:00:11.340
+account and then drive a checking account
+from that base class account.
+
+3
+00:00:11.340 --> 00:00:12.710
+So let's get started.
+
+4
+00:00:12.710 --> 00:00:15.290
+We're gonna call this program account.py.
+
+5
+00:00:15.290 --> 00:00:15.790
+We'll
+
+6
+00:00:17.870 --> 00:00:19.988
+begin by creating the account class.
+
+7
+00:00:19.988 --> 00:00:25.440
+The class will have two fields, an account
+number and a balance.
+
+8
+00:00:26.850 --> 00:00:31.720
+So we'll initialize those first and the
+constructor.
+
+9
+00:00:32.720 --> 00:00:34.120
+Then we'll write a two string method.
+
+10
+00:00:34.120 --> 00:00:38.921
+[BLANK_AUDIO].
+
+11
+00:00:38.921 --> 00:00:47.530
+That will return the account number on one
+line and the balance on another line.
+
+12
+00:00:47.530 --> 00:00:50.794
+[BLANK_AUDIO]
+
+13
+00:00:50.794 --> 00:00:52.030
+Like so.
+
+14
+00:00:52.030 --> 00:00:55.030
+Rather than defining methods for
+depositing and withdrawing
+
+15
+00:00:55.030 --> 00:00:57.500
+money in the account class, we're gonna
+move
+
+16
+00:00:57.500 --> 00:01:00.080
+that down to the checking class, which
+we're
+
+17
+00:01:00.080 --> 00:01:04.670
+gonna create as a derived class from
+account.
+
+18
+00:01:04.670 --> 00:01:06.670
+The first thing we do is we write class
+checking
+
+19
+00:01:06.670 --> 00:01:09.550
+and then in parentheses we put the base
+class account.
+
+20
+00:01:11.000 --> 00:01:16.520
+The constructor will take its parameters
+the account number, the balance,
+
+21
+00:01:16.520 --> 00:01:20.430
+and a fee that the bank will charge when
+making withdrawals.
+
+22
+00:01:21.740 --> 00:01:28.471
+So the first thing we do is we call the
+base class constructor and
+
+23
+00:01:28.471 --> 00:01:34.870
+then set the fee as the only new field of
+the checking class.
+
+24
+00:01:34.870 --> 00:01:36.860
+Next we'll define a two string method.
+
+25
+00:01:36.860 --> 00:01:40.725
+So again the first thing we are going to
+do, we are going to create a
+
+26
+00:01:40.725 --> 00:01:46.240
+return string and the first thing we are
+going to do is set up a little header.
+
+27
+00:01:48.810 --> 00:01:54.680
+And then we'll concatenate to that a call
+to the base class to string method.
+
+28
+00:01:54.680 --> 00:01:58.480
+And then we'll return that string because
+everything we
+
+29
+00:01:58.480 --> 00:02:01.160
+want, we don't need to put the fee in
+
+30
+00:02:01.160 --> 00:02:04.593
+that two string method if we wanted to see
+
+31
+00:02:04.593 --> 00:02:06.690
+the fee, we can write a separate method
+for that.
+
+32
+00:02:06.690 --> 00:02:11.720
+Let's just do it real quick, and we'll use
+it, and I'll
+
+33
+00:02:11.720 --> 00:02:13.780
+go ahead and find it so you can see what
+it looks like.
+
+34
+00:02:15.420 --> 00:02:17.090
+And we'll return it, we don't have to
+return it
+
+35
+00:02:17.090 --> 00:02:19.070
+as a string, we'll just return it as it
+is.
+
+36
+00:02:21.330 --> 00:02:23.230
+Now let's define a deposit method.
+
+37
+00:02:24.310 --> 00:02:25.380
+That one is very easy.
+
+38
+00:02:25.380 --> 00:02:28.960
+We simply take the amount and add it to
+the balance.
+
+39
+00:02:28.960 --> 00:02:30.390
+Nothing to that.
+
+40
+00:02:30.390 --> 00:02:34.760
+Then let's define a withdrawal method,
+which is a little bit more complex.
+
+41
+00:02:35.950 --> 00:02:37.060
+Though not too much more.
+
+42
+00:02:38.480 --> 00:02:40.494
+First thing we have to do is we have to
+see if the
+
+43
+00:02:40.494 --> 00:02:44.380
+amount they want to withdraw is more than
+they have in their balance.
+
+44
+00:02:44.380 --> 00:02:49.000
+And if so we're gonna print insufficient
+funds
+
+45
+00:02:50.470 --> 00:02:53.220
+otherwise we're going to adjust the
+balance by
+
+46
+00:02:53.220 --> 00:02:55.750
+taking out the amount they want to
+withdrawal
+
+47
+00:02:55.750 --> 00:02:58.810
+and the fee that is being charged for
+withdrawals.
+
+48
+00:03:00.510 --> 00:03:02.550
+So for now that will do.
+
+49
+00:03:02.550 --> 00:03:07.730
+Let's test it out so we'll set up a new
+checking account object with the account
+
+50
+00:03:07.730 --> 00:03:14.830
+number of 123, an initial balance of 500,
+and a fee of fifty cents.
+
+51
+00:03:14.830 --> 00:03:20.942
+So the first thing we want to do is print
+out the status of the account and let's
+
+52
+00:03:20.942 --> 00:03:27.050
+withdraw $100, print out the status again
+and let's stop right there.
+
+53
+00:03:28.180 --> 00:03:29.650
+And save and run the program.
+
+54
+00:03:33.780 --> 00:03:36.560
+We left out one little problem, we do this
+a lot.
+
+55
+00:03:36.560 --> 00:03:38.320
+Let's fix it, I know exactly where it is.
+
+56
+00:03:38.320 --> 00:03:43.030
+That should be self.fee cuz it is a field
+of the class.
+
+57
+00:03:43.030 --> 00:03:45.670
+Let's try it again.
+
+58
+00:03:45.670 --> 00:03:47.400
+Let's clear the screen.
+
+59
+00:03:49.260 --> 00:03:49.690
+There we go.
+
+60
+00:03:49.690 --> 00:03:53.730
+So we start out with 500, and we withdraw
+100.
+
+61
+00:03:53.730 --> 00:03:57.270
+And there's $0.50 so that leaves us with
+399 50.
+
+62
+00:03:57.270 --> 00:04:01.350
+Let's do a deposit just to make sure
+deposit works.
+
+63
+00:04:01.350 --> 00:04:07.450
+And we'll deposit 200, and then print the
+status of the account again.
+
+64
+00:04:13.890 --> 00:04:15.930
+And you now see we have 599.50.
+
+65
+00:04:15.930 --> 00:04:16.430
+So
+
+66
+00:04:18.990 --> 00:04:22.630
+that wraps up this first exercise where I
+demonstrated how to derive
+
+67
+00:04:22.630 --> 00:04:29.370
+a checking class, or checking account
+class from a base account class.
+
+68
+00:04:29.370 --> 00:04:31.690
+Now, in the next exercise we're going to
+create
+
+69
+00:04:31.690 --> 00:04:35.220
+a savings account class that also derives
+from account.
+
+70
+00:04:36.260 --> 00:04:41.270
+Then I'm also gonna demonstrate how we can
+mix those two account types together
+
+71
+00:04:41.270 --> 00:04:46.570
+using a concept called polymorphism and
+have the Python system
+
+72
+00:04:46.570 --> 00:04:51.915
+figure out which type of object is which
+based on its inherent type.
+
+73
+00:04:51.915 --> 00:04:54.700
+We're gonna see how to do all that in the
+next exercise.
+

@@ -1,0 +1,183 @@
+WEBVTT
+
+1
+00:00:01.150 --> 00:00:03.997
+In this chapter we're going to discuss the
+use
+
+2
+00:00:03.997 --> 00:00:07.136
+of iterators, an iterator is an object
+that allows
+
+3
+00:00:07.136 --> 00:00:09.764
+you to traverse a sequence of data; such
+as
+
+4
+00:00:09.764 --> 00:00:12.983
+a list or a dictionary, or a tuple; for
+example.
+
+5
+00:00:12.983 --> 00:00:15.689
+But it also applies to files, so in this
+lesson,
+
+6
+00:00:15.689 --> 00:00:19.090
+we're going to just discuss in general
+what iterators are.
+
+7
+00:00:19.090 --> 00:00:24.070
+And when you do it by demonstrating some
+code without actually executing it.
+
+8
+00:00:24.070 --> 00:00:27.787
+I just want to show you visually how
+iterators work.
+
+9
+00:00:27.787 --> 00:00:29.983
+And then in the next lesson we'll actually
+
+10
+00:00:29.983 --> 00:00:32.880
+create an iterator or a couple of
+iterators.
+
+11
+00:00:32.880 --> 00:00:38.240
+So first of all we need a sequence of data
+of some type, so let's create a list.
+
+12
+00:00:38.240 --> 00:00:42.270
+So we have a list and we want to display
+each element of the list.
+
+13
+00:00:42.270 --> 00:00:44.930
+So, one way to do that would be to write a
+for loop.
+
+14
+00:00:44.930 --> 00:00:48.400
+So let me write that out real quick.
+
+15
+00:00:48.400 --> 00:00:50.380
+So, what happens when we execute the for
+
+16
+00:00:50.380 --> 00:00:54.000
+loop is that internally, an iterator is
+created
+
+17
+00:00:54.000 --> 00:00:57.200
+and this object automatically points at
+the first
+
+18
+00:00:57.200 --> 00:01:00.530
+element of the sequence, in this case, the
+list.
+
+19
+00:01:00.530 --> 00:01:04.310
+And so, in the for loop, the iterator
+points to one, and that one
+
+20
+00:01:04.310 --> 00:01:09.200
+is stored in number, and then we print
+number, then we move back up.
+
+21
+00:01:09.200 --> 00:01:15.274
+The iterator moves to the next element,
+stores it in number, and then displays
+
+22
+00:01:15.274 --> 00:01:21.400
+it, then the iterator moves to the next
+element, stores it in number.
+
+23
+00:01:21.400 --> 00:01:23.880
+And displays it, then the iterator moves
+to the
+
+24
+00:01:23.880 --> 00:01:28.420
+next element, stores it in number, then
+displays it.
+
+25
+00:01:28.420 --> 00:01:32.960
+Then it moves to the next element, stores
+it in number and then prints it.
+
+26
+00:01:34.200 --> 00:01:36.330
+Then the iterator is able to know that
+it's
+
+27
+00:01:36.330 --> 00:01:40.540
+at the end of the sequence after the
+number five.
+
+28
+00:01:40.540 --> 00:01:43.150
+So then it stops and control is
+transferred
+
+29
+00:01:43.150 --> 00:01:46.600
+to the first statement, outside of the 4
+loop.
+
+30
+00:01:46.600 --> 00:01:50.720
+So while the 4 loop is controlling the
+iterations,
+
+31
+00:01:50.720 --> 00:01:56.400
+the iterator is actually controlling the
+traversal through the list.
+
+32
+00:01:56.400 --> 00:02:00.370
+So at a high level abstract view, that's
+how iterators work.
+
+33
+00:02:00.370 --> 00:02:02.210
+So what I like to do now is move onto the
+
+34
+00:02:02.210 --> 00:02:06.850
+next lesson, where we're going to actually
+create our own explicit
+
+35
+00:02:06.850 --> 00:02:10.920
+iterator and used that to move through a
+list, then we'll
+
+36
+00:02:10.920 --> 00:02:14.540
+create another iterator and use it to move
+through a file.
+
+37
+00:02:14.540 --> 00:02:16.980
+And we're gonna to see how to do that in
+the next lesson.
+

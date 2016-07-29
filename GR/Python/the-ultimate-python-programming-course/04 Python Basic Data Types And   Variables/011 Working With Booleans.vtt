@@ -1,0 +1,199 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:04.130
+In this lesson, we're going to talk about
+the Boolean data type.
+
+2
+00:00:04.130 --> 00:00:07.310
+This will be a very short lesson because
+we really can't talk
+
+3
+00:00:07.310 --> 00:00:09.070
+much about the Boolean without talking
+
+4
+00:00:09.070 --> 00:00:11.750
+about the relational and logical
+operators.
+
+5
+00:00:11.750 --> 00:00:14.220
+And I wanna save that for the lessons when
+
+6
+00:00:14.220 --> 00:00:17.330
+we start talking about if statements and
+decision making.
+
+7
+00:00:17.330 --> 00:00:18.890
+So here I'm just gonna introduce you to
+
+8
+00:00:18.890 --> 00:00:21.760
+the standard Boolean types, show you how
+they're
+
+9
+00:00:21.760 --> 00:00:24.470
+generated then we'll talk much more about
+how
+
+10
+00:00:24.470 --> 00:00:27.790
+to generate Boolean data in a later
+chapter.
+
+11
+00:00:27.790 --> 00:00:30.090
+So we'll open the interactive shell, and
+of
+
+12
+00:00:30.090 --> 00:00:36.020
+course the Boolean data types are true and
+false.
+
+13
+00:00:36.020 --> 00:00:39.180
+Internally, true is represented as a one,
+the
+
+14
+00:00:39.180 --> 00:00:42.540
+integer one, and false is represented as a
+zero.
+
+15
+00:00:42.540 --> 00:00:47.390
+So for example, if I write an expression
+like this, which may or may not make sense
+
+16
+00:00:47.390 --> 00:00:54.110
+to you, bool equals 2 is equal to 2, or
+more precisely, the result
+
+17
+00:00:54.110 --> 00:01:00.960
+of comparing 2 equal to 2, is assigned to
+bool, will result in a value true
+
+18
+00:01:00.960 --> 00:01:04.350
+being displayed, but internally it's
+really a 1
+
+19
+00:01:04.350 --> 00:01:07.720
+and then there's some display logic that
+displays
+
+20
+00:01:07.720 --> 00:01:08.720
+the true instead of the 1.
+
+21
+00:01:08.720 --> 00:01:13.640
+So we can turn around and say, and then
+display bool and you
+
+22
+00:01:13.640 --> 00:01:17.920
+see that now bool is false because 2 is
+not equal to 3.
+
+23
+00:01:17.920 --> 00:01:21.806
+So there's really not much else to say at
+this point about the Boolean
+
+24
+00:01:21.806 --> 00:01:25.940
+data type other than that there is a true
+value and a false value.
+
+25
+00:01:25.940 --> 00:01:28.420
+It's generated when we make comparisons
+
+26
+00:01:28.420 --> 00:01:32.330
+using relational operators, and logical
+operators also.
+
+27
+00:01:32.330 --> 00:01:35.390
+We're gonna talk more about those in a
+later chapter.
+
+28
+00:01:35.390 --> 00:01:38.890
+Internally, true is stored as a one, the
+integer
+
+29
+00:01:38.890 --> 00:01:42.880
+one, and false is stored as the integer
+zero.
+
+30
+00:01:42.880 --> 00:01:45.610
+I demonstrated how to generate a billion
+value.
+
+31
+00:01:45.610 --> 00:01:47.950
+You can also do them of course directly on
+expression.
+
+32
+00:01:47.950 --> 00:01:48.810
+We saw that earlier.
+
+33
+00:01:50.130 --> 00:01:51.290
+Just like so.
+
+34
+00:01:51.290 --> 00:01:53.540
+So that's really all we're going to say
+about Boolean
+
+35
+00:01:53.540 --> 00:01:56.580
+data type right now, and as I've mentioned
+several times already,
+
+36
+00:01:56.580 --> 00:01:59.080
+we'll be talking a lot more about Boolean
+data when
+
+37
+00:01:59.080 --> 00:02:01.600
+we get to the chapter on decision making
+and if statements.
+
+38
+00:02:01.600 --> 00:02:03.780
+So we're gonna wrap up this short lesson
+
+39
+00:02:03.780 --> 00:02:05.690
+now, move on to the next lesson, where
+we're
+
+40
+00:02:05.690 --> 00:02:08.820
+going to go from data types to data
+structures,
+
+41
+00:02:08.820 --> 00:02:11.560
+and start by talking about the list data
+structure.
+

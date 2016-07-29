@@ -1,0 +1,239 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:03.900
+For this brief exercise at the end of
+chapter three,
+
+2
+00:00:03.900 --> 00:00:08.380
+I'm going to demonstrate some variations
+on printing Hello World.
+
+3
+00:00:08.380 --> 00:00:14.710
+So let's open a new program and we'll call
+it chap3ex1.py.
+
+4
+00:00:14.710 --> 00:00:19.900
+So we'll start with the standard hello
+world, let's save and run that.
+
+5
+00:00:21.060 --> 00:00:25.780
+So there's hello world, just like we saw
+in the lessons.
+
+6
+00:00:27.190 --> 00:00:33.660
+If we try to split it up into two parts,
+in two print statements, like so.
+
+7
+00:00:35.040 --> 00:00:35.770
+Watch what happens.
+
+8
+00:00:38.830 --> 00:00:41.880
+So, hello goes on one line, and world goes
+on the next line.
+
+9
+00:00:41.880 --> 00:00:48.240
+That's because by default print prints a
+new line after it prints its argument.
+
+10
+00:00:48.240 --> 00:00:51.375
+So, what we can do if we want this to be
+on
+
+11
+00:00:51.375 --> 00:00:56.650
+the same line, we can use a second
+argument end equals " ".
+
+12
+00:00:56.650 --> 00:01:00.990
+That will say don't end with a new line,
+end with a empty string.
+
+13
+00:01:02.610 --> 00:01:03.430
+Now watch what we get.
+
+14
+00:01:07.940 --> 00:01:11.930
+So we can put hello world into two print
+functions, but to get it to be
+
+15
+00:01:11.930 --> 00:01:16.850
+on the same line, we have to add a second
+argument to the first print statement.
+
+16
+00:01:16.850 --> 00:01:20.710
+End equals empty string to have it print
+on the same line.
+
+17
+00:01:20.710 --> 00:01:24.200
+So let's look at one or two other things
+real quick.
+
+18
+00:01:24.200 --> 00:01:26.190
+Like I said this was going to be a short
+exercise.
+
+19
+00:01:28.160 --> 00:01:31.500
+What if we want a large gap like a tab.
+
+20
+00:01:31.500 --> 00:01:34.730
+Well, we can enter a tab into our string.
+
+21
+00:01:34.730 --> 00:01:40.750
+Or what also works are special characters
+such as for the tab, \t.
+
+22
+00:01:40.750 --> 00:01:41.250
+So
+
+23
+00:01:44.010 --> 00:01:45.000
+watch what happens here.
+
+24
+00:01:50.630 --> 00:01:52.410
+Notice it printed it over a tab.
+
+25
+00:01:53.625 --> 00:01:57.760
+\t is the special character that
+represents a tab.
+
+26
+00:01:57.760 --> 00:02:04.680
+You can place it into the string as is, or
+optionally, we can use concatenation.
+
+27
+00:02:04.680 --> 00:02:08.610
+Now watch how this prints, be the same
+result.
+
+28
+00:02:08.610 --> 00:02:09.420
+I'll save.
+
+29
+00:02:11.110 --> 00:02:13.810
+Back to the command prompt window.
+
+30
+00:02:13.810 --> 00:02:15.570
+Okay, same result.
+
+31
+00:02:15.570 --> 00:02:19.160
+But, because it is a lot easier, it's
+easier
+
+32
+00:02:19.160 --> 00:02:23.180
+just to put the \t into the string like
+that.
+
+33
+00:02:23.180 --> 00:02:25.960
+There's also a new line character, \n,
+watch
+
+34
+00:02:28.450 --> 00:02:30.210
+what it does.
+
+35
+00:02:30.210 --> 00:02:32.850
+It automatically causes a character return
+line feed.
+
+36
+00:02:32.850 --> 00:02:38.790
+And whatever follows the \n will be
+printed on the next line.
+
+37
+00:02:38.790 --> 00:02:43.010
+So those are just a few variations in the
+print function that we can work with.
+
+38
+00:02:43.010 --> 00:02:44.930
+We'll be looking at other examples of
+
+39
+00:02:44.930 --> 00:02:47.350
+modifying the print function later in the
+course.
+
+40
+00:02:47.350 --> 00:02:50.080
+For example, we'll be looking at format
+strings
+
+41
+00:02:50.080 --> 00:02:52.510
+as a way to better place our output.
+
+42
+00:02:52.510 --> 00:02:55.140
+Although, and I say this in all the
+courses that I teach
+
+43
+00:02:55.140 --> 00:02:59.850
+on programming also, I'm not very
+interested in how the output looks.
+
+44
+00:02:59.850 --> 00:03:02.070
+Or, I'm not as interested as in the output
+looks
+
+45
+00:03:02.070 --> 00:03:05.450
+as I am in getting the correct output to
+start with.
+
+46
+00:03:05.450 --> 00:03:10.460
+So, I won't emphasis fancy printing
+techniques, like how to
+
+47
+00:03:10.460 --> 00:03:14.730
+set things up in columns in this course
+because your primary
+
+48
+00:03:14.730 --> 00:03:18.500
+focus is learning how to compute using
+Python and I'm much
+
+49
+00:03:18.500 --> 00:03:22.650
+more interested in the output being
+correct, than it looked good.
+
+50
+00:03:22.650 --> 00:03:26.830
+But with that, we're finished with this
+exercise, and that wraps up this chapter.
+

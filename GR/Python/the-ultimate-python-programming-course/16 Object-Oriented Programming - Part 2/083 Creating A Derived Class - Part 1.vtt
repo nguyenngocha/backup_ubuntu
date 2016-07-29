@@ -1,0 +1,504 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:03.210
+In this chapter we're going to talk about,
+the next
+
+2
+00:00:03.210 --> 00:00:07.840
+step in object oriented programming, and
+that's working with inheritance.
+
+3
+00:00:07.840 --> 00:00:10.900
+To explain the concept of inheritance I'm
+gonna have to, write a few notes.
+
+4
+00:00:10.900 --> 00:00:13.580
+So, I'm going to start a Notepad file.
+
+5
+00:00:13.580 --> 00:00:16.725
+Inheritance is used to, implement what's
+
+6
+00:00:16.725 --> 00:00:21.200
+called an, is-a relationship between
+objects.
+
+7
+00:00:21.200 --> 00:00:25.000
+For example, car is- a vehicle.
+
+8
+00:00:25.000 --> 00:00:27.900
+Manager is-a employee.
+
+9
+00:00:27.900 --> 00:00:30.720
+Now, the grammar's not perfect there, but
+you get the idea.
+
+10
+00:00:30.720 --> 00:00:34.620
+With inheritance, we can create what's
+called a, base
+
+11
+00:00:34.620 --> 00:00:40.640
+class, such as, an employee class or a
+vehicle class.
+
+12
+00:00:40.640 --> 00:00:44.140
+And we can define that class to have a
+certain set
+
+13
+00:00:44.140 --> 00:00:47.920
+of, attributes and behaviors, here I'm
+talking more in terms of
+
+14
+00:00:47.920 --> 00:00:54.800
+abstract data types, then we can create,
+what's called a derived class,
+
+15
+00:00:54.800 --> 00:01:00.990
+from that base class, that inherits those
+attributes and behaviors.
+
+16
+00:01:00.990 --> 00:01:03.680
+That are defined for the base class and
+
+17
+00:01:03.680 --> 00:01:09.500
+then, add extra, functionality to, the
+drive class.
+
+18
+00:01:09.500 --> 00:01:16.050
+So, for example, we might, define a
+vehicle as something that has, wheels.
+
+19
+00:01:16.050 --> 00:01:22.150
+And then we can say, a car is a more
+specific vehicle, that has four wheels.
+
+20
+00:01:22.150 --> 00:01:27.490
+An employee is a person who works for a
+company, and has certain attributes, such
+
+21
+00:01:27.490 --> 00:01:33.020
+as, name and ID, department they work in,
+and a salary.
+
+22
+00:01:33.020 --> 00:01:34.370
+Or maybe they're hourly.
+
+23
+00:01:34.370 --> 00:01:39.220
+And then we can specialize, a type of
+employee as a manager.
+
+24
+00:01:39.220 --> 00:01:42.010
+Derive, the concept of manager, from
+
+25
+00:01:42.010 --> 00:01:46.050
+employee, and include extra attributes and
+behaviors.
+
+26
+00:01:46.050 --> 00:01:49.900
+Such as, a manager may not be able to earn
+overtime.
+
+27
+00:01:49.900 --> 00:01:54.950
+A manager, supervises other employees and
+yet, even though the manager
+
+28
+00:01:54.950 --> 00:02:00.656
+has these extra powers, they are still
+considered, to be a type of employee.
+
+29
+00:02:00.656 --> 00:02:04.690
+A manager is-an employee, last example,
+and
+
+30
+00:02:04.690 --> 00:02:06.170
+this is the one we're going to demonstrate
+
+31
+00:02:06.170 --> 00:02:11.550
+in code, rectangle is-a shape, shapes have
+attributes,
+
+32
+00:02:11.550 --> 00:02:15.100
+but their fairly, ambiguous, in the
+example I'm
+
+33
+00:02:15.100 --> 00:02:20.150
+going to provide in a moment, a shape is
+defined as having xy coordinate, so
+
+34
+00:02:20.150 --> 00:02:22.380
+we're thinking of a shape, somewhere on
+the
+
+35
+00:02:22.380 --> 00:02:26.250
+plane as having at least a single
+xycoordinate.
+
+36
+00:02:26.250 --> 00:02:30.400
+Then, the rectangle can be, derived from
+that shape, and
+
+37
+00:02:30.400 --> 00:02:35.240
+provide other, attributes such as having a
+width, and a height.
+
+38
+00:02:35.240 --> 00:02:38.540
+Let's go from these, concepts to a python
+example.
+
+39
+00:02:38.540 --> 00:02:45.510
+So, we're gonna create a program called
+rectangle.py.
+
+40
+00:02:45.510 --> 00:02:49.710
+The first thing we're gonna do, is to find
+our shape class.
+
+41
+00:02:49.710 --> 00:02:51.570
+So, we're going to define a shape, to have
+
+42
+00:02:51.570 --> 00:02:58.000
+two fields, an x coordinate, and y a
+coordinate.
+
+43
+00:02:58.000 --> 00:02:59.580
+We'll define a two string method,
+
+44
+00:03:01.610 --> 00:03:05.680
+that will just print out the x and y
+position, of a shape.
+
+45
+00:03:05.680 --> 00:03:09.505
+[BLANK_AUDIO].
+
+46
+00:03:09.505 --> 00:03:14.190
+Then we'll define a method called Move,
+which
+
+47
+00:03:14.190 --> 00:03:16.600
+we can use [SOUND] to move shapes around.
+
+48
+00:03:16.600 --> 00:03:21.870
+So, this first line moves it on the x
+axis,
+
+49
+00:03:21.870 --> 00:03:25.520
+and this next line, moves the shape on
+it's y axis.
+
+50
+00:03:26.800 --> 00:03:30.490
+There's more we can do to define a shape,
+but that's good enough for now.
+
+51
+00:03:30.490 --> 00:03:33.990
+We wanna create the rectangle class as
+inheriting from shape.
+
+52
+00:03:33.990 --> 00:03:40.800
+So, the way we do that is, we put, the
+base class in as a argument.
+
+53
+00:03:40.800 --> 00:03:42.790
+Think of it like a function call.
+
+54
+00:03:42.790 --> 00:03:45.980
+And the base class, is an argument to the
+derived class
+
+55
+00:03:45.980 --> 00:03:52.050
+what we're saying is, we're saying class,
+rectangle inherits from, class shape.
+
+56
+00:03:52.050 --> 00:03:55.370
+The first thing that we're going to do, is
+write the constructor.
+
+57
+00:03:58.030 --> 00:04:02.010
+Now, when we are defining the, constructor
+for the derived class.
+
+58
+00:04:02.010 --> 00:04:04.590
+One of the things we have to do, is called
+base
+
+59
+00:04:04.590 --> 00:04:11.130
+class constructor, that's the only
+properly way, to create a derived object.
+
+60
+00:04:11.130 --> 00:04:15.610
+So, here's our call, first to the base
+class constructor.
+
+61
+00:04:15.610 --> 00:04:18.472
+It looks kind of odd, but, you'll see
+what's
+
+62
+00:04:18.472 --> 00:04:21.430
+happening here is, we don't have to
+rewrite our code.
+
+63
+00:04:21.430 --> 00:04:25.280
+We inherit this, method from the shape
+class.
+
+64
+00:04:25.280 --> 00:04:29.710
+So, we can simply call it, with the proper
+parameters.
+
+65
+00:04:29.710 --> 00:04:32.060
+And this code will be executed.
+
+66
+00:04:32.060 --> 00:04:35.420
+Then, the rest of our constructor, we'll
+define.
+
+67
+00:04:36.560 --> 00:04:39.900
+I have, length, in the parameter list, but
+that's supposed to height.
+
+68
+00:04:39.900 --> 00:04:40.900
+So, let me fix that.
+
+69
+00:04:40.900 --> 00:04:41.400
+There we go.
+
+70
+00:04:42.910 --> 00:04:45.890
+Now, we also need to redefine, the two
+sting method.
+
+71
+00:04:45.890 --> 00:04:48.640
+So, the first thing that we're going to
+do, is we're gonna create a return
+
+72
+00:04:48.640 --> 00:04:53.300
+string that returns, the state of this
+object, and to do that we're gonna call
+
+73
+00:04:53.300 --> 00:04:57.730
+the two string method, for the base class
+first, and then we're going to add
+
+74
+00:04:57.730 --> 00:05:02.090
+to it, so it's gonna be a plus equal to
+concatenate to the current value.
+
+75
+00:05:05.770 --> 00:05:08.980
+And we'll drop down to the next line,
+right here,
+
+76
+00:05:11.000 --> 00:05:13.010
+to show the rest of it, and then when
+we're
+
+77
+00:05:13.010 --> 00:05:19.100
+finished, [SOUND] we simply return, our
+return string, and we're done.
+
+78
+00:05:20.230 --> 00:05:22.720
+Now, that's all we have to do to define.
+
+79
+00:05:22.720 --> 00:05:24.220
+Rectangle.
+
+80
+00:05:24.220 --> 00:05:28.700
+We can use the move method directly from,
+the base class, shape.
+
+81
+00:05:28.700 --> 00:05:33.190
+We don't have to specify it at all, in our
+derive class if,
+
+82
+00:05:33.190 --> 00:05:35.820
+we're going to use it as is, and it should
+work just fine.
+
+83
+00:05:35.820 --> 00:05:39.090
+So, lets try that by creating a rectangle.
+
+84
+00:05:39.090 --> 00:05:42.270
+X coordinate of 5, y coordinate of 10.
+
+85
+00:05:42.270 --> 00:05:45.080
+Width of 8, height of 9.
+
+86
+00:05:45.080 --> 00:05:49.690
+Display it using two string, then let's
+move it, to
+
+87
+00:05:49.690 --> 00:05:52.600
+new x and y coordinates, and then print it
+again.
+
+88
+00:05:54.520 --> 00:05:55.220
+So, let's save it.
+
+89
+00:05:57.120 --> 00:05:57.870
+Bring it back up.
+
+90
+00:05:59.670 --> 00:06:01.420
+[SOUND] Type the code.
+
+91
+00:06:01.420 --> 00:06:05.880
+We need a space there before we with, but
+other than that, you see how it works.
+
+92
+00:06:05.880 --> 00:06:07.858
+Let me go add that in real quick while we
+review.
+
+93
+00:06:07.858 --> 00:06:10.496
+There.
+
+94
+00:06:10.496 --> 00:06:15.710
+And, right here add some spaces.
+
+95
+00:06:15.710 --> 00:06:16.950
+Okay.
+
+96
+00:06:16.950 --> 00:06:19.510
+So, to review very briefly, we can derive
+
+97
+00:06:19.510 --> 00:06:22.700
+a class from a base class using
+inheritance.
+
+98
+00:06:22.700 --> 00:06:25.740
+When we do that, we are able to call,
+methods from the
+
+99
+00:06:25.740 --> 00:06:30.690
+base class in our derive class, as well as
+add our own code.
+
+100
+00:06:30.690 --> 00:06:34.830
+To a method, to accommodate the derived
+class.
+
+101
+00:06:34.830 --> 00:06:37.630
+If we don't need to make any changes to a
+method, though, like
+
+102
+00:06:37.630 --> 00:06:41.040
+with move, we can use it as-is, as we did
+in this example, where
+
+103
+00:06:41.040 --> 00:06:44.720
+we created a rectangle, then moved it,
+even though, if you look at the
+
+104
+00:06:44.720 --> 00:06:50.230
+code, for rectangle, we did not include
+any code for move, in that definition.
+
+105
+00:06:51.350 --> 00:06:54.060
+So, that wraps up this first lesson on
+inheritance and we'll
+
+106
+00:06:54.060 --> 00:06:58.020
+look at some, further concepts in the
+second lesson of this chapter.
+

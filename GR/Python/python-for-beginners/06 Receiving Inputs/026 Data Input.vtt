@@ -1,0 +1,338 @@
+WEBVTT
+
+1
+00:00:00.006 --> 00:00:03.767
+[SOUND] Now, if you want to retrieve
+certain data, for
+
+2
+00:00:03.767 --> 00:00:07.528
+example, if you want to get somebody's
+name from the
+
+3
+00:00:07.528 --> 00:00:11.539
+user, then you're using the exact same
+function that we
+
+4
+00:00:11.539 --> 00:00:15.573
+used before, however we have to assign it
+to a variable.
+
+5
+00:00:15.573 --> 00:00:17.928
+So I'm going to assign it to a variable
+called data.
+
+6
+00:00:17.928 --> 00:00:19.420
+I'm going to just do input.
+
+7
+00:00:19.420 --> 00:00:21.170
+And I'll do what's.
+
+8
+00:00:22.990 --> 00:00:23.880
+Your name.
+
+9
+00:00:25.610 --> 00:00:28.160
+Now if you can see here I've had to escape
+the actual
+
+10
+00:00:28.160 --> 00:00:31.880
+apostrophe, cuz I'm going to be using an
+apostrophe for the actual string.
+
+11
+00:00:31.880 --> 00:00:36.990
+Now that's a very simple sort of concept,
+but if you want to use the same sort
+
+12
+00:00:36.990 --> 00:00:39.880
+of, query within the actual string, you
+need to
+
+13
+00:00:39.880 --> 00:00:43.110
+escape here, which I've covered in a
+previous chapter.
+
+14
+00:00:44.490 --> 00:00:46.572
+Now, here you can also notice I've done
+back
+
+15
+00:00:46.572 --> 00:00:48.120
+slash end, that is to create a new line.
+
+16
+00:00:48.120 --> 00:00:52.080
+If you don't do this, then it creates it
+it asks you for your
+
+17
+00:00:52.080 --> 00:00:57.355
+input on the same line as the actual data,
+which I'll show you first, actually.
+
+18
+00:00:57.355 --> 00:00:57.770
+[SOUND].
+
+19
+00:00:57.770 --> 00:01:04.106
+So now, if I do print and then I do Hello
+and now we have to do
+
+20
+00:01:04.106 --> 00:01:10.450
+format and data to input the data into our
+print command.
+
+21
+00:01:11.940 --> 00:01:13.780
+If we do this and ask me what my name is.
+
+22
+00:01:13.780 --> 00:01:16.290
+You can see the cursor is on this line
+here, and if I
+
+23
+00:01:16.290 --> 00:01:20.700
+type my name Alex it says hello Alex which
+is what you would expect.
+
+24
+00:01:20.700 --> 00:01:24.300
+However it's quite user unfriendly to have
+it on the same line.
+
+25
+00:01:24.300 --> 00:01:27.640
+And that is what the backward slash end
+does.
+
+26
+00:01:27.640 --> 00:01:29.590
+And then I hover over this again, it asks
+me what my name
+
+27
+00:01:29.590 --> 00:01:31.580
+is, but you can see that the cursor is on
+the line below.
+
+28
+00:01:31.580 --> 00:01:35.520
+And if I was to insert Alex Bowers, then
+it says hello, Alex Bowers.
+
+29
+00:01:35.520 --> 00:01:39.640
+So this is exactly what'd you expect to
+happen, and this
+
+30
+00:01:39.640 --> 00:01:44.020
+is how you're gonna save and retrieve data
+using an input.
+
+31
+00:01:44.020 --> 00:01:50.210
+So if I was to say what's your favorite
+number, and then I could do, your number
+
+32
+00:01:50.210 --> 00:01:55.590
+times 20, and the data of what you're.
+
+33
+00:01:59.560 --> 00:02:05.700
+And then I'll do data times by data is
+equal to.
+
+34
+00:02:05.700 --> 00:02:10.210
+Okay you can do times equal which is the
+same as data equals data times number.
+
+35
+00:02:10.210 --> 00:02:12.340
+So if I do data times equal number.
+
+36
+00:02:16.550 --> 00:02:19.420
+And, then all you need to do is do that.
+
+37
+00:02:19.420 --> 00:02:21.960
+Now it's identical to doing data is equal
+to data,
+
+38
+00:02:21.960 --> 00:02:24.830
+times number, however, it's just a shorter
+way of writing it.
+
+39
+00:02:26.010 --> 00:02:28.260
+And, there are multiple ones of these,
+which
+
+40
+00:02:28.260 --> 00:02:31.690
+is the plus equals, divide equals, and so
+on.
+
+41
+00:02:31.690 --> 00:02:33.390
+So, there's plenty of these sort of,
+
+42
+00:02:35.460 --> 00:02:39.340
+assignment operators, which have a symbol
+in front of it, which
+
+43
+00:02:39.340 --> 00:02:45.600
+will allow you to quickly run a certain
+mathematical command on it.
+
+44
+00:02:45.600 --> 00:02:48.010
+So now you can see it asks what my
+favorite number is.
+
+45
+00:02:48.010 --> 00:02:52.190
+If I were to insert 15, then it says your
+favorite number times 20.
+
+46
+00:02:52.190 --> 00:02:53.710
+And I should
+
+47
+00:02:58.960 --> 00:03:01.626
+have put in the curly brackets.
+
+48
+00:03:01.626 --> 00:03:03.190
+Now we want this again and put number
+
+49
+00:03:03.190 --> 00:03:06.640
+15, you'll see that my, favorite, that's
+not right.
+
+50
+00:03:11.960 --> 00:03:15.268
+Okay, that inputs it as a string, we need
+to type
+
+51
+00:03:15.268 --> 00:03:18.841
+cast it as an integer, and then if we
+witness again.
+
+52
+00:03:18.841 --> 00:03:28.841
+[BLANK_AUDIO]
+
+53
+00:03:45.116 --> 00:03:47.799
+[SOUND] There we go, now the reason why
+
+54
+00:03:47.799 --> 00:03:51.031
+we contact cost actual input is being an
+integer.
+
+55
+00:03:51.031 --> 00:03:55.020
+It's because you are receiving it as a
+string, you need to converted afterwards.
+
+56
+00:03:55.020 --> 00:03:59.110
+So, if we converted down here, you see
+that we get integer is equal
+
+57
+00:03:59.110 --> 00:04:03.528
+to, data is equal an integer of data which
+is a previous data here.
+
+58
+00:04:03.528 --> 00:04:07.380
+And, now we, we can't convert this to an
+integer now, because
+
+59
+00:04:07.380 --> 00:04:10.580
+of the fact that it is no longer being
+retrieved as a string.
+
+60
+00:04:10.580 --> 00:04:13.200
+And then we can times it by 20.
+
+61
+00:04:13.200 --> 00:04:15.770
+So what I said, I mentioned a moment ago
+about having
+
+62
+00:04:15.770 --> 00:04:19.090
+it times equal here, would not actually
+work in this instance.
+
+63
+00:04:19.090 --> 00:04:21.420
+However, what you could do from now on if
+you wanted to
+
+64
+00:04:21.420 --> 00:04:24.710
+times it by 20 again for example, you
+could do it now
+
+65
+00:04:26.840 --> 00:04:28.370
+with the extra [INAUDIBLE].
+
+66
+00:04:28.370 --> 00:04:30.330
+And if we run that now,.
+
+67
+00:04:30.330 --> 00:04:33.490
+And have 15, then now you can see where it
+works now.
+
+68
+00:04:33.490 --> 00:04:36.003
+So, the only reason why it wouldn't work
+before
+
+69
+00:04:36.003 --> 00:04:38.409
+is, because we need tight this as an
+integer.
+
+70
+00:04:38.409 --> 00:04:41.914
+So, thank you for watching, and I will see
+you in the next video.
+
+71
+00:04:41.914 --> 00:04:45.140
+[MUSIC]
+

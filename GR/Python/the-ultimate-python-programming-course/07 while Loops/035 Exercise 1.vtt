@@ -1,0 +1,324 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:04.560
+For this first exercise in this chapter,
+we are going to rewrite
+
+2
+00:00:04.560 --> 00:00:08.570
+the guessing game program, we wrote in the
+exercises of the last chapter.
+
+3
+00:00:08.570 --> 00:00:12.600
+This time, we are going to use a while
+loop, rather than nested if statements.
+
+4
+00:00:12.600 --> 00:00:17.670
+And you'll see how concise, easy to read
+and easy to understand, the program is.
+
+5
+00:00:17.670 --> 00:00:19.190
+So, lets get started.
+
+6
+00:00:21.480 --> 00:00:24.770
+We'll call this chap 7, ex1.
+
+7
+00:00:24.770 --> 00:00:25.270
+py.
+
+8
+00:00:28.080 --> 00:00:31.230
+If you remember we're going to give the
+user three tries to
+
+9
+00:00:31.230 --> 00:00:34.520
+try to, guess the name of the computer
+that played on Jeopardy.
+
+10
+00:00:34.520 --> 00:00:39.280
+So, we're gonna start off with the
+variable tries and set it to 0.
+
+11
+00:00:39.280 --> 00:00:41.260
+The answer to the question is Watson.
+
+12
+00:00:41.260 --> 00:00:42.720
+So, we'll set that variable up.
+
+13
+00:00:42.720 --> 00:00:43.220
+And
+
+14
+00:00:45.080 --> 00:00:46.200
+here's our loop.
+
+15
+00:00:46.200 --> 00:00:48.735
+While tries is listed and are equal to 3.
+
+16
+00:00:49.790 --> 00:00:51.520
+First, ask the user the question.
+
+17
+00:00:51.520 --> 00:00:55.240
+What is the name of the computer, that
+played on Jeopardy?
+
+18
+00:00:55.240 --> 00:00:55.740
+And
+
+19
+00:00:57.930 --> 00:00:59.890
+we'll get that response.
+
+20
+00:00:59.890 --> 00:01:07.985
+Using raw_input, and we write if, response
+equals Watson print.
+
+21
+00:01:07.985 --> 00:01:12.257
+That is right.
+
+22
+00:01:12.257 --> 00:01:14.880
+Elif tries equals three.
+
+23
+00:01:14.880 --> 00:01:16.460
+In other words, I have tried three times.
+
+24
+00:01:18.110 --> 00:01:20.110
+And I just thought of a little bug in the
+program, [SOUND] at
+
+25
+00:01:20.110 --> 00:01:22.910
+least the way that I have it imagined that
+I need to fix.
+
+26
+00:01:22.910 --> 00:01:24.070
+I'll mention that in a second,
+
+27
+00:01:27.200 --> 00:01:30.530
+print, sorry, the answer is Watson.
+
+28
+00:01:32.520 --> 00:01:35.670
+Else, print sorry.
+
+29
+00:01:35.670 --> 00:01:36.350
+Try again.
+
+30
+00:01:38.030 --> 00:01:42.020
+The bug that I found is that we need to,
+increment tries.
+
+31
+00:01:42.020 --> 00:01:46.860
+So, right here, we need to, write tries is
+equal to tries, plus 1.
+
+32
+00:01:46.860 --> 00:01:51.020
+And we're gonna test this out, then we'll
+see if it's right or not.
+
+33
+00:01:51.020 --> 00:01:53.700
+So, let's exit and save the file.
+
+34
+00:01:53.700 --> 00:01:54.850
+Now, let's run the program.
+
+35
+00:01:54.850 --> 00:01:58.550
+So, the first time through we'll say,
+Watson.
+
+36
+00:01:58.550 --> 00:02:01.746
+Aha, now, there's another bug, so let's
+fix that.
+
+37
+00:02:01.746 --> 00:02:05.830
+Let's just hit Ctrl+ C to get out, go back
+to our code, and
+
+38
+00:02:08.390 --> 00:02:10.660
+right here, we'll enter a break.
+
+39
+00:02:10.660 --> 00:02:11.160
+So,
+
+40
+00:02:13.110 --> 00:02:18.640
+let's exit and save, let's clear the
+screen, run it again.
+
+41
+00:02:21.030 --> 00:02:23.460
+Right, so the program stops, so that's
+great.
+
+42
+00:02:23.460 --> 00:02:25.900
+Run it again, this time we'll say, Eniac.
+
+43
+00:02:25.900 --> 00:02:29.650
+This time let's say, Watson.
+
+44
+00:02:29.650 --> 00:02:33.090
+Okay, so it works fine on the second try
+also.
+
+45
+00:02:33.090 --> 00:02:34.160
+Let's clear the screen.
+
+46
+00:02:34.160 --> 00:02:39.089
+So let's go three tries, so, the first
+time we'll say, Eniac.
+
+47
+00:02:40.380 --> 00:02:43.920
+This time we'll say, Deep Blue, this time
+we'll
+
+48
+00:02:43.920 --> 00:02:47.000
+say Watson, and we got it on the third
+try.
+
+49
+00:02:47.000 --> 00:02:51.800
+So now let's try it one more time and
+let's get it wrong each time.
+
+50
+00:02:51.800 --> 00:02:57.210
+Eniac, Deep Blue, Bell.
+
+51
+00:02:58.380 --> 00:03:00.250
+And then it says sorry, the answer is
+
+52
+00:03:00.250 --> 00:03:03.060
+Watson, because that was after the third
+try.
+
+53
+00:03:03.060 --> 00:03:06.140
+But, notice that again, it took us back
+into the loop.
+
+54
+00:03:06.140 --> 00:03:07.360
+So, we need another break,
+
+55
+00:03:09.730 --> 00:03:16.040
+we won't test this one, right here, to end
+the program.
+
+56
+00:03:16.040 --> 00:03:21.700
+The only natural break in this loop, is
+when tries, becomes 3.
+
+57
+00:03:21.700 --> 00:03:24.025
+And notice we have to say less than or
+equal to
+
+58
+00:03:24.025 --> 00:03:27.480
+3, because they can get it right on the
+third try.
+
+59
+00:03:27.480 --> 00:03:32.300
+But, you notice that we test right here,
+and so on the third try if it's not
+
+60
+00:03:32.300 --> 00:03:34.170
+right, there's no sense of giving them a
+
+61
+00:03:34.170 --> 00:03:36.770
+fourth try, and then stop before we get
+there.
+
+62
+00:03:36.770 --> 00:03:40.030
+So, that's why, we put the tries equal 3
+
+63
+00:03:40.030 --> 00:03:44.780
+here and say, sorry the answer is Watson,
+and break.
+
+64
+00:03:44.780 --> 00:03:48.800
+Notice how, easier to understand this
+program was, than the
+
+65
+00:03:48.800 --> 00:03:53.070
+version in chapter 6, where we had, nested
+if else statement.
+
+66
+00:03:53.070 --> 00:03:56.050
+As I said back in that exercise, a loop
+
+67
+00:03:56.050 --> 00:03:58.920
+was a more natural way to write this
+program.
+
+68
+00:03:58.920 --> 00:04:00.050
+And that's what we did right here.
+
+69
+00:04:00.050 --> 00:04:04.200
+So, that's our guessing game written in a
+loop, and now we're gonna move to
+
+70
+00:04:04.200 --> 00:04:06.310
+the, next exercise of the chapter where
+
+71
+00:04:06.310 --> 00:04:09.260
+we're going to write, a very simple
+calculator.
+

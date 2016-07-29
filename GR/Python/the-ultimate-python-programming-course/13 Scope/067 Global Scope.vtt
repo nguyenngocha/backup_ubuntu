@@ -1,0 +1,237 @@
+WEBVTT
+
+1
+00:00:01.040 --> 00:00:03.840
+In this chapter, we're going to be talking
+about scope.
+
+2
+00:00:03.840 --> 00:00:09.020
+And scope refers to the context in which a
+variable or some other
+
+3
+00:00:09.020 --> 00:00:15.070
+object's value is legitimate or valid, or
+even visible.
+
+4
+00:00:15.070 --> 00:00:19.730
+And sometimes it's hard to talk about
+scope without providing an example.
+
+5
+00:00:19.730 --> 00:00:21.270
+So in this lesson we're going to look at
+
+6
+00:00:21.270 --> 00:00:25.360
+the first example of scope, and that's
+global scope.
+
+7
+00:00:25.360 --> 00:00:29.580
+What I'm gonna do is I'm gonna open a
+program called global.py.
+
+8
+00:00:29.580 --> 00:00:33.200
+So again we're talking about scope.
+
+9
+00:00:33.200 --> 00:00:36.730
+And generally speaking, the two types of
+scope
+
+10
+00:00:36.730 --> 00:00:40.680
+we talk about are global scope and local
+scope.
+
+11
+00:00:40.680 --> 00:00:42.490
+Now, in general it's a bad idea to
+
+12
+00:00:42.490 --> 00:00:47.750
+have too many objects, variables, whatever
+of global scope.
+
+13
+00:00:47.750 --> 00:00:50.470
+And we'll have to save that discussion as
+to why
+
+14
+00:00:50.470 --> 00:00:53.390
+it's not a good idea until later in the
+chapter.
+
+15
+00:00:53.390 --> 00:00:57.710
+But for now I just wanna demonstrate what
+global scope means.
+
+16
+00:00:57.710 --> 00:01:00.230
+When we have a Python program, and we
+declare a variable.
+
+17
+00:01:01.290 --> 00:01:04.470
+At this level, we say that number has a
+
+18
+00:01:04.470 --> 00:01:09.470
+global scope in relation to the rest of
+the program.
+
+19
+00:01:09.470 --> 00:01:11.470
+Now what that means, it means that any
+
+20
+00:01:11.470 --> 00:01:17.370
+other part of the program can access
+numbers value.
+
+21
+00:01:17.370 --> 00:01:18.300
+Well, what does that mean?
+
+22
+00:01:18.300 --> 00:01:20.420
+Well, first of all, of course, we know
+
+23
+00:01:20.420 --> 00:01:23.430
+that the program itself can access the
+value.
+
+24
+00:01:25.440 --> 00:01:28.090
+So when we run this program, we get the
+value one.
+
+25
+00:01:28.090 --> 00:01:30.660
+That, we would already understand.
+
+26
+00:01:30.660 --> 00:01:34.760
+But what that also means though, is if we
+define a function, and
+
+27
+00:01:34.760 --> 00:01:40.030
+make a call to the variable number from
+inside the function, like so.
+
+28
+00:01:42.290 --> 00:01:43.239
+Watch what happens.
+
+29
+00:01:44.330 --> 00:01:45.570
+We still have access to it.
+
+30
+00:01:46.650 --> 00:01:50.780
+That is a classic example of global scope.
+
+31
+00:01:50.780 --> 00:01:56.560
+What that means again, is that once a
+variable is declared in the main part
+
+32
+00:01:56.560 --> 00:02:02.340
+of a program, by that I mean outside a
+function definition or a class definition.
+
+33
+00:02:02.340 --> 00:02:04.800
+We'll talk about classes later in the
+course.
+
+34
+00:02:04.800 --> 00:02:07.490
+Then its visibility is throughout the
+program.
+
+35
+00:02:07.490 --> 00:02:13.080
+So even though getnumber is a function
+that when we declare variables inside
+
+36
+00:02:13.080 --> 00:02:18.690
+of it have the other type of scope local
+because number is declared
+
+37
+00:02:18.690 --> 00:02:23.870
+in what we might term the global area just
+in the main program.
+
+38
+00:02:23.870 --> 00:02:26.530
+Then its visibility is anywhere.
+
+39
+00:02:26.530 --> 00:02:30.320
+So we can access number from the main
+program,
+
+40
+00:02:30.320 --> 00:02:35.310
+and we can also access number from a
+function call.
+
+41
+00:02:36.320 --> 00:02:39.940
+And when the function call is executed,
+Python
+
+42
+00:02:39.940 --> 00:02:44.020
+simply looks for whatever version of
+number there is,
+
+43
+00:02:44.020 --> 00:02:47.140
+and it's here defined in the global scope
+or
+
+44
+00:02:47.140 --> 00:02:50.870
+in the global context so it accesses that
+value.
+
+45
+00:02:50.870 --> 00:02:52.860
+So that's what global scope means.
+
+46
+00:02:52.860 --> 00:02:54.920
+And we're gonna end this lesson now.
+
+47
+00:02:54.920 --> 00:02:57.060
+And I admit it's a fairly short lesson.
+
+48
+00:02:57.060 --> 00:03:02.760
+But, I wanted to keep these concepts of
+global and local scope separate.
+
+49
+00:03:02.760 --> 00:03:06.820
+So now that you understand what global
+scope means, we're ready to
+
+50
+00:03:06.820 --> 00:03:10.450
+move to the next lesson where we're going
+to talk about local scope.
+

@@ -1,0 +1,390 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:04.068
+In this lesson we're going to look at
+another
+
+2
+00:00:04.068 --> 00:00:08.022
+means of prematurely transferring control
+in a while loop.
+
+3
+00:00:08.022 --> 00:00:10.922
+And this time we're gonna look at the
+break statement which
+
+4
+00:00:10.922 --> 00:00:14.503
+will cause a loop to terminate when the
+break statement is encountered.
+
+5
+00:00:14.503 --> 00:00:16.918
+First, let's look at the general form of
+
+6
+00:00:16.918 --> 00:00:19.687
+the break before we look at a specific
+example.
+
+7
+00:00:19.687 --> 00:00:22.910
+So, we have our while loop with the
+relational expression.
+
+8
+00:00:22.910 --> 00:00:25.670
+Then, we have a series of statements.
+
+9
+00:00:26.960 --> 00:00:32.010
+Then, most likely, we'll have a condition
+which, if true, will
+
+10
+00:00:32.010 --> 00:00:34.575
+lead us to want to break out of the loop,
+altogether.
+
+11
+00:00:35.640 --> 00:00:38.160
+So we'll display it like that.
+
+12
+00:00:38.160 --> 00:00:40.460
+And then more statements to execute,
+
+13
+00:00:40.460 --> 00:00:44.110
+perhaps, if this relational expression is
+false.
+
+14
+00:00:44.110 --> 00:00:47.080
+So, again what happens is, is that the
+loop executes
+
+15
+00:00:47.080 --> 00:00:52.420
+normally unless this if statement or the
+relational expression of the
+
+16
+00:00:52.420 --> 00:00:56.020
+if statement returns true, and then the
+break is executed and
+
+17
+00:00:56.020 --> 00:01:00.730
+control is transferred to the first
+statement after the while loop.
+
+18
+00:01:00.730 --> 00:01:07.200
+We can put as a comment, break transfers
+control to here, and that's unlike
+
+19
+00:01:07.200 --> 00:01:12.360
+the continue statement, which will send
+the control back to the top of the loop.
+
+20
+00:01:12.360 --> 00:01:14.540
+Break takes you completely out of the
+loop.
+
+21
+00:01:14.540 --> 00:01:17.132
+So, let's look at a more specific example.
+
+22
+00:01:17.132 --> 00:01:18.792
+[BLANK_AUDIO]
+
+23
+00:01:18.792 --> 00:01:21.412
+We'll call this program break.py.
+
+24
+00:01:21.412 --> 00:01:23.244
+[BLANK_AUDIO]
+
+25
+00:01:23.244 --> 00:01:25.140
+What we're going to is, we're going
+
+26
+00:01:25.140 --> 00:01:29.500
+to Write the averaging program we wrote
+earlier.
+
+27
+00:01:29.500 --> 00:01:31.420
+We're not going to worry about grade so
+much this time.
+
+28
+00:01:31.420 --> 00:01:33.990
+We're just going to average some numbers.
+
+29
+00:01:33.990 --> 00:01:38.120
+So, I'll put a variable there, though, I
+don't really need it this time.
+
+30
+00:01:38.120 --> 00:01:40.220
+We'll set a total up.
+
+31
+00:01:40.220 --> 00:01:41.450
+We'll set up an average.
+
+32
+00:01:42.510 --> 00:01:46.570
+And then we'll also set up a count to keep
+track of how many numbers we're entering.
+
+33
+00:01:46.570 --> 00:01:49.040
+So, then, we'll say, while true.
+
+34
+00:01:50.110 --> 00:01:54.710
+What's going to happen now, is this loop
+is going to run continuously, unless a
+
+35
+00:01:54.710 --> 00:02:00.340
+sentinel value is entered, in which case,
+we will then use break to stop the loop.
+
+36
+00:02:00.340 --> 00:02:02.320
+So, let's take a look at how that's going
+to work.
+
+37
+00:02:02.320 --> 00:02:04.220
+So, we prompt the user to enter a number.
+
+38
+00:02:06.260 --> 00:02:09.340
+We'll get it in using raw input and
+convert it to float.
+
+39
+00:02:10.650 --> 00:02:13.060
+So, we can have floating point numbers if
+we choose to.
+
+40
+00:02:14.400 --> 00:02:20.230
+Then, we're going to say, if number is
+equal to negative 1, break.
+
+41
+00:02:21.760 --> 00:02:28.340
+Otherwise, add it to the total, and
+increment the count by one.
+
+42
+00:02:28.340 --> 00:02:30.050
+And that'll take us back to the top of the
+loop.
+
+43
+00:02:30.050 --> 00:02:33.209
+And then when we're finished, we compute
+the
+
+44
+00:02:33.209 --> 00:02:36.539
+average, write about the count and then
+print.
+
+45
+00:02:36.539 --> 00:02:38.896
+[BLANK_AUDIO].
+
+46
+00:02:38.896 --> 00:02:41.330
+And then print the average.
+
+47
+00:02:41.330 --> 00:02:44.290
+So, again what will happen is if then
+number
+
+48
+00:02:44.290 --> 00:02:47.890
+we enter is negative one, then control
+will transfer
+
+49
+00:02:47.890 --> 00:02:51.170
+from inside the loop to the first
+statement after
+
+50
+00:02:51.170 --> 00:02:54.862
+the loop, which is where the average is
+calculated.
+
+51
+00:02:54.862 --> 00:02:58.416
+So, let's exit and save, now let's give it
+a try here.
+
+52
+00:02:58.416 --> 00:03:00.984
+[BLANK_AUDIO].
+
+53
+00:03:00.984 --> 00:03:02.135
+Woops, I didn't do that right.
+
+54
+00:03:02.135 --> 00:03:03.710
+Break.py, there we go.
+
+55
+00:03:04.880 --> 00:03:08.510
+We have a little syntax error, so let's go
+back into the program.
+
+56
+00:03:11.110 --> 00:03:12.940
+Our syntax error is right here, I left
+
+57
+00:03:12.940 --> 00:03:16.580
+off this closing parenthesis for the whole
+print function.
+
+58
+00:03:16.580 --> 00:03:18.890
+Very common to do when you're typing.
+
+59
+00:03:18.890 --> 00:03:22.940
+I'm looking at this as I'm typing this
+parenthesis,
+
+60
+00:03:22.940 --> 00:03:25.520
+I'm seeing that parenthesis as the match
+when, of
+
+61
+00:03:25.520 --> 00:03:29.270
+course, that's the match for this
+parenthesis, so I
+
+62
+00:03:29.270 --> 00:03:34.010
+need a second closing parenthesis to fix
+it up.
+
+63
+00:03:34.010 --> 00:03:34.510
+There we go.
+
+64
+00:03:36.980 --> 00:03:39.350
+Let's clear the screen, try it again.
+
+65
+00:03:39.350 --> 00:03:40.160
+That's much better.
+
+66
+00:03:41.200 --> 00:03:44.820
+Let's do some very easy calculations.
+
+67
+00:03:44.820 --> 00:03:46.940
+So, here I enter negative one.
+
+68
+00:03:46.940 --> 00:03:50.210
+Negative one triggers the break so we
+break
+
+69
+00:03:50.210 --> 00:03:53.080
+out of the loop and we compute the
+average.
+
+70
+00:03:53.080 --> 00:03:57.450
+Let's run it one more time with just some
+random numbers.
+
+71
+00:03:59.560 --> 00:04:01.139
+That's gonna really mess our average up.
+
+72
+00:04:02.302 --> 00:04:03.610
+That's gonna mess it up even more.
+
+73
+00:04:05.190 --> 00:04:06.250
+And so, there's our average.
+
+74
+00:04:09.040 --> 00:04:11.700
+So, again, break can be used any time some
+
+75
+00:04:11.700 --> 00:04:15.680
+condition occurs that necessitates ending
+the loop at that point.
+
+76
+00:04:15.680 --> 00:04:19.720
+I wouldn't recommend writing this program
+I've used here.
+
+77
+00:04:19.720 --> 00:04:22.940
+I just used this style for demonstration
+purposes.
+
+78
+00:04:22.940 --> 00:04:25.400
+You are better off writing this program
+the way I did earlier in
+
+79
+00:04:25.400 --> 00:04:30.080
+the chapter, but I wanted to demonstrate
+how break works with a familiar example.
+
+80
+00:04:30.080 --> 00:04:31.550
+With that, we're ready to leave these
+
+81
+00:04:31.550 --> 00:04:34.530
+topics of how to prematurely transfer
+control
+
+82
+00:04:34.530 --> 00:04:38.640
+out of the loop and look at a very common
+use of loops in programming.
+
+83
+00:04:38.640 --> 00:04:41.020
+And that's processing text files.
+
+84
+00:04:41.020 --> 00:04:44.220
+And we'll cover working with text files in
+the next two lessons.
+

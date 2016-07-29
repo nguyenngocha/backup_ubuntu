@@ -1,0 +1,223 @@
+WEBVTT
+
+1
+00:00:01.160 --> 00:00:03.350
+In this lesson we're going to see how to
+raise our own
+
+2
+00:00:03.350 --> 00:00:07.440
+exceptions rather than rely on exceptions
+being raised by the Python system.
+
+3
+00:00:07.440 --> 00:00:10.020
+A place where you might want to do this is
+in a class
+
+4
+00:00:10.020 --> 00:00:15.230
+definition for when the user enters some
+data wrong or some other event occurs.
+
+5
+00:00:15.230 --> 00:00:16.470
+We'll use that as a basis for
+
+6
+00:00:16.470 --> 00:00:19.880
+demonstrating how to raise our own
+exceptions.
+
+7
+00:00:19.880 --> 00:00:21.630
+So let's start a new a program.
+
+8
+00:00:21.630 --> 00:00:23.810
+We're gonna call it raise.py.
+
+9
+00:00:23.810 --> 00:00:28.460
+What we're going to create is a class to
+store rational numbers.
+
+10
+00:00:28.460 --> 00:00:31.740
+I'm not going to go very deep into the
+implementation of the class.
+
+11
+00:00:31.740 --> 00:00:35.350
+I just want to show what happens when you
+try to instantiate a rational
+
+12
+00:00:35.350 --> 00:00:40.230
+object with 0 as the denominator, which
+will lead to a 0 division error.
+
+13
+00:00:40.230 --> 00:00:43.600
+So we'll go directly to the definition of
+the constructor.
+
+14
+00:00:44.620 --> 00:00:48.840
+The constructor will consist of three
+parameters, self,
+
+15
+00:00:48.840 --> 00:00:52.650
+x, and y, representing the numerator and
+the denominator.
+
+16
+00:00:52.650 --> 00:00:56.820
+So in the body we'll write, numerator
+equals x, then
+
+17
+00:00:56.820 --> 00:01:00.155
+we're going to say if, y is equal to 0.
+
+18
+00:01:01.170 --> 00:01:03.370
+In other words, if the denominator is
+going to be
+
+19
+00:01:03.370 --> 00:01:06.790
+a 0, then we want to raise a 0 division
+error.
+
+20
+00:01:06.790 --> 00:01:09.240
+So, what happens is if this raise
+
+21
+00:01:09.240 --> 00:01:11.720
+statement is executed within a try,
+interval
+
+22
+00:01:11.720 --> 00:01:17.330
+throw that exception to the except class
+in the try statement if there is one.
+
+23
+00:01:17.330 --> 00:01:19.530
+Let's finish off the definition.
+
+24
+00:01:19.530 --> 00:01:22.720
+Else denominator equals y.
+
+25
+00:01:22.720 --> 00:01:23.860
+That's all we're going to do.
+
+26
+00:01:23.860 --> 00:01:27.300
+That's enough to demonstrate how the ray
+statement works.
+
+27
+00:01:27.300 --> 00:01:29.690
+So, let's try to create a rational number.
+
+28
+00:01:29.690 --> 00:01:34.140
+Let's create rational 4,1 and then let's
+create another one.
+
+29
+00:01:34.140 --> 00:01:36.690
+Rat2 equals rational 3, 0.
+
+30
+00:01:36.690 --> 00:01:38.310
+And save the program.
+
+31
+00:01:39.720 --> 00:01:44.910
+And run it, and there we can see that a
+zero division
+
+32
+00:01:44.910 --> 00:01:50.460
+error was raised when we tried to create a
+deniminator of 0.
+
+33
+00:01:50.460 --> 00:01:53.950
+Let's go back to the program, and let's
+put a try statement into the program.
+
+34
+00:01:56.700 --> 00:01:59.430
+And, what we want to do is, is we want to
+add an except
+
+35
+00:01:59.430 --> 00:02:04.560
+clause so that we can print a statement,
+other than just the raw error message.
+
+36
+00:02:04.560 --> 00:02:10.370
+So, we're going to say, cannot have a
+rational number with 0 for denominator,
+
+37
+00:02:10.370 --> 00:02:15.100
+will be our little statement we're going
+to print when the exception is raised.
+
+38
+00:02:15.100 --> 00:02:17.530
+So, lets go back, save the program again.
+
+39
+00:02:19.180 --> 00:02:20.650
+And lets rerun it.
+
+40
+00:02:20.650 --> 00:02:23.920
+And there we see that his time just like
+before trying to
+
+41
+00:02:23.920 --> 00:02:28.200
+create a rational number with 0 as a
+denominator causes an exception.
+
+42
+00:02:28.200 --> 00:02:32.409
+But this time our little statement is
+printed rather than the raw error.
+
+43
+00:02:33.740 --> 00:02:37.740
+And again, that happened because we tried
+to create a rational number with 0
+
+44
+00:02:37.740 --> 00:02:39.590
+as the denominator and when it didn't
+
+45
+00:02:39.590 --> 00:02:42.890
+work, then our print statement was
+executed.
+
+46
+00:02:42.890 --> 00:02:47.100
+So with that we're finished with this
+lesson on the raise exception
+
+47
+00:02:47.100 --> 00:02:51.530
+and now we're ready to move on to the
+exercises for this chapter.
+

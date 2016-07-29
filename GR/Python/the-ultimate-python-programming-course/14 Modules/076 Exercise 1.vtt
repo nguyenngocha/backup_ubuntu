@@ -1,0 +1,270 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:03.780
+In this exercise we're going to practice
+working with modules,
+
+2
+00:00:03.780 --> 00:00:09.170
+by building a module, to perform some,
+calculations on spheres.
+
+3
+00:00:09.170 --> 00:00:12.760
+In particular we're going to, write
+functions to, compute the
+
+4
+00:00:12.760 --> 00:00:15.980
+area of a sphere, and the volume of a
+sphere.
+
+5
+00:00:15.980 --> 00:00:17.570
+And this will give you a good idea of how
+
+6
+00:00:17.570 --> 00:00:22.700
+to write, modules for other geometrical
+types of calculations and.
+
+7
+00:00:22.700 --> 00:00:25.260
+Anything else you might want to perform
+calculations on as well.
+
+8
+00:00:25.260 --> 00:00:27.810
+So let's get started.
+
+9
+00:00:27.810 --> 00:00:30.690
+We're gonna call our modules sphere, dot P
+Y.
+
+10
+00:00:31.990 --> 00:00:37.020
+The first thing were going to do, is we're
+going to define, a constant PI.
+
+11
+00:00:37.020 --> 00:00:38.550
+There's two ways to do it.
+
+12
+00:00:38.550 --> 00:00:41.520
+One way would be to, put in all upper
+case, to
+
+13
+00:00:41.520 --> 00:00:45.280
+symbolize that it's a constant, But, i'm
+not really crazy about that.
+
+14
+00:00:45.280 --> 00:00:47.670
+It's kind of gone, out of favor to use.
+
+15
+00:00:47.670 --> 00:00:53.030
+All uppercase for constance so we'll, use
+a regular lowercase variable pi and we'll
+
+16
+00:00:53.030 --> 00:00:59.370
+set it's value at 3.14159, so the next
+thing we want to do is define, the area
+
+17
+00:00:59.370 --> 00:01:04.810
+of a sphere, and so to do that we have to
+give the spheres radius, and then we
+
+18
+00:01:04.810 --> 00:01:12.560
+simply return the computation and that's 4
+times pi times the radius squared.
+
+19
+00:01:12.560 --> 00:01:15.450
+And we'll just do radius, times radius,
+rather
+
+20
+00:01:15.450 --> 00:01:18.690
+than bother to write our own separate
+square function,
+
+21
+00:01:19.820 --> 00:01:21.380
+And then to compute the volume of a
+
+22
+00:01:21.380 --> 00:01:25.450
+sphere, we also take the radius as an
+argument.
+
+23
+00:01:25.450 --> 00:01:27.393
+And we return 4 3rds.
+
+24
+00:01:27.393 --> 00:01:34.340
+Let's do 4.0 divided by 3.0, times Pi,
+times the radius
+
+25
+00:01:34.340 --> 00:01:37.110
+cubed so let's make sure we get the
+multiplication symbol in.
+
+26
+00:01:37.110 --> 00:01:42.560
+So that's radius, times radius, times
+radius.
+
+27
+00:01:42.560 --> 00:01:43.410
+And we'll, stop there.
+
+28
+00:01:44.700 --> 00:01:46.670
+So let's exit and save.
+
+29
+00:01:49.700 --> 00:01:52.630
+The next thing we wanna do, is write a
+program to test our module.
+
+30
+00:01:52.630 --> 00:01:56.052
+So, we'll call it spheretest.py.
+
+31
+00:01:56.052 --> 00:02:00.020
+We'll import, all of the name space.
+
+32
+00:02:00.020 --> 00:02:03.440
+We'll write import, * from sphere import*.
+
+33
+00:02:03.440 --> 00:02:06.490
+We'll prompt the user to enter the,
+radius.
+
+34
+00:02:09.410 --> 00:02:10.740
+And then, we'll write print.
+
+35
+00:02:10.740 --> 00:02:11.240
+Make
+
+36
+00:02:13.650 --> 00:02:16.290
+sure we have the right number of closing
+parentheses and we do.
+
+37
+00:02:16.290 --> 00:02:18.240
+And then we'll write print
+
+38
+00:02:18.240 --> 00:02:22.816
+[BLANK_AUDIO].
+
+39
+00:02:22.816 --> 00:02:25.674
+Let's, save.
+
+40
+00:02:27.530 --> 00:02:28.080
+Then we'll run it.
+
+41
+00:02:28.080 --> 00:02:28.580
+So
+
+42
+00:02:30.260 --> 00:02:31.970
+we'll say the radius, is 5.
+
+43
+00:02:31.970 --> 00:02:33.110
+The are is 314.159.
+
+44
+00:02:33.110 --> 00:02:38.932
+And the volume is, 523.598.
+
+45
+00:02:38.932 --> 00:02:44.370
+Alternatively, we can write our import
+statement like so.
+
+46
+00:02:44.370 --> 00:02:49.860
+And then for our two calculations, let's
+comment out the old ones, and
+
+47
+00:02:50.870 --> 00:02:57.070
+then copy them, and we'll paste in, get
+rid of this comment right here.
+
+48
+00:02:58.670 --> 00:03:02.210
+And then right where we called the
+function we'll have to call
+
+49
+00:03:02.210 --> 00:03:05.620
+it with the fully qualified name, and add
+the module name in.
+
+50
+00:03:07.010 --> 00:03:07.520
+Like so, so
+
+51
+00:03:10.090 --> 00:03:12.880
+let's try it again, with the same numbers,
+so
+
+52
+00:03:17.300 --> 00:03:21.180
+we'll enter 5 for the radius, and we get
+the same result, so
+
+53
+00:03:23.310 --> 00:03:28.040
+in this exercise I've demonstrated another
+example of how to create a module.
+
+54
+00:03:28.040 --> 00:03:30.670
+In this case to, compute the area and
+volume
+
+55
+00:03:30.670 --> 00:03:34.130
+of a sphere, and then, how to import it
+in.
+
+56
+00:03:34.130 --> 00:03:39.210
+Either using the from, sphere, import,
+star technique, or if we want
+
+57
+00:03:39.210 --> 00:03:44.530
+to use the fully qualified name in our
+calls, then we can just write
+
+58
+00:03:44.530 --> 00:03:49.350
+import sphere, and with that, we conclude
+this chapter on working with modules.
+

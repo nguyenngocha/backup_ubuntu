@@ -1,0 +1,310 @@
+WEBVTT
+
+1
+00:00:01.110 --> 00:00:03.110
+For the second exercise, we are going to
+write a
+
+2
+00:00:03.110 --> 00:00:07.210
+simple calculator that allows the user to
+enter two numbers,
+
+3
+00:00:07.210 --> 00:00:10.500
+operands, and then an operator, and then
+it will return
+
+4
+00:00:10.500 --> 00:00:15.330
+the result of applying the operator to the
+two operands.
+
+5
+00:00:15.330 --> 00:00:16.120
+So let's get started.
+
+6
+00:00:17.360 --> 00:00:23.814
+We're gonna call this Chap7ex2.py.
+
+7
+00:00:23.814 --> 00:00:29.840
+So what we'll do is, just to let the user
+now in advance or someone
+
+8
+00:00:29.840 --> 00:00:35.110
+reading our code what our variables are,
+we will set them up and declare them here.
+
+9
+00:00:35.110 --> 00:00:38.460
+It's not necessarily always done in
+Python.
+
+10
+00:00:38.460 --> 00:00:42.490
+I just like to make it clear at the
+beginning that we're going to have two
+
+11
+00:00:42.490 --> 00:00:46.340
+operands, op1 and op2, and then an
+operator,
+
+12
+00:00:46.340 --> 00:00:47.850
+and those are going to be our variables.
+
+13
+00:00:49.070 --> 00:00:53.200
+So we're going to say, while op1 is not
+equal to q.
+
+14
+00:00:53.200 --> 00:00:57.760
+And that may look odd because op1 is going
+to be a number, but,
+
+15
+00:00:57.760 --> 00:01:02.450
+of course, when we get input from raw
+input, it comes in as a string.
+
+16
+00:01:02.450 --> 00:01:04.640
+So I'm going to check to see if the user
+enters
+
+17
+00:01:04.640 --> 00:01:08.860
+a string before I can burn it to a
+floating point number.
+
+18
+00:01:08.860 --> 00:01:14.060
+So our first thing we're going to do is
+prompt the user and our first
+
+19
+00:01:14.060 --> 00:01:19.770
+number Q to quit and then we'll say OP one
+is equal to raw input.
+
+20
+00:01:20.920 --> 00:01:26.712
+If op1 equals q, then we'll break,
+
+21
+00:01:26.712 --> 00:01:32.190
+otherwise op1 equals float op1.
+
+22
+00:01:33.290 --> 00:01:38.700
+Now, we have it in the right data type to
+perform an arithmetic operation on it.
+
+23
+00:01:38.700 --> 00:01:42.420
+Then we'll say print, enter second number.
+
+24
+00:01:43.710 --> 00:01:48.100
+Op2 equals float raw input.
+
+25
+00:01:48.100 --> 00:01:53.640
+We can convert op2 immediately, so we can
+do it in one line, like we're used to.
+
+26
+00:01:53.640 --> 00:01:57.760
+And we're gonna say print, enter an
+operation, and
+
+27
+00:01:58.870 --> 00:02:02.920
+then we'll provide the operations that
+they can perform.
+
+28
+00:02:02.920 --> 00:02:09.340
+We're gonna limit it to addition,
+subtraction, multiplication and division.
+
+29
+00:02:10.760 --> 00:02:12.400
+Op equals raw input.
+
+30
+00:02:12.400 --> 00:02:14.770
+We'll get the operator in.
+
+31
+00:02:14.770 --> 00:02:16.155
+Now, we just have a series of if,
+
+32
+00:02:16.155 --> 00:02:20.420
+elif statements to determine which
+operation to perform.
+
+33
+00:02:21.580 --> 00:02:27.484
+If Op equals plus, and we'll say, print,
+op1
+
+34
+00:02:27.484 --> 00:02:33.820
+plus op2, elif, op equals subtraction,
+print,
+
+35
+00:02:33.820 --> 00:02:39.292
+op1 minus op2, elif, I see one thing that
+I
+
+36
+00:02:39.292 --> 00:02:44.860
+do want to take out, are these
+parenthesis.
+
+37
+00:02:47.550 --> 00:02:50.050
+Many other programming languages require
+them.
+
+38
+00:02:51.850 --> 00:02:57.460
+Now elif, op equals multiplication,
+
+39
+00:02:57.460 --> 00:03:03.580
+print, op1 times op2, elif, op equals
+
+40
+00:03:03.580 --> 00:03:09.700
+division, print, op1 divided by op2,
+
+41
+00:03:09.700 --> 00:03:15.820
+else, print did not recognize operator.
+
+42
+00:03:15.820 --> 00:03:21.259
+A little error message, you have to enter
+something other than our four operators.
+
+43
+00:03:22.990 --> 00:03:25.060
+We can also take the parentheses off here.
+
+44
+00:03:25.060 --> 00:03:29.880
+Again, I'm trying to use Python idioms as
+much as possible.
+
+45
+00:03:29.880 --> 00:03:31.650
+And the parentheses are discouraged.
+
+46
+00:03:32.880 --> 00:03:35.360
+Now, I'm checking for colons in all the
+right places.
+
+47
+00:03:35.360 --> 00:03:37.260
+And I probably have them all there.
+
+48
+00:03:37.260 --> 00:03:41.100
+If not, they'll be fixed when we actually
+run our code the first time,
+
+49
+00:03:41.100 --> 00:03:44.590
+or we'll be able to fix them when we run
+our code the first time.
+
+50
+00:03:44.590 --> 00:03:46.368
+So let's give it a shot.
+
+51
+00:03:46.368 --> 00:03:48.882
+Chap7ex2.py.
+
+52
+00:03:48.882 --> 00:03:51.700
+So we'll do a simple addition.
+
+53
+00:03:51.700 --> 00:03:54.920
+2 plus 2 is 4.
+
+54
+00:03:54.920 --> 00:03:57.774
+Notice it does it in floating point, so
+it's 4.0.
+
+55
+00:03:57.774 --> 00:04:00.580
+Let's try a subtraction problem.
+
+56
+00:04:00.580 --> 00:04:04.830
+23, 11, subtract.
+
+57
+00:04:04.830 --> 00:04:07.562
+And that's 12.0, that looks good.
+
+58
+00:04:07.562 --> 00:04:11.100
+Let's try a multiplication problem.
+
+59
+00:04:11.100 --> 00:04:18.148
+4.4, 1.1, multiplied, 4.84, very good.
+
+60
+00:04:18.148 --> 00:04:24.540
+Let's do a division, 144, 12, divide,
+12.0, that's good.
+
+61
+00:04:24.540 --> 00:04:29.710
+Let's hit Q to quit, and our program
+quits.
+
+62
+00:04:31.210 --> 00:04:35.860
+So going back and looking at the code
+again, we have a simple calculator that
+
+63
+00:04:35.860 --> 00:04:37.840
+allows the user to enter two numbers and
+
+64
+00:04:37.840 --> 00:04:41.960
+an operator and then performs the desired
+operation.
+
+65
+00:04:41.960 --> 00:04:46.650
+And we give them a means of getting out of
+the program by typing Q to quit.
+
+66
+00:04:46.650 --> 00:04:51.160
+So that wraps up this exercise, and it
+concludes this chapter on the while Loop.
+
+67
+00:04:51.160 --> 00:04:55.490
+And now, we're ready to move to the next
+Python loop type and that's the for Loop.
+

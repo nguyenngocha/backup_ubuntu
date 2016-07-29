@@ -1,0 +1,158 @@
+WEBVTT
+
+1
+00:00:01.160 --> 00:00:02.700
+In this brief lesson, we're going to talk
+
+2
+00:00:02.700 --> 00:00:06.880
+about yet, another Python data structure,
+the dictionary.
+
+3
+00:00:06.880 --> 00:00:09.400
+A dictionary is exactly what you think of.
+
+4
+00:00:09.400 --> 00:00:13.900
+It's a way to look up, a value based on a
+key.
+
+5
+00:00:13.900 --> 00:00:17.500
+Just like Webster's Dictionary or any
+other dictionary.
+
+6
+00:00:17.500 --> 00:00:19.370
+We're going to use the interactive shell
+
+7
+00:00:19.370 --> 00:00:22.850
+again, to demonstrate how dictionaries are
+created.
+
+8
+00:00:22.850 --> 00:00:25.540
+So let's open the shell first of all.
+
+9
+00:00:27.360 --> 00:00:30.880
+This first example will demonstrate how to
+create an empty dictionary, and we
+
+10
+00:00:30.880 --> 00:00:35.460
+do that by writing an open curly brace
+followed by a closing curly brace.
+
+11
+00:00:36.540 --> 00:00:39.010
+That creates an empty dictionary.
+
+12
+00:00:39.010 --> 00:00:40.730
+But of course, that's not of much use.
+
+13
+00:00:40.730 --> 00:00:45.250
+So let's see how to create, a dictionary
+that actually has data in it.
+
+14
+00:00:45.250 --> 00:00:49.560
+What we're gonna do is we're gonna create
+a little simple phone extension list.
+
+15
+00:00:49.560 --> 00:00:51.070
+We'll call it phone list.
+
+16
+00:00:51.070 --> 00:00:55.270
+And it's going to have an employee's name
+followed by their extension.
+
+17
+00:00:55.270 --> 00:00:58.750
+So we open the dictionary with an open
+curly brace.
+
+18
+00:00:58.750 --> 00:01:03.770
+We type the first key followed by a colon,
+and then a value and then a
+
+19
+00:01:03.770 --> 00:01:09.740
+comma, then another key, colon, another
+value, and
+
+20
+00:01:09.740 --> 00:01:14.870
+we'll do one more key and one more value,
+like so.
+
+21
+00:01:14.870 --> 00:01:17.890
+And that's all there is to it.
+
+22
+00:01:17.890 --> 00:01:23.730
+If I want to retrieve a value I just write
+a key as an index.
+
+23
+00:01:23.730 --> 00:01:26.280
+So, if I type in phone list Jane, it
+returns
+
+24
+00:01:26.280 --> 00:01:31.380
+233, and that's as simple as a Python
+dictionary is.
+
+25
+00:01:31.380 --> 00:01:34.400
+One thing I will show you before we leave
+this subject, is you can
+
+26
+00:01:34.400 --> 00:01:38.320
+get a list of all the keys and all the
+values of a dictionary.
+
+27
+00:01:38.320 --> 00:01:41.490
+By using the keys function which returns
+the keys,
+
+28
+00:01:41.490 --> 00:01:45.550
+and the values function which returns all
+the values.
+
+29
+00:01:45.550 --> 00:01:48.970
+There's a lot more we can talk about the
+dictionaries, but we'll save that for
+
+30
+00:01:48.970 --> 00:01:50.770
+later in the course when we'll learn
+
+31
+00:01:50.770 --> 00:01:53.880
+a little bit more about Python programming
+constructs.
+
+32
+00:01:53.880 --> 00:01:56.220
+So we'll leave dictionaries for now, we'll
+move to the
+
+33
+00:01:56.220 --> 00:01:59.250
+last data structure for the chapter and
+that's the duple.
+

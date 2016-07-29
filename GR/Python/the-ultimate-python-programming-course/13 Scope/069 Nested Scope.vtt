@@ -1,0 +1,198 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:03.950
+For this last lesson of this chapter on
+scope rules, we're
+
+2
+00:00:03.950 --> 00:00:09.190
+going to talk about nested scope or what's
+also called lexical scope.
+
+3
+00:00:10.380 --> 00:00:11.520
+So let's start our program.
+
+4
+00:00:12.830 --> 00:00:19.230
+We'll call it nested.py since nested is
+the term that Python programmers use.
+
+5
+00:00:19.230 --> 00:00:23.390
+Lexical scope is more of a functional
+programming term.
+
+6
+00:00:23.390 --> 00:00:26.450
+The idea behind nested scope is that when
+define
+
+7
+00:00:26.450 --> 00:00:29.490
+a function, and then you define a function
+inside a
+
+8
+00:00:29.490 --> 00:00:34.730
+function, then the function inside the
+function, the nested function,
+
+9
+00:00:34.730 --> 00:00:39.230
+will have access to the variables of the
+outer function.
+
+10
+00:00:39.230 --> 00:00:41.370
+So let me show you know what I'm talking
+about.
+
+11
+00:00:41.370 --> 00:00:45.230
+Here we're gonna define the hypotenuse for
+a right triangle.
+
+12
+00:00:45.230 --> 00:00:48.880
+And to do that, we need to compute the
+square of each side.
+
+13
+00:00:48.880 --> 00:00:50.260
+So we're gonna put the definition
+
+14
+00:00:50.260 --> 00:00:54.170
+of square inside the definition of
+hypotenuse.
+
+15
+00:00:55.550 --> 00:01:00.666
+Then we'll finish off the definition of
+hypotenuse after we've defined square.
+
+16
+00:01:00.666 --> 00:01:06.964
+So, we square s1 plus the square of s2.
+
+17
+00:01:06.964 --> 00:01:09.406
+So, the hypotenuse is the square root of
+the
+
+18
+00:01:09.406 --> 00:01:12.050
+square of side one plus the square of side
+two.
+
+19
+00:01:13.520 --> 00:01:15.320
+Now to make all this work, we also have to
+
+20
+00:01:15.320 --> 00:01:18.820
+import the math library to get at the
+square root function.
+
+21
+00:01:18.820 --> 00:01:21.440
+The square root function is right here.
+
+22
+00:01:22.520 --> 00:01:26.360
+So, notice that square is going to have to
+have
+
+23
+00:01:26.360 --> 00:01:32.920
+access to s1 and s2 right here and right
+here.
+
+24
+00:01:32.920 --> 00:01:36.880
+And that's the idea behind nested scope.
+
+25
+00:01:36.880 --> 00:01:40.840
+With that, let's write a little program to
+test our function.
+
+26
+00:01:43.330 --> 00:01:45.930
+So, we're gonna get the length of each, of
+the two sides.
+
+27
+00:01:45.930 --> 00:01:46.430
+Then
+
+28
+00:01:50.020 --> 00:01:52.940
+we'll compute the hypotenuse, calling the
+function.
+
+29
+00:01:52.940 --> 00:01:57.972
+[BLANK_AUDIO]
+
+30
+00:01:57.972 --> 00:02:00.339
+Then we'll display it.
+
+31
+00:02:05.520 --> 00:02:07.100
+So let's Save and Run the program.
+
+32
+00:02:07.100 --> 00:02:07.600
+So
+
+33
+00:02:13.160 --> 00:02:15.180
+we'll say the length of side one is three.
+
+34
+00:02:15.180 --> 00:02:17.320
+The length of side two is four.
+
+35
+00:02:17.320 --> 00:02:20.320
+And that give us the hypotenuse of five.
+
+36
+00:02:21.360 --> 00:02:24.360
+So again, looking at the program, we're
+looking at the functions
+
+37
+00:02:24.360 --> 00:02:30.370
+especially function definition, we see
+that using nested scoping rules or
+
+38
+00:02:30.370 --> 00:02:35.520
+lexical scoping rules, a function defined
+inside another function can
+
+39
+00:02:35.520 --> 00:02:41.230
+have access to the variables defined in
+the function at a higher level.
+
+40
+00:02:41.230 --> 00:02:48.030
+So square has access to S1 and S2 because
+of the nestical scoping rules.
+
+41
+00:02:48.030 --> 00:02:51.430
+So with that, we're finished with this
+brief chapter on scoping and
+
+42
+00:02:51.430 --> 00:02:55.250
+we're ready to move on to the single
+exercise for the chapter.
+

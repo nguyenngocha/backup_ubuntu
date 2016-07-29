@@ -1,0 +1,221 @@
+WEBVTT
+
+1
+00:00:01.160 --> 00:00:04.480
+For the last exercise in this chapter
+we're going to use
+
+2
+00:00:04.480 --> 00:00:09.120
+nested 4 loops to build a histogram of the
+set of grades.
+
+3
+00:00:09.120 --> 00:00:12.870
+The grades are going to come from the
+grades.text file we've been working with.
+
+4
+00:00:12.870 --> 00:00:15.700
+So let me display that file for you again.
+
+5
+00:00:15.700 --> 00:00:18.480
+Entered the wrong command, there we go.
+
+6
+00:00:18.480 --> 00:00:19.940
+I've mixed the grades up a little bit.
+
+7
+00:00:19.940 --> 00:00:22.300
+They were in numeric order.
+
+8
+00:00:22.300 --> 00:00:25.750
+I've mixed them up, but they're the same
+grades that we worked with before.
+
+9
+00:00:25.750 --> 00:00:28.300
+So what we want to do is loop through
+
+10
+00:00:28.300 --> 00:00:31.940
+the file, and for each grade create a
+histogram.
+
+11
+00:00:31.940 --> 00:00:35.080
+Our histogram will be a series of
+asterisks.
+
+12
+00:00:35.080 --> 00:00:37.970
+One asterisk for every five points of
+
+13
+00:00:37.970 --> 00:00:40.280
+a grade, because we can't really easily
+display
+
+14
+00:00:40.280 --> 00:00:48.390
+100 or 93 asterisks on our screen so we're
+gonna represent 5 points by 1 asterisk.
+
+15
+00:00:48.390 --> 00:00:50.430
+So let's get started with the program.
+
+16
+00:00:50.430 --> 00:00:53.650
+We're gonna call it Chap8ex2.py.
+
+17
+00:00:53.650 --> 00:01:00.590
+We're going to use a variable named bar as
+the variable to hold the asterisks.
+
+18
+00:01:00.590 --> 00:01:02.830
+So we're gonna set it equal to empty
+string.
+
+19
+00:01:02.830 --> 00:01:09.620
+Then our first 4 loop will loop through
+the grades file, grades.text.
+
+20
+00:01:09.620 --> 00:01:13.020
+Then the 2nd loop is going to loop over a
+range,
+
+21
+00:01:14.070 --> 00:01:19.570
+starting at 1, and going through the total
+grade plus 1.
+
+22
+00:01:19.570 --> 00:01:23.130
+Again because we wanna be inclusive of the
+actual number.
+
+23
+00:01:23.130 --> 00:01:26.500
+So if the grade is 93, we've got to go
+into.
+
+24
+00:01:26.500 --> 00:01:28.410
+Grade plus one.
+
+25
+00:01:28.410 --> 00:01:32.650
+Then, the way we decide if we're going to
+add a asterisk
+
+26
+00:01:32.650 --> 00:01:37.130
+to our bar is we perform a modulus on the
+i value.
+
+27
+00:01:37.130 --> 00:01:41.620
+So i modulus 5 is equal to 0, in other
+words, if i
+
+28
+00:01:41.620 --> 00:01:46.760
+is evenly divided by 5 then that means we
+can add a star.
+
+29
+00:01:46.760 --> 00:01:49.170
+To our bar variable or an asterisk.
+
+30
+00:01:49.170 --> 00:01:51.220
+I like to say star, easier to say.
+
+31
+00:01:51.220 --> 00:01:54.050
+So that's what that line looks like right
+there.
+
+32
+00:01:55.060 --> 00:01:58.380
+So when we've gone all the way through and
+added
+
+33
+00:01:58.380 --> 00:02:01.480
+all the bars we need or all the stars we
+need.
+
+34
+00:02:01.480 --> 00:02:04.770
+For our bar, then we're ready to print the
+bar.
+
+35
+00:02:04.770 --> 00:02:07.660
+So we're gonna print the bar, and then we
+also want to print
+
+36
+00:02:07.660 --> 00:02:11.840
+the grade out, by it so we can see what
+the actual number is.
+
+37
+00:02:11.840 --> 00:02:14.220
+And the last thing we need to do is, we
+need to reset the
+
+38
+00:02:14.220 --> 00:02:18.800
+bar variable to the empty strain, to begin
+collecting the next set of asterisk's.
+
+39
+00:02:18.800 --> 00:02:21.590
+So let's save it, and we're gonna run it.
+
+40
+00:02:24.590 --> 00:02:25.400
+And there's our output.
+
+41
+00:02:27.370 --> 00:02:32.740
+So as you see, we've used a set of two for
+loops to recreate the bar chart.
+
+42
+00:02:32.740 --> 00:02:34.790
+Here's the bar chart again.
+
+43
+00:02:34.790 --> 00:02:39.110
+And that will end this exercise, and that
+ends this chapter on for loops.
+
+44
+00:02:39.110 --> 00:02:40.810
+We will look some of the other
+
+45
+00:02:40.810 --> 00:02:42.800
+data structures that we covered in this
+chapter,
+
+46
+00:02:42.800 --> 00:02:44.510
+later in the course, when we present a
+
+47
+00:02:44.510 --> 00:02:51.096
+complete chapter on using lists,
+dictionaries, and [UNKNOWN].
+

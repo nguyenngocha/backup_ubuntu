@@ -1,0 +1,366 @@
+WEBVTT
+
+1
+00:00:00.007 --> 00:00:04.961
+[MUSIC]
+
+2
+00:00:04.961 --> 00:00:07.679
+Since we have SQLite3 actually provided to
+us with
+
+3
+00:00:07.679 --> 00:00:10.396
+the build of Python which we installed
+earlier when
+
+4
+00:00:10.396 --> 00:00:13.936
+we installed Eclipse and downloaded Python
+and everything else,
+
+5
+00:00:13.936 --> 00:00:16.940
+then we're going to just simply use
+SQLite3 for this.
+
+6
+00:00:16.940 --> 00:00:21.920
+However, you can use stuff like MySQL and
+Microsoft Access and so on.
+
+7
+00:00:21.920 --> 00:00:24.190
+But those require different libraries
+which I'm
+
+8
+00:00:24.190 --> 00:00:26.610
+not gonna be teaching within this course.
+
+9
+00:00:26.610 --> 00:00:31.630
+So if you do import SQLite3, then we have
+all
+
+10
+00:00:31.630 --> 00:00:35.380
+that we need to actually have to work with
+the database.
+
+11
+00:00:36.480 --> 00:00:40.040
+The SQL, SQLite3 which we're importing is
+just
+
+12
+00:00:40.040 --> 00:00:42.350
+a library of files which is provided
+within
+
+13
+00:00:42.350 --> 00:00:44.780
+Python which allows us to interact in the
+
+14
+00:00:44.780 --> 00:00:48.610
+database by having functions already made
+for us.
+
+15
+00:00:48.610 --> 00:00:50.210
+And the way which we can see that is if
+
+16
+00:00:50.210 --> 00:00:54.350
+we do db is equal to, and we'll do
+sqllite3.connect.
+
+17
+00:00:54.350 --> 00:00:54.850
+And
+
+18
+00:00:56.690 --> 00:01:01.710
+now inside here, we put in our name of the
+file which were looking to create
+
+19
+00:01:01.710 --> 00:01:03.370
+the database files, so I'm just gonna call
+
+20
+00:01:03.370 --> 00:01:06.588
+as database.db now for save this and run
+it,.
+
+21
+00:01:06.588 --> 00:01:13.068
+[SOUND] Sorry about that, I spelt
+
+22
+00:01:13.068 --> 00:01:18.589
+it wrong, SQL I, there's
+
+23
+00:01:18.589 --> 00:01:24.118
+not second L within there.
+
+24
+00:01:24.118 --> 00:01:27.581
+So it's just SQLIite3 and once we run that
+and then we've
+
+25
+00:01:27.581 --> 00:01:31.830
+refreshed over you'll see that we have a,
+now an empty database file.
+
+26
+00:01:33.080 --> 00:01:36.080
+So it we open the ALT we can see it's got
+zero bytes within it.
+
+27
+00:01:36.080 --> 00:01:40.010
+And if we open it there's nothing inside
+of the actual database.
+
+28
+00:01:40.010 --> 00:01:42.330
+So to add stuff to the database.
+
+29
+00:01:42.330 --> 00:01:45.850
+What we need to do, is first of all, we
+need to create a table.
+
+30
+00:01:45.850 --> 00:01:49.320
+So we're going to do db.execute and
+
+31
+00:01:51.540 --> 00:01:54.700
+then within these brackets here we're
+putting all
+
+32
+00:01:54.700 --> 00:01:57.330
+of the SQL code we are looking to execute.
+
+33
+00:01:57.330 --> 00:02:04.230
+So that can be anything from inserting,
+deleting, updating creating, these
+
+34
+00:02:04.230 --> 00:02:07.890
+all manner of types of SQL commands that
+you can put in.
+
+35
+00:02:07.890 --> 00:02:09.470
+And I'm going to be teaching you the four
+
+36
+00:02:09.470 --> 00:02:13.960
+basic ones, which is to insert, update,
+retrieve, and delete.
+
+37
+00:02:13.960 --> 00:02:16.650
+And then also we'll be also using create.
+
+38
+00:02:16.650 --> 00:02:17.950
+But we'll only use that once.
+
+39
+00:02:17.950 --> 00:02:19.510
+And that is initially now.
+
+40
+00:02:19.510 --> 00:02:26.700
+So what we're going to do is going to
+create a table called persons, or person.
+
+41
+00:02:26.700 --> 00:02:30.530
+And we're going to give that three fields.
+
+42
+00:02:30.530 --> 00:02:34.360
+So the first field which we're going to do
+is called the First Name.
+
+43
+00:02:34.360 --> 00:02:35.910
+And that's going to be a text field.
+
+44
+00:02:35.910 --> 00:02:37.700
+Then we've got a second name, which is
+
+45
+00:02:37.700 --> 00:02:41.320
+Text Field, and then age, which is an
+Integer.
+
+46
+00:02:41.320 --> 00:02:47.430
+And those have got to have, oops, sorry.
+
+47
+00:02:47.430 --> 00:02:54.400
+And then after that, we need to insert a
+couple of pieces of data
+
+48
+00:02:54.400 --> 00:02:58.730
+into the actual tables, but that is what
+we're going to cover in the next video.
+
+49
+00:02:58.730 --> 00:03:01.090
+For now when we run this, and open up the
+
+50
+00:03:01.090 --> 00:03:05.390
+database again, you'll see we now have
+bytes within it.
+
+51
+00:03:05.390 --> 00:03:07.160
+We've got 80,192 bytes.
+
+52
+00:03:07.160 --> 00:03:08.380
+And, if we have an up,
+
+53
+00:03:10.420 --> 00:03:13.400
+Whoops sorry, we need to refresh, that we
+can see
+
+54
+00:03:13.400 --> 00:03:16.630
+we got the SQL command is now stored
+within here.
+
+55
+00:03:17.650 --> 00:03:21.070
+So, that is how you create a database, and
+how you create a
+
+56
+00:03:21.070 --> 00:03:25.410
+table within Python, and you're gonna
+create as many tables as you want.
+
+57
+00:03:25.410 --> 00:03:27.220
+And, to show you this, I'll just run it
+again.
+
+58
+00:03:29.666 --> 00:03:35.990
+So, .execute is a is a function that's
+built
+
+59
+00:03:35.990 --> 00:03:41.760
+into the SQLite3 library, which we import,
+if we didn't import it, it wouldn't work.
+
+60
+00:03:47.410 --> 00:03:52.350
+Oh yes you can't also create a table over
+something that already exists,
+
+61
+00:03:52.350 --> 00:03:57.090
+so what we need to do is, if we copy that
+command operator at the top,
+
+62
+00:03:58.450 --> 00:04:03.780
+we can do drop table, if exists, person.
+
+63
+00:04:05.070 --> 00:04:05.570
+Run that again.
+
+64
+00:04:06.590 --> 00:04:08.620
+And you'll see that we now don't get an
+error.
+
+65
+00:04:08.620 --> 00:04:10.260
+What's that done is it's deleted that
+
+66
+00:04:10.260 --> 00:04:13.260
+initial table cuz [UNKNOWN] existed, is
+created it
+
+67
+00:04:13.260 --> 00:04:16.290
+again so we won't see any difference but
+it's also created the second one now.
+
+68
+00:04:17.430 --> 00:04:19.370
+So now if we open that up again, and
+
+69
+00:04:19.370 --> 00:04:23.480
+refresh, you'll see that we have the first
+table there.
+
+70
+00:04:23.480 --> 00:04:25.340
+And we also have a second table here.
+
+71
+00:04:25.340 --> 00:04:27.400
+So, you can create as many tables within
+database
+
+72
+00:04:27.400 --> 00:04:29.040
+as you like, and you can make them
+relational.
+
+73
+00:04:29.040 --> 00:04:31.640
+So that they relate to each other, so say
+the first name here,
+
+74
+00:04:31.640 --> 00:04:35.320
+could be related to a second name in a
+different table, for example.
+
+75
+00:04:35.320 --> 00:04:38.910
+And that way the data stays within sync of
+each other.
+
+76
+00:04:38.910 --> 00:04:40.400
+So, thank you for watching and in the next
+
+77
+00:04:40.400 --> 00:04:43.960
+video I'll show you how to insert and
+update records.
+
+78
+00:04:43.960 --> 00:04:45.189
+So, I'll see you soon.
+
+79
+00:04:45.189 --> 00:04:50.109
+[MUSIC]
+

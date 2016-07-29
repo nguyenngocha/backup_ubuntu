@@ -1,0 +1,316 @@
+WEBVTT
+
+1
+00:00:00.140 --> 00:00:04.740
+[MUSIC]
+
+2
+00:00:04.740 --> 00:00:05.762
+Hello, and welcome back.
+
+3
+00:00:05.762 --> 00:00:08.992
+In this video, I'll be talking about the
+precedence,
+
+4
+00:00:08.992 --> 00:00:13.080
+or the order of precedence, in which
+operators follow.
+
+5
+00:00:13.080 --> 00:00:14.820
+Now, when you were at school, you might
+
+6
+00:00:14.820 --> 00:00:17.740
+have heard of something in math class
+called BODMAS.
+
+7
+00:00:17.740 --> 00:00:20.010
+If you haven't don't worry about it I'll
+explain it anyway.
+
+8
+00:00:20.010 --> 00:00:25.190
+But, the programming language of Python
+and most other languages follow the order
+
+9
+00:00:25.190 --> 00:00:30.430
+of BODMAS, which is spelled B-O-D-M-A-S.
+
+10
+00:00:30.430 --> 00:00:34.130
+And what BODMAS tells us is the order from
+left to
+
+11
+00:00:34.130 --> 00:00:40.570
+right in which logical operators such as
+arithmetic, operators would follow.
+
+12
+00:00:40.570 --> 00:00:48.780
+The first one B, being the brackets or in
+this case, parentheses.
+
+13
+00:00:48.780 --> 00:00:52.730
+So, if you were to have
+
+14
+00:00:55.220 --> 00:00:56.960
+something, for example, 15*2+25/4-2.
+
+15
+00:00:56.960 --> 00:00:59.150
+Now, what you'd expect the answer there to
+
+16
+00:00:59.150 --> 00:01:02.880
+come, might not be what you wanted to
+happen.
+
+17
+00:01:02.880 --> 00:01:07.860
+And so, you'd use brackets as the, highest
+order of precedence to sort out the
+
+18
+00:01:07.860 --> 00:01:14.010
+answer, now the answer for this is 34.25
+and the reason for that, is
+
+19
+00:01:14.010 --> 00:01:19.990
+that 15 times by 2 gets evaluated first,
+25 divided by 4 gets evaluated
+
+20
+00:01:19.990 --> 00:01:24.870
+as well then that entire thing is added
+together and then 2 is subtracted from it.
+
+21
+00:01:26.220 --> 00:01:31.530
+And, the reason for that, is that the
+brackets are, well, essentially invisible
+
+22
+00:01:31.530 --> 00:01:33.930
+because the rest of BODMAS states that,
+
+23
+00:01:33.930 --> 00:01:37.410
+order is next which is, exponential
+powers.
+
+24
+00:01:37.410 --> 00:01:39.630
+But there aren't any of them, so ignores
+that.
+
+25
+00:01:39.630 --> 00:01:42.610
+Go to next two which is division and
+multiplication.
+
+26
+00:01:42.610 --> 00:01:47.330
+They have the same order of precedence
+even though it's goes D then M in the.
+
+27
+00:01:47.330 --> 00:01:49.700
+suit, suitor name, it still has the same
+order
+
+28
+00:01:49.700 --> 00:01:51.950
+of precedence it just, sort, sort of can
+be
+
+29
+00:01:51.950 --> 00:01:56.720
+set but is in that order and so, division
+
+30
+00:01:56.720 --> 00:01:59.790
+and multiplication happen at the same time
+and so, 15
+
+31
+00:01:59.790 --> 00:02:02.330
+times by 2 and 25 divided by 4, happen
+
+32
+00:02:02.330 --> 00:02:04.490
+at the same time and then the last two
+letters
+
+33
+00:02:04.490 --> 00:02:06.590
+which are A and S, stand for addition and
+
+34
+00:02:06.590 --> 00:02:09.230
+subtraction and they are the next two
+things that happen.
+
+35
+00:02:10.230 --> 00:02:16.490
+And so, you will notice that if we do 15
+times by 2, we get 30.
+
+36
+00:02:16.490 --> 00:02:21.470
+If we do 25 divided by 4, we have 6.25.
+
+37
+00:02:21.470 --> 00:02:28.215
+And now, we have we have the minus 2 which
+makes that 4.25, and so
+
+38
+00:02:28.215 --> 00:02:34.790
+what we get there in total is 36.25 minus
+2, which is 34.25.
+
+39
+00:02:34.790 --> 00:02:40.907
+Now, the easier and better way to write
+this, would have
+
+40
+00:02:40.907 --> 00:02:46.660
+been 15 times by 2 plus 25 divided by 4
+minus 2.
+
+41
+00:02:46.660 --> 00:02:49.980
+That would be the better way to have
+written it, and it gets you the
+
+42
+00:02:49.980 --> 00:02:51.760
+exact same answer, but looking at that,
+
+43
+00:02:51.760 --> 00:02:54.025
+you immediately know what's going to
+happen when.
+
+44
+00:02:56.040 --> 00:03:01.940
+So, that is the order of precedence in
+which objects and, automatic
+
+45
+00:03:01.940 --> 00:03:06.930
+logic, operators follows within Python and
+most of the programming languages.
+
+46
+00:03:06.930 --> 00:03:10.570
+So, if you want to remember that, just
+remember BODMAS, and it
+
+47
+00:03:10.570 --> 00:03:17.545
+stands for parentheses or brackets, order
+or bridges the same as exponential powers.
+
+48
+00:03:17.545 --> 00:03:21.760
+Then division, multiplication, addition
+and subtraction and that is a very useful
+
+49
+00:03:21.760 --> 00:03:27.950
+thing to remember if you want to remember
+the order, and to work out what it
+
+50
+00:03:27.950 --> 00:03:34.040
+is re, should happen while shown during
+calculations and like I said, I can't
+
+51
+00:03:34.040 --> 00:03:39.180
+I can't emphasize how much it helps to
+have these brackets around each part.
+
+52
+00:03:39.180 --> 00:03:42.950
+You can have as many brackets as you like
+within Python.
+
+53
+00:03:42.950 --> 00:03:47.295
+Within these, so you could have 15 times
+by 2
+
+54
+00:03:47.295 --> 00:03:51.980
+plus and then we'll do 25 divided by 4
+minus 2.
+
+55
+00:03:51.980 --> 00:03:54.510
+That would give you exact same answer and
+it might
+
+56
+00:03:54.510 --> 00:03:57.250
+make things a bit easier for you to
+understand as well,
+
+57
+00:03:57.250 --> 00:04:00.620
+with having that bracket, so and make sure
+of it, all
+
+58
+00:04:00.620 --> 00:04:04.390
+of it happens as first, as the first thing
+to happen.
+
+59
+00:04:05.440 --> 00:04:08.280
+But just make sure that you understand
+that
+
+60
+00:04:08.280 --> 00:04:10.380
+BODMAS is the order in which it follows.
+
+61
+00:04:12.070 --> 00:04:17.543
+And, when you understand that order, it
+will help you diagnose or debug the
+
+62
+00:04:17.543 --> 00:04:20.792
+problems which you may run into, with,
+
+63
+00:04:20.792 --> 00:04:24.128
+within future programs where the wrong
+answer
+
+64
+00:04:24.128 --> 00:04:29.517
+is being given and it could be because you
+just haven't, given the order of
+
+65
+00:04:29.517 --> 00:04:35.363
+precedence the correct order, so thank you
+for watching and I'll see you soon.
+
+66
+00:04:35.363 --> 00:04:38.807
+[MUSIC]
+

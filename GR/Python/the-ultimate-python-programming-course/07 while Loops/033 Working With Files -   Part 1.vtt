@@ -1,0 +1,441 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:04.270
+In the next two lessons, we're going to
+learn how to write data
+
+2
+00:00:04.270 --> 00:00:07.380
+to a text file and then read data back in
+from a text file.
+
+3
+00:00:07.380 --> 00:00:10.840
+We're gonna start out in this lesson
+learning how to write data to a file,
+
+4
+00:00:10.840 --> 00:00:14.500
+so that in the next lesson we'll have some
+data to read in and manipulate.
+
+5
+00:00:14.500 --> 00:00:16.030
+So let's get started.
+
+6
+00:00:16.030 --> 00:00:20.080
+We're gonna create a program, we'll call
+it writefile.py.
+
+7
+00:00:21.740 --> 00:00:24.260
+And we'll use that to write our data to a
+file.
+
+8
+00:00:24.260 --> 00:00:29.770
+The first step is to create a file
+variable, or a file object, that
+
+9
+00:00:29.770 --> 00:00:35.710
+associates a physical file on the hard
+drive with the variable in our program.
+
+10
+00:00:35.710 --> 00:00:41.399
+So we do that by using the function open,
+where we provide the name of a file.
+
+11
+00:00:41.399 --> 00:00:44.026
+We're gonna call this one text.text.
+
+12
+00:00:44.026 --> 00:00:45.930
+T-E-X-T.T-E-X-T.
+
+13
+00:00:45.930 --> 00:00:49.310
+So, that's our file name and then we also
+have to provide a
+
+14
+00:00:49.310 --> 00:00:54.810
+second argument W, which says to open the
+file to write data to it.
+
+15
+00:00:54.810 --> 00:00:59.680
+So once we've issued this command, or
+executed this statement, then we then have
+
+16
+00:00:59.680 --> 00:01:05.230
+a file object outFile which is associated
+with a file on the disk.
+
+17
+00:01:05.230 --> 00:01:11.690
+This function open creates a new file that
+we name, and if a file exists with the
+
+18
+00:01:11.690 --> 00:01:16.480
+same name, then it deletes it and creates
+a new file anyway with the same name.
+
+19
+00:01:16.480 --> 00:01:21.100
+So be very careful when you use the open
+function to write data.
+
+20
+00:01:21.100 --> 00:01:24.950
+The next step is to simply write data to
+the file, for that we have a
+
+21
+00:01:24.950 --> 00:01:27.660
+function write, and then we just simply
+provide
+
+22
+00:01:27.660 --> 00:01:29.820
+the data that we wanna write to the file.
+
+23
+00:01:29.820 --> 00:01:32.880
+I'm just gonna write some nonsensical data
+here.
+
+24
+00:01:32.880 --> 00:01:36.710
+Notice I'm specifically giving a new line
+command so that
+
+25
+00:01:36.710 --> 00:01:40.150
+each line will exist on its own, so that
+this is
+
+26
+00:01:40.150 --> 00:01:42.630
+line 1 will be on the first line of the
+file
+
+27
+00:01:42.630 --> 00:01:44.900
+and this is line 2 will be on the second
+line.
+
+28
+00:01:44.900 --> 00:01:48.320
+We'll stop there and then when we're
+finished, we can close
+
+29
+00:01:48.320 --> 00:01:50.810
+the file and in fact we have to close the
+file.
+
+30
+00:01:50.810 --> 00:01:54.650
+The reason for that is because when you
+issue a write
+
+31
+00:01:54.650 --> 00:01:59.570
+function, Python will simply write the
+data to a buffer into memory.
+
+32
+00:01:59.570 --> 00:02:05.340
+And only upon closing the file, is the
+data actually written to the disk.
+
+33
+00:02:05.340 --> 00:02:08.550
+So you have to always execute a close
+function on
+
+34
+00:02:08.550 --> 00:02:11.530
+a file object to actually get data written
+to the file.
+
+35
+00:02:13.380 --> 00:02:14.595
+So let's save and run the program.
+
+36
+00:02:14.595 --> 00:02:15.095
+[BLANK_AUDIO].
+
+37
+00:02:17.870 --> 00:02:20.140
+And then to see if our file's there, we'll
+
+38
+00:02:20.140 --> 00:02:25.090
+type the command, type text.text, and
+there's our data.
+
+39
+00:02:25.090 --> 00:02:26.650
+This is line 1, and this is line 2.
+
+40
+00:02:26.650 --> 00:02:31.320
+So now that we've done that, let's look at
+another example.
+
+41
+00:02:31.320 --> 00:02:33.998
+We'll comment out this first example.
+
+42
+00:02:33.998 --> 00:02:36.960
+Where we're gonna prompt the user to enter
+some numeric data, let's
+
+43
+00:02:36.960 --> 00:02:40.280
+say some grades, and we're gonna store
+those grades in a file.
+
+44
+00:02:40.280 --> 00:02:43.120
+So we start out by opening the file that
+
+45
+00:02:43.120 --> 00:02:46.950
+we wanna write data to, we'll call it
+grades.text.
+
+46
+00:02:46.950 --> 00:02:49.900
+Again, we have to provide the W argument
+to
+
+47
+00:02:49.900 --> 00:02:52.170
+opening it for writing, and then we're
+gonna create a
+
+48
+00:02:52.170 --> 00:02:54.702
+variable, we're gonna set it to a value
+and
+
+49
+00:02:54.702 --> 00:02:59.706
+we're gonna say, while grade is not equal
+to Q.
+
+50
+00:02:59.706 --> 00:03:02.760
+Now, I'm using q cuz I want that to be
+
+51
+00:03:02.760 --> 00:03:07.260
+the command where the letter that the user
+enters to quit.
+
+52
+00:03:07.260 --> 00:03:10.005
+You might wonder where ending grades is
+numbers, but
+
+53
+00:03:10.005 --> 00:03:12.580
+we're gonna use q as the value to quit.
+
+54
+00:03:12.580 --> 00:03:16.300
+Understand that we're going to be writing
+this data as strings.
+
+55
+00:03:16.300 --> 00:03:19.750
+And in the next lesson when we read the
+data back into a program, then
+
+56
+00:03:19.750 --> 00:03:24.450
+we'll convert it from string to int or
+float, however we choose to do that.
+
+57
+00:03:24.450 --> 00:03:27.800
+So we're gonna prompt the user, enter a
+grade, q
+
+58
+00:03:27.800 --> 00:03:31.400
+to quit, then we'll get the grade using
+raw input.
+
+59
+00:03:32.520 --> 00:03:37.640
+Then we will write the grade to our file
+and notice that we can catenate
+
+60
+00:03:37.640 --> 00:03:41.940
+a new line to that, so that each grade
+will exist on its own line.
+
+61
+00:03:41.940 --> 00:03:44.640
+That will just make it easier to read the
+data back in.
+
+62
+00:03:45.700 --> 00:03:48.650
+And that should be all we have to do, so
+at this point,
+
+63
+00:03:48.650 --> 00:03:52.440
+we can close the file and then our data
+should be written out.
+
+64
+00:03:52.440 --> 00:03:54.620
+So let's exit and Save.
+
+65
+00:03:54.620 --> 00:03:56.573
+Let's clear the screen here.
+
+66
+00:03:56.573 --> 00:03:57.480
+[BLANK_AUDIO].
+
+67
+00:03:59.290 --> 00:04:05.824
+And let's call it right file, so we'll
+enter a couple of grades
+
+68
+00:04:05.824 --> 00:04:13.330
+we'll do 5, enter 84, 77, 63, then we'll
+do 100.
+
+69
+00:04:13.330 --> 00:04:16.460
+Then we'll enter a q, and then it quits.
+
+70
+00:04:16.460 --> 00:04:17.730
+So then we can type it out.
+
+71
+00:04:19.410 --> 00:04:25.330
+Now, notice that the q was written to the
+file, which is not what we wanted.
+
+72
+00:04:25.330 --> 00:04:27.240
+So let's go back to the program,
+
+73
+00:04:29.380 --> 00:04:33.060
+and the way to solve this problem will be
+to
+
+74
+00:04:33.060 --> 00:04:38.930
+take our initial prompt, place it outside
+the while, write the
+
+75
+00:04:38.930 --> 00:04:44.990
+data first, we're gonna move it up to
+here, like so,
+
+76
+00:04:44.990 --> 00:04:48.350
+then ask the user to enter data again at
+the bottom.
+
+77
+00:04:48.350 --> 00:04:52.581
+And now this way when the user enters q,
+right
+
+78
+00:04:52.581 --> 00:04:58.180
+here, then the test will happen up here
+before the write.
+
+79
+00:04:58.180 --> 00:04:59.850
+And that way we won't have a queue in the
+file.
+
+80
+00:04:59.850 --> 00:05:03.800
+So let's Exit and Save, and run it again.
+
+81
+00:05:03.800 --> 00:05:05.600
+Let's clear the screen.
+
+82
+00:05:05.600 --> 00:05:06.950
+Find our program.
+
+83
+00:05:06.950 --> 00:05:07.490
+There it is.
+
+84
+00:05:08.630 --> 00:05:14.624
+So we'll do 100, 93, 87, 72, 66 and
+
+85
+00:05:14.624 --> 00:05:20.470
+then a q to quit.
+
+86
+00:05:20.470 --> 00:05:22.955
+Type out the file, and there we go.
+
+87
+00:05:22.955 --> 00:05:26.960
+[BLANK_AUDIO]
+
+88
+00:05:26.960 --> 00:05:29.530
+It's very important that you watch the
+order of how
+
+89
+00:05:29.530 --> 00:05:33.570
+statements are executed when writing data
+to a file and collecting
+
+90
+00:05:33.570 --> 00:05:36.930
+input from the user to make sure that a
+sentinel
+
+91
+00:05:36.930 --> 00:05:41.120
+value such as Q, is not accidentally
+written to the file.
+
+92
+00:05:41.120 --> 00:05:45.070
+Now that we've seen how to write data to a
+file, we're ready to move on
+
+93
+00:05:45.070 --> 00:05:49.980
+to the next lesson, where we're going to
+learn how to read data in from the file.
+

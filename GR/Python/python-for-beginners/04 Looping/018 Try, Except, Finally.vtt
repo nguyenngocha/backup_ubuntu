@@ -1,0 +1,320 @@
+WEBVTT
+
+1
+00:00:05.380 --> 00:00:08.510
+Exceptions can be thrown within Python,
+which
+
+2
+00:00:08.510 --> 00:00:10.960
+means that, if something was to have an
+
+3
+00:00:10.960 --> 00:00:12.358
+error, like we saw earlier with the
+
+4
+00:00:12.358 --> 00:00:16.650
+two for example, then if something wasn't
+working.
+
+5
+00:00:17.870 --> 00:00:21.780
+And dig through the error, you could,
+actually, catch the error, and
+
+6
+00:00:21.780 --> 00:00:26.280
+give a more user friendly response,
+because of the way of it worked.
+
+7
+00:00:26.280 --> 00:00:29.850
+And the way we do that, with something
+called try and catch.
+
+8
+00:00:29.850 --> 00:00:31.050
+So, the example I'm going to use, we're
+
+9
+00:00:31.050 --> 00:00:32.490
+going to have the tuple here, which goes
+from
+
+10
+00:00:32.490 --> 00:00:41.780
+one to five, and I am going to add in a
+value of six, by going tuple.append.
+
+11
+00:00:41.780 --> 00:00:43.870
+And I'm just gonna add the value six
+there, now
+
+12
+00:00:43.870 --> 00:00:46.390
+if you try and run this we get an
+attribute error.
+
+13
+00:00:46.390 --> 00:00:48.370
+As you can see here, we got AttributeError
+
+14
+00:00:48.370 --> 00:00:52.290
+and then tuple object has no attribute
+append.
+
+15
+00:00:52.290 --> 00:00:55.200
+So, what I'm going to do here is I'm
+actually to do a try,
+
+16
+00:00:57.420 --> 00:00:58.670
+and we have to indent this.
+
+17
+00:01:00.720 --> 00:01:06.940
+And, some languages use a catch, we have
+to use except.
+
+18
+00:01:06.940 --> 00:01:08.630
+And what we have here is we have the
+
+19
+00:01:08.630 --> 00:01:15.330
+print [SOUND] and we're just going to do
+error formed.
+
+20
+00:01:15.330 --> 00:01:20.060
+And what we can do with this the what code
+we actually wanted to
+
+21
+00:01:20.060 --> 00:01:24.390
+happen if it does work, is we can put it
+inside of an else statement.
+
+22
+00:01:24.390 --> 00:01:25.690
+And so we can have that burn,
+
+23
+00:01:28.790 --> 00:01:29.890
+not too sure what happened there.
+
+24
+00:01:33.610 --> 00:01:36.530
+Okay, anyway, so here we have error found
+which
+
+25
+00:01:36.530 --> 00:01:39.020
+is the print message that we set if it
+
+26
+00:01:39.020 --> 00:01:41.440
+doesn't work, so if it's a try doesn't
+work
+
+27
+00:01:41.440 --> 00:01:43.610
+it goes to accept and that is what
+happens.
+
+28
+00:01:44.910 --> 00:01:47.050
+Now, if you were to create your own
+function, you can
+
+29
+00:01:47.050 --> 00:01:53.340
+actually raise your own problems, which
+might appear from something like that.
+
+30
+00:01:53.340 --> 00:01:59.350
+So, by an error in the way in which you
+are trying to access it for example,
+
+31
+00:01:59.350 --> 00:02:03.270
+or if you're trying to read a file and
+send a file name which does not exist.
+
+32
+00:02:03.270 --> 00:02:06.040
+Or the extension's wrong, that sort of
+idea.
+
+33
+00:02:06.040 --> 00:02:10.780
+Then you can create multiple exc,
+exceptions and with those exceptions, what
+
+34
+00:02:10.780 --> 00:02:16.150
+you can do is you can catch them using the
+accept and you can
+
+35
+00:02:16.150 --> 00:02:21.545
+have a more specialized answer, and its
+just going to be attribute,
+
+36
+00:02:21.545 --> 00:02:28.825
+AttributeError as a, and eight is just a
+standard what people use for errors.
+
+37
+00:02:28.825 --> 00:02:34.343
+[SOUND] And so here what we're going to
+do, is just use something similar to
+
+38
+00:02:34.343 --> 00:02:40.650
+that, and now what we see is we get error
+formed object has no attribute append.
+
+39
+00:02:40.650 --> 00:02:44.740
+So that is a more reader friendly way of
+doing, giving an error.
+
+40
+00:02:44.740 --> 00:02:48.880
+Then the four lines that we had up here
+beforehand, where, where we,
+
+41
+00:02:48.880 --> 00:02:54.570
+we're using the, without the append, and
+without out the, Try Accept Else.
+
+42
+00:02:56.060 --> 00:02:59.480
+Now, there's something else which you can
+also do, and with else,
+
+43
+00:02:59.480 --> 00:03:01.190
+you can get rid of that if you don't want
+it and
+
+44
+00:03:01.190 --> 00:03:05.000
+you can drag all this, up to be in the
+same area
+
+45
+00:03:05.000 --> 00:03:08.580
+as your try, because as soon as it moves
+into a problem.
+
+46
+00:03:08.580 --> 00:03:13.150
+That is when the exception is thrown, not
+the end of the try.
+
+47
+00:03:13.150 --> 00:03:16.080
+So as soon as it reaches the append, it
+will stop it
+
+48
+00:03:16.080 --> 00:03:21.630
+and go to the exception, it won't chime on
+this fall loop.
+
+49
+00:03:21.630 --> 00:03:25.910
+So we got no worries about this actually
+happening or trying to do anything.
+
+50
+00:03:27.590 --> 00:03:30.790
+So now if we just come and top this line,
+we, we'll receive
+
+51
+00:03:30.790 --> 00:03:32.880
+any errors and so we'll just get 1, 2, 3,
+4 and 5.
+
+52
+00:03:32.880 --> 00:03:38.130
+So we can see that that is working exactly
+as it should do, and if we
+
+53
+00:03:38.130 --> 00:03:43.030
+again, when, as it was before we get ever
+form, triple object has no attributes end.
+
+54
+00:03:44.500 --> 00:03:48.380
+So, we can also have multiple exceptions,
+that have to be caught.
+
+55
+00:03:49.410 --> 00:03:55.262
+So exception, and we could do something
+like input output error, which is more to
+
+56
+00:03:55.262 --> 00:04:02.790
+do with error, and to do with file
+handling, but we could still do [SOUND]
+
+57
+00:04:02.790 --> 00:04:03.870
+file not found.
+
+58
+00:04:08.168 --> 00:04:11.550
+And then, further exception as well, and e
+is
+
+59
+00:04:11.550 --> 00:04:13.930
+just a standard letter you should use for
+exception,
+
+60
+00:04:13.930 --> 00:04:16.930
+as most people would use this letter
+because you
+
+61
+00:04:16.930 --> 00:04:20.560
+don't really need it anywhere else within
+a code.
+
+62
+00:04:20.560 --> 00:04:22.740
+Because single letter variables usually
+aren't
+
+63
+00:04:22.740 --> 00:04:26.320
+used, except for shorthand such in this.
+
+64
+00:04:27.880 --> 00:04:31.800
+So, that is how you can try and catch
+exceptions, and when we move onto
+
+65
+00:04:31.800 --> 00:04:34.882
+function later on, I'll show you how you
+can raise your own exceptions as well.
+
+66
+00:04:34.882 --> 00:04:40.129
+[MUSIC]
+

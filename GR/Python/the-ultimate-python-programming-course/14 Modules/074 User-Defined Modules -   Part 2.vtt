@@ -1,0 +1,224 @@
+WEBVTT
+
+1
+00:00:01.180 --> 00:00:03.720
+In the last lesson, we saw how to import
+
+2
+00:00:03.720 --> 00:00:07.070
+all of the functions from a module into a
+program.
+
+3
+00:00:07.070 --> 00:00:12.190
+In this lesson, we're going to learn how
+to, only import the particular
+
+4
+00:00:12.190 --> 00:00:17.510
+functions that we want from a module into
+a program without bringing everything in.
+
+5
+00:00:17.510 --> 00:00:19.620
+So first, I'll look at the, module that
+
+6
+00:00:19.620 --> 00:00:22.370
+we're working with just to refresh your
+memory.
+
+7
+00:00:22.370 --> 00:00:27.150
+And you'll see we have, 3 functions,
+average, square, and square root.
+
+8
+00:00:27.150 --> 00:00:30.580
+So this time we're going to build a
+program, that first only brings
+
+9
+00:00:30.580 --> 00:00:32.990
+in the average function, then we'll
+
+10
+00:00:32.990 --> 00:00:37.320
+demonstrate how to import average, and
+square.
+
+11
+00:00:37.320 --> 00:00:40.030
+But with out importing the, square root
+function.
+
+12
+00:00:40.030 --> 00:00:42.425
+So we're going to start a new program,
+we're going to call it.
+
+13
+00:00:42.425 --> 00:00:46.030
+Newtontest2.py.
+
+14
+00:00:46.030 --> 00:00:50.810
+And so, were going to say, from newton,
+import, average.
+
+15
+00:00:50.810 --> 00:00:55.260
+Before, to import everything, we wrote
+import star or asterisk.
+
+16
+00:00:56.270 --> 00:00:58.790
+But all we wanna do is import the average
+function this
+
+17
+00:00:58.790 --> 00:01:03.280
+time, so well import the average, create a
+couple of variables.
+
+18
+00:01:03.280 --> 00:01:06.870
+And then we're gonna display the average.
+
+19
+00:01:12.080 --> 00:01:13.790
+Alright so let's save that.
+
+20
+00:01:13.790 --> 00:01:16.366
+Go back to our command prompt window, type
+
+21
+00:01:16.366 --> 00:01:21.925
+newtontest2.py and we see that the average
+is 138.5.
+
+22
+00:01:23.430 --> 00:01:26.550
+To demonstrate that that was the only
+function that was brought
+
+23
+00:01:26.550 --> 00:01:30.860
+in, let's try to also display the square
+root of nine.
+
+24
+00:01:30.860 --> 00:01:31.960
+Now watch what happens.
+
+25
+00:01:36.160 --> 00:01:41.000
+So it printed the, average is 138.5, but
+then when we tried to compute
+
+26
+00:01:41.000 --> 00:01:45.070
+the square root, it gave us an error and
+said square root is not defined.
+
+27
+00:01:45.070 --> 00:01:48.640
+That's because we didn't, import, it into
+our program.
+
+28
+00:01:51.040 --> 00:01:55.700
+Let's say we want to, work with both the
+average function, and the square function.
+
+29
+00:01:56.750 --> 00:02:02.940
+Here we, can add a comma, and then the
+next function that we want, square.
+
+30
+00:02:02.940 --> 00:02:04.180
+After average.
+
+31
+00:02:04.180 --> 00:02:06.400
+So now we're saying, from the newton
+module,
+
+32
+00:02:06.400 --> 00:02:10.410
+import, just the average function, and the
+square function.
+
+33
+00:02:10.410 --> 00:02:13.480
+So, let's modify this program a little
+bit.
+
+34
+00:02:13.480 --> 00:02:14.735
+I'll just make comments here.
+
+35
+00:02:14.735 --> 00:02:21.699
+Let's say avg = average(num1.
+
+36
+00:02:22.710 --> 00:02:23.480
+Num 2, so
+
+37
+00:02:26.890 --> 00:02:29.890
+now we can compute the square of the
+average,
+
+38
+00:02:34.980 --> 00:02:41.179
+like so so let's, save the program, let's
+clear the screen.
+
+39
+00:02:43.400 --> 00:02:46.430
+And so we have the average, and then the
+square of the average.
+
+40
+00:02:47.710 --> 00:02:53.970
+So, to summarize, we can import only the
+functions, that we want from a module,
+
+41
+00:02:53.970 --> 00:02:59.040
+by specifying them instead of the asterisk
+to import all the functions.
+
+42
+00:02:59.040 --> 00:03:02.050
+So, for example, if I wanted just the
+average function,.
+
+43
+00:03:02.050 --> 00:03:05.930
+I would write, from newton import average,
+and if I wanted
+
+44
+00:03:05.930 --> 00:03:12.340
+average and square, I would write, from
+newton, import average and square.
+
+45
+00:03:12.340 --> 00:03:17.030
+So with that, we wrap this lesson on
+[UNKNOWN] to find modules and we are
+
+46
+00:03:17.030 --> 00:03:20.130
+ready to move to the next lesson where we
+are going to talk about module.
+
+47
+00:03:20.130 --> 00:03:21.170
+Namespaces.
+

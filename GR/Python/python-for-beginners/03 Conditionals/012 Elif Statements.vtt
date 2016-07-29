@@ -1,0 +1,200 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.902
+[MUSIC]
+
+2
+00:00:04.902 --> 00:00:08.440
+Now along we've using else, and if
+statements.
+
+3
+00:00:08.440 --> 00:00:12.830
+There's, some, occasions where you might
+need to check multiple, different things.
+
+4
+00:00:12.830 --> 00:00:16.680
+And that is easily possible within Python.
+
+5
+00:00:16.680 --> 00:00:20.140
+So we're going to set up the page again,
+as we have done.
+
+6
+00:00:20.140 --> 00:00:24.100
+For other, instances, and what we're gonna
+do
+
+7
+00:00:24.100 --> 00:00:26.090
+here, actually instead of having it as
+equal to,
+
+8
+00:00:26.090 --> 00:00:34.189
+we're going to do is greater than, and
+we're going to print a is greater than b.
+
+9
+00:00:36.060 --> 00:00:42.380
+And then we are going to do else and this
+is going to have print a is
+
+10
+00:00:42.380 --> 00:00:48.590
+equal to a and now because obviously we
+only have gray set and then equal
+
+11
+00:00:48.590 --> 00:00:55.120
+we also need to check if something is less
+than so what we do now is Lif.
+
+12
+00:00:55.120 --> 00:00:58.510
+And we do LFA as, if less then B.
+
+13
+00:00:59.830 --> 00:01:04.380
+And then we have to print and A is less
+than B.
+
+14
+00:01:05.630 --> 00:01:09.760
+Now what we do here is, if we print
+[INAUDIBLE] we get the
+
+15
+00:01:09.760 --> 00:01:13.820
+output of A is less than B, because the
+error is less than one.
+
+16
+00:01:13.820 --> 00:01:19.360
+Now if I change this to three, then we get
+A is greater than, and if I
+
+17
+00:01:19.360 --> 00:01:25.470
+change this to one, then we get the A is
+equal to b.
+
+18
+00:01:25.470 --> 00:01:31.160
+So, that is how an else if statement or an
+EL if statement works is an
+
+19
+00:01:31.160 --> 00:01:37.320
+additional, Is an additional check for if
+something is equal to something.
+
+20
+00:01:38.370 --> 00:01:40.480
+so, cuz you can only have one if statement
+and one else
+
+21
+00:01:40.480 --> 00:01:45.120
+statement, cuz the else statement is
+defined is treated as a default.
+
+22
+00:01:45.120 --> 00:01:48.530
+So if it can't bind anything that's trade,
+then it prints out the else.
+
+23
+00:01:48.530 --> 00:01:54.190
+And the if is just what you use to
+initialize this, code box to run.
+
+24
+00:01:54.190 --> 00:01:59.220
+And so L if is what you, what you run
+constantly throughout the rest of the.
+
+25
+00:02:01.320 --> 00:02:02.380
+Rest of the page.
+
+26
+00:02:02.380 --> 00:02:04.720
+Now, this is identical to if you wanted to
+do,
+
+27
+00:02:06.360 --> 00:02:11.470
+else, and then, you would have to do if,
+within here.
+
+28
+00:02:11.470 --> 00:02:14.170
+However, it's recommended that you don't
+do this, cuz it
+
+29
+00:02:14.170 --> 00:02:17.340
+can get confusing as to how the code
+blocker eventually works.
+
+30
+00:02:17.340 --> 00:02:20.440
+So, it's recommended that you do el if
+instead.
+
+31
+00:02:21.840 --> 00:02:23.820
+Now you can have as many el if's as
+
+32
+00:02:23.820 --> 00:02:26.670
+you want, so if you had something where
+you're checking
+
+33
+00:02:26.670 --> 00:02:28.670
+a string, you could check as many strings
+as you
+
+34
+00:02:28.670 --> 00:02:31.290
+wanted, with each one just having a
+different el if.
+
+35
+00:02:32.330 --> 00:02:35.500
+Now I, you could do something where if it
+all had the same output
+
+36
+00:02:35.500 --> 00:02:39.200
+at the end, if it is true, then you do, if
+something or something
+
+37
+00:02:39.200 --> 00:02:42.480
+or something or something or something,
+and say well, you can do as many,
+
+38
+00:02:42.480 --> 00:02:46.060
+that way as well, however it's much more
+readable to have it done with elifs.
+
+39
+00:02:46.060 --> 00:02:50.490
+So, that is how an elif statement works,
+thank
+
+40
+00:02:50.490 --> 00:02:53.926
+you for watching and I will see you soon.
+
+41
+00:02:53.926 --> 00:02:59.064
+[SOUND]
+

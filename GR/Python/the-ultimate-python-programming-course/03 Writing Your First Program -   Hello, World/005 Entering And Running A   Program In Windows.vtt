@@ -1,0 +1,458 @@
+WEBVTT
+
+1
+00:00:01.170 --> 00:00:03.250
+In this chapter we're going to discuss a
+very
+
+2
+00:00:03.250 --> 00:00:07.550
+simple process, how to enter and run
+programs in Python.
+
+3
+00:00:07.550 --> 00:00:09.585
+We're gonna do it in this lesson for
+Windows
+
+4
+00:00:09.585 --> 00:00:12.410
+environment and then in the next lesson on
+the Mac.
+
+5
+00:00:12.410 --> 00:00:16.710
+These are very short lessons just to
+demonstrate exactly what you have to
+
+6
+00:00:16.710 --> 00:00:20.490
+do to type in a Python program and then
+get it to run.
+
+7
+00:00:20.490 --> 00:00:22.610
+We haven't learned much Python program
+yet.
+
+8
+00:00:22.610 --> 00:00:25.040
+In fact, we haven't learned any Python
+programming.
+
+9
+00:00:25.040 --> 00:00:27.020
+So we're going to keep it simple and
+
+10
+00:00:27.020 --> 00:00:29.740
+we're going to do the classic Hello World
+program.
+
+11
+00:00:29.740 --> 00:00:31.520
+So all this program is going to do
+
+12
+00:00:31.520 --> 00:00:34.270
+is display the phrase, Hello World, to the
+screen.
+
+13
+00:00:34.270 --> 00:00:38.240
+So the first thing you need to do is bring
+up a command prompt window.
+
+14
+00:00:38.240 --> 00:00:40.690
+I'll be doing all my work in the command
+prompt.
+
+15
+00:00:40.690 --> 00:00:42.840
+So if you're not comfortable with that,
+spend a little bit
+
+16
+00:00:42.840 --> 00:00:46.540
+of extra time learning to get comfortable
+with the command prompt.
+
+17
+00:00:46.540 --> 00:00:48.470
+So when you open a command prompt window,
+
+18
+00:00:48.470 --> 00:00:52.650
+it'll take you to your user's user name
+sub-directory.
+
+19
+00:00:52.650 --> 00:00:55.440
+I've already change directories to
+documents.
+
+20
+00:00:55.440 --> 00:00:56.740
+Let me go back and show you what that
+
+21
+00:00:56.740 --> 00:00:58.850
+looks like, just in case you've never seen
+it before.
+
+22
+00:00:58.850 --> 00:01:03.390
+So when you open a command prompt window
+in Windows, you see this.
+
+23
+00:01:03.390 --> 00:01:07.745
+Then you type cd documents to take you to
+your documents folder.
+
+24
+00:01:07.745 --> 00:01:09.660
+I'm showing you that because I am gonna
+show you in
+
+25
+00:01:09.660 --> 00:01:14.960
+a minute, how to write Python programs
+from inside this directory.
+
+26
+00:01:14.960 --> 00:01:17.250
+We are actually gonna create another
+directory.
+
+27
+00:01:17.250 --> 00:01:20.830
+But first, we are gonna see how to do it
+from the python directory.
+
+28
+00:01:20.830 --> 00:01:22.316
+So, we are gonna change to python.
+
+29
+00:01:22.316 --> 00:01:29.400
+So you type cdbackslashpython30 and that
+takes you to the Python 30 sub-directory.
+
+30
+00:01:29.400 --> 00:01:30.300
+So, we clear the screen.
+
+31
+00:01:30.300 --> 00:01:30.800
+And
+
+32
+00:01:32.750 --> 00:01:36.310
+we're gonna type notepad helloworld.py.
+
+33
+00:01:36.310 --> 00:01:38.470
+Now, it's very important that you add the
+.py
+
+34
+00:01:38.470 --> 00:01:43.000
+extension because that's how the Python
+interpreter knows that the.
+
+35
+00:01:43.000 --> 00:01:46.520
+File you're trying to load and run is a
+Python program.
+
+36
+00:01:46.520 --> 00:01:49.250
+It's by having that .py extension.
+
+37
+00:01:49.250 --> 00:01:51.320
+So enter that and that will bring up this
+window.
+
+38
+00:01:51.320 --> 00:01:55.900
+Now I already have it here, so I'm going
+to erase it
+
+39
+00:01:55.900 --> 00:01:59.560
+and write it again, although that's not
+really the point of this lesson.
+
+40
+00:01:59.560 --> 00:02:01.940
+We'll be learning all about these commands
+later.
+
+41
+00:02:01.940 --> 00:02:04.160
+So, we wanna print hello world to screen,
+
+42
+00:02:04.160 --> 00:02:07.070
+so we type print and then an open
+parenthesis.
+
+43
+00:02:07.070 --> 00:02:10.480
+Print is a function that requires
+parenthesis.
+
+44
+00:02:10.480 --> 00:02:12.730
+Then, we can either use a double quote or
+a single quote.
+
+45
+00:02:12.730 --> 00:02:16.040
+We'll use double quotes this time and
+then,
+
+46
+00:02:16.040 --> 00:02:19.560
+so we surround the phrase hello world in
+quotes.
+
+47
+00:02:19.560 --> 00:02:21.560
+And then add a second parenthesis to
+
+48
+00:02:21.560 --> 00:02:25.350
+close the print function argument, and
+that's it.
+
+49
+00:02:25.350 --> 00:02:30.990
+That's the whole program, so click File >
+Exit, then it'll ask you to save,
+
+50
+00:02:30.990 --> 00:02:36.600
+and you click Yes, or Save, and that takes
+us back to the Command Prompt window.
+
+51
+00:02:36.600 --> 00:02:38.688
+We can type Python.
+
+52
+00:02:38.688 --> 00:02:42.780
+Hello world.py and then that will display
+hello world
+
+53
+00:02:42.780 --> 00:02:47.255
+on the screen or because the operating
+system recognizes
+
+54
+00:02:47.255 --> 00:02:50.760
+py extensions as Python programs, you can
+just type
+
+55
+00:02:50.760 --> 00:02:56.060
+hello world.py and it will automatically
+run the python interpreter.
+
+56
+00:02:56.060 --> 00:03:00.390
+So that's how you run a program, or
+script, from the command line.
+
+57
+00:03:00.390 --> 00:03:02.040
+That's one way to do it.
+
+58
+00:03:02.040 --> 00:03:05.590
+Another way to do it, is to go back to
+your documents folder.
+
+59
+00:03:05.590 --> 00:03:10.990
+So type, cd backslash, users backslash,
+your username backslash, documents.
+
+60
+00:03:10.990 --> 00:03:14.185
+And then we're going to create a
+sub-directory.
+
+61
+00:03:14.185 --> 00:03:17.550
+Mine already exist, but just type md
+python.
+
+62
+00:03:17.550 --> 00:03:19.230
+Then you can change into the Python
+
+63
+00:03:19.230 --> 00:03:22.590
+directory and now you have a sub-directory
+for
+
+64
+00:03:22.590 --> 00:03:25.640
+your Python programs in your documents
+folder which
+
+65
+00:03:25.640 --> 00:03:28.852
+is often a handy place to keep everything.
+
+66
+00:03:28.852 --> 00:03:32.520
+You oughta have a back up program that
+looks in your documents folder to back
+
+67
+00:03:32.520 --> 00:03:35.150
+things up for whatever reason, it's
+convenient to
+
+68
+00:03:35.150 --> 00:03:38.550
+have programs like this in your documents
+folder.
+
+69
+00:03:38.550 --> 00:03:40.550
+So now we can go through the same process
+again.
+
+70
+00:03:40.550 --> 00:03:44.700
+And again, I've already done it so here's
+my program.
+
+71
+00:03:44.700 --> 00:03:45.806
+Don't need a semicolon.
+
+72
+00:03:45.806 --> 00:03:50.474
+Then click File > Exit > Save.
+
+73
+00:03:50.474 --> 00:03:54.660
+And then once again, helloworld.py.
+
+74
+00:03:54.660 --> 00:03:58.600
+And we can do that because the Python
+sub-directory
+
+75
+00:03:58.600 --> 00:04:01.380
+link to the interpreter is in our system
+path.
+
+76
+00:04:01.380 --> 00:04:04.150
+If I type the past statement right here,
+if
+
+77
+00:04:04.150 --> 00:04:06.429
+you scroll way down, look way down, you'll
+see c,
+
+78
+00:04:06.429 --> 00:04:11.260
+colon, backslash,python30, I also have an
+older python sub-directory
+
+79
+00:04:11.260 --> 00:04:13.570
+in my path, and that's how I can find it.
+
+80
+00:04:13.570 --> 00:04:14.070
+You
+
+81
+00:04:15.700 --> 00:04:21.660
+could also type the long way, python
+helloworld.py.
+
+82
+00:04:21.660 --> 00:04:23.520
+And get the same result.
+
+83
+00:04:23.520 --> 00:04:28.680
+So in a nutshell that's how you enter and
+run programs in Python.
+
+84
+00:04:28.680 --> 00:04:30.210
+We'll be doing this quite a bit more
+
+85
+00:04:30.210 --> 00:04:32.420
+throughout the course so you'll get very,
+very familiar
+
+86
+00:04:32.420 --> 00:04:34.560
+with it, but it's always nice to see at
+
+87
+00:04:34.560 --> 00:04:37.798
+the beginning exactly how to get a program
+running.
+
+88
+00:04:37.798 --> 00:04:39.675
+So I've shown you how to do it from the
+Python
+
+89
+00:04:39.675 --> 00:04:45.130
+sub-directory, and by creating a Python
+directory in your documents folder.
+
+90
+00:04:45.130 --> 00:04:46.950
+Either way it's fine with me.
+
+91
+00:04:46.950 --> 00:04:52.760
+I will probably now work from this users
+nmcmillan documents Python directory, just
+
+92
+00:04:52.760 --> 00:04:56.570
+so I can keep all my scripts in one easy
+to find place.
+
+93
+00:04:56.570 --> 00:04:58.930
+So that wraps up this lesson, and the next
+lesson
+
+94
+00:04:58.930 --> 00:05:02.660
+is on how to run programs in the Mac
+environment.
+
+95
+00:05:02.660 --> 00:05:05.430
+If you don't have a Mac, you can skip on
+to the exercise.
+
+96
+00:05:05.430 --> 00:05:08.470
+Otherwise, I'll see you in the next lesson
+on working with a Mac.
+

@@ -1,0 +1,383 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.181
+[MUSIC]
+
+2
+00:00:05.181 --> 00:00:09.356
+Okay, so before we get started, we've
+object [UNKNOWN] programing within
+
+3
+00:00:09.356 --> 00:00:12.802
+Python and the use of classes and objects
+and what you need
+
+4
+00:00:12.802 --> 00:00:16.312
+to understand first is a couple of
+different terms, so here's
+
+5
+00:00:16.312 --> 00:00:19.540
+a list of all the terms that you'll need
+for all [UNKNOWN].
+
+6
+00:00:19.540 --> 00:00:23.040
+Although I may not mention all of them you
+will, come across
+
+7
+00:00:23.040 --> 00:00:26.890
+them at some point so I, I will explain
+them for you.
+
+8
+00:00:26.890 --> 00:00:28.890
+So first of all what is a class?
+
+9
+00:00:28.890 --> 00:00:31.580
+Well a class is a user defined prototype
+for object that
+
+10
+00:00:31.580 --> 00:00:35.890
+defines a set of attributes that
+characterise any object of the class.
+
+11
+00:00:35.890 --> 00:00:37.400
+The attributes are data members or
+
+12
+00:00:37.400 --> 00:00:40.210
+class members and instant, instance meant
+variables.
+
+13
+00:00:41.260 --> 00:00:45.900
+And methods and bridge accessed via dot
+notation.
+
+14
+00:00:45.900 --> 00:00:49.840
+So that's a very, very broad sort of
+overview of what a class is
+
+15
+00:00:49.840 --> 00:00:55.440
+and to, in laymens terms is basically a
+place on which you can store methods.
+
+16
+00:00:55.440 --> 00:00:58.390
+Which I'll go into a few minute, moments.
+
+17
+00:00:58.390 --> 00:01:01.050
+All together along with variables and so
+on so
+
+18
+00:01:01.050 --> 00:01:04.000
+that they are well accessible within the
+same area.
+
+19
+00:01:04.000 --> 00:01:07.247
+So it is an easy and efficient way of
+storing all similar
+
+20
+00:01:07.247 --> 00:01:10.290
+code together so that you can call it if
+you need to.
+
+21
+00:01:11.990 --> 00:01:17.520
+And a class variable, is a variable that
+is shared by all instances of the class.
+
+22
+00:01:17.520 --> 00:01:21.200
+So a class can be initialized multiple
+times and
+
+23
+00:01:21.200 --> 00:01:23.420
+that is the main purpose behind having a
+class.
+
+24
+00:01:23.420 --> 00:01:25.620
+You can have two of them running
+simultaneously
+
+25
+00:01:25.620 --> 00:01:28.290
+and you won't have them conflict with each
+other.
+
+26
+00:01:28.290 --> 00:01:30.740
+Whereas if you did it with just straight
+functions, they could do.
+
+27
+00:01:32.790 --> 00:01:36.330
+And then we have data member, which is a
+class variable or
+
+28
+00:01:36.330 --> 00:01:38.410
+instance variable that holds data
+associated
+
+29
+00:01:38.410 --> 00:01:39.740
+with the class and it's subjects.
+
+30
+00:01:40.850 --> 00:01:44.820
+And then we have, a instance variable,
+which is a variable, that is
+
+31
+00:01:44.820 --> 00:01:49.540
+defined inside a method, and belongs only
+to the current instance of a class.
+
+32
+00:01:49.540 --> 00:01:52.530
+So, it's sort of like local variable,
+which we've
+
+33
+00:01:52.530 --> 00:01:57.300
+discussed before, but is specific to an
+initialized class.
+
+34
+00:01:57.300 --> 00:02:00.820
+So, each one of these, instance variables
+or depend, depe,
+
+35
+00:02:00.820 --> 00:02:05.390
+vary depending on which instance of a
+class we are using.
+
+36
+00:02:06.590 --> 00:02:09.640
+I'll get onto all of this in more detail
+throughout the rest of this chapter.
+
+37
+00:02:10.930 --> 00:02:13.430
+Inheritance is the transfer of
+characteristics of a
+
+38
+00:02:13.430 --> 00:02:16.390
+class to another class that are derived
+from it.
+
+39
+00:02:16.390 --> 00:02:19.770
+So you could have two classes, and one of
+them, for example,
+
+40
+00:02:19.770 --> 00:02:23.910
+being, animals, and then you could have
+two classes coming off of that.
+
+41
+00:02:23.910 --> 00:02:26.630
+Which inherit all of the things from
+animals, so say, an
+
+42
+00:02:26.630 --> 00:02:30.400
+animal can breathe, an animal can eat, and
+an animal can sleep.
+
+43
+00:02:30.400 --> 00:02:33.480
+And you might get, say, a dog, in which
+case
+
+44
+00:02:33.480 --> 00:02:36.920
+it can pant, it can run, and it can bark.
+
+45
+00:02:36.920 --> 00:02:40.510
+And you might have a cat, which inherited,
+inherits from animals
+
+46
+00:02:40.510 --> 00:02:43.600
+as well because it can do all of the
+things an animal
+
+47
+00:02:43.600 --> 00:02:47.860
+can do, plus it can meow, it can sleep
+very well, it
+
+48
+00:02:47.860 --> 00:02:52.870
+can eat very well, and that's, and it can
+hunt, for example.
+
+49
+00:02:52.870 --> 00:02:55.390
+And, so, you can see that.
+
+50
+00:02:55.390 --> 00:03:01.640
+And, an actual class can be a very broad
+thing and then you can define it.
+
+51
+00:03:01.640 --> 00:03:05.056
+Just more define things down the line by
+using inheritance.
+
+52
+00:03:05.056 --> 00:03:12.560
+An instance is, an instance is an
+individual object of a certain class.
+
+53
+00:03:12.560 --> 00:03:13.550
+So it is,
+
+54
+00:03:15.660 --> 00:03:20.980
+say if we had cats, then we might have, we
+might call the cat
+
+55
+00:03:23.330 --> 00:03:27.660
+for, we might call four cat with classes,
+and each one have
+
+56
+00:03:27.660 --> 00:03:30.784
+a different name, each one of those is an
+instance of the class.
+
+57
+00:03:30.784 --> 00:03:36.800
+initiate, initial it, initiation
+
+58
+00:03:36.800 --> 00:03:41.230
+is, once a class has been, called, so once
+
+59
+00:03:41.230 --> 00:03:43.260
+you're initializing that class, it's the
+on,
+
+60
+00:03:43.260 --> 00:03:45.300
+it's the process of creating the class.
+
+61
+00:03:45.300 --> 00:03:47.010
+So you can have a set of functions that
+are
+
+62
+00:03:47.010 --> 00:03:51.530
+called on it as soon as you, as soon as
+
+63
+00:03:51.530 --> 00:03:54.490
+you call the class it, you can have,
+methods, Which
+
+64
+00:03:54.490 --> 00:03:58.260
+run instantly which help you set up
+certain variables for example.
+
+65
+00:03:59.420 --> 00:04:04.010
+A method is a special type of function
+that is defined in class definition.
+
+66
+00:04:04.010 --> 00:04:07.350
+So it's just a function which is within a
+class basically.
+
+67
+00:04:07.350 --> 00:04:12.400
+And then an object is a unique instance of
+a data structure, as defined by its class.
+
+68
+00:04:12.400 --> 00:04:15.800
+An object comprises of, both data and
+[UNKNOWN] switch
+
+69
+00:04:15.800 --> 00:04:20.550
+are, class variables, and instance
+variables, and methods, as well.
+
+70
+00:04:21.710 --> 00:04:24.145
+So those are all the terms that you need
+to know for object
+
+71
+00:04:24.145 --> 00:04:26.490
+orientated programming, well at least
+that's all
+
+72
+00:04:26.490 --> 00:04:28.680
+the terms that you at this stage.
+
+73
+00:04:28.680 --> 00:04:31.020
+Some of them we won't come across and some
+of them we will.
+
+74
+00:04:31.020 --> 00:04:33.890
+So, if you, get confused, just make a note
+of
+
+75
+00:04:33.890 --> 00:04:36.390
+each one or, watch this video a couple of
+times.
+
+76
+00:04:36.390 --> 00:04:38.827
+And it will help you significantly
+understand
+
+77
+00:04:38.827 --> 00:04:41.833
+what I'm talking about throughout the
+actual chapter.
+
+78
+00:04:41.833 --> 00:04:44.439
+So thank you for watching and I'll see you
+in the next video.
+
+79
+00:04:44.439 --> 00:04:49.429
+[MUSIC]
+

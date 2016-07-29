@@ -1,0 +1,582 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.090
+[MUSIC]
+
+2
+00:00:05.090 --> 00:00:10.130
+So now that we've got all of the inserting
+and updating covered.
+
+3
+00:00:10.130 --> 00:00:14.560
+What we have to cover now is obviously, to
+retrieve data and also to delete it.
+
+4
+00:00:14.560 --> 00:00:21.040
+So to, re, to retrieve data what you have
+to do is, use an execute.
+
+5
+00:00:21.040 --> 00:00:23.280
+And the command is called select, and
+we're
+
+6
+00:00:23.280 --> 00:00:26.560
+going to select all, which is shown by
+doing
+
+7
+00:00:26.560 --> 00:00:30.184
+an asterisk or a star which is Shift+8 and
+
+8
+00:00:30.184 --> 00:00:33.540
+then, you type from and then the table
+name.
+
+9
+00:00:33.540 --> 00:00:34.810
+And our table is called person.
+
+10
+00:00:36.420 --> 00:00:38.470
+Now, because we've done that we don't
+actually
+
+11
+00:00:38.470 --> 00:00:41.160
+need to commit because we're not changing
+any data.
+
+12
+00:00:41.160 --> 00:00:43.230
+All we're doing is retrieving data.
+
+13
+00:00:43.230 --> 00:00:49.250
+But what, what we do need to do, is we do
+need to first of all make that.
+
+14
+00:00:49.250 --> 00:00:51.560
+A variable so I'm going to call that
+
+15
+00:00:53.630 --> 00:00:58.340
+I'll just call that table for now, table
+is equal to and then we're going to do
+
+16
+00:00:58.340 --> 00:01:03.420
+for each in table and going to print
+
+17
+00:01:03.420 --> 00:01:08.349
+each and when I run this, you'll see that
+we get all of the data which
+
+18
+00:01:09.540 --> 00:01:13.850
+we stored earlier, which is Alexander,
+Bowers, 17, multiple times.
+
+19
+00:01:14.860 --> 00:01:19.783
+So that now, what we can do, is retrieve
+say if we only
+
+20
+00:01:19.783 --> 00:01:25.690
+wanted the first name, we can retrieve
+just the first name.
+
+21
+00:01:25.690 --> 00:01:27.632
+There we've got Alexander, if I wanted the
+second name
+
+22
+00:01:27.632 --> 00:01:30.909
+as well, then we could do first name and
+second name.
+
+23
+00:01:31.960 --> 00:01:37.330
+So, we can do multiple different things,
+we can select anything that we want, quite
+
+24
+00:01:37.330 --> 00:01:40.910
+often you'll use just the asterisk cuz
+most of the data you store will be
+
+25
+00:01:43.590 --> 00:01:46.910
+will be what required for everything or
+for most things,
+
+26
+00:01:46.910 --> 00:01:50.850
+however if you do only need one or two
+different rows,
+
+27
+00:01:50.850 --> 00:01:52.960
+or fields rather, then just you can type
+in the
+
+28
+00:01:52.960 --> 00:01:56.070
+names of the fields and it'll fetch only
+those for you.
+
+29
+00:01:56.070 --> 00:01:59.271
+And also, this, this data here as
+displayed
+
+30
+00:01:59.271 --> 00:02:01.461
+in the order as you type it so you
+
+31
+00:02:01.461 --> 00:02:04.748
+do second name, [SOUND] then first name
+[SOUND] it
+
+32
+00:02:04.748 --> 00:02:08.370
+gets fetched back in that order, so the
+reason
+
+33
+00:02:08.370 --> 00:02:11.573
+why the asterisk, it was fetched in the
+other
+
+34
+00:02:11.573 --> 00:02:14.607
+order is because that's the order it is
+set
+
+35
+00:02:14.607 --> 00:02:17.303
+up in the database in, we did the first
+
+36
+00:02:17.303 --> 00:02:20.926
+name, second name, and then age in our
+database,
+
+37
+00:02:20.926 --> 00:02:24.516
+and that is the order in which it is
+returned to us.
+
+38
+00:02:24.516 --> 00:02:27.684
+Now, there is one other thing in which we
+can do, which,
+
+39
+00:02:27.684 --> 00:02:31.908
+allows us to have more flexibility with
+the database, because this is going
+
+40
+00:02:31.908 --> 00:02:34.878
+fetched back the form of a [INAUDIBLE] and
+we can't do as
+
+41
+00:02:34.878 --> 00:02:37.981
+much as if we fetched it back in the form
+of a dictionary.
+
+42
+00:02:37.981 --> 00:02:40.696
+[SOUND] So, to do that you can just
+
+43
+00:02:40.696 --> 00:02:45.029
+put dict around each, [SOUND] and when
+it's again.
+
+44
+00:02:45.029 --> 00:02:47.846
+Oh, sorry no, I've forgot something.
+
+45
+00:02:47.846 --> 00:02:53.374
+One thing that we do need to do, is,
+activate
+
+46
+00:02:53.374 --> 00:02:58.464
+the row factory, which is a built in
+[SOUND]
+
+47
+00:02:59.628 --> 00:03:05.170
+a function that's built into SQLite three.
+
+48
+00:03:05.170 --> 00:03:10.620
+And it allows us to, treat all of the
+rows.
+
+49
+00:03:10.620 --> 00:03:15.140
+All of the database fetched back as being
+a dictionary instead.
+
+50
+00:03:15.140 --> 00:03:18.150
+So, now that we get all of the parameters
+added as well.
+
+51
+00:03:18.150 --> 00:03:24.190
+So all the keys and all of the values
+added in the order in which we want them.
+
+52
+00:03:24.190 --> 00:03:26.840
+Now, you'll notice that the actual order
+here is different.
+
+53
+00:03:26.840 --> 00:03:28.220
+You've got age first and then first
+
+54
+00:03:28.220 --> 00:03:31.260
+and second name, because, it's been
+ordered alphabetically.
+
+55
+00:03:31.260 --> 00:03:36.848
+So, that is one of the differences, and
+it's not really a major
+
+56
+00:03:36.848 --> 00:03:42.749
+difference, it doesn't allow you to do
+anything other, anything
+
+57
+00:03:42.749 --> 00:03:48.235
+different really, in its basic form, but
+it does allow us
+
+58
+00:03:48.235 --> 00:03:53.847
+to select data based on having [SOUND] the
+the ability to set.
+
+59
+00:03:53.847 --> 00:03:57.590
+Based on, it being a dictionary rather
+than a tuple.
+
+60
+00:03:57.590 --> 00:04:00.190
+So by adding square brackets in the name
+of the field
+
+61
+00:04:00.190 --> 00:04:04.090
+in between we can now fetch the list of
+the first names.
+
+62
+00:04:04.090 --> 00:04:06.130
+Which, well I'll enter a second name.
+
+63
+00:04:06.130 --> 00:04:10.288
+[SOUND] We can then do that as well.
+
+64
+00:04:10.288 --> 00:04:13.265
+So we can now, I have the ability to form
+
+65
+00:04:13.265 --> 00:04:18.060
+more functions upon the actual data in
+which we're fetching.
+
+66
+00:04:19.920 --> 00:04:24.720
+And also, we now have the ability to oh
+I'm sorry, I'm
+
+67
+00:04:24.720 --> 00:04:27.190
+not going to show you how you delete some
+bit from the database.
+
+68
+00:04:27.190 --> 00:04:29.249
+So now that we've covered how to fetch it.
+
+69
+00:04:30.628 --> 00:04:32.220
+We can delete all of the excess there.
+
+70
+00:04:33.880 --> 00:04:37.060
+And we change this command to delete
+
+71
+00:04:37.060 --> 00:04:40.885
+[SOUND] from and in table languages
+person.
+
+72
+00:04:40.885 --> 00:04:43.717
+And then we have to do a where clause
+where.
+
+73
+00:04:43.717 --> 00:04:48.741
+[SOUND] And then it's the column name and
+then what we want it to be equal to.
+
+74
+00:04:48.741 --> 00:04:55.431
+So, [SOUND] where, last at, my last name
+which is actually called second name now.
+
+75
+00:04:55.431 --> 00:04:59.624
+Database, where second name is equal to
+and I'll just put powers.
+
+76
+00:04:59.624 --> 00:05:04.933
+Now this will actually delete all of the
+various research we have
+
+77
+00:05:04.933 --> 00:05:10.336
+at the moment and so, if I was to now,
+[SOUND] commit that [SOUND]
+
+78
+00:05:10.336 --> 00:05:15.869
+and delete the variable name, we don't
+need the variable there.
+
+79
+00:05:15.869 --> 00:05:20.979
+Now back to being committed if I was to
+now select all the data,
+
+80
+00:05:20.979 --> 00:05:25.910
+from the database again, so select [SOUND]
+all from person.
+
+81
+00:05:25.910 --> 00:05:30.901
+And then we need to just [SOUND] add
+
+82
+00:05:30.901 --> 00:05:36.053
+that variable back in and then you'll
+
+83
+00:05:36.053 --> 00:05:40.883
+see that all of the data has actually
+
+84
+00:05:40.883 --> 00:05:46.035
+been deleted from the table, so [SOUND]
+
+85
+00:05:46.035 --> 00:05:51.026
+when we run this, you'll see that we
+
+86
+00:05:51.026 --> 00:05:55.212
+get nothing printed back out.
+
+87
+00:05:55.212 --> 00:05:57.019
+And the reason for that is now
+
+88
+00:05:57.019 --> 00:06:00.561
+because everything actually matched before
+when we had
+
+89
+00:06:00.561 --> 00:06:02.820
+the delete and so there's no reason
+
+90
+00:06:02.820 --> 00:06:06.133
+for anything to actually, be within the
+database,
+
+91
+00:06:06.133 --> 00:06:11.178
+we've changed our, and so to show you
+exactly what the delete can actually do,
+
+92
+00:06:11.178 --> 00:06:13.662
+I'm just going to insert some data into
+
+93
+00:06:13.662 --> 00:06:16.650
+the database and then I'll resume the
+video.
+
+94
+00:06:18.160 --> 00:06:20.030
+So, as you can see, I've now inserted
+
+95
+00:06:20.030 --> 00:06:23.980
+four different rows, Alex, Alexander,
+Jonathan, and John.
+
+96
+00:06:23.980 --> 00:06:27.700
+And these all have different ages and,
+there is one thing which I didn't show you
+
+97
+00:06:27.700 --> 00:06:32.990
+with the select and that is you can also
+put conditional clauses on that as well.
+
+98
+00:06:32.990 --> 00:06:36.710
+So, where age is greater than 18, we'll
+now put this
+
+99
+00:06:36.710 --> 00:06:41.910
+down to just two people, Jonathan and John
+Jonathan and John.
+
+100
+00:06:41.910 --> 00:06:46.320
+And so, for example if I wanted to delete
+something where all ages were under
+
+101
+00:06:46.320 --> 00:06:51.600
+18 for, whatever reason, then we could
+also do that as well, within the deletes.
+
+102
+00:06:51.600 --> 00:06:56.980
+So, I'll select Insert, so not insert,
+select
+
+103
+00:06:56.980 --> 00:07:02.000
+and update and delete allow you to do a
+where clause within that as well.
+
+104
+00:07:03.950 --> 00:07:06.320
+So now that we're printing each of these
+from each
+
+105
+00:07:06.320 --> 00:07:09.730
+table, I'll show you that we've got full
+data sets.
+
+106
+00:07:09.730 --> 00:07:13.310
+I'm going to delete the ones which are
+under the age of 18.
+
+107
+00:07:13.310 --> 00:07:16.845
+So, if we change this now to be delete.
+
+108
+00:07:16.845 --> 00:07:21.296
+[SOUND] And we're going to delete from the
+table which
+
+109
+00:07:21.296 --> 00:07:26.252
+is called person [SOUND] and we're going
+to delete where age
+
+110
+00:07:26.252 --> 00:07:30.299
+is less than 18 [SOUND] and we need to
+commit this
+
+111
+00:07:30.299 --> 00:07:34.983
+and then I'm going to show you what the
+output is.
+
+112
+00:07:34.983 --> 00:07:41.478
+[SOUND] So again, we need to remove that
+and
+
+113
+00:07:41.478 --> 00:07:47.611
+then do table is equal to db.execute.
+
+114
+00:07:47.611 --> 00:07:53.454
+I'm just gonna do select [SOUND] all from
+person and now when we run this
+
+115
+00:07:53.454 --> 00:07:59.017
+again, you'll see that we only have three
+different data sets.
+
+116
+00:07:59.017 --> 00:08:01.570
+The person who is under the age of 18.
+
+117
+00:08:01.570 --> 00:08:04.060
+Which was Alex Bowers, age 17.
+
+118
+00:08:04.060 --> 00:08:05.730
+That has now been deleted.
+
+119
+00:08:07.010 --> 00:08:11.950
+So, that is, how you delete, how you
+insert.
+
+120
+00:08:11.950 --> 00:08:19.888
+And how you can control how you treat data
+from I, from a database.
+
+121
+00:08:19.888 --> 00:08:21.794
+There's [UNKNOWN].
+
+122
+00:08:21.794 --> 00:08:24.127
+Thank you for watching, and I will see you
+soon.
+
+123
+00:08:24.127 --> 00:08:28.989
+[MUSIC]
+

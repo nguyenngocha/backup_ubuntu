@@ -1,0 +1,521 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.377
+[MUSIC]
+
+2
+00:00:05.377 --> 00:00:09.673
+One part of qualitative programming that
+makes it incredibly useful and, is
+
+3
+00:00:09.673 --> 00:00:12.909
+one of the main reasons why it get used by
+so many developers
+
+4
+00:00:12.909 --> 00:00:17.271
+in so many different languages and that is
+something called inheritance which
+
+5
+00:00:17.271 --> 00:00:19.980
+is where you inherit properties,
+attributes,
+
+6
+00:00:19.980 --> 00:00:23.840
+functions, methods, whatever, from a
+parent class.
+
+7
+00:00:23.840 --> 00:00:26.139
+So, for example, we have [SOUND] a class
+of animals.
+
+8
+00:00:26.139 --> 00:00:32.295
+[SOUND] And, eh, we'll just put in there,
+some things that every animal can do.
+
+9
+00:00:32.295 --> 00:00:35.693
+So, eat, and that's gonna called self,
+[SOUND]
+
+10
+00:00:35.693 --> 00:00:38.496
+and we're not going to do anything for
+now.
+
+11
+00:00:38.496 --> 00:00:42.794
+We'll do def, [SOUND] again, and we'll do,
+let's see, talk.
+
+12
+00:00:42.794 --> 00:00:46.722
+[SOUND] And we'll just keep it simple for
+now, so we'll have just two of these.
+
+13
+00:00:46.722 --> 00:00:48.532
+So, [SOUND] now that we've got those two,
+
+14
+00:00:48.532 --> 00:00:50.829
+that's something that every single animal
+can do.
+
+15
+00:00:50.829 --> 00:00:55.129
+However, [SOUND] if we were to, specify
+more broadly,
+
+16
+00:00:55.129 --> 00:00:57.365
+so if I was to go, [SOUND] to cat.
+
+17
+00:00:57.365 --> 00:01:01.090
+And, then a cat can talk and the cat can
+eat.
+
+18
+00:01:01.090 --> 00:01:02.530
+So, we can define.
+
+19
+00:01:02.530 --> 00:01:04.300
+I'll do talk.
+
+20
+00:01:04.300 --> 00:01:09.540
+And, I'll define all of these in more
+depth in a few moments.
+
+21
+00:01:09.540 --> 00:01:11.660
+But also a cat can also
+
+22
+00:01:13.990 --> 00:01:14.490
+meet, no.
+
+23
+00:01:14.490 --> 00:01:16.250
+Let's see.
+
+24
+00:01:16.250 --> 00:01:17.887
+What can a cat do that's unique?
+
+25
+00:01:17.887 --> 00:01:22.825
+[BLANK_AUDIO]
+
+26
+00:01:24.800 --> 00:01:27.670
+Okay, I'll just leave this as undo move.
+
+27
+00:01:27.670 --> 00:01:30.000
+So that's obviously, it's not unique to a
+cat,
+
+28
+00:01:30.000 --> 00:01:31.800
+but it's just an example of what we can
+do.
+
+29
+00:01:31.800 --> 00:01:32.980
+This isn't something that you'd really
+
+30
+00:01:32.980 --> 00:01:36.480
+use object-oriented, and inheritance for
+as such.
+
+31
+00:01:36.480 --> 00:01:38.680
+This is just to show you, what you can do
+with it.
+
+32
+00:01:38.680 --> 00:01:41.960
+So as you can see here, now, we've got a
+cat.
+
+33
+00:01:41.960 --> 00:01:43.880
+But we need to make it inherit animals.
+
+34
+00:01:43.880 --> 00:01:45.750
+So inside the parentheses here,.
+
+35
+00:01:45.750 --> 00:01:48.443
+We'll just do [SOUND] animals.
+
+36
+00:01:48.443 --> 00:01:51.593
+And, that will now, inherit all of its
+
+37
+00:01:51.593 --> 00:01:55.900
+properties from, animals and then do these
+as well.
+
+38
+00:01:55.900 --> 00:01:59.971
+So, where we have eat, we'll just do
+
+39
+00:01:59.971 --> 00:02:05.331
+print, [SOUND] and we'll output, I can
+eat.
+
+40
+00:02:05.331 --> 00:02:10.873
+[SOUND] And for talk, we'll print, [SOUND]
+I can talk, then for
+
+41
+00:02:10.873 --> 00:02:16.213
+talk, [SOUND] for the cat, we're going to
+do, [SOUND] meow.
+
+42
+00:02:16.213 --> 00:02:24.510
+And for move, [SOUND] we'll print that and
+we'll say, I can move.
+
+43
+00:02:24.510 --> 00:02:26.900
+So this is all very, very trivial.
+
+44
+00:02:26.900 --> 00:02:29.590
+And, pretty pointless to be honest.
+
+45
+00:02:29.590 --> 00:02:31.456
+But it shows [UNKNOWN] standing and give
+
+46
+00:02:31.456 --> 00:02:34.330
+you an understanding of what inheritance
+will do.
+
+47
+00:02:34.330 --> 00:02:36.180
+So, now if I create
+
+48
+00:02:38.200 --> 00:02:43.709
+[SOUND] If I do muffin is equal to cat.
+
+49
+00:02:43.709 --> 00:02:47.192
+And then, just do muffin.talk.
+
+50
+00:02:47.192 --> 00:02:52.722
+[SOUND] And if we run this, we will get,
+meow.
+
+51
+00:02:52.722 --> 00:02:56.990
+So even though we inherited the talk from,
+the animals class.
+
+52
+00:02:56.990 --> 00:02:59.531
+Because we are overwriting it, within our
+cat
+
+53
+00:02:59.531 --> 00:03:01.952
+class, which is the one which is the
+child.
+
+54
+00:03:02.990 --> 00:03:06.420
+class, we now get the output of meow,
+there
+
+55
+00:03:06.420 --> 00:03:09.200
+is a way to overrun this, and what we
+
+56
+00:03:09.200 --> 00:03:13.188
+can do is we can do muffin.super.talk,
+[SOUND] and
+
+57
+00:03:13.188 --> 00:03:17.119
+what this will do is it goes to,
+superclass, oh.
+
+58
+00:03:17.119 --> 00:03:27.119
+[SOUND].
+
+59
+00:03:35.286 --> 00:03:36.367
+Hm.
+
+60
+00:03:36.367 --> 00:03:41.199
+[SOUND].
+
+61
+00:03:41.199 --> 00:03:45.591
+So what we're going to do, is we're going
+to muffin is
+
+62
+00:03:45.591 --> 00:03:50.176
+equal to cat, [SOUND] and here we are
+calling the cat back.
+
+63
+00:03:50.176 --> 00:03:57.373
+[SOUND] So what I'm going to is muffin,
+[SOUND] is equal to cat.
+
+64
+00:03:57.373 --> 00:04:05.073
+And then if we do muffin.talk, [SOUND]
+then, we run this, we'll get meow.
+
+65
+00:04:05.073 --> 00:04:07.653
+The reason why we get meow and not muffin
+talk
+
+66
+00:04:07.653 --> 00:04:10.874
+is because we are overwriting it within
+the cat class.
+
+67
+00:04:10.874 --> 00:04:13.200
+So the parent class, which is animals.
+
+68
+00:04:13.200 --> 00:04:15.170
+Has all the actual values.
+
+69
+00:04:17.220 --> 00:04:20.680
+Such as eat and talk set, but they are
+default values.
+
+70
+00:04:20.680 --> 00:04:22.960
+But if we are to, over-write them in
+
+71
+00:04:22.960 --> 00:04:28.000
+our, a class which we call afterwards,
+which is,
+
+72
+00:04:28.000 --> 00:04:31.930
+now talk, cap sorry, and then we
+over-write the
+
+73
+00:04:31.930 --> 00:04:34.940
+talk, we now get the output from the talk.
+
+74
+00:04:34.940 --> 00:04:37.900
+Instead of the output from, previous.
+
+75
+00:04:39.380 --> 00:04:43.760
+So, what we're going to do with this, is
+allows us to have everything
+
+76
+00:04:43.760 --> 00:04:48.590
+that say an animal can do, which is eat,
+talk, move, sleep, and so on.
+
+77
+00:04:48.590 --> 00:04:53.500
+And then we can do, any specific things,
+outside of that.
+
+78
+00:04:53.500 --> 00:04:54.703
+So, if I was to call.
+
+79
+00:04:54.703 --> 00:04:59.699
+[SOUND] Muffin.move and also muffin.eat,
+you'll
+
+80
+00:04:59.699 --> 00:05:04.797
+see, that we inherit both the, the default
+for eat,
+
+81
+00:05:04.797 --> 00:05:10.001
+which isn't required explicit within our
+talk our cat
+
+82
+00:05:10.001 --> 00:05:15.204
+class and, of course, we inherit move
+which is explicitly
+
+83
+00:05:15.204 --> 00:05:20.540
+within our cat class, but not within our
+parent class.
+
+84
+00:05:20.540 --> 00:05:25.935
+So the cat is the child and the animals is
+the, parent class, and this allows
+
+85
+00:05:25.935 --> 00:05:30.992
+us to, like I've mentioned, to just,
+expand upon something that has
+
+86
+00:05:30.992 --> 00:05:36.509
+already been set, so for example, now if I
+was to create, say, a dog class.
+
+87
+00:05:38.080 --> 00:05:39.958
+[SOUND] And like.
+
+88
+00:05:39.958 --> 00:05:43.530
+And that extends animals as well, or
+inherits animals.
+
+89
+00:05:43.530 --> 00:05:44.350
+Then do talk.
+
+90
+00:05:47.410 --> 00:05:50.232
+[SOUND] Then print, and can do wolf.
+
+91
+00:05:50.232 --> 00:05:51.460
+Simple?
+
+92
+00:05:51.460 --> 00:05:55.525
+And now if I was to, create a dog,
+
+93
+00:05:55.525 --> 00:06:00.490
+and I'll call this one sky equal [SOUND]
+to dog.
+
+94
+00:06:00.490 --> 00:06:02.920
+And then do, sky.talk.
+
+95
+00:06:02.920 --> 00:06:06.840
+And you'll see that what we get now, is
+woof.
+
+96
+00:06:06.840 --> 00:06:13.190
+So we get woof, meow, cuz we're calling,
+the dog one first, then the cat.
+
+97
+00:06:13.190 --> 00:06:15.560
+So we've got woof, meow.
+
+98
+00:06:15.560 --> 00:06:19.230
+And then we've got, the cat's move and
+that cat's eat as well.
+
+99
+00:06:21.250 --> 00:06:24.082
+If you were to create say, a dog and you
+didn't want it to
+
+100
+00:06:24.082 --> 00:06:27.878
+do anything inside it, you just wanted it
+to be called, [SOUND] then you type
+
+101
+00:06:27.878 --> 00:06:31.736
+in the keyword pass and that will, just
+simply mean that you created it, and
+
+102
+00:06:31.736 --> 00:06:33.967
+there's nothing inside it, so it inherits
+
+103
+00:06:33.967 --> 00:06:36.794
+everything from the, parent class and
+nothing else.
+
+104
+00:06:36.794 --> 00:06:40.970
+And so, pass will make it so everything
+that is inside the animals class.
+
+105
+00:06:40.970 --> 00:06:45.132
+It's inside the, dog class however nothing
+else is being, put in
+
+106
+00:06:45.132 --> 00:06:49.240
+there explicitly and so, instead of woof
+we now get I can talk.
+
+107
+00:06:49.240 --> 00:06:51.071
+Which is the default value for talk.
+
+108
+00:06:51.071 --> 00:06:52.480
+[SOUND] So thank you for watching.
+
+109
+00:06:52.480 --> 00:06:54.430
+That is everything to do with classes.
+
+110
+00:06:54.430 --> 00:06:56.780
+So, hopefully you understand it all
+properly.
+
+111
+00:06:56.780 --> 00:06:58.597
+If not just go back and read the summarize
+
+112
+00:06:58.597 --> 00:07:00.901
+videos, [SOUND] and I'll see you in the
+next video.
+
+113
+00:07:00.901 --> 00:07:06.049
+[MUSIC]
+

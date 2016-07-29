@@ -1,0 +1,465 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.975
+[MUSIC]
+
+2
+00:00:04.975 --> 00:00:08.950
+Hello and welcome to this video on
+variable scope.
+
+3
+00:00:08.950 --> 00:00:13.060
+Now variable scope is a very complex thing
+to understand initially but
+
+4
+00:00:13.060 --> 00:00:16.870
+once you do understand it it does become
+considerably easy to understand.
+
+5
+00:00:18.150 --> 00:00:21.300
+So, first of all, a variable scope and
+when you're given
+
+6
+00:00:21.300 --> 00:00:24.980
+a page, or when you write a page in
+Python, it'll have
+
+7
+00:00:27.860 --> 00:00:30.760
+several functions within it, usually.
+
+8
+00:00:30.760 --> 00:00:33.020
+Each of these function has its own
+purpose.
+
+9
+00:00:34.590 --> 00:00:36.910
+And that is what you're programming a
+function to do.
+
+10
+00:00:36.910 --> 00:00:39.640
+You're programming it to do something that
+it specifically needs to do.
+
+11
+00:00:40.640 --> 00:00:42.490
+However, within the entire page you can
+
+12
+00:00:42.490 --> 00:00:45.100
+have something called a global variable as
+well.
+
+13
+00:00:45.100 --> 00:00:50.870
+Now a global variable could be a number,
+it could be a name, so you could use
+
+14
+00:00:50.870 --> 00:00:57.130
+it as a brand name, you could use it as a
+way of indicating a setting in the file.
+
+15
+00:00:57.130 --> 00:01:01.991
+For example, something like that, and a
+global variable will be accessible
+
+16
+00:01:01.991 --> 00:01:06.424
+throughout each of these normal functions
+as well as the entire page.
+
+17
+00:01:06.424 --> 00:01:09.846
+[BLANK_AUDIO]
+
+18
+00:01:09.846 --> 00:01:14.029
+Now, because you've got a global function
+and a global variable, you'll also have
+
+19
+00:01:14.029 --> 00:01:17.999
+local variable and a local variable will
+only be available within each of these.
+
+20
+00:01:19.230 --> 00:01:21.250
+And within each of the ones which its
+declared
+
+21
+00:01:21.250 --> 00:01:24.270
+within, so you declare a global variable
+outside of
+
+22
+00:01:24.270 --> 00:01:28.830
+the actual individual, individual
+functions, and it can be
+
+23
+00:01:28.830 --> 00:01:32.560
+used across the entire range of functions
+within a page.
+
+24
+00:01:33.940 --> 00:01:37.090
+A local variable you declare within an
+individual function.
+
+25
+00:01:37.090 --> 00:01:39.180
+And once it's been declared, if you go
+
+26
+00:01:39.180 --> 00:01:42.480
+outside that function, it is no longer
+accessible.
+
+27
+00:01:42.480 --> 00:01:46.210
+So there are differences between whether
+you want to use a local or a global.
+
+28
+00:01:46.210 --> 00:01:48.760
+For example, if you were using a global
+and
+
+29
+00:01:48.760 --> 00:01:51.510
+you changed something within one function,
+it would change
+
+30
+00:01:51.510 --> 00:01:53.280
+it within the entire page, it would change
+it
+
+31
+00:01:53.280 --> 00:01:56.230
+outside of the function, it would change
+it everywhere.
+
+32
+00:01:56.230 --> 00:01:59.100
+Whereas if were to change something a
+local variable within
+
+33
+00:01:59.100 --> 00:02:01.810
+a function, it would change within that
+function, it would
+
+34
+00:02:01.810 --> 00:02:03.580
+be used within that function, but as soon
+as it
+
+35
+00:02:03.580 --> 00:02:07.090
+came out of the function that variable
+would no longer exist.
+
+36
+00:02:07.090 --> 00:02:08.840
+So there's several different uses for
+this.
+
+37
+00:02:08.840 --> 00:02:14.967
+First of all, with local variables you can
+use the same name across
+
+38
+00:02:14.967 --> 00:02:20.420
+variable various various different
+functions.
+
+39
+00:02:20.420 --> 00:02:24.720
+And they won't interrupt with each event
+they won't contr, contradict each other.
+
+40
+00:02:24.720 --> 00:02:26.610
+However, if you were to use the same name
+in a
+
+41
+00:02:26.610 --> 00:02:31.040
+global it would expect you to be meaning
+the initial one.
+
+42
+00:02:31.040 --> 00:02:34.620
+And if you do odd meaning initial one, it
+would overwrite it and
+
+43
+00:02:34.620 --> 00:02:38.280
+then you'd have a slight problem with now
+the way that your code works.
+
+44
+00:02:38.280 --> 00:02:41.110
+For example, if you weren't expecting it
+to do that.
+
+45
+00:02:41.110 --> 00:02:49.790
+You would also with a local variable, you
+have the ability to sort of change
+
+46
+00:02:49.790 --> 00:02:54.540
+content within a function accidentally and
+not break your actual code.
+
+47
+00:02:54.540 --> 00:02:55.975
+So it's not intrusive.
+
+48
+00:02:55.975 --> 00:03:00.834
+[SOUND] So because it's not intrusive, if
+you were to actually
+
+49
+00:03:00.834 --> 00:03:05.693
+make a mistake within a function, if
+something did go wrong,
+
+50
+00:03:05.693 --> 00:03:09.245
+if you were to just simply go back into
+that one
+
+51
+00:03:09.245 --> 00:03:15.524
+function you can find your mistake easily
+because usually a function's only.
+
+52
+00:03:15.524 --> 00:03:18.820
+And a short [UNKNOWN] code compared to the
+rest of the page.
+
+53
+00:03:18.820 --> 00:03:22.340
+Now this obviously is still a problem
+because you are still
+
+54
+00:03:22.340 --> 00:03:25.550
+making a mistake and it's now working as
+you'd expected it to.
+
+55
+00:03:25.550 --> 00:03:30.950
+However, because it's only within a local
+function, a local variable
+
+56
+00:03:30.950 --> 00:03:34.710
+where the mistake is, it's motive is
+diagnose and find a problem.
+
+57
+00:03:34.710 --> 00:03:36.565
+If a global variable makes mistake, it
+could be
+
+58
+00:03:36.565 --> 00:03:40.040
+invariable in function one, function two,
+function three, four.
+
+59
+00:03:40.040 --> 00:03:42.530
+It could be in the actual main button at
+the page, it could be anywhere.
+
+60
+00:03:42.530 --> 00:03:46.070
+And so when you are using a global, if you
+make a mistake
+
+61
+00:03:46.070 --> 00:03:49.110
+is harder on the make than if you were
+using a local variable.
+
+62
+00:03:50.180 --> 00:03:51.990
+Now, that's not to say that global label
+
+63
+00:03:51.990 --> 00:03:54.470
+don't have a use, because they certainly
+do.
+
+64
+00:03:54.470 --> 00:04:00.270
+And for example if you were to actually
+create a, a page
+
+65
+00:04:00.270 --> 00:04:06.240
+in which needs to have a certain value as
+being constant, then
+
+66
+00:04:06.240 --> 00:04:08.820
+that is a very good use for a global
+because it can't
+
+67
+00:04:08.820 --> 00:04:12.910
+change anyway, so there's no difference in
+whether or not it does change.
+
+68
+00:04:12.910 --> 00:04:14.950
+For example if you were to use a pay roll
+and people
+
+69
+00:04:14.950 --> 00:04:20.960
+got paid a default value per hour, so say
+$10 an hour, then
+
+70
+00:04:20.960 --> 00:04:25.810
+all you need to do is pass that through to
+each function which needs it
+
+71
+00:04:25.810 --> 00:04:31.320
+and it would, [UNKNOWN] automatically,
+what the actual pay is.
+
+72
+00:04:31.320 --> 00:04:33.410
+You would have to recreate that variable
+each time.
+
+73
+00:04:33.410 --> 00:04:35.760
+Eem, cuz this thing is saying there's no
+point in recreating it.
+
+74
+00:04:35.760 --> 00:04:37.485
+You may as well pass it to all of them.
+
+75
+00:04:37.485 --> 00:04:42.390
+However, if you were to create a number of
+hours worked, then
+
+76
+00:04:42.390 --> 00:04:46.010
+a global variable could be useful but, it
+could be hindering as well.
+
+77
+00:04:46.010 --> 00:04:51.130
+It could be useful if that one person's if
+your, if
+
+78
+00:04:51.130 --> 00:04:53.850
+your page is per person word, which it
+usually will be.
+
+79
+00:04:53.850 --> 00:04:56.220
+So you've got nothing to worry about in
+that case.
+
+80
+00:04:56.220 --> 00:05:00.020
+Then you could say that it worked for 0.5
+hours a week.
+
+81
+00:05:01.570 --> 00:05:05.380
+And then you could pass that into a, a
+function and
+
+82
+00:05:05.380 --> 00:05:09.320
+you could check whether that number of
+hours worked is overtime.
+
+83
+00:05:09.320 --> 00:05:12.800
+If it is overtime then you can give him
+another rate, that sort of thing.
+
+84
+00:05:12.800 --> 00:05:16.460
+So therefore, a global variable would be
+useful in that case.
+
+85
+00:05:16.460 --> 00:05:21.060
+So there are different uses between
+whether you want it to be global or local.
+
+86
+00:05:21.060 --> 00:05:26.580
+And if you do decide to go global, just
+make sure that you are using the
+
+87
+00:05:26.580 --> 00:05:28.330
+variable name only when you actually mean
+to
+
+88
+00:05:28.330 --> 00:05:30.490
+use that variable name and if you do need
+
+89
+00:05:30.490 --> 00:05:32.300
+to create something locally to give it a
+
+90
+00:05:32.300 --> 00:05:35.270
+different name otherwise you will have the
+problem of
+
+91
+00:05:35.270 --> 00:05:39.560
+it overwriting your global, and changing
+how it
+
+92
+00:05:39.560 --> 00:05:43.030
+affects the rest of all your functions as
+well.
+
+93
+00:05:43.030 --> 00:05:44.060
+So, thank you for watching.
+
+94
+00:05:44.060 --> 00:05:46.785
+I'm Max [UNKNOWN] from [INAUDIBLE]
+program.tv and I'll see you soon.
+
+95
+00:05:46.785 --> 00:05:51.679
+[MUSIC]
+

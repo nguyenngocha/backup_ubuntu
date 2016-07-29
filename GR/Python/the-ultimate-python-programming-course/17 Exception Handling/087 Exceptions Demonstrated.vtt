@@ -1,0 +1,229 @@
+WEBVTT
+
+1
+00:00:01.130 --> 00:00:02.780
+In this chapter, we're going to learn how
+
+2
+00:00:02.780 --> 00:00:07.020
+to handle errors that occur in Python
+programs.
+
+3
+00:00:07.020 --> 00:00:09.250
+These errors are also called exceptions.
+
+4
+00:00:09.250 --> 00:00:11.800
+In fact, that's the more correct name.
+
+5
+00:00:11.800 --> 00:00:15.720
+Exceptions occur when something in a
+program goes wrong.
+
+6
+00:00:15.720 --> 00:00:18.130
+The two examples I'm going to show in this
+lesson
+
+7
+00:00:18.130 --> 00:00:21.140
+are when you try to divide a number by
+zero.
+
+8
+00:00:21.140 --> 00:00:23.630
+And when you try to open a file that
+doesn't exist.
+
+9
+00:00:23.630 --> 00:00:25.828
+But there are many other exceptions.
+
+10
+00:00:25.828 --> 00:00:31.090
+But we wanna distinguish exceptions from
+other types of errors such as when your
+
+11
+00:00:31.090 --> 00:00:36.210
+entering your code and you type the name
+of a function such as Print incorrectly.
+
+12
+00:00:36.210 --> 00:00:39.830
+That's not really an exception, that's
+just a typographical error.
+
+13
+00:00:39.830 --> 00:00:42.770
+The types of exceptions that we want to
+discuss in
+
+14
+00:00:42.770 --> 00:00:47.120
+this chapter occur when the program's
+running, or at run time.
+
+15
+00:00:47.120 --> 00:00:50.500
+So, let's look at a couple of examples for
+this first lesson.
+
+16
+00:00:50.500 --> 00:00:55.755
+We're gonna create a program called
+accept.py.
+
+17
+00:00:55.755 --> 00:00:59.512
+So the first thing I wanna do is
+demonstrate the divide by zero exception.
+
+18
+00:00:59.512 --> 00:01:03.840
+So let's prompt the user to enter a couple
+of numbers.
+
+19
+00:01:06.270 --> 00:01:07.960
+Then we might say, quotient is
+
+20
+00:01:07.960 --> 00:01:12.650
+equal to numerator, numerator divided by
+denominator.
+
+21
+00:01:13.760 --> 00:01:16.487
+And we can print the quotient.
+
+22
+00:01:16.487 --> 00:01:21.310
+So, let's save the program.
+
+23
+00:01:21.310 --> 00:01:23.307
+We'll run it.
+
+24
+00:01:23.307 --> 00:01:26.645
+So, we'll do 12 and 2.
+
+25
+00:01:26.645 --> 00:01:28.231
+And that's six.
+
+26
+00:01:28.231 --> 00:01:30.182
+Let's run it again.
+
+27
+00:01:30.182 --> 00:01:33.125
+This time we'll enter 12 and 0.
+
+28
+00:01:33.125 --> 00:01:38.155
+And here we get an exception,
+ZeroDivisionError: division by zero.
+
+29
+00:01:38.155 --> 00:01:41.410
+So, this exception was thrown by the
+
+30
+00:01:41.410 --> 00:01:45.770
+program when we entered zero for a
+denominator.
+
+31
+00:01:45.770 --> 00:01:49.410
+What we're going to learn in this chapter
+is how
+
+32
+00:01:49.410 --> 00:01:54.700
+to recognize this error and keep the
+program from crashing.
+
+33
+00:01:54.700 --> 00:01:56.610
+Cuz that's the last thing you want your
+programs
+
+34
+00:01:56.610 --> 00:01:59.500
+to do when someone else is using them is
+
+35
+00:01:59.500 --> 00:02:01.730
+to have it crash and take you back all
+
+36
+00:02:01.730 --> 00:02:04.610
+the way out of the program to the
+operating system.
+
+37
+00:02:04.610 --> 00:02:05.940
+Alright, let's look at one more example.
+
+38
+00:02:08.560 --> 00:02:09.650
+Comment out this code.
+
+39
+00:02:09.650 --> 00:02:12.380
+And we'll do a very simple one.
+
+40
+00:02:12.380 --> 00:02:13.640
+It's a one liner.
+
+41
+00:02:13.640 --> 00:02:18.920
+We'll try to open a file that doesn't
+exist or open it to read.
+
+42
+00:02:21.030 --> 00:02:22.130
+We'll save.
+
+43
+00:02:22.130 --> 00:02:24.030
+Come back to the operating system.
+
+44
+00:02:24.030 --> 00:02:24.530
+And
+
+45
+00:02:27.670 --> 00:02:32.714
+here we get an IO error, No such file or
+directory: 'blah.txt'.
+
+46
+00:02:33.820 --> 00:02:37.200
+So that's another example of an exception
+that can be
+
+47
+00:02:37.200 --> 00:02:42.500
+handled inside the program so that the
+program doesn't crash.
+
+48
+00:02:42.500 --> 00:02:45.250
+So with that, we're ready to move to the
+next lesson where we're going to
+
+49
+00:02:45.250 --> 00:02:48.500
+look at the first way to handle exceptions
+
+50
+00:02:48.500 --> 00:02:52.160
+and that's using something called a
+tri-accept statement.
+

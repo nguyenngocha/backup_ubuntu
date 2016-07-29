@@ -1,0 +1,419 @@
+WEBVTT
+
+1
+00:00:01.140 --> 00:00:02.610
+In this chapter I'm going to present to
+
+2
+00:00:02.610 --> 00:00:06.820
+you the fundamentals or basic building
+blocks of Python.
+
+3
+00:00:06.820 --> 00:00:12.442
+Which includes the data types,
+expressions, statements, and variables.
+
+4
+00:00:12.442 --> 00:00:16.130
+We're gonna start off talking about
+expressions and statements.
+
+5
+00:00:16.130 --> 00:00:18.760
+Also variables before we talk about the
+data types.
+
+6
+00:00:18.760 --> 00:00:20.710
+Primarily because you need to see how
+
+7
+00:00:20.710 --> 00:00:24.740
+to write even the simplest programs in
+Python.
+
+8
+00:00:24.740 --> 00:00:26.860
+So to be more effective in my
+presentation,
+
+9
+00:00:26.860 --> 00:00:28.790
+we're going to work with the interactive
+shell.
+
+10
+00:00:28.790 --> 00:00:34.120
+The interactive shell is in Python 2.7.2,
+I'm going to go to
+
+11
+00:00:34.120 --> 00:00:39.300
+that sub-directory and then to start the
+shell, I'm going to type Python.
+
+12
+00:00:39.300 --> 00:00:42.390
+And the interactive shell allows us to
+enter Python
+
+13
+00:00:42.390 --> 00:00:47.270
+programs interactively, so I can enter
+expressions and statements.
+
+14
+00:00:47.270 --> 00:00:50.530
+Without having to be in some sort of
+editor
+
+15
+00:00:50.530 --> 00:00:53.560
+and then run the interpreter from the
+command line.
+
+16
+00:00:53.560 --> 00:00:57.450
+I won't do this very often but for this
+particular lesson, especially
+
+17
+00:00:57.450 --> 00:01:02.870
+on expressions, it's the most effective
+way to present the information to you.
+
+18
+00:01:02.870 --> 00:01:09.390
+The most basic expression in Python would
+be a single data item or datum.
+
+19
+00:01:09.390 --> 00:01:10.670
+So for example.
+
+20
+00:01:10.670 --> 00:01:15.410
+Typing in the number 1 is an expression
+that evaluates to itself.
+
+21
+00:01:15.410 --> 00:01:17.460
+So, 1 is a piece of literal data.
+
+22
+00:01:17.460 --> 00:01:22.780
+And a piece of literal data or datum is an
+expression and it evaluates to itself.
+
+23
+00:01:22.780 --> 00:01:25.720
+Of course, a more complicated expression
+in this
+
+24
+00:01:25.720 --> 00:01:29.250
+case called an arithmetic expression, 1
+plus 2.
+
+25
+00:01:29.250 --> 00:01:32.830
+We'll evaluate to whatever the result is
+of applying
+
+26
+00:01:32.830 --> 00:01:36.190
+the arithmetic operator plus to 1 and 2
+and you
+
+27
+00:01:36.190 --> 00:01:39.370
+can have much more complex expressions
+such as 1
+
+28
+00:01:39.370 --> 00:01:43.310
+plus 2 times 3 divided by 2, which yields
+4.
+
+29
+00:01:43.310 --> 00:01:46.750
+We're gonna talk more about those when we
+talk about numbers.
+
+30
+00:01:46.750 --> 00:01:50.878
+Besides numbers, we can also have string
+expressions,
+
+31
+00:01:50.878 --> 00:01:55.120
+so for example, hello plus world yields
+hello world.
+
+32
+00:01:55.120 --> 00:01:58.290
+Notice that I put the strings in single
+quotes.
+
+33
+00:01:58.290 --> 00:02:06.500
+I can also use double quotes, whatever
+your preference is works fine and you can.
+
+34
+00:02:06.500 --> 00:02:08.466
+Concatenate, that's what we're doing here,
+as
+
+35
+00:02:08.466 --> 00:02:11.300
+many different strings together as you
+want.
+
+36
+00:02:13.680 --> 00:02:18.240
+Oops, a little, made a little mistake
+there, I hit enter before I finished
+
+37
+00:02:18.240 --> 00:02:22.330
+so you see what happened, it told me that
+was syntax error, invalid syntax.
+
+38
+00:02:22.330 --> 00:02:25.670
+We'll talk about errors more later, but
+since you've seen one.
+
+39
+00:02:25.670 --> 00:02:28.750
+I'll just leave it in here so that you can
+understand what happens.
+
+40
+00:02:28.750 --> 00:02:30.290
+What I was trying to do, we'll try
+
+41
+00:02:30.290 --> 00:02:34.040
+it one more time, was demonstrate a long
+concatenation.
+
+42
+00:02:34.040 --> 00:02:39.340
+And I should mention that the plus sign
+works for both numbers and strings.
+
+43
+00:02:39.340 --> 00:02:41.750
+With numbers it's the addition operator,
+
+44
+00:02:41.750 --> 00:02:44.320
+with strings it's the concatenation
+operator.
+
+45
+00:02:44.320 --> 00:02:47.490
+And concatenation just simply means
+combining.
+
+46
+00:02:47.490 --> 00:02:51.480
+Multiple strings into one string, like I
+did just there.
+
+47
+00:02:51.480 --> 00:02:54.740
+Notice that even though I used double
+quotes for my
+
+48
+00:02:54.740 --> 00:02:59.630
+strings, internally Python represents a
+string with a single quote.
+
+49
+00:02:59.630 --> 00:03:02.130
+But again, it's your choice how to do
+that.
+
+50
+00:03:02.130 --> 00:03:03.890
+Another type of expression might be a
+
+51
+00:03:03.890 --> 00:03:07.800
+boolean expression, where we write
+something like 100.
+
+52
+00:03:07.800 --> 00:03:12.320
+Greater than 200 and that returns a false
+value.
+
+53
+00:03:12.320 --> 00:03:15.620
+So that's another example of an
+expression, there are others
+
+54
+00:03:15.620 --> 00:03:20.760
+but we'll stop with numbers, strings, and
+booleans for right now.
+
+55
+00:03:20.760 --> 00:03:25.140
+So after expressions the next building
+block would be statements.
+
+56
+00:03:25.140 --> 00:03:27.030
+There are lots of different types of
+statements.
+
+57
+00:03:27.030 --> 00:03:29.510
+There are assignment statements, there are
+looping
+
+58
+00:03:29.510 --> 00:03:33.145
+statements, there are if statements to
+make decisions.
+
+59
+00:03:33.145 --> 00:03:35.940
+We'll start out with the simplest, or
+probably the one you'll
+
+60
+00:03:35.940 --> 00:03:38.930
+need to learn the first, and that would be
+assignment statements.
+
+61
+00:03:38.930 --> 00:03:42.280
+So assignment statements are used to
+assign values to variables.
+
+62
+00:03:42.280 --> 00:03:43.710
+So for example.
+
+63
+00:03:43.710 --> 00:03:47.860
+Here we are assigning the value 100 to the
+variable num.
+
+64
+00:03:47.860 --> 00:03:52.230
+So here I'm introducing both statements
+and variables in one example.
+
+65
+00:03:52.230 --> 00:03:56.780
+You'll notice that I don't have to provide
+a data type with my variable.
+
+66
+00:03:56.780 --> 00:04:00.310
+Python automatically assigns data types
+based on
+
+67
+00:04:00.310 --> 00:04:02.740
+the values that are assigned to variables.
+
+68
+00:04:02.740 --> 00:04:07.160
+So I can turn around and write that
+expression and it works just as well.
+
+69
+00:04:07.160 --> 00:04:10.560
+Now, num holds the string 1.
+
+70
+00:04:10.560 --> 00:04:13.200
+So variables in Python are very flexible.
+
+71
+00:04:13.200 --> 00:04:14.730
+Let's go back to our original example.
+
+72
+00:04:14.730 --> 00:04:18.530
+And then, just to demonstrate, a common
+use of variables.
+
+73
+00:04:18.530 --> 00:04:23.230
+We can use variables in expressions and
+the interpreter
+
+74
+00:04:23.230 --> 00:04:27.730
+will look up their value and then evaluate
+it accordingly.
+
+75
+00:04:27.730 --> 00:04:31.310
+So num 2 gets the value 300, because num
+has
+
+76
+00:04:31.310 --> 00:04:34.830
+the value 100, and num 1 has the value
+200.
+
+77
+00:04:34.830 --> 00:04:38.250
+So now you've seen examples of the three
+
+78
+00:04:38.250 --> 00:04:41.360
+fundamental concepts I wanted to describe
+in this lesson.
+
+79
+00:04:41.360 --> 00:04:43.860
+Expressions, which can be of different
+types, you
+
+80
+00:04:43.860 --> 00:04:47.270
+can have numeric expressions, you can have
+string expressions.
+
+81
+00:04:47.270 --> 00:04:50.560
+You can have boolean expressions and those
+aren't the only types but those
+
+82
+00:04:50.560 --> 00:04:53.990
+are the three most common you're going to
+see early in the course.
+
+83
+00:04:53.990 --> 00:04:57.350
+And I demonstrated how to use variables
+via the
+
+84
+00:04:57.350 --> 00:05:02.750
+assignment statement and how they apply in
+expressions themselves.
+
+85
+00:05:02.750 --> 00:05:05.400
+So with that we're ready to move on to the
+next lesson
+
+86
+00:05:05.400 --> 00:05:09.327
+where we're going to delve a little deeper
+into the numeric datatypes.
+

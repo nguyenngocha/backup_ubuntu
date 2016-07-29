@@ -1,0 +1,375 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:04.340
+In this lesson we're going to see how to
+read data from a file.
+
+2
+00:00:04.340 --> 00:00:11.380
+So let's start a new program, we're gonna
+call this readfile.py.
+
+3
+00:00:11.380 --> 00:00:14.300
+Our first step is create a file object, so
+
+4
+00:00:14.300 --> 00:00:17.750
+we'll use the first file we created last
+time, text.text.
+
+5
+00:00:17.750 --> 00:00:20.850
+And when you open for reading, you use r
+
+6
+00:00:20.850 --> 00:00:24.030
+as the second argument rather than w for
+write.
+
+7
+00:00:24.030 --> 00:00:29.240
+And now that file becomes available for us
+to read data from it into our program.
+
+8
+00:00:29.240 --> 00:00:35.270
+So what we can do is we can use the
+function read line to read a complete line
+
+9
+00:00:35.270 --> 00:00:41.340
+of text from the file and into a variable,
+and then we can display it, just like so.
+
+10
+00:00:42.340 --> 00:00:51.510
+So let's run this program, save it and
+type readfile.py, and so it read line 1.
+
+11
+00:00:51.510 --> 00:00:57.960
+So, we can modify it, betcha we can just
+copy these lines right here,
+
+12
+00:01:00.700 --> 00:01:01.890
+exit and Save again.
+
+13
+00:01:05.090 --> 00:01:06.950
+Oops, the wrong command.
+
+14
+00:01:06.950 --> 00:01:08.640
+There it is right there.
+
+15
+00:01:08.640 --> 00:01:12.330
+Notice that it also included a line feed
+in there, and
+
+16
+00:01:12.330 --> 00:01:16.300
+that's fine because a line feed was
+actually in our file.
+
+17
+00:01:16.300 --> 00:01:20.030
+Not a problem when we're working with text
+so much, although we can strip that out.
+
+18
+00:01:20.030 --> 00:01:22.760
+We're gonna learn how to do that in the
+next chapter.
+
+19
+00:01:22.760 --> 00:01:25.790
+But for right now what I wanna do, is look
+at how we would
+
+20
+00:01:25.790 --> 00:01:31.660
+read a complete file, using a loop, and
+then process the data in some way.
+
+21
+00:01:31.660 --> 00:01:33.750
+And the example I want to give, is working
+with
+
+22
+00:01:33.750 --> 00:01:37.690
+the grades dot text file created in the
+last chapter.
+
+23
+00:01:37.690 --> 00:01:40.210
+So let's open read file again.
+
+24
+00:01:41.210 --> 00:01:46.290
+We'll comment out the lines we just ran,
+and we're going to start from scratch.
+
+25
+00:01:46.290 --> 00:01:48.020
+So what we're going to do is is we're
+gonna
+
+26
+00:01:48.020 --> 00:01:52.060
+read the grades from that file and compute
+the average.
+
+27
+00:01:52.060 --> 00:01:54.160
+So to do that we're gonna need a couple of
+variables.
+
+28
+00:01:54.160 --> 00:01:56.710
+We need the count, and we need the total.
+
+29
+00:01:56.710 --> 00:02:01.229
+The next thing we're going to do is open
+the file, it's grades.text
+
+30
+00:02:01.229 --> 00:02:04.990
+and again we're opening it to read, so r
+is the second argument there.
+
+31
+00:02:06.010 --> 00:02:07.930
+Before we go into the loop we want to read
+
+32
+00:02:07.930 --> 00:02:10.380
+the first grade, and I'll explain why in
+just a second.
+
+33
+00:02:10.380 --> 00:02:14.930
+So we're gonna read it in using our read
+line, understanding that
+
+34
+00:02:14.930 --> 00:02:20.070
+we're reading it in as a string and we're
+going to convert it.
+
+35
+00:02:20.070 --> 00:02:22.450
+Now we wanna start the loop, and we're
+going
+
+36
+00:02:22.450 --> 00:02:26.230
+to loop while there is a grade to read.
+
+37
+00:02:26.230 --> 00:02:31.040
+So in other words, while this is not empty
+string, while it's not empty.
+
+38
+00:02:31.040 --> 00:02:32.202
+Then we want to loop.
+
+39
+00:02:32.202 --> 00:02:35.298
+So this will work as one means of looping
+through the
+
+40
+00:02:35.298 --> 00:02:39.090
+file, with out trying to go beyond the end
+of the file.
+
+41
+00:02:39.090 --> 00:02:43.540
+In the next chapter, we talk about the
+four loop, we'll talk about how to do the
+
+42
+00:02:43.540 --> 00:02:46.940
+same thing, using what's called a file
+iterator,
+
+43
+00:02:46.940 --> 00:02:49.780
+and it's most naturally performed with the
+four loop.
+
+44
+00:02:49.780 --> 00:02:51.710
+And we'll discuss that in the next
+chapter,
+
+45
+00:02:51.710 --> 00:02:54.090
+but for now this technique will work just
+fine.
+
+46
+00:02:54.090 --> 00:02:55.270
+So we've read in a grade.
+
+47
+00:02:56.310 --> 00:02:58.820
+Lets print the grade just so we can see
+it.
+
+48
+00:02:58.820 --> 00:03:01.600
+Then we want to increment our account by
+one, and
+
+49
+00:03:01.600 --> 00:03:05.030
+then we want to add the grade to our
+total.
+
+50
+00:03:05.030 --> 00:03:08.950
+So to do that we need to convert the grade
+to a integer.
+
+51
+00:03:08.950 --> 00:03:10.915
+So that's why we do int grade right here,
+
+52
+00:03:10.915 --> 00:03:14.870
+cuz, remember, at this point, it's still a
+strain.
+
+53
+00:03:14.870 --> 00:03:18.950
+Then the last step is to read another
+grade from the file.
+
+54
+00:03:18.950 --> 00:03:21.620
+So, we do the in file dot read line
+
+55
+00:03:21.620 --> 00:03:25.210
+function, and that will be the end of the
+loop.
+
+56
+00:03:25.210 --> 00:03:28.630
+Once we're out of data, when there's
+nothing to read, this
+
+57
+00:03:28.630 --> 00:03:33.370
+will be empty, and that will make this
+expression become false.
+
+58
+00:03:34.820 --> 00:03:40.190
+Then we can compute the average by a
+count, then we can display
+
+59
+00:03:40.190 --> 00:03:45.582
+the average, remember we gotta convert
+that to string, just like so.
+
+60
+00:03:46.690 --> 00:03:48.120
+So let's exit and save.
+
+61
+00:03:50.180 --> 00:03:50.990
+Clear the screen.
+
+62
+00:03:50.990 --> 00:03:52.900
+I'm gonna run the program.
+
+63
+00:03:52.900 --> 00:04:01.550
+So there are our grades; 100, 93, 87, 72,
+and 66, and the average is 83.
+
+64
+00:04:01.550 --> 00:04:02.050
+So
+
+65
+00:04:04.050 --> 00:04:05.720
+again, looking at the code.
+
+66
+00:04:07.500 --> 00:04:12.850
+We open the file initially, read in one
+grade,
+
+67
+00:04:14.360 --> 00:04:20.150
+loop while there are grades to read,
+perform our tasks which
+
+68
+00:04:20.150 --> 00:04:25.960
+are printing the grade, incrementing the
+count, and adding the grade to the total.
+
+69
+00:04:25.960 --> 00:04:29.040
+And then perform another read
+understanding that when
+
+70
+00:04:29.040 --> 00:04:31.830
+we are out of data, great variable will be
+
+71
+00:04:31.830 --> 00:04:33.800
+empty and that will cause the loop to
+
+72
+00:04:33.800 --> 00:04:37.660
+stop cuz this will become the equivalent
+of false.
+
+73
+00:04:38.800 --> 00:04:43.300
+So, that's how you would read the data
+from a text file using a while loop.
+
+74
+00:04:43.300 --> 00:04:47.230
+Like I said earlier, there is a more
+natural way to do this in
+
+75
+00:04:47.230 --> 00:04:51.880
+Python, and that's to use what's called a
+file iterator, with a for loop.
+
+76
+00:04:51.880 --> 00:04:54.500
+And we'll demonstrate that later on in
+
+77
+00:04:54.500 --> 00:04:57.690
+the next chapter as we're discussing for
+loops.
+
+78
+00:04:57.690 --> 00:05:02.660
+But for now we're ready to move to the
+exercises for this chapter on while loops.
+
+79
+00:05:02.660 --> 00:05:04.999
+[BLANK_AUDIO]
+

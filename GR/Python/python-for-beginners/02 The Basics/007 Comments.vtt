@@ -1,0 +1,315 @@
+WEBVTT
+
+1
+00:00:00.140 --> 00:00:04.568
+[MUSIC]
+
+2
+00:00:04.568 --> 00:00:05.841
+Hello, and welcome back.
+
+3
+00:00:05.841 --> 00:00:09.308
+I'm Alex Bowers from learntoprogram.tv,
+and in this video, we'll
+
+4
+00:00:09.308 --> 00:00:12.810
+be covering how to add comments to your
+page within Python.
+
+5
+00:00:12.810 --> 00:00:16.820
+So, comments are a very useful tool to
+use, because it
+
+6
+00:00:16.820 --> 00:00:20.120
+will allow you to make your page more
+readable to other people.
+
+7
+00:00:20.120 --> 00:00:23.940
+So if you were to share your code to
+somebody else for assistance, for example.
+
+8
+00:00:23.940 --> 00:00:26.640
+Or to show them an example of how to do
+something.
+
+9
+00:00:26.640 --> 00:00:30.280
+Using comments can be incredibly useful in
+helping them
+
+10
+00:00:30.280 --> 00:00:34.220
+understand what parts of code, of your
+code does what.
+
+11
+00:00:34.220 --> 00:00:35.630
+And also, if you were to come back to a
+piece
+
+12
+00:00:35.630 --> 00:00:38.740
+of code which you wrote, say a year in the
+past.
+
+13
+00:00:38.740 --> 00:00:42.120
+You'd be able to understand instantly what
+it was you were writing.
+
+14
+00:00:42.120 --> 00:00:44.930
+And if you wrote it in a less efficient
+way.
+
+15
+00:00:44.930 --> 00:00:47.380
+You'd be able to rewrite something to do
+exact same thing.
+
+16
+00:00:48.520 --> 00:00:52.200
+As what your comments have specified,
+you'll be trying to do.
+
+17
+00:00:52.200 --> 00:00:57.980
+And so it helps you considerably remember
+what it is you were doing, and
+
+18
+00:00:57.980 --> 00:01:01.200
+to help other people as well if you were
+to share them, within your code.
+
+19
+00:01:01.200 --> 00:01:04.030
+And a comment is simply done with a
+
+20
+00:01:04.030 --> 00:01:09.660
+hash symbol inside a Python, so the hash
+symbol.
+
+21
+00:01:09.660 --> 00:01:12.630
+On the Mac is Alt and then the 3 key.
+
+22
+00:01:12.630 --> 00:01:15.981
+On Windows, it's on the right-hand side
+it's above
+
+23
+00:01:15.981 --> 00:01:19.208
+the Shift key, it's just around above that
+area there.
+
+24
+00:01:19.208 --> 00:01:22.757
+And all you have to do is just put a
+single hash, and then the
+
+25
+00:01:22.757 --> 00:01:24.858
+rest of the line is commented out,
+
+26
+00:01:24.858 --> 00:01:28.550
+and won't be interpreted by the Python
+interpreter.
+
+27
+00:01:28.550 --> 00:01:31.570
+You can write anything on here, you
+
+28
+00:01:31.570 --> 00:01:37.010
+could write print Print Hello World, for
+example.
+
+29
+00:01:37.010 --> 00:01:38.230
+And it won't get run.
+
+30
+00:01:38.230 --> 00:01:43.520
+Or it will be run, but it won't get
+interpreted and it won't get output.
+
+31
+00:01:44.540 --> 00:01:48.150
+Whereas if the next line I do Print and I
+just do Hello.
+
+32
+00:01:49.450 --> 00:01:51.870
+And if we run that as well you'll get
+
+33
+00:01:51.870 --> 00:01:54.460
+just hello, but you won't get that outline
+there.
+
+34
+00:01:54.460 --> 00:01:56.150
+There, the commented line, there.
+
+35
+00:01:57.270 --> 00:01:59.220
+And you can also add comments to the end
+of lines.
+
+36
+00:01:59.220 --> 00:02:01.400
+So, this is an output.
+
+37
+00:02:02.830 --> 00:02:05.160
+And, so, you can see, how if we
+
+38
+00:02:05.160 --> 00:02:09.040
+had something very confusing happening
+within the actual script.
+
+39
+00:02:09.040 --> 00:02:12.548
+Then you would be able to actually comment
+it easily, and have
+
+40
+00:02:12.548 --> 00:02:15.920
+it so that something which you might not
+understand how to do
+
+41
+00:02:15.920 --> 00:02:19.428
+in the future, and we will go onto more
+complicated code later
+
+42
+00:02:19.428 --> 00:02:22.879
+on within the course, which this sort of
+idea is useful for.
+
+43
+00:02:22.879 --> 00:02:27.667
+For example, iterations and so on.
+
+44
+00:02:27.667 --> 00:02:32.059
+What you would find interesting you might
+also find it confusing for
+
+45
+00:02:32.059 --> 00:02:35.371
+example, and so, if you were to comment it
+you would be
+
+46
+00:02:35.371 --> 00:02:38.827
+able to understand it and look over it
+later on, read it,
+
+47
+00:02:38.827 --> 00:02:42.084
+and you'd be able to learn it faster that
+way as well.
+
+48
+00:02:42.084 --> 00:02:45.033
+So there are multiple uses for doing this
+
+49
+00:02:45.033 --> 00:02:49.380
+sort of practice this sort of practice
+whilst coding.
+
+50
+00:02:49.380 --> 00:02:54.680
+Now, obviously, cuz it's not interpreted,
+it is not a requirement of Python.
+
+51
+00:02:54.680 --> 00:03:00.930
+However, it is very good coding practice
+to have comments within your code, and it
+
+52
+00:03:00.930 --> 00:03:03.400
+allows you to make your code more
+
+53
+00:03:03.400 --> 00:03:06.900
+readable, as I've explained a few minutes
+ago.
+
+54
+00:03:06.900 --> 00:03:10.410
+So, I would recommend that you do comment
+your code.
+
+55
+00:03:10.410 --> 00:03:16.780
+However, within this tutorial this course,
+I won't be actually doing much commenting.
+
+56
+00:03:16.780 --> 00:03:19.790
+And that's simply cuz I'm explaining it
+while I'm writing it.
+
+57
+00:03:19.790 --> 00:03:21.920
+So, the comments are to explain it, but if
+
+58
+00:03:21.920 --> 00:03:25.350
+I'm talking whilst writing, then there's
+not much point in
+
+59
+00:03:25.350 --> 00:03:28.106
+me actually doing any commenting, because
+the exact same
+
+60
+00:03:28.106 --> 00:03:31.040
+content is being said as what I would
+write down.
+
+61
+00:03:32.120 --> 00:03:36.980
+So thank you for watching, and I hope you
+enjoy these videos.
+
+62
+00:03:36.980 --> 00:03:39.417
+Just remember that coding practice is not
+a
+
+63
+00:03:39.417 --> 00:03:42.259
+requirement, but it is very, very
+beneficial if
+
+64
+00:03:42.259 --> 00:03:44.628
+you were to take them up quickly, because
+
+65
+00:03:44.628 --> 00:03:47.624
+it does make your coding life considerably
+easier.
+
+66
+00:03:47.624 --> 00:03:47.847
+[MUSIC]
+

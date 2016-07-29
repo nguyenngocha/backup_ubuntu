@@ -1,0 +1,469 @@
+WEBVTT
+
+1
+00:00:01.170 --> 00:00:04.110
+In this lesson we're going to continue on
+with our introduction
+
+2
+00:00:04.110 --> 00:00:08.420
+to functions, by looking at the next part
+of working with functions.
+
+3
+00:00:08.420 --> 00:00:09.230
+The function call.
+
+4
+00:00:09.230 --> 00:00:15.050
+Let's go back to our program we created in
+the last lesson, functions1.py.
+
+5
+00:00:15.050 --> 00:00:19.230
+If you remember we have two function
+definitions.
+
+6
+00:00:19.230 --> 00:00:20.930
+One function to square a number.
+
+7
+00:00:20.930 --> 00:00:24.300
+And another function to count the number
+of vowels in a string.
+
+8
+00:00:25.390 --> 00:00:29.260
+So, let's see how to use these functions
+in a program.
+
+9
+00:00:29.260 --> 00:00:31.640
+We'll start out with the square function.
+
+10
+00:00:31.640 --> 00:00:33.070
+We'll ask the user to Enter a number.
+
+11
+00:00:34.420 --> 00:00:38.210
+We'll get that number, using the input
+function.
+
+12
+00:00:39.450 --> 00:00:42.690
+Then, we'll create another variable called
+the numsquared.
+
+13
+00:00:42.690 --> 00:00:47.490
+And here's where we will call the function
+with our piece of data.
+
+14
+00:00:47.490 --> 00:00:50.900
+When we call a function, the data that
+
+15
+00:00:50.900 --> 00:00:54.510
+is provided to the function is called the
+argument,
+
+16
+00:00:54.510 --> 00:00:57.480
+and its very important in a function call,
+that
+
+17
+00:00:57.480 --> 00:01:02.430
+the argument matches the parameter in the
+function definition.
+
+18
+00:01:02.430 --> 00:01:08.210
+So that, if our function definition calls
+for a number to be passed
+
+19
+00:01:08.210 --> 00:01:14.390
+in, then that is actually what the
+argument will be is a numeric value.
+
+20
+00:01:14.390 --> 00:01:18.070
+Without that then everything pretty much
+falls apart.
+
+21
+00:01:18.070 --> 00:01:22.010
+So here's the call to square.
+
+22
+00:01:22.010 --> 00:01:27.020
+With a number, the variable num, which
+will hold a numeric value.
+
+23
+00:01:27.020 --> 00:01:32.050
+Then what happens is, at the place where
+the function is called, the function
+
+24
+00:01:32.050 --> 00:01:37.900
+definition is executed so, return number
+times number is executed.
+
+25
+00:01:37.900 --> 00:01:44.420
+The value that's returned from the
+function, then replaces the function call.
+
+26
+00:01:44.420 --> 00:01:49.780
+So this value, whatever is, depending on
+the number that the user enters.
+
+27
+00:01:49.780 --> 00:01:55.170
+Then, replaces the function call, and then
+is assigned to the variable numsquared.
+
+28
+00:01:55.170 --> 00:01:57.790
+And then, we can display the result
+
+29
+00:02:00.650 --> 00:02:01.080
+by sub.
+
+30
+00:02:01.080 --> 00:02:01.580
+So
+
+31
+00:02:03.790 --> 00:02:04.840
+let's give it a try.
+
+32
+00:02:04.840 --> 00:02:06.000
+Let's Exit and Save.
+
+33
+00:02:09.090 --> 00:02:10.240
+Then call the program,
+
+34
+00:02:12.540 --> 00:02:16.570
+we'll do a simple 1, 2 squared, 2 squared
+equals 4.
+
+35
+00:02:16.570 --> 00:02:23.126
+Let's run it again, this time let's do 12,
+12 squared equals 144.
+
+36
+00:02:25.760 --> 00:02:28.660
+So that's how the function call works.
+
+37
+00:02:28.660 --> 00:02:32.890
+A function call can go any place that an
+expression is expected.
+
+38
+00:02:32.890 --> 00:02:38.090
+So we could put inside a print function,
+and we can put it on the right hand side
+
+39
+00:02:38.090 --> 00:02:43.820
+in an assignment statement, and we can use
+it in a more complex expression also.
+
+40
+00:02:43.820 --> 00:02:46.220
+And we'll look at other examples with more
+
+41
+00:02:46.220 --> 00:02:49.320
+complex function calls, as we go through
+the course.
+
+42
+00:02:49.320 --> 00:02:53.100
+Now, lets exercise the num vowels
+function.
+
+43
+00:02:53.100 --> 00:02:57.020
+So lets comment out our code for working
+with the square function.
+
+44
+00:02:57.020 --> 00:03:01.020
+Now, this time we are gonna ask the user
+enter a string, and
+
+45
+00:03:01.020 --> 00:03:05.660
+we'll call it variable str and it will
+just be equal to input.
+
+46
+00:03:05.660 --> 00:03:10.240
+And then we'll say, there are plus string.
+
+47
+00:03:10.240 --> 00:03:15.460
+This call's a little more complex, cuz I
+want to make sure that
+
+48
+00:03:15.460 --> 00:03:20.820
+we convert our number returned from
+numVowels to a string.
+
+49
+00:03:20.820 --> 00:03:23.340
+So I tell you what, let's not use the
+variable.
+
+50
+00:03:23.340 --> 00:03:25.600
+Str, that can be kind of confusing.
+
+51
+00:03:25.600 --> 00:03:26.910
+Let's use strng.
+
+52
+00:03:27.990 --> 00:03:33.010
+You'll notice that I am purposely trying
+to avoid, using the name of the parameter
+
+53
+00:03:33.010 --> 00:03:37.730
+as the name of the variable where we
+collect the return value of the function.
+
+54
+00:03:37.730 --> 00:03:40.500
+Now, I'm doing that on purpose, to
+emphasize
+
+55
+00:03:40.500 --> 00:03:43.040
+that it doesn't have to be the same.
+
+56
+00:03:43.040 --> 00:03:46.040
+The parameter is just a variable name.
+
+57
+00:03:46.040 --> 00:03:48.550
+It's place holder for a value.
+
+58
+00:03:48.550 --> 00:03:53.630
+Just like NTNRG is the same thing, it's a
+place holder orf a value.
+
+59
+00:03:53.630 --> 00:03:55.410
+In this case a string value.
+
+60
+00:03:55.410 --> 00:03:58.710
+So there is no real correspondence between
+the
+
+61
+00:03:58.710 --> 00:04:02.120
+parameter name, and the name of the
+variable.
+
+62
+00:04:02.120 --> 00:04:05.570
+That either holds the value or is used in
+the function call.
+
+63
+00:04:06.860 --> 00:04:10.440
+What does matter though is that the data
+that is used as
+
+64
+00:04:10.440 --> 00:04:15.760
+the argument, is the type of data that we
+defined for the parameter.
+
+65
+00:04:15.760 --> 00:04:18.330
+Otherwise we can either get strange
+results
+
+66
+00:04:18.330 --> 00:04:21.090
+or down right errors in our program.
+
+67
+00:04:21.090 --> 00:04:24.360
+So, let's review what we've done here
+before we run the program.
+
+68
+00:04:24.360 --> 00:04:26.120
+We prompt the user to enter a string.
+
+69
+00:04:27.120 --> 00:04:31.320
+We get their input, and store it in the
+variable strng.
+
+70
+00:04:31.320 --> 00:04:37.190
+Then we call the function with the
+argument strng.
+
+71
+00:04:37.190 --> 00:04:40.930
+It will execute its code, return a count.
+
+72
+00:04:42.140 --> 00:04:45.220
+That return value, we replace the function
+call.
+
+73
+00:04:45.220 --> 00:04:48.640
+It will be converted to string so that it
+will match up with
+
+74
+00:04:48.640 --> 00:04:51.580
+the rest of the string and then we'll
+display the number of vowels.
+
+75
+00:04:51.580 --> 00:04:53.860
+So let's Exit and Save.
+
+76
+00:04:56.070 --> 00:04:57.030
+Let's clear the screen.
+
+77
+00:04:57.030 --> 00:04:59.070
+And we'll call it.
+
+78
+00:04:59.070 --> 00:05:01.140
+So we'll do a simple one.
+
+79
+00:05:01.140 --> 00:05:02.470
+Hello.
+
+80
+00:05:02.470 --> 00:05:05.320
+There are two in the string, alright so we
+left out the word vowels.
+
+81
+00:05:05.320 --> 00:05:06.820
+Lets go back.
+
+82
+00:05:06.820 --> 00:05:07.841
+Lets fix that real quick.
+
+83
+00:05:07.841 --> 00:05:09.689
+There we go.
+
+84
+00:05:09.689 --> 00:05:11.947
+Exit and Save.
+
+85
+00:05:11.947 --> 00:05:19.130
+That's run again, op, that's the wrong
+one.
+
+86
+00:05:19.130 --> 00:05:20.977
+There we go.
+
+87
+00:05:22.050 --> 00:05:24.570
+Hello, has two vowels.
+
+88
+00:05:24.570 --> 00:05:27.228
+Let's try one more example.
+
+89
+00:05:27.228 --> 00:05:29.720
+Hello world.
+
+90
+00:05:29.720 --> 00:05:32.250
+There are three vowels in the string, and
+that's correct.
+
+91
+00:05:32.250 --> 00:05:33.370
+E, O, and O.
+
+92
+00:05:36.550 --> 00:05:41.360
+So in this lesson, we've learned how to
+perform the function, call.
+
+93
+00:05:41.360 --> 00:05:44.100
+And that's where we ask the program to
+execute a
+
+94
+00:05:44.100 --> 00:05:49.960
+function definition and provide the
+required data for that function.
+
+95
+00:05:49.960 --> 00:05:51.910
+We're ready to move on now to the next
+lesson where
+
+96
+00:05:51.910 --> 00:05:57.370
+we're going to look at, function
+definitions that have multiple parameters.
+
+97
+00:05:57.370 --> 00:05:59.580
+Both of the function definitions we've
+seen so
+
+98
+00:05:59.580 --> 00:06:03.610
+far, square and num vowels, have had one
+parameter.
+
+99
+00:06:03.610 --> 00:06:08.110
+Number for square, and string for num
+vowels.
+
+100
+00:06:08.110 --> 00:06:11.740
+But function definitions can have multiple
+parameters.
+
+101
+00:06:11.740 --> 00:06:14.310
+In the next lesson we're going to see how
+to do that.
+

@@ -1,0 +1,210 @@
+WEBVTT
+
+1
+00:00:01.296 --> 00:00:04.022
+In this exercise, we're going to
+demonstrate one more
+
+2
+00:00:04.022 --> 00:00:07.300
+use of iterators, this time with the tuple
+data structure.
+
+3
+00:00:07.300 --> 00:00:08.050
+So let's get started.
+
+4
+00:00:09.340 --> 00:00:11.110
+First thing we're going to do is open our
+file.
+
+5
+00:00:11.110 --> 00:00:16.358
+We'll call it chap9ex1.py.
+
+6
+00:00:16.358 --> 00:00:19.578
+And what we wanna do is, we wanna create a
+tuple that's
+
+7
+00:00:19.578 --> 00:00:23.640
+a little more complex than just a standard
+tuple of single elements.
+
+8
+00:00:23.640 --> 00:00:28.530
+So what we're gonna do is, we're going to
+define a square by its points.
+
+9
+00:00:28.530 --> 00:00:32.910
+So I'm gonna write out four points, our
+x,y coordinates.
+
+10
+00:00:32.910 --> 00:00:38.260
+So what we have is actually four tuples
+inside an enclosing tuple
+
+11
+00:00:38.260 --> 00:00:44.310
+that represents the square, at least in
+terms of the points of the square.
+
+12
+00:00:44.310 --> 00:00:51.240
+So here's my tuple and as you can see each
+point is represented as another tuple.
+
+13
+00:00:51.240 --> 00:00:55.910
+So we have the point ten eight, the point
+ten 23, the point 25 23 and the point 25
+
+14
+00:00:55.910 --> 00:01:02.220
+eight, that represents my square.
+
+15
+00:01:02.220 --> 00:01:05.290
+So, if I wanted to display the points of
+the
+
+16
+00:01:05.290 --> 00:01:08.710
+square, I could write a four loop to do
+so.
+
+17
+00:01:10.070 --> 00:01:11.940
+So, let's Save and Execute the program.
+
+18
+00:01:13.630 --> 00:01:15.240
+Oops, a little mistake here.
+
+19
+00:01:15.240 --> 00:01:15.820
+Let's fix it.
+
+20
+00:01:17.310 --> 00:01:17.810
+Right there.
+
+21
+00:01:20.050 --> 00:01:20.680
+Try it again.
+
+22
+00:01:22.500 --> 00:01:24.570
+So there are four points.
+
+23
+00:01:24.570 --> 00:01:28.760
+To capture that same output using an
+iterator we'll
+
+24
+00:01:28.760 --> 00:01:32.020
+go back to our code, comment out the four
+loop,
+
+25
+00:01:34.260 --> 00:01:35.620
+create an iterator object.
+
+26
+00:01:35.620 --> 00:01:42.742
+We'll call it squareit or sqaureit and we
+call the iter function with our tuple.
+
+27
+00:01:42.742 --> 00:01:46.564
+Then to, print the four points, we're
+simply gonna call
+
+28
+00:01:46.564 --> 00:01:51.000
+the next function, on squareit, and do
+that four times.
+
+29
+00:01:51.000 --> 00:01:52.170
+So what I'm gonna do is I'm gonna type
+
+30
+00:01:52.170 --> 00:01:54.740
+it out one more time, then I'll Copy and
+Paste.
+
+31
+00:01:55.740 --> 00:01:59.780
+Control C and then control V.
+
+32
+00:01:59.780 --> 00:02:01.360
+So, that should give us our four points.
+
+33
+00:02:01.360 --> 00:02:03.330
+And we don't wanna go father than that.
+
+34
+00:02:03.330 --> 00:02:05.980
+There's nothing else in the tuple anyway,
+but, if
+
+35
+00:02:05.980 --> 00:02:09.840
+we did, then we would get the stop
+iteration exception.
+
+36
+00:02:09.840 --> 00:02:11.490
+I brought that up just to remind you that,
+
+37
+00:02:11.490 --> 00:02:14.860
+in our chapter on exception handling, I'll
+demonstrate how
+
+38
+00:02:14.860 --> 00:02:17.430
+to use a while loop to go through an
+
+39
+00:02:17.430 --> 00:02:22.600
+explicit iterator, and not have the stop
+iteration exception thrown.
+
+40
+00:02:22.600 --> 00:02:25.670
+Anyways, so now we're ready to display our
+four points.
+
+41
+00:02:25.670 --> 00:02:29.975
+So we're going to click File Save, clear
+
+42
+00:02:29.975 --> 00:02:34.532
+the screen and there are four points
+again.
+
+43
+00:02:34.532 --> 00:02:38.666
+This exercise demonstrates that we can use
+iterators even with
+
+44
+00:02:38.666 --> 00:02:43.920
+complex data structures where we have
+tuples stored inside of tuples.
+
+45
+00:02:43.920 --> 00:02:47.020
+And with that we wrap up this chapter on
+iterators.
+

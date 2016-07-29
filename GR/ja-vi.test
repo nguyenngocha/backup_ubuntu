@@ -1,0 +1,64 @@
+~/gome-dongdu-javi/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <train.vi> train.tok.vi
+~/gome-dongdu-javi/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <train.ja> train.tok.ja
+
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/train-truecaser.perl --model ~/gome-dongdu-javi/corpus/truecase-model.ja --corpus ~/gome-dongdu-javi/corpus/train.tok.ja
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/train-truecaser.perl --model ~/gome-dongdu-javi/corpus/truecase-model.vi --corpus ~/gome-dongdu-javi/corpus/train.tok.vi
+
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/truecase.perl --model ~/gome-dongdu-javi/corpus/truecase-model.ja <~/gome-dongdu-javi/corpus/train.tok.ja > ~/gome-dongdu-javi/corpus/train.true.ja
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/truecase.perl --model ~/gome-dongdu-javi/corpus/truecase-model.vi <~/gome-dongdu-javi/corpus/train.tok.vi > ~/gome-dongdu-javi/corpus/train.true.vi
+
+~/gome-dongdu-javi/mosesdecoder/scripts/training/clean-corpus-n.perl ~/gome-dongdu-javi/corpus/train.true ja vi ~/gome-dongdu-javi/corpus/train.clean 1 80
+
+mkdir ~/gome-dongdu-javi/lm
+cd ~/gome-dongdu-javi/lm
+
+~/gome-dongdu-javi/mosesdecoder/bin/lmplz -o 3 <~/gome-dongdu-javi/corpus/train.true.vi > train.arpa.vi
+
+~/gome-dongdu-javi/mosesdecoder/bin/build_binary train.arpa.vi train.blm.vi
+
+mkdir ~/gome-dongdu-javi/working
+cd ~/gome-dongdu-javi/working
+
+nohup nice ~/gome-dongdu-javi/mosesdecoder/scripts/training/train-model.perl -root-dir train -corpus ~/gome-dongdu-javi/corpus/train.clean -f ja -e vi -alignment grow-diag-final-and -reordering msd-bidirectional-fe -lm 0:3:$HOME/gome-dongdu-javi/lm/train.blm.vi:8 -external-bin-dir ~/gome-dongdu-javi/mosesdecoder/tools >& training.out &
+
+cd ~/gome-dongdu-javi/corpus
+
+~/gome-dongdu-javi/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-dongdu-javi/corpus/turn.ja> ~/gome-dongdu-javi/corpus/turn.es.ja
+~/gome-dongdu-javi/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-dongdu-javi/corpus/turn.vi> ~/gome-dongdu-javi/corpus/turn.es.vi
+
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.ja < turn.es.ja > turn.true.ja
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.vi < turn.es.vi > turn.true.vi
+
+cd ~/gome-dongdu-javi/working
+
+nohup nice ~/gome-dongdu-javi/mosesdecoder/scripts/training/mert-moses.pl ~/gome-dongdu-javi/corpus/turn.true.ja ~/gome-dongdu-javi/corpus/turn.true.vi ~/gome-dongdu-javi/mosesdecoder/bin/moses train/model/moses.ini --mertdir ~/gome-dongdu-javi/mosesdecoder/bin/ &> mert.out &
+
+mkdir binarised-model
+~/gome-dongdu-javi/mosesdecoder/bin/processPhraseTableMin -in train/model/phrase-table.gz -nscores 4 -out binarised-model/phrase-table
+
+~/gome-dongdu-javi/mosesdecoder/bin/processLexicalTableMin -in train/model/reordering-table.wbe-msd-bidirectional-fe.gz -out binarised-model/reordering-table
+
+cp ~/gome-dongdu-javi/working/mert-work/moses.ini ~/gome-dongdu-javi/working/binarised-model
+
+gedit ~/gome-dongdu-javi/working/binarised-model/moses.ini
+
+#PhraseDictionaryCompact
+#$HOME/gome-dongdu-javi/working/binarised-model/phrase-table.minphr
+#$HOME/gome-dongdu-javi/working/binarised-model/reordering-table
+#test: ~/gome-dongdu-javi/mosesdecoder/bin/moses -f ~/gome-dongdu-javi/working/binarised-model/moses.ini
+
+cd ~/gome-dongdu-javi/corpus
+
+~/gome-dongdu-javi/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-dongdu-javi/corpus/test.ja> ~/gome-dongdu-javi/corpus/test.es.ja
+~/gome-dongdu-javi/mosesdecoder/scripts/tokenizer/escape-special-chars.perl <~/gome-dongdu-javi/corpus/test.vi> ~/gome-dongdu-javi/corpus/test.es.vi
+
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.ja <~/gome-dongdu-javi/corpus/test.es.ja> test.true.ja
+~/gome-dongdu-javi/mosesdecoder/scripts/recaser/truecase.perl --model truecase-model.vi <~/gome-dongdu-javi/corpus/test.es.vi> test.true.vi
+
+cd ~/gome-dongdu-javi/working
+
+~/gome-dongdu-javi/mosesdecoder/scripts/training/filter-model-given-input.pl filtered-test mert-work/moses.ini ~/gome-dongdu-javi/corpus/test.true.ja -Binarizer ~/gome-dongdu-javi/mosesdecoder/bin/processPhraseTableMin
+
+nohup nice ~/gome-dongdu-javi/mosesdecoder/bin/moses -f ~/gome-dongdu-javi/working/filtered-test/moses.ini <~/gome-dongdu-javi/corpus/test.true.ja > ~/gome-dongdu-javi/working/test.translated.vi 2> ~/gome-dongdu-javi/working/test.out &
+
+~/gome-dongdu-javi/mosesdecoder/scripts/generic/multi-bleu.perl -lc ~/gome-dongdu-javi/corpus/test.vi < ~/gome-dongdu-javi/working/test.translated.vi

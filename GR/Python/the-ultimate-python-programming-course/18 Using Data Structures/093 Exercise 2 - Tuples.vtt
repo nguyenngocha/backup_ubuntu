@@ -1,0 +1,316 @@
+WEBVTT
+
+1
+00:00:01.100 --> 00:00:03.290
+In this lesson we're going to work with
+tuples.
+
+2
+00:00:03.290 --> 00:00:06.150
+And tuples are very similar to lists, but
+they're a little
+
+3
+00:00:06.150 --> 00:00:11.000
+bit different because they are, surrounded
+by parentheses rather than brackets.
+
+4
+00:00:11.000 --> 00:00:13.530
+But we use, tuples a lot like we use
+lists.
+
+5
+00:00:13.530 --> 00:00:15.870
+They're not, quite as universal.
+
+6
+00:00:15.870 --> 00:00:18.620
+But for some uses, they're quite adequate.
+
+7
+00:00:18.620 --> 00:00:21.070
+So for example, in this exercise, we're
+going to
+
+8
+00:00:21.070 --> 00:00:25.780
+use tuples to represent a point, an xy
+coordinate.
+
+9
+00:00:25.780 --> 00:00:29.150
+So let's get started, let me make sure my
+program, is it already there?
+
+10
+00:00:29.150 --> 00:00:29.910
+Okay, it's not.
+
+11
+00:00:31.240 --> 00:00:34.940
+So we're gonna start a new program called
+line.py, that's where
+
+12
+00:00:34.940 --> 00:00:39.110
+we're going eventually, is to make a line
+out of two points.
+
+13
+00:00:39.110 --> 00:00:43.370
+But first we're gonna build the point
+class, so we start off by writing our
+
+14
+00:00:43.370 --> 00:00:48.930
+constructor, and as you can see we build
+the, field point by
+
+15
+00:00:48.930 --> 00:00:55.800
+creating a tuple out of the x and y
+perimeters passed in, in the constructor.
+
+16
+00:00:55.800 --> 00:00:57.450
+So now, let's write a two string method.
+
+17
+00:00:59.040 --> 00:01:04.420
+And the way it's going to work is it's
+going to, get the x coordinate, by
+
+18
+00:01:04.420 --> 00:01:10.760
+taking the zero position of the point, and
+the y coordinate,
+
+19
+00:01:10.760 --> 00:01:15.950
+by taking the first position, of the point
+just like so.
+
+20
+00:01:16.990 --> 00:01:21.480
+And then finally we're gonna write a
+method called set location, that takes x
+
+21
+00:01:21.480 --> 00:01:27.010
+and y coordinates, and just sets our point
+to a new tuple, of x and y.
+
+22
+00:01:28.540 --> 00:01:29.720
+So let's try that out.
+
+23
+00:01:29.720 --> 00:01:33.440
+We'll create a a point, display it,
+
+24
+00:01:33.440 --> 00:01:35.950
+and then set its location to somewhere
+different.
+
+25
+00:01:36.970 --> 00:01:38.140
+And then, print it out again.
+
+26
+00:01:39.310 --> 00:01:40.350
+Let's see, what we get here.
+
+27
+00:01:45.630 --> 00:01:47.250
+Okay, so that worked just fine.
+
+28
+00:01:48.870 --> 00:01:52.760
+So now let's build a, line class so the
+
+29
+00:01:52.760 --> 00:01:54.720
+first thing we're going to do in our
+constructor.
+
+30
+00:01:56.590 --> 00:01:58.970
+Is write self dot point one is equal to p
+
+31
+00:01:58.970 --> 00:02:03.440
+one, and self dot point two is equal to p
+two.
+
+32
+00:02:05.220 --> 00:02:06.900
+And let's build a, to string method.
+
+33
+00:02:13.070 --> 00:02:13.950
+Just like so.
+
+34
+00:02:15.620 --> 00:02:18.950
+Then let's put a new line, and let's drop
+down to
+
+35
+00:02:18.950 --> 00:02:24.250
+the next like to write the second point
+out, just like that.
+
+36
+00:02:24.250 --> 00:02:28.030
+So let's create a line, line, one is
+equals to
+
+37
+00:02:28.030 --> 00:02:33.660
+line, p one, and let's introduce a new
+point, like so.
+
+38
+00:02:34.930 --> 00:02:39.590
+And that will become, the second point of
+the line, and let's print the line.
+
+39
+00:02:39.590 --> 00:02:42.370
+Then let's set the location of the second
+point,
+
+40
+00:02:42.370 --> 00:02:46.610
+to something different, and then print the
+line again.
+
+41
+00:02:46.610 --> 00:02:49.560
+Okay, so let's see what we get.
+
+42
+00:02:52.110 --> 00:02:53.030
+Clear the screen.
+
+43
+00:02:54.830 --> 00:02:56.000
+Slight, typo.
+
+44
+00:02:58.350 --> 00:02:58.950
+Right, there.
+
+45
+00:02:58.950 --> 00:03:01.260
+Try it one, more time.
+
+46
+00:03:02.890 --> 00:03:03.570
+We'll just leave it up.
+
+47
+00:03:03.570 --> 00:03:05.880
+There we go.
+
+48
+00:03:08.150 --> 00:03:10.940
+So to review, quickly, a tuple, makes
+
+49
+00:03:10.940 --> 00:03:14.010
+an excellent data structure for storing
+points.
+
+50
+00:03:14.010 --> 00:03:15.470
+XY coordinates.
+
+51
+00:03:15.470 --> 00:03:19.520
+And we use that, concept to create a point
+class.
+
+52
+00:03:19.520 --> 00:03:23.010
+And then to create a line class, that uses
+points.
+
+53
+00:03:23.010 --> 00:03:26.010
+In it's definition, now let me mention
+that when you
+
+54
+00:03:26.010 --> 00:03:29.770
+use a class, in another class in this way
+you're
+
+55
+00:03:29.770 --> 00:03:32.240
+performing something called composition,
+and,
+
+56
+00:03:32.240 --> 00:03:36.670
+composition, recognizes has a
+relationships,
+
+57
+00:03:36.670 --> 00:03:42.310
+just like inheritance recognizes is a
+relationships, car is a vehicle.
+
+58
+00:03:42.310 --> 00:03:45.890
+Composition, recognizes has a
+relationships.
+
+59
+00:03:45.890 --> 00:03:48.870
+In other words, a line has, a point.
+
+60
+00:03:48.870 --> 00:03:50.330
+Now this one and actually has two.
+
+61
+00:03:50.330 --> 00:03:54.190
+But you see the difference between,
+inheritance and composition.
+
+62
+00:03:54.190 --> 00:03:55.760
+At a lot of times, people will
+
+63
+00:03:55.760 --> 00:03:59.790
+use inheritance when they should be using,
+composition.
+
+64
+00:03:59.790 --> 00:04:03.520
+We mentioned this earlier in the, chapter
+on inheritance, but I just
+
+65
+00:04:03.520 --> 00:04:07.660
+thought I'd mention it again, just because
+it's a very important topic.
+
+66
+00:04:07.660 --> 00:04:10.950
+So that wraps up this exercise, on tuples,
+and we're ready to move
+
+67
+00:04:10.950 --> 00:04:13.060
+to the last exercise, of the chapter,
+
+68
+00:04:13.060 --> 00:04:14.790
+where we're going to work with
+dictionaries.
+

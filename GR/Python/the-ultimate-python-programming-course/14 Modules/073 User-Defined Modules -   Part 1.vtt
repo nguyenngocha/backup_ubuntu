@@ -1,0 +1,299 @@
+WEBVTT
+
+1
+00:00:01.120 --> 00:00:03.690
+In this lesson we're going to learn how to
+create our
+
+2
+00:00:03.690 --> 00:00:08.570
+own user defined module, a user defined
+module is just a python
+
+3
+00:00:08.570 --> 00:00:13.960
+program that we turn around and import
+into another
+
+4
+00:00:13.960 --> 00:00:19.760
+python program so that we can use that
+code that was defined in the module.
+
+5
+00:00:19.760 --> 00:00:24.900
+For this example, we're going to use the
+Newton's method of approximating square
+
+6
+00:00:24.900 --> 00:00:30.380
+roots, that we demonstrated back in the
+chapter on nested functions.
+
+7
+00:00:30.380 --> 00:00:31.590
+So the first thing I want to do, is I
+
+8
+00:00:31.590 --> 00:00:35.040
+want to create the program that's going to
+store the module.
+
+9
+00:00:35.040 --> 00:00:38.830
+And we're gonna call that newton.py.
+
+10
+00:00:38.830 --> 00:00:41.690
+[BLANK_AUDIO]
+
+11
+00:00:41.690 --> 00:00:47.480
+Now I want to find the code that I used in
+that example, the Newton method.
+
+12
+00:00:47.480 --> 00:00:52.125
+And that's in a program called
+chap13ex1p2.py.
+
+13
+00:00:52.125 --> 00:00:54.690
+[BLANK_AUDIO]
+
+14
+00:00:54.690 --> 00:00:57.390
+And it's all of these functions right
+here,
+
+15
+00:00:57.390 --> 00:01:00.990
+including that import statement to import
+the math module.
+
+16
+00:01:00.990 --> 00:01:02.100
+I'm gonna copy that.
+
+17
+00:01:03.280 --> 00:01:08.230
+We'll close this, bring Newton back up,
+and paste it in.
+
+18
+00:01:08.230 --> 00:01:11.190
+And that's all we have to do.
+
+19
+00:01:11.190 --> 00:01:12.740
+And notice that this is just a
+
+20
+00:01:12.740 --> 00:01:16.630
+program that contains nothing but function
+definitions.
+
+21
+00:01:16.630 --> 00:01:18.660
+And that's all a module has to have.
+
+22
+00:01:18.660 --> 00:01:20.000
+Now, there can be more than that of
+
+23
+00:01:20.000 --> 00:01:24.470
+course, but there wouldn't be any
+executable code, necessarily.
+
+24
+00:01:24.470 --> 00:01:27.520
+Generally speaking, the code in a module
+will be
+
+25
+00:01:27.520 --> 00:01:29.790
+either a class definition, which we're
+going to look
+
+26
+00:01:29.790 --> 00:01:32.770
+at later in the course, or functions that
+we
+
+27
+00:01:32.770 --> 00:01:34.750
+want to be able to use in another program.
+
+28
+00:01:34.750 --> 00:01:37.250
+So let's save this.
+
+29
+00:01:39.300 --> 00:01:42.050
+And then let's start yet another program.
+
+30
+00:01:42.050 --> 00:01:47.020
+And we'll call this newtontest.py.
+
+31
+00:01:47.020 --> 00:01:50.070
+So the way we import a module that's user
+
+32
+00:01:50.070 --> 00:01:52.580
+defined, is we use a little bit different
+syntax.
+
+33
+00:01:52.580 --> 00:01:59.010
+We write from newton import and in this
+case we want to import all of
+
+34
+00:01:59.010 --> 00:02:02.140
+the functions, so in this case import star
+
+35
+00:02:02.140 --> 00:02:05.230
+or asterisk which just means to import
+everything.
+
+36
+00:02:05.230 --> 00:02:06.600
+In the next lesson, I'm going to show you
+
+37
+00:02:06.600 --> 00:02:10.330
+how to only import those functions that
+you need.
+
+38
+00:02:10.330 --> 00:02:14.740
+So now we're ready to go, so let's start a
+program that will compute a square root.
+
+39
+00:02:14.740 --> 00:02:17.190
+So we're gonna enter a number and
+
+40
+00:02:17.190 --> 00:02:21.130
+that should display the square root, the
+approximation.
+
+41
+00:02:21.130 --> 00:02:23.810
+Of the square root, using our Newton's
+method.
+
+42
+00:02:23.810 --> 00:02:25.710
+So, let's save the program.
+
+43
+00:02:25.710 --> 00:02:29.460
+We're back to our Cmd Prompt window.
+
+44
+00:02:31.850 --> 00:02:32.730
+And let's run the code.
+
+45
+00:02:33.950 --> 00:02:35.380
+So we'll try nine.
+
+46
+00:02:35.380 --> 00:02:40.100
+And there we see that it printed the
+approximation of the square root of nine.
+
+47
+00:02:40.100 --> 00:02:43.320
+So let's go back to our Newton test
+program.
+
+48
+00:02:43.320 --> 00:02:46.140
+We also had a program called average.
+
+49
+00:02:46.140 --> 00:02:51.260
+So, just for fun, let's print the average
+of two numbers.
+
+50
+00:02:51.260 --> 00:02:54.030
+We'll just pick two numbers at random.
+
+51
+00:02:54.030 --> 00:03:01.110
+So, let's save the program and let's run
+newton test again.
+
+52
+00:03:02.290 --> 00:03:04.389
+We'll do the square root of 25.
+
+53
+00:03:05.750 --> 00:03:06.920
+And then the average of 144 and 9 is 76.5.
+
+54
+00:03:06.920 --> 00:03:09.360
+So, to summarize
+
+55
+00:03:11.850 --> 00:03:16.840
+the way we create a module is we simply
+create a program.
+
+56
+00:03:16.840 --> 00:03:19.530
+In the program, we will create a set of
+
+57
+00:03:19.530 --> 00:03:23.040
+functions or other code that we want to
+import later.
+
+58
+00:03:23.040 --> 00:03:26.420
+In this particular case it was just
+functions.
+
+59
+00:03:26.420 --> 00:03:29.480
+Then to use the module we used this
+
+60
+00:03:29.480 --> 00:03:34.700
+syntax from Newton import star, which
+means everything.
+
+61
+00:03:34.700 --> 00:03:37.720
+Then we can use the functions that come
+from the
+
+62
+00:03:37.720 --> 00:03:42.330
+module just like they were defined in the
+program itself.
+
+63
+00:03:42.330 --> 00:03:45.210
+So with that we're finished with this
+lesson and we are ready to move on to
+
+64
+00:03:45.210 --> 00:03:47.240
+the next lesson, where I'm going to
+demonstrate,
+
+65
+00:03:47.240 --> 00:03:52.400
+how to import only specified functions
+from a module.
+

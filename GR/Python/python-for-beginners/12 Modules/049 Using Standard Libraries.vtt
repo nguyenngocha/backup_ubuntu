@@ -1,0 +1,545 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:04.675
+[MUSIC]
+
+2
+00:00:04.675 --> 00:00:07.470
+>> So what you can see here right now, is
+the Python Standard Library.
+
+3
+00:00:07.470 --> 00:00:10.770
+Which is on the .Python.org website.
+
+4
+00:00:10.770 --> 00:00:14.452
+And you can find it also by search on
+Google, or Bing, or Yahoo, or whatever.
+
+5
+00:00:14.452 --> 00:00:20.380
+And you'll see this page here, and you'll
+see the basic overview of Python.
+
+6
+00:00:20.380 --> 00:00:22.820
+And numbers one to six, we've already
+covered.
+
+7
+00:00:22.820 --> 00:00:28.280
+But number seven onwards, are the standard
+library which you can import.
+
+8
+00:00:28.280 --> 00:00:30.880
+And so the one's we're going to be looking
+at is going to
+
+9
+00:00:30.880 --> 00:00:35.120
+be datetime, and we're also going to be
+looking at system as well.
+
+10
+00:00:35.120 --> 00:00:37.530
+And I would recommend that you read
+through all of these
+
+11
+00:00:37.530 --> 00:00:41.390
+at some point and see what is actually
+possible with Python,
+
+12
+00:00:41.390 --> 00:00:44.310
+cuz it is a very powerful language, and so
+being able
+
+13
+00:00:44.310 --> 00:00:49.710
+to find what's actually available for you
+to use is very useful.
+
+14
+00:00:50.900 --> 00:00:54.390
+And so here we go with the system and
+with.
+
+15
+00:00:54.390 --> 00:00:58.930
+Date each time, so first of all with date
+time, it allows us to
+
+16
+00:01:00.230 --> 00:01:05.170
+manipulate dates and times in as it says
+here in both simple and complex
+
+17
+00:01:05.170 --> 00:01:08.880
+ways and I'm only gonna show you the
+simple way of doing it, simply
+
+18
+00:01:08.880 --> 00:01:11.910
+because I'm just gonna give you an
+overview of what a module can actually do.
+
+19
+00:01:11.910 --> 00:01:13.980
+Rather than showing you how to use the
+date time
+
+20
+00:01:13.980 --> 00:01:17.520
+module, and then we'll also be looking at
+the system.
+
+21
+00:01:17.520 --> 00:01:24.450
+And the system and probably the OS one as
+well because it allows us to
+
+22
+00:01:24.450 --> 00:01:31.090
+interact slightly more with the actual
+Python modules than the daytime will.
+
+23
+00:01:31.090 --> 00:01:32.600
+So the first thing I'm going to do is
+
+24
+00:01:32.600 --> 00:01:35.265
+go to import, and I'm going to import the
+datetime.
+
+25
+00:01:36.390 --> 00:01:38.010
+And then from there, I'm just going to get
+
+26
+00:01:38.010 --> 00:01:40.460
+the current time right now, which is going
+to be.
+
+27
+00:01:40.460 --> 00:01:46.810
+And now is equal to datetime.datetime.now.
+
+28
+00:01:46.810 --> 00:01:52.160
+And then just print now, and the time
+right now
+
+29
+00:01:52.160 --> 00:01:57.380
+is, the 13th of July, 2012 at one
+
+30
+00:01:57.380 --> 00:02:02.360
+minute past five, so that is the time now,
+and if I run it again.
+
+31
+00:02:02.360 --> 00:02:04.210
+And you'll see the times changing
+slightly.
+
+32
+00:02:05.680 --> 00:02:08.820
+Now, one thing in which I find useful in
+using
+
+33
+00:02:08.820 --> 00:02:13.910
+this actually for, is if we had to, a
+program running.
+
+34
+00:02:13.910 --> 00:02:19.020
+Now, this isn't a real program which
+you're building, but it allows you to say,
+
+35
+00:02:21.950 --> 00:02:24.010
+what I would actually use it for.
+
+36
+00:02:24.010 --> 00:02:30.590
+It allows us to work out a difference and,
+between the times
+
+37
+00:02:30.590 --> 00:02:33.640
+in which is took for a certain piece of
+code to run.
+
+38
+00:02:33.640 --> 00:02:37.160
+And then from there we can work out where
+
+39
+00:02:37.160 --> 00:02:39.730
+a problem might be within our code, and I
+can
+
+40
+00:02:42.590 --> 00:02:47.620
+then, work on it a bit more to try and
+make it more efficient for example.
+
+41
+00:02:47.620 --> 00:02:50.594
+So, [SOUND] the way in which you do that
+is you
+
+42
+00:02:50.594 --> 00:02:53.984
+get the time in the beginning, you get the
+time at
+
+43
+00:02:53.984 --> 00:02:57.289
+the end, and you do the end minus the
+start, and
+
+44
+00:02:57.289 --> 00:03:00.286
+it tells you how long it takes for it to
+run.
+
+45
+00:03:00.286 --> 00:03:05.325
+So, here it took 0.1 second, 0.12, 0.17
+seconds, and you
+
+46
+00:03:05.325 --> 00:03:09.060
+can see it's roughly the same every single
+time it runs.
+
+47
+00:03:10.580 --> 00:03:17.290
+Oops, and so, that would show me that this
+is quite an efficient program.
+
+48
+00:03:17.290 --> 00:03:21.910
+However, if I was having it run and do
+something in the
+
+49
+00:03:21.910 --> 00:03:27.300
+middle or, if I was to make it run
+significantly more often
+
+50
+00:03:29.470 --> 00:03:31.840
+and then move in that again.
+
+51
+00:03:31.840 --> 00:03:34.450
+You'll see a bit longer, it takes longer
+for it to load, and when
+
+52
+00:03:34.450 --> 00:03:39.720
+it does finish then the time down here is
+going to be significantly bigger.
+
+53
+00:03:39.720 --> 00:03:45.109
+Okay, probably shouldn't have chosen that
+big of number
+
+54
+00:03:45.109 --> 00:03:47.564
+[BLANK_AUDIO]
+
+55
+00:03:47.564 --> 00:03:57.564
+[BLANK_AUDIO]
+
+56
+00:04:07.751 --> 00:04:13.636
+So what I'm going to do here, is I'm going
+to print out what the number is each time.
+
+57
+00:04:13.636 --> 00:04:16.980
+So that way it's adding a bit of extra
+time onto it.
+
+58
+00:04:16.980 --> 00:04:20.600
+I'm going to put that down to just 10,000
+and run it again.
+
+59
+00:04:20.600 --> 00:04:24.790
+And you can see that took null point one
+five seconds.
+
+60
+00:04:24.790 --> 00:04:27.230
+And, you can see each number added printed
+out there.
+
+61
+00:04:27.230 --> 00:04:31.900
+That way if I was to remove that, so null
+point 155 is the time it took.
+
+62
+00:04:31.900 --> 00:04:33.550
+That's to remove that and print it again.
+
+63
+00:04:33.550 --> 00:04:34.940
+You see it's 0.016.
+
+64
+00:04:34.940 --> 00:04:37.390
+It's significantly shorter and so that
+shows
+
+65
+00:04:37.390 --> 00:04:39.310
+me that this is more efficient to run
+
+66
+00:04:39.310 --> 00:04:43.220
+that it would be if I was to run it
+printing it out every single
+
+67
+00:04:43.220 --> 00:04:46.800
+time, and also printing out every single
+time is not an efficient way of doing
+
+68
+00:04:46.800 --> 00:04:49.100
+it in terms of readability because there's
+just
+
+69
+00:04:49.100 --> 00:04:52.260
+going to be 10,000 lines printed
+instantly, basically.
+
+70
+00:04:52.260 --> 00:04:55.910
+And so I can, I can work out from that,
+that I shouldn't really
+
+71
+00:04:55.910 --> 00:04:57.150
+be printing out every single time but
+
+72
+00:04:57.150 --> 00:05:00.280
+maybe every thousandth times if I needed
+to.
+
+73
+00:05:00.280 --> 00:05:03.830
+So, that's one example in which we could
+use this.
+
+74
+00:05:04.960 --> 00:05:07.470
+There's many different ways in which we
+could use it,
+
+75
+00:05:07.470 --> 00:05:13.400
+and that's just one way in which I use the
+datetime.
+
+76
+00:05:13.400 --> 00:05:19.220
+Also, I'm going to show you the import and
+then we're going to show you system.
+
+77
+00:05:19.220 --> 00:05:25.050
+Now system allows us to show several
+different things
+
+78
+00:05:25.050 --> 00:05:28.180
+and the full list is available on the
+Python website.
+
+79
+00:05:28.180 --> 00:05:31.350
+The one I'm going to be showing you is the
+path.
+
+80
+00:05:31.350 --> 00:05:35.980
+Now the path is a variable that contain
+within the system and it needs to all of
+
+81
+00:05:35.980 --> 00:05:44.160
+the, like compile those that we have and,
+installed, like Java, Python in this case.
+
+82
+00:05:44.160 --> 00:05:50.510
+Maybe page, page paid modules save which
+you might have compiled using Zend.
+
+83
+00:05:50.510 --> 00:05:52.880
+Anythings like that.
+
+84
+00:05:52.880 --> 00:05:55.910
+So here, we're getting quite a lot of
+different
+
+85
+00:05:56.920 --> 00:05:59.670
+frameworks that are appearing, and this is
+all of the,
+
+86
+00:06:02.220 --> 00:06:05.420
+this is all of the actual modules which
+are appearing.
+
+87
+00:06:05.420 --> 00:06:10.520
+I mean all of the the path variables which
+are there.
+
+88
+00:06:10.520 --> 00:06:13.245
+Now we also have sys.name.
+
+89
+00:06:14.920 --> 00:06:20.690
+So, so I was thinking os.name.
+
+90
+00:06:24.090 --> 00:06:29.620
+If we swap that over, you'll see that it's
+called posix or something.
+
+91
+00:06:29.620 --> 00:06:32.130
+Now, I'm not sure why it's called posix,
+that's just
+
+92
+00:06:32.130 --> 00:06:36.720
+the special name which is given to, Mac OS
+X Lion.
+
+93
+00:06:36.720 --> 00:06:39.140
+If I was on Snow Leopard it would be
+different,
+
+94
+00:06:39.140 --> 00:06:42.100
+if I was on, Mountain Lion it would change
+again.
+
+95
+00:06:43.530 --> 00:06:46.790
+I'm not to sure why, they have these weird
+
+96
+00:06:46.790 --> 00:06:50.900
+names but [INAUDIBLE] identify for the
+actual operation system.
+
+97
+00:06:50.900 --> 00:06:58.910
+For example if I were on windows, it would
+say nt for Windows Vista and Windows
+
+98
+00:06:58.910 --> 00:07:01.750
+7 I think, so there, the, it changes
+
+99
+00:07:01.750 --> 00:07:05.670
+constantly depending on which version your
+on, so.
+
+100
+00:07:05.670 --> 00:07:09.900
+I wouldn't go off the OS.name as being the
+actual Operating System as such.
+
+101
+00:07:09.900 --> 00:07:14.950
+But, I would use OI, OS to tell me so if I
+needed to do something
+
+102
+00:07:14.950 --> 00:07:18.770
+conditional between say Windows and Unix
+then it
+
+103
+00:07:18.770 --> 00:07:21.220
+allows me to differentiate between the two
+quite easily.
+
+104
+00:07:22.630 --> 00:07:25.420
+So, that is all I have for you on using
+the standard the library.
+
+105
+00:07:25.420 --> 00:07:29.320
+I would recommend that you'd go through
+the webpage which I showed you before.
+
+106
+00:07:29.320 --> 00:07:30.030
+And I'll show you again.
+
+107
+00:07:31.180 --> 00:07:36.930
+The webpage is docs.python.org/library and
+if you read
+
+108
+00:07:36.930 --> 00:07:39.530
+through this you'll find lots of very
+useful
+
+109
+00:07:39.530 --> 00:07:42.880
+pages or which contain information which
+you will
+
+110
+00:07:42.880 --> 00:07:49.040
+find very useful within your time
+programming with Python.
+
+111
+00:07:49.040 --> 00:07:50.531
+So that's all I've got to view in this
+video.
+
+112
+00:07:50.531 --> 00:07:52.469
+So thank you for watching and I will see
+you soon.
+
+113
+00:07:52.469 --> 00:07:57.699
+[MUSIC]
+
